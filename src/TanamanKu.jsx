@@ -732,7 +732,7 @@ function AIGuideSection({ plant }) {
         body: JSON.stringify({
           messages: [{ role: 'user', content: prompt }],
           system: "Kamu ahli hortikultura Indonesia. Buat panduan menanam step-by-step dalam Bahasa Indonesia yang detail, praktis, dan mudah dipahami pemula. Pastikan response adalah JSON valid.",
-          model: 'claude-3-5-sonnet-20241022',
+          model: 'claude-haiku-4-5',
           max_tokens: 2000,
           temperature: 0.7
         })
@@ -909,15 +909,17 @@ function AIChat() {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            model: 'claude-3-5-sonnet-20241022',
+            model: 'claude-sonnet-4-5',
             max_tokens: 1000,
             system: "Kamu ahli tanaman berbahasa Indonesia, spesialisasi perawatan tanaman rumahan, jawab singkat dan praktis.",
             messages: apiMessages
           })
         });
         const data = await response.json();
-        if (data.error) {
-          const errMsg = typeof data.error === 'object' ? (data.error.message || JSON.stringify(data.error)) : data.error;
+        // Handle both Anthropic error formats
+        if (data.type === 'error' || data.error) {
+          const errObj = data.error || data;
+          const errMsg = typeof errObj === 'object' ? (errObj.message || errObj.type || JSON.stringify(errObj)) : String(errObj);
           throw new Error(errMsg);
         }
         assistantText = data.content[0].text;
