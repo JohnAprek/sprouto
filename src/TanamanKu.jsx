@@ -111,28 +111,36 @@ export default function TanamanKu() {
   return (
     <AppContext.Provider value={contextValue}>
       <Router basename={import.meta.env.BASE_URL}>
-        <div className="app-container">
-          <Header />
-          <div className="animate-fade">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/ensiklopedia" element={<Encyclopedia />} />
-              <Route path="/tanaman/:id" element={<PlantDetail />} />
-              <Route path="/pemula" element={<BeginnerGuide />} />
-              <Route path="/favorit" element={<Favorites />} />
-              <Route path="/chat" element={<AIChat />} />
-              <Route path="/profile" element={<Profile />} />
-              <Route path="/kalender" element={<CareCalendar />} />
-            </Routes>
-          </div>
-          <BottomNav />
-          <FAB />
-          {toast && <Toast message={toast} onClose={() => setToast(null)} />}
-        </div>
+        <AppShell toast={toast} setToast={setToast} />
       </Router>
     </AppContext.Provider>
   );
 }
+
+function AppShell({ toast, setToast }) {
+  const location = useLocation();
+  return (
+    <div className="app-container">
+      <Header />
+      <div key={location.pathname} className="page-enter">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/ensiklopedia" element={<Encyclopedia />} />
+          <Route path="/tanaman/:id" element={<PlantDetail />} />
+          <Route path="/pemula" element={<BeginnerGuide />} />
+          <Route path="/favorit" element={<Favorites />} />
+          <Route path="/chat" element={<AIChat />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/kalender" element={<CareCalendar />} />
+        </Routes>
+      </div>
+      <BottomNav />
+      <FAB />
+      {toast && <Toast message={toast} onClose={() => setToast(null)} />}
+    </div>
+  );
+}
+
 
 // --- FAB ---
 function FAB() {
