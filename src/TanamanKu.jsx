@@ -1038,9 +1038,9 @@ function CareCalendar() {
     for (let i = 0; i <= 14; i++) {
       const date = addDays(today, i);
       if (i % plant.schedules.watering === 0)
-        schedule.push({ date, plant, type: 'siram', icon: '­ƒÆº', color: '#3b82f6' });
+        schedule.push({ date, plant, type: 'siram', icon: '💧', color: '#3b82f6' });
       if (i % plant.schedules.fertilizer === 0 && i > 0)
-        schedule.push({ date, plant, type: 'pupuk', icon: '­ƒî▒', color: '#22c55e' });
+        schedule.push({ date, plant, type: 'pupuk', icon: '🌿', color: '#22c55e' });
     }
   });
   schedule.sort((a, b) => a.date - b.date);
@@ -1055,13 +1055,13 @@ function CareCalendar() {
   return (
     <main className="main-content animate-fade-up">
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
-        <h2 style={{ fontSize: '1.3rem', fontWeight: 700 }}>­ƒôà Kalender Perawatan</h2>
+        <h2 style={{ fontSize: '1.3rem', fontWeight: 700 }}>📅 Kalender Perawatan</h2>
         <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>14 hari ke depan</span>
       </div>
 
       {favorites.length === 0 && (
         <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '16px', marginBottom: '20px', border: '1px solid var(--border-color)', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-          ­ƒÆí Tambahkan tanaman ke favorit untuk melihat jadwal personalmu. Saat ini menampilkan contoh jadwal.
+          💡 Tambahkan tanaman ke favorit untuk melihat jadwal personalmu. Saat ini menampilkan contoh jadwal.
         </div>
       )}
 
@@ -1085,7 +1085,7 @@ function CareCalendar() {
 
       {Object.keys(grouped).length === 0 && (
         <div style={{ textAlign: 'center', marginTop: '60px', color: 'var(--text-muted)' }}>
-          <p style={{ fontSize: '3rem', marginBottom: '12px' }}>­ƒùô´©Å</p>
+          <p style={{ fontSize: '3rem', marginBottom: '12px' }}>📭</p>
           <p style={{ fontWeight: 600 }}>Tidak ada jadwal ditemukan.</p>
         </div>
       )}
