@@ -249,9 +249,6 @@ function Home() {
   const hour = new Date().getHours();
   const greeting = hour < 12 ? 'Pagi' : hour < 15 ? 'Siang' : hour < 18 ? 'Sore' : 'Malam';
   
-  const [progress] = useLocalStorage('tanamanku_guide_tasks', []);
-  const guidePct = Math.round((progress.length / 26) * 100);
-
   // Streak tracking
   const [streakData, setStreakData] = useLocalStorage('tanamanku_streak', { count: 0, lastDate: null });
   useEffect(() => {
@@ -278,9 +275,9 @@ function Home() {
           <div className="stat-val">{favorites.length}</div>
           <div className="stat-lbl">Favorit</div>
         </div>
-        <div className="stat-card" onClick={() => navigate('/pemula')} style={{ cursor: 'pointer' }}>
-          <div className="stat-val">{guidePct}%</div>
-          <div className="stat-lbl">Progress</div>
+        <div className="stat-card" onClick={() => navigate('/kalender')} style={{ cursor: 'pointer' }}>
+          <div className="stat-val">📅</div>
+          <div className="stat-lbl">Jadwal</div>
         </div>
         <div className="stat-card" onClick={() => navigate('/ensiklopedia')} style={{ cursor: 'pointer' }}>
           <div className="stat-val">{plantData.length}</div>
@@ -837,3 +834,262 @@ function AIGuideSection({ plant }) {
     </div>
   );
 }
+
+
+// --- 5. Favorites ---
+function Favorites() {
+  const { favorites } = React.useContext(AppContext);
+  const navigate = useNavigate();
+  const favPlants = plantData.filter(p => favorites.includes(p.id));
+
+  return (
+    <main className="main-content animate-fade-up">
+      <h2 style={{ fontSize: '1.4rem', fontWeight: '700', marginBottom: '20px' }}>Koleksi Favorit</h2>
+      {favPlants.length === 0 ? (
+        <div style={{ textAlign: 'center', color: 'var(--text-muted)', marginTop: '60px' }}>
+          <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: 'var(--surface)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', boxShadow: 'var(--shadow-sm)' }}>
+            <Heart size={36} color="var(--border-color)" />
+          </div>
+          <p style={{ fontSize: '1rem', fontWeight: '500' }}>Belum ada tanaman favorit</p>
+          <p style={{ fontSize: '0.85rem', marginTop: '8px' }}>Simpan tanaman yang Anda suka untuk melihatnya di sini.</p>
+        </div>
+      ) : (
+        <div className="plant-grid">
+          {favPlants.map(plant => (
+            <PlantCard key={plant.id} plant={plant} onClick={() => navigate(`/tanaman/${plant.id}`)} />
+          ))}
+        </div>
+      )}
+    </main>
+  );
+}
+
+// --- 6. AI Chatbot ---
+function AIChat() {
+  const [messages, setMessages] = useState([
+    { role: 'assistant', content: 'Halo! Saya ahli tanaman berbahasa Indonesia. Tanyakan soal perawatan atau upload foto tanaman untuk saya identifikasi.' }
+  ]);
+  const [input, setInput] = useState('');
+  const [loading, setLoading] = useState(false);
+  const fileInputRef = useRef(null);
+
+  const proxyUrl = import.meta.env.VITE_AI_PROXY_URL;
+
+  const sendMessage = async (textContent, base64Image = null) => {
+    if (!textContent && !base64Image) return;
+    
+    const newUserMsg = { role: 'user', content: textContent || 'Identifikasi tanaman ini.' };
+    if (base64Image) newUserMsg.image = base64Image;
+
+    const newMessages = [...messages, newUserMsg];
+    setMessages(newMessages);
+    setInput('');
+    setLoading(true);
+
+    try {
+      const contentBlock = [];
+      if (base64Image) {
+        const base64Data = base64Image.split(',')[1];
+        const mediaType = base64Image.split(';')[0].split(':')[1];
+        contentBlock.push({ type: 'image', source: { type: 'base64', media_type: mediaType, data: base64Data } });
+      }
+      if (textContent) contentBlock.push({ type: 'text', text: textContent });
+      if (!textContent && base64Image) contentBlock.push({ type: 'text', text: 'Tolong identifikasi tanaman ini beserta detail perawatannya secara singkat dan praktis.' });
+
+      const apiMessages = newMessages.map(m => {
+        if (m.role === 'assistant') return { role: 'assistant', content: m.content };
+        if (m.image && m === newUserMsg) return { role: 'user', content: contentBlock };
+        return { role: 'user', content: m.content };
+      }).filter(m => m.content);
+
+      let assistantText = '';
+
+      if (proxyUrl) {
+        const response = await fetch(proxyUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            model: 'claude-sonnet-4-20250514',
+            max_tokens: 1000,
+            system: "Kamu ahli tanaman berbahasa Indonesia, spesialisasi perawatan tanaman rumahan, jawab singkat dan praktis.",
+            messages: apiMessages
+          })
+        });
+        const data = await response.json();
+        if (data.error) throw new Error(data.error);
+        assistantText = data.content[0].text;
+      } else {
+        assistantText = "Maaf, Proxy AI belum dikonfigurasi. Silakan deploy worker di Cloudflare.";
+      }
+
+      setMessages([...newMessages, { role: 'assistant', content: assistantText }]);
+    } catch (error) {
+      setMessages([...newMessages, { role: 'assistant', content: 'Error API: ' + error.message }]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => sendMessage(input, reader.result);
+      reader.readAsDataURL(file);
+    }
+  };
+
+  return (
+    <main className="main-content animate-fade-up" style={{ padding: 0 }}>
+      <div className="chat-container">
+        <div className="chat-messages">
+          {messages.map((m, idx) => (
+            <div key={idx} className={`chat-bubble ${m.role}`}>
+              {m.image && <img src={m.image} alt="upload" style={{ width: '100%', borderRadius: '12px', marginBottom: '12px' }} />}
+              <p style={{ whiteSpace: 'pre-wrap' }}>{m.content}</p>
+            </div>
+          ))}
+          {loading && <div className="chat-bubble assistant"><p>Sedang berpikir...</p></div>}
+        </div>
+        
+        <div className="chat-input-area">
+          <input type="file" accept="image/*" style={{ display: 'none' }} ref={fileInputRef} onChange={handleImageUpload} />
+          <button className="icon-btn pill" style={{ backgroundColor: 'var(--surface)', color: 'var(--primary)', boxShadow: 'var(--shadow-sm)' }} onClick={() => fileInputRef.current.click()}>
+            <Camera size={24} />
+          </button>
+          <input 
+            type="text" 
+            style={{ flex: 1, padding: '12px 16px', borderRadius: '50px', border: '1px solid var(--border-color)', outline: 'none', background: 'var(--surface)', color: 'var(--text-main)' }} 
+            placeholder="Tanya AI..." 
+            value={input}
+            onChange={e => setInput(e.target.value)}
+            onKeyPress={e => e.key === 'Enter' && sendMessage(input)}
+          />
+          <button className="icon-btn pill" style={{ background: 'var(--primary)', color: 'white' }} onClick={() => sendMessage(input)} disabled={loading || (!input.trim() && !fileInputRef.current?.value)}>
+            <Send size={20} />
+          </button>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+// --- 7. User Profile ---
+function Profile() {
+  const { profile, setProfile, favorites } = React.useContext(AppContext);
+  const [isEditing, setIsEditing] = useState(false);
+  const [name, setName] = useState(profile.name);
+
+  const saveProfile = () => {
+    setProfile({ ...profile, name });
+    setIsEditing(false);
+  };
+
+  return (
+    <main className="main-content animate-fade-up">
+      <div style={{ backgroundColor: 'var(--surface)', borderRadius: '24px', padding: '40px 20px', textAlign: 'center', boxShadow: 'var(--shadow-sm)' }}>
+        <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: 'linear-gradient(135deg, var(--primary-dark), var(--primary))', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', fontSize: '3rem', fontWeight: '700', boxShadow: 'var(--shadow-md)' }}>
+          {profile.name.charAt(0).toUpperCase()}
+        </div>
+        
+        {isEditing ? (
+          <div style={{ display: 'flex', gap: '8px', justifyContent: 'center', marginBottom: '16px' }}>
+            <input type="text" style={{ padding: '10px 16px', borderRadius: '50px', border: '1px solid var(--border-color)' }} value={name} onChange={e => setName(e.target.value)} />
+            <button className="btn-primary" style={{ width: 'auto' }} onClick={saveProfile}>Simpan</button>
+          </div>
+        ) : (
+          <h2 style={{ fontSize: '1.6rem', fontWeight: '700', marginBottom: '4px' }}>
+            {profile.name} 
+            <button style={{ background: 'none', border: 'none', color: 'var(--accent)', cursor: 'pointer', fontSize: '0.9rem', marginLeft: '8px' }} onClick={() => setIsEditing(true)}>Edit</button>
+          </h2>
+        )}
+        
+        <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Pecinta Tanaman Pemula</p>
+        
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '40px', marginTop: '32px' }}>
+          <div>
+            <h3 style={{ fontSize: '1.8rem', color: 'var(--primary)', fontWeight: '700' }}>{favorites.length}</h3>
+            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: '600' }}>Koleksi</p>
+          </div>
+          <div>
+            <h3 style={{ fontSize: '1.8rem', color: 'var(--primary)', fontWeight: '700' }}>
+              <Star size={24} fill="var(--primary)" />
+            </h3>
+            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: '600' }}>Level 1</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  );
+}
+
+// --- Care Calendar ---
+function CareCalendar() {
+  const { favorites } = React.useContext(AppContext);
+  const navigate = useNavigate();
+  const today = new Date();
+
+  const plants = favorites.length > 0
+    ? plantData.filter(p => favorites.includes(p.id))
+    : plantData.slice(0, 6);
+
+  const schedule = [];
+  plants.forEach(plant => {
+    for (let i = 0; i <= 14; i++) {
+      const date = addDays(today, i);
+      if (i % plant.schedules.watering === 0)
+        schedule.push({ date, plant, type: 'siram', icon: '­ƒÆº', color: '#3b82f6' });
+      if (i % plant.schedules.fertilizer === 0 && i > 0)
+        schedule.push({ date, plant, type: 'pupuk', icon: '­ƒî▒', color: '#22c55e' });
+    }
+  });
+  schedule.sort((a, b) => a.date - b.date);
+
+  const grouped = {};
+  schedule.forEach(item => {
+    const key = format(item.date, 'EEEE, d MMMM', { locale: localeId });
+    if (!grouped[key]) grouped[key] = [];
+    grouped[key].push(item);
+  });
+
+  return (
+    <main className="main-content animate-fade-up">
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
+        <h2 style={{ fontSize: '1.3rem', fontWeight: 700 }}>­ƒôà Kalender Perawatan</h2>
+        <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>14 hari ke depan</span>
+      </div>
+
+      {favorites.length === 0 && (
+        <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '16px', marginBottom: '20px', border: '1px solid var(--border-color)', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+          ­ƒÆí Tambahkan tanaman ke favorit untuk melihat jadwal personalmu. Saat ini menampilkan contoh jadwal.
+        </div>
+      )}
+
+      {Object.entries(grouped).map(([day, items]) => (
+        <div key={day} style={{ marginBottom: '20px' }}>
+          <h3 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '10px', paddingBottom: '6px', borderBottom: '1px solid var(--border-color)' }}>{day}</h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            {items.map((item, i) => (
+              <div key={i} onClick={() => navigate(`/tanaman/${item.plant.id}`)} style={{ background: 'var(--surface)', borderRadius: '12px', padding: '12px 14px', display: 'flex', alignItems: 'center', gap: '12px', boxShadow: 'var(--shadow-sm)', cursor: 'pointer', borderLeft: `4px solid ${item.color}` }}>
+                <span style={{ fontSize: '1.4rem' }}>{item.icon}</span>
+                <div style={{ flex: 1 }}>
+                  <p style={{ fontWeight: 700, fontSize: '0.9rem' }}>{item.plant.name}</p>
+                  <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'capitalize' }}>{item.type} rutin</p>
+                </div>
+                <span style={{ fontSize: '0.7rem', background: item.color + '20', color: item.color, padding: '3px 8px', borderRadius: '50px', fontWeight: 700 }}>{item.type}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      {Object.keys(grouped).length === 0 && (
+        <div style={{ textAlign: 'center', marginTop: '60px', color: 'var(--text-muted)' }}>
+          <p style={{ fontSize: '3rem', marginBottom: '12px' }}>­ƒùô´©Å</p>
+          <p style={{ fontWeight: 600 }}>Tidak ada jadwal ditemukan.</p>
+        </div>
+      )}
+    </main>
+  );
+}
+
