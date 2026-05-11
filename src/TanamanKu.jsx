@@ -37,42 +37,63 @@ const AppContext = React.createContext();
 
 const EMOJI_MAP = {
   'hias-1': '🌿', 'hias-2': '🌺', 'hias-3': '🌵', 'hias-4': '🌸', 'hias-5': '🌳',
-  'sayur-1': '🥬', 'sayur-2': '🌱', 'sayur-3': '🍅',
-  'obat-1': '🌼', 'obat-2': '🌿',
-  'herbal-1': '🪴', 'herbal-2': '🌱',
-  'aroma-1': '🌿', 'aroma-2': '💜'
+  'hias-6': '🍃', 'hias-7': '🌾', 'hias-8': '🪴', 'hias-9': '🌵', 'hias-10': '🌈',
+  'sayur-1': '🥬', 'sayur-2': '🌱', 'sayur-3': '🍅', 'sayur-4': '🌶️', 'sayur-5': '🥗', 'sayur-6': '🥦',
+  'obat-1': '🌼', 'obat-2': '🌿', 'obat-3': '🍃', 'obat-4': '🌱', 'obat-5': '🫐',
+  'herbal-1': '🪴', 'herbal-2': '🌱', 'herbal-3': '💛', 'herbal-4': '🌿', 'herbal-5': '🌰',
+  'aroma-1': '🌿', 'aroma-2': '💜', 'aroma-3': '🍃', 'aroma-4': '💚'
 };
 
 const ENG_MAP = {
   'hias-1': 'monstera', 'hias-2': 'aglaonema', 'hias-3': 'sansevieria', 'hias-4': 'orchid', 'hias-5': 'bonsai',
-  'sayur-1': 'spinach', 'sayur-2': 'water-spinach', 'sayur-3': 'cherry-tomato',
-  'obat-1': 'herb', 'obat-2': 'andrographis',
-  'herbal-1': 'ginger', 'herbal-2': 'aloe-vera',
-  'aroma-1': 'rosemary', 'aroma-2': 'lavender'
+  'hias-6': 'philodendron', 'hias-7': 'pothos', 'hias-8': 'zz-plant', 'hias-9': 'cactus', 'hias-10': 'calathea',
+  'sayur-1': 'spinach', 'sayur-2': 'kangkung', 'sayur-3': 'cherry-tomato', 'sayur-4': 'chili', 'sayur-5': 'lettuce', 'sayur-6': 'mustard-green',
+  'obat-1': 'herb-flower', 'obat-2': 'andrographis', 'obat-3': 'betel-leaf', 'obat-4': 'centella', 'obat-5': 'noni-fruit',
+  'herbal-1': 'ginger', 'herbal-2': 'aloe-vera', 'herbal-3': 'turmeric', 'herbal-4': 'lemongrass', 'herbal-5': 'galangal',
+  'aroma-1': 'rosemary', 'aroma-2': 'lavender', 'aroma-3': 'mint', 'aroma-4': 'pandan'
 };
+
+// --- Toast Component ---
+function Toast({ message, onClose }) {
+  useEffect(() => { const t = setTimeout(onClose, 2500); return () => clearTimeout(t); }, [onClose]);
+  return (
+    <div style={{
+      position: 'fixed', bottom: '90px', left: '50%', transform: 'translateX(-50%)',
+      background: '#166534', color: 'white', padding: '10px 20px', borderRadius: '50px',
+      fontSize: '0.875rem', fontWeight: 600, zIndex: 9999, whiteSpace: 'nowrap',
+      boxShadow: '0 4px 16px rgba(0,0,0,0.25)', animation: 'fadeInUp 0.3s ease'
+    }}>{message}</div>
+  );
+}
 
 // --- Main App Wrapper ---
 export default function TanamanKu() {
   const [isDarkMode, setIsDarkMode] = useLocalStorage('tanamanku_theme', false);
   const [favorites, setFavorites] = useLocalStorage('tanamanku_favorites', []);
   const [profile, setProfile] = useLocalStorage('tanamanku_profile', { name: 'Pecinta Tanaman', photo: null });
+  const [toast, setToast] = useState(null);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
   }, [isDarkMode]);
 
+  const showToast = (msg) => setToast(msg);
+
   const toggleFavorite = (id) => {
+    if (navigator.vibrate) navigator.vibrate(40);
     if (favorites.includes(id)) {
       setFavorites(favorites.filter(f => f !== id));
+      showToast('💔 Dihapus dari favorit');
     } else {
       setFavorites([...favorites, id]);
+      showToast('❤️ Ditambahkan ke favorit!');
     }
   };
 
   const contextValue = {
     isDarkMode, setIsDarkMode,
     favorites, toggleFavorite,
-    profile, setProfile
+    profile, setProfile, showToast
   };
 
   return (
@@ -92,6 +113,7 @@ export default function TanamanKu() {
             </Routes>
           </div>
           <BottomNav />
+          {toast && <Toast message={toast} onClose={() => setToast(null)} />}
         </div>
       </Router>
     </AppContext.Provider>
@@ -231,6 +253,7 @@ function Encyclopedia() {
   const [searchTerm, setSearchTerm] = useState('');
   const [activeCategory, setActiveCategory] = useState('Semua');
   const [activeDiff, setActiveDiff] = useState('Semua');
+  const [sortBy, setSortBy] = useState('default');
 
   const categories = [
     { id: 'Semua', icon: '🌿' },
@@ -242,13 +265,18 @@ function Encyclopedia() {
   ];
   
   const difficulties = ['Semua', 'mudah', 'sedang', 'sulit'];
+  const diffOrder = { mudah: 1, sedang: 2, sulit: 3 };
 
-  const filtered = plantData.filter(p => {
+  let filtered = plantData.filter(p => {
     const matchSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase()) || p.scientificName.toLowerCase().includes(searchTerm.toLowerCase());
     const matchCat = activeCategory === 'Semua' || p.category === activeCategory;
     const matchDiff = activeDiff === 'Semua' || p.difficulty === activeDiff;
     return matchSearch && matchCat && matchDiff;
   });
+
+  if (sortBy === 'az') filtered = [...filtered].sort((a, b) => a.name.localeCompare(b.name));
+  else if (sortBy === 'mudah') filtered = [...filtered].sort((a, b) => diffOrder[a.difficulty] - diffOrder[b.difficulty]);
+  else if (sortBy === 'sulit') filtered = [...filtered].sort((a, b) => diffOrder[b.difficulty] - diffOrder[a.difficulty]);
 
   return (
     <main className="main-content animate-fade-up">
@@ -269,12 +297,20 @@ function Encyclopedia() {
           </button>
         ))}
       </div>
-      <div className="filter-scroll" style={{ marginBottom: '8px' }}>
-        {difficulties.map(d => (
-          <button key={d} className={`filter-chip ${activeDiff === d ? 'active' : ''}`} onClick={() => setActiveDiff(d)} style={{ padding: '6px 12px', fontSize: '0.75rem', borderRadius: '8px' }}>
-            {d === 'Semua' ? 'Semua Level' : d.charAt(0).toUpperCase() + d.slice(1)}
-          </button>
-        ))}
+      <div style={{ display: 'flex', gap: '8px', marginBottom: '12px', alignItems: 'center' }}>
+        <div className="filter-scroll" style={{ flex: 1, marginBottom: 0 }}>
+          {difficulties.map(d => (
+            <button key={d} className={`filter-chip ${activeDiff === d ? 'active' : ''}`} onClick={() => setActiveDiff(d)} style={{ padding: '6px 12px', fontSize: '0.75rem', borderRadius: '8px' }}>
+              {d === 'Semua' ? 'Semua Level' : d.charAt(0).toUpperCase() + d.slice(1)}
+            </button>
+          ))}
+        </div>
+        <select value={sortBy} onChange={e => setSortBy(e.target.value)} style={{ padding: '6px 10px', borderRadius: '8px', border: '1px solid var(--border-color)', background: 'var(--surface)', color: 'var(--text-main)', fontSize: '0.75rem', fontFamily: 'inherit', flexShrink: 0, cursor: 'pointer' }}>
+          <option value="default">Default</option>
+          <option value="az">A → Z</option>
+          <option value="mudah">Termudah</option>
+          <option value="sulit">Tersulit</option>
+        </select>
       </div>
 
       <div className="plant-grid">
@@ -340,7 +376,7 @@ function PlantCard({ plant, onClick }) {
 // --- 3. Plant Detail ---
 function PlantDetail() {
   const { id } = useParams();
-  const { favorites, toggleFavorite } = React.useContext(AppContext);
+  const { favorites, toggleFavorite, showToast } = React.useContext(AppContext);
   const navigate = useNavigate();
   const plant = plantData.find(p => p.id === id);
 
@@ -359,6 +395,20 @@ function PlantDetail() {
           });
         }
       });
+    }
+  };
+
+  const handleShare = async () => {
+    const shareData = {
+      title: plant.name,
+      text: `🌿 ${plant.name} (${plant.scientificName})\n${plant.description}\n\nLihat di TanamanKu!`,
+      url: window.location.href
+    };
+    if (navigator.share) {
+      try { await navigator.share(shareData); } catch (e) { /* user cancelled */ }
+    } else {
+      await navigator.clipboard.writeText(`${shareData.text}\n${shareData.url}`);
+      showToast('🔗 Link disalin ke clipboard!');
     }
   };
 
@@ -426,9 +476,14 @@ function PlantDetail() {
           </div>
         </div>
 
-        <button className="btn-primary" style={{ marginBottom: '32px' }} onClick={handleReminder}>
-          <Bell size={20} /> Aktifkan Pengingat Siram
-        </button>
+        <div style={{ display: 'flex', gap: '12px', marginBottom: '32px' }}>
+          <button className="btn-primary" onClick={handleReminder} style={{ flex: 1 }}>
+            <Bell size={20} /> Pengingat
+          </button>
+          <button className="btn-primary" onClick={handleShare} style={{ flex: 1, background: 'var(--surface)', color: 'var(--primary)', border: '2px solid var(--primary)', boxShadow: 'none' }}>
+            <Star size={20} /> Bagikan
+          </button>
+        </div>
 
         <h3 style={{ fontSize: '1.2rem', marginBottom: '16px' }}>Tips Perawatan</h3>
         <ul className="tips-list">
