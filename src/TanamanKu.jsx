@@ -7,6 +7,8 @@ import {
 } from 'lucide-react';
 import { addDays, format } from 'date-fns';
 import { id as localeId } from 'date-fns/locale';
+import Onboarding from './components/Onboarding';
+import { SkeletonGrid } from './components/Skeleton';
 
 import plantData from './data/plants.json';
 
@@ -72,6 +74,7 @@ export default function TanamanKu() {
   const [favorites, setFavorites] = useLocalStorage('tanamanku_favorites', []);
   const [profile, setProfile] = useLocalStorage('tanamanku_profile', { name: 'Pecinta Tanaman', photo: null });
   const [toast, setToast] = useState(null);
+  const [onboarded, setOnboarded] = useLocalStorage('tanamanku_onboarded', false);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
@@ -95,6 +98,15 @@ export default function TanamanKu() {
     favorites, toggleFavorite,
     profile, setProfile, showToast
   };
+
+  if (!onboarded) {
+    return (
+      <Onboarding
+        onFinish={() => setOnboarded(true)}
+        onSetName={(name) => setProfile({ ...profile, name })}
+      />
+    );
+  }
 
   return (
     <AppContext.Provider value={contextValue}>
@@ -197,6 +209,16 @@ function Home() {
   const [progress] = useLocalStorage('tanamanku_guide_tasks', []);
   const guidePct = Math.round((progress.length / 26) * 100);
 
+  // Streak tracking
+  const [streakData, setStreakData] = useLocalStorage('tanamanku_streak', { count: 0, lastDate: null });
+  useEffect(() => {
+    const today = new Date().toDateString();
+    if (streakData.lastDate === today) return;
+    const yesterday = new Date(Date.now() - 86400000).toDateString();
+    const newCount = streakData.lastDate === yesterday ? streakData.count + 1 : 1;
+    setStreakData({ count: newCount, lastDate: today });
+  }, []);
+
   return (
     <main className="main-content animate-fade-up">
       <div className="hero-card">
@@ -220,6 +242,10 @@ function Home() {
         <div className="stat-card" onClick={() => navigate('/ensiklopedia')} style={{ cursor: 'pointer' }}>
           <div className="stat-val">{plantData.length}</div>
           <div className="stat-lbl">Katalog</div>
+        </div>
+        <div className="stat-card">
+          <div className="stat-val">🔥 {streakData.count}</div>
+          <div className="stat-lbl">Streak</div>
         </div>
       </div>
 
@@ -254,6 +280,12 @@ function Encyclopedia() {
   const [activeCategory, setActiveCategory] = useState('Semua');
   const [activeDiff, setActiveDiff] = useState('Semua');
   const [sortBy, setSortBy] = useState('default');
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const t = setTimeout(() => setIsLoading(false), 600);
+    return () => clearTimeout(t);
+  }, []);
 
   const categories = [
     { id: 'Semua', icon: '🌿' },
@@ -313,13 +345,17 @@ function Encyclopedia() {
         </select>
       </div>
 
-      <div className="plant-grid">
-        {filtered.length > 0 ? (
-          filtered.map(plant => <PlantCard key={plant.id} plant={plant} onClick={() => navigate(`/tanaman/${plant.id}`)} />)
-        ) : (
-          <p style={{ gridColumn: '1 / -1', textAlign: 'center', marginTop: '40px', color: 'var(--text-muted)' }}>Tidak ada tanaman ditemukan.</p>
-        )}
-      </div>
+      {isLoading ? (
+        <SkeletonGrid count={6} />
+      ) : (
+        <div className="plant-grid">
+          {filtered.length > 0 ? (
+            filtered.map(plant => <PlantCard key={plant.id} plant={plant} onClick={() => navigate(`/tanaman/${plant.id}`)} />)
+          ) : (
+            <p style={{ gridColumn: '1 / -1', textAlign: 'center', marginTop: '40px', color: 'var(--text-muted)' }}>Tidak ada tanaman ditemukan.</p>
+          )}
+        </div>
+      )}
     </main>
   );
 }
@@ -498,6 +534,22 @@ function PlantDetail() {
             <Bot size={20} /> Tanya AI Tentang {plant.name}
           </button>
         </div>
+
+        {/* Related Plants */}
+        {(() => {
+          const related = plantData.filter(p => p.category === plant.category && p.id !== plant.id).slice(0, 4);
+          if (related.length === 0) return null;
+          return (
+            <div style={{ marginTop: '32px' }}>
+              <h3 style={{ fontSize: '1.1rem', marginBottom: '12px' }}>Tanaman Serupa</h3>
+              <div className="plant-grid" style={{ padding: 0 }}>
+                {related.map(p => (
+                  <PlantCard key={p.id} plant={p} onClick={() => navigate(`/tanaman/${p.id}`)} />
+                ))}
+              </div>
+            </div>
+          );
+        })()}
       </main>
     </div>
   );
