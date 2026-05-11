@@ -122,13 +122,44 @@ export default function TanamanKu() {
               <Route path="/favorit" element={<Favorites />} />
               <Route path="/chat" element={<AIChat />} />
               <Route path="/profile" element={<Profile />} />
+              <Route path="/kalender" element={<CareCalendar />} />
             </Routes>
           </div>
           <BottomNav />
+          <FAB />
           {toast && <Toast message={toast} onClose={() => setToast(null)} />}
         </div>
       </Router>
     </AppContext.Provider>
+  );
+}
+
+// --- FAB ---
+function FAB() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const hiddenPaths = ['/chat', '/tanaman'];
+  const hide = hiddenPaths.some(p => location.pathname.startsWith(p));
+  if (hide) return null;
+  return (
+    <button
+      onClick={() => navigate('/chat')}
+      style={{
+        position: 'fixed', bottom: '88px', right: 'max(16px, calc(50% - 224px))',
+        width: '52px', height: '52px', borderRadius: '50%',
+        background: 'linear-gradient(135deg, #166534, #22c55e)',
+        color: 'white', border: 'none', cursor: 'pointer',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        boxShadow: '0 4px 16px rgba(22,101,52,0.4)',
+        zIndex: 55, fontSize: '1.4rem',
+        transition: 'transform 0.2s, box-shadow 0.2s'
+      }}
+      onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
+      onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+      title="Tanya AI"
+    >
+      🤖
+    </button>
   );
 }
 
@@ -281,11 +312,23 @@ function Encyclopedia() {
   const [activeDiff, setActiveDiff] = useState('Semua');
   const [sortBy, setSortBy] = useState('default');
   const [isLoading, setIsLoading] = useState(true);
+  const [isPulling, setIsPulling] = useState(false);
+  const touchStartY = useRef(0);
 
   useEffect(() => {
     const t = setTimeout(() => setIsLoading(false), 600);
     return () => clearTimeout(t);
   }, []);
+
+  const handleTouchStart = (e) => { touchStartY.current = e.touches[0].clientY; };
+  const handleTouchEnd = (e) => {
+    const delta = e.changedTouches[0].clientY - touchStartY.current;
+    if (delta > 80 && window.scrollY === 0) {
+      setIsPulling(true);
+      setIsLoading(true);
+      setTimeout(() => { setIsLoading(false); setIsPulling(false); }, 800);
+    }
+  };
 
   const categories = [
     { id: 'Semua', icon: '🌿' },
@@ -311,7 +354,12 @@ function Encyclopedia() {
   else if (sortBy === 'sulit') filtered = [...filtered].sort((a, b) => diffOrder[b.difficulty] - diffOrder[a.difficulty]);
 
   return (
-    <main className="main-content animate-fade-up">
+    <main className="main-content animate-fade-up" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
+      {isPulling && (
+        <div style={{ textAlign: 'center', padding: '8px 0 0', color: 'var(--primary)', fontSize: '0.8rem', fontWeight: 600 }}>
+          🔄 Memuat ulang...
+        </div>
+      )}
       <div className="search-wrapper">
         <Search size={20} className="search-icon" />
         <input 
@@ -858,6 +906,76 @@ function Profile() {
           </div>
         </div>
       </div>
+    </main>
+  );
+}
+
+// --- Care Calendar ---
+function CareCalendar() {
+  const { favorites } = React.useContext(AppContext);
+  const navigate = useNavigate();
+  const today = new Date();
+
+  const plants = favorites.length > 0
+    ? plantData.filter(p => favorites.includes(p.id))
+    : plantData.slice(0, 6);
+
+  const schedule = [];
+  plants.forEach(plant => {
+    for (let i = 0; i <= 14; i++) {
+      const date = addDays(today, i);
+      if (i % plant.schedules.watering === 0)
+        schedule.push({ date, plant, type: 'siram', icon: '💧', color: '#3b82f6' });
+      if (i % plant.schedules.fertilizer === 0 && i > 0)
+        schedule.push({ date, plant, type: 'pupuk', icon: '🌱', color: '#22c55e' });
+    }
+  });
+  schedule.sort((a, b) => a.date - b.date);
+
+  const grouped = {};
+  schedule.forEach(item => {
+    const key = format(item.date, 'EEEE, d MMMM', { locale: localeId });
+    if (!grouped[key]) grouped[key] = [];
+    grouped[key].push(item);
+  });
+
+  return (
+    <main className="main-content animate-fade-up">
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
+        <h2 style={{ fontSize: '1.3rem', fontWeight: 700 }}>📅 Kalender Perawatan</h2>
+        <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>14 hari ke depan</span>
+      </div>
+
+      {favorites.length === 0 && (
+        <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '16px', marginBottom: '20px', border: '1px solid var(--border-color)', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+          💡 Tambahkan tanaman ke favorit untuk melihat jadwal personalmu. Saat ini menampilkan contoh jadwal.
+        </div>
+      )}
+
+      {Object.entries(grouped).map(([day, items]) => (
+        <div key={day} style={{ marginBottom: '20px' }}>
+          <h3 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '10px', paddingBottom: '6px', borderBottom: '1px solid var(--border-color)' }}>{day}</h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            {items.map((item, i) => (
+              <div key={i} onClick={() => navigate(`/tanaman/${item.plant.id}`)} style={{ background: 'var(--surface)', borderRadius: '12px', padding: '12px 14px', display: 'flex', alignItems: 'center', gap: '12px', boxShadow: 'var(--shadow-sm)', cursor: 'pointer', borderLeft: `4px solid ${item.color}` }}>
+                <span style={{ fontSize: '1.4rem' }}>{item.icon}</span>
+                <div style={{ flex: 1 }}>
+                  <p style={{ fontWeight: 700, fontSize: '0.9rem' }}>{item.plant.name}</p>
+                  <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'capitalize' }}>{item.type} rutin</p>
+                </div>
+                <span style={{ fontSize: '0.7rem', background: item.color + '20', color: item.color, padding: '3px 8px', borderRadius: '50px', fontWeight: 700 }}>{item.type}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      {Object.keys(grouped).length === 0 && (
+        <div style={{ textAlign: 'center', marginTop: '60px', color: 'var(--text-muted)' }}>
+          <p style={{ fontSize: '3rem', marginBottom: '12px' }}>🗓️</p>
+          <p style={{ fontWeight: 600 }}>Tidak ada jadwal ditemukan.</p>
+        </div>
+      )}
     </main>
   );
 }
