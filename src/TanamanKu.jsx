@@ -328,11 +328,36 @@ function Encyclopedia() {
   const [isLoading, setIsLoading] = useState(true);
   const [isPulling, setIsPulling] = useState(false);
   const touchStartY = useRef(0);
+  const filterScrollRef = useRef(null);
+  const isDragging = useRef(false);
+  const dragStartX = useRef(0);
+  const scrollStartX = useRef(0);
 
   useEffect(() => {
     const t = setTimeout(() => setIsLoading(false), 600);
     return () => clearTimeout(t);
   }, []);
+
+  // Mouse drag-to-scroll for desktop
+  const onMouseDown = (e) => {
+    isDragging.current = true;
+    dragStartX.current = e.clientX;
+    scrollStartX.current = filterScrollRef.current.scrollLeft;
+    filterScrollRef.current.style.cursor = 'grabbing';
+    filterScrollRef.current.style.userSelect = 'none';
+  };
+  const onMouseMove = (e) => {
+    if (!isDragging.current) return;
+    const dx = e.clientX - dragStartX.current;
+    filterScrollRef.current.scrollLeft = scrollStartX.current - dx;
+  };
+  const onMouseUp = () => {
+    isDragging.current = false;
+    if (filterScrollRef.current) {
+      filterScrollRef.current.style.cursor = 'grab';
+      filterScrollRef.current.style.userSelect = '';
+    }
+  };
 
   const handleTouchStart = (e) => { touchStartY.current = e.touches[0].clientY; };
   const handleTouchEnd = (e) => {
@@ -386,7 +411,15 @@ function Encyclopedia() {
       </div>
 
       <div className="filter-scroll-wrapper">
-        <div className="filter-scroll">
+        <div
+          className="filter-scroll"
+          ref={filterScrollRef}
+          onMouseDown={onMouseDown}
+          onMouseMove={onMouseMove}
+          onMouseUp={onMouseUp}
+          onMouseLeave={onMouseUp}
+          style={{ cursor: 'grab' }}
+        >
           {categories.map(c => (
             <button key={c.id} className={`filter-chip ${activeCategory === c.id ? 'active' : ''}`} onClick={() => setActiveCategory(c.id)}>
               <span>{c.icon}</span> {c.label || c.id}
