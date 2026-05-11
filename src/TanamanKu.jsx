@@ -726,7 +726,7 @@ function AIGuideSection({ plant }) {
     try {
       const prompt = `Buat panduan menanam ${plant.name} (${plant.scientificName}) dari nol untuk pemula Indonesia. Format response sebagai JSON dengan struktur: { "phases": [ { "phase": "Hari 0", "title": "judul fase", "icon": "emoji", "color": "hex color", "tasks": [ { "task": "judul tugas", "detail": "penjelasan detail praktis 2-3 kalimat" } ] } ] }. Buat 6 fase: 1. Hari 0 - Persiapan khusus, 2. Hari 1-3 - Adaptasi spesifik, 3. Hari 4-7 - Rutinitas awal, 4. Minggu 2-4 - Perkembangan awal, 5. Bulan 1-3 - Perawatan rutin spesifik, 6. Bulan 3+ - Berkembang & tips lanjutan. Sesuaikan dengan karakteristik unik: tingkat kesulitan ${plant.difficulty}, kebutuhan air ${plant.schedules.watering} hari sekali, cahaya ${plant.careDetails.sunlight.split(' ')[0]}. Setiap fase minimal 3-4 tugas spesifik. Hanya keluarkan format JSON valid tanpa teks lain.`;
       
-      const res = await fetch('https://api-proxy.johnaprek.workers.dev/api/claude', {
+      const res = await fetch('https://api-proxy.johnaprek.workers.dev', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -873,7 +873,7 @@ function AIChat() {
   const [loading, setLoading] = useState(false);
   const fileInputRef = useRef(null);
 
-  const proxyUrl = import.meta.env.VITE_AI_PROXY_URL || 'https://api-proxy.johnaprek.workers.dev/api/claude';
+  const proxyUrl = import.meta.env.VITE_AI_PROXY_URL || 'https://api-proxy.johnaprek.workers.dev';
 
   const sendMessage = async (textContent, base64Image = null) => {
     if (!textContent && !base64Image) return;
@@ -916,7 +916,10 @@ function AIChat() {
           })
         });
         const data = await response.json();
-        if (data.error) throw new Error(data.error);
+        if (data.error) {
+          const errMsg = typeof data.error === 'object' ? (data.error.message || JSON.stringify(data.error)) : data.error;
+          throw new Error(errMsg);
+        }
         assistantText = data.content[0].text;
       } else {
         assistantText = "Maaf, Proxy AI belum dikonfigurasi. Silakan deploy worker di Cloudflare.";

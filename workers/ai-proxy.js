@@ -1,5 +1,7 @@
 export default {
   async fetch(request, env, ctx) {
+    const url = new URL(request.url);
+
     // Menangani CORS preflight request (OPTIONS)
     if (request.method === "OPTIONS") {
       return new Response(null, {
@@ -8,6 +10,13 @@ export default {
           "Access-Control-Allow-Methods": "POST, OPTIONS",
           "Access-Control-Allow-Headers": "Content-Type",
         },
+      });
+    }
+
+    // Health check
+    if (request.method === "GET") {
+      return new Response(JSON.stringify({ status: "ok", path: url.pathname }), {
+        headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" },
       });
     }
 
@@ -23,7 +32,7 @@ export default {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "x-api-key": env.ANTHROPIC_API_KEY,  // Disimpan sebagai secret di Cloudflare
+          "x-api-key": env.ANTHROPIC_API_KEY,
           "anthropic-version": "2023-06-01"
         },
         body: JSON.stringify(body)
