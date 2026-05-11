@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-      const redirect = sessionStorage.getItem('redirect');
-      if (redirect) {
+      const r = sessionStorage.getItem('redirect');
+      if (r) {
         sessionStorage.removeItem('redirect');
-        window.history.replaceState(null, null, '/tanamanku' + redirect + window.location.search + window.location.hash);
+        window.history.replaceState(null, '', '/tanamanku' + r);
       }
     </script>
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
