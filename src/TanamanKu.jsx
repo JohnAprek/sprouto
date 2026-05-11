@@ -41,18 +41,24 @@ const EMOJI_MAP = {
   'hias-1': '🌿', 'hias-2': '🌺', 'hias-3': '🌵', 'hias-4': '🌸', 'hias-5': '🌳',
   'hias-6': '🍃', 'hias-7': '🌾', 'hias-8': '🪴', 'hias-9': '🌵', 'hias-10': '🌈',
   'sayur-1': '🥬', 'sayur-2': '🌱', 'sayur-3': '🍅', 'sayur-4': '🌶️', 'sayur-5': '🥗', 'sayur-6': '🥦',
+  'sayur-7': '🍆', 'sayur-8': '🥒', 'sayur-9': '🥕', 'sayur-10': '🌿',
   'obat-1': '🌼', 'obat-2': '🌿', 'obat-3': '🍃', 'obat-4': '🌱', 'obat-5': '🫐',
   'herbal-1': '🪴', 'herbal-2': '🌱', 'herbal-3': '💛', 'herbal-4': '🌿', 'herbal-5': '🌰',
-  'aroma-1': '🌿', 'aroma-2': '💜', 'aroma-3': '🍃', 'aroma-4': '💚'
+  'aroma-1': '🌿', 'aroma-2': '💜', 'aroma-3': '🍃', 'aroma-4': '💚',
+  'buah-1': '🍓', 'buah-2': '🍌', 'buah-3': '🍊', 'buah-4': '🍌',
+  'buah-5': '🍋', 'buah-6': '🍉', 'buah-7': '🍇'
 };
 
 const ENG_MAP = {
   'hias-1': 'monstera', 'hias-2': 'aglaonema', 'hias-3': 'sansevieria', 'hias-4': 'orchid', 'hias-5': 'bonsai',
   'hias-6': 'philodendron', 'hias-7': 'pothos', 'hias-8': 'zz-plant', 'hias-9': 'cactus', 'hias-10': 'calathea',
   'sayur-1': 'spinach', 'sayur-2': 'kangkung', 'sayur-3': 'cherry-tomato', 'sayur-4': 'chili', 'sayur-5': 'lettuce', 'sayur-6': 'mustard-green',
+  'sayur-7': 'eggplant', 'sayur-8': 'cucumber', 'sayur-9': 'carrot', 'sayur-10': 'green-bean',
   'obat-1': 'herb-flower', 'obat-2': 'andrographis', 'obat-3': 'betel-leaf', 'obat-4': 'centella', 'obat-5': 'noni-fruit',
   'herbal-1': 'ginger', 'herbal-2': 'aloe-vera', 'herbal-3': 'turmeric', 'herbal-4': 'lemongrass', 'herbal-5': 'galangal',
-  'aroma-1': 'rosemary', 'aroma-2': 'lavender', 'aroma-3': 'mint', 'aroma-4': 'pandan'
+  'aroma-1': 'rosemary', 'aroma-2': 'lavender', 'aroma-3': 'mint', 'aroma-4': 'pandan',
+  'buah-1': 'strawberry', 'buah-2': 'papaya', 'buah-3': 'guava', 'buah-4': 'banana',
+  'buah-5': 'lime', 'buah-6': 'watermelon', 'buah-7': 'grape'
 };
 
 // --- Toast Component ---
@@ -341,9 +347,10 @@ function Encyclopedia() {
   const categories = [
     { id: 'Semua', icon: '🌿' },
     { id: 'Tanaman Hias', icon: '🏠' },
+    { id: 'Sayuran', icon: '🥗' },
+    { id: 'Buah-buahan', icon: '🍊' },
     { id: 'Obat', icon: '💊' },
     { id: 'Herbal', icon: '🌾' },
-    { id: 'Sayuran', icon: '🥗' },
     { id: 'Aromaterapi', icon: '💜' }
   ];
   
@@ -418,10 +425,11 @@ function Encyclopedia() {
 
 const CATEGORY_GRADIENT = {
   'Tanaman Hias': 'linear-gradient(160deg, #1a472a, #2d6a4f)',
-  'Sayuran':       'linear-gradient(160deg, #1a3a1a, #2d5a1a)',
-  'Obat':          'linear-gradient(160deg, #1a3a2a, #1a5c3a)',
-  'Herbal':        'linear-gradient(160deg, #2d4a1a, #3d6b2a)',
-  'Aromaterapi':   'linear-gradient(160deg, #3a1a4a, #5c2a6b)',
+  'Sayuran':      'linear-gradient(160deg, #1a3a1a, #2d5a1a)',
+  'Obat':         'linear-gradient(160deg, #1a3a2a, #1a5c3a)',
+  'Herbal':       'linear-gradient(160deg, #2d4a1a, #3d6b2a)',
+  'Aromaterapi':  'linear-gradient(160deg, #3a1a4a, #5c2a6b)',
+  'Buah-buahan':  'linear-gradient(160deg, #7c2d12, #c2410c)',
 };
 
 function PlantCard({ plant, onClick }) {
