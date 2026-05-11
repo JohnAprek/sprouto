@@ -269,13 +269,18 @@ body {
   display: flex;
   gap: 8px;
   overflow-x: auto;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   padding-right: 32px;
-  scrollbar-width: none;
+  scrollbar-width: thin;
+  scrollbar-color: #166534 transparent;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x proximity;
+  cursor: grab;
 }
-.filter-scroll::-webkit-scrollbar { display: none; }
+.filter-scroll:active { cursor: grabbing; }
+.filter-scroll::-webkit-scrollbar { height: 3px; }
+.filter-scroll::-webkit-scrollbar-track { background: transparent; }
+.filter-scroll::-webkit-scrollbar-thumb { background: #166534; border-radius: 10px; }
 
 .filter-chip {
   padding: 7px 14px;

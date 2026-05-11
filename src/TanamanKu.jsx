@@ -133,7 +133,7 @@ function AppShell({ toast, setToast }) {
           <Route path="/" element={<Home />} />
           <Route path="/ensiklopedia" element={<Encyclopedia />} />
           <Route path="/tanaman/:id" element={<PlantDetail />} />
-          <Route path="/pemula" element={<BeginnerGuide />} />
+          <Route path="/pemula" element={<PlantGuide />} />
           <Route path="/favorit" element={<Favorites />} />
           <Route path="/chat" element={<AIChat />} />
           <Route path="/profile" element={<Profile />} />
@@ -712,6 +712,83 @@ const guideData = [
     ]
   }
 ];
+
+// --- 4. Panduan Per Tanaman ---
+function PlantGuide() {
+  const navigate = useNavigate();
+  const [activeCategory, setActiveCategory] = useState('Semua');
+  const [search, setSearch] = useState('');
+
+  const categories = ['Semua', 'Tanaman Hias', 'Sayuran', 'Buah-buahan', 'Obat', 'Herbal', 'Aromaterapi'];
+
+  const filtered = plantData.filter(p => {
+    const matchCat = activeCategory === 'Semua' || p.category === activeCategory;
+    const matchSearch = p.name.toLowerCase().includes(search.toLowerCase());
+    return matchCat && matchSearch;
+  });
+
+  const grouped = {};
+  filtered.forEach(p => {
+    if (!grouped[p.category]) grouped[p.category] = [];
+    grouped[p.category].push(p);
+  });
+
+  const DIFF_COLOR = { mudah: '#16a34a', sedang: '#f59e0b', sulit: '#ef4444' };
+
+  return (
+    <main className="main-content animate-fade-up">
+      <h2 style={{ fontSize: '1.3rem', fontWeight: 700, marginBottom: '16px' }}>🌿 Panduan Tanaman</h2>
+
+      <div className="search-wrapper" style={{ marginBottom: '12px' }}>
+        <Search size={16} className="search-icon" />
+        <input type="text" placeholder="Cari tanaman..." value={search} onChange={e => setSearch(e.target.value)}
+          style={{ background: 'none', border: 'none', outline: 'none', width: '100%', paddingLeft: '32px', fontSize: '0.9rem' }} />
+      </div>
+
+      <div style={{ display: 'flex', gap: '8px', overflowX: 'auto', paddingBottom: '10px', marginBottom: '16px', scrollbarWidth: 'thin', scrollbarColor: '#166534 transparent' }}>
+        {categories.map(c => (
+          <button key={c} onClick={() => setActiveCategory(c)}
+            style={{ padding: '6px 14px', borderRadius: '50px', whiteSpace: 'nowrap', border: '1px solid #dcfce7', fontWeight: 600, fontSize: '0.78rem', cursor: 'pointer', flexShrink: 0, background: activeCategory === c ? '#166534' : 'var(--surface)', color: activeCategory === c ? 'white' : '#166534', transition: 'all 0.2s' }}>
+            {c === 'Semua' ? '🌿 Semua' : c}
+          </button>
+        ))}
+      </div>
+
+      {Object.entries(grouped).map(([cat, plants]) => (
+        <div key={cat} style={{ marginBottom: '24px' }}>
+          <h3 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '10px', paddingBottom: '6px', borderBottom: '1px solid var(--border-color)' }}>{cat}</h3>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            {plants.map(plant => (
+              <div key={plant.id} onClick={() => navigate(`/tanaman/${plant.id}`)}
+                style={{ background: 'var(--surface)', borderRadius: '14px', padding: '14px 16px', display: 'flex', alignItems: 'center', gap: '14px', boxShadow: 'var(--shadow-sm)', cursor: 'pointer', transition: 'transform 0.15s' }}
+                onMouseEnter={e => e.currentTarget.style.transform = 'translateX(4px)'}
+                onMouseLeave={e => e.currentTarget.style.transform = 'translateX(0)'}>
+                <span style={{ fontSize: '2rem', lineHeight: 1 }}>{EMOJI_MAP[plant.id] || '🌿'}</span>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <p style={{ fontWeight: 700, fontSize: '0.92rem', marginBottom: '2px' }}>{plant.name}</p>
+                  <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontStyle: 'italic', marginBottom: '6px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{plant.scientificName}</p>
+                  <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                    <span style={{ fontSize: '0.68rem', background: '#dcfce7', color: '#166534', padding: '2px 8px', borderRadius: '50px', fontWeight: 600 }}>💧 {plant.schedules.watering}h</span>
+                    <span style={{ fontSize: '0.68rem', background: '#fef9c3', color: '#92400e', padding: '2px 8px', borderRadius: '50px', fontWeight: 600 }}>🌱 {plant.schedules.fertilizer}h</span>
+                    <span style={{ fontSize: '0.68rem', padding: '2px 8px', borderRadius: '50px', fontWeight: 600, background: DIFF_COLOR[plant.difficulty] + '20', color: DIFF_COLOR[plant.difficulty] }}>{plant.difficulty}</span>
+                  </div>
+                </div>
+                <ArrowLeft size={16} style={{ color: 'var(--text-muted)', transform: 'rotate(180deg)', flexShrink: 0 }} />
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      {filtered.length === 0 && (
+        <div style={{ textAlign: 'center', marginTop: '60px', color: 'var(--text-muted)' }}>
+          <p style={{ fontSize: '3rem', marginBottom: '12px' }}>🔍</p>
+          <p style={{ fontWeight: 600 }}>Tanaman tidak ditemukan.</p>
+        </div>
+      )}
+    </main>
+  );
+}
 
 function BeginnerGuide() {
   const [checkedTasks, setCheckedTasks] = useLocalStorage('tanamanku_guide_tasks', []);
