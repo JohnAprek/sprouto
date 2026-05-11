@@ -133,8 +133,6 @@ function AppShell({ toast, setToast }) {
           <Route path="/" element={<Home />} />
           <Route path="/ensiklopedia" element={<Encyclopedia />} />
           <Route path="/tanaman/:id" element={<PlantDetail />} />
-          <Route path="/pemula" element={<PlantGuide />} />
-          <Route path="/panduan/:id" element={<PlantGrowingGuide />} />
           <Route path="/favorit" element={<Favorites />} />
           <Route path="/chat" element={<AIChat />} />
           <Route path="/profile" element={<Profile />} />
@@ -183,7 +181,7 @@ function Header() {
   const { isDarkMode, setIsDarkMode } = React.useContext(AppContext);
   const navigate = useNavigate();
   const location = useLocation();
-  const showBack = !['/', '/ensiklopedia', '/pemula', '/favorit', '/chat'].includes(location.pathname);
+  const showBack = !['/', '/ensiklopedia', '/favorit', '/chat'].includes(location.pathname);
 
   return (
     <header className="app-header">
@@ -224,7 +222,6 @@ function BottomNav() {
   const navItems = [
     { path: '/', icon: <HomeIcon size={22} />, label: 'Beranda' },
     { path: '/ensiklopedia', icon: <BookOpen size={22} />, label: 'Katalog' },
-    { path: '/pemula', icon: <Sprout size={22} />, label: 'Panduan' },
     { path: '/favorit', icon: <Heart size={22} />, label: 'Favorit' },
     { path: '/chat', icon: <Bot size={22} />, label: 'AI Chat' }
   ];
@@ -629,6 +626,9 @@ function PlantDetail() {
           <li><strong>Pemangkasan:</strong> {plant.careDetails.pruning}</li>
         </ul>
 
+        {/* --- NEW SECTION: PANDUAN AI --- */}
+        <AIGuideSection plant={plant} />
+
         <div style={{ marginTop: '32px' }}>
           <button className="btn-primary" onClick={() => navigate('/chat')} style={{ background: 'var(--surface)', color: 'var(--primary)', border: '2px solid var(--primary)' }}>
             <Bot size={20} /> Tanya AI Tentang {plant.name}
@@ -714,498 +714,126 @@ const guideData = [
   }
 ];
 
-// --- 4. Panduan Per Tanaman ---
-function PlantGuide() {
-  const navigate = useNavigate();
-  const [activeCategory, setActiveCategory] = useState('Semua');
-  const [search, setSearch] = useState('');
 
-  const categories = ['Semua', 'Tanaman Hias', 'Sayuran', 'Buah-buahan', 'Obat', 'Herbal', 'Aromaterapi'];
 
-  const filtered = plantData.filter(p => {
-    const matchCat = activeCategory === 'Semua' || p.category === activeCategory;
-    const matchSearch = p.name.toLowerCase().includes(search.toLowerCase());
-    return matchCat && matchSearch;
-  });
-
-  const grouped = {};
-  filtered.forEach(p => {
-    if (!grouped[p.category]) grouped[p.category] = [];
-    grouped[p.category].push(p);
-  });
-
-  const DIFF_COLOR = { mudah: '#16a34a', sedang: '#f59e0b', sulit: '#ef4444' };
-
-  return (
-    <main className="main-content animate-fade-up">
-      <h2 style={{ fontSize: '1.3rem', fontWeight: 700, marginBottom: '16px' }}>üåø Panduan Tanaman</h2>
-
-      <div className="search-wrapper" style={{ marginBottom: '12px' }}>
-        <Search size={16} className="search-icon" />
-        <input type="text" placeholder="Cari tanaman..." value={search} onChange={e => setSearch(e.target.value)}
-          style={{ background: 'none', border: 'none', outline: 'none', width: '100%', paddingLeft: '32px', fontSize: '0.9rem' }} />
-      </div>
-
-      <div style={{ display: 'flex', gap: '8px', overflowX: 'auto', paddingBottom: '10px', marginBottom: '16px', scrollbarWidth: 'thin', scrollbarColor: '#166534 transparent' }}>
-        {categories.map(c => (
-          <button key={c} onClick={() => setActiveCategory(c)}
-            style={{ padding: '6px 14px', borderRadius: '50px', whiteSpace: 'nowrap', border: '1px solid #dcfce7', fontWeight: 600, fontSize: '0.78rem', cursor: 'pointer', flexShrink: 0, background: activeCategory === c ? '#166534' : 'var(--surface)', color: activeCategory === c ? 'white' : '#166534', transition: 'all 0.2s' }}>
-            {c === 'Semua' ? 'üåø Semua' : c}
-          </button>
-        ))}
-      </div>
-
-      {Object.entries(grouped).map(([cat, plants]) => (
-        <div key={cat} style={{ marginBottom: '24px' }}>
-          <h3 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '10px', paddingBottom: '6px', borderBottom: '1px solid var(--border-color)' }}>{cat}</h3>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            {plants.map(plant => (
-              <div key={plant.id} onClick={() => navigate(`/panduan/${plant.id}`)}
-                style={{ background: 'var(--surface)', borderRadius: '14px', padding: '14px 16px', display: 'flex', alignItems: 'center', gap: '14px', boxShadow: 'var(--shadow-sm)', cursor: 'pointer', transition: 'transform 0.15s' }}
-                onMouseEnter={e => e.currentTarget.style.transform = 'translateX(4px)'}
-                onMouseLeave={e => e.currentTarget.style.transform = 'translateX(0)'}>
-                <span style={{ fontSize: '2rem', lineHeight: 1 }}>{EMOJI_MAP[plant.id] || 'üåø'}</span>
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <p style={{ fontWeight: 700, fontSize: '0.92rem', marginBottom: '2px' }}>{plant.name}</p>
-                  <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontStyle: 'italic', marginBottom: '6px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{plant.scientificName}</p>
-                  <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-                    <span style={{ fontSize: '0.68rem', background: '#dcfce7', color: '#166534', padding: '2px 8px', borderRadius: '50px', fontWeight: 600 }}>üíß {plant.schedules.watering}h</span>
-                    <span style={{ fontSize: '0.68rem', background: '#fef9c3', color: '#92400e', padding: '2px 8px', borderRadius: '50px', fontWeight: 600 }}>üå± {plant.schedules.fertilizer}h</span>
-                    <span style={{ fontSize: '0.68rem', padding: '2px 8px', borderRadius: '50px', fontWeight: 600, background: DIFF_COLOR[plant.difficulty] + '20', color: DIFF_COLOR[plant.difficulty] }}>{plant.difficulty}</span>
-                  </div>
-                </div>
-                <ArrowLeft size={16} style={{ color: 'var(--text-muted)', transform: 'rotate(180deg)', flexShrink: 0 }} />
-              </div>
-            ))}
-          </div>
-        </div>
-      ))}
-
-      {filtered.length === 0 && (
-        <div style={{ textAlign: 'center', marginTop: '60px', color: 'var(--text-muted)' }}>
-          <p style={{ fontSize: '3rem', marginBottom: '12px' }}>üîç</p>
-          <p style={{ fontWeight: 600 }}>Tanaman tidak ditemukan.</p>
-        </div>
-      )}
-    </main>
-  );
-}
-
-function BeginnerGuide() {
-  const [checkedTasks, setCheckedTasks] = useLocalStorage('tanamanku_guide_tasks', []);
-
-  const totalTasks = guideData.reduce((acc, curr) => acc + curr.tasks.length, 0);
-  const percentage = Math.round((checkedTasks.length / totalTasks) * 100) || 0;
-
-  const toggleTask = (taskId) => {
-    if (checkedTasks.includes(taskId)) setCheckedTasks(checkedTasks.filter(id => id !== taskId));
-    else setCheckedTasks([...checkedTasks, taskId]);
-  };
-
-  return (
-    <main className="main-content animate-fade-up">
-      <div style={{ backgroundColor: 'var(--surface)', padding: '24px', borderRadius: '24px', boxShadow: 'var(--shadow-sm)', marginBottom: '32px', textAlign: 'center' }}>
-        <h3 style={{ fontSize: '1.4rem', fontWeight: '700', marginBottom: '8px' }}>Perjalanan Master</h3>
-        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '16px' }}>Selesaikan panduan untuk naik level.</p>
-        
-        <div style={{ height: '12px', background: 'var(--bg-color)', borderRadius: '6px', overflow: 'hidden', border: '1px solid var(--border-color)' }}>
-          <div style={{ height: '100%', background: 'linear-gradient(90deg, var(--accent), var(--primary))', width: `${percentage}%`, transition: 'width 0.5s cubic-bezier(0.4, 0, 0.2, 1)' }}></div>
-        </div>
-        <p style={{ fontSize: '0.9rem', marginTop: '8px', fontWeight: '700', color: 'var(--primary)' }}>{percentage}% Selesai</p>
-      </div>
-
-      <div style={{ paddingLeft: '8px' }}>
-        {guideData.map((section, idx) => {
-          const sectionDone = section.tasks.every(t => checkedTasks.includes(t.id));
-          return (
-            <div key={idx} className="timeline-item">
-              <div className="timeline-icon-wrapper" style={{ borderColor: sectionDone ? 'var(--primary)' : 'var(--border-color)', backgroundColor: sectionDone ? 'var(--primary-light)' : 'var(--surface)' }}>
-                {section.icon}
-              </div>
-              <div style={{ flex: 1, paddingBottom: '20px' }}>
-                <h4 style={{ fontSize: '1.15rem', marginBottom: '12px', fontWeight: '700', color: section.color }}>{section.title}</h4>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                  {section.tasks.map(task => {
-                    const isDone = checkedTasks.includes(task.id);
-                    return (
-                      <div 
-                        key={task.id} 
-                        onClick={() => toggleTask(task.id)}
-                        className={`guide-task ${isDone ? 'done' : ''}`}
-                      >
-                        <div style={{ color: isDone ? 'var(--primary)' : 'var(--text-muted)' }}>
-                          {isDone ? <CheckSquare size={22} /> : <Square size={22} />}
-                        </div>
-                        <span style={{ fontSize: '0.9rem', fontWeight: '500', textDecoration: isDone ? 'line-through' : 'none', color: isDone ? 'var(--text-muted)' : 'var(--text-main)' }}>
-                          {task.text}
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </main>
-  );
-}
-
-// --- 5. Favorites ---
-function Favorites() {
-  const { favorites } = React.useContext(AppContext);
-  const navigate = useNavigate();
-  const favPlants = plantData.filter(p => favorites.includes(p.id));
-
-  return (
-    <main className="main-content animate-fade-up">
-      <h2 style={{ fontSize: '1.4rem', fontWeight: '700', marginBottom: '20px' }}>Koleksi Favorit</h2>
-      {favPlants.length === 0 ? (
-        <div style={{ textAlign: 'center', color: 'var(--text-muted)', marginTop: '60px' }}>
-          <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: 'var(--surface)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', boxShadow: 'var(--shadow-sm)' }}>
-            <Heart size={36} color="var(--border-color)" />
-          </div>
-          <p style={{ fontSize: '1rem', fontWeight: '500' }}>Belum ada tanaman favorit</p>
-          <p style={{ fontSize: '0.85rem', marginTop: '8px' }}>Simpan tanaman yang Anda suka untuk melihatnya di sini.</p>
-        </div>
-      ) : (
-        <div className="plant-grid">
-          {favPlants.map(plant => (
-            <PlantCard key={plant.id} plant={plant} onClick={() => navigate(`/tanaman/${plant.id}`)} />
-          ))}
-        </div>
-      )}
-    </main>
-  );
-}
-
-// --- 6. AI Chatbot ---
-function AIChat() {
-  const [messages, setMessages] = useState([
-    { role: 'assistant', content: 'Halo! Saya ahli tanaman berbahasa Indonesia. Tanyakan soal perawatan atau upload foto tanaman untuk saya identifikasi.' }
-  ]);
-  const [input, setInput] = useState('');
+// --- AI Guide Section ---
+function AIGuideSection({ plant }) {
+  const [guide, setGuide] = useLocalStorage('guide_' + plant.id + '_content', null);
+  const [tasks, setTasks] = useLocalStorage('guide_' + plant.id + '_tasks', []);
   const [loading, setLoading] = useState(false);
-  const fileInputRef = useRef(null);
+  const [error, setError] = useState(null);
 
-  const proxyUrl = import.meta.env.VITE_AI_PROXY_URL;
-
-  const sendMessage = async (textContent, base64Image = null) => {
-    if (!textContent && !base64Image) return;
-    
-    const newUserMsg = { role: 'user', content: textContent || 'Identifikasi tanaman ini.' };
-    if (base64Image) newUserMsg.image = base64Image;
-
-    const newMessages = [...messages, newUserMsg];
-    setMessages(newMessages);
-    setInput('');
+  const generateGuide = async () => {
     setLoading(true);
-
+    setError(null);
     try {
-      const contentBlock = [];
-      if (base64Image) {
-        const base64Data = base64Image.split(',')[1];
-        const mediaType = base64Image.split(';')[0].split(':')[1];
-        contentBlock.push({ type: 'image', source: { type: 'base64', media_type: mediaType, data: base64Data } });
-      }
-      if (textContent) contentBlock.push({ type: 'text', text: textContent });
-      if (!textContent && base64Image) contentBlock.push({ type: 'text', text: 'Tolong identifikasi tanaman ini beserta detail perawatannya secara singkat dan praktis.' });
+      const prompt = `Buat panduan menanam ${plant.name} (${plant.scientificName}) dari nol untuk pemula Indonesia. Format response sebagai JSON dengan struktur: { "phases": [ { "phase": "Hari 0", "title": "judul fase", "icon": "emoji", "color": "hex color", "tasks": [ { "task": "judul tugas", "detail": "penjelasan detail praktis 2-3 kalimat" } ] } ] }. Buat 6 fase: 1. Hari 0 - Persiapan khusus, 2. Hari 1-3 - Adaptasi spesifik, 3. Hari 4-7 - Rutinitas awal, 4. Minggu 2-4 - Perkembangan awal, 5. Bulan 1-3 - Perawatan rutin spesifik, 6. Bulan 3+ - Berkembang & tips lanjutan. Sesuaikan dengan karakteristik unik: tingkat kesulitan ${plant.difficulty}, kebutuhan air ${plant.schedules.watering} hari sekali, cahaya ${plant.careDetails.sunlight.split(' ')[0]}. Setiap fase minimal 3-4 tugas spesifik. Hanya keluarkan format JSON valid tanpa teks lain.`;
+      
+      const res = await fetch('https://api-proxy.johnaprek.workers.dev/api/claude', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          messages: [{ role: 'user', content: prompt }],
+          system: "Kamu ahli hortikultura Indonesia. Buat panduan menanam step-by-step dalam Bahasa Indonesia yang detail, praktis, dan mudah dipahami pemula. Pastikan response adalah JSON valid.",
+          model: 'claude-3-5-sonnet-20241022',
+          max_tokens: 2000,
+          temperature: 0.7
+        })
+      });
 
-      const apiMessages = newMessages.map(m => {
-        if (m.role === 'assistant') return { role: 'assistant', content: m.content };
-        if (m.image && m === newUserMsg) return { role: 'user', content: contentBlock };
-        return { role: 'user', content: m.content };
-      }).filter(m => m.content);
-
-      let assistantText = '';
-
-      if (proxyUrl) {
-        const response = await fetch(proxyUrl, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            model: 'claude-sonnet-4-20250514',
-            max_tokens: 1000,
-            system: "Kamu ahli tanaman berbahasa Indonesia, spesialisasi perawatan tanaman rumahan, jawab singkat dan praktis.",
-            messages: apiMessages
-          })
-        });
-        const data = await response.json();
-        if (data.error) throw new Error(data.error);
-        assistantText = data.content[0].text;
-      } else {
-        assistantText = "Maaf, Proxy AI belum dikonfigurasi. Silakan deploy worker di Cloudflare.";
-      }
-
-      setMessages([...newMessages, { role: 'assistant', content: assistantText }]);
-    } catch (error) {
-      setMessages([...newMessages, { role: 'assistant', content: 'Error API: ' + error.message }]);
+      if (!res.ok) throw new Error('API Error');
+      const data = await res.json();
+      
+      let jsonStr = data.content[0].text;
+      const match = jsonStr.match(/\{[\s\S]*\}/);
+      if (match) jsonStr = match[0];
+      
+      const parsed = JSON.parse(jsonStr);
+      setGuide({ ...parsed, createdAt: new Date().toISOString() });
+      setTasks([]);
+    } catch (err) {
+      console.error(err);
+      setError("Gagal membuat panduan üòî Cek koneksi dan coba lagi");
     } finally {
       setLoading(false);
     }
   };
 
-  const handleImageUpload = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => sendMessage(input, reader.result);
-      reader.readAsDataURL(file);
-    }
+  const toggleTask = (taskId) => {
+    setTasks(prev => prev.includes(taskId) ? prev.filter(id => id !== taskId) : [...prev, taskId]);
   };
 
   return (
-    <main className="main-content animate-fade-up" style={{ padding: 0 }}>
-      <div className="chat-container">
-        <div className="chat-messages">
-          {messages.map((m, idx) => (
-            <div key={idx} className={`chat-bubble ${m.role}`}>
-              {m.image && <img src={m.image} alt="upload" style={{ width: '100%', borderRadius: '12px', marginBottom: '12px' }} />}
-              <p style={{ whiteSpace: 'pre-wrap' }}>{m.content}</p>
-            </div>
-          ))}
-          {loading && <div className="chat-bubble assistant"><p>Sedang berpikir...</p></div>}
-        </div>
-        
-        <div className="chat-input-area">
-          <input type="file" accept="image/*" style={{ display: 'none' }} ref={fileInputRef} onChange={handleImageUpload} />
-          <button className="icon-btn pill" style={{ backgroundColor: 'var(--surface)', color: 'var(--primary)', boxShadow: 'var(--shadow-sm)' }} onClick={() => fileInputRef.current.click()}>
-            <Camera size={24} />
+    <div style={{ marginTop: '32px' }}>
+      <h3 style={{ fontSize: '1.2rem', marginBottom: '16px' }}>üìÖ Panduan Menanam dari Nol</h3>
+      
+      {!guide && !loading && (
+        <div style={{ background: 'var(--surface)', padding: '24px', borderRadius: '16px', textAlign: 'center', boxShadow: 'var(--shadow-sm)' }}>
+          <p style={{ marginBottom: '16px', color: 'var(--text-muted)' }}>Panduan interaktif step-by-step khusus untuk merawat {plant.name}. Dibuat otomatis menggunakan AI.</p>
+          <button className="btn-primary" onClick={generateGuide} style={{ margin: '0 auto' }}>
+            üå± Generate Panduan untuk Tanaman Ini
           </button>
-          <input 
-            type="text" 
-            style={{ flex: 1, padding: '12px 16px', borderRadius: '50px', border: '1px solid var(--border-color)', outline: 'none', background: 'var(--surface)', color: 'var(--text-main)' }} 
-            placeholder="Tanya AI..." 
-            value={input}
-            onChange={e => setInput(e.target.value)}
-            onKeyPress={e => e.key === 'Enter' && sendMessage(input)}
-          />
-          <button className="icon-btn pill" style={{ background: 'var(--primary)', color: 'white' }} onClick={() => sendMessage(input)} disabled={loading || (!input.trim() && !fileInputRef.current?.value)}>
-            <Send size={20} />
-          </button>
-        </div>
-      </div>
-    </main>
-  );
-}
-
-// --- 7. User Profile ---
-function Profile() {
-  const { profile, setProfile, favorites } = React.useContext(AppContext);
-  const [isEditing, setIsEditing] = useState(false);
-  const [name, setName] = useState(profile.name);
-
-  const saveProfile = () => {
-    setProfile({ ...profile, name });
-    setIsEditing(false);
-  };
-
-  return (
-    <main className="main-content animate-fade-up">
-      <div style={{ backgroundColor: 'var(--surface)', borderRadius: '24px', padding: '40px 20px', textAlign: 'center', boxShadow: 'var(--shadow-sm)' }}>
-        <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: 'linear-gradient(135deg, var(--primary-dark), var(--primary))', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', fontSize: '3rem', fontWeight: '700', boxShadow: 'var(--shadow-md)' }}>
-          {profile.name.charAt(0).toUpperCase()}
-        </div>
-        
-        {isEditing ? (
-          <div style={{ display: 'flex', gap: '8px', justifyContent: 'center', marginBottom: '16px' }}>
-            <input type="text" style={{ padding: '10px 16px', borderRadius: '50px', border: '1px solid var(--border-color)' }} value={name} onChange={e => setName(e.target.value)} />
-            <button className="btn-primary" style={{ width: 'auto' }} onClick={saveProfile}>Simpan</button>
-          </div>
-        ) : (
-          <h2 style={{ fontSize: '1.6rem', fontWeight: '700', marginBottom: '4px' }}>
-            {profile.name} 
-            <button style={{ background: 'none', border: 'none', color: 'var(--accent)', cursor: 'pointer', fontSize: '0.9rem', marginLeft: '8px' }} onClick={() => setIsEditing(true)}>Edit</button>
-          </h2>
-        )}
-        
-        <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>Pecinta Tanaman Pemula</p>
-        
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '40px', marginTop: '32px' }}>
-          <div>
-            <h3 style={{ fontSize: '1.8rem', color: 'var(--primary)', fontWeight: '700' }}>{favorites.length}</h3>
-            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: '600' }}>Koleksi</p>
-          </div>
-          <div>
-            <h3 style={{ fontSize: '1.8rem', color: 'var(--primary)', fontWeight: '700' }}>
-              <Star size={24} fill="var(--primary)" />
-            </h3>
-            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: '600' }}>Level 1</p>
-          </div>
-        </div>
-      </div>
-    </main>
-  );
-}
-
-// --- Care Calendar ---
-function CareCalendar() {
-  const { favorites } = React.useContext(AppContext);
-  const navigate = useNavigate();
-  const today = new Date();
-
-  const plants = favorites.length > 0
-    ? plantData.filter(p => favorites.includes(p.id))
-    : plantData.slice(0, 6);
-
-  const schedule = [];
-  plants.forEach(plant => {
-    for (let i = 0; i <= 14; i++) {
-      const date = addDays(today, i);
-      if (i % plant.schedules.watering === 0)
-        schedule.push({ date, plant, type: 'siram', icon: 'üíß', color: '#3b82f6' });
-      if (i % plant.schedules.fertilizer === 0 && i > 0)
-        schedule.push({ date, plant, type: 'pupuk', icon: 'üå±', color: '#22c55e' });
-    }
-  });
-  schedule.sort((a, b) => a.date - b.date);
-
-  const grouped = {};
-  schedule.forEach(item => {
-    const key = format(item.date, 'EEEE, d MMMM', { locale: localeId });
-    if (!grouped[key]) grouped[key] = [];
-    grouped[key].push(item);
-  });
-
-  return (
-    <main className="main-content animate-fade-up">
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
-        <h2 style={{ fontSize: '1.3rem', fontWeight: 700 }}>üìÖ Kalender Perawatan</h2>
-        <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>14 hari ke depan</span>
-      </div>
-
-      {favorites.length === 0 && (
-        <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '16px', marginBottom: '20px', border: '1px solid var(--border-color)', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-          üí° Tambahkan tanaman ke favorit untuk melihat jadwal personalmu. Saat ini menampilkan contoh jadwal.
+          {error && <p style={{ color: '#ef4444', marginTop: '12px', fontSize: '0.85rem' }}>{error}</p>}
         </div>
       )}
 
-      {Object.entries(grouped).map(([day, items]) => (
-        <div key={day} style={{ marginBottom: '20px' }}>
-          <h3 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '10px', paddingBottom: '6px', borderBottom: '1px solid var(--border-color)' }}>{day}</h3>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            {items.map((item, i) => (
-              <div key={i} onClick={() => navigate(`/tanaman/${item.plant.id}`)} style={{ background: 'var(--surface)', borderRadius: '12px', padding: '12px 14px', display: 'flex', alignItems: 'center', gap: '12px', boxShadow: 'var(--shadow-sm)', cursor: 'pointer', borderLeft: `4px solid ${item.color}` }}>
-                <span style={{ fontSize: '1.4rem' }}>{item.icon}</span>
-                <div style={{ flex: 1 }}>
-                  <p style={{ fontWeight: 700, fontSize: '0.9rem' }}>{item.plant.name}</p>
-                  <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'capitalize' }}>{item.type} rutin</p>
-                </div>
-                <span style={{ fontSize: '0.7rem', background: item.color + '20', color: item.color, padding: '3px 8px', borderRadius: '50px', fontWeight: 700 }}>{item.type}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      ))}
-
-      {Object.keys(grouped).length === 0 && (
-        <div style={{ textAlign: 'center', marginTop: '60px', color: 'var(--text-muted)' }}>
-          <p style={{ fontSize: '3rem', marginBottom: '12px' }}>üóìÔ∏è</p>
-          <p style={{ fontWeight: 600 }}>Tidak ada jadwal ditemukan.</p>
+      {loading && (
+        <div style={{ background: 'var(--surface)', padding: '24px', borderRadius: '16px', textAlign: 'center' }}>
+          <div className="spinner" style={{ width: '40px', height: '40px', margin: '0 auto 16px', border: '3px solid #dcfce7', borderTopColor: 'var(--primary)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div>
+          <p style={{ color: 'var(--text-muted)', fontWeight: 600 }}>Menyusun panduan spesifik...</p>
         </div>
       )}
-    </main>
-  );
-}
 
-// --- Plant Growing Guide (Timeline dari hari 0 sampai panen) ---
-function generateTimeline(plant) {
-  const isVeg = plant.category === 'Sayuran';
-  const isFruit = plant.category === 'Buah-buahan';
-  const isHerbal = plant.category === 'Herbal';
-  const isMed = plant.category === 'Obat';
-  const isAroma = plant.category === 'Aromaterapi';
-  const common = [
-    { day: 0, phase: '?? Persiapan', title: 'Siapkan Media Tanam', icon: '??',
-      steps: ['Pilih pot/polybag ukuran sesuai tanaman', 'Campurkan tanah subur + kompos + pasir (2:1:1)', 'Pastikan ada lubang drainase di dasar pot', 'Tentukan lokasi sesuai kebutuhan sinar matahari tanaman'] },
-    { day: 1, phase: '?? Penanaman', title: 'Tanam Benih atau Bibit', icon: '??',
-      steps: [isVeg || isFruit ? 'Tanam benih 1-2 cm atau langsung tanam bibit' : 'Tanam bibit/stek dengan akar utuh', 'Padatkan tanah di sekitar tanaman perlahan', 'Siram hingga tanah lembap merata', 'Beri label nama dan tanggal tanam'] },
-  ];
-  const vegMid = [
-    { day: 7, phase: '?? Perkecambahan', title: 'Benih Berkecambah', icon: '??',
-      steps: ['Jaga tanah tetap lembap setiap hari', 'Hindari matahari terik saat sprout baru muncul', 'Tipiskan jika terlalu rapat (jarak 10 cm)', 'Tambah mulsa tipis untuk menjaga kelembapan'] },
-    { day: 14, phase: '?? Awal', title: '2 Minggu ó Daun Pertama', icon: '??',
-      steps: ['Beri pupuk nitrogen encer setiap 2 minggu', 'Siram setiap ' + plant.schedules.watering + ' hari sekali', 'Amati tanda hama atau penyakit', 'Bersihkan gulma di sekitar tanaman'] },
-    { day: 30, phase: '?? Aktif', title: '1 Bulan ó Tumbuh Pesat', icon: '??',
-      steps: ['Tambah pupuk kalium untuk perkembangan optimal', 'Pasang ajir/penyangga jika tanaman mulai tinggi', 'Pangkas daun tua atau rusak', 'Beri pupuk tambahan setiap ' + plant.schedules.fertilizer + ' hari'] },
-    { day: (plant.name.includes('Bayam') ? 21 : plant.name.includes('Kangkung') ? 25 : plant.name.includes('Selada') ? 35 : plant.name.includes('Sawi') ? 30 : 45),
-      phase: '?? Panen', title: 'Siap Dipanen!', icon: '??',
-      steps: ['Panen pagi hari untuk kesegaran terbaik', 'Gunakan gunting bersih, hindari mencabut paksa', 'Sisakan bagian bawah untuk pertumbuhan baru', 'Cuci bersih sebelum dikonsumsi'] },
-  ];
-  const fruitMid = [
-    { day: 14, phase: '?? Vegetatif', title: 'Pertumbuhan Daun Aktif', icon: '??',
-      steps: ['Siram setiap hari secara konsisten', 'Pupuk NPK seimbang setiap 2 minggu', 'Pastikan sinar matahari cukup', 'Pangkas daun tidak produktif'] },
-    { day: 45, phase: '?? Pembungaan', title: 'Tanaman Berbunga', icon: '??',
-      steps: ['Kurangi nitrogen, tambah fosfor dan kalium', 'Bantu penyerbukan dengan kuas jika perlu', 'Jaga kelembapan stabil', 'Hindari pemupukan berlebih saat berbunga'] },
-    { day: 90, phase: '?? Pembuahan', title: 'Buah Terbentuk', icon: '??',
-      steps: ['Lakukan penjarangan buah', 'Beri pupuk kalium tinggi', 'Pasang jaring pelindung dari hama', 'Pastikan drainase tetap baik'] },
-    { day: (plant.name.includes('Stroberi') ? 120 : plant.name.includes('Semangka') ? 80 : plant.name.includes('Pepaya') ? 270 : 180),
-      phase: '?? Panen', title: 'Buah Siap Dipanen!', icon: '??',
-      steps: ['Panen saat buah sudah matang sempurna', 'Gunakan gunting tajam, jangan ditarik paksa', 'Simpan di tempat sejuk', 'Beri pupuk untuk persiapan musim berikutnya'] },
-  ];
-  const defMid = [
-    { day: 14, phase: '?? Adaptasi', title: '2 Minggu ó Adaptasi', icon: '??',
-      steps: ['Siram setiap ' + plant.schedules.watering + ' hari', 'Perhatikan warna daun ó hijau segar artinya sehat', 'Hindari memindahkan pot terlalu sering', 'Beri pupuk starter ringan'] },
-    { day: 30, phase: '?? Aktif', title: '1 Bulan ó Tumbuh Subur', icon: '??',
-      steps: ['Pupuk rutin setiap ' + plant.schedules.fertilizer + ' hari', 'Pangkas bagian layu atau mengering', 'Pastikan sirkulasi udara baik', (isAroma || isHerbal || isMed) ? 'Panen daun/ranting bisa dimulai' : 'Amati perkembangan tunas baru'] },
-    { day: 60, phase: '? Dewasa', title: '2 Bulan ó Perawatan Rutin', icon: '??',
-      steps: [(isAroma || isHerbal || isMed) ? 'Panen daun/ranting berkala ó jangan dipanen habis' : 'Nikmati keindahan tanaman', (plant.schedules.repotting > 0) ? 'Repotting setiap ' + Math.round(plant.schedules.repotting / 30) + ' bulan saat akar padat' : 'Tidak perlu repotting ó tanaman di tanah terbuka', 'Lanjutkan jadwal siram dan pupuk', 'Amati tanda hama, penyakit, atau kekurangan nutrisi'] },
-  ];
-  return [...common, ...(isVeg ? vegMid : isFruit ? fruitMid : defMid)];
-}
+      {guide && !loading && (
+        <div>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+            <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Dibuat pada: {new Date(guide.createdAt).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}</p>
+            <button onClick={generateGuide} style={{ background: 'none', border: 'none', color: 'var(--primary)', fontSize: '0.8rem', fontWeight: 600, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }}>
+              üîÑ Generate Ulang
+            </button>
+          </div>
 
-function PlantGrowingGuide() {
-  const { id } = useParams();
-  const navigate = useNavigate();
-  const plant = plantData.find(p => p.id === id);
-  const [checkedSteps, setCheckedSteps] = useLocalStorage('guide_' + id, []);
-  if (!plant) return React.createElement('div', { style: { padding: '24px' } }, 'Tanaman tidak ditemukan.');
-  const timeline = generateTimeline(plant);
-  const totalSteps = timeline.reduce((acc, t) => acc + t.steps.length, 0);
-  const pct = Math.round((checkedSteps.length / totalSteps) * 100);
-  const toggleStep = (key) => { setCheckedSteps(prev => prev.includes(key) ? prev.filter(k => k !== key) : [...prev, key]); };
-  return (
-    <div style={{ background: 'var(--bg-color)', minHeight: '100vh' }}>
-      <div style={{ background: CATEGORY_GRADIENT[plant.category] || 'linear-gradient(135deg,#166534,#22c55e)', padding: '20px 16px 32px', color: 'white' }}>
-        <button onClick={() => navigate(-1)} style={{ background: 'rgba(255,255,255,0.2)', border: 'none', color: 'white', borderRadius: '50%', width: 36, height: 36, cursor: 'pointer', marginBottom: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><ArrowLeft size={18} /></button>
-        <div style={{ fontSize: '3rem', marginBottom: '8px' }}>{EMOJI_MAP[plant.id] || '??'}</div>
-        <h1 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '4px' }}>Panduan: {plant.name}</h1>
-        <p style={{ fontSize: '0.8rem', opacity: 0.8, fontStyle: 'italic', marginBottom: '16px' }}>{plant.scientificName}</p>
-        <div style={{ background: 'rgba(255,255,255,0.2)', borderRadius: '50px', height: '8px', marginBottom: '6px' }}>
-          <div style={{ background: 'white', height: '100%', borderRadius: '50px', width: pct + '%', transition: 'width 0.4s' }} />
-        </div>
-        <p style={{ fontSize: '0.78rem', opacity: 0.9 }}>{pct}% selesai ∑ {checkedSteps.length}/{totalSteps} langkah</p>
-      </div>
-      <main style={{ padding: '20px 16px 100px' }}>
-        {timeline.map((phase, pi) => (
-          <div key={pi} style={{ marginBottom: '28px', position: 'relative' }}>
-            {pi < timeline.length - 1 && <div style={{ position: 'absolute', left: '19px', top: '44px', width: '2px', height: 'calc(100% + 4px)', background: 'var(--border-color)', zIndex: 0 }} />}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px', position: 'relative', zIndex: 1 }}>
-              <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--primary-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', flexShrink: 0, border: '2px solid var(--primary)' }}>{phase.icon}</div>
-              <div>
-                <p style={{ fontSize: '0.68rem', fontWeight: 700, color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{phase.day === 0 ? 'Hari 0' : 'Hari ke-' + phase.day + '+'} ∑ {phase.phase}</p>
-                <p style={{ fontSize: '1rem', fontWeight: 700 }}>{phase.title}</p>
-              </div>
-            </div>
-            <div style={{ marginLeft: '52px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              {phase.steps.map((step, si) => {
-                const key = pi + '-' + si;
-                const done = checkedSteps.includes(key);
-                return (
-                  <div key={si} onClick={() => toggleStep(key)} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', background: 'var(--surface)', padding: '12px', borderRadius: '10px', cursor: 'pointer', boxShadow: 'var(--shadow-sm)', opacity: done ? 0.6 : 1, transition: 'all 0.2s', borderLeft: done ? '3px solid var(--primary)' : '3px solid transparent' }}>
-                    <div style={{ width: 20, height: 20, borderRadius: '50%', border: '2px solid ' + (done ? 'var(--primary)' : 'var(--border-color)'), background: done ? 'var(--primary)' : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '1px', transition: 'all 0.2s' }}>
-                      {done && <span style={{ color: 'white', fontSize: '10px', fontWeight: 700 }}>?</span>}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            {guide.phases && guide.phases.map((phase, pIdx) => {
+              const phaseTasks = phase.tasks || [];
+              const completedInPhase = phaseTasks.filter((_, tIdx) => tasks.includes(pIdx + '-' + tIdx)).length;
+              const isDone = completedInPhase === phaseTasks.length && phaseTasks.length > 0;
+              
+              return (
+                <details key={pIdx} style={{ background: 'var(--surface)', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-sm)', borderLeft: '4px solid ' + (phase.color || 'var(--primary)') }} open={pIdx === 0}>
+                  <summary style={{ padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', listStyle: 'none' }}>
+                    <div style={{ fontSize: '1.5rem', flexShrink: 0 }}>{phase.icon || 'üå±'}</div>
+                    <div style={{ flex: 1 }}>
+                      <p style={{ fontSize: '0.75rem', fontWeight: 700, color: phase.color || 'var(--primary)', textTransform: 'uppercase' }}>{phase.phase}</p>
+                      <p style={{ fontSize: '1rem', fontWeight: 700, color: isDone ? 'var(--text-muted)' : 'var(--text-main)', textDecoration: isDone ? 'line-through' : 'none' }}>{phase.title}</p>
                     </div>
-                    <p style={{ fontSize: '0.85rem', lineHeight: 1.5, textDecoration: done ? 'line-through' : 'none', color: done ? 'var(--text-muted)' : 'var(--text-primary)' }}>{step}</p>
+                    <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', background: '#f3f4f6', padding: '4px 8px', borderRadius: '50px' }}>
+                      {completedInPhase}/{phaseTasks.length}
+                    </div>
+                  </summary>
+                  <div style={{ padding: '0 16px 16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                    {phaseTasks.map((task, tIdx) => {
+                      const taskId = pIdx + '-' + tIdx;
+                      const done = tasks.includes(taskId);
+                      return (
+                        <div key={tIdx} onClick={() => toggleTask(taskId)} style={{ display: 'flex', gap: '12px', cursor: 'pointer', opacity: done ? 0.6 : 1, transition: 'opacity 0.2s' }}>
+                          <div style={{ width: '22px', height: '22px', borderRadius: '50%', border: '2px solid ' + (done ? 'var(--primary)' : 'var(--border-color)'), background: done ? 'var(--primary)' : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '2px' }}>
+                            {done && <span style={{ color: 'white', fontSize: '12px', fontWeight: 700 }}>‚úì</span>}
+                          </div>
+                          <div>
+                            <p style={{ fontSize: '0.9rem', fontWeight: 700, marginBottom: '2px', textDecoration: done ? 'line-through' : 'none' }}>{task.task}</p>
+                            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.5, textDecoration: done ? 'line-through' : 'none' }}>{task.detail}</p>
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
-                );
-              })}
-            </div>
+                </details>
+              );
+            })}
           </div>
-        ))}
-        <button onClick={() => navigate('/tanaman/' + plant.id)} style={{ width: '100%', padding: '14px', borderRadius: '14px', background: 'var(--primary)', color: 'white', border: 'none', fontWeight: 700, cursor: 'pointer', fontSize: '0.95rem', marginTop: '8px' }}>?? Lihat Detail Lengkap {plant.name}</button>
-      </main>
+        </div>
+      )}
     </div>
   );
 }
