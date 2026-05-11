@@ -182,15 +182,12 @@ body {
   transform: translateX(-50%);
   width: 100%;
   max-width: 480px;
-  background-color: var(--nav-bg);
+  background: var(--surface);
+  border-top: 1px solid var(--border-color);
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 12px 8px;
-  box-shadow: var(--shadow-nav);
-  z-index: 60;
-  border-top-left-radius: var(--radius-lg);
-  border-top-right-radius: var(--radius-lg);
+  padding: 6px 4px calc(6px + env(safe-area-inset-bottom));
+  z-index: 50;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.06);
 }
 
 .nav-item {
@@ -201,29 +198,41 @@ body {
   background: none;
   border: none;
   color: #9ca3af;
-  font-size: 10px;
-  font-weight: 600;
   cursor: pointer;
-  gap: 4px;
-  padding: 6px 8px;
-  border-radius: var(--radius-pill);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  gap: 3px;
+  padding: 4px 2px;
   flex: 1;
+  min-width: 0;
+  position: relative;
+  transition: color 0.2s;
 }
 
 .nav-item span {
-  display: block;
+  font-size: 9px;
+  font-weight: 600;
   white-space: nowrap;
+  letter-spacing: 0.2px;
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  border-radius: 0 0 3px 3px;
+  background: #166534;
+  transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-item.active {
-  color: white;
-  background-color: #166534;
-  flex-direction: row;
-  font-size: 0.78rem;
-  padding: 8px 12px;
-  flex: none;
-  gap: 6px;
+  color: #166534;
+}
+
+.nav-item.active::before {
+  width: 20px;
 }
 
 /* Badges */
