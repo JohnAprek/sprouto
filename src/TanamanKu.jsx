@@ -873,7 +873,7 @@ function AIChat() {
   const [loading, setLoading] = useState(false);
   const fileInputRef = useRef(null);
 
-  const proxyUrl = import.meta.env.VITE_AI_PROXY_URL;
+  const proxyUrl = import.meta.env.VITE_AI_PROXY_URL || 'https://api-proxy.johnaprek.workers.dev/api/claude';
 
   const sendMessage = async (textContent, base64Image = null) => {
     if (!textContent && !base64Image) return;
@@ -909,7 +909,7 @@ function AIChat() {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            model: 'claude-sonnet-4-20250514',
+            model: 'claude-3-5-sonnet-20241022',
             max_tokens: 1000,
             system: "Kamu ahli tanaman berbahasa Indonesia, spesialisasi perawatan tanaman rumahan, jawab singkat dan praktis.",
             messages: apiMessages
