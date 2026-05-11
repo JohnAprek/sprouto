@@ -288,45 +288,51 @@ function Encyclopedia() {
   );
 }
 
+const CATEGORY_GRADIENT = {
+  'Tanaman Hias': 'linear-gradient(160deg, #1a472a, #2d6a4f)',
+  'Sayuran':       'linear-gradient(160deg, #1a3a1a, #2d5a1a)',
+  'Obat':          'linear-gradient(160deg, #1a3a2a, #1a5c3a)',
+  'Herbal':        'linear-gradient(160deg, #2d4a1a, #3d6b2a)',
+  'Aromaterapi':   'linear-gradient(160deg, #3a1a4a, #5c2a6b)',
+};
+
 function PlantCard({ plant, onClick }) {
   const { favorites, toggleFavorite } = React.useContext(AppContext);
   const isFav = favorites.includes(plant.id);
-  const engName = ENG_MAP[plant.id] || 'plant';
+  const gradient = CATEGORY_GRADIENT[plant.category] || CATEGORY_GRADIENT['Tanaman Hias'];
+  const emoji = EMOJI_MAP[plant.id] || '🌿';
 
   return (
     <div className="plant-card-v2" onClick={onClick}>
-      <div className="plant-img-wrapper">
-        <img 
-          src={`https://source.unsplash.com/400x400/?${engName},leaf`} 
-          alt={plant.name}
-          onError={(e) => {
-            e.target.style.display = 'none';
-            e.target.nextSibling.style.display = 'flex';
-          }}
-        />
-        <div style={{ display: 'none', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center', fontSize: '50px', background: 'var(--primary-light)' }}>
-          {EMOJI_MAP[plant.id] || '🌿'}
-        </div>
-        
-        <div className="card-badge-top-left">
-          <span className={`badge ${plant.difficulty}`}>{plant.difficulty}</span>
-        </div>
-        <button 
-          className="card-heart-top-right"
-          onClick={(e) => { e.stopPropagation(); toggleFavorite(plant.id); }}
-        >
-          <Heart size={16} className={`heart-icon ${isFav ? 'active' : ''}`} color="white" />
-        </button>
+      {/* Unified background: gradient + big emoji */}
+      <div className="plant-emoji-bg" style={{ background: gradient }}>
+        <span style={{ fontSize: '3.5rem', userSelect: 'none', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }}>{emoji}</span>
+      </div>
 
-        <div className="img-overlay">
-          <h3 className="card-title">{plant.name}</h3>
-          <p className="card-subtitle">{plant.scientificName}</p>
+      {/* Gradient overlay with text */}
+      <div
+        className="img-overlay"
+        style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 70%, transparent 100%)' }}
+      >
+        <h3 className="card-title">{plant.name}</h3>
+        <p className="card-subtitle">{plant.scientificName}</p>
+        <div className="card-watering">
+          <Droplets size={12} /> {plant.schedules.watering}x seminggu
         </div>
       </div>
-      <div className="card-info">
-        <Droplets size={14} color="var(--accent)" />
-        <span>{plant.schedules.watering}x seminggu</span>
+
+      {/* Badge top-left */}
+      <div className="card-badge-top-left">
+        <span className={`badge ${plant.difficulty}`}>{plant.difficulty}</span>
       </div>
+
+      {/* Heart top-right */}
+      <button
+        className="card-heart-top-right"
+        onClick={(e) => { e.stopPropagation(); toggleFavorite(plant.id); }}
+      >
+        <Heart size={16} className={`heart-icon ${isFav ? 'active' : ''}`} color="white" />
+      </button>
     </div>
   );
 }
