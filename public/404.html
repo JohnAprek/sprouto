@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script>
+      const path = window.location.pathname;
+      const base = '/tanamanku';
+      const newPath = path.startsWith(base) ? path.slice(base.length) : path;
+      sessionStorage.setItem('redirect', newPath || '/');
+      window.location.replace(base + '/');
+    </script>
+  </head>
+</html>

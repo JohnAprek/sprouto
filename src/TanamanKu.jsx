@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { HashRouter as Router, Routes, Route, useNavigate, useParams, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate, useParams, useLocation } from 'react-router-dom';
 import { 
   Home as HomeIcon, BookOpen, Sprout, Heart, Bot,
   Search, User, ArrowLeft, Moon, Sun, Camera, Send, Calendar, Bell, CheckSquare, Square
@@ -60,7 +60,7 @@ export default function TanamanKu() {
 
   return (
     <AppContext.Provider value={contextValue}>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <div className="app-container">
           <Header />
           <Routes>
