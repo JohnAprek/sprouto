@@ -1,22 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { HashRouter as Router, Routes, Route, useNavigate, useParams, useLocation } from 'react-router-dom';
 import { 
-  Leaf, Search, Heart, MessageSquare, BookOpen, User, 
-  ArrowLeft, Moon, Sun, Camera, Send, Calendar, Bell, CheckCircle
+  Home as HomeIcon, BookOpen, Sprout, Heart, Bot,
+  Search, User, ArrowLeft, Moon, Sun, Camera, Send, Calendar, Bell, CheckSquare, Square
 } from 'lucide-react';
 import { addDays, format } from 'date-fns';
 import { id as localeId } from 'date-fns/locale';
-import Anthropic from '@anthropic-ai/sdk';
 
 import plantData from './data/plants.json';
 
-// Initialize Anthropic Client
-const anthropic = new Anthropic({
-  apiKey: import.meta.env.VITE_ANTHROPIC_API_KEY || 'dummy-key',
-  dangerouslyAllowBrowser: true,
-});
-
-// --- Custom Hooks for LocalStorage ---
+// --- Custom Hook LocalStorage ---
 function useLocalStorage(key, initialValue) {
   const [storedValue, setStoredValue] = useState(() => {
     try {
@@ -39,14 +32,13 @@ function useLocalStorage(key, initialValue) {
   return [storedValue, setValue];
 }
 
-// --- Contexts ---
 const AppContext = React.createContext();
 
 // --- Main App Wrapper ---
 export default function TanamanKu() {
-  const [isDarkMode, setIsDarkMode] = useLocalStorage('tanamanku-theme', false);
-  const [favorites, setFavorites] = useLocalStorage('tanamanku-favs', []);
-  const [profile, setProfile] = useLocalStorage('tanamanku-profile', { name: 'Pecinta Tanaman', photo: null });
+  const [isDarkMode, setIsDarkMode] = useLocalStorage('tanamanku_theme', false);
+  const [favorites, setFavorites] = useLocalStorage('tanamanku_favorites', []);
+  const [profile, setProfile] = useLocalStorage('tanamanku_profile', { name: 'Pecinta Tanaman', photo: null });
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
@@ -73,10 +65,10 @@ export default function TanamanKu() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/encyclopedia" element={<Encyclopedia />} />
-            <Route path="/plant/:id" element={<PlantDetail />} />
-            <Route path="/guide" element={<BeginnerGuide />} />
-            <Route path="/favorites" element={<Favorites />} />
+            <Route path="/ensiklopedia" element={<Encyclopedia />} />
+            <Route path="/tanaman/:id" element={<PlantDetail />} />
+            <Route path="/pemula" element={<BeginnerGuide />} />
+            <Route path="/favorit" element={<Favorites />} />
             <Route path="/chat" element={<AIChat />} />
             <Route path="/profile" element={<Profile />} />
           </Routes>
@@ -87,12 +79,12 @@ export default function TanamanKu() {
   );
 }
 
-// --- Header Component ---
+// --- Header ---
 function Header() {
   const { isDarkMode, setIsDarkMode } = React.useContext(AppContext);
   const navigate = useNavigate();
   const location = useLocation();
-  const showBack = location.pathname !== '/' && location.pathname !== '/encyclopedia' && location.pathname !== '/guide' && location.pathname !== '/favorites' && location.pathname !== '/chat';
+  const showBack = !['/', '/ensiklopedia', '/pemula', '/favorit', '/chat'].includes(location.pathname);
 
   return (
     <header className="app-header">
@@ -100,7 +92,7 @@ function Header() {
         {showBack ? (
           <button className="icon-btn" onClick={() => navigate(-1)}><ArrowLeft size={24} /></button>
         ) : (
-          <Leaf size={28} />
+          <Sprout size={28} />
         )}
         <h1>TanamanKu</h1>
       </div>
@@ -124,11 +116,11 @@ function BottomNav() {
   const location = useLocation();
   
   const navItems = [
-    { path: '/', icon: <Leaf size={24} />, label: 'Beranda' },
-    { path: '/encyclopedia', icon: <Search size={24} />, label: 'Ensiklopedia' },
-    { path: '/guide', icon: <BookOpen size={24} />, label: 'Panduan' },
-    { path: '/favorites', icon: <Heart size={24} />, label: 'Favorit' },
-    { path: '/chat', icon: <MessageSquare size={24} />, label: 'AI Chat' }
+    { path: '/', icon: <HomeIcon size={24} />, label: 'Beranda' },
+    { path: '/ensiklopedia', icon: <BookOpen size={24} />, label: 'Ensiklopedia' },
+    { path: '/pemula', icon: <Sprout size={24} />, label: 'Panduan' },
+    { path: '/favorit', icon: <Heart size={24} />, label: 'Favorit' },
+    { path: '/chat', icon: <Bot size={24} />, label: 'AI Chat' }
   ];
 
   return (
@@ -147,7 +139,7 @@ function BottomNav() {
   );
 }
 
-// --- 1. Beranda (Home) ---
+// --- 1. Beranda ---
 function Home() {
   const navigate = useNavigate();
   return (
@@ -155,21 +147,20 @@ function Home() {
       <div className="card" style={{ marginBottom: '20px', backgroundColor: 'var(--primary)', color: 'white' }}>
         <h2>Selamat Datang!</h2>
         <p style={{ opacity: 0.9, marginTop: '8px', fontSize: '0.9rem' }}>
-          Jelajahi ensiklopedia tanaman, gunakan AI Chatbot untuk bertanya, atau mulai panduan pemula hari ini.
+          Jelajahi ensiklopedia tanaman, gunakan AI Chatbot, atau ikuti panduan pemula hari ini.
         </p>
       </div>
-
       <h3 style={{ marginBottom: '12px' }}>Pilihan Populer</h3>
       <div className="plant-list">
         {plantData.slice(0, 3).map(plant => (
-          <PlantCard key={plant.id} plant={plant} onClick={() => navigate(`/plant/${plant.id}`)} />
+          <PlantCard key={plant.id} plant={plant} onClick={() => navigate(`/tanaman/${plant.id}`)} />
         ))}
       </div>
     </main>
   );
 }
 
-// --- 2. Ensiklopedia (Search & Filter) ---
+// --- 2. Ensiklopedia ---
 function Encyclopedia() {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState('');
@@ -215,7 +206,7 @@ function Encyclopedia() {
 
       <div className="plant-list">
         {filtered.length > 0 ? (
-          filtered.map(plant => <PlantCard key={plant.id} plant={plant} onClick={() => navigate(`/plant/${plant.id}`)} />)
+          filtered.map(plant => <PlantCard key={plant.id} plant={plant} onClick={() => navigate(`/tanaman/${plant.id}`)} />)
         ) : (
           <p style={{ textAlign: 'center', marginTop: '20px', color: 'var(--text-muted)' }}>Tidak ada tanaman ditemukan.</p>
         )}
@@ -224,28 +215,41 @@ function Encyclopedia() {
   );
 }
 
-// --- Reusable Plant Card ---
 function PlantCard({ plant, onClick }) {
+  const { favorites, toggleFavorite } = React.useContext(AppContext);
+  const isFav = favorites.includes(plant.id);
+
   return (
-    <div className="card" style={{ display: 'flex', gap: '12px', cursor: 'pointer', padding: '12px' }} onClick={onClick}>
-      <div style={{ width: '80px', height: '80px', borderRadius: '8px', backgroundColor: 'var(--border-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
-        <Leaf size={32} />
+    <div className="card" style={{ display: 'flex', gap: '12px', cursor: 'pointer', padding: '12px', position: 'relative' }} onClick={onClick}>
+      <button 
+        className="icon-btn" 
+        style={{ position: 'absolute', top: '8px', right: '8px', color: isFav ? '#ef4444' : 'var(--border-color)', padding: 0 }}
+        onClick={(e) => { e.stopPropagation(); toggleFavorite(plant.id); }}
+      >
+        <Heart size={20} fill={isFav ? '#ef4444' : 'none'} />
+      </button>
+
+      <div style={{ width: '80px', height: '80px', borderRadius: '8px', backgroundColor: 'var(--bg-color)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
+        <Sprout size={32} />
       </div>
-      <div style={{ flex: 1 }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+      <div style={{ flex: 1, paddingRight: '20px' }}>
+        <div style={{ display: 'flex', gap: '8px', alignItems: 'center', flexWrap: 'wrap' }}>
           <h3 style={{ fontSize: '1.05rem', fontWeight: '600' }}>{plant.name}</h3>
-          <span className={`badge ${plant.difficulty}`}>{plant.difficulty}</span>
         </div>
-        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontStyle: 'italic', marginBottom: '6px' }}>{plant.scientificName}</p>
-        <span style={{ fontSize: '0.75rem', color: 'var(--primary-dark)', backgroundColor: 'var(--bg-color)', padding: '2px 6px', borderRadius: '4px' }}>
-          {plant.category}
-        </span>
+        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontStyle: 'italic', margin: '2px 0 6px 0' }}>{plant.scientificName}</p>
+        
+        <div style={{ display: 'flex', gap: '6px' }}>
+          <span className={`badge ${plant.difficulty}`}>{plant.difficulty}</span>
+          <span style={{ fontSize: '0.75rem', color: 'var(--primary-dark)', backgroundColor: 'var(--bg-color)', padding: '2px 6px', borderRadius: '4px' }}>
+            {plant.category}
+          </span>
+        </div>
       </div>
     </div>
   );
 }
 
-// --- 3. Plant Detail (Calendar & Reminders) ---
+// --- 3. Plant Detail ---
 function PlantDetail() {
   const { id } = useParams();
   const { favorites, toggleFavorite } = React.useContext(AppContext);
@@ -276,7 +280,7 @@ function PlantDetail() {
   return (
     <div style={{ paddingBottom: '80px' }}>
       <div style={{ height: '200px', backgroundColor: 'var(--primary-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', position: 'relative' }}>
-        <Leaf size={80} style={{ opacity: 0.3 }} />
+        <Sprout size={80} style={{ opacity: 0.3 }} />
         <button 
           className="icon-btn" 
           style={{ position: 'absolute', bottom: '16px', right: '16px', backgroundColor: 'rgba(0,0,0,0.3)' }}
@@ -336,53 +340,120 @@ function PlantDetail() {
 }
 
 // --- 4. Panduan Pemula ---
+const guideData = [
+  {
+    title: "Hari 0 - Persiapan",
+    tasks: [
+      { id: "h0-1", text: "Pilih tanaman yang tepat untuk pemula" },
+      { id: "h0-2", text: "Siapkan pot dengan lubang drainase" },
+      { id: "h0-3", text: "Pilih media tanam (campuran tanah + sekam + cocopeat)" },
+      { id: "h0-4", text: "Tentukan lokasi berdasarkan kebutuhan cahaya" },
+      { id: "h0-5", text: "Siapkan alat dasar (semprotan, sekop kecil)" }
+    ]
+  },
+  {
+    title: "Hari 1-3 - Fase Adaptasi",
+    tasks: [
+      { id: "h1-1", text: "Jangan langsung disiram banyak (cukup lembab)" },
+      { id: "h1-2", text: "Taruh di tempat teduh dulu (cahaya tidak langsung)" },
+      { id: "h1-3", text: "Jangan panik kalau ada daun layu (transplant shock normal)" },
+      { id: "h1-4", text: "Cek tanah sebelum siram: tusuk jari 2-3cm" }
+    ]
+  },
+  {
+    title: "Hari 4-7 - Membangun Rutinitas",
+    tasks: [
+      { id: "h4-1", text: "Mulai jadwal penyiraman tetap (cek pagi hari)" },
+      { id: "h4-2", text: "Perhatikan tanda pertumbuhan pertama" },
+      { id: "h4-3", text: "Pindahkan ke lokasi permanen" },
+      { id: "h4-4", text: "Foto tanaman sebagai baseline hari ke-7" }
+    ]
+  },
+  {
+    title: "Minggu 2-4 - Perkembangan Awal",
+    tasks: [
+      { id: "m2-1", text: "Pupuk pertama dosis SETENGAH dari takaran kemasan" },
+      { id: "m2-2", text: "Cek kondisi akar (keluar dari lubang = butuh repot)" },
+      { id: "m2-3", text: "Bersihkan daun dari debu untuk fotosintesis optimal" },
+      { id: "m2-4", text: "Amati hama di bagian bawah daun" }
+    ]
+  },
+  {
+    title: "Bulan 1-3 - Perawatan Rutin",
+    tasks: [
+      { id: "b1-1", text: "Pupuk rutin sebulan sekali" },
+      { id: "b1-2", text: "Repotting jika diperlukan (pot 2-3cm lebih besar)" },
+      { id: "b1-3", text: "Pangkas daun mati/kuning dengan gunting bersih" },
+      { id: "b1-4", text: "Evaluasi lokasi: daun pucat = kurang cahaya" }
+    ]
+  },
+  {
+    title: "Bulan 3+ - Berkembang & Berbagi",
+    tasks: [
+      { id: "b3-1", text: "Coba propagasi (stek batang/daun)" },
+      { id: "b3-2", text: "Berbagi stek dengan teman" },
+      { id: "b3-3", text: "Naik level ke tanaman 'sedang'" },
+      { id: "b3-4", text: "Dokumentasi: bandingkan foto hari 1 vs sekarang" }
+    ]
+  }
+];
+
 function BeginnerGuide() {
-  const [progress, setProgress] = useLocalStorage('tanamanku-guide', []);
+  const [checkedTasks, setCheckedTasks] = useLocalStorage('tanamanku_guide_tasks', []);
 
-  const guideSteps = [
-    { id: 'day0', title: 'Hari 0: Persiapan', desc: 'Pilih tanaman, pot, media tanam, lokasi, dan alat.' },
-    { id: 'day1-3', title: 'Hari 1-3: Fase Adaptasi', desc: 'Jangan over-watering, taruh di tempat teduh. Transplant shock adalah hal normal.' },
-    { id: 'day4-7', title: 'Hari 4-7: Membangun Rutinitas', desc: 'Tetapkan jadwal siram, amati pertumbuhan awal, pindah ke lokasi permanen.' },
-    { id: 'week2-4', title: 'Minggu 2-4: Perkembangan Awal', desc: 'Mulai pupuk ringan, cek perkembangan akar, bersihkan daun, amati hama.' },
-    { id: 'month1-3', title: 'Bulan 1-3: Perawatan Rutin', desc: 'Pupuk bulanan, repotting jika akar penuh, pangkas daun mati, evaluasi lokasi.' },
-    { id: 'month3+', title: 'Bulan 3+: Berkembang & Berbagi', desc: 'Propagasi/stek tanaman, berbagi dengan teman, eksplorasi tanaman baru.' }
-  ];
+  const totalTasks = guideData.reduce((acc, curr) => acc + curr.tasks.length, 0);
+  const percentage = Math.round((checkedTasks.length / totalTasks) * 100) || 0;
 
-  const toggleStep = (id) => {
-    if (progress.includes(id)) setProgress(progress.filter(s => s !== id));
-    else setProgress([...progress, id]);
+  const toggleTask = (taskId) => {
+    if (checkedTasks.includes(taskId)) {
+      setCheckedTasks(checkedTasks.filter(id => id !== taskId));
+    } else {
+      setCheckedTasks([...checkedTasks, taskId]);
+    }
   };
-
-  const percentage = Math.round((progress.length / guideSteps.length) * 100);
 
   return (
     <main className="main-content">
       <div className="card" style={{ marginBottom: '24px' }}>
-        <h3>Perjalanan Pemula</h3>
-        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Ikuti panduan langkah demi langkah ini untuk menjadi ahli tanaman.</p>
+        <h3>Panduan Pemula</h3>
+        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Perjalanan hari ke-0 hingga mahir merawat tanaman.</p>
         <div className="progress-bg">
           <div className="progress-fill" style={{ width: `${percentage}%` }}></div>
         </div>
         <p style={{ fontSize: '0.8rem', textAlign: 'right', marginTop: '4px', fontWeight: 'bold' }}>{percentage}% Selesai</p>
       </div>
 
-      <div>
-        {guideSteps.map(step => {
-          const isDone = progress.includes(step.id);
-          return (
-            <div key={step.id} className="timeline-item" onClick={() => toggleStep(step.id)} style={{ cursor: 'pointer' }}>
-              <div className={`timeline-icon ${isDone ? 'completed' : ''}`}>
-                {isDone ? <CheckCircle size={20} /> : <div style={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: 'currentColor' }} />}
-              </div>
-              <div className="timeline-content">
-                <h4 style={{ fontSize: '1rem', marginBottom: '4px', color: isDone ? 'var(--text-muted)' : 'var(--text-main)', textDecoration: isDone ? 'line-through' : 'none' }}>
-                  {step.title}
-                </h4>
-                <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{step.desc}</p>
-              </div>
+      <div style={{ paddingLeft: '8px' }}>
+        {guideData.map((section, idx) => (
+          <div key={idx} style={{ marginBottom: '24px' }}>
+            <h4 style={{ fontSize: '1.05rem', marginBottom: '12px', color: 'var(--primary)' }}>{section.title}</h4>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              {section.tasks.map(task => {
+                const isDone = checkedTasks.includes(task.id);
+                return (
+                  <div 
+                    key={task.id} 
+                    onClick={() => toggleTask(task.id)}
+                    style={{ 
+                      display: 'flex', alignItems: 'flex-start', gap: '10px', 
+                      cursor: 'pointer', padding: '8px', 
+                      backgroundColor: 'var(--surface)', borderRadius: '8px',
+                      border: '1px solid var(--border-color)',
+                      opacity: isDone ? 0.7 : 1
+                    }}
+                  >
+                    <div style={{ color: isDone ? 'var(--primary)' : 'var(--text-muted)', marginTop: '2px' }}>
+                      {isDone ? <CheckSquare size={20} /> : <Square size={20} />}
+                    </div>
+                    <span style={{ fontSize: '0.9rem', textDecoration: isDone ? 'line-through' : 'none' }}>
+                      {task.text}
+                    </span>
+                  </div>
+                );
+              })}
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
     </main>
   );
@@ -405,7 +476,7 @@ function Favorites() {
       ) : (
         <div className="plant-list">
           {favPlants.map(plant => (
-            <PlantCard key={plant.id} plant={plant} onClick={() => navigate(`/plant/${plant.id}`)} />
+            <PlantCard key={plant.id} plant={plant} onClick={() => navigate(`/tanaman/${plant.id}`)} />
           ))}
         </div>
       )}
@@ -413,20 +484,21 @@ function Favorites() {
   );
 }
 
-// --- 6. AI Chatbot & Plant ID ---
+// --- 6. AI Chatbot ---
 function AIChat() {
   const [messages, setMessages] = useState([
-    { role: 'assistant', content: 'Halo! Saya asisten ahli tanaman Anda. Ada yang bisa saya bantu atau Anda ingin saya mengidentifikasi tanaman dari foto?' }
+    { role: 'assistant', content: 'Halo! Saya ahli tanaman berbahasa Indonesia. Tanyakan soal perawatan atau upload foto tanaman untuk saya identifikasi.' }
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const fileInputRef = useRef(null);
 
+  const proxyUrl = import.meta.env.VITE_AI_PROXY_URL;
+
   const sendMessage = async (textContent, base64Image = null) => {
     if (!textContent && !base64Image) return;
     
-    const newUserMsg = { role: 'user', content: textContent || 'Tolong identifikasi tanaman ini.' };
-    // If image is attached, we store a local representation for UI, but send actual base64 to Claude.
+    const newUserMsg = { role: 'user', content: textContent || 'Tolong identifikasi tanaman ini dan cara perawatannya.' };
     if (base64Image) newUserMsg.image = base64Image;
 
     const newMessages = [...messages, newUserMsg];
@@ -435,36 +507,47 @@ function AIChat() {
     setLoading(true);
 
     try {
-      // Prepare content block for Claude API
       const contentBlock = [];
       if (base64Image) {
-        // Claude expects base64 without data URI prefix
         const base64Data = base64Image.split(',')[1];
         const mediaType = base64Image.split(';')[0].split(':')[1];
         contentBlock.push({ type: 'image', source: { type: 'base64', media_type: mediaType, data: base64Data } });
       }
       if (textContent) contentBlock.push({ type: 'text', text: textContent });
-      if (!textContent && base64Image) contentBlock.push({ type: 'text', text: 'Tolong identifikasi tanaman ini beserta detail perawatannya dalam bahasa Indonesia.' });
+      if (!textContent && base64Image) contentBlock.push({ type: 'text', text: 'Tolong identifikasi tanaman ini beserta detail perawatannya secara singkat dan praktis.' });
 
-      // Build history for API
       const apiMessages = newMessages.map(m => {
         if (m.role === 'assistant') return { role: 'assistant', content: m.content };
-        // For user, if it was an image message we reconstruct it
         if (m.image && m === newUserMsg) return { role: 'user', content: contentBlock };
         return { role: 'user', content: m.content };
       }).filter(m => m.content);
 
-      const response = await anthropic.messages.create({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 1000,
-        system: "Anda adalah seorang ahli botani dan perawatan tanaman profesional yang fasih berbahasa Indonesia. Berikan jawaban yang ramah, informatif, dan mudah dipahami oleh pemula.",
-        messages: apiMessages
-      });
+      let assistantText = '';
 
-      setMessages([...newMessages, { role: 'assistant', content: response.content[0].text }]);
+      if (proxyUrl) {
+        // Fetch via Cloudflare Worker Proxy
+        const response = await fetch(proxyUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            model: 'claude-sonnet-4-20250514', // Expected by prompt
+            max_tokens: 1000,
+            system: "Kamu ahli tanaman berbahasa Indonesia, spesialisasi perawatan tanaman rumahan, jawab singkat dan praktis.",
+            messages: apiMessages
+          })
+        });
+        const data = await response.json();
+        if (data.error) throw new Error(data.error);
+        assistantText = data.content[0].text;
+      } else {
+        // Fallback message if worker isn't setup
+        assistantText = "Maaf, Proxy AI belum dikonfigurasi (VITE_AI_PROXY_URL kosong). Karena keamanan, request ke Anthropic tidak boleh dari browser langsung. Silakan deploy worker/ai-proxy.js di Cloudflare dan masukkan URL-nya ke .env";
+      }
+
+      setMessages([...newMessages, { role: 'assistant', content: assistantText }]);
     } catch (error) {
       console.error(error);
-      setMessages([...newMessages, { role: 'assistant', content: 'Maaf, terjadi kesalahan saat menghubungi server AI. Pastikan API Key Anda valid.' }]);
+      setMessages([...newMessages, { role: 'assistant', content: 'Terjadi kesalahan saat menghubungi API: ' + error.message }]);
     } finally {
       setLoading(false);
     }
@@ -474,9 +557,7 @@ function AIChat() {
     const file = e.target.files[0];
     if (file) {
       const reader = new FileReader();
-      reader.onloadend = () => {
-        sendMessage(input, reader.result);
-      };
+      reader.onloadend = () => sendMessage(input, reader.result);
       reader.readAsDataURL(file);
     }
   };
@@ -514,7 +595,7 @@ function AIChat() {
             onChange={e => setInput(e.target.value)}
             onKeyPress={e => e.key === 'Enter' && sendMessage(input)}
           />
-          <button className="btn-primary" style={{ padding: '10px' }} onClick={() => sendMessage(input)} disabled={loading || !input.trim()}>
+          <button className="btn-primary" style={{ padding: '10px' }} onClick={() => sendMessage(input)} disabled={loading || (!input.trim() && !fileInputRef.current?.value)}>
             <Send size={20} />
           </button>
         </div>
@@ -555,7 +636,7 @@ function Profile() {
         <div style={{ display: 'flex', justifyContent: 'center', gap: '32px', marginTop: '24px' }}>
           <div>
             <h3 style={{ fontSize: '1.5rem', color: 'var(--primary)' }}>{favorites.length}</h3>
-            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Tanaman Favorit</p>
+            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Koleksi Tanaman</p>
           </div>
           <div>
             <h3 style={{ fontSize: '1.5rem', color: 'var(--primary)' }}>Level 1</h3>
