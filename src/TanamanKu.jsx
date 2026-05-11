@@ -39,7 +39,7 @@ const AppContext = React.createContext();
 
 const EMOJI_MAP = {
   'hias-1': '🌿', 'hias-2': '🌺', 'hias-3': '🌵', 'hias-4': '🌸', 'hias-5': '🌳',
-  'hias-6': '🍃', 'hias-7': '🌾', 'hias-8': '🪴', 'hias-9': '🌵', 'hias-10': '🌈',
+  'hias-6': '🍃', 'hias-7': '💚', 'hias-8': '🪴', 'hias-9': '🌵', 'hias-10': '🌺',
   'sayur-1': '🥬', 'sayur-2': '🌱', 'sayur-3': '🍅', 'sayur-4': '🌶️', 'sayur-5': '🥗', 'sayur-6': '🥦',
   'sayur-7': '🍆', 'sayur-8': '🥒', 'sayur-9': '🥕', 'sayur-10': '🌿',
   'obat-1': '🌼', 'obat-2': '🌿', 'obat-3': '🍃', 'obat-4': '🌱', 'obat-5': '🫐',
@@ -346,12 +346,12 @@ function Encyclopedia() {
 
   const categories = [
     { id: 'Semua', icon: '🌿' },
-    { id: 'Tanaman Hias', icon: '🏠' },
-    { id: 'Sayuran', icon: '🥗' },
-    { id: 'Buah-buahan', icon: '🍊' },
-    { id: 'Obat', icon: '💊' },
-    { id: 'Herbal', icon: '🌾' },
-    { id: 'Aromaterapi', icon: '💜' }
+    { id: 'Tanaman Hias', icon: '🏠', label: 'Hias' },
+    { id: 'Sayuran', icon: '🥗', label: 'Sayuran' },
+    { id: 'Buah-buahan', icon: '🍊', label: 'Buah' },
+    { id: 'Obat', icon: '💊', label: 'Obat' },
+    { id: 'Herbal', icon: '🌾', label: 'Herbal' },
+    { id: 'Aromaterapi', icon: '💜', label: 'Aroma' }
   ];
   
   const difficulties = ['Semua', 'mudah', 'sedang', 'sulit'];
@@ -388,7 +388,7 @@ function Encyclopedia() {
       <div className="filter-scroll">
         {categories.map(c => (
           <button key={c.id} className={`filter-chip ${activeCategory === c.id ? 'active' : ''}`} onClick={() => setActiveCategory(c.id)}>
-            <span>{c.icon}</span> {c.id}
+            <span>{c.icon}</span> {c.label || c.id}
           </button>
         ))}
       </div>
@@ -453,7 +453,7 @@ function PlantCard({ plant, onClick }) {
         <h3 className="card-title">{plant.name}</h3>
         <p className="card-subtitle">{plant.scientificName}</p>
         <div className="card-watering">
-          <Droplets size={12} /> {plant.schedules.watering}x seminggu
+          <Droplets size={12} /> setiap {plant.schedules.watering} hari
         </div>
       </div>
 
