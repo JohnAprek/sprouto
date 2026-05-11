@@ -194,27 +194,25 @@ body {
   font-weight: 600;
   cursor: pointer;
   gap: 4px;
-  padding: 6px 10px;
+  padding: 6px 8px;
   border-radius: var(--radius-pill);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  min-width: 0;
   flex: 1;
 }
 
 .nav-item span {
   display: block;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .nav-item.active {
   color: white;
   background-color: #166534;
   flex-direction: row;
-  font-size: 0.8rem;
-  padding: 8px 14px;
+  font-size: 0.78rem;
+  padding: 8px 12px;
   flex: none;
+  gap: 6px;
 }
 
 /* Badges */
@@ -234,26 +232,28 @@ body {
 /* Filter Chips */
 .filter-scroll {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   overflow-x: auto;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
+  padding-right: 16px;
   scrollbar-width: none;
+  margin-bottom: 10px;
 }
 .filter-scroll::-webkit-scrollbar { display: none; }
 
 .filter-chip {
-  padding: 8px 16px;
+  padding: 7px 14px;
   border-radius: var(--radius-pill);
   background: white;
   border: 1px solid #dcfce7;
   color: #166534;
   white-space: nowrap;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   transition: all 0.2s;
   flex-shrink: 0;
 }
@@ -261,7 +261,7 @@ body {
   background: #166534;
   color: white;
   border-color: #166534;
-  box-shadow: 0 4px 12px rgba(22,101,52,0.3);
+  box-shadow: 0 3px 10px rgba(22,101,52,0.3);
 }
 
 /* Plant Grid Cards */
@@ -284,14 +284,13 @@ body {
 }
 .plant-card-v2:active { transform: scale(0.97); }
 
-/* Emoji placeholder (no image) */
 .plant-emoji-bg {
   width: 100%;
   height: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 28px;
   font-size: 3.5rem;
   line-height: 1;
   position: relative;
@@ -301,23 +300,24 @@ body {
   position: absolute;
   bottom: 0; left: 0; right: 0;
   height: 55%;
+  background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.15) 75%, transparent 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 12px;
+  padding: 10px 12px;
 }
 
 .card-title {
   color: white;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 700;
   line-height: 1.2;
   text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 .card-subtitle {
-  color: rgba(255,255,255,0.85);
-  font-size: 0.68rem;
+  color: rgba(255,255,255,0.82);
+  font-size: 0.65rem;
   font-style: italic;
   margin-top: 2px;
   text-shadow: 0 1px 2px rgba(0,0,0,0.5);
@@ -325,7 +325,7 @@ body {
 
 .card-watering {
   color: rgba(255,255,255,0.85);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 600;
   margin-top: 4px;
   display: flex;
