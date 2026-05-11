@@ -385,12 +385,14 @@ function Encyclopedia() {
         />
       </div>
 
-      <div className="filter-scroll">
-        {categories.map(c => (
-          <button key={c.id} className={`filter-chip ${activeCategory === c.id ? 'active' : ''}`} onClick={() => setActiveCategory(c.id)}>
-            <span>{c.icon}</span> {c.label || c.id}
-          </button>
-        ))}
+      <div className="filter-scroll-wrapper">
+        <div className="filter-scroll">
+          {categories.map(c => (
+            <button key={c.id} className={`filter-chip ${activeCategory === c.id ? 'active' : ''}`} onClick={() => setActiveCategory(c.id)}>
+              <span>{c.icon}</span> {c.label || c.id}
+            </button>
+          ))}
+        </div>
       </div>
       <div style={{ display: 'flex', gap: '8px', marginBottom: '12px', alignItems: 'center' }}>
         <div className="filter-scroll" style={{ flex: 1, marginBottom: 0 }}>
