@@ -134,6 +134,7 @@ function AppShell({ toast, setToast }) {
           <Route path="/ensiklopedia" element={<Encyclopedia />} />
           <Route path="/tanaman/:id" element={<PlantDetail />} />
           <Route path="/pemula" element={<PlantGuide />} />
+          <Route path="/panduan/:id" element={<PlantGrowingGuide />} />
           <Route path="/favorit" element={<Favorites />} />
           <Route path="/chat" element={<AIChat />} />
           <Route path="/profile" element={<Profile />} />
@@ -759,7 +760,7 @@ function PlantGuide() {
           <h3 style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '10px', paddingBottom: '6px', borderBottom: '1px solid var(--border-color)' }}>{cat}</h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
             {plants.map(plant => (
-              <div key={plant.id} onClick={() => navigate(`/tanaman/${plant.id}`)}
+              <div key={plant.id} onClick={() => navigate(`/panduan/${plant.id}`)}
                 style={{ background: 'var(--surface)', borderRadius: '14px', padding: '14px 16px', display: 'flex', alignItems: 'center', gap: '14px', boxShadow: 'var(--shadow-sm)', cursor: 'pointer', transition: 'transform 0.15s' }}
                 onMouseEnter={e => e.currentTarget.style.transform = 'translateX(4px)'}
                 onMouseLeave={e => e.currentTarget.style.transform = 'translateX(0)'}>
@@ -1105,5 +1106,106 @@ function CareCalendar() {
         </div>
       )}
     </main>
+  );
+}
+
+// --- Plant Growing Guide (Timeline dari hari 0 sampai panen) ---
+function generateTimeline(plant) {
+  const isVeg = plant.category === 'Sayuran';
+  const isFruit = plant.category === 'Buah-buahan';
+  const isHerbal = plant.category === 'Herbal';
+  const isMed = plant.category === 'Obat';
+  const isAroma = plant.category === 'Aromaterapi';
+  const common = [
+    { day: 0, phase: '?? Persiapan', title: 'Siapkan Media Tanam', icon: '??',
+      steps: ['Pilih pot/polybag ukuran sesuai tanaman', 'Campurkan tanah subur + kompos + pasir (2:1:1)', 'Pastikan ada lubang drainase di dasar pot', 'Tentukan lokasi sesuai kebutuhan sinar matahari tanaman'] },
+    { day: 1, phase: '?? Penanaman', title: 'Tanam Benih atau Bibit', icon: '??',
+      steps: [isVeg || isFruit ? 'Tanam benih 1-2 cm atau langsung tanam bibit' : 'Tanam bibit/stek dengan akar utuh', 'Padatkan tanah di sekitar tanaman perlahan', 'Siram hingga tanah lembap merata', 'Beri label nama dan tanggal tanam'] },
+  ];
+  const vegMid = [
+    { day: 7, phase: '?? Perkecambahan', title: 'Benih Berkecambah', icon: '??',
+      steps: ['Jaga tanah tetap lembap setiap hari', 'Hindari matahari terik saat sprout baru muncul', 'Tipiskan jika terlalu rapat (jarak 10 cm)', 'Tambah mulsa tipis untuk menjaga kelembapan'] },
+    { day: 14, phase: '?? Awal', title: '2 Minggu — Daun Pertama', icon: '??',
+      steps: ['Beri pupuk nitrogen encer setiap 2 minggu', 'Siram setiap ' + plant.schedules.watering + ' hari sekali', 'Amati tanda hama atau penyakit', 'Bersihkan gulma di sekitar tanaman'] },
+    { day: 30, phase: '?? Aktif', title: '1 Bulan — Tumbuh Pesat', icon: '??',
+      steps: ['Tambah pupuk kalium untuk perkembangan optimal', 'Pasang ajir/penyangga jika tanaman mulai tinggi', 'Pangkas daun tua atau rusak', 'Beri pupuk tambahan setiap ' + plant.schedules.fertilizer + ' hari'] },
+    { day: (plant.name.includes('Bayam') ? 21 : plant.name.includes('Kangkung') ? 25 : plant.name.includes('Selada') ? 35 : plant.name.includes('Sawi') ? 30 : 45),
+      phase: '?? Panen', title: 'Siap Dipanen!', icon: '??',
+      steps: ['Panen pagi hari untuk kesegaran terbaik', 'Gunakan gunting bersih, hindari mencabut paksa', 'Sisakan bagian bawah untuk pertumbuhan baru', 'Cuci bersih sebelum dikonsumsi'] },
+  ];
+  const fruitMid = [
+    { day: 14, phase: '?? Vegetatif', title: 'Pertumbuhan Daun Aktif', icon: '??',
+      steps: ['Siram setiap hari secara konsisten', 'Pupuk NPK seimbang setiap 2 minggu', 'Pastikan sinar matahari cukup', 'Pangkas daun tidak produktif'] },
+    { day: 45, phase: '?? Pembungaan', title: 'Tanaman Berbunga', icon: '??',
+      steps: ['Kurangi nitrogen, tambah fosfor dan kalium', 'Bantu penyerbukan dengan kuas jika perlu', 'Jaga kelembapan stabil', 'Hindari pemupukan berlebih saat berbunga'] },
+    { day: 90, phase: '?? Pembuahan', title: 'Buah Terbentuk', icon: '??',
+      steps: ['Lakukan penjarangan buah', 'Beri pupuk kalium tinggi', 'Pasang jaring pelindung dari hama', 'Pastikan drainase tetap baik'] },
+    { day: (plant.name.includes('Stroberi') ? 120 : plant.name.includes('Semangka') ? 80 : plant.name.includes('Pepaya') ? 270 : 180),
+      phase: '?? Panen', title: 'Buah Siap Dipanen!', icon: '??',
+      steps: ['Panen saat buah sudah matang sempurna', 'Gunakan gunting tajam, jangan ditarik paksa', 'Simpan di tempat sejuk', 'Beri pupuk untuk persiapan musim berikutnya'] },
+  ];
+  const defMid = [
+    { day: 14, phase: '?? Adaptasi', title: '2 Minggu — Adaptasi', icon: '??',
+      steps: ['Siram setiap ' + plant.schedules.watering + ' hari', 'Perhatikan warna daun — hijau segar artinya sehat', 'Hindari memindahkan pot terlalu sering', 'Beri pupuk starter ringan'] },
+    { day: 30, phase: '?? Aktif', title: '1 Bulan — Tumbuh Subur', icon: '??',
+      steps: ['Pupuk rutin setiap ' + plant.schedules.fertilizer + ' hari', 'Pangkas bagian layu atau mengering', 'Pastikan sirkulasi udara baik', (isAroma || isHerbal || isMed) ? 'Panen daun/ranting bisa dimulai' : 'Amati perkembangan tunas baru'] },
+    { day: 60, phase: '? Dewasa', title: '2 Bulan — Perawatan Rutin', icon: '??',
+      steps: [(isAroma || isHerbal || isMed) ? 'Panen daun/ranting berkala — jangan dipanen habis' : 'Nikmati keindahan tanaman', (plant.schedules.repotting > 0) ? 'Repotting setiap ' + Math.round(plant.schedules.repotting / 30) + ' bulan saat akar padat' : 'Tidak perlu repotting — tanaman di tanah terbuka', 'Lanjutkan jadwal siram dan pupuk', 'Amati tanda hama, penyakit, atau kekurangan nutrisi'] },
+  ];
+  return [...common, ...(isVeg ? vegMid : isFruit ? fruitMid : defMid)];
+}
+
+function PlantGrowingGuide() {
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const plant = plantData.find(p => p.id === id);
+  const [checkedSteps, setCheckedSteps] = useLocalStorage('guide_' + id, []);
+  if (!plant) return React.createElement('div', { style: { padding: '24px' } }, 'Tanaman tidak ditemukan.');
+  const timeline = generateTimeline(plant);
+  const totalSteps = timeline.reduce((acc, t) => acc + t.steps.length, 0);
+  const pct = Math.round((checkedSteps.length / totalSteps) * 100);
+  const toggleStep = (key) => { setCheckedSteps(prev => prev.includes(key) ? prev.filter(k => k !== key) : [...prev, key]); };
+  return (
+    <div style={{ background: 'var(--bg-color)', minHeight: '100vh' }}>
+      <div style={{ background: CATEGORY_GRADIENT[plant.category] || 'linear-gradient(135deg,#166534,#22c55e)', padding: '20px 16px 32px', color: 'white' }}>
+        <button onClick={() => navigate(-1)} style={{ background: 'rgba(255,255,255,0.2)', border: 'none', color: 'white', borderRadius: '50%', width: 36, height: 36, cursor: 'pointer', marginBottom: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}><ArrowLeft size={18} /></button>
+        <div style={{ fontSize: '3rem', marginBottom: '8px' }}>{EMOJI_MAP[plant.id] || '??'}</div>
+        <h1 style={{ fontSize: '1.4rem', fontWeight: 800, marginBottom: '4px' }}>Panduan: {plant.name}</h1>
+        <p style={{ fontSize: '0.8rem', opacity: 0.8, fontStyle: 'italic', marginBottom: '16px' }}>{plant.scientificName}</p>
+        <div style={{ background: 'rgba(255,255,255,0.2)', borderRadius: '50px', height: '8px', marginBottom: '6px' }}>
+          <div style={{ background: 'white', height: '100%', borderRadius: '50px', width: pct + '%', transition: 'width 0.4s' }} />
+        </div>
+        <p style={{ fontSize: '0.78rem', opacity: 0.9 }}>{pct}% selesai · {checkedSteps.length}/{totalSteps} langkah</p>
+      </div>
+      <main style={{ padding: '20px 16px 100px' }}>
+        {timeline.map((phase, pi) => (
+          <div key={pi} style={{ marginBottom: '28px', position: 'relative' }}>
+            {pi < timeline.length - 1 && <div style={{ position: 'absolute', left: '19px', top: '44px', width: '2px', height: 'calc(100% + 4px)', background: 'var(--border-color)', zIndex: 0 }} />}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '12px', position: 'relative', zIndex: 1 }}>
+              <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--primary-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', flexShrink: 0, border: '2px solid var(--primary)' }}>{phase.icon}</div>
+              <div>
+                <p style={{ fontSize: '0.68rem', fontWeight: 700, color: 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{phase.day === 0 ? 'Hari 0' : 'Hari ke-' + phase.day + '+'} · {phase.phase}</p>
+                <p style={{ fontSize: '1rem', fontWeight: 700 }}>{phase.title}</p>
+              </div>
+            </div>
+            <div style={{ marginLeft: '52px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              {phase.steps.map((step, si) => {
+                const key = pi + '-' + si;
+                const done = checkedSteps.includes(key);
+                return (
+                  <div key={si} onClick={() => toggleStep(key)} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', background: 'var(--surface)', padding: '12px', borderRadius: '10px', cursor: 'pointer', boxShadow: 'var(--shadow-sm)', opacity: done ? 0.6 : 1, transition: 'all 0.2s', borderLeft: done ? '3px solid var(--primary)' : '3px solid transparent' }}>
+                    <div style={{ width: 20, height: 20, borderRadius: '50%', border: '2px solid ' + (done ? 'var(--primary)' : 'var(--border-color)'), background: done ? 'var(--primary)' : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '1px', transition: 'all 0.2s' }}>
+                      {done && <span style={{ color: 'white', fontSize: '10px', fontWeight: 700 }}>?</span>}
+                    </div>
+                    <p style={{ fontSize: '0.85rem', lineHeight: 1.5, textDecoration: done ? 'line-through' : 'none', color: done ? 'var(--text-muted)' : 'var(--text-primary)' }}>{step}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+        <button onClick={() => navigate('/tanaman/' + plant.id)} style={{ width: '100%', padding: '14px', borderRadius: '14px', background: 'var(--primary)', color: 'white', border: 'none', fontWeight: 700, cursor: 'pointer', fontSize: '0.95rem', marginTop: '8px' }}>?? Lihat Detail Lengkap {plant.name}</button>
+      </main>
+    </div>
   );
 }
