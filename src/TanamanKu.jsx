@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate, useParams, useLocation } from 'react-router-dom';
 import { 
   Home as HomeIcon, BookOpen, Sprout, Heart,
@@ -653,7 +653,8 @@ function PlantDetail() {
 // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // SECTION: Cara Penanaman (3 Metode)
 // â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-const AI_PROXY = 'https://api-proxy.johnaprek.workers.dev';
+const AI_PROXY = 'https://api-proxy.johnaprek.workers.dev'; // v2 gemini
+const APP_VERSION = '2.1.0'; // cache-bust
 
 async function callAI(type, plantName, plantLatin) {
   const res = await fetch(AI_PROXY, {
