@@ -600,6 +600,13 @@ function PlantDetail() {
         {/* --- PANDUAN MENANAM STATIS --- */}
         <PlantGuideSection plant={plant} />
 
+        {/* --- CARA PENANAMAN (3 METODE) --- */}
+        <PlantingMethodsSection plant={plant} />
+
+        {/* --- PERLENGKAPAN GREENHOUSE --- */}
+        <GreenhouseEquipmentSection plant={plant} />
+
+
         {/* Related Plants */}
         {(() => {
           const related = plantData.filter(p => p.category === plant.category && p.id !== plant.id).slice(0, 4);
@@ -616,6 +623,355 @@ function PlantDetail() {
           );
         })()}
       </main>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────
+// SECTION: Cara Penanaman (3 Metode)
+// ─────────────────────────────────────────
+const AI_PROXY = 'https://api-proxy.johnaprek.workers.dev';
+
+async function callAI(prompt, system) {
+  const res = await fetch(AI_PROXY, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      model: 'claude-haiku-4-5',
+      max_tokens: 2000,
+      temperature: 0.6,
+      system,
+      messages: [{ role: 'user', content: prompt }]
+    })
+  });
+  if (!res.ok) throw new Error('API error ' + res.status);
+  const data = await res.json();
+  if (data.error || data.type === 'error') throw new Error(JSON.stringify(data.error || data));
+  let text = data.content[0].text;
+  const m = text.match(/\{[\s\S]*\}/);
+  if (m) text = m[0];
+  return JSON.parse(text);
+}
+
+function PlantingMethodsSection({ plant }) {
+  const [methods, setMethods] = useLocalStorage('methods_' + plant.id, null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [activeTab, setActiveTab] = useState('pot');
+
+  const generate = async () => {
+    setLoading(true); setError(null);
+    try {
+      const prompt = `Untuk tanaman ${plant.name} (${plant.scientificName}), jelaskan cara penanaman dalam 3 metode dalam Bahasa Indonesia. Format JSON:
+{
+  "methods": [
+    {
+      "id": "pot",
+      "label": "Pot / Polybag",
+      "icon": "🪴",
+      "suitable": true,
+      "suitableNote": "alasan cocok/tidak cocok",
+      "steps": ["langkah 1 detail", "langkah 2 detail"],
+      "tips": "tips khusus metode ini",
+      "potSize": "ukuran pot yang direkomendasikan",
+      "soilMix": "campuran media tanam ideal"
+    },
+    {
+      "id": "ground",
+      "label": "Tanah Langsung",
+      "icon": "🌍",
+      "suitable": true,
+      "suitableNote": "alasan",
+      "steps": ["langkah 1", "langkah 2"],
+      "tips": "tips khusus",
+      "spacing": "jarak tanam antar tanaman",
+      "soilPrep": "persiapan tanah"
+    },
+    {
+      "id": "hydro",
+      "label": "Hidroponik",
+      "icon": "💧",
+      "suitable": true,
+      "suitableNote": "alasan",
+      "steps": ["langkah 1", "langkah 2"],
+      "tips": "tips khusus",
+      "system": "sistem hidroponik yang direkomendasikan",
+      "nutrient": "kebutuhan nutrisi AB mix"
+    }
+  ]
+}
+Sesuaikan dengan karakteristik tanaman: kesulitan ${plant.difficulty}, penyiraman ${plant.schedules.watering} hari sekali, cahaya ${plant.careDetails.sunlight}. Hanya keluarkan JSON valid tanpa teks lain.`;
+      const data = await callAI(prompt, 'Kamu ahli hortikultura Indonesia. Jawab dalam Bahasa Indonesia dengan JSON valid saja.');
+      setMethods({ ...data, generatedAt: new Date().toISOString() });
+      setActiveTab('pot');
+    } catch (e) { setError('Gagal memuat. Coba lagi. (' + e.message + ')'); }
+    finally { setLoading(false); }
+  };
+
+  const currentMethod = methods?.methods?.find(m => m.id === activeTab);
+
+  const InfoBox = ({ label, value, color = '#166534' }) => value ? (
+    <div style={{ background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: '10px', padding: '10px 14px', marginTop: '12px' }}>
+      <span style={{ fontSize: '0.72rem', fontWeight: 700, color, textTransform: 'uppercase', letterSpacing: '0.5px', display: 'block', marginBottom: '4px' }}>{label}</span>
+      <span style={{ fontSize: '0.85rem', color: '#166534', fontWeight: 600 }}>{value}</span>
+    </div>
+  ) : null;
+
+  return (
+    <div style={{ marginTop: '36px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
+        <h3 style={{ fontSize: '1.2rem' }}>🏡 Cara Penanaman</h3>
+        {methods && (
+          <button onClick={generate} disabled={loading} style={{ background: 'none', border: 'none', color: 'var(--primary)', fontSize: '0.78rem', fontWeight: 700, cursor: 'pointer' }}>
+            🔄 Refresh
+          </button>
+        )}
+      </div>
+
+      {!methods && !loading && (
+        <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '24px', textAlign: 'center', boxShadow: 'var(--shadow-sm)' }}>
+          <p style={{ color: 'var(--text-muted)', marginBottom: '14px', fontSize: '0.88rem' }}>
+            Panduan penanaman via Pot, Tanah Langsung, dan Hidroponik khusus untuk {plant.name}.
+          </p>
+          <button className="btn-primary" onClick={generate} style={{ margin: '0 auto' }}>🌱 Generate Metode Penanaman</button>
+          {error && <p style={{ color: '#ef4444', marginTop: '10px', fontSize: '0.82rem' }}>{error}</p>}
+        </div>
+      )}
+
+      {loading && (
+        <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '28px', textAlign: 'center', boxShadow: 'var(--shadow-sm)' }}>
+          <div style={{ width: '36px', height: '36px', margin: '0 auto 14px', border: '3px solid #dcfce7', borderTopColor: 'var(--primary)', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
+          <p style={{ color: 'var(--text-muted)', fontWeight: 600, fontSize: '0.88rem' }}>Menyusun panduan penanaman...</p>
+        </div>
+      )}
+
+      {methods && !loading && (
+        <div style={{ background: 'var(--surface)', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-sm)' }}>
+          {/* Tabs */}
+          <div style={{ display: 'flex', borderBottom: '1px solid var(--border-color)', background: 'var(--bg)' }}>
+            {methods.methods?.map(method => (
+              <button
+                key={method.id}
+                onClick={() => method.suitable && setActiveTab(method.id)}
+                style={{
+                  flex: 1, padding: '12px 8px', border: 'none', cursor: method.suitable ? 'pointer' : 'not-allowed',
+                  background: activeTab === method.id ? 'var(--primary)' : 'transparent',
+                  color: activeTab === method.id ? 'white' : method.suitable ? 'var(--text-main)' : 'var(--text-muted)',
+                  fontWeight: 700, fontSize: '0.78rem', transition: 'all 0.2s',
+                  opacity: method.suitable ? 1 : 0.5,
+                  display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px'
+                }}
+              >
+                <span style={{ fontSize: '1.2rem' }}>{method.icon}</span>
+                <span>{method.label}</span>
+                {!method.suitable && <span style={{ fontSize: '0.6rem', background: '#e5e7eb', color: '#6b7280', padding: '1px 5px', borderRadius: '4px', marginTop: '2px' }}>Tidak Disarankan</span>}
+              </button>
+            ))}
+          </div>
+
+          {/* Tab content */}
+          {currentMethod && (
+            <div style={{ padding: '16px' }}>
+              <div style={{ background: currentMethod.suitable ? '#f0fdf4' : '#fef9f0', border: `1px solid ${currentMethod.suitable ? '#bbf7d0' : '#fde68a'}`, borderRadius: '10px', padding: '10px 14px', marginBottom: '14px', fontSize: '0.82rem', color: currentMethod.suitable ? '#166534' : '#92400e', fontWeight: 600 }}>
+                {currentMethod.suitable ? '✅' : '⚠️'} {currentMethod.suitableNote}
+              </div>
+
+              <p style={{ fontWeight: 700, fontSize: '0.85rem', marginBottom: '8px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Langkah-langkah</p>
+              <ol style={{ paddingLeft: '18px', display: 'flex', flexDirection: 'column', gap: '8px', marginBottom: '0' }}>
+                {currentMethod.steps?.map((step, i) => (
+                  <li key={i} style={{ fontSize: '0.87rem', lineHeight: 1.6, color: 'var(--text-main)' }}>{step}</li>
+                ))}
+              </ol>
+
+              {currentMethod.tips && (
+                <div style={{ background: '#fffbeb', border: '1px solid #fde68a', borderRadius: '10px', padding: '10px 14px', marginTop: '14px' }}>
+                  <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#92400e', textTransform: 'uppercase', letterSpacing: '0.5px', display: 'block', marginBottom: '4px' }}>💡 Tips</span>
+                  <span style={{ fontSize: '0.85rem', color: '#78350f' }}>{currentMethod.tips}</span>
+                </div>
+              )}
+
+              {currentMethod.id === 'pot' && (
+                <>
+                  <InfoBox label="📏 Ukuran Pot" value={currentMethod.potSize} />
+                  <InfoBox label="🌱 Campuran Media Tanam" value={currentMethod.soilMix} />
+                </>
+              )}
+              {currentMethod.id === 'ground' && (
+                <>
+                  <InfoBox label="📐 Jarak Tanam" value={currentMethod.spacing} />
+                  <InfoBox label="🔧 Persiapan Tanah" value={currentMethod.soilPrep} />
+                </>
+              )}
+              {currentMethod.id === 'hydro' && (
+                <>
+                  <InfoBox label="⚙️ Sistem Hidroponik" value={currentMethod.system} />
+                  <InfoBox label="🧪 Nutrisi AB Mix" value={currentMethod.nutrient} />
+                </>
+              )}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────
+// SECTION: Perlengkapan Greenhouse
+// ─────────────────────────────────────────
+function GreenhouseEquipmentSection({ plant }) {
+  const [equip, setEquip] = useLocalStorage('equipment_' + plant.id + '_content', null);
+  const [owned, setOwned] = useLocalStorage('equipment_' + plant.id, []);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [openCats, setOpenCats] = useState({ essential: true, recommended: false, optional: false });
+
+  const generate = async () => {
+    setLoading(true); setError(null);
+    try {
+      const prompt = `Untuk menanam ${plant.name} (${plant.scientificName}) di greenhouse/rumah, buat daftar perlengkapan dalam Bahasa Indonesia. Format JSON:
+{
+  "essential": [
+    { "name": "nama alat", "icon": "emoji", "purpose": "fungsi singkat", "estimatePrice": "Rp X.XXX", "priority": "wajib" }
+  ],
+  "recommended": [
+    { "name": "...", "icon": "...", "purpose": "...", "estimatePrice": "Rp X.XXX", "priority": "disarankan" }
+  ],
+  "optional": [
+    { "name": "...", "icon": "...", "purpose": "...", "estimatePrice": "Rp X.XXX", "priority": "opsional" }
+  ],
+  "totalEstimate": {
+    "essential": "Rp XX.XXX",
+    "recommended": "Rp XX.XXX",
+    "full": "Rp XX.XXX"
+  }
+}
+Sesuaikan dengan karakteristik: kesulitan ${plant.difficulty}, kategori ${plant.category}. Hanya keluarkan JSON valid.`;
+      const data = await callAI(prompt, 'Kamu ahli berkebun Indonesia. Berikan daftar perlengkapan yang realistis dengan harga pasar Indonesia terkini. JSON valid saja.');
+      setEquip({ ...data, generatedAt: new Date().toISOString() });
+    } catch (e) { setError('Gagal memuat. (' + e.message + ')'); }
+    finally { setLoading(false); }
+  };
+
+  const toggleOwned = (key) => setOwned(prev => prev.includes(key) ? prev.filter(k => k !== key) : [...prev, key]);
+  const toggleCat = (cat) => setOpenCats(p => ({ ...p, [cat]: !p[cat] }));
+
+  const parsePrice = (str) => {
+    if (!str) return 0;
+    return parseInt(str.replace(/[^0-9]/g, '')) || 0;
+  };
+
+  const allItems = equip ? [
+    ...(equip.essential || []).map((i, idx) => ({ ...i, key: 'e-' + idx })),
+    ...(equip.recommended || []).map((i, idx) => ({ ...i, key: 'r-' + idx })),
+    ...(equip.optional || []).map((i, idx) => ({ ...i, key: 'o-' + idx })),
+  ] : [];
+
+  const ownedCount = owned.length;
+  const totalCount = allItems.length;
+  const unownedItems = allItems.filter(i => !owned.includes(i.key));
+  const totalBelanja = unownedItems.reduce((s, i) => s + parsePrice(i.estimatePrice), 0);
+
+  const CATS = [
+    { key: 'essential', label: 'Wajib', dot: '#ef4444', badge: '#fee2e2', badgeText: '#991b1b' },
+    { key: 'recommended', label: 'Disarankan', dot: '#f59e0b', badge: '#fef3c7', badgeText: '#92400e' },
+    { key: 'optional', label: 'Opsional', dot: '#22c55e', badge: '#dcfce7', badgeText: '#166534' },
+  ];
+
+  const ItemRow = ({ item }) => {
+    const isOwned = owned.includes(item.key);
+    return (
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 0', borderBottom: '1px solid var(--border-color)' }}>
+        <span style={{ fontSize: '1.4rem', flexShrink: 0 }}>{item.icon}</span>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <p style={{ fontWeight: 700, fontSize: '0.87rem', textDecoration: isOwned ? 'line-through' : 'none', color: isOwned ? 'var(--text-muted)' : 'var(--text-main)' }}>{item.name}</p>
+          <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>{item.purpose}</p>
+          <p style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--primary)', marginTop: '2px' }}>{item.estimatePrice}</p>
+        </div>
+        <button
+          onClick={() => toggleOwned(item.key)}
+          style={{ flexShrink: 0, width: '32px', height: '32px', borderRadius: '50%', border: '2px solid ' + (isOwned ? 'var(--primary)' : 'var(--border-color)'), background: isOwned ? 'var(--primary)' : 'transparent', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'all 0.2s', fontSize: '14px' }}
+          title={isOwned ? 'Sudah punya' : 'Tandai sudah punya'}
+        >
+          {isOwned ? '✓' : ''}
+        </button>
+      </div>
+    );
+  };
+
+  return (
+    <div style={{ marginTop: '36px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
+        <h3 style={{ fontSize: '1.2rem' }}>🏡 Perlengkapan Greenhouse</h3>
+        {equip && (
+          <button onClick={generate} disabled={loading} style={{ background: 'none', border: 'none', color: 'var(--primary)', fontSize: '0.78rem', fontWeight: 700, cursor: 'pointer' }}>
+            🔄 Refresh
+          </button>
+        )}
+      </div>
+
+      {!equip && !loading && (
+        <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '24px', textAlign: 'center', boxShadow: 'var(--shadow-sm)' }}>
+          <p style={{ color: 'var(--text-muted)', marginBottom: '14px', fontSize: '0.88rem' }}>
+            Daftar perlengkapan yang dibutuhkan untuk menanam {plant.name} beserta estimasi harga.
+          </p>
+          <button className="btn-primary" onClick={generate} style={{ margin: '0 auto' }}>🛒 Generate Daftar Perlengkapan</button>
+          {error && <p style={{ color: '#ef4444', marginTop: '10px', fontSize: '0.82rem' }}>{error}</p>}
+        </div>
+      )}
+
+      {loading && (
+        <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '28px', textAlign: 'center', boxShadow: 'var(--shadow-sm)' }}>
+          <div style={{ width: '36px', height: '36px', margin: '0 auto 14px', border: '3px solid #dcfce7', borderTopColor: 'var(--primary)', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
+          <p style={{ color: 'var(--text-muted)', fontWeight: 600, fontSize: '0.88rem' }}>Menyusun daftar perlengkapan...</p>
+        </div>
+      )}
+
+      {equip && !loading && (
+        <div>
+          {/* Summary bar */}
+          <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '14px 16px', boxShadow: 'var(--shadow-sm)', marginBottom: '14px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+            <p style={{ fontSize: '0.87rem', fontWeight: 700 }}>
+              ✅ {ownedCount}/{totalCount} perlengkapan sudah dimiliki
+            </p>
+            {totalBelanja > 0 && (
+              <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
+                💰 Estimasi total belanja: <strong style={{ color: 'var(--primary)' }}>Rp {totalBelanja.toLocaleString('id-ID')}</strong>
+              </p>
+            )}
+            <div style={{ display: 'flex', gap: '8px', marginTop: '4px', fontSize: '0.72rem', color: 'var(--text-muted)', flexWrap: 'wrap' }}>
+              <span>Wajib: <strong>{equip.totalEstimate?.essential}</strong></span>
+              <span>+Disarankan: <strong>{equip.totalEstimate?.recommended}</strong></span>
+              <span>Semua: <strong>{equip.totalEstimate?.full}</strong></span>
+            </div>
+          </div>
+
+          {/* Categories */}
+          {CATS.map(cat => {
+            const items = (equip[cat.key] || []).map((item, idx) => ({ ...item, key: cat.key[0] + '-' + idx }));
+            if (items.length === 0) return null;
+            const catOwned = items.filter(i => owned.includes(i.key)).length;
+            return (
+              <div key={cat.key} style={{ background: 'var(--surface)', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-sm)', marginBottom: '12px', borderLeft: '4px solid ' + cat.dot }}>
+                <button
+                  onClick={() => toggleCat(cat.key)}
+                  style={{ width: '100%', padding: '14px 16px', display: 'flex', alignItems: 'center', gap: '10px', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left' }}
+                >
+                  <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: cat.dot, flexShrink: 0 }} />
+                  <span style={{ flex: 1, fontWeight: 700, fontSize: '0.92rem', color: 'var(--text-main)' }}>{cat.label}</span>
+                  <span style={{ background: cat.badge, color: cat.badgeText, padding: '2px 8px', borderRadius: '50px', fontSize: '0.72rem', fontWeight: 700 }}>{catOwned}/{items.length}</span>
+                  <span style={{ color: 'var(--text-muted)', fontSize: '1.1rem', transform: openCats[cat.key] ? 'rotate(90deg)' : 'none', transition: 'transform 0.2s' }}>›</span>
+                </button>
+                {openCats[cat.key] && (
+                  <div style={{ padding: '0 16px 8px' }}>
+                    {items.map(item => <ItemRow key={item.key} item={item} />)}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
