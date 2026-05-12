@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate, useParams, useLocation } from 'react-router-dom';
 import { 
-  Home as HomeIcon, BookOpen, Sprout, Heart, Bot,
-  Search, User, ArrowLeft, Moon, Sun, Camera, Send, Calendar, Bell, CheckSquare, Square,
+  Home as HomeIcon, BookOpen, Sprout, Heart,
+  Search, User, ArrowLeft, Moon, Sun, Calendar, Bell, CheckSquare, Square,
   Droplets, Sun as SunIcon, Thermometer, Info, Activity, Star
 } from 'lucide-react';
 import { addDays, format } from 'date-fns';
@@ -134,7 +134,7 @@ function AppShell({ toast, setToast }) {
           <Route path="/ensiklopedia" element={<Encyclopedia />} />
           <Route path="/tanaman/:id" element={<PlantDetail />} />
           <Route path="/favorit" element={<Favorites />} />
-          <Route path="/chat" element={<AIChat />} />
+          <Route path="/panduan" element={<SoilGuide />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/kalender" element={<CareCalendar />} />
         </Routes>
@@ -147,41 +147,15 @@ function AppShell({ toast, setToast }) {
 }
 
 
-// --- FAB ---
-function FAB() {
-  const navigate = useNavigate();
-  const location = useLocation();
-  const hiddenPaths = ['/chat', '/tanaman'];
-  const hide = hiddenPaths.some(p => location.pathname.startsWith(p));
-  if (hide) return null;
-  return (
-    <button
-      onClick={() => navigate('/chat')}
-      style={{
-        position: 'fixed', bottom: '88px', right: 'max(16px, calc(50% - 224px))',
-        width: '52px', height: '52px', borderRadius: '50%',
-        background: 'linear-gradient(135deg, #166534, #22c55e)',
-        color: 'white', border: 'none', cursor: 'pointer',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-        boxShadow: '0 4px 16px rgba(22,101,52,0.4)',
-        zIndex: 55, fontSize: '1.4rem',
-        transition: 'transform 0.2s, box-shadow 0.2s'
-      }}
-      onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
-      onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
-      title="Tanya AI"
-    >
-      🤖
-    </button>
-  );
-}
+// --- FAB (removed AI chat, now unused) ---
+function FAB() { return null; }
 
 // --- Header ---
 function Header() {
   const { isDarkMode, setIsDarkMode } = React.useContext(AppContext);
   const navigate = useNavigate();
   const location = useLocation();
-  const showBack = !['/', '/ensiklopedia', '/favorit', '/chat'].includes(location.pathname);
+  const showBack = !['/', '/ensiklopedia', '/favorit', '/panduan'].includes(location.pathname);
 
   return (
     <header className="app-header">
@@ -223,7 +197,7 @@ function BottomNav() {
     { path: '/', icon: <HomeIcon size={22} />, label: 'Beranda' },
     { path: '/ensiklopedia', icon: <BookOpen size={22} />, label: 'Katalog' },
     { path: '/favorit', icon: <Heart size={22} />, label: 'Favorit' },
-    { path: '/chat', icon: <Bot size={22} />, label: 'AI Chat' }
+    { path: '/panduan', icon: <BookOpen size={22} />, label: 'Panduan' }
   ];
 
   return (
@@ -623,14 +597,8 @@ function PlantDetail() {
           <li><strong>Pemangkasan:</strong> {plant.careDetails.pruning}</li>
         </ul>
 
-        {/* --- NEW SECTION: PANDUAN AI --- */}
-        <AIGuideSection plant={plant} />
-
-        <div style={{ marginTop: '32px' }}>
-          <button className="btn-primary" onClick={() => navigate('/chat')} style={{ background: 'var(--surface)', color: 'var(--primary)', border: '2px solid var(--primary)' }}>
-            <Bot size={20} /> Tanya AI Tentang {plant.name}
-          </button>
-        </div>
+        {/* --- PANDUAN MENANAM STATIS --- */}
+        <PlantGuideSection plant={plant} />
 
         {/* Related Plants */}
         {(() => {
@@ -713,124 +681,138 @@ const guideData = [
 
 
 
-// --- AI Guide Section ---
-function AIGuideSection({ plant }) {
-  const [guide, setGuide] = useLocalStorage('guide_' + plant.id + '_content', null);
-  const [tasks, setTasks] = useLocalStorage('guide_' + plant.id + '_tasks', []);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+// --- Static Guide Generator ---
+function buildStaticGuide(plant) {
+  const w = plant.schedules.watering;
+  const f = plant.schedules.fertilizer;
+  const sun = plant.careDetails.sunlight;
+  const watering = plant.careDetails.watering;
+  const fertilizer = plant.careDetails.fertilizer;
+  const pruning = plant.careDetails.pruning;
+  const problems = plant.careDetails.commonProblems;
+  const isSayuran = plant.category === 'Sayuran';
+  const isHerbal = plant.category === 'Herbal' || plant.category === 'Obat';
 
-  const generateGuide = async () => {
-    setLoading(true);
-    setError(null);
-    try {
-      const prompt = `Buat panduan menanam ${plant.name} (${plant.scientificName}) dari nol untuk pemula Indonesia. Format response sebagai JSON dengan struktur: { "phases": [ { "phase": "Hari 0", "title": "judul fase", "icon": "emoji", "color": "hex color", "tasks": [ { "task": "judul tugas", "detail": "penjelasan detail praktis 2-3 kalimat" } ] } ] }. Buat 6 fase: 1. Hari 0 - Persiapan khusus, 2. Hari 1-3 - Adaptasi spesifik, 3. Hari 4-7 - Rutinitas awal, 4. Minggu 2-4 - Perkembangan awal, 5. Bulan 1-3 - Perawatan rutin spesifik, 6. Bulan 3+ - Berkembang & tips lanjutan. Sesuaikan dengan karakteristik unik: tingkat kesulitan ${plant.difficulty}, kebutuhan air ${plant.schedules.watering} hari sekali, cahaya ${plant.careDetails.sunlight.split(' ')[0]}. Setiap fase minimal 3-4 tugas spesifik. Hanya keluarkan format JSON valid tanpa teks lain.`;
-      
-      const res = await fetch('https://api-proxy.johnaprek.workers.dev', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          messages: [{ role: 'user', content: prompt }],
-          system: "Kamu ahli hortikultura Indonesia. Buat panduan menanam step-by-step dalam Bahasa Indonesia yang detail, praktis, dan mudah dipahami pemula. Pastikan response adalah JSON valid.",
-          model: 'claude-haiku-4-5',
-          max_tokens: 2000,
-          temperature: 0.7
-        })
-      });
-
-      if (!res.ok) throw new Error('API Error');
-      const data = await res.json();
-      
-      let jsonStr = data.content[0].text;
-      const match = jsonStr.match(/\{[\s\S]*\}/);
-      if (match) jsonStr = match[0];
-      
-      const parsed = JSON.parse(jsonStr);
-      setGuide({ ...parsed, createdAt: new Date().toISOString() });
-      setTasks([]);
-    } catch (err) {
-      console.error(err);
-      setError("Gagal membuat panduan 😔 Cek koneksi dan coba lagi");
-    } finally {
-      setLoading(false);
-    }
+  return {
+    phases: [
+      {
+        phase: 'Hari 0', title: 'Persiapan Menanam', icon: '📦', color: '#6366f1',
+        tasks: [
+          { task: 'Pilih pot & media tanam', detail: `Gunakan pot dengan lubang drainase. ${isSayuran ? 'Polybag ukuran 35x35 cm cocok untuk sayuran.' : 'Pilih pot 2-3 cm lebih besar dari akar tanaman.'}` },
+          { task: 'Siapkan media tanam', detail: isSayuran ? 'Campurkan tanah kebun : kompos : sekam bakar = 2:1:1 untuk hasil optimal.' : 'Gunakan campuran tanah subur + cocopeat + perlite agar drainase baik.' },
+          { task: 'Tentukan lokasi', detail: `Butuh: ${sun}. Pilih lokasi yang sesuai sebelum menanam agar tidak perlu memindahkan.` },
+          { task: 'Siapkan alat dasar', detail: 'Semprotan air, sekop kecil, sarung tangan. Pastikan alat bersih untuk mencegah infeksi jamur.' },
+        ]
+      },
+      {
+        phase: 'Hari 1–3', title: 'Fase Adaptasi Awal', icon: '🌱', color: '#f59e0b',
+        tasks: [
+          { task: 'Penyiraman pertama', detail: `${watering} Jangan berlebihan di hari pertama — cukup basahi media hingga lembap merata.` },
+          { task: 'Taruh di tempat teduh sementara', detail: 'Selama 1-3 hari pertama, hindari sinar matahari langsung agar tanaman beradaptasi (transplant shock).' },
+          { task: 'Amati kondisi daun', detail: 'Daun layu sedikit adalah normal. Jika layu parah lebih dari 3 hari, periksa akar dan drainase.' },
+          { task: 'Jangan beri pupuk dulu', detail: 'Akar yang baru ditanam rentan terbakar pupuk. Tunggu minimal 1 minggu sebelum pemupukan pertama.' },
+        ]
+      },
+      {
+        phase: 'Hari 4–14', title: 'Membangun Rutinitas', icon: '⏳', color: '#8b5cf6',
+        tasks: [
+          { task: `Jadwal siram: setiap ${w} hari`, detail: `${watering} Cek kelembapan tanah dengan menusukkan jari 2-3 cm sebelum menyiram.` },
+          { task: 'Pindah ke lokasi permanen', detail: `Pastikan mendapat ${sun} secara konsisten setiap hari.` },
+          { task: 'Foto tanaman hari ke-7', detail: 'Dokumentasikan kondisi sebagai baseline untuk memantau pertumbuhan ke depan.' },
+          { task: 'Perhatikan tanda pertumbuhan', detail: 'Munculnya tunas atau daun baru adalah tanda tanaman sudah beradaptasi dengan baik.' },
+        ]
+      },
+      {
+        phase: 'Minggu 2–4', title: 'Perkembangan Awal', icon: '🌿', color: '#10b981',
+        tasks: [
+          { task: 'Pemupukan pertama (dosis 1/2)', detail: `${fertilizer} Berikan setengah dosis anjuran kemasan untuk menghindari over-fertilizing.` },
+          { task: 'Cek kondisi akar & pot', detail: plant.schedules.repotting > 0 ? 'Jika akar sudah keluar dari lubang drainase, siapkan pot lebih besar.' : 'Amati pertumbuhan di media tanam, tambah media jika menyusut.' },
+          { task: 'Bersihkan daun dari debu', detail: 'Lap daun lebar dengan kain lembap agar fotosintesis optimal. Hindari air menggenang di sela daun.' },
+          { task: `Waspadai: ${problems}`, detail: 'Periksa bagian bawah daun dan pangkal batang secara rutin setiap minggu untuk deteksi dini hama.' },
+        ]
+      },
+      {
+        phase: 'Bulan 1–3', title: 'Perawatan Rutin', icon: '✂️', color: '#ec4899',
+        tasks: [
+          { task: `Pupuk rutin setiap ${f} hari`, detail: `${fertilizer} Konsistensi pemupukan sangat memengaruhi kualitas pertumbuhan jangka panjang.` },
+          { task: 'Pemangkasan', detail: `${pruning}` },
+          { task: 'Evaluasi lokasi & cahaya', detail: 'Daun pucat atau kecil = kurang cahaya. Daun terbakar = terlalu banyak cahaya langsung. Sesuaikan posisi.' },
+          { task: 'Catat perkembangan', detail: 'Bandingkan foto minggu ke-1 dan bulan ke-3. Ukur tinggi atau jumlah daun sebagai indikator kesehatan.' },
+        ]
+      },
+      {
+        phase: 'Bulan 3+', title: 'Berkembang & Berbagi', icon: '🌟', color: '#f43f5e',
+        tasks: [
+          { task: isHerbal || isSayuran ? 'Panen pertama!' : 'Coba propagasi', detail: isHerbal || isSayuran ? `Panen saat tanaman sudah cukup besar. ${pruning}` : 'Coba perbanyak dengan stek batang atau daun — bagikan kepada teman atau tanam di pot baru.' },
+          { task: 'Tingkatkan level perawatan', detail: 'Pelajari teknik lanjutan seperti repotting, topping, atau pelatihan bentuk sesuai jenis tanaman.' },
+          { task: 'Tambah koleksi tanaman', detail: 'Dengan pengalaman merawat ini, coba tanaman dengan tingkat kesulitan satu level di atasnya.' },
+          { task: 'Bagikan pengalaman', detail: 'Dokumentasikan perjalanan merawat tanamanmu dan bagikan ke komunitas pecinta tanaman!' },
+        ]
+      },
+    ]
   };
+}
+
+function PlantGuideSection({ plant }) {
+  const [tasks, setTasks] = useLocalStorage('guide_' + plant.id + '_tasks', []);
+  const guide = buildStaticGuide(plant);
 
   const toggleTask = (taskId) => {
     setTasks(prev => prev.includes(taskId) ? prev.filter(id => id !== taskId) : [...prev, taskId]);
   };
 
+  const totalTasks = guide.phases.reduce((s, p) => s + p.tasks.length, 0);
+  const doneTasks = tasks.length;
+  const pct = totalTasks > 0 ? Math.round((doneTasks / totalTasks) * 100) : 0;
+
   return (
     <div style={{ marginTop: '32px' }}>
-      <h3 style={{ fontSize: '1.2rem', marginBottom: '16px' }}>📅 Panduan Menanam dari Nol</h3>
-      
-      {!guide && !loading && (
-        <div style={{ background: 'var(--surface)', padding: '24px', borderRadius: '16px', textAlign: 'center', boxShadow: 'var(--shadow-sm)' }}>
-          <p style={{ marginBottom: '16px', color: 'var(--text-muted)' }}>Panduan interaktif step-by-step khusus untuk merawat {plant.name}. Dibuat otomatis menggunakan AI.</p>
-          <button className="btn-primary" onClick={generateGuide} style={{ margin: '0 auto' }}>
-            🌱 Generate Panduan untuk Tanaman Ini
-          </button>
-          {error && <p style={{ color: '#ef4444', marginTop: '12px', fontSize: '0.85rem' }}>{error}</p>}
-        </div>
-      )}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+        <h3 style={{ fontSize: '1.2rem' }}>📅 Panduan Menanam dari Nol</h3>
+        <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--primary)' }}>{pct}% selesai</span>
+      </div>
+      <div style={{ height: '6px', background: 'var(--border-color)', borderRadius: '99px', marginBottom: '20px', overflow: 'hidden' }}>
+        <div style={{ height: '100%', width: pct + '%', background: 'linear-gradient(90deg, var(--primary-dark), var(--primary))', borderRadius: '99px', transition: 'width 0.4s ease' }} />
+      </div>
 
-      {loading && (
-        <div style={{ background: 'var(--surface)', padding: '24px', borderRadius: '16px', textAlign: 'center' }}>
-          <div className="spinner" style={{ width: '40px', height: '40px', margin: '0 auto 16px', border: '3px solid #dcfce7', borderTopColor: 'var(--primary)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div>
-          <p style={{ color: 'var(--text-muted)', fontWeight: 600 }}>Menyusun panduan spesifik...</p>
-        </div>
-      )}
-
-      {guide && !loading && (
-        <div>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-            <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Dibuat pada: {new Date(guide.createdAt).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}</p>
-            <button onClick={generateGuide} style={{ background: 'none', border: 'none', color: 'var(--primary)', fontSize: '0.8rem', fontWeight: 600, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px' }}>
-              🔄 Generate Ulang
-            </button>
-          </div>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {guide.phases && guide.phases.map((phase, pIdx) => {
-              const phaseTasks = phase.tasks || [];
-              const completedInPhase = phaseTasks.filter((_, tIdx) => tasks.includes(pIdx + '-' + tIdx)).length;
-              const isDone = completedInPhase === phaseTasks.length && phaseTasks.length > 0;
-              
-              return (
-                <details key={pIdx} style={{ background: 'var(--surface)', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-sm)', borderLeft: '4px solid ' + (phase.color || 'var(--primary)') }} open={pIdx === 0}>
-                  <summary style={{ padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', listStyle: 'none' }}>
-                    <div style={{ fontSize: '1.5rem', flexShrink: 0 }}>{phase.icon || '🌱'}</div>
-                    <div style={{ flex: 1 }}>
-                      <p style={{ fontSize: '0.75rem', fontWeight: 700, color: phase.color || 'var(--primary)', textTransform: 'uppercase' }}>{phase.phase}</p>
-                      <p style={{ fontSize: '1rem', fontWeight: 700, color: isDone ? 'var(--text-muted)' : 'var(--text-main)', textDecoration: isDone ? 'line-through' : 'none' }}>{phase.title}</p>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+        {guide.phases.map((phase, pIdx) => {
+          const phaseTasks = phase.tasks || [];
+          const completedInPhase = phaseTasks.filter((_, tIdx) => tasks.includes(pIdx + '-' + tIdx)).length;
+          const isDone = completedInPhase === phaseTasks.length && phaseTasks.length > 0;
+          return (
+            <details key={pIdx} style={{ background: 'var(--surface)', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-sm)', borderLeft: '4px solid ' + phase.color }} open={pIdx === 0}>
+              <summary style={{ padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', listStyle: 'none' }}>
+                <div style={{ fontSize: '1.5rem', flexShrink: 0 }}>{phase.icon}</div>
+                <div style={{ flex: 1 }}>
+                  <p style={{ fontSize: '0.7rem', fontWeight: 700, color: phase.color, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{phase.phase}</p>
+                  <p style={{ fontSize: '0.95rem', fontWeight: 700, color: isDone ? 'var(--text-muted)' : 'var(--text-main)', textDecoration: isDone ? 'line-through' : 'none' }}>{phase.title}</p>
+                </div>
+                <div style={{ fontSize: '0.75rem', fontWeight: 600, color: isDone ? 'var(--primary)' : 'var(--text-muted)', background: isDone ? '#dcfce7' : '#f3f4f6', padding: '4px 10px', borderRadius: '50px' }}>
+                  {completedInPhase}/{phaseTasks.length}
+                </div>
+              </summary>
+              <div style={{ padding: '0 16px 16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                {phaseTasks.map((task, tIdx) => {
+                  const taskId = pIdx + '-' + tIdx;
+                  const done = tasks.includes(taskId);
+                  return (
+                    <div key={tIdx} onClick={() => toggleTask(taskId)} style={{ display: 'flex', gap: '12px', cursor: 'pointer', opacity: done ? 0.55 : 1, transition: 'opacity 0.2s' }}>
+                      <div style={{ width: '22px', height: '22px', borderRadius: '50%', border: '2px solid ' + (done ? phase.color : 'var(--border-color)'), background: done ? phase.color : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '2px', transition: 'all 0.2s' }}>
+                        {done && <span style={{ color: 'white', fontSize: '12px', fontWeight: 700 }}>✓</span>}
+                      </div>
+                      <div>
+                        <p style={{ fontSize: '0.9rem', fontWeight: 700, marginBottom: '3px', textDecoration: done ? 'line-through' : 'none' }}>{task.task}</p>
+                        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.5, textDecoration: done ? 'line-through' : 'none' }}>{task.detail}</p>
+                      </div>
                     </div>
-                    <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-muted)', background: '#f3f4f6', padding: '4px 8px', borderRadius: '50px' }}>
-                      {completedInPhase}/{phaseTasks.length}
-                    </div>
-                  </summary>
-                  <div style={{ padding: '0 16px 16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                    {phaseTasks.map((task, tIdx) => {
-                      const taskId = pIdx + '-' + tIdx;
-                      const done = tasks.includes(taskId);
-                      return (
-                        <div key={tIdx} onClick={() => toggleTask(taskId)} style={{ display: 'flex', gap: '12px', cursor: 'pointer', opacity: done ? 0.6 : 1, transition: 'opacity 0.2s' }}>
-                          <div style={{ width: '22px', height: '22px', borderRadius: '50%', border: '2px solid ' + (done ? 'var(--primary)' : 'var(--border-color)'), background: done ? 'var(--primary)' : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '2px' }}>
-                            {done && <span style={{ color: 'white', fontSize: '12px', fontWeight: 700 }}>✓</span>}
-                          </div>
-                          <div>
-                            <p style={{ fontSize: '0.9rem', fontWeight: 700, marginBottom: '2px', textDecoration: done ? 'line-through' : 'none' }}>{task.task}</p>
-                            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.5, textDecoration: done ? 'line-through' : 'none' }}>{task.detail}</p>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </details>
-              );
-            })}
-          </div>
-        </div>
-      )}
+                  );
+                })}
+              </div>
+            </details>
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -864,116 +846,103 @@ function Favorites() {
   );
 }
 
-// --- 6. AI Chatbot ---
-function AIChat() {
-  const [messages, setMessages] = useState([
-    { role: 'assistant', content: 'Halo! Saya ahli tanaman berbahasa Indonesia. Tanyakan soal perawatan atau upload foto tanaman untuk saya identifikasi.' }
-  ]);
-  const [input, setInput] = useState('');
-  const [loading, setLoading] = useState(false);
-  const fileInputRef = useRef(null);
+// --- 6. Panduan Tanah & Media Tanam ---
+const soilGuideData = [
+  {
+    title: 'Mengenal Jenis Tanah', icon: '🌍', color: '#92400e',
+    sections: [
+      { heading: 'Tanah Liat (Clay)', body: 'Tanah berat dengan partikel halus. Menyimpan air dan nutrisi dengan baik, tapi drainase buruk sehingga mudah membuat akar busuk. Cocok untuk tanaman yang suka lembap seperti kangkung dan bayam, TIDAK untuk kaktus atau sukulen.' },
+      { heading: 'Tanah Pasir (Sandy)', body: 'Drainase sangat cepat, tidak menyimpan air. Baik untuk kaktus, sukulen, lavender, dan rosemary. Perlu sering disiram dan ditambah kompos agar lebih subur.' },
+      { heading: 'Tanah Lempung (Loam)', body: 'Kombinasi ideal tanah liat, pasir, dan bahan organik. Drainase baik, menyimpan nutrisi, gembur dan mudah diolah. Cocok untuk hampir semua jenis tanaman. Ini adalah tanah terbaik untuk kebun.' },
+      { heading: 'Tanah Gambut (Peat)', body: 'Kaya bahan organik, asam, menyimpan air sangat baik. Ideal dicampur untuk anggrek, blueberry, dan tanaman asam. Tidak dianjurkan digunakan murni karena terlalu asam untuk kebanyakan tanaman.' },
+    ]
+  },
+  {
+    title: 'Media Tanam untuk Pot', icon: '🪴', color: '#166534',
+    sections: [
+      { heading: 'Cocopeat (Serbuk Kelapa)', body: 'Ringan, menyerap air baik, ramah lingkungan. Harus dicampur dengan bahan drainase seperti perlite karena bisa terlalu lembap jika dipakai sendiri. Campuran ideal: 50% cocopeat + 30% perlite + 20% kompos.' },
+      { heading: 'Sekam Bakar (Arang Sekam)', body: 'Membantu drainase dan aerasi akar. pH netral, steril, bebas hama. Tambahkan 20-30% ke media tanam apa pun untuk hasil lebih baik. Sangat dianjurkan untuk tanaman hias indoor.' },
+      { heading: 'Perlite', body: 'Mineral vulkanik yang membuat media lebih ringan dan meningkatkan drainase secara signifikan. Wajib digunakan untuk kaktus, sukulen, dan tanaman yang sangat rentan busuk akar (rosemary, lavender).' },
+      { heading: 'Kompos & Pupuk Kandang', body: 'Sumber nutrisi organik alami. Pupuk kandang harus matang (tidak berbau menyengat) sebelum dipakai. Tambahkan 20-30% ke media tanam untuk memperkaya nutrisi jangka panjang.' },
+    ]
+  },
+  {
+    title: 'Memahami pH Tanah', icon: '🧪', color: '#6366f1',
+    sections: [
+      { heading: 'Apa itu pH Tanah?', body: 'pH adalah tingkat keasaman tanah (skala 1–14). pH 7 = netral. Di bawah 7 = asam. Di atas 7 = basa/alkalis. Kebanyakan tanaman tumbuh optimal di pH 6.0–7.0 (sedikit asam hingga netral).' },
+      { heading: 'Tanaman Asam (pH 4.5–6.0)', body: 'Anggrek, blueberry, hydrangea biru, azalea. Gunakan media cocopeat atau tambahkan sulfur untuk menurunkan pH tanah yang terlalu basa.' },
+      { heading: 'Tanaman Netral–Basa (pH 6.5–7.5)', body: 'Lavender, rosemary, asparagus. Jika tanah terlalu asam, tambahkan kapur dolomit secara perlahan dan merata.' },
+      { heading: 'Cara Mengukur pH', body: 'Gunakan kertas lakmus atau pH meter tanah (tersedia di toko pertanian mulai Rp 30.000). Ukur sebelum menanam dan setiap 3 bulan sekali untuk memastikan kondisi optimal.' },
+    ]
+  },
+  {
+    title: 'Pupuk: Jenis & Cara Pakai', icon: '🌿', color: '#0d9488',
+    sections: [
+      { heading: 'NPK — Makronutrien Utama', body: 'N (Nitrogen) = pertumbuhan daun hijau. P (Fosfor) = perkembangan akar dan pembungaan. K (Kalium) = ketahanan tanaman dan kualitas buah. Pilih rasio NPK sesuai fase: daun = N tinggi, bunga/buah = P&K tinggi.' },
+      { heading: 'Pupuk Cair vs Granul', body: 'Pupuk cair bekerja cepat (1-3 hari) namun habis cepat, cocok untuk dorongan pertumbuhan. Pupuk granul/lambat urai bekerja 1-3 bulan, lebih praktis dan hemat, cocok untuk perawatan rutin.' },
+      { heading: 'Pupuk Organik', body: 'Kompos, pupuk kandang, atau pupuk ikan. Lebih aman, memperbaiki struktur tanah, dan tidak berisiko over-fertilizing. Kelemahannya: nutrisi tidak secepat pupuk kimia.' },
+      { heading: 'Aturan Emas Pemupukan', body: 'Selalu siram tanaman sebelum memupuk — jangan pupuk tanah kering karena dapat membakar akar. Mulai dengan setengah dosis dari yang tertera di kemasan. Lebih baik kurang dari berlebihan.' },
+    ]
+  },
+  {
+    title: 'Drainase & Penyiraman', icon: '💧', color: '#2563eb',
+    sections: [
+      { heading: 'Pentingnya Drainase', body: 'Pot WAJIB memiliki lubang di bawah. Tanpa drainase, air akan menggenang dan menyebabkan busuk akar — penyebab kematian tanaman no. 1 di Indonesia. Jangan simpan pot di tatakan berisi air genangan.' },
+      { heading: 'Kapan Harus Menyiram?', body: 'Tes jari: tusukkan jari 2-3 cm ke media tanam. Jika masih lembap, tunda penyiraman. Jika kering, segera siram hingga air keluar dari lubang bawah pot. Lebih baik jarang tapi tepat waktu.' },
+      { heading: 'Waktu Terbaik Menyiram', body: 'Pagi hari (06:00–09:00) adalah waktu ideal. Air yang menguap siang hari tidak akan menggenang, dan tanaman punya cukup air untuk proses fotosintesis. Hindari menyiram saat terik siang.' },
+      { heading: 'Kualitas Air Penyiraman', body: 'Air PDAM mengandung klorin yang bisa merusak tanaman sensitif (calathea, anggrek). Endapkan air semalam sebelum digunakan, atau tampung air hujan yang jauh lebih ideal.' },
+    ]
+  },
+  {
+    title: 'Mengatasi Masalah Umum', icon: '🔍', color: '#dc2626',
+    sections: [
+      { heading: 'Daun Menguning', body: 'Penyebab paling umum: overwatering (75% kasus). Kurangi frekuensi siram dan pastikan drainase baik. Penyebab lain: kekurangan nitrogen (pupuk), atau terlalu kurang cahaya. Amati pola daun yang menguning.' },
+      { heading: 'Daun Layu Meski Sudah Disiram', body: 'Kemungkinan busuk akar akibat overwatering. Keluarkan tanaman dari pot, periksa akar — akar busuk berwarna coklat/hitam dan berbau. Potong bagian busuk, biarkan kering 30 menit, tanam ulang di media segar.' },
+      { heading: 'Ujung Daun Coklat/Kering', body: 'Penyebab: udara terlalu kering (terutama dekat AC), kekurangan air, atau kelebihan pupuk. Semprot daun dengan air setiap 2-3 hari untuk meningkatkan kelembapan udara di sekitar tanaman.' },
+      { heading: 'Hama Umum & Cara Atasi', body: 'Kutu daun (aphid): semprot larutan sabun cair 1 sdt + air 500ml. Tungau merah: tingkatkan kelembapan, semprot air ke bawah daun. Kutu putih: usap dengan kapas+alkohol 70%. Selalu periksa bawah daun setiap minggu.' },
+    ]
+  },
+];
 
-  const proxyUrl = import.meta.env.VITE_AI_PROXY_URL || 'https://api-proxy.johnaprek.workers.dev';
-
-  const sendMessage = async (textContent, base64Image = null) => {
-    if (!textContent && !base64Image) return;
-    
-    const newUserMsg = { role: 'user', content: textContent || 'Identifikasi tanaman ini.' };
-    if (base64Image) newUserMsg.image = base64Image;
-
-    const newMessages = [...messages, newUserMsg];
-    setMessages(newMessages);
-    setInput('');
-    setLoading(true);
-
-    try {
-      const contentBlock = [];
-      if (base64Image) {
-        const base64Data = base64Image.split(',')[1];
-        const mediaType = base64Image.split(';')[0].split(':')[1];
-        contentBlock.push({ type: 'image', source: { type: 'base64', media_type: mediaType, data: base64Data } });
-      }
-      if (textContent) contentBlock.push({ type: 'text', text: textContent });
-      if (!textContent && base64Image) contentBlock.push({ type: 'text', text: 'Tolong identifikasi tanaman ini beserta detail perawatannya secara singkat dan praktis.' });
-
-      const apiMessages = newMessages.map(m => {
-        if (m.role === 'assistant') return { role: 'assistant', content: m.content };
-        if (m.image && m === newUserMsg) return { role: 'user', content: contentBlock };
-        return { role: 'user', content: m.content };
-      }).filter(m => m.content);
-
-      let assistantText = '';
-
-      if (proxyUrl) {
-        const response = await fetch(proxyUrl, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            model: 'claude-sonnet-4-5',
-            max_tokens: 1000,
-            system: "Kamu ahli tanaman berbahasa Indonesia, spesialisasi perawatan tanaman rumahan, jawab singkat dan praktis.",
-            messages: apiMessages
-          })
-        });
-        const data = await response.json();
-        // Handle both Anthropic error formats
-        if (data.type === 'error' || data.error) {
-          const errObj = data.error || data;
-          const errMsg = typeof errObj === 'object' ? (errObj.message || errObj.type || JSON.stringify(errObj)) : String(errObj);
-          throw new Error(errMsg);
-        }
-        assistantText = data.content[0].text;
-      } else {
-        assistantText = "Maaf, Proxy AI belum dikonfigurasi. Silakan deploy worker di Cloudflare.";
-      }
-
-      setMessages([...newMessages, { role: 'assistant', content: assistantText }]);
-    } catch (error) {
-      setMessages([...newMessages, { role: 'assistant', content: 'Error API: ' + error.message }]);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleImageUpload = (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = () => sendMessage(input, reader.result);
-      reader.readAsDataURL(file);
-    }
-  };
+function SoilGuide() {
+  const [openIdx, setOpenIdx] = useState(0);
 
   return (
-    <main className="main-content animate-fade-up" style={{ padding: 0 }}>
-      <div className="chat-container">
-        <div className="chat-messages">
-          {messages.map((m, idx) => (
-            <div key={idx} className={`chat-bubble ${m.role}`}>
-              {m.image && <img src={m.image} alt="upload" style={{ width: '100%', borderRadius: '12px', marginBottom: '12px' }} />}
-              <p style={{ whiteSpace: 'pre-wrap' }}>{m.content}</p>
-            </div>
-          ))}
-          {loading && <div className="chat-bubble assistant"><p>Sedang berpikir...</p></div>}
-        </div>
-        
-        <div className="chat-input-area">
-          <input type="file" accept="image/*" style={{ display: 'none' }} ref={fileInputRef} onChange={handleImageUpload} />
-          <button className="icon-btn pill" style={{ backgroundColor: 'var(--surface)', color: 'var(--primary)', boxShadow: 'var(--shadow-sm)' }} onClick={() => fileInputRef.current.click()}>
-            <Camera size={24} />
-          </button>
-          <input 
-            type="text" 
-            style={{ flex: 1, padding: '12px 16px', borderRadius: '50px', border: '1px solid var(--border-color)', outline: 'none', background: 'var(--surface)', color: 'var(--text-main)' }} 
-            placeholder="Tanya AI..." 
-            value={input}
-            onChange={e => setInput(e.target.value)}
-            onKeyPress={e => e.key === 'Enter' && sendMessage(input)}
-          />
-          <button className="icon-btn pill" style={{ background: 'var(--primary)', color: 'white' }} onClick={() => sendMessage(input)} disabled={loading || (!input.trim() && !fileInputRef.current?.value)}>
-            <Send size={20} />
-          </button>
-        </div>
+    <main className="main-content animate-fade-up">
+      <div style={{ marginBottom: '20px' }}>
+        <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '6px' }}>📚 Panduan Berkebun</h2>
+        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>
+          Pelajari dasar-dasar tanah, media tanam, pupuk, dan cara merawat tanaman dengan benar.
+        </p>
+      </div>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+        {soilGuideData.map((section, idx) => (
+          <div
+            key={idx}
+            style={{ background: 'var(--surface)', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-sm)', borderLeft: '4px solid ' + section.color }}
+          >
+            <button
+              onClick={() => setOpenIdx(openIdx === idx ? -1 : idx)}
+              style={{ width: '100%', padding: '16px', display: 'flex', alignItems: 'center', gap: '14px', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left' }}
+            >
+              <span style={{ fontSize: '1.6rem', flexShrink: 0 }}>{section.icon}</span>
+              <span style={{ flex: 1, fontWeight: 700, fontSize: '1rem', color: 'var(--text-main)' }}>{section.title}</span>
+              <span style={{ fontSize: '1.2rem', color: 'var(--text-muted)', transform: openIdx === idx ? 'rotate(90deg)' : 'none', transition: 'transform 0.2s' }}>›</span>
+            </button>
+
+            {openIdx === idx && (
+              <div style={{ padding: '0 16px 16px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                {section.sections.map((item, sIdx) => (
+                  <div key={sIdx} style={{ borderTop: '1px solid var(--border-color)', paddingTop: '14px' }}>
+                    <p style={{ fontWeight: 700, fontSize: '0.9rem', color: section.color, marginBottom: '6px' }}>{item.heading}</p>
+                    <p style={{ fontSize: '0.85rem', color: 'var(--text-main)', lineHeight: 1.65 }}>{item.body}</p>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
     </main>
   );
