@@ -134,7 +134,6 @@ function AppShell({ toast, setToast }) {
           <Route path="/ensiklopedia" element={<Encyclopedia />} />
           <Route path="/tanaman/:id" element={<PlantDetail />} />
           <Route path="/favorit" element={<Favorites />} />
-          <Route path="/chat" element={<AIChat />} />
           <Route path="/panduan" element={<SoilGuide />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/kalender" element={<CareCalendar />} />
@@ -178,7 +177,7 @@ function Header() {
   const { isDarkMode, setIsDarkMode } = React.useContext(AppContext);
   const navigate = useNavigate();
   const location = useLocation();
-  const showBack = !['/', '/ensiklopedia', '/favorit', '/chat', '/panduan'].includes(location.pathname);
+  const showBack = !['/', '/ensiklopedia', '/favorit', '/panduan'].includes(location.pathname);
 
   return (
     <header className="app-header">
@@ -220,7 +219,7 @@ function BottomNav() {
     { path: '/', icon: <HomeIcon size={22} />, label: 'Beranda' },
     { path: '/ensiklopedia', icon: <BookOpen size={22} />, label: 'Katalog' },
     { path: '/favorit', icon: <Heart size={22} />, label: 'Favorit' },
-    { path: '/chat', icon: <span style={{fontSize:'1.2rem'}}>🤖</span>, label: 'AI Chat' }
+    { path: '/panduan', icon: <span style={{fontSize:'1.2rem'}}>📚</span>, label: 'Panduan' }
   ];
 
   return (
@@ -624,10 +623,10 @@ function PlantDetail() {
         <PlantGuideSection plant={plant} />
 
         {/* --- CARA PENANAMAN (3 METODE) --- */}
-        <PlantingMethodsSection plant={plant} />
+
 
         {/* --- PERLENGKAPAN GREENHOUSE --- */}
-        <GreenhouseEquipmentSection plant={plant} />
+
 
 
         {/* Related Plants */}
@@ -651,529 +650,242 @@ function PlantDetail() {
 }
 
 // ─────────────────────────────────────────
-// SECTION: Cara Penanaman (3 Metode)
+// SECTION: Panduan Menanam (Static, per tanaman)
 // ─────────────────────────────────────────
-const AI_PROXY = 'https://api-proxy.johnaprek.workers.dev'; // v2 gemini
-const APP_VERSION = '2.1.0'; // cache-bust
 
-async function callAI(type, plantName, plantLatin) {
-  const res = await fetch(AI_PROXY, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ type, plantName, plantLatin })
-  });
-  if (!res.ok) throw new Error('API error ' + res.status);
-  const data = await res.json();
-  if (data.error) throw new Error(data.error);
-  return data;
+function buildStaticGuide(plant) {
+  const w = plant.schedules.watering;
+  const f = plant.schedules.fertilizer;
+  const sun = plant.careDetails.sunlight;
+  const watering = plant.careDetails.watering;
+  const fertilizer = plant.careDetails.fertilizer;
+  const pruning = plant.careDetails.pruning;
+  const problems = plant.careDetails.commonProblems;
+  const isSayuran = plant.category === 'Sayuran';
+  const isHerbal = plant.category === 'Herbal' || plant.category === 'Obat';
+  const isBuah = plant.category === 'Buah-buahan';
+  const isHias = plant.category === 'Tanaman Hias';
+
+  return {
+    phases: [
+      {
+        phase: 'Hari 0', title: 'Persiapan Menanam', icon: '📦', color: '#6366f1',
+        tasks: [
+          {
+            task: 'Pilih pot & media tanam',
+            detail: isSayuran
+              ? 'Gunakan polybag 35x35 cm atau pot dengan lubang drainase. Bayam & kangkung bisa di polybag kecil, tomat & cabai perlu polybag besar (min. 10 liter).'
+              : isBuah
+                ? 'Pilih pot minimal 40x40 cm atau drum bekas untuk pohon buah. Pastikan ada lubang drainase besar.'
+                : 'Gunakan pot dengan lubang drainase. Pilih ukuran 2-3 cm lebih besar dari diameter akar tanaman.'
+          },
+          {
+            task: 'Siapkan media tanam',
+            detail: (isHerbal)
+              ? 'Campurkan tanah subur : cocopeat : perlite = 2:1:1 untuk drainase optimal agar rimpang tidak busuk.'
+              : isBuah
+                ? 'Campurkan tanah subur : kompos : sekam = 2:2:1. Tambahkan dolomit jika pH terlalu asam.'
+                : isSayuran
+                  ? 'Campurkan tanah kebun : kompos : sekam bakar = 2:1:1. Untuk hidroponik, gunakan rockwool atau cocopeat.'
+                  : 'Gunakan campuran tanah subur + cocopeat + perlite (2:1:1) agar drainase baik dan akar dapat bernafas.'
+          },
+          {
+            task: 'Tentukan lokasi cahaya',
+            detail: 'Butuh: ' + sun + '. Pilih lokasi yang tepat sebelum menanam agar tidak perlu memindahkan tanaman saat sudah berakar.'
+          },
+          {
+            task: 'Siapkan alat dasar',
+            detail: 'Semprotan air, sekop kecil, sarung tangan berkebun. Pastikan alat bersih untuk mencegah infeksi jamur atau bakteri pada tanaman baru.'
+          },
+        ]
+      },
+      {
+        phase: 'Hari 1–3', title: 'Fase Adaptasi Awal', icon: '🌱', color: '#f59e0b',
+        tasks: [
+          {
+            task: 'Penyiraman pertama',
+            detail: watering + ' Di hari pertama, jangan berlebihan — cukup basahi media hingga lembap merata. Jangan sampai menggenang.'
+          },
+          {
+            task: 'Taruh di tempat teduh sementara',
+            detail: isSayuran
+              ? 'Sayuran muda tahan matahari tapi hindari terik siang. Letakkan di tempat yang mendapat sinar pagi saja selama 1-3 hari pertama.'
+              : 'Selama 1-3 hari pertama, hindari sinar langsung. Beri cahaya tidak langsung agar tanaman beradaptasi (meminimalkan transplant shock).'
+          },
+          {
+            task: 'Amati kondisi daun',
+            detail: 'Daun layu sedikit di hari pertama adalah normal. Jika layu parah lebih dari 3 hari, periksa akar dan drainase pot segera.'
+          },
+          {
+            task: 'Belum perlu pupuk',
+            detail: 'Akar yang baru ditanam rentan terbakar pupuk. Tunggu minimal 7-10 hari sebelum pemupukan pertama.'
+          },
+        ]
+      },
+      {
+        phase: 'Hari 4–7', title: 'Membangun Rutinitas', icon: '⏳', color: '#8b5cf6',
+        tasks: [
+          {
+            task: 'Jadwal siram: setiap ' + w + ' hari',
+            detail: watering + ' Cek kelembapan tanah dengan menusukkan jari 2-3 cm. Jika masih lembap, tunda penyiraman.'
+          },
+          {
+            task: 'Pindah ke lokasi permanen',
+            detail: 'Pastikan mendapat ' + sun + ' secara konsisten. ' + (isHias ? 'Tanaman hias indoor cukup di dekat jendela terang.' : isSayuran ? 'Sayuran butuh matahari minimal 4-6 jam langsung.' : 'Sesuaikan dengan kebutuhan cahaya tanaman ini.')
+          },
+          {
+            task: 'Foto tanaman hari ke-7',
+            detail: 'Dokumentasikan kondisi sebagai baseline. Foto dari sudut yang sama setiap minggu untuk memantau pertumbuhan.'
+          },
+          {
+            task: 'Perhatikan tanda pertumbuhan',
+            detail: 'Munculnya tunas baru, daun muda, atau warna lebih segar adalah tanda tanaman sudah beradaptasi dengan baik.'
+          },
+        ]
+      },
+      {
+        phase: 'Minggu 2–4', title: 'Perkembangan Awal', icon: '🌿', color: '#10b981',
+        tasks: [
+          {
+            task: 'Pemupukan pertama (dosis 1/2)',
+            detail: fertilizer + ' Berikan setengah dosis dari anjuran kemasan untuk menghindari over-fertilizing pada tanaman muda.'
+          },
+          {
+            task: 'Cek kondisi akar & pot',
+            detail: plant.schedules.repotting > 0
+              ? 'Jika akar sudah keluar dari lubang drainase, siapkan pot lebih besar (2-3 cm lebih lebar). Repot saat tanaman belum terlalu besar.'
+              : 'Perhatikan pertumbuhan di media. Tambah media jika menyusut dan akar mulai terlihat di permukaan.'
+          },
+          {
+            task: 'Bersihkan daun dari debu',
+            detail: isHias
+              ? 'Lap daun lebar dengan kain lembap agar fotosintesis optimal. Hindari produk pengkilap daun berlebihan.'
+              : 'Pastikan tidak ada debu menumpuk di daun. Semprotkan air secukupnya untuk menjaga stomata tetap bersih.'
+          },
+          {
+            task: 'Waspadai hama',
+            detail: 'Masalah umum: ' + problems + '. Periksa bagian bawah daun dan pangkal batang setiap minggu. Deteksi dini jauh lebih mudah diatasi.'
+          },
+        ]
+      },
+      {
+        phase: 'Bulan 1–3', title: 'Perawatan Rutin', icon: '✂️', color: '#ec4899',
+        tasks: [
+          {
+            task: 'Pupuk rutin setiap ' + f + ' hari',
+            detail: fertilizer + ' Konsistensi pemupukan sangat memengaruhi kualitas pertumbuhan jangka panjang.'
+          },
+          { task: 'Pemangkasan rutin', detail: pruning },
+          {
+            task: 'Evaluasi lokasi & cahaya',
+            detail: 'Daun pucat atau kecil = kurang cahaya. Daun terbakar coklat = terlalu banyak cahaya langsung. Sesuaikan posisi secara bertahap (jangan pindah mendadak).'
+          },
+          {
+            task: 'Catat & bandingkan perkembangan',
+            detail: 'Bandingkan foto minggu ke-1 dan bulan ke-3. ' + (isSayuran ? 'Catat waktu panen untuk referensi musim berikutnya.' : 'Ukur tinggi atau hitung jumlah daun sebagai indikator kesehatan.')
+          },
+        ]
+      },
+      {
+        phase: 'Bulan 3+',
+        title: (isSayuran || isHerbal) ? 'Panen & Regenerasi' : isBuah ? 'Panen & Jaga Produktivitas' : 'Berkembang & Berbagi',
+        icon: '🌟', color: '#f43f5e',
+        tasks: [
+          {
+            task: isSayuran ? 'Panen rutin & tanam ulang' : isHerbal ? 'Panen daun/rimpang secara berkala' : isBuah ? 'Panen buah & jaga nutrisi' : 'Coba propagasi (stek/biji)',
+            detail: isSayuran
+              ? 'Panen saat ukuran optimal, jangan terlalu tua. ' + pruning
+              : isHerbal
+                ? 'Panen daun/rimpang secara berkala untuk merangsang pertumbuhan baru. ' + pruning
+                : isBuah
+                  ? 'Panen buah tepat waktu untuk kualitas terbaik. Jaga nutrisi dengan pupuk kalium setelah panen.'
+                  : 'Coba perbanyak dengan stek batang atau daun. Bagikan kepada teman atau tanam di pot baru.'
+          },
+          {
+            task: 'Tingkatkan level perawatan',
+            detail: isHias
+              ? 'Pelajari teknik repotting, topping, atau propagasi untuk tanaman hias. Coba media tanam berbeda untuk hasil lebih optimal.'
+              : isSayuran
+                ? 'Coba teknik tumpang sari (menanam beberapa jenis sayuran berdampingan) untuk memaksimalkan ruang dan hasil panen.'
+                : 'Pelajari teknik lanjutan perawatan ' + plant.category.toLowerCase() + ' untuk hasil yang lebih baik.'
+          },
+          {
+            task: 'Tambah koleksi tanaman',
+            detail: 'Dengan pengalaman merawat ' + plant.name + ', coba tanaman serupa atau dengan tingkat kesulitan satu level di atasnya.'
+          },
+          {
+            task: 'Bagikan pengalaman',
+            detail: 'Dokumentasikan perjalanan merawat tanamanmu dan bagikan ke komunitas. Pengalamanmu bisa membantu banyak pemula!'
+          },
+        ]
+      },
+    ]
+  };
 }
 
-function PlantingMethodsSection({ plant }) {
-  const [methods, setMethods] = useLocalStorage('methods_' + plant.id, null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [activeTab, setActiveTab] = useState('pot');
-
-  const generate = async () => {
-    setLoading(true); setError(null);
-    try {
-      const data = await callAI('methods', plant.name, plant.scientificName);
-      setMethods({ ...data, generatedAt: new Date().toISOString() });
-      setActiveTab('pot');
-    } catch (e) { setError('Gagal memuat. Coba lagi. (' + e.message + ')'); }
-    finally { setLoading(false); }
-  };
-
-  const currentMethod = methods?.methods?.find(m => m.id === activeTab);
-
-  const InfoBox = ({ label, value, color = '#166534' }) => value ? (
-    <div style={{ background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: '10px', padding: '10px 14px', marginTop: '12px' }}>
-      <span style={{ fontSize: '0.72rem', fontWeight: 700, color, textTransform: 'uppercase', letterSpacing: '0.5px', display: 'block', marginBottom: '4px' }}>{label}</span>
-      <span style={{ fontSize: '0.85rem', color: '#166534', fontWeight: 600 }}>{value}</span>
-    </div>
-  ) : null;
-
-  return (
-    <div style={{ marginTop: '36px' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
-        <h3 style={{ fontSize: '1.2rem' }}>🏡 Cara Penanaman</h3>
-        {methods && (
-          <button onClick={generate} disabled={loading} style={{ background: 'none', border: 'none', color: 'var(--primary)', fontSize: '0.78rem', fontWeight: 700, cursor: 'pointer' }}>
-            🔄 Refresh
-          </button>
-        )}
-      </div>
-
-      {!methods && !loading && (
-        <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '24px', textAlign: 'center', boxShadow: 'var(--shadow-sm)' }}>
-          <p style={{ color: 'var(--text-muted)', marginBottom: '14px', fontSize: '0.88rem' }}>
-            Panduan penanaman via Pot, Tanah Langsung, dan Hidroponik khusus untuk {plant.name}.
-          </p>
-          <button className="btn-primary" onClick={generate} style={{ margin: '0 auto' }}>🌱 Generate Metode Penanaman</button>
-          {error && <p style={{ color: '#ef4444', marginTop: '10px', fontSize: '0.82rem' }}>{error}</p>}
-        </div>
-      )}
-
-      {loading && (
-        <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '28px', textAlign: 'center', boxShadow: 'var(--shadow-sm)' }}>
-          <div style={{ width: '36px', height: '36px', margin: '0 auto 14px', border: '3px solid #dcfce7', borderTopColor: 'var(--primary)', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
-          <p style={{ color: 'var(--text-muted)', fontWeight: 600, fontSize: '0.88rem' }}>Menyusun panduan penanaman...</p>
-        </div>
-      )}
-
-      {methods && !loading && (
-        <div style={{ background: 'var(--surface)', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-sm)' }}>
-          {/* Tabs */}
-          <div style={{ display: 'flex', borderBottom: '1px solid var(--border-color)', background: 'var(--bg)' }}>
-            {methods.methods?.map(method => (
-              <button
-                key={method.id}
-                onClick={() => method.suitable && setActiveTab(method.id)}
-                style={{
-                  flex: 1, padding: '12px 8px', border: 'none', cursor: method.suitable ? 'pointer' : 'not-allowed',
-                  background: activeTab === method.id ? 'var(--primary)' : 'transparent',
-                  color: activeTab === method.id ? 'white' : method.suitable ? 'var(--text-main)' : 'var(--text-muted)',
-                  fontWeight: 700, fontSize: '0.78rem', transition: 'all 0.2s',
-                  opacity: method.suitable ? 1 : 0.5,
-                  display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '3px'
-                }}
-              >
-                <span style={{ fontSize: '1.2rem' }}>{method.icon}</span>
-                <span>{method.label}</span>
-                {!method.suitable && <span style={{ fontSize: '0.6rem', background: '#e5e7eb', color: '#6b7280', padding: '1px 5px', borderRadius: '4px', marginTop: '2px' }}>Tidak Disarankan</span>}
-              </button>
-            ))}
-          </div>
-
-          {/* Tab content */}
-          {currentMethod && (
-            <div style={{ padding: '16px' }}>
-              <div style={{ background: currentMethod.suitable ? '#f0fdf4' : '#fef9f0', border: `1px solid ${currentMethod.suitable ? '#bbf7d0' : '#fde68a'}`, borderRadius: '10px', padding: '10px 14px', marginBottom: '14px', fontSize: '0.82rem', color: currentMethod.suitable ? '#166534' : '#92400e', fontWeight: 600 }}>
-                {currentMethod.suitable ? '✅' : '⚠️'} {currentMethod.suitableNote}
-              </div>
-
-              <p style={{ fontWeight: 700, fontSize: '0.85rem', marginBottom: '8px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Langkah-langkah</p>
-              <ol style={{ paddingLeft: '18px', display: 'flex', flexDirection: 'column', gap: '8px', marginBottom: '0' }}>
-                {currentMethod.steps?.map((step, i) => (
-                  <li key={i} style={{ fontSize: '0.87rem', lineHeight: 1.6, color: 'var(--text-main)' }}>{step}</li>
-                ))}
-              </ol>
-
-              {currentMethod.tips && (
-                <div style={{ background: '#fffbeb', border: '1px solid #fde68a', borderRadius: '10px', padding: '10px 14px', marginTop: '14px' }}>
-                  <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#92400e', textTransform: 'uppercase', letterSpacing: '0.5px', display: 'block', marginBottom: '4px' }}>💡 Tips</span>
-                  <span style={{ fontSize: '0.85rem', color: '#78350f' }}>{currentMethod.tips}</span>
-                </div>
-              )}
-
-              {currentMethod.id === 'pot' && (
-                <>
-                  <InfoBox label="📏 Ukuran Pot" value={currentMethod.potSize} />
-                  <InfoBox label="🌱 Campuran Media Tanam" value={currentMethod.soilMix} />
-                </>
-              )}
-              {currentMethod.id === 'ground' && (
-                <>
-                  <InfoBox label="📐 Jarak Tanam" value={currentMethod.spacing} />
-                  <InfoBox label="🔧 Persiapan Tanah" value={currentMethod.soilPrep} />
-                </>
-              )}
-              {currentMethod.id === 'hydro' && (
-                <>
-                  <InfoBox label="⚙️ Sistem Hidroponik" value={currentMethod.system} />
-                  <InfoBox label="🧪 Nutrisi AB Mix" value={currentMethod.nutrient} />
-                </>
-              )}
-            </div>
-          )}
-        </div>
-      )}
-    </div>
-  );
-}
-
-// ─────────────────────────────────────────
-// SECTION: Perlengkapan Greenhouse
-// ─────────────────────────────────────────
-function GreenhouseEquipmentSection({ plant }) {
-  const [equip, setEquip] = useLocalStorage('equipment_' + plant.id + '_content', null);
-  const [owned, setOwned] = useLocalStorage('equipment_' + plant.id, []);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [openCats, setOpenCats] = useState({ essential: true, recommended: false, optional: false });
-
-  const generate = async () => {
-    setLoading(true); setError(null);
-    try {
-      const data = await callAI('equipment', plant.name, plant.scientificName);
-      setEquip({ ...data, generatedAt: new Date().toISOString() });
-    } catch (e) { setError('Gagal memuat. (' + e.message + ')'); }
-    finally { setLoading(false); }
-  };
-
-  const toggleOwned = (key) => setOwned(prev => prev.includes(key) ? prev.filter(k => k !== key) : [...prev, key]);
-  const toggleCat = (cat) => setOpenCats(p => ({ ...p, [cat]: !p[cat] }));
-
-  const parsePrice = (str) => {
-    if (!str) return 0;
-    return parseInt(str.replace(/[^0-9]/g, '')) || 0;
-  };
-
-  const allItems = equip ? [
-    ...(equip.essential || []).map((i, idx) => ({ ...i, key: 'e-' + idx })),
-    ...(equip.recommended || []).map((i, idx) => ({ ...i, key: 'r-' + idx })),
-    ...(equip.optional || []).map((i, idx) => ({ ...i, key: 'o-' + idx })),
-  ] : [];
-
-  const ownedCount = owned.length;
-  const totalCount = allItems.length;
-  const unownedItems = allItems.filter(i => !owned.includes(i.key));
-  const totalBelanja = unownedItems.reduce((s, i) => s + parsePrice(i.estimatePrice), 0);
-
-  const CATS = [
-    { key: 'essential', label: 'Wajib', dot: '#ef4444', badge: '#fee2e2', badgeText: '#991b1b' },
-    { key: 'recommended', label: 'Disarankan', dot: '#f59e0b', badge: '#fef3c7', badgeText: '#92400e' },
-    { key: 'optional', label: 'Opsional', dot: '#22c55e', badge: '#dcfce7', badgeText: '#166534' },
-  ];
-
-  const ItemRow = ({ item }) => {
-    const isOwned = owned.includes(item.key);
-    return (
-      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 0', borderBottom: '1px solid var(--border-color)' }}>
-        <span style={{ fontSize: '1.4rem', flexShrink: 0 }}>{item.icon}</span>
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <p style={{ fontWeight: 700, fontSize: '0.87rem', textDecoration: isOwned ? 'line-through' : 'none', color: isOwned ? 'var(--text-muted)' : 'var(--text-main)' }}>{item.name}</p>
-          <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>{item.purpose}</p>
-          <p style={{ fontSize: '0.78rem', fontWeight: 700, color: 'var(--primary)', marginTop: '2px' }}>{item.estimatePrice}</p>
-        </div>
-        <button
-          onClick={() => toggleOwned(item.key)}
-          style={{ flexShrink: 0, width: '32px', height: '32px', borderRadius: '50%', border: '2px solid ' + (isOwned ? 'var(--primary)' : 'var(--border-color)'), background: isOwned ? 'var(--primary)' : 'transparent', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', transition: 'all 0.2s', fontSize: '14px' }}
-          title={isOwned ? 'Sudah punya' : 'Tandai sudah punya'}
-        >
-          {isOwned ? '✓' : ''}
-        </button>
-      </div>
-    );
-  };
-
-  return (
-    <div style={{ marginTop: '36px' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
-        <h3 style={{ fontSize: '1.2rem' }}>🏡 Perlengkapan Greenhouse</h3>
-        {equip && (
-          <button onClick={generate} disabled={loading} style={{ background: 'none', border: 'none', color: 'var(--primary)', fontSize: '0.78rem', fontWeight: 700, cursor: 'pointer' }}>
-            🔄 Refresh
-          </button>
-        )}
-      </div>
-
-      {!equip && !loading && (
-        <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '24px', textAlign: 'center', boxShadow: 'var(--shadow-sm)' }}>
-          <p style={{ color: 'var(--text-muted)', marginBottom: '14px', fontSize: '0.88rem' }}>
-            Daftar perlengkapan yang dibutuhkan untuk menanam {plant.name} beserta estimasi harga.
-          </p>
-          <button className="btn-primary" onClick={generate} style={{ margin: '0 auto' }}>🛒 Generate Daftar Perlengkapan</button>
-          {error && <p style={{ color: '#ef4444', marginTop: '10px', fontSize: '0.82rem' }}>{error}</p>}
-        </div>
-      )}
-
-      {loading && (
-        <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '28px', textAlign: 'center', boxShadow: 'var(--shadow-sm)' }}>
-          <div style={{ width: '36px', height: '36px', margin: '0 auto 14px', border: '3px solid #dcfce7', borderTopColor: 'var(--primary)', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
-          <p style={{ color: 'var(--text-muted)', fontWeight: 600, fontSize: '0.88rem' }}>Menyusun daftar perlengkapan...</p>
-        </div>
-      )}
-
-      {equip && !loading && (
-        <div>
-          {/* Summary bar */}
-          <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '14px 16px', boxShadow: 'var(--shadow-sm)', marginBottom: '14px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
-            <p style={{ fontSize: '0.87rem', fontWeight: 700 }}>
-              ✅ {ownedCount}/{totalCount} perlengkapan sudah dimiliki
-            </p>
-            {totalBelanja > 0 && (
-              <p style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>
-                💰 Estimasi total belanja: <strong style={{ color: 'var(--primary)' }}>Rp {totalBelanja.toLocaleString('id-ID')}</strong>
-              </p>
-            )}
-            <div style={{ display: 'flex', gap: '8px', marginTop: '4px', fontSize: '0.72rem', color: 'var(--text-muted)', flexWrap: 'wrap' }}>
-              <span>Wajib: <strong>{equip.totalEstimate?.essential}</strong></span>
-              <span>+Disarankan: <strong>{equip.totalEstimate?.recommended}</strong></span>
-              <span>Semua: <strong>{equip.totalEstimate?.full}</strong></span>
-            </div>
-          </div>
-
-          {/* Categories */}
-          {CATS.map(cat => {
-            const items = (equip[cat.key] || []).map((item, idx) => ({ ...item, key: cat.key[0] + '-' + idx }));
-            if (items.length === 0) return null;
-            const catOwned = items.filter(i => owned.includes(i.key)).length;
-            return (
-              <div key={cat.key} style={{ background: 'var(--surface)', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-sm)', marginBottom: '12px', borderLeft: '4px solid ' + cat.dot }}>
-                <button
-                  onClick={() => toggleCat(cat.key)}
-                  style={{ width: '100%', padding: '14px 16px', display: 'flex', alignItems: 'center', gap: '10px', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left' }}
-                >
-                  <span style={{ width: '10px', height: '10px', borderRadius: '50%', background: cat.dot, flexShrink: 0 }} />
-                  <span style={{ flex: 1, fontWeight: 700, fontSize: '0.92rem', color: 'var(--text-main)' }}>{cat.label}</span>
-                  <span style={{ background: cat.badge, color: cat.badgeText, padding: '2px 8px', borderRadius: '50px', fontSize: '0.72rem', fontWeight: 700 }}>{catOwned}/{items.length}</span>
-                  <span style={{ color: 'var(--text-muted)', fontSize: '1.1rem', transform: openCats[cat.key] ? 'rotate(90deg)' : 'none', transition: 'transform 0.2s' }}>›</span>
-                </button>
-                {openCats[cat.key] && (
-                  <div style={{ padding: '0 16px 8px' }}>
-                    {items.map(item => <ItemRow key={item.key} item={item} />)}
-                  </div>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      )}
-    </div>
-  );
-}
-
-// --- 4. Panduan Pemula ---
-const guideData = [
-  {
-    title: "Hari 0 - Persiapan", icon: "📦", color: "#6366f1",
-    tasks: [
-      { id: "h0-1", text: "Pilih tanaman yang tepat untuk pemula" },
-      { id: "h0-2", text: "Siapkan pot dengan lubang drainase" },
-      { id: "h0-3", text: "Pilih media tanam (campuran tanah + sekam + cocopeat)" },
-      { id: "h0-4", text: "Tentukan lokasi berdasarkan kebutuhan cahaya" },
-      { id: "h0-5", text: "Siapkan alat dasar (semprotan, sekop kecil)" }
-    ]
-  },
-  {
-    title: "Hari 1-3 - Fase Adaptasi", icon: "🌱", color: "#f59e0b",
-    tasks: [
-      { id: "h1-1", text: "Jangan langsung disiram banyak (cukup lembab)" },
-      { id: "h1-2", text: "Taruh di tempat teduh dulu (cahaya tidak langsung)" },
-      { id: "h1-3", text: "Jangan panik kalau ada daun layu (transplant shock normal)" },
-      { id: "h1-4", text: "Cek tanah sebelum siram: tusuk jari 2-3cm" }
-    ]
-  },
-  {
-    title: "Hari 4-7 - Membangun Rutinitas", icon: "�", color: "#8b5cf6",
-    tasks: [
-      { id: "h4-1", text: "Mulai jadwal penyiraman tetap (cek pagi hari)" },
-      { id: "h4-2", text: "Perhatikan tanda pertumbuhan pertama" },
-      { id: "h4-3", text: "Pindahkan ke lokasi permanen" },
-      { id: "h4-4", text: "Foto tanaman sebagai baseline hari ke-7" }
-    ]
-  },
-  {
-    title: "Minggu 2-4 - Perkembangan Awal", icon: "🌿", color: "#10b981",
-    tasks: [
-      { id: "m2-1", text: "Pupuk pertama dosis SETENGAH dari takaran kemasan" },
-      { id: "m2-2", text: "Cek kondisi akar (keluar dari lubang = butuh repot)" },
-      { id: "m2-3", text: "Bersihkan daun dari debu untuk fotosintesis optimal" },
-      { id: "m2-4", text: "Amati hama di bagian bawah daun" }
-    ]
-  },
-  {
-    title: "Bulan 1-3 - Perawatan Rutin", icon: "✂️", color: "#ec4899",
-    tasks: [
-      { id: "b1-1", text: "Pupuk rutin sebulan sekali" },
-      { id: "b1-2", text: "Repotting jika diperlukan (pot 2-3cm lebih besar)" },
-      { id: "b1-3", text: "Pangkas daun mati/kuning dengan gunting bersih" },
-      { id: "b1-4", text: "Evaluasi lokasi: daun pucat = kurang cahaya" }
-    ]
-  },
-  {
-    title: "Bulan 3+ - Berkembang & Berbagi", icon: "🌟", color: "#f43f5e",
-    tasks: [
-      { id: "b3-1", text: "Coba propagasi (stek batang/daun)" },
-      { id: "b3-2", text: "Berbagi stek dengan teman" },
-      { id: "b3-3", text: "Naik level ke tanaman 'sedang'" },
-      { id: "b3-4", text: "Dokumentasi: bandingkan foto hari 1 vs sekarang" }
-    ]
-  }
-];
-
-// --- AI-Powered PlantGuideSection ---
+// --- Static PlantGuideSection ---
 function PlantGuideSection({ plant }) {
-  const [guide, setGuide] = useLocalStorage('guide_' + plant.id + '_content', null);
   const [tasks, setTasks] = useLocalStorage('guide_' + plant.id + '_tasks', []);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
-
-  const generate = async () => {
-    setLoading(true); setError(null);
-    try {
-      const data = await callAI('guide', plant.name, plant.scientificName);
-      setGuide({ ...data, createdAt: new Date().toISOString() });
-      setTasks([]);
-    } catch (e) { setError('Gagal membuat panduan. Coba lagi. (' + e.message + ')'); }
-    finally { setLoading(false); }
-  };
+  const guide = buildStaticGuide(plant);
 
   const toggleTask = (taskId) => {
     setTasks(prev => prev.includes(taskId) ? prev.filter(id => id !== taskId) : [...prev, taskId]);
   };
 
-  const totalTasks = guide?.phases ? guide.phases.reduce((s, p) => s + (p.tasks?.length || 0), 0) : 0;
+  const totalTasks = guide.phases.reduce((s, p) => s + p.tasks.length, 0);
   const pct = totalTasks > 0 ? Math.round((tasks.length / totalTasks) * 100) : 0;
 
   return (
     <div style={{ marginTop: '32px' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
         <h3 style={{ fontSize: '1.2rem' }}>📅 Panduan Menanam dari Nol</h3>
-        {guide && <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--primary)' }}>{pct}% selesai</span>}
+        <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--primary)' }}>{pct}% selesai</span>
+      </div>
+      <div style={{ height: '6px', background: 'var(--border-color)', borderRadius: '99px', marginBottom: '20px', overflow: 'hidden' }}>
+        <div style={{ height: '100%', width: pct + '%', background: 'linear-gradient(90deg, var(--primary-dark), var(--primary))', borderRadius: '99px', transition: 'width 0.4s ease' }} />
       </div>
 
-      {!guide && !loading && (
-        <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '24px', textAlign: 'center', boxShadow: 'var(--shadow-sm)' }}>
-          <p style={{ color: 'var(--text-muted)', marginBottom: '14px', fontSize: '0.88rem' }}>
-            Panduan interaktif 6 fase khusus untuk {plant.name}, dibuat oleh Gemini AI.
-          </p>
-          <button className="btn-primary" onClick={generate} style={{ margin: '0 auto' }}>🌱 Buat Panduan untuk Tanaman Ini</button>
-          {error && <p style={{ color: '#ef4444', marginTop: '10px', fontSize: '0.82rem' }}>{error}</p>}
-        </div>
-      )}
-
-      {loading && (
-        <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '28px', textAlign: 'center', boxShadow: 'var(--shadow-sm)' }}>
-          <div style={{ width: '36px', height: '36px', margin: '0 auto 14px', border: '3px solid #dcfce7', borderTopColor: 'var(--primary)', borderRadius: '50%', animation: 'spin 1s linear infinite' }} />
-          <p style={{ color: 'var(--text-muted)', fontWeight: 600, fontSize: '0.88rem' }}>Gemini sedang menyusun panduan...</p>
-        </div>
-      )}
-
-      {guide && !loading && (
-        <div>
-          <div style={{ height: '6px', background: 'var(--border-color)', borderRadius: '99px', marginBottom: '12px', overflow: 'hidden' }}>
-            <div style={{ height: '100%', width: pct + '%', background: 'linear-gradient(90deg, var(--primary-dark), var(--primary))', borderRadius: '99px', transition: 'width 0.4s ease' }} />
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-            <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
-              Dibuat: {new Date(guide.createdAt).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })}
-            </p>
-            <button onClick={generate} disabled={loading} style={{ background: 'none', border: 'none', color: 'var(--primary)', fontSize: '0.78rem', fontWeight: 700, cursor: 'pointer' }}>
-              🔄 Buat Ulang
-            </button>
-          </div>
-
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {guide.phases?.map((phase, pIdx) => {
-              const phaseTasks = phase.tasks || [];
-              const completedInPhase = phaseTasks.filter((_, tIdx) => tasks.includes(pIdx + '-' + tIdx)).length;
-              const isDone = completedInPhase === phaseTasks.length && phaseTasks.length > 0;
-              return (
-                <details key={pIdx} style={{ background: 'var(--surface)', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-sm)', borderLeft: '4px solid ' + (phase.color || 'var(--primary)') }} open={pIdx === 0}>
-                  <summary style={{ padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', listStyle: 'none' }}>
-                    <div style={{ fontSize: '1.5rem', flexShrink: 0 }}>{phase.icon || '🌱'}</div>
-                    <div style={{ flex: 1 }}>
-                      <p style={{ fontSize: '0.7rem', fontWeight: 700, color: phase.color || 'var(--primary)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>{phase.phase}</p>
-                      <p style={{ fontSize: '0.95rem', fontWeight: 700, color: isDone ? 'var(--text-muted)' : 'var(--text-main)', textDecoration: isDone ? 'line-through' : 'none' }}>{phase.title}</p>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+        {guide.phases.map((phase, pIdx) => {
+          const phaseTasks = phase.tasks || [];
+          const completedInPhase = phaseTasks.filter((_, tIdx) => tasks.includes(pIdx + '-' + tIdx)).length;
+          const isDone = completedInPhase === phaseTasks.length && phaseTasks.length > 0;
+          return (
+            <details key={pIdx} style={{ background: 'var(--surface)', borderRadius: '16px', overflow: 'hidden', boxShadow: 'var(--shadow-sm)', borderLeft: '4px solid ' + phase.color }} open={pIdx === 0}>
+              <summary style={{ padding: '16px', display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', listStyle: 'none' }}>
+                <div style={{ fontSize: '1.5rem', flexShrink: 0 }}>{phase.icon}</div>
+                <div style={{ flex: 1 }}>
+                  <p style={{ fontSize: '0.7rem', fontWeight: 700, color: phase.color, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{phase.phase}</p>
+                  <p style={{ fontSize: '0.95rem', fontWeight: 700, color: isDone ? 'var(--text-muted)' : 'var(--text-main)', textDecoration: isDone ? 'line-through' : 'none' }}>{phase.title}</p>
+                </div>
+                <div style={{ fontSize: '0.75rem', fontWeight: 600, color: isDone ? 'var(--primary)' : 'var(--text-muted)', background: isDone ? '#dcfce7' : '#f3f4f6', padding: '4px 10px', borderRadius: '50px' }}>
+                  {completedInPhase}/{phaseTasks.length}
+                </div>
+              </summary>
+              <div style={{ padding: '0 16px 16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                {phaseTasks.map((task, tIdx) => {
+                  const taskId = pIdx + '-' + tIdx;
+                  const done = tasks.includes(taskId);
+                  return (
+                    <div key={tIdx} onClick={() => toggleTask(taskId)} style={{ display: 'flex', gap: '12px', cursor: 'pointer', opacity: done ? 0.55 : 1, transition: 'opacity 0.2s' }}>
+                      <div style={{ width: '22px', height: '22px', borderRadius: '50%', border: '2px solid ' + (done ? phase.color : 'var(--border-color)'), background: done ? phase.color : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '2px', transition: 'all 0.2s' }}>
+                        {done && <span style={{ color: 'white', fontSize: '12px', fontWeight: 700 }}>✓</span>}
+                      </div>
+                      <div>
+                        <p style={{ fontSize: '0.9rem', fontWeight: 700, marginBottom: '3px', textDecoration: done ? 'line-through' : 'none' }}>{task.task}</p>
+                        <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.5, textDecoration: done ? 'line-through' : 'none' }}>{task.detail}</p>
+                      </div>
                     </div>
-                    <div style={{ fontSize: '0.75rem', fontWeight: 600, color: isDone ? 'var(--primary)' : 'var(--text-muted)', background: isDone ? '#dcfce7' : '#f3f4f6', padding: '4px 10px', borderRadius: '50px' }}>
-                      {completedInPhase}/{phaseTasks.length}
-                    </div>
-                  </summary>
-                  <div style={{ padding: '0 16px 16px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                    {phaseTasks.map((task, tIdx) => {
-                      const taskId = pIdx + '-' + tIdx;
-                      const done = tasks.includes(taskId);
-                      return (
-                        <div key={tIdx} onClick={() => toggleTask(taskId)} style={{ display: 'flex', gap: '12px', cursor: 'pointer', opacity: done ? 0.55 : 1, transition: 'opacity 0.2s' }}>
-                          <div style={{ width: '22px', height: '22px', borderRadius: '50%', border: '2px solid ' + (done ? (phase.color || 'var(--primary)') : 'var(--border-color)'), background: done ? (phase.color || 'var(--primary)') : 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '2px', transition: 'all 0.2s' }}>
-                            {done && <span style={{ color: 'white', fontSize: '12px', fontWeight: 700 }}>✓</span>}
-                          </div>
-                          <div>
-                            <p style={{ fontSize: '0.9rem', fontWeight: 700, marginBottom: '3px', textDecoration: done ? 'line-through' : 'none' }}>{task.task}</p>
-                            <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', lineHeight: 1.5, textDecoration: done ? 'line-through' : 'none' }}>{task.detail}</p>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </details>
-              );
-            })}
-          </div>
-        </div>
-      )}
+                  );
+                })}
+              </div>
+            </details>
+          );
+        })}
+      </div>
     </div>
   );
 }
-
-// --- 5.5 AI Chat (Gemini) ---
-function AIChat() {
-  const [messages, setMessages] = useLocalStorage('aichat_history', [
-    { role: 'assistant', content: 'Halo! Saya TanamanBot 🌿 — asisten tanaman berbasis Gemini AI. Tanyakan apa saja tentang perawatan tanaman, hama, media tanam, atau tips berkebun!' }
-  ]);
-  const [input, setInput] = useState('');
-  const [loading, setLoading] = useState(false);
-  const messagesEndRef = useRef(null);
-
-  useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages, loading]);
-
-  const sendMessage = async (text) => {
-    if (!text.trim() || loading) return;
-    const newMessages = [...messages, { role: 'user', content: text }];
-    setMessages(newMessages);
-    setInput('');
-    setLoading(true);
-    try {
-      const res = await fetch(AI_PROXY, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ type: 'chat', messages: newMessages })
-      });
-      const data = await res.json();
-      setMessages([...newMessages, { role: 'assistant', content: data.reply || 'Maaf, tidak bisa menjawab saat ini.' }]);
-    } catch (e) {
-      setMessages([...newMessages, { role: 'assistant', content: '⚠️ Gagal terhubung ke AI. Cek koneksi internet.' }]);
-    }
-    setLoading(false);
-  };
-
-  return (
-    <main className="main-content animate-fade-up" style={{ padding: 0 }}>
-      <div className="chat-container">
-        <div className="chat-messages">
-          {messages.map((m, idx) => (
-            <div key={idx} className={`chat-bubble ${m.role}`}>
-              <p style={{ whiteSpace: 'pre-wrap' }}>{m.content}</p>
-            </div>
-          ))}
-          {loading && (
-            <div className="chat-bubble assistant">
-              <p style={{ display: 'flex', gap: '4px', alignItems: 'center' }}>
-                <span style={{ animation: 'spin 1s linear infinite', display: 'inline-block', width: '14px', height: '14px', border: '2px solid #dcfce7', borderTopColor: 'var(--primary)', borderRadius: '50%' }} />
-                TanamanBot sedang berpikir...
-              </p>
-            </div>
-          )}
-          <div ref={messagesEndRef} />
-        </div>
-        <div className="chat-input-area">
-          <input
-            type="text"
-            style={{ flex: 1, padding: '12px 16px', borderRadius: '50px', border: '1px solid var(--border-color)', outline: 'none', background: 'var(--surface)', color: 'var(--text-main)' }}
-            placeholder="Tanya TanamanBot..."
-            value={input}
-            onChange={e => setInput(e.target.value)}
-            onKeyDown={e => e.key === 'Enter' && sendMessage(input)}
-          />
-          <button
-            className="icon-btn pill"
-            style={{ background: 'var(--primary)', color: 'white' }}
-            onClick={() => sendMessage(input)}
-            disabled={loading || !input.trim()}
-          >
-            <span style={{ fontSize: '1rem' }}>➤</span>
-          </button>
-        </div>
-      </div>
-    </main>
-  );
-}
-
 
 function Favorites() {
   const { favorites } = React.useContext(AppContext);
