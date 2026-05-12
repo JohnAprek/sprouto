@@ -3,11 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <script>
-      const r = sessionStorage.getItem('redirect');
-      if (r) {
-        sessionStorage.removeItem('redirect');
-        window.history.replaceState(null, '', '/tanamanku' + r);
-      }
+      const r=sessionStorage.getItem('r');
+      if(r){sessionStorage.removeItem('r');
+      window.history.replaceState(null,'','/tanamanku'+r);}
     </script>
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
