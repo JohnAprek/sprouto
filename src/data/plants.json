@@ -1,43 +1,1232 @@
 [
-  {"id":"hias-1","name":"Monstera Deliciosa","scientificName":"Monstera deliciosa","category":"Tanaman Hias","difficulty":"mudah","description":"Tanaman hias kekinian dengan daun berlubang yang eksotis, cocok untuk dekorasi indoor.","schedules":{"watering":3,"fertilizer":30,"repotting":365},"careDetails":{"watering":"Siram saat media bagian atas (2 cm) sudah kering, sekitar 2-3 hari sekali.","sunlight":"Cahaya terang namun tidak langsung (bright indirect light).","pruning":"Potong daun yang menguning atau rusak di pangkal batang.","fertilizer":"Pupuk daun cair sebulan sekali.","commonProblems":"Daun menguning jika terlalu banyak air."}},
-  {"id":"hias-2","name":"Aglonema","scientificName":"Aglaonema spp.","category":"Tanaman Hias","difficulty":"mudah","description":"Sri Rejeki, tanaman hias dengan corak daun kemerahan yang cantik dan perawatannya mudah.","schedules":{"watering":2,"fertilizer":90,"repotting":365},"careDetails":{"watering":"Penyiraman 2-3 hari sekali, pastikan pot memiliki drainase baik.","sunlight":"Teduh atau cahaya sedang, hindari matahari langsung.","pruning":"Buang bunga yang muncul agar nutrisi fokus ke daun.","fertilizer":"Pupuk Dekastar lambat urai setiap 3 bulan.","commonProblems":"Busuk akar akibat media tanam padat dan menggenang."}},
-  {"id":"hias-3","name":"Lidah Mertua","scientificName":"Sansevieria trifasciata","category":"Tanaman Hias","difficulty":"mudah","description":"Tanaman tangguh penyerap polutan, memiliki daun tegak keras seperti pedang.","schedules":{"watering":7,"fertilizer":180,"repotting":730},"careDetails":{"watering":"Sangat jarang, seminggu atau 2 minggu sekali sudah cukup.","sunlight":"Adaptif dari cahaya redup hingga matahari penuh.","pruning":"Hanya potong daun yang patah atau layu.","fertilizer":"Jarang butuh pupuk, beri kompos setahun 2 kali.","commonProblems":"Hampir tidak ada, kecuali mati karena terlalu sering disiram."}},
-  {"id":"hias-4","name":"Anggrek Bulan","scientificName":"Phalaenopsis amabilis","category":"Tanaman Hias","difficulty":"sulit","description":"Puspa pesona Indonesia, memiliki bunga putih besar yang elegan dan tahan lama.","schedules":{"watering":2,"fertilizer":7,"repotting":365},"careDetails":{"watering":"Semprot akar dan media sabut kelapa setiap pagi.","sunlight":"Cahaya teduh (di bawah paranet 60-70%).","pruning":"Potong tangkai bunga yang sudah layu semuanya.","fertilizer":"Pupuk pembungaan seminggu sekali disemprotkan.","commonProblems":"Busuk daun akibat tertinggalnya air di sela daun."}},
-  {"id":"hias-5","name":"Bonsai Beringin","scientificName":"Ficus benjamina","category":"Tanaman Hias","difficulty":"sedang","description":"Bonsai klasik dengan akar gantung yang indah, sangat populer di Indonesia.","schedules":{"watering":1,"fertilizer":60,"repotting":730},"careDetails":{"watering":"Siram setiap hari saat musim kemarau.","sunlight":"Butuh sinar matahari penuh.","pruning":"Pangkas rutin untuk membentuk pola kanopi.","fertilizer":"Pupuk NPK lambat urai setiap 2 bulan.","commonProblems":"Kutu putih pada daun dan busuk akar jika pot tidak bolong."}},
-  {"id":"hias-6","name":"Philodendron","scientificName":"Philodendron hederaceum","category":"Tanaman Hias","difficulty":"mudah","description":"Tanaman rambat tropis dengan daun hijau mengkilap, mudah dirawat dan menjalar indah.","schedules":{"watering":3,"fertilizer":30,"repotting":365},"careDetails":{"watering":"Siram saat 2 cm media atas kering, tidak boleh tergenang.","sunlight":"Cahaya tidak langsung sedang hingga terang.","pruning":"Potong ujung sulur untuk merangsang percabangan.","fertilizer":"Pupuk cair NPK sebulan sekali.","commonProblems":"Daun menguning karena overwatering atau kurang cahaya."}},
-  {"id":"hias-7","name":"Sirih Gading","scientificName":"Epipremnum aureum","category":"Tanaman Hias","difficulty":"mudah","description":"Pothos, tanaman rambat super tahan banting yang cocok untuk pemula, bisa hidup di air maupun tanah.","schedules":{"watering":5,"fertilizer":60,"repotting":365},"careDetails":{"watering":"Siram 1-2 kali seminggu, biarkan media sedikit kering dulu.","sunlight":"Sangat toleran terhadap cahaya rendah, tapi tumbuh optimal di cahaya tidak langsung.","pruning":"Potong sulur terlalu panjang untuk menjaga bentuk.","fertilizer":"Pupuk cair encer setiap 2 bulan.","commonProblems":"Daun kuning akibat terlalu sering disiram."}},
-  {"id":"hias-8","name":"ZZ Plant","scientificName":"Zamioculcas zamiifolia","category":"Tanaman Hias","difficulty":"mudah","description":"Tanaman glossy yang sangat tahan kekeringan, sempurna untuk ruangan kantor atau kamar.","schedules":{"watering":10,"fertilizer":90,"repotting":730},"careDetails":{"watering":"Siram sangat jarang, setiap 1-2 minggu sekali, biarkan benar-benar kering.","sunlight":"Toleran cahaya rendah, hindari matahari langsung.","pruning":"Potong daun menguning di pangkal tangkai.","fertilizer":"Pupuk lambat urai setiap 3 bulan.","commonProblems":"Busuk rimpang jika terlalu sering disiram."}},
-  {"id":"hias-9","name":"Kaktus","scientificName":"Echinopsis spp.","category":"Tanaman Hias","difficulty":"mudah","description":"Kaktus berduri dengan bunga cerah musiman, tidak butuh banyak air dan perawatan minimal.","schedules":{"watering":14,"fertilizer":180,"repotting":730},"careDetails":{"watering":"Siram setiap 2 minggu, lebih jarang di musim hujan.","sunlight":"Matahari penuh sepanjang hari.","pruning":"Tidak perlu dipangkas, cukup bersihkan bagian kering.","fertilizer":"Pupuk kaktus khusus 2x setahun.","commonProblems":"Busuk pangkal jika air menggenang di media."}},
-  {"id":"hias-10","name":"Calathea","scientificName":"Calathea ornata","category":"Tanaman Hias","difficulty":"sulit","description":"Tanaman eksotis dengan daun bergaris putih dan ungu di bagian bawah, gerak daunnya unik mengikuti cahaya.","schedules":{"watering":2,"fertilizer":30,"repotting":365},"careDetails":{"watering":"Siram 2-3 hari sekali dengan air yang sudah diendapkan (bebas klorin).","sunlight":"Cahaya tidak langsung yang teduh, jauh dari AC langsung.","pruning":"Potong daun kering di pangkalnya.","fertilizer":"Pupuk cair NPK encer sebulan sekali.","commonProblems":"Ujung daun coklat karena klorin air atau udara terlalu kering."}},
-  {"id":"sayur-1","name":"Bayam Cabut","scientificName":"Amaranthus tricolor","category":"Sayuran","difficulty":"mudah","description":"Sayuran hijau yang sangat mudah ditanam di halaman rumah, kaya akan zat besi.","schedules":{"watering":1,"fertilizer":14,"repotting":0},"careDetails":{"watering":"Siram 2 kali sehari pagi dan sore.","sunlight":"Sinar matahari penuh.","pruning":"Tidak perlu dipangkas, langsung dipanen dengan dicabut.","fertilizer":"Pupuk urea atau kandang pada umur 2 minggu setelah tanam.","commonProblems":"Dimakan ulat daun dan belalang."}},
-  {"id":"sayur-2","name":"Kangkung Darat","scientificName":"Ipomoea reptans","category":"Sayuran","difficulty":"mudah","description":"Sayuran favorit masyarakat Indonesia, tumbuh cepat dan masa panen singkat (3-4 minggu).","schedules":{"watering":1,"fertilizer":10,"repotting":0},"careDetails":{"watering":"Sangat butuh air, pastikan media selalu lembap.","sunlight":"Sinar matahari penuh.","pruning":"Bisa dipotong bagian atasnya saat panen agar tumbuh tunas baru.","fertilizer":"Pupuk NPK cair setiap 10 hari.","commonProblems":"Bercak daun akibat jamur jika terlalu rapat."}},
-  {"id":"sayur-3","name":"Tomat Ceri","scientificName":"Solanum lycopersicum","category":"Sayuran","difficulty":"sedang","description":"Tomat kecil yang manis, cocok ditanam di pot gantung atau polybag di teras.","schedules":{"watering":1,"fertilizer":14,"repotting":0},"careDetails":{"watering":"Siram rutin setiap pagi.","sunlight":"Sinar matahari pagi sangat baik.","pruning":"Buang daun bawah yang tua dan menyentuh tanah.","fertilizer":"Pupuk tinggi Fosfor dan Kalium saat mulai berbunga.","commonProblems":"Busuk ujung buah karena kurang kalsium."}},
-  {"id":"sayur-4","name":"Cabai Rawit","scientificName":"Capsicum frutescens","category":"Sayuran","difficulty":"sedang","description":"Cabai pedas favorit Indonesia yang sangat produktif dalam pot, bisa panen berkali-kali.","schedules":{"watering":1,"fertilizer":14,"repotting":0},"careDetails":{"watering":"Siram setiap hari, jangan sampai layu.","sunlight":"Matahari penuh minimal 6 jam sehari.","pruning":"Buang bunga pertama agar tanaman lebih kuat.","fertilizer":"Pupuk KCl dan TSP sebulan sekali.","commonProblems":"Layu fusarium dan hama tungau merah."}},
-  {"id":"sayur-5","name":"Selada","scientificName":"Lactuca sativa","category":"Sayuran","difficulty":"mudah","description":"Sayuran segar untuk salad yang bisa dipanen hanya dalam 30-40 hari, ideal untuk balkon.","schedules":{"watering":1,"fertilizer":14,"repotting":0},"careDetails":{"watering":"Siram setiap hari secara rutin, jaga media tetap lembap.","sunlight":"Sinar matahari pagi, hindari terik siang karena cepat layu.","pruning":"Petik daun luar saja agar terus tumbuh.","fertilizer":"Pupuk nitrogen cair setiap 2 minggu.","commonProblems":"Cepat berbunga (bolting) di suhu terlalu panas."}},
-  {"id":"sayur-6","name":"Sawi Hijau","scientificName":"Brassica rapa","category":"Sayuran","difficulty":"mudah","description":"Sayuran berdaun lebar untuk tumisan, panen cepat dalam 30-40 hari dari tanam.","schedules":{"watering":1,"fertilizer":10,"repotting":0},"careDetails":{"watering":"Siram setiap hari pagi, media harus selalu lembap.","sunlight":"Matahari penuh, tumbuh lebih baik di musim kemarau.","pruning":"Tidak perlu, panen sekaligus dengan mencabut.","fertilizer":"Pupuk urea dua minggu setelah tanam.","commonProblems":"Ulat kubis dan kutu daun."}},
-  {"id":"obat-1","name":"Kumis Kucing","scientificName":"Orthosiphon aristatus","category":"Obat","difficulty":"mudah","description":"Tanaman obat dengan bunga menyerupai kumis kucing, berkhasiat melancarkan saluran kemih.","schedules":{"watering":1,"fertilizer":30,"repotting":180},"careDetails":{"watering":"Siram sehari sekali, sangat suka tanah yang lembap.","sunlight":"Cahaya matahari penuh atau semi-teduh.","pruning":"Pangkas setelah berbunga lebat untuk merangsang tunas baru.","fertilizer":"Pupuk organik setiap bulan.","commonProblems":"Hama kutu daun di ujung tunas muda."}},
-  {"id":"obat-2","name":"Sambiloto","scientificName":"Andrographis paniculata","category":"Obat","difficulty":"mudah","description":"Raja pahit yang memiliki manfaat luar biasa untuk menurunkan demam dan meningkatkan imun.","schedules":{"watering":2,"fertilizer":60,"repotting":0},"careDetails":{"watering":"Toleran terhadap kekeringan, siram saat tanah kering.","sunlight":"Matahari penuh lebih baik untuk kandungan zat aktifnya.","pruning":"Potong bagian atas sebelum berbunga untuk panen daun.","fertilizer":"Pupuk kompos saat awal tanam.","commonProblems":"Jarang terkena hama karena rasanya yang sangat pahit."}},
-  {"id":"obat-3","name":"Sirih","scientificName":"Piper betle","category":"Obat","difficulty":"mudah","description":"Tanaman merambat tradisional Indonesia dengan daun antiseptik alami untuk kesehatan mulut dan kulit.","schedules":{"watering":2,"fertilizer":30,"repotting":365},"careDetails":{"watering":"Siram 2-3 hari sekali, suka media lembap tapi tidak tergenang.","sunlight":"Teduh, tidak suka matahari langsung terlalu lama.","pruning":"Pangkas sulur terlalu panjang dan daun tua.","fertilizer":"Pupuk kandang sebulan sekali.","commonProblems":"Jamur pada daun jika terlalu lembap dan tidak ada sirkulasi udara."}},
-  {"id":"obat-4","name":"Pegagan","scientificName":"Centella asiatica","category":"Obat","difficulty":"mudah","description":"Herbal populer untuk meningkatkan fungsi otak dan regenerasi sel kulit, tumbuh menjalar.","schedules":{"watering":2,"fertilizer":30,"repotting":180},"careDetails":{"watering":"Suka lembap, siram 2 hari sekali atau saat media mulai kering.","sunlight":"Teduh, tumbuh baik di bawah pohon atau paranet.","pruning":"Pangkas sulur yang merambat keluar pot.","fertilizer":"Pupuk organik cair sebulan sekali.","commonProblems":"Mati jika kekurangan air dalam waktu lama."}},
-  {"id":"obat-5","name":"Mengkudu","scientificName":"Morinda citrifolia","category":"Obat","difficulty":"sedang","description":"Tanaman perdu berbuah unik dengan khasiat sebagai imunostimulan dan antioksidan kuat.","schedules":{"watering":3,"fertilizer":60,"repotting":365},"careDetails":{"watering":"Siram 2-3 hari sekali, toleran kekeringan saat sudah dewasa.","sunlight":"Sinar matahari penuh lebih disukai.","pruning":"Pangkas dahan untuk menjaga ukuran dan merangsang buah.","fertilizer":"Pupuk kandang dan kompos setiap 2 bulan.","commonProblems":"Buah busuk jika kebanyakan air saat musim hujan."}},
-  {"id":"herbal-1","name":"Jahe Merah","scientificName":"Zingiber officinale var. rubrum","category":"Herbal","difficulty":"sedang","description":"Rimpang pedas dengan khasiat menghangatkan tubuh, populer untuk wedang dan jamu.","schedules":{"watering":2,"fertilizer":30,"repotting":0},"careDetails":{"watering":"Siram 2 hari sekali, hindari genangan agar rimpang tidak busuk.","sunlight":"Tempat agak teduh, hindari sinar matahari terik langsung.","pruning":"Buang daun yang menguning.","fertilizer":"Pupuk kandang dan abu dapur setiap bulan.","commonProblems":"Penyakit layu bakteri dan busuk rimpang."}},
-  {"id":"herbal-2","name":"Lidah Buaya","scientificName":"Aloe vera","category":"Herbal","difficulty":"mudah","description":"Tanaman herbal serbaguna untuk kesehatan kulit, rambut, dan pencernaan.","schedules":{"watering":5,"fertilizer":90,"repotting":365},"careDetails":{"watering":"Siram 5-7 hari sekali, pastikan tanah benar-benar kering sebelum disiram lagi.","sunlight":"Cahaya terang berlimpah, matahari pagi sangat baik.","pruning":"Potong daun terbawah menggunakan pisau tajam saat akan dipanen.","fertilizer":"Pupuk NPK lambat urai setiap 3 bulan.","commonProblems":"Busuk pangkal daun karena penyiraman berlebihan."}},
-  {"id":"herbal-3","name":"Kunyit","scientificName":"Curcuma longa","category":"Herbal","difficulty":"mudah","description":"Rimpang kuning emas kaya kurkumin untuk anti-inflamasi, bumbu dapur wajib setiap rumah.","schedules":{"watering":2,"fertilizer":30,"repotting":0},"careDetails":{"watering":"Siram 2-3 hari sekali, media harus lembap tapi tidak tergenang.","sunlight":"Teduh hingga semi-teduh, hindari matahari terik langsung.","pruning":"Biarkan tumbuh alami, potong bagian yang mengering.","fertilizer":"Pupuk kandang dan kompos setiap bulan.","commonProblems":"Busuk rimpang akibat drainase buruk."}},
-  {"id":"herbal-4","name":"Serai","scientificName":"Cymbopogon citratus","category":"Herbal","difficulty":"mudah","description":"Tanaman rumpun beraroma lemon yang serbaguna, mengusir nyamuk sekaligus bumbu masakan.","schedules":{"watering":2,"fertilizer":30,"repotting":365},"careDetails":{"watering":"Siram 2-3 hari sekali, toleran kekeringan singkat.","sunlight":"Sinar matahari penuh.","pruning":"Potong daun terluar yang kering dan kecoklatan.","fertilizer":"Pupuk kandang sebulan sekali.","commonProblems":"Jarang terkena hama karena aromanya yang kuat."}},
-  {"id":"herbal-5","name":"Kencur","scientificName":"Kaempferia galanga","category":"Herbal","difficulty":"mudah","description":"Rimpang kecil berpotensi besar untuk kesehatan tenggorokan dan meredakan batuk.","schedules":{"watering":3,"fertilizer":60,"repotting":0},"careDetails":{"watering":"Siram 2-3 hari sekali, kurangi di musim hujan.","sunlight":"Teduh, tidak suka matahari penuh.","pruning":"Biarkan layu alami saat musim kering, rimpang tetap hidup di tanah.","fertilizer":"Pupuk organik setiap 2 bulan.","commonProblems":"Rimpang tidak berkembang jika media terlalu padat."}},
-  {"id":"aroma-1","name":"Rosemary","scientificName":"Salvia rosmarinus","category":"Aromaterapi","difficulty":"sulit","description":"Tanaman beraroma khas untuk masakan Barat dan essential oil penenang pikiran.","schedules":{"watering":4,"fertilizer":60,"repotting":365},"careDetails":{"watering":"Sangat rentan overwatering. Siram hanya jika media tanam kering hingga ke bawah.","sunlight":"Matahari penuh 6-8 jam sehari.","pruning":"Pangkas ujung ranting untuk menjaga bentuk dan dipanen.","fertilizer":"Hindari pupuk berlebih, beri kompos tipis setiap 2 bulan.","commonProblems":"Sering mati tiba-tiba karena busuk akar akibat media kurang poros."}},
-  {"id":"aroma-2","name":"Lavender","scientificName":"Lavandula angustifolia","category":"Aromaterapi","difficulty":"sulit","description":"Bunga ungu dengan aroma menenangkan yang ampuh mengusir nyamuk dan membantu tidur.","schedules":{"watering":4,"fertilizer":60,"repotting":365},"careDetails":{"watering":"Siram secukupnya, biarkan kering di antara penyiraman.","sunlight":"Matahari penuh sepanjang hari.","pruning":"Pangkas bunga yang mulai layu agar terus berbunga.","fertilizer":"Sedikit kapur dolomit dan kompos.","commonProblems":"Jamur di iklim tropis yang terlalu lembap dan kurang angin."}},
-  {"id":"aroma-3","name":"Mint","scientificName":"Mentha spicata","category":"Aromaterapi","difficulty":"mudah","description":"Tanaman mint segar yang tumbuh cepat, sempurna untuk minuman segar, salad, dan aromaterapi.","schedules":{"watering":2,"fertilizer":30,"repotting":180},"careDetails":{"watering":"Siram setiap 2 hari, suka tanah yang lembap.","sunlight":"Cahaya tidak langsung sedang, bisa tumbuh baik di dalam ruangan.","pruning":"Pangkas agresif untuk mencegah berbunga dan menjaga aroma.","fertilizer":"Pupuk cair nitrogen setiap bulan.","commonProblems":"Cepat menyebar (invasif), sebaiknya tanam dalam pot terpisah."}},
-  {"id":"aroma-4","name":"Pandan","scientificName":"Pandanus amaryllifolius","category":"Aromaterapi","difficulty":"mudah","description":"Tanaman aromatik khas Asia Tenggara untuk pewangi masakan dan aromaterapi alami.","schedules":{"watering":2,"fertilizer":30,"repotting":365},"careDetails":{"watering":"Siram 2 hari sekali, suka media yang cukup lembap.","sunlight":"Teduh hingga semi-teduh, hindari matahari langsung yang terlalu terik.","pruning":"Potong daun tua atau yang sobek untuk menjaga penampilan.","fertilizer":"Pupuk kandang sebulan sekali.","commonProblems":"Ujung daun mengering jika terlalu kering atau kurang unsur hara."}},
-  {"id":"sayur-7","name":"Terong Ungu","scientificName":"Solanum melongena","category":"Sayuran","difficulty":"sedang","description":"Sayuran buah berwarna ungu mengkilap yang kaya antioksidan, cocok ditanam di polybag besar.","schedules":{"watering":1,"fertilizer":14,"repotting":0},"careDetails":{"watering":"Siram setiap hari di pagi hari, jangan sampai media mengering.","sunlight":"Matahari penuh minimal 6-8 jam sehari.","pruning":"Buang tunas samping berlebih agar buah lebih besar.","fertilizer":"Pupuk NPK tinggi K saat masa berbunga dan berbuah.","commonProblems":"Hama penggerek batang dan kutu kebul."}},
-  {"id":"sayur-8","name":"Timun","scientificName":"Cucumis sativus","category":"Sayuran","difficulty":"mudah","description":"Sayuran buah yang segar dan menyehatkan, bisa merambat di pagar atau teralis balkon.","schedules":{"watering":1,"fertilizer":10,"repotting":0},"careDetails":{"watering":"Siram setiap hari, tanaman ini butuh banyak air.","sunlight":"Matahari penuh.","pruning":"Buang daun tua dan ranting yang tidak produktif.","fertilizer":"Pupuk kandang dan NPK bergantian setiap 10 hari.","commonProblems":"Embun tepung (powdery mildew) di daun jika lembap tanpa sirkulasi."}},
-  {"id":"sayur-9","name":"Wortel","scientificName":"Daucus carota","category":"Sayuran","difficulty":"sedang","description":"Sayuran akar oranye kaya beta-karoten, butuh media tanah gembur dan dalam untuk tumbuh optimal.","schedules":{"watering":2,"fertilizer":21,"repotting":0},"careDetails":{"watering":"Siram 2 hari sekali, jaga kelembapan merata.","sunlight":"Matahari penuh.","pruning":"Jarang daun agar sinar bisa masuk ke semua tanaman.","fertilizer":"Pupuk kalium dan fosfat untuk mendorong pertumbuhan umbi.","commonProblems":"Umbi bercabang jika tanah terlalu padat atau ada batu."}},
-  {"id":"sayur-10","name":"Buncis","scientificName":"Phaseolus vulgaris","category":"Sayuran","difficulty":"mudah","description":"Polong hijau bergizi yang cepat berbuah (45-55 hari), bisa merambat atau tegak tergantung varietas.","schedules":{"watering":1,"fertilizer":14,"repotting":0},"careDetails":{"watering":"Siram setiap hari, terutama saat musim kering.","sunlight":"Matahari penuh.","pruning":"Panen rutin untuk merangsang buah baru.","fertilizer":"Pupuk NPK rendah nitrogen saat mulai berbunga.","commonProblems":"Karat daun dan ulat polong."}},
-  {"id":"buah-1","name":"Stroberi","scientificName":"Fragaria × ananassa","category":"Buah-buahan","difficulty":"sedang","description":"Buah merah mungil dengan rasa manis asam yang bisa tumbuh cantik di pot gantung atau teras.","schedules":{"watering":2,"fertilizer":14,"repotting":365},"careDetails":{"watering":"Siram 2 hari sekali, hindari air mengenai buah dan daun agar tidak busuk.","sunlight":"Matahari penuh 6-8 jam, suhu ideal di bawah 28°C.","pruning":"Buang runner (sulur) yang tumbuh berlebihan agar energi ke buah.","fertilizer":"Pupuk tinggi Kalium (K) untuk buah yang manis dan banyak.","commonProblems":"Buah busuk karena kelembapan tinggi dan sirkulasi udara buruk."}},
-  {"id":"buah-2","name":"Pepaya","scientificName":"Carica papaya","category":"Buah-buahan","difficulty":"mudah","description":"Buah tropis super produktif yang bisa dipanen dalam 6-9 bulan, sangat populer di pekarangan rumah Indonesia.","schedules":{"watering":2,"fertilizer":30,"repotting":0},"careDetails":{"watering":"Siram 2-3 hari sekali, toleran kekeringan singkat tapi tidak boleh tergenang.","sunlight":"Matahari penuh sepanjang hari.","pruning":"Tidak perlu banyak pangkas, buang daun tua bagian bawah saja.","fertilizer":"Pupuk kandang + NPK sebulan sekali.","commonProblems":"Kupu-kupu papaya dan busuk pangkal batang di tanah basah."}},
-  {"id":"buah-3","name":"Jambu Biji Merah","scientificName":"Psidium guajava","category":"Buah-buahan","difficulty":"mudah","description":"Buah tropis kaya vitamin C dengan daging merah muda yang manis, bisa ditanam dalam pot besar.","schedules":{"watering":2,"fertilizer":30,"repotting":730},"careDetails":{"watering":"Siram 2-3 hari sekali, kurangi saat musim hujan.","sunlight":"Matahari penuh.","pruning":"Pangkas setelah panen untuk merangsang bunga baru.","fertilizer":"Pupuk NPK dan kompos sebulan sekali.","commonProblems":"Buah busuk karena lalat buah, gunakan penutup plastik pada buah muda."}},
-  {"id":"buah-4","name":"Pisang Cavendish","scientificName":"Musa acuminata","category":"Buah-buahan","difficulty":"mudah","description":"Pisang varietas populer dengan buah manis bergizi, tumbuh cepat dan produktif di iklim tropis.","schedules":{"watering":2,"fertilizer":30,"repotting":0},"careDetails":{"watering":"Siram 2-3 hari sekali, sangat butuh air saat cuaca panas.","sunlight":"Matahari penuh.","pruning":"Sisakan 1 anakan terbaik, buang anakan lainnya agar nutrisi terfokus.","fertilizer":"Pupuk kalium tinggi untuk buah yang optimal.","commonProblems":"Penyakit layu panama (Fusarium) dan nematoda akar."}},
-  {"id":"buah-5","name":"Jeruk Nipis","scientificName":"Citrus aurantiifolia","category":"Buah-buahan","difficulty":"sedang","description":"Jeruk kecil serbaguna untuk memasak, minuman, dan kesehatan, cocok ditanam dalam pot medium.","schedules":{"watering":2,"fertilizer":30,"repotting":730},"careDetails":{"watering":"Siram 2-3 hari sekali, biarkan lapisan atas tanah kering dulu.","sunlight":"Matahari penuh minimal 8 jam sehari.","pruning":"Pangkas ranting yang saling bersilangan dan ranting kering.","fertilizer":"Pupuk khusus jeruk atau NPK 3 bulan sekali.","commonProblems":"Kutu daun, kutu sisik, dan penyakit greening."}},
-  {"id":"buah-6","name":"Semangka Mini","scientificName":"Citrullus lanatus","category":"Buah-buahan","difficulty":"sulit","description":"Semangka berukuran kecil yang bisa ditanam di polybag besar, buahnya manis dengan kulit tipis.","schedules":{"watering":1,"fertilizer":14,"repotting":0},"careDetails":{"watering":"Siram setiap hari, butuh banyak air terutama saat pembentukan buah.","sunlight":"Matahari penuh sepanjang hari.","pruning":"Sisakan 1-2 buah per tanaman dan buang bunga betina berlebih.","fertilizer":"Pupuk tinggi fosfor saat berbunga, kalium saat berbuah.","commonProblems":"Busuk ujung buah dan serangan hama thrips."}},
-  {"id":"buah-7","name":"Anggur","scientificName":"Vitis vinifera","category":"Buah-buahan","difficulty":"sulit","description":"Buah eksotis yang bisa merambat indah di teralis, dengan sedikit kesabaran bisa berbuah lebat di Indonesia.","schedules":{"watering":2,"fertilizer":21,"repotting":730},"careDetails":{"watering":"Siram 2-3 hari sekali, kurangi drastis setelah pemangkasan besar.","sunlight":"Matahari penuh minimal 8 jam.","pruning":"Pemangkasan besar setahun sekali untuk merangsang pucuk buah baru.","fertilizer":"Pupuk kalium dan boron untuk buah yang lebat dan manis.","commonProblems":"Jamur embun bulat dan hama tungau anggur."}}
+  {
+    "id": "hias-1",
+    "name": "Monstera Deliciosa",
+    "scientificName": "Monstera deliciosa",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Tanaman hias kekinian dengan daun berlubang yang eksotis, cocok untuk dekorasi indoor.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram saat media bagian atas (2 cm) sudah kering, sekitar 2-3 hari sekali.",
+      "sunlight": "Cahaya terang namun tidak langsung (bright indirect light).",
+      "pruning": "Potong daun yang menguning atau rusak di pangkal batang.",
+      "fertilizer": "Pupuk daun cair sebulan sekali.",
+      "commonProblems": "Daun menguning jika terlalu banyak air."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / DWC",
+      "media": "Rockwool, hidroton (expanded clay)",
+      "nutrisi": "AB Mix standar 800–1200 ppm (EC 1.6–2.4)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "Tidak dipanen — pertumbuhan daun optimal terlihat dalam 2–3 bulan",
+      "tips": "Ganti larutan nutrisi setiap 2 minggu sekali. Pastikan bagian akar terendam ~⅓ dan ada celah udara di atas larutan agar akar bisa bernapas.",
+      "kesulitan": "Sedang"
+    }
+  },
+  {
+    "id": "hias-2",
+    "name": "Aglonema",
+    "scientificName": "Aglaonema spp.",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Sri Rejeki, tanaman hias dengan corak daun kemerahan yang cantik dan perawatannya mudah.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Penyiraman 2-3 hari sekali, pastikan pot memiliki drainase baik.",
+      "sunlight": "Teduh atau cahaya sedang, hindari matahari langsung.",
+      "pruning": "Buang bunga yang muncul agar nutrisi fokus ke daun.",
+      "fertilizer": "Pupuk Dekastar lambat urai setiap 3 bulan.",
+      "commonProblems": "Busuk akar akibat media tanam padat dan menggenang."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / Semi-hidroponik",
+      "media": "Hidroton (expanded clay) atau pasir kasar",
+      "nutrisi": "AB Mix encer 600–900 ppm (EC 1.2–1.8)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "Tidak dipanen — pertumbuhan penuh terlihat dalam 3–4 bulan",
+      "tips": "Gunakan wadah gelap untuk mencegah lumut tumbuh di larutan nutrisi. Aglonema sangat cocok dengan metode semi-hidroponik menggunakan hidroton.",
+      "kesulitan": "Mudah"
+    }
+  },
+  {
+    "id": "hias-3",
+    "name": "Lidah Mertua",
+    "scientificName": "Sansevieria trifasciata",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Tanaman tangguh penyerap polutan, memiliki daun tegak keras seperti pedang.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 180,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Sangat jarang, seminggu atau 2 minggu sekali sudah cukup.",
+      "sunlight": "Adaptif dari cahaya redup hingga matahari penuh.",
+      "pruning": "Hanya potong daun yang patah atau layu.",
+      "fertilizer": "Jarang butuh pupuk, beri kompos setahun 2 kali.",
+      "commonProblems": "Hampir tidak ada, kecuali mati karena terlalu sering disiram."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / Wick",
+      "media": "Hidroton atau perlite kasar",
+      "nutrisi": "AB Mix sangat encer 400–600 ppm (EC 0.8–1.2) — tanaman ini tidak butuh banyak nutrisi",
+      "ph_ideal": "5.5–7.0",
+      "waktu_panen": "Tidak dipanen — pertumbuhan stabil terlihat dalam 2–4 bulan",
+      "tips": "Jangan rendam seluruh akar — biarkan ⅓ bagian atas kering agar tidak busuk. Ganti air setiap 3–4 minggu karena tanaman ini tumbuh lambat.",
+      "kesulitan": "Mudah"
+    }
+  },
+  {
+    "id": "hias-4",
+    "name": "Anggrek Bulan",
+    "scientificName": "Phalaenopsis amabilis",
+    "category": "Tanaman Hias",
+    "difficulty": "sulit",
+    "description": "Puspa pesona Indonesia, memiliki bunga putih besar yang elegan dan tahan lama.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 7,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Semprot akar dan media sabut kelapa setiap pagi.",
+      "sunlight": "Cahaya teduh (di bawah paranet 60-70%).",
+      "pruning": "Potong tangkai bunga yang sudah layu semuanya.",
+      "fertilizer": "Pupuk pembungaan seminggu sekali disemprotkan.",
+      "commonProblems": "Busuk daun akibat tertinggalnya air di sela daun."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hidroponik (LECA)",
+      "media": "Hidroton (LECA) — media paling direkomendasikan untuk anggrek",
+      "nutrisi": "Pupuk anggrek cair khusus 300–500 ppm (EC 0.6–1.0) — dosis sangat rendah",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "Tidak dipanen — berbunga optimal setelah 6–12 bulan adaptasi",
+      "tips": "Biarkan LECA menyerap air secara kapiler, jangan rendam akar penuh. Gunakan pot transparan agar bisa memantau kondisi akar hijau yang sehat.",
+      "kesulitan": "Sulit"
+    }
+  },
+  {
+    "id": "hias-5",
+    "name": "Bonsai Beringin",
+    "scientificName": "Ficus benjamina",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "Bonsai klasik dengan akar gantung yang indah, sangat populer di Indonesia.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 60,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Siram setiap hari saat musim kemarau.",
+      "sunlight": "Butuh sinar matahari penuh.",
+      "pruning": "Pangkas rutin untuk membentuk pola kanopi.",
+      "fertilizer": "Pupuk NPK lambat urai setiap 2 bulan.",
+      "commonProblems": "Kutu putih pada daun dan busuk akar jika pot tidak bolong."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Bonsai beringin membutuhkan media tanah khusus untuk membentuk nebari (akar permukaan) dan tidak cocok untuk sistem hidroponik.",
+      "kesulitan": "-"
+    }
+  },
+  {
+    "id": "hias-6",
+    "name": "Philodendron",
+    "scientificName": "Philodendron hederaceum",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Tanaman rambat tropis dengan daun hijau mengkilap, mudah dirawat dan menjalar indah.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram saat 2 cm media atas kering, tidak boleh tergenang.",
+      "sunlight": "Cahaya tidak langsung sedang hingga terang.",
+      "pruning": "Potong ujung sulur untuk merangsang percabangan.",
+      "fertilizer": "Pupuk cair NPK sebulan sekali.",
+      "commonProblems": "Daun menguning karena overwatering atau kurang cahaya."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / DWC",
+      "media": "Rockwool atau hidroton",
+      "nutrisi": "AB Mix 700–1000 ppm (EC 1.4–2.0)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "Tidak dipanen — pertumbuhan sulur aktif terlihat dalam 1–2 bulan",
+      "tips": "Philodendron sangat mudah beradaptasi di air. Cukup masukkan stek batang ke air bersih selama 2 minggu untuk perakaran sebelum dipindah ke larutan nutrisi.",
+      "kesulitan": "Mudah"
+    }
+  },
+  {
+    "id": "hias-7",
+    "name": "Sirih Gading",
+    "scientificName": "Epipremnum aureum",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Pothos, tanaman rambat super tahan banting yang cocok untuk pemula, bisa hidup di air maupun tanah.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram 1-2 kali seminggu, biarkan media sedikit kering dulu.",
+      "sunlight": "Sangat toleran terhadap cahaya rendah, tapi tumbuh optimal di cahaya tidak langsung.",
+      "pruning": "Potong sulur terlalu panjang untuk menjaga bentuk.",
+      "fertilizer": "Pupuk cair encer setiap 2 bulan.",
+      "commonProblems": "Daun kuning akibat terlalu sering disiram."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky (hanya air)",
+      "media": "Tanpa media — akar langsung di air",
+      "nutrisi": "AB Mix sangat encer 400–700 ppm (EC 0.8–1.4) atau bahkan air biasa",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "Tidak dipanen — tumbuh subur dalam 2–4 minggu",
+      "tips": "Sirih gading adalah tanaman terbaik untuk pemula hidroponik — cukup masukkan stek ke botol air bening dan taruh di tempat terang. Ganti air setiap 1–2 minggu.",
+      "kesulitan": "Mudah"
+    }
+  },
+  {
+    "id": "hias-8",
+    "name": "ZZ Plant",
+    "scientificName": "Zamioculcas zamiifolia",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Tanaman glossy yang sangat tahan kekeringan, sempurna untuk ruangan kantor atau kamar.",
+    "schedules": {
+      "watering": 10,
+      "fertilizer": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Siram sangat jarang, setiap 1-2 minggu sekali, biarkan benar-benar kering.",
+      "sunlight": "Toleran cahaya rendah, hindari matahari langsung.",
+      "pruning": "Potong daun menguning di pangkal tangkai.",
+      "fertilizer": "Pupuk lambat urai setiap 3 bulan.",
+      "commonProblems": "Busuk rimpang jika terlalu sering disiram."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "ZZ Plant memiliki rimpang (rhizome) penyimpan air yang sangat rentan busuk jika terendam larutan — tidak direkomendasikan untuk hidroponik.",
+      "kesulitan": "-"
+    }
+  },
+  {
+    "id": "hias-9",
+    "name": "Kaktus",
+    "scientificName": "Echinopsis spp.",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Kaktus berduri dengan bunga cerah musiman, tidak butuh banyak air dan perawatan minimal.",
+    "schedules": {
+      "watering": 14,
+      "fertilizer": 180,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Siram setiap 2 minggu, lebih jarang di musim hujan.",
+      "sunlight": "Matahari penuh sepanjang hari.",
+      "pruning": "Tidak perlu dipangkas, cukup bersihkan bagian kering.",
+      "fertilizer": "Pupuk kaktus khusus 2x setahun.",
+      "commonProblems": "Busuk pangkal jika air menggenang di media."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Kaktus beradaptasi untuk kondisi kering ekstrem — sistem hidroponik yang selalu basah bertentangan total dengan kebutuhan dasarnya.",
+      "kesulitan": "-"
+    }
+  },
+  {
+    "id": "hias-10",
+    "name": "Calathea",
+    "scientificName": "Calathea ornata",
+    "category": "Tanaman Hias",
+    "difficulty": "sulit",
+    "description": "Tanaman eksotis dengan daun bergaris putih dan ungu di bagian bawah, gerak daunnya unik mengikuti cahaya.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram 2-3 hari sekali dengan air yang sudah diendapkan (bebas klorin).",
+      "sunlight": "Cahaya tidak langsung yang teduh, jauh dari AC langsung.",
+      "pruning": "Potong daun kering di pangkalnya.",
+      "fertilizer": "Pupuk cair NPK encer sebulan sekali.",
+      "commonProblems": "Ujung daun coklat karena klorin air atau udara terlalu kering."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / Semi-hidroponik",
+      "media": "Hidroton atau campuran perlite + cocopeat",
+      "nutrisi": "AB Mix encer 600–800 ppm (EC 1.2–1.6) — gunakan air bebas klorin/fluorida",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "Tidak dipanen — pola daun makin cantik setelah adaptasi 2–3 bulan",
+      "tips": "Calathea sangat sensitif terhadap mineral air — gunakan air hujan atau air yang sudah diendapkan 24 jam. Hindari meletakkan di dekat AC langsung.",
+      "kesulitan": "Sedang"
+    }
+  },
+  {
+    "id": "sayur-1",
+    "name": "Bayam Cabut",
+    "scientificName": "Amaranthus tricolor",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "Sayuran hijau yang sangat mudah ditanam di halaman rumah, kaya akan zat besi.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram 2 kali sehari pagi dan sore.",
+      "sunlight": "Sinar matahari penuh.",
+      "pruning": "Tidak perlu dipangkas, langsung dipanen dengan dicabut.",
+      "fertilizer": "Pupuk urea atau kandang pada umur 2 minggu setelah tanam.",
+      "commonProblems": "Dimakan ulat daun dan belalang."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Kratky",
+      "media": "Rockwool atau spons busa",
+      "nutrisi": "AB Mix sayuran daun 800–1200 ppm (EC 1.6–2.4)",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "14–20 hari sejak pindah tanam (sangat cepat!)",
+      "tips": "Semai benih di rockwool dulu selama 5–7 hari, baru pindah ke sistem NFT. Cocok sekali untuk sistem rakit apung (DWC) sederhana skala rumah tangga.",
+      "kesulitan": "Mudah"
+    }
+  },
+  {
+    "id": "sayur-2",
+    "name": "Kangkung Darat",
+    "scientificName": "Ipomoea reptans",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "Sayuran favorit masyarakat Indonesia, tumbuh cepat dan masa panen singkat (3-4 minggu).",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 10,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Sangat butuh air, pastikan media selalu lembap.",
+      "sunlight": "Sinar matahari penuh.",
+      "pruning": "Bisa dipotong bagian atasnya saat panen agar tumbuh tunas baru.",
+      "fertilizer": "Pupuk NPK cair setiap 10 hari.",
+      "commonProblems": "Bercak daun akibat jamur jika terlalu rapat."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool atau cocopeat",
+      "nutrisi": "AB Mix sayuran 1000–1500 ppm (EC 2.0–3.0) — kangkung butuh nutrisi tinggi",
+      "ph_ideal": "5.5–7.0",
+      "waktu_panen": "21–30 hari dari semai — bisa multi-panen dengan memotong bagian atas",
+      "tips": "Kangkung tumbuh sangat agresif di hidroponik — pertumbuhannya bisa 2x lebih cepat dari tanam tanah. Panen pertama di 21 hari, lalu potong dan biarkan tumbuh lagi.",
+      "kesulitan": "Mudah"
+    }
+  },
+  {
+    "id": "sayur-3",
+    "name": "Tomat Ceri",
+    "scientificName": "Solanum lycopersicum",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "Tomat kecil yang manis, cocok ditanam di pot gantung atau polybag di teras.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram rutin setiap pagi.",
+      "sunlight": "Sinar matahari pagi sangat baik.",
+      "pruning": "Buang daun bawah yang tua dan menyentuh tanah.",
+      "fertilizer": "Pupuk tinggi Fosfor dan Kalium saat mulai berbunga.",
+      "commonProblems": "Busuk ujung buah karena kurang kalsium."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Ebb & Flow",
+      "media": "Rockwool atau perlite + cocopeat",
+      "nutrisi": "AB Mix buah 1200–2500 ppm (EC 2.5–5.0) — tingkatkan saat berbuah",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "55–75 hari dari semai — lebih cepat 2 minggu dari tanam tanah",
+      "tips": "Ikat batang tomat ke ajir vertikal karena tumbuh sangat cepat di hidroponik. Saat berbunga, kocok-kocok batang ringan setiap hari untuk membantu penyerbukan.",
+      "kesulitan": "Sedang"
+    }
+  },
+  {
+    "id": "sayur-4",
+    "name": "Cabai Rawit",
+    "scientificName": "Capsicum frutescens",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "Cabai pedas favorit Indonesia yang sangat produktif dalam pot, bisa panen berkali-kali.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram setiap hari, jangan sampai layu.",
+      "sunlight": "Matahari penuh minimal 6 jam sehari.",
+      "pruning": "Buang bunga pertama agar tanaman lebih kuat.",
+      "fertilizer": "Pupuk KCl dan TSP sebulan sekali.",
+      "commonProblems": "Layu fusarium dan hama tungau merah."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Ebb & Flow",
+      "media": "Rockwool + hidroton",
+      "nutrisi": "AB Mix buah 1000–2000 ppm (EC 2.0–4.0) — tingkatkan kalium saat berbuah",
+      "ph_ideal": "5.5–6.8",
+      "waktu_panen": "75–90 hari dari semai — produktivitas bisa 3x lipat di hidroponik",
+      "tips": "Cabai rawit adalah kandidat terbaik hidroponik jangka panjang — satu tanaman bisa produksi terus selama 1–2 tahun. Pastikan aerasi larutan baik dengan air pump.",
+      "kesulitan": "Sedang"
+    }
+  },
+  {
+    "id": "sayur-5",
+    "name": "Selada",
+    "scientificName": "Lactuca sativa",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "Sayuran segar untuk salad yang bisa dipanen hanya dalam 30-40 hari, ideal untuk balkon.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram setiap hari secara rutin, jaga media tetap lembap.",
+      "sunlight": "Sinar matahari pagi, hindari terik siang karena cepat layu.",
+      "pruning": "Petik daun luar saja agar terus tumbuh.",
+      "fertilizer": "Pupuk nitrogen cair setiap 2 minggu.",
+      "commonProblems": "Cepat berbunga (bolting) di suhu terlalu panas."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky",
+      "media": "Rockwool atau spons busa",
+      "nutrisi": "AB Mix sayuran daun 700–1100 ppm (EC 1.4–2.2)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "25–35 hari dari pindah tanam — ini tanaman terpopuler untuk hidroponik pemula!",
+      "tips": "Selada adalah tanaman terbaik untuk belajar hidroponik. Dengan metode Kratky (botol bekas), tidak perlu pompa sama sekali — cukup isi nutrisi dan tunggu panen.",
+      "kesulitan": "Mudah"
+    }
+  },
+  {
+    "id": "sayur-6",
+    "name": "Sawi Hijau",
+    "scientificName": "Brassica rapa",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "Sayuran berdaun lebar untuk tumisan, panen cepat dalam 30-40 hari dari tanam.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 10,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram setiap hari pagi, media harus selalu lembap.",
+      "sunlight": "Matahari penuh, tumbuh lebih baik di musim kemarau.",
+      "pruning": "Tidak perlu, panen sekaligus dengan mencabut.",
+      "fertilizer": "Pupuk urea dua minggu setelah tanam.",
+      "commonProblems": "Ulat kubis dan kutu daun."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky / Rakit Apung",
+      "media": "Rockwool atau spons busa",
+      "nutrisi": "AB Mix sayuran daun 800–1200 ppm (EC 1.6–2.4)",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "25–35 hari dari pindah tanam",
+      "tips": "Sistem rakit apung (floating raft) sangat ideal untuk sawi — gunakan styrofoam bekas sebagai rakit dengan lubang 5 cm. Cocok untuk produksi skala rumah tangga.",
+      "kesulitan": "Mudah"
+    }
+  },
+  {
+    "id": "obat-1",
+    "name": "Kumis Kucing",
+    "scientificName": "Orthosiphon aristatus",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "Tanaman obat dengan bunga menyerupai kumis kucing, berkhasiat melancarkan saluran kemih.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 30,
+      "repotting": 180
+    },
+    "careDetails": {
+      "watering": "Siram sehari sekali, sangat suka tanah yang lembap.",
+      "sunlight": "Cahaya matahari penuh atau semi-teduh.",
+      "pruning": "Pangkas setelah berbunga lebat untuk merangsang tunas baru.",
+      "fertilizer": "Pupuk organik setiap bulan.",
+      "commonProblems": "Hama kutu daun di ujung tunas muda."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Kratky",
+      "media": "Rockwool atau cocopeat",
+      "nutrisi": "AB Mix herbal 800–1200 ppm (EC 1.6–2.4)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "45–60 hari dari semai — panen daun dan bunga muda",
+      "tips": "Kandungan zat aktif orthosiphonin lebih tinggi pada tanaman yang cukup stres ringan — jangan beri nutrisi terlalu tinggi. Panen sebelum berbunga lebat untuk kadar tertinggi.",
+      "kesulitan": "Mudah"
+    }
+  },
+  {
+    "id": "obat-2",
+    "name": "Sambiloto",
+    "scientificName": "Andrographis paniculata",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "Raja pahit yang memiliki manfaat luar biasa untuk menurunkan demam dan meningkatkan imun.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Toleran terhadap kekeringan, siram saat tanah kering.",
+      "sunlight": "Matahari penuh lebih baik untuk kandungan zat aktifnya.",
+      "pruning": "Potong bagian atas sebelum berbunga untuk panen daun.",
+      "fertilizer": "Pupuk kompos saat awal tanam.",
+      "commonProblems": "Jarang terkena hama karena rasanya yang sangat pahit."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / NFT",
+      "media": "Rockwool atau cocopeat",
+      "nutrisi": "AB Mix herbal 700–1000 ppm (EC 1.4–2.0) — rendah agar kandungan andrografolid optimal",
+      "ph_ideal": "5.5–7.0",
+      "waktu_panen": "60–75 hari — panen daun sebelum tanaman berbunga",
+      "tips": "Sambiloto tumbuh baik di hidroponik meski jarang dilakukan. Kadar pahit (andrografolid) justru lebih tinggi pada tanaman yang sedikit 'kekurangan' — jangan berlebihan memberi nutrisi.",
+      "kesulitan": "Mudah"
+    }
+  },
+  {
+    "id": "obat-3",
+    "name": "Sirih",
+    "scientificName": "Piper betle",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "Tanaman merambat tradisional Indonesia dengan daun antiseptik alami untuk kesehatan mulut dan kulit.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram 2-3 hari sekali, suka media lembap tapi tidak tergenang.",
+      "sunlight": "Teduh, tidak suka matahari langsung terlalu lama.",
+      "pruning": "Pangkas sulur terlalu panjang dan daun tua.",
+      "fertilizer": "Pupuk kandang sebulan sekali.",
+      "commonProblems": "Jamur pada daun jika terlalu lembap dan tidak ada sirkulasi udara."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / DWC",
+      "media": "Hidroton atau akar langsung di air",
+      "nutrisi": "AB Mix encer 600–900 ppm (EC 1.2–1.8)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "Panen daun setelah 3–4 minggu adaptasi, kemudian terus-menerus",
+      "tips": "Sirih sangat mudah di-stek dan ditanam di air — cocok sebagai tanaman gantung hidroponik di dalam rumah. Pastikan ada tiang atau jaring untuk sulur merambat.",
+      "kesulitan": "Sedang"
+    }
+  },
+  {
+    "id": "obat-4",
+    "name": "Pegagan",
+    "scientificName": "Centella asiatica",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "Herbal populer untuk meningkatkan fungsi otak dan regenerasi sel kulit, tumbuh menjalar.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "repotting": 180
+    },
+    "careDetails": {
+      "watering": "Suka lembap, siram 2 hari sekali atau saat media mulai kering.",
+      "sunlight": "Teduh, tumbuh baik di bawah pohon atau paranet.",
+      "pruning": "Pangkas sulur yang merambat keluar pot.",
+      "fertilizer": "Pupuk organik cair sebulan sekali.",
+      "commonProblems": "Mati jika kekurangan air dalam waktu lama."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky",
+      "media": "Rockwool atau spons busa",
+      "nutrisi": "AB Mix herbal 700–1100 ppm (EC 1.4–2.2)",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "30–45 hari — panen daun muda secara rutin",
+      "tips": "Pegagan tumbuh menjalar dengan cepat di sistem NFT. Kadar asiatikosida (zat aktif utama) lebih tinggi pada tanaman yang dipanen muda — panen setiap 2 minggu sekali.",
+      "kesulitan": "Mudah"
+    }
+  },
+  {
+    "id": "obat-5",
+    "name": "Mengkudu",
+    "scientificName": "Morinda citrifolia",
+    "category": "Obat",
+    "difficulty": "sedang",
+    "description": "Tanaman perdu berbuah unik dengan khasiat sebagai imunostimulan dan antioksidan kuat.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram 2-3 hari sekali, toleran kekeringan saat sudah dewasa.",
+      "sunlight": "Sinar matahari penuh lebih disukai.",
+      "pruning": "Pangkas dahan untuk menjaga ukuran dan merangsang buah.",
+      "fertilizer": "Pupuk kandang dan kompos setiap 2 bulan.",
+      "commonProblems": "Buah busuk jika kebanyakan air saat musim hujan."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Mengkudu adalah pohon perdu yang tumbuh besar (2–6 meter). Sistem akar dan ukurannya tidak cocok untuk sistem hidroponik rumahan.",
+      "kesulitan": "-"
+    }
+  },
+  {
+    "id": "herbal-1",
+    "name": "Jahe Merah",
+    "scientificName": "Zingiber officinale var. rubrum",
+    "category": "Herbal",
+    "difficulty": "sedang",
+    "description": "Rimpang pedas dengan khasiat menghangatkan tubuh, populer untuk wedang dan jamu.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram 2 hari sekali, hindari genangan agar rimpang tidak busuk.",
+      "sunlight": "Tempat agak teduh, hindari sinar matahari terik langsung.",
+      "pruning": "Buang daun yang menguning.",
+      "fertilizer": "Pupuk kandang dan abu dapur setiap bulan.",
+      "commonProblems": "Penyakit layu bakteri dan busuk rimpang."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Jahe merah adalah tanaman rimpang yang membutuhkan ruang tanah untuk perkembangan rimpang. Sistem hidroponik tidak cocok untuk pertumbuhan optimal rimpang jahe.",
+      "kesulitan": "-"
+    }
+  },
+  {
+    "id": "herbal-2",
+    "name": "Lidah Buaya",
+    "scientificName": "Aloe vera",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "Tanaman herbal serbaguna untuk kesehatan kulit, rambut, dan pencernaan.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram 5-7 hari sekali, pastikan tanah benar-benar kering sebelum disiram lagi.",
+      "sunlight": "Cahaya terang berlimpah, matahari pagi sangat baik.",
+      "pruning": "Potong daun terbawah menggunakan pisau tajam saat akan dipanen.",
+      "fertilizer": "Pupuk NPK lambat urai setiap 3 bulan.",
+      "commonProblems": "Busuk pangkal daun karena penyiraman berlebihan."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Lidah buaya adalah sukulen yang menyimpan air di daunnya — terlalu banyak air justru akan membuat tanaman membusuk. Sistem hidroponik tidak direkomendasikan.",
+      "kesulitan": "-"
+    }
+  },
+  {
+    "id": "herbal-3",
+    "name": "Kunyit",
+    "scientificName": "Curcuma longa",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "Rimpang kuning emas kaya kurkumin untuk anti-inflamasi, bumbu dapur wajib setiap rumah.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram 2-3 hari sekali, media harus lembap tapi tidak tergenang.",
+      "sunlight": "Teduh hingga semi-teduh, hindari matahari terik langsung.",
+      "pruning": "Biarkan tumbuh alami, potong bagian yang mengering.",
+      "fertilizer": "Pupuk kandang dan kompos setiap bulan.",
+      "commonProblems": "Busuk rimpang akibat drainase buruk."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Kunyit adalah tanaman rimpang yang membutuhkan tanah gembur dalam untuk perkembangan rimpang kuning berukuran besar. Tidak cocok untuk sistem hidroponik.",
+      "kesulitan": "-"
+    }
+  },
+  {
+    "id": "herbal-4",
+    "name": "Serai",
+    "scientificName": "Cymbopogon citratus",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "Tanaman rumpun beraroma lemon yang serbaguna, mengusir nyamuk sekaligus bumbu masakan.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram 2-3 hari sekali, toleran kekeringan singkat.",
+      "sunlight": "Sinar matahari penuh.",
+      "pruning": "Potong daun terluar yang kering dan kecoklatan.",
+      "fertilizer": "Pupuk kandang sebulan sekali.",
+      "commonProblems": "Jarang terkena hama karena aromanya yang kuat."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Kratky",
+      "media": "Hidroton atau akar langsung di air",
+      "nutrisi": "AB Mix 700–1000 ppm (EC 1.4–2.0)",
+      "ph_ideal": "5.5–7.0",
+      "waktu_panen": "60–90 hari — panen batang bawah yang sudah tebal",
+      "tips": "Masukkan batang serai segar (sisa masakan) ke dalam air biasa selama 2–3 minggu sampai berakar, baru pindah ke larutan nutrisi. Cara paling mudah memulai serai hidroponik.",
+      "kesulitan": "Mudah"
+    }
+  },
+  {
+    "id": "herbal-5",
+    "name": "Kencur",
+    "scientificName": "Kaempferia galanga",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "Rimpang kecil berpotensi besar untuk kesehatan tenggorokan dan meredakan batuk.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram 2-3 hari sekali, kurangi di musim hujan.",
+      "sunlight": "Teduh, tidak suka matahari penuh.",
+      "pruning": "Biarkan layu alami saat musim kering, rimpang tetap hidup di tanah.",
+      "fertilizer": "Pupuk organik setiap 2 bulan.",
+      "commonProblems": "Rimpang tidak berkembang jika media terlalu padat."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Kencur adalah tanaman rimpang dangkal yang membutuhkan media tanam gembur. Rimpangnya tidak bisa berkembang optimal dalam sistem hidroponik air.",
+      "kesulitan": "-"
+    }
+  },
+  {
+    "id": "aroma-1",
+    "name": "Rosemary",
+    "scientificName": "Salvia rosmarinus",
+    "category": "Aromaterapi",
+    "difficulty": "sulit",
+    "description": "Tanaman beraroma khas untuk masakan Barat dan essential oil penenang pikiran.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Sangat rentan overwatering. Siram hanya jika media tanam kering hingga ke bawah.",
+      "sunlight": "Matahari penuh 6-8 jam sehari.",
+      "pruning": "Pangkas ujung ranting untuk menjaga bentuk dan dipanen.",
+      "fertilizer": "Hindari pupuk berlebih, beri kompos tipis setiap 2 bulan.",
+      "commonProblems": "Sering mati tiba-tiba karena busuk akar akibat media kurang poros."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool + perlite kasar",
+      "nutrisi": "AB Mix herbal 700–1000 ppm (EC 1.4–2.0) — jangan terlalu tinggi agar aroma tetap kuat",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "60–90 hari — panen ujung ranting 5–10 cm secara rutin",
+      "tips": "Rosemary di hidroponik harus punya aerasi larutan sangat baik — gunakan pompa udara kuat. Kadar minyak esensial lebih tinggi jika tanaman sedikit 'stres' — kurangi nutrisi 20% dari dosis standar.",
+      "kesulitan": "Sulit"
+    }
+  },
+  {
+    "id": "aroma-2",
+    "name": "Lavender",
+    "scientificName": "Lavandula angustifolia",
+    "category": "Aromaterapi",
+    "difficulty": "sulit",
+    "description": "Bunga ungu dengan aroma menenangkan yang ampuh mengusir nyamuk dan membantu tidur.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram secukupnya, biarkan kering di antara penyiraman.",
+      "sunlight": "Matahari penuh sepanjang hari.",
+      "pruning": "Pangkas bunga yang mulai layu agar terus berbunga.",
+      "fertilizer": "Sedikit kapur dolomit dan kompos.",
+      "commonProblems": "Jamur di iklim tropis yang terlalu lembap dan kurang angin."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Lavender sangat rentan busuk akar di iklim tropis lembap — sistem hidroponik memperparah kondisi ini. Lebih baik ditanam di media perlite + pasir dengan drainase ekstrem.",
+      "kesulitan": "-"
+    }
+  },
+  {
+    "id": "aroma-3",
+    "name": "Mint",
+    "scientificName": "Mentha spicata",
+    "category": "Aromaterapi",
+    "difficulty": "mudah",
+    "description": "Tanaman mint segar yang tumbuh cepat, sempurna untuk minuman segar, salad, dan aromaterapi.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "repotting": 180
+    },
+    "careDetails": {
+      "watering": "Siram setiap 2 hari, suka tanah yang lembap.",
+      "sunlight": "Cahaya tidak langsung sedang, bisa tumbuh baik di dalam ruangan.",
+      "pruning": "Pangkas agresif untuk mencegah berbunga dan menjaga aroma.",
+      "fertilizer": "Pupuk cair nitrogen setiap bulan.",
+      "commonProblems": "Cepat menyebar (invasif), sebaiknya tanam dalam pot terpisah."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky",
+      "media": "Rockwool atau cocopeat",
+      "nutrisi": "AB Mix herbal 800–1200 ppm (EC 1.6–2.4)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "25–40 hari dari stek — ini salah satu herbal terbaik untuk hidroponik!",
+      "tips": "Mint tumbuh SANGAT cepat di hidroponik — bisa dipanen dalam sebulan. Ambil stek batang mint segar dari pasar, masukkan ke air, tunggu berakar 1–2 minggu lalu pindah ke nutrisi.",
+      "kesulitan": "Mudah"
+    }
+  },
+  {
+    "id": "aroma-4",
+    "name": "Pandan",
+    "scientificName": "Pandanus amaryllifolius",
+    "category": "Aromaterapi",
+    "difficulty": "mudah",
+    "description": "Tanaman aromatik khas Asia Tenggara untuk pewangi masakan dan aromaterapi alami.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram 2 hari sekali, suka media yang cukup lembap.",
+      "sunlight": "Teduh hingga semi-teduh, hindari matahari langsung yang terlalu terik.",
+      "pruning": "Potong daun tua atau yang sobek untuk menjaga penampilan.",
+      "fertilizer": "Pupuk kandang sebulan sekali.",
+      "commonProblems": "Ujung daun mengering jika terlalu kering atau kurang unsur hara."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Kratky",
+      "media": "Hidroton atau akar langsung di air",
+      "nutrisi": "AB Mix 700–1100 ppm (EC 1.4–2.2)",
+      "ph_ideal": "5.5–7.0",
+      "waktu_panen": "Panen daun setelah 2–3 bulan adaptasi — pilih daun yang sudah tua",
+      "tips": "Pandan sangat mudah ditanam hidroponik — ambil anakan yang sudah punya akar, masukkan ke ember bernutrisi. Aroma pandan justru lebih kuat pada tanaman yang sedikit stres air.",
+      "kesulitan": "Mudah"
+    }
+  },
+  {
+    "id": "sayur-7",
+    "name": "Terong Ungu",
+    "scientificName": "Solanum melongena",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "Sayuran buah berwarna ungu mengkilap yang kaya antioksidan, cocok ditanam di polybag besar.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram setiap hari di pagi hari, jangan sampai media mengering.",
+      "sunlight": "Matahari penuh minimal 6-8 jam sehari.",
+      "pruning": "Buang tunas samping berlebih agar buah lebih besar.",
+      "fertilizer": "Pupuk NPK tinggi K saat masa berbunga dan berbuah.",
+      "commonProblems": "Hama penggerek batang dan kutu kebul."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Ebb & Flow",
+      "media": "Rockwool + perlite atau hidroton",
+      "nutrisi": "AB Mix buah 1500–2500 ppm (EC 3.0–5.0)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "60–80 hari dari semai — buah lebih seragam dan ukuran lebih besar",
+      "tips": "Terong butuh sistem yang stabil dengan aerasi baik. Gunakan net pot ukuran 10 cm minimum dan pastikan pompa udara berjalan 24 jam agar akar tidak kekurangan oksigen.",
+      "kesulitan": "Sedang"
+    }
+  },
+  {
+    "id": "sayur-8",
+    "name": "Timun",
+    "scientificName": "Cucumis sativus",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "Sayuran buah yang segar dan menyehatkan, bisa merambat di pagar atau teralis balkon.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 10,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram setiap hari, tanaman ini butuh banyak air.",
+      "sunlight": "Matahari penuh.",
+      "pruning": "Buang daun tua dan ranting yang tidak produktif.",
+      "fertilizer": "Pupuk kandang dan NPK bergantian setiap 10 hari.",
+      "commonProblems": "Embun tepung (powdery mildew) di daun jika lembap tanpa sirkulasi."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool + hidroton",
+      "nutrisi": "AB Mix buah 1200–2000 ppm (EC 2.4–4.0)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "35–50 hari dari semai — jauh lebih cepat dan produktif dari tanam tanah",
+      "tips": "Timun merambat sangat cepat di hidroponik — siapkan ajir atau jaring rambat vertikal. Panen sesering mungkin (setiap 2 hari) agar tanaman terus berproduksi.",
+      "kesulitan": "Sedang"
+    }
+  },
+  {
+    "id": "sayur-9",
+    "name": "Wortel",
+    "scientificName": "Daucus carota",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "Sayuran akar oranye kaya beta-karoten, butuh media tanah gembur dan dalam untuk tumbuh optimal.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 21,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram 2 hari sekali, jaga kelembapan merata.",
+      "sunlight": "Matahari penuh.",
+      "pruning": "Jarang daun agar sinar bisa masuk ke semua tanaman.",
+      "fertilizer": "Pupuk kalium dan fosfat untuk mendorong pertumbuhan umbi.",
+      "commonProblems": "Umbi bercabang jika tanah terlalu padat atau ada batu."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Wortel adalah tanaman akar (umbi) yang membutuhkan ruang tanah dalam dan gembur untuk tumbuh. Sistem hidroponik standar tidak mendukung perkembangan umbi yang optimal.",
+      "kesulitan": "-"
+    }
+  },
+  {
+    "id": "sayur-10",
+    "name": "Buncis",
+    "scientificName": "Phaseolus vulgaris",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "Polong hijau bergizi yang cepat berbuah (45-55 hari), bisa merambat atau tegak tergantung varietas.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram setiap hari, terutama saat musim kering.",
+      "sunlight": "Matahari penuh.",
+      "pruning": "Panen rutin untuk merangsang buah baru.",
+      "fertilizer": "Pupuk NPK rendah nitrogen saat mulai berbunga.",
+      "commonProblems": "Karat daun dan ulat polong."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool + perlite",
+      "nutrisi": "AB Mix 1000–1500 ppm (EC 2.0–3.0)",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "45–55 hari dari semai — sedikit lebih lambat dibanding sayuran daun",
+      "tips": "Pilih varietas buncis tegak (bush bean) untuk hidroponik agar lebih mudah diatur. Buncis memfiksasi nitrogen sendiri, sehingga kadar N dalam larutan bisa sedikit lebih rendah.",
+      "kesulitan": "Sedang"
+    }
+  },
+  {
+    "id": "buah-1",
+    "name": "Stroberi",
+    "scientificName": "Fragaria × ananassa",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "Buah merah mungil dengan rasa manis asam yang bisa tumbuh cantik di pot gantung atau teras.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 14,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram 2 hari sekali, hindari air mengenai buah dan daun agar tidak busuk.",
+      "sunlight": "Matahari penuh 6-8 jam, suhu ideal di bawah 28°C.",
+      "pruning": "Buang runner (sulur) yang tumbuh berlebihan agar energi ke buah.",
+      "fertilizer": "Pupuk tinggi Kalium (K) untuk buah yang manis dan banyak.",
+      "commonProblems": "Buah busuk karena kelembapan tinggi dan sirkulasi udara buruk."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool + cocopeat",
+      "nutrisi": "AB Mix buah 1000–1500 ppm vegetatif, 1500–2000 ppm (EC 3.0–4.0) saat berbuah",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "60–90 hari — buah lebih merah, manis, dan seragam dibanding tanam tanah",
+      "tips": "Stroberi adalah buah paling populer untuk hidroponik rumahan. Sistem NFT miring 30–45° sangat cocok karena menghasilkan buah yang tergantung dan mudah dipanen tanpa kotor.",
+      "kesulitan": "Sedang"
+    }
+  },
+  {
+    "id": "buah-2",
+    "name": "Pepaya",
+    "scientificName": "Carica papaya",
+    "category": "Buah-buahan",
+    "difficulty": "mudah",
+    "description": "Buah tropis super produktif yang bisa dipanen dalam 6-9 bulan, sangat populer di pekarangan rumah Indonesia.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram 2-3 hari sekali, toleran kekeringan singkat tapi tidak boleh tergenang.",
+      "sunlight": "Matahari penuh sepanjang hari.",
+      "pruning": "Tidak perlu banyak pangkas, buang daun tua bagian bawah saja.",
+      "fertilizer": "Pupuk kandang + NPK sebulan sekali.",
+      "commonProblems": "Kupu-kupu papaya dan busuk pangkal batang di tanah basah."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Pepaya adalah pohon besar yang membutuhkan akar kuat tertancap di tanah dalam. Ukuran dan kebutuhan strukturnya tidak memungkinkan sistem hidroponik rumahan.",
+      "kesulitan": "-"
+    }
+  },
+  {
+    "id": "buah-3",
+    "name": "Jambu Biji Merah",
+    "scientificName": "Psidium guajava",
+    "category": "Buah-buahan",
+    "difficulty": "mudah",
+    "description": "Buah tropis kaya vitamin C dengan daging merah muda yang manis, bisa ditanam dalam pot besar.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Siram 2-3 hari sekali, kurangi saat musim hujan.",
+      "sunlight": "Matahari penuh.",
+      "pruning": "Pangkas setelah panen untuk merangsang bunga baru.",
+      "fertilizer": "Pupuk NPK dan kompos sebulan sekali.",
+      "commonProblems": "Buah busuk karena lalat buah, gunakan penutup plastik pada buah muda."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Jambu biji adalah pohon dengan sistem akar besar yang membutuhkan tanah dalam. Tidak cocok untuk hidroponik rumahan standar.",
+      "kesulitan": "-"
+    }
+  },
+  {
+    "id": "buah-4",
+    "name": "Pisang Cavendish",
+    "scientificName": "Musa acuminata",
+    "category": "Buah-buahan",
+    "difficulty": "mudah",
+    "description": "Pisang varietas populer dengan buah manis bergizi, tumbuh cepat dan produktif di iklim tropis.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram 2-3 hari sekali, sangat butuh air saat cuaca panas.",
+      "sunlight": "Matahari penuh.",
+      "pruning": "Sisakan 1 anakan terbaik, buang anakan lainnya agar nutrisi terfokus.",
+      "fertilizer": "Pupuk kalium tinggi untuk buah yang optimal.",
+      "commonProblems": "Penyakit layu panama (Fusarium) dan nematoda akar."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Pisang membutuhkan sistem akar yang sangat dalam dan kuat di tanah. Ukuran tanaman dan kebutuhan strukturalnya tidak memungkinkan sistem hidroponik konvensional.",
+      "kesulitan": "-"
+    }
+  },
+  {
+    "id": "buah-5",
+    "name": "Jeruk Nipis",
+    "scientificName": "Citrus aurantiifolia",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "Jeruk kecil serbaguna untuk memasak, minuman, dan kesehatan, cocok ditanam dalam pot medium.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Siram 2-3 hari sekali, biarkan lapisan atas tanah kering dulu.",
+      "sunlight": "Matahari penuh minimal 8 jam sehari.",
+      "pruning": "Pangkas ranting yang saling bersilangan dan ranting kering.",
+      "fertilizer": "Pupuk khusus jeruk atau NPK 3 bulan sekali.",
+      "commonProblems": "Kutu daun, kutu sisik, dan penyakit greening."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Jeruk nipis adalah pohon berkayu yang tumbuh 2–5 meter — sistem akar dan ukurannya jauh melampaui kapasitas sistem hidroponik rumahan.",
+      "kesulitan": "-"
+    }
+  },
+  {
+    "id": "buah-6",
+    "name": "Semangka Mini",
+    "scientificName": "Citrullus lanatus",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "Semangka berukuran kecil yang bisa ditanam di polybag besar, buahnya manis dengan kulit tipis.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Siram setiap hari, butuh banyak air terutama saat pembentukan buah.",
+      "sunlight": "Matahari penuh sepanjang hari.",
+      "pruning": "Sisakan 1-2 buah per tanaman dan buang bunga betina berlebih.",
+      "fertilizer": "Pupuk tinggi fosfor saat berbunga, kalium saat berbuah.",
+      "commonProblems": "Busuk ujung buah dan serangan hama thrips."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Ebb & Flow",
+      "media": "Rockwool + hidroton kasar",
+      "nutrisi": "AB Mix buah 1200–1800 ppm vegetatif, hingga 2500–3500 ppm (EC 5.0–7.0) saat berbuah",
+      "ph_ideal": "5.8–6.5",
+      "waktu_panen": "65–80 hari — ukuran buah lebih konsisten dan kandungan gula lebih tinggi",
+      "tips": "Gantung buah semangka dengan jaring rajut agar tidak jatuh karena terlalu berat. Kurangi nutrisi nitrogen dan tingkatkan kalium saat buah mulai sebesar kepalan tangan.",
+      "kesulitan": "Sulit"
+    }
+  },
+  {
+    "id": "buah-7",
+    "name": "Anggur",
+    "scientificName": "Vitis vinifera",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "Buah eksotis yang bisa merambat indah di teralis, dengan sedikit kesabaran bisa berbuah lebat di Indonesia.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 21,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Siram 2-3 hari sekali, kurangi drastis setelah pemangkasan besar.",
+      "sunlight": "Matahari penuh minimal 8 jam.",
+      "pruning": "Pemangkasan besar setahun sekali untuk merangsang pucuk buah baru.",
+      "fertilizer": "Pupuk kalium dan boron untuk buah yang lebat dan manis.",
+      "commonProblems": "Jamur embun bulat dan hama tungau anggur."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool + perlite",
+      "nutrisi": "AB Mix buah 1000–1500 ppm vegetatif, 1500–2500 ppm (EC 3.0–5.0) saat berbuah",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "Tahun pertama: vegetatif. Panen perdana di tahun ke-2 — 90–120 hari setelah berbunga",
+      "tips": "Anggur hidroponik membutuhkan instalasi yang kuat karena merambat berat. Manajemen nutrisi harus presisi — kelebihan nitrogen menyebabkan banyak daun tapi sedikit buah.",
+      "kesulitan": "Sulit"
+    }
+  }
 ]

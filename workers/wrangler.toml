@@ -1,6 +1,2 @@
-name = "api-proxy"
-main = "ai-proxy.js"
-compatibility_date = "2024-05-14"
-
-[vars]
-# ANTHROPIC_API_KEY will be provided via secrets
+# File ini sudah tidak digunakan. Silakan hapus manual.
+# Cloudflare Worker untuk AI Proxy telah dihapus dari proyek.

@@ -140,35 +140,8 @@ function AppShell({ toast, setToast }) {
         </Routes>
       </div>
       <BottomNav />
-      <FAB />
       {toast && <Toast message={toast} onClose={() => setToast(null)} />}
     </div>
-  );
-}
-
-
-// --- FAB ---
-function FAB() {
-  const navigate = useNavigate();
-  const location = useLocation();
-  const hide = ['/chat', '/tanaman'].some(p => location.pathname.startsWith(p));
-  if (hide) return null;
-  return (
-    <button
-      onClick={() => navigate('/chat')}
-      style={{
-        position: 'fixed', bottom: '88px', right: 'max(16px, calc(50% - 224px))',
-        width: '52px', height: '52px', borderRadius: '50%',
-        background: 'linear-gradient(135deg, #166534, #22c55e)',
-        color: 'white', border: 'none', cursor: 'pointer',
-        display: 'flex', alignItems: 'center', justifyContent: 'center',
-        boxShadow: '0 4px 16px rgba(22,101,52,0.4)',
-        zIndex: 55, fontSize: '1.4rem', transition: 'transform 0.2s'
-      }}
-      onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.1)'}
-      onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
-      title="Tanya TanamanBot"
-    >🤖</button>
   );
 }
 
@@ -623,7 +596,81 @@ function PlantDetail() {
         <PlantGuideSection plant={plant} />
 
         {/* --- CARA PENANAMAN (3 METODE) --- */}
+        {plant.hidroponik && (
+          <div style={{ marginTop: '32px' }}>
+            <h3 style={{ fontSize: '1.2rem', fontWeight: '700', marginBottom: '16px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ fontSize: '1.3rem' }}>💧</span> Cara Menanam Hidroponik
+            </h3>
 
+            {!plant.hidroponik.bisa_hidroponik ? (
+              <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '16px', border: '1px solid var(--border-color)', borderLeft: '4px solid #f59e0b' }}>
+                <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                  <span style={{ fontSize: '1.5rem', flexShrink: 0 }}>⚠️</span>
+                  <div>
+                    <p style={{ fontWeight: '700', fontSize: '0.95rem', color: '#92400e', marginBottom: '6px' }}>Tidak Direkomendasikan untuk Hidroponik</p>
+                    <p style={{ fontSize: '0.85rem', color: 'var(--text-main)', lineHeight: 1.65 }}>{plant.hidroponik.tips}</p>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                {/* Header card: metode + kesulitan */}
+                <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '16px', boxShadow: 'var(--shadow-sm)', borderLeft: '4px solid var(--accent)' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '10px' }}>
+                    <div>
+                      <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '4px' }}>Metode Direkomendasikan</p>
+                      <span style={{ background: 'var(--accent)', color: 'white', padding: '4px 12px', borderRadius: '50px', fontSize: '0.8rem', fontWeight: '700', display: 'inline-block' }}>
+                        {plant.hidroponik.metode}
+                      </span>
+                    </div>
+                    <span style={{
+                      padding: '4px 12px',
+                      borderRadius: '50px',
+                      fontSize: '0.75rem',
+                      fontWeight: '700',
+                      background: plant.hidroponik.kesulitan === 'Mudah' ? '#dcfce7' : plant.hidroponik.kesulitan === 'Sedang' ? '#fef9c3' : '#fee2e2',
+                      color: plant.hidroponik.kesulitan === 'Mudah' ? '#166534' : plant.hidroponik.kesulitan === 'Sedang' ? '#854d0e' : '#991b1b',
+                    }}>
+                      {plant.hidroponik.kesulitan}
+                    </span>
+                  </div>
+                  <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+                    <span style={{ fontWeight: '600', color: 'var(--text-main)' }}>Media:</span> {plant.hidroponik.media}
+                  </p>
+                </div>
+
+                {/* Info grid: pH, nutrisi, waktu panen */}
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+                  <div style={{ background: 'var(--surface)', borderRadius: '12px', padding: '12px', boxShadow: 'var(--shadow-sm)', textAlign: 'center' }}>
+                    <p style={{ fontSize: '1.3rem', marginBottom: '2px' }}>🧪</p>
+                    <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', fontWeight: '600', textTransform: 'uppercase' }}>pH Ideal</p>
+                    <p style={{ fontSize: '1rem', fontWeight: '800', color: 'var(--primary)' }}>{plant.hidroponik.ph_ideal}</p>
+                  </div>
+                  <div style={{ background: 'var(--surface)', borderRadius: '12px', padding: '12px', boxShadow: 'var(--shadow-sm)', textAlign: 'center' }}>
+                    <p style={{ fontSize: '1.3rem', marginBottom: '2px' }}>⏱️</p>
+                    <p style={{ fontSize: '0.7rem', color: 'var(--text-muted)', fontWeight: '600', textTransform: 'uppercase' }}>Waktu Panen</p>
+                    <p style={{ fontSize: '0.8rem', fontWeight: '700', color: 'var(--primary)', lineHeight: 1.3 }}>{plant.hidroponik.waktu_panen.split('—')[0].trim()}</p>
+                  </div>
+                </div>
+
+                {/* Nutrisi */}
+                <div style={{ background: 'var(--surface)', borderRadius: '12px', padding: '14px', boxShadow: 'var(--shadow-sm)', display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
+                  <span style={{ fontSize: '1.4rem', flexShrink: 0 }}>🌿</span>
+                  <div>
+                    <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', fontWeight: '600', textTransform: 'uppercase', marginBottom: '3px' }}>Larutan Nutrisi</p>
+                    <p style={{ fontSize: '0.85rem', color: 'var(--text-main)', lineHeight: 1.5 }}>{plant.hidroponik.nutrisi}</p>
+                  </div>
+                </div>
+
+                {/* Tips */}
+                <div style={{ background: 'linear-gradient(135deg, var(--primary-dark), var(--primary))', borderRadius: '14px', padding: '16px', color: 'white' }}>
+                  <p style={{ fontWeight: '700', fontSize: '0.85rem', marginBottom: '8px', opacity: 0.85, textTransform: 'uppercase', letterSpacing: '0.5px' }}>💡 Tips Hidroponik</p>
+                  <p style={{ fontSize: '0.88rem', lineHeight: 1.7, opacity: 0.95 }}>{plant.hidroponik.tips}</p>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* --- PERLENGKAPAN GREENHOUSE --- */}
 
@@ -970,6 +1017,47 @@ const soilGuideData = [
       { heading: 'Hama Umum & Cara Atasi', body: 'Kutu daun (aphid): semprot larutan sabun cair 1 sdt + air 500ml. Tungau merah: tingkatkan kelembapan, semprot air ke bawah daun. Kutu putih: usap dengan kapas+alkohol 70%. Selalu periksa bawah daun setiap minggu.' },
     ]
   },
+  // ─── TOPIK BARU 1: Hidroponik untuk Pemula ───
+  {
+    title: 'Hidroponik untuk Pemula', icon: '💧', color: '#0891b2',
+    sections: [
+      { heading: 'Apa itu Hidroponik?', body: 'Hidroponik adalah metode bercocok tanam tanpa tanah — tanaman tumbuh dengan akarnya langsung menyerap larutan air yang sudah dicampur nutrisi lengkap. Tanaman mendapatkan semua yang dibutuhkan dari air, bukan dari tanah. Hasilnya: pertumbuhan lebih cepat (2–3x), lebih bersih, dan bisa dilakukan di dalam ruangan atau di balkon sempit sekalipun.' },
+      { heading: 'Keunggulan vs Tanam Konvensional', body: 'Kelebihan utama hidroponik: (1) Hemat air hingga 90% dibanding tanam tanah karena air bersirkulasi ulang. (2) Pertumbuhan 2–3x lebih cepat karena nutrisi tersedia langsung di akar. (3) Tidak ada hama tanah seperti nematoda atau ulat akar. (4) Bisa dilakukan di lahan sangat terbatas — balkon, atap, atau dalam ruangan. Kekurangannya: butuh investasi awal, listrik untuk pompa, dan pemantauan nutrisi rutin.' },
+      { heading: 'Sistem NFT (Nutrient Film Technique)', body: 'Air nutrisi mengalir tipis melewati talang miring sepanjang akar tanaman. Cocok untuk: selada, bayam, kangkung, pakcoy, mint. Keunggulan: hemat air, aerasi akar baik. Kelemahan: jika pompa mati, tanaman bisa stres dalam hitungan jam. Investasi awal: Rp 300rb–1,5jt tergantung skala.' },
+      { heading: 'Sistem DWC (Deep Water Culture)', body: 'Akar tanaman terendam langsung dalam larutan nutrisi yang diaerasi dengan air pump (seperti akuarium). Cocok untuk: tomat, cabai, selada, stroberi. Keunggulan: buffer besar, lebih toleran jika pompa mati sebentar. Kelemahan: butuh wadah besar, aerasi wajib 24 jam. Investasi awal: Rp 200rb–500rb.' },
+      { heading: 'Sistem Kratky (Tanpa Pompa)', body: 'Metode paling simpel — tidak perlu listrik sama sekali! Tanaman di net pot, akar menggantung di larutan nutrisi dalam wadah tertutup. Celah udara antara permukaan nutrisi dan tutup wadah menjadi "ruang napas" akar. Cocok untuk: selada, bayam, mint, kangkung. Sangat ideal untuk pemula karena murah, mudah, dan tanpa risiko mati listrik.' },
+      { heading: 'Sistem Wick (Sumbu)', body: 'Menggunakan tali kain/sumbu untuk menarik larutan nutrisi dari bak bawah ke media tanam. Pasif, tidak butuh listrik. Cocok untuk: herbal kecil seperti mint, kemangi, oregano. Kelemahan: tidak efisien untuk tanaman besar yang butuh banyak air. Cocok dipakai sebagai media belajar pertama.' },
+      { heading: 'Ebb & Flow (Pasang Surut)', body: 'Bak nutrisi dipompa masuk ke tray tanam secara berkala (30 menit on/beberapa jam off), lalu dikuras kembali. Cocok untuk: tomat, cabai, semangka, melon. Sangat fleksibel tapi butuh instalasi yang lebih kompleks. Investasi: Rp 500rb–3jt.' },
+      { heading: 'Nutrisi & AB Mix: Cara Membuat Larutan', body: 'AB Mix adalah pupuk hidroponik dua komponen (A dan B) yang dicampur terpisah karena saling bereaksi jika disatukan pekat. Cara membuat larutan: campurkan Stok A 5ml + Stok B 5ml ke dalam 1 liter air bersih. Ukur EC menggunakan EC meter (target 1.5–2.5 mS/cm tergantung tanaman). Ukur pH dengan pH meter (target 5.5–6.5). Harga AB Mix: Rp 15rb–25rb per 100 gram (cukup untuk 100 liter larutan).' },
+      { heading: 'Tips Memulai untuk Pemula', body: 'Mulailah dengan metode Kratky dan tanaman selada atau bayam — keduanya sangat toleran dan cepat panen (25–35 hari). Gunakan botol bekas 1,5 liter atau ember cat bekas sebagai wadah. Beli rockwool kecil (Rp 5rb) sebagai media semai. Investasi awal bisa di bawah Rp 50.000. Setelah berhasil panen pertama, barulah tingkatkan ke sistem yang lebih kompleks.' },
+    ]
+  },
+  // ─── TOPIK BARU 2: Greenhouse Rumahan ───
+  {
+    title: 'Greenhouse Rumahan', icon: '🏡', color: '#16a34a',
+    sections: [
+      { heading: 'Apa itu Greenhouse dan Manfaatnya?', body: 'Greenhouse (rumah kaca/plastik) adalah struktur penutup yang menciptakan iklim mikro terkontrol untuk tanaman. Manfaat utama: (1) Melindungi tanaman dari hujan deras, angin kencang, dan hama luar. (2) Memperpanjang musim tanam — bisa panen sepanjang tahun. (3) Meningkatkan suhu di malam hari untuk tanaman subtropis (lavender, stroberi). (4) Mengurangi penggunaan pestisida karena lingkungan lebih terkontrol.' },
+      { heading: 'Jenis Greenhouse: Tunnel (Terowongan)', body: 'Berbentuk setengah lingkaran seperti terowongan, dibuat dari rangka besi/pipa PVC melengkung yang dilapisi plastik UV. Paling populer untuk skala rumah tangga dan pertanian kecil Indonesia. Kelebihannya: mudah dibuat, murah, dan tahan angin. Ukuran umum: lebar 4–8 meter, panjang sesuai kebutuhan. Biaya per meter persegi: Rp 150rb–400rb.' },
+      { heading: 'Jenis Greenhouse: A-Frame & Lean-To', body: 'A-Frame berbentuk segitiga seperti huruf A — sangat kuat menahan beban dan ideal di daerah dengan hujan lebat. Lean-to adalah greenhouse yang menempel di dinding rumah/pagar — hemat material karena memakai satu sisi dinding yang sudah ada. Cocok untuk balkon, teras, atau samping rumah. Biaya lean-to lebih hemat 30–40% dari struktur berdiri sendiri.' },
+      { heading: 'Jenis Greenhouse: Mini Indoor', body: 'Kabinet atau rak tanaman bertingkat yang dilengkapi lampu grow light, kipas sirkulasi udara, dan terkadang sistem irigasi drip. Ideal untuk apartment atau ruangan tanpa taman. Harga mulai dari Rp 300rb untuk rak mini hingga Rp 5jt+ untuk kabinet lengkap dengan grow light full spectrum.' },
+      { heading: 'Material Penutup: Perbandingan', body: 'Plastik UV (polyethylene): paling murah (Rp 8rb–20rb/m²), ringan, mudah dipasang, umur pakai 3–5 tahun. Polycarbonate: lebih kuat, isolasi termal sangat baik, tahan benturan, umur 10–15 tahun, harga Rp 80rb–250rb/m². Kaca: tampilan premium, tahan lama 20+ tahun, tapi berat, mahal (Rp 150rb–400rb/m²), dan berisiko pecah. Untuk Indonesia, plastik UV atau polycarbonate adalah pilihan terbaik dari segi biaya vs performa.' },
+      { heading: 'Komponen Penting: Ventilasi', body: 'Ventilasi adalah komponen paling kritis greenhouse di iklim tropis — suhu di dalam bisa mencapai 50°C+ tanpa ventilasi yang baik! Standar minimum: luas ventilasi = 15–25% dari luas lantai. Pasang ventilasi di atap (panas naik ke atas) dan di samping bawah (udara masuk dari bawah). Di daerah panas, tambahkan exhaust fan atau shade net (paranet 50–70%) untuk mengurangi panas.' },
+      { heading: 'Komponen Penting: Pencahayaan & Irigasi', body: 'Di dalam greenhouse, sinar matahari sudah cukup untuk sebagian besar tanaman jika tidak ada naungan berlebih. Jika perlu tambahan cahaya (untuk indoor atau musim mendung), gunakan LED grow light full spectrum (300–600W untuk area 3–6 m²). Untuk irigasi, sistem drip (tetes) paling efisien — hemat air dan mudah diotomasi dengan timer. Investasi irigasi drip untuk 20 m²: Rp 200rb–500rb.' },
+      { heading: 'Tips Memilih Lokasi & Orientasi', body: 'Orientasi greenhouse terbaik: panjang greenhouse menghadap Timur–Barat (sumbu memanjang dari Utara ke Selatan) agar sinar matahari masuk optimal sepanjang hari. Pilih lokasi yang mendapat sinar minimal 6 jam/hari, jauh dari pohon besar yang menaungi. Hindari daerah cekungan yang menampung air hujan berlebih. Pastikan ada akses air dan listrik yang mudah.' },
+    ]
+  },
+  // ─── TOPIK BARU 3: Estimasi Biaya Greenhouse ───
+  {
+    title: 'Estimasi Biaya Greenhouse', icon: '💰', color: '#7c3aed',
+    sections: [
+      { heading: 'Skala Mini (1–5 m²) — Budget Rp 500rb–2jt', body: 'Cocok untuk: balkon, teras sempit, indoor. Contoh ukuran: 1×2 m atau 2×2 m. Rincian biaya: Rangka PVC/besi tipis: Rp 100rb–300rb. Plastik UV/polycarbonate: Rp 50rb–200rb. Rak tanaman: Rp 100rb–300rb. Ventilasi/kipas mini: Rp 50rb–200rb. Total estimasi: Rp 500rb–1,5jt. Tips: Gunakan pipa PVC 1 inch (Rp 30rb/batang) sebagai rangka — murah, ringan, dan mudah dibentuk.' },
+      { heading: 'Skala Sedang (10–20 m²) — Budget Rp 3jt–15jt', body: 'Cocok untuk: halaman rumah, kebun belakang. Contoh ukuran: 4×5 m atau 4×4 m. Rincian biaya: Rangka besi hollow/pipa galvanis: Rp 1,5jt–4jt. Plastik UV ketebalan 200 mikron: Rp 500rb–1,5jt. Pintu + ventilasi atap: Rp 300rb–800rb. Irigasi drip dasar: Rp 300rb–700rb. Instalasi listrik untuk kipas: Rp 200rb–500rb. Total estimasi: Rp 3jt–8jt untuk konstruksi mandiri, Rp 8jt–15jt jika menggunakan jasa tukang.' },
+      { heading: 'Skala Besar (>50 m²) — Budget Rp 20jt–100jt+', body: 'Cocok untuk: semi-komersial, usaha pertanian rumahan. Contoh ukuran: 8×8 m atau 6×10 m+. Rincian biaya: Rangka besi galvanis 4 cm: Rp 8jt–25jt. Polycarbonate 6mm: Rp 15jt–40jt (atau plastik UV: Rp 3jt–8jt). Sistem ventilasi otomatis: Rp 2jt–8jt. Irigasi drip + timer: Rp 1jt–5jt. Pondasi/cor: Rp 2jt–10jt. Total estimasi: Rp 20jt–50jt mandiri, Rp 50jt–100jt+ dengan kontraktor dan polycarbonate premium.' },
+      { heading: 'Rincian Komponen Biaya: Rangka & Penutup', body: 'Pipa PVC 1 inch: Rp 30rb–35rb/batang (4 m). Pipa besi hollow 4×4 cm: Rp 90rb–120rb/batang. Besi hollow 2×4 cm: Rp 50rb–70rb/batang. Plastik UV 200 mikron (lebar 6 m): Rp 15rb–20rb/meter. Polycarbonate 4mm: Rp 65rb–90rb/m². Polycarbonate 6mm: Rp 90rb–130rb/m². Paranet 50% (shading net): Rp 8rb–15rb/m².' },
+      { heading: 'Rincian Komponen Biaya: Ventilasi & Irigasi', body: 'Exhaust fan 30 cm: Rp 150rb–250rb/unit. Kipas angin dinding: Rp 100rb–200rb/unit. Thermostat otomatis: Rp 50rb–150rb. Selang irigasi drip 16mm: Rp 3rb–5rb/meter. Emitter (penetes): Rp 500–1.500/buah. Timer digital: Rp 30rb–80rb. Pompa air 50W: Rp 150rb–300rb. Tangki air 200L: Rp 250rb–400rb.' },
+      { heading: 'Tips Menghemat Biaya Greenhouse', body: '(1) Mulai dari mini dulu — buat 2×3 m untuk belajar sebelum investasi besar. (2) Gunakan bambu sebagai rangka untuk konstruksi murah di area tidak terlalu luas. (3) Beli plastik UV saat awal tahun — harga lebih stabil dan stok lengkap. (4) Buat sendiri (DIY) — rangka PVC bisa dikerjakan dalam 1–2 hari tanpa tukang. (5) Manfaatkan dinding rumah dengan tipe lean-to untuk menghemat 1 sisi rangka dan penutup. (6) Beli material di toko pertanian/bangunan besar, bukan toko retail kecil — beda harga bisa 30–50%.' },
+    ]
+  },
 ];
 
 function SoilGuide() {
@@ -1135,3 +1223,4 @@ function CareCalendar() {
   );
 }
 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
