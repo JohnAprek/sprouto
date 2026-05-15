@@ -27,7 +27,8 @@
       "waktu_panen": "Tidak dipanen — pertumbuhan daun optimal terlihat dalam 2–3 bulan",
       "tips": "Ganti larutan nutrisi setiap 2 minggu sekali. Pastikan bagian akar terendam ~⅓ dan ada celah udara di atas larutan agar akar bisa bernapas.",
       "kesulitan": "Sedang"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=400&q=80"
   },
   {
     "id": "hias-2",
@@ -57,7 +58,8 @@
       "waktu_panen": "Tidak dipanen — pertumbuhan penuh terlihat dalam 3–4 bulan",
       "tips": "Gunakan wadah gelap untuk mencegah lumut tumbuh di larutan nutrisi. Aglonema sangat cocok dengan metode semi-hidroponik menggunakan hidroton.",
       "kesulitan": "Mudah"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=400&q=80"
   },
   {
     "id": "hias-3",
@@ -87,7 +89,8 @@
       "waktu_panen": "Tidak dipanen — pertumbuhan stabil terlihat dalam 2–4 bulan",
       "tips": "Jangan rendam seluruh akar — biarkan ⅓ bagian atas kering agar tidak busuk. Ganti air setiap 3–4 minggu karena tanaman ini tumbuh lambat.",
       "kesulitan": "Mudah"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=400&q=80"
   },
   {
     "id": "hias-4",
@@ -117,7 +120,8 @@
       "waktu_panen": "Tidak dipanen — berbunga optimal setelah 6–12 bulan adaptasi",
       "tips": "Biarkan LECA menyerap air secara kapiler, jangan rendam akar penuh. Gunakan pot transparan agar bisa memantau kondisi akar hijau yang sehat.",
       "kesulitan": "Sulit"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1563241527-3004b7be0acb?w=400&q=80"
   },
   {
     "id": "hias-5",
@@ -147,7 +151,8 @@
       "waktu_panen": "-",
       "tips": "Bonsai beringin membutuhkan media tanah khusus untuk membentuk nebari (akar permukaan) dan tidak cocok untuk sistem hidroponik.",
       "kesulitan": "-"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1599598425947-5202edd56bdb?w=400&q=80"
   },
   {
     "id": "hias-6",
@@ -177,7 +182,8 @@
       "waktu_panen": "Tidak dipanen — pertumbuhan sulur aktif terlihat dalam 1–2 bulan",
       "tips": "Philodendron sangat mudah beradaptasi di air. Cukup masukkan stek batang ke air bersih selama 2 minggu untuk perakaran sebelum dipindah ke larutan nutrisi.",
       "kesulitan": "Mudah"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1598880940080-ff9a29891b85?w=400&q=80"
   },
   {
     "id": "hias-7",
@@ -207,7 +213,8 @@
       "waktu_panen": "Tidak dipanen — tumbuh subur dalam 2–4 minggu",
       "tips": "Sirih gading adalah tanaman terbaik untuk pemula hidroponik — cukup masukkan stek ke botol air bening dan taruh di tempat terang. Ganti air setiap 1–2 minggu.",
       "kesulitan": "Mudah"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1597656333220-7afd58a90e67?w=400&q=80"
   },
   {
     "id": "hias-8",
@@ -237,7 +244,8 @@
       "waktu_panen": "-",
       "tips": "ZZ Plant memiliki rimpang (rhizome) penyimpan air yang sangat rentan busuk jika terendam larutan — tidak direkomendasikan untuk hidroponik.",
       "kesulitan": "-"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1632207685016-a6ac07a77c9e?w=400&q=80"
   },
   {
     "id": "hias-9",
@@ -267,7 +275,8 @@
       "waktu_panen": "-",
       "tips": "Kaktus beradaptasi untuk kondisi kering ekstrem — sistem hidroponik yang selalu basah bertentangan total dengan kebutuhan dasarnya.",
       "kesulitan": "-"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?w=400&q=80"
   },
   {
     "id": "hias-10",
@@ -297,7 +306,8 @@
       "waktu_panen": "Tidak dipanen — pola daun makin cantik setelah adaptasi 2–3 bulan",
       "tips": "Calathea sangat sensitif terhadap mineral air — gunakan air hujan atau air yang sudah diendapkan 24 jam. Hindari meletakkan di dekat AC langsung.",
       "kesulitan": "Sedang"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1584589167171-541ce45f1eea?w=400&q=80"
   },
   {
     "id": "sayur-1",
@@ -327,7 +337,8 @@
       "waktu_panen": "14–20 hari sejak pindah tanam (sangat cepat!)",
       "tips": "Semai benih di rockwool dulu selama 5–7 hari, baru pindah ke sistem NFT. Cocok sekali untuk sistem rakit apung (DWC) sederhana skala rumah tangga.",
       "kesulitan": "Mudah"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=400&q=80"
   },
   {
     "id": "sayur-2",
@@ -357,7 +368,8 @@
       "waktu_panen": "21–30 hari dari semai — bisa multi-panen dengan memotong bagian atas",
       "tips": "Kangkung tumbuh sangat agresif di hidroponik — pertumbuhannya bisa 2x lebih cepat dari tanam tanah. Panen pertama di 21 hari, lalu potong dan biarkan tumbuh lagi.",
       "kesulitan": "Mudah"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1593280405106-e438ebe93f5e?w=400&q=80"
   },
   {
     "id": "sayur-3",
@@ -387,7 +399,8 @@
       "waktu_panen": "55–75 hari dari semai — lebih cepat 2 minggu dari tanam tanah",
       "tips": "Ikat batang tomat ke ajir vertikal karena tumbuh sangat cepat di hidroponik. Saat berbunga, kocok-kocok batang ringan setiap hari untuk membantu penyerbukan.",
       "kesulitan": "Sedang"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1546094096-0df4bcabd337?w=400&q=80"
   },
   {
     "id": "sayur-4",
@@ -417,7 +430,8 @@
       "waktu_panen": "75–90 hari dari semai — produktivitas bisa 3x lipat di hidroponik",
       "tips": "Cabai rawit adalah kandidat terbaik hidroponik jangka panjang — satu tanaman bisa produksi terus selama 1–2 tahun. Pastikan aerasi larutan baik dengan air pump.",
       "kesulitan": "Sedang"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&q=80"
   },
   {
     "id": "sayur-5",
@@ -447,7 +461,8 @@
       "waktu_panen": "25–35 hari dari pindah tanam — ini tanaman terpopuler untuk hidroponik pemula!",
       "tips": "Selada adalah tanaman terbaik untuk belajar hidroponik. Dengan metode Kratky (botol bekas), tidak perlu pompa sama sekali — cukup isi nutrisi dan tunggu panen.",
       "kesulitan": "Mudah"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?w=400&q=80"
   },
   {
     "id": "sayur-6",
@@ -477,7 +492,8 @@
       "waktu_panen": "25–35 hari dari pindah tanam",
       "tips": "Sistem rakit apung (floating raft) sangat ideal untuk sawi — gunakan styrofoam bekas sebagai rakit dengan lubang 5 cm. Cocok untuk produksi skala rumah tangga.",
       "kesulitan": "Mudah"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1555181126-cf46a07b2b7b?w=400&q=80"
   },
   {
     "id": "obat-1",
@@ -507,7 +523,8 @@
       "waktu_panen": "45–60 hari dari semai — panen daun dan bunga muda",
       "tips": "Kandungan zat aktif orthosiphonin lebih tinggi pada tanaman yang cukup stres ringan — jangan beri nutrisi terlalu tinggi. Panen sebelum berbunga lebat untuk kadar tertinggi.",
       "kesulitan": "Mudah"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=400&q=80"
   },
   {
     "id": "obat-2",
@@ -537,7 +554,8 @@
       "waktu_panen": "60–75 hari — panen daun sebelum tanaman berbunga",
       "tips": "Sambiloto tumbuh baik di hidroponik meski jarang dilakukan. Kadar pahit (andrografolid) justru lebih tinggi pada tanaman yang sedikit 'kekurangan' — jangan berlebihan memberi nutrisi.",
       "kesulitan": "Mudah"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=400&q=80"
   },
   {
     "id": "obat-3",
@@ -567,7 +585,8 @@
       "waktu_panen": "Panen daun setelah 3–4 minggu adaptasi, kemudian terus-menerus",
       "tips": "Sirih sangat mudah di-stek dan ditanam di air — cocok sebagai tanaman gantung hidroponik di dalam rumah. Pastikan ada tiang atau jaring untuk sulur merambat.",
       "kesulitan": "Sedang"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=400&q=80"
   },
   {
     "id": "obat-4",
@@ -597,7 +616,8 @@
       "waktu_panen": "30–45 hari — panen daun muda secara rutin",
       "tips": "Pegagan tumbuh menjalar dengan cepat di sistem NFT. Kadar asiatikosida (zat aktif utama) lebih tinggi pada tanaman yang dipanen muda — panen setiap 2 minggu sekali.",
       "kesulitan": "Mudah"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1597200381847-30ec200eeb9a?w=400&q=80"
   },
   {
     "id": "obat-5",
@@ -627,7 +647,8 @@
       "waktu_panen": "-",
       "tips": "Mengkudu adalah pohon perdu yang tumbuh besar (2–6 meter). Sistem akar dan ukurannya tidak cocok untuk sistem hidroponik rumahan.",
       "kesulitan": "-"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=400&q=80"
   },
   {
     "id": "herbal-1",
@@ -657,7 +678,8 @@
       "waktu_panen": "-",
       "tips": "Jahe merah adalah tanaman rimpang yang membutuhkan ruang tanah untuk perkembangan rimpang. Sistem hidroponik tidak cocok untuk pertumbuhan optimal rimpang jahe.",
       "kesulitan": "-"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1615484477778-ca3b77940c25?w=400&q=80"
   },
   {
     "id": "herbal-2",
@@ -687,7 +709,8 @@
       "waktu_panen": "-",
       "tips": "Lidah buaya adalah sukulen yang menyimpan air di daunnya — terlalu banyak air justru akan membuat tanaman membusuk. Sistem hidroponik tidak direkomendasikan.",
       "kesulitan": "-"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1596591868231-05e808fd131d?w=400&q=80"
   },
   {
     "id": "herbal-3",
@@ -717,7 +740,8 @@
       "waktu_panen": "-",
       "tips": "Kunyit adalah tanaman rimpang yang membutuhkan tanah gembur dalam untuk perkembangan rimpang kuning berukuran besar. Tidak cocok untuk sistem hidroponik.",
       "kesulitan": "-"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1615484477778-ca3b77940c25?w=400&q=80"
   },
   {
     "id": "herbal-4",
@@ -747,7 +771,8 @@
       "waktu_panen": "60–90 hari — panen batang bawah yang sudah tebal",
       "tips": "Masukkan batang serai segar (sisa masakan) ke dalam air biasa selama 2–3 minggu sampai berakar, baru pindah ke larutan nutrisi. Cara paling mudah memulai serai hidroponik.",
       "kesulitan": "Mudah"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?w=400&q=80"
   },
   {
     "id": "herbal-5",
@@ -777,7 +802,8 @@
       "waktu_panen": "-",
       "tips": "Kencur adalah tanaman rimpang dangkal yang membutuhkan media tanam gembur. Rimpangnya tidak bisa berkembang optimal dalam sistem hidroponik air.",
       "kesulitan": "-"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1615484477778-ca3b77940c25?w=400&q=80"
   },
   {
     "id": "aroma-1",
@@ -807,7 +833,8 @@
       "waktu_panen": "60–90 hari — panen ujung ranting 5–10 cm secara rutin",
       "tips": "Rosemary di hidroponik harus punya aerasi larutan sangat baik — gunakan pompa udara kuat. Kadar minyak esensial lebih tinggi jika tanaman sedikit 'stres' — kurangi nutrisi 20% dari dosis standar.",
       "kesulitan": "Sulit"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1466112928291-0903b80a9466?w=400&q=80"
   },
   {
     "id": "aroma-2",
@@ -837,7 +864,8 @@
       "waktu_panen": "-",
       "tips": "Lavender sangat rentan busuk akar di iklim tropis lembap — sistem hidroponik memperparah kondisi ini. Lebih baik ditanam di media perlite + pasir dengan drainase ekstrem.",
       "kesulitan": "-"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1587515049374-ae72070e26e5?w=400&q=80"
   },
   {
     "id": "aroma-3",
@@ -867,7 +895,8 @@
       "waktu_panen": "25–40 hari dari stek — ini salah satu herbal terbaik untuk hidroponik!",
       "tips": "Mint tumbuh SANGAT cepat di hidroponik — bisa dipanen dalam sebulan. Ambil stek batang mint segar dari pasar, masukkan ke air, tunggu berakar 1–2 minggu lalu pindah ke nutrisi.",
       "kesulitan": "Mudah"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?w=400&q=80"
   },
   {
     "id": "aroma-4",
@@ -897,7 +926,8 @@
       "waktu_panen": "Panen daun setelah 2–3 bulan adaptasi — pilih daun yang sudah tua",
       "tips": "Pandan sangat mudah ditanam hidroponik — ambil anakan yang sudah punya akar, masukkan ke ember bernutrisi. Aroma pandan justru lebih kuat pada tanaman yang sedikit stres air.",
       "kesulitan": "Mudah"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1606914501449-5a96b6ce24ca?w=400&q=80"
   },
   {
     "id": "sayur-7",
@@ -927,7 +957,8 @@
       "waktu_panen": "60–80 hari dari semai — buah lebih seragam dan ukuran lebih besar",
       "tips": "Terong butuh sistem yang stabil dengan aerasi baik. Gunakan net pot ukuran 10 cm minimum dan pastikan pompa udara berjalan 24 jam agar akar tidak kekurangan oksigen.",
       "kesulitan": "Sedang"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1615484477892-9e93cd5ea3d4?w=400&q=80"
   },
   {
     "id": "sayur-8",
@@ -957,7 +988,8 @@
       "waktu_panen": "35–50 hari dari semai — jauh lebih cepat dan produktif dari tanam tanah",
       "tips": "Timun merambat sangat cepat di hidroponik — siapkan ajir atau jaring rambat vertikal. Panen sesering mungkin (setiap 2 hari) agar tanaman terus berproduksi.",
       "kesulitan": "Sedang"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1449300079323-02e209d9d3a6?w=400&q=80"
   },
   {
     "id": "sayur-9",
@@ -987,7 +1019,8 @@
       "waktu_panen": "-",
       "tips": "Wortel adalah tanaman akar (umbi) yang membutuhkan ruang tanah dalam dan gembur untuk tumbuh. Sistem hidroponik standar tidak mendukung perkembangan umbi yang optimal.",
       "kesulitan": "-"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=400&q=80"
   },
   {
     "id": "sayur-10",
@@ -1017,7 +1050,8 @@
       "waktu_panen": "45–55 hari dari semai — sedikit lebih lambat dibanding sayuran daun",
       "tips": "Pilih varietas buncis tegak (bush bean) untuk hidroponik agar lebih mudah diatur. Buncis memfiksasi nitrogen sendiri, sehingga kadar N dalam larutan bisa sedikit lebih rendah.",
       "kesulitan": "Sedang"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1567375698348-5d9d5ae99de0?w=400&q=80"
   },
   {
     "id": "buah-1",
@@ -1047,7 +1081,8 @@
       "waktu_panen": "60–90 hari — buah lebih merah, manis, dan seragam dibanding tanam tanah",
       "tips": "Stroberi adalah buah paling populer untuk hidroponik rumahan. Sistem NFT miring 30–45° sangat cocok karena menghasilkan buah yang tergantung dan mudah dipanen tanpa kotor.",
       "kesulitan": "Sedang"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1543528176-61b239494933?w=400&q=80"
   },
   {
     "id": "buah-2",
@@ -1077,7 +1112,8 @@
       "waktu_panen": "-",
       "tips": "Pepaya adalah pohon besar yang membutuhkan akar kuat tertancap di tanah dalam. Ukuran dan kebutuhan strukturnya tidak memungkinkan sistem hidroponik rumahan.",
       "kesulitan": "-"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1526345185136-f07bbba0da12?w=400&q=80"
   },
   {
     "id": "buah-3",
@@ -1107,7 +1143,8 @@
       "waktu_panen": "-",
       "tips": "Jambu biji adalah pohon dengan sistem akar besar yang membutuhkan tanah dalam. Tidak cocok untuk hidroponik rumahan standar.",
       "kesulitan": "-"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1536511132770-e5058c7e8c46?w=400&q=80"
   },
   {
     "id": "buah-4",
@@ -1137,7 +1174,8 @@
       "waktu_panen": "-",
       "tips": "Pisang membutuhkan sistem akar yang sangat dalam dan kuat di tanah. Ukuran tanaman dan kebutuhan strukturalnya tidak memungkinkan sistem hidroponik konvensional.",
       "kesulitan": "-"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1528825871115-3581a5387919?w=400&q=80"
   },
   {
     "id": "buah-5",
@@ -1167,7 +1205,8 @@
       "waktu_panen": "-",
       "tips": "Jeruk nipis adalah pohon berkayu yang tumbuh 2–5 meter — sistem akar dan ukurannya jauh melampaui kapasitas sistem hidroponik rumahan.",
       "kesulitan": "-"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400&q=80"
   },
   {
     "id": "buah-6",
@@ -1197,7 +1236,8 @@
       "waktu_panen": "65–80 hari — ukuran buah lebih konsisten dan kandungan gula lebih tinggi",
       "tips": "Gantung buah semangka dengan jaring rajut agar tidak jatuh karena terlalu berat. Kurangi nutrisi nitrogen dan tingkatkan kalium saat buah mulai sebesar kepalan tangan.",
       "kesulitan": "Sulit"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1563114773-84221bd62daa?w=400&q=80"
   },
   {
     "id": "buah-7",
@@ -1227,6 +1267,906 @@
       "waktu_panen": "Tahun pertama: vegetatif. Panen perdana di tahun ke-2 — 90–120 hari setelah berbunga",
       "tips": "Anggur hidroponik membutuhkan instalasi yang kuat karena merambat berat. Manajemen nutrisi harus presisi — kelebihan nitrogen menyebabkan banyak daun tapi sedikit buah.",
       "kesulitan": "Sulit"
-    }
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=400&q=80"
+  },
+  {
+    "id": "hias-11",
+    "name": "Peace Lily",
+    "scientificName": "Spathiphyllum wallisii",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Tanaman hias indoor populer dengan bunga putih elegan dan kemampuan memfilter udara. Toleran terhadap kondisi cahaya rendah, cocok untuk sudut ruangan.",
+    "schedules": {
+      "watering": 5,
+      "fertilizing": 30,
+      "pruning": 60
+    },
+    "careDetails": {
+      "sunlight": "Cahaya tidak langsung rendah–sedang",
+      "water": "Siram saat media mulai kering",
+      "soil": "Media pot drainase baik, kaya organik",
+      "temperature": "18–30°C",
+      "humidity": "Tinggi (>50%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Pot berisi air",
+      "media": "Rockwool atau pot dengan akar di air",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "Tanaman hias, dinikmati sepanjang waktu",
+      "nutrisi": "AB Mix encer (EC 0.8–1.2)",
+      "kesulitan": "Mudah",
+      "tips": "Peace lily sangat mudah di hidroponik — cukup taruh di pot berisi air dengan akar terendam sebagian. Ganti air 1–2 minggu sekali."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1593482892290-f54927ae1bb6?w=400&q=80"
+  },
+  {
+    "id": "hias-12",
+    "name": "Anthurium",
+    "scientificName": "Anthurium andraeanum",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "Tanaman hias tropis dengan bunga merah mencolok dan daun mengkilap. Cocok sebagai tanaman indoor premium yang memberikan kesan mewah.",
+    "schedules": {
+      "watering": 4,
+      "fertilizing": 21,
+      "pruning": 45
+    },
+    "careDetails": {
+      "sunlight": "Cahaya terang tidak langsung",
+      "water": "Siram teratur, jaga kelembapan media",
+      "soil": "Campuran anggrek + perlit + cocopeat",
+      "temperature": "20–30°C",
+      "humidity": "Tinggi (>60%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Semi-Hidro",
+      "media": "LECA / bola tanah liat",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "Tanaman hias, bunga muncul rutin tiap 3–4 bulan",
+      "nutrisi": "AB Mix EC 1.0–1.5",
+      "kesulitan": "Sedang",
+      "tips": "Anthurium di LECA sangat populer — cuci LECA bersih, rendam akar sebagian dalam nutrisi encer. Pastikan ada ruang udara untuk akar bernapas."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1616949633947-d47b7ba0c84f?w=400&q=80"
+  },
+  {
+    "id": "hias-13",
+    "name": "Pothos Marble Queen",
+    "scientificName": "Epipremnum aureum 'Marble Queen'",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Varietas pothos dengan daun bercorak putih-hijau marmer yang cantik. Sangat tangguh, toleran berbagai kondisi, dan tumbuh merambat indah.",
+    "schedules": {
+      "watering": 7,
+      "fertilizing": 30,
+      "pruning": 30
+    },
+    "careDetails": {
+      "sunlight": "Cahaya sedang hingga terang tidak langsung",
+      "water": "Siram saat media atas kering",
+      "soil": "Media pot umum, drainase baik",
+      "temperature": "16–30°C",
+      "humidity": "Sedang (40–70%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Air / Vase propagasi",
+      "media": "Cukup di air bersih + arang aktif",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "Tanaman hias merambat, nikmati sepanjang tahun",
+      "nutrisi": "Pupuk cair 1/4 dosis, ganti air 2 minggu sekali",
+      "kesulitan": "Mudah",
+      "tips": "Pothos adalah tanaman hidroponik termudah — cukup taruh stek di vas kaca berisi air. Tambahkan beberapa butir arang aktif untuk mencegah bau dan alga."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1597586124394-fbd6ef244026?w=400&q=80"
+  },
+  {
+    "id": "hias-14",
+    "name": "Rubber Plant",
+    "scientificName": "Ficus elastica",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Tanaman hias berbatang tegak dengan daun besar mengkilap berwarna hijau tua atau merah kecoklatan. Berpenampilan bold dan modern untuk sudut ruangan.",
+    "schedules": {
+      "watering": 7,
+      "fertilizing": 30,
+      "pruning": 90
+    },
+    "careDetails": {
+      "sunlight": "Cahaya terang tidak langsung",
+      "water": "Siram saat atas media kering 2–3 cm",
+      "soil": "Media pot, drainase sangat baik",
+      "temperature": "15–30°C",
+      "humidity": "Sedang (40–60%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Rubber plant kurang ideal untuk hidroponik karena sistem akarnya menyukai media yang cukup kering di antara penyiraman. Lebih baik ditanam di pot dengan media drainase baik."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=400&q=80"
+  },
+  {
+    "id": "hias-15",
+    "name": "Bird of Paradise",
+    "scientificName": "Strelitzia reginae",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "Tanaman hias dramatis dengan daun besar berbentuk dayung dan bunga oranye-biru menyerupai burung. Memberikan nuansa tropis premium pada ruangan.",
+    "schedules": {
+      "watering": 7,
+      "fertilizing": 21,
+      "pruning": 60
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 6+ jam/hari",
+      "water": "Siram saat media atas mengering",
+      "soil": "Media pot subur, drainase baik",
+      "temperature": "18–30°C",
+      "humidity": "Sedang (40–60%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Bird of Paradise tidak direkomendasikan untuk hidroponik karena sistem akarnya besar dan menyukai media tanah subur. Butuh pot besar untuk tumbuh optimal."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1598880940080-ff9a29891b85?w=400&q=80"
+  },
+  {
+    "id": "sayur-11",
+    "name": "Pakcoy",
+    "scientificName": "Brassica rapa subsp. chinensis",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "Sayuran hijau cepat panen populer di Indonesia. Tekstur renyah, rasa ringan, cocok untuk tumis dan sup. Favorit hidroponik pemula karena sangat mudah.",
+    "schedules": {
+      "watering": 1,
+      "fertilizing": 14,
+      "pruning": 0
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 5–6 jam/hari",
+      "water": "Siram rutin 1–2x sehari",
+      "soil": "Media subur, drainase baik atau hidroponik",
+      "temperature": "18–28°C",
+      "humidity": "Sedang (50–70%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Kratky",
+      "media": "Rockwool / spons / cocopeat",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "25–35 hari — Panen pertama bisa dilakukan dalam 1 bulan",
+      "nutrisi": "AB Mix EC 1.5–2.0",
+      "kesulitan": "Mudah",
+      "tips": "Pakcoy adalah tanaman hidroponik terbaik untuk pemula! Tumbuh cepat, panen dalam 25–30 hari, dan toleran terhadap variasi nutrisi. Mulai dengan metode Kratky di botol bekas."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1556801712-76c33ba4a313?w=400&q=80"
+  },
+  {
+    "id": "sayur-12",
+    "name": "Paprika",
+    "scientificName": "Capsicum annuum var. grossum",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "Buah paprika berwarna merah, kuning, atau hijau yang kaya vitamin C. Lebih manis dari cabai biasa, populer untuk masakan Western dan salad.",
+    "schedules": {
+      "watering": 2,
+      "fertilizing": 14,
+      "pruning": 30
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 8 jam/hari",
+      "water": "Siram teratur, hindari genangan",
+      "soil": "Media subur, kaya kompos, pH 6.0–6.8",
+      "temperature": "20–30°C",
+      "humidity": "Sedang (50–65%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Dutch Bucket",
+      "media": "Rockwool / perlit + cocopeat",
+      "ph_ideal": "5.8–6.3",
+      "waktu_panen": "70–90 hari — Panen mulai usia 2,5–3 bulan setelah tanam",
+      "nutrisi": "AB Mix EC 2.0–3.0, tinggi kalium saat berbuah",
+      "kesulitan": "Sedang",
+      "tips": "Paprika hidroponik butuh support tiang karena tanaman cukup berat saat berbuah. Tingkatkan EC nutrisi dari 2.0 ke 2.5–3.0 saat memasuki fase berbunga dan berbuah."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?w=400&q=80"
+  },
+  {
+    "id": "obat-6",
+    "name": "Temulawak",
+    "scientificName": "Curcuma zanthorrhiza",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "Tanaman obat asli Indonesia dengan rimpang besar berwarna oranye. Berkhasiat meningkatkan nafsu makan, menjaga kesehatan hati, dan meningkatkan imunitas.",
+    "schedules": {
+      "watering": 3,
+      "fertilizing": 30,
+      "pruning": 60
+    },
+    "careDetails": {
+      "sunlight": "Cahaya sedang, toleran teduh parsial",
+      "water": "Siram teratur, jaga kelembapan tanah",
+      "soil": "Tanah gembur subur, kaya organik",
+      "temperature": "25–35°C",
+      "humidity": "Tinggi (60–80%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Temulawak tidak cocok hidroponik karena hasilnya adalah rimpang bawah tanah yang butuh media padat untuk berkembang. Lebih efektif ditanam di pot dalam atau di kebun."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1615484477778-ca3b77940c25?w=400&q=80"
+  },
+  {
+    "id": "obat-7",
+    "name": "Sambung Nyawa",
+    "scientificName": "Gynura procumbens",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "Tanaman obat yang dipercaya membantu menurunkan kadar gula darah, tekanan darah, dan kolesterol. Daun bisa dimakan langsung atau dijus.",
+    "schedules": {
+      "watering": 2,
+      "fertilizing": 21,
+      "pruning": 14
+    },
+    "careDetails": {
+      "sunlight": "Cahaya sedang, toleran teduh",
+      "water": "Siram 2–3x seminggu",
+      "soil": "Tanah gembur subur",
+      "temperature": "22–32°C",
+      "humidity": "Sedang (50–70%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool / cocopeat",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "30–45 hari — Panen daun muda secara bertahap",
+      "nutrisi": "AB Mix EC 1.2–1.8",
+      "kesulitan": "Mudah",
+      "tips": "Sambung nyawa tumbuh sangat cepat di hidroponik. Panen daun muda dari bagian atas secara rutin untuk mendorong pertumbuhan baru. Cocok untuk sistem NFT atau rak indoor."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=400&q=80"
+  },
+  {
+    "id": "obat-8",
+    "name": "Lidah Buaya Aloe",
+    "scientificName": "Aloe vera",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "Tanaman sukulen serbaguna dengan gel dalam daun yang berkhasiat untuk luka bakar, iritasi kulit, dan kesehatan pencernaan. Sangat mudah perawatannya.",
+    "schedules": {
+      "watering": 10,
+      "fertilizing": 60,
+      "pruning": 30
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh atau terang tidak langsung",
+      "water": "Siram jarang, biarkan media kering sempurna",
+      "soil": "Media kaktus/sukulen, drainase sangat baik",
+      "temperature": "15–35°C",
+      "humidity": "Rendah (30–50%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Aloe vera tidak cocok untuk hidroponik karena sebagai sukulen ia butuh periode kering di antara penyiraman. Media yang terus basah akan menyebabkan busuk akar dengan cepat."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1596591868231-05e808fd131d?w=400&q=80"
+  },
+  {
+    "id": "obat-9",
+    "name": "Brotowali",
+    "scientificName": "Tinospora crispa",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "Tanaman obat merambat dengan batang berwarna hijau bertekstur unik. Pahit rasanya namun berkhasiat tinggi untuk diabetes, demam, dan meningkatkan imunitas.",
+    "schedules": {
+      "watering": 3,
+      "fertilizing": 30,
+      "pruning": 21
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh hingga teduh parsial",
+      "water": "Siram 2–3x seminggu",
+      "soil": "Tanah subur, drainase baik",
+      "temperature": "25–35°C",
+      "humidity": "Sedang–Tinggi (50–80%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Brotowali adalah tanaman merambat berkayu yang lebih cocok ditanam di tanah atau pot besar. Tidak efisien untuk sistem hidroponik."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=400&q=80"
+  },
+  {
+    "id": "obat-10",
+    "name": "Jintan Hitam",
+    "scientificName": "Nigella sativa",
+    "category": "Obat",
+    "difficulty": "sedang",
+    "description": "Herbal berbunga ungu indah dengan biji hitam berkhasiat tinggi. Disebut 'habbatussauda' dalam tradisi Islam, dikenal sebagai obat serba guna untuk berbagai kondisi.",
+    "schedules": {
+      "watering": 3,
+      "fertilizing": 21,
+      "pruning": 30
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 6–8 jam/hari",
+      "water": "Siram sedang, hindari overwatering",
+      "soil": "Tanah gembur, drainase baik, pH 6.0–7.0",
+      "temperature": "15–25°C",
+      "humidity": "Rendah–Sedang (30–55%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / NFT",
+      "media": "Rockwool",
+      "ph_ideal": "6.0–6.8",
+      "waktu_panen": "90–120 hari — Panen biji saat buah sudah mengering di tanaman",
+      "nutrisi": "AB Mix EC 1.8–2.2",
+      "kesulitan": "Sedang",
+      "tips": "Jintan hitam bisa ditanam hidroponik untuk fase vegetatif, namun untuk panen biji yang optimal sebaiknya dipindah ke media tanah. Pastikan suhu tidak terlalu panas (>30°C)."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1585664811087-47f65abbad64?w=400&q=80"
+  },
+  {
+    "id": "herbal-6",
+    "name": "Basil / Kemangi",
+    "scientificName": "Ocimum basilicum",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "Herbal aromatik segar yang wajib ada di dapur. Daun kemangi memberi aroma khas pada lalapan, pasta, dan masakan Italia. Tumbuh cepat dan produktif.",
+    "schedules": {
+      "watering": 2,
+      "fertilizing": 14,
+      "pruning": 7
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 6–8 jam/hari",
+      "water": "Siram teratur, jaga media lembap",
+      "soil": "Media subur, kaya organik, drainase baik",
+      "temperature": "20–30°C",
+      "humidity": "Sedang (50–65%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Kratky",
+      "media": "Rockwool / spons",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "25–35 hari — Panen daun secara berkala untuk mendorong pertumbuhan",
+      "nutrisi": "AB Mix EC 1.6–2.2",
+      "kesulitan": "Mudah",
+      "tips": "Kemangi adalah herbal hidroponik paling produktif! Pinch (cubit) pucuk bunga segera saat muncul agar tanaman fokus produksi daun. Panen dari atas secara rutin."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1600512134400-5de5c4c2e9d0?w=400&q=80"
+  },
+  {
+    "id": "herbal-7",
+    "name": "Ketumbar",
+    "scientificName": "Coriandrum sativum",
+    "category": "Herbal",
+    "difficulty": "sedang",
+    "description": "Bumbu dapur penting dengan aroma khas kuat. Daun segar (cilantro) dan biji keringnya sama-sama digunakan dalam masakan Indonesia, India, dan Meksiko.",
+    "schedules": {
+      "watering": 2,
+      "fertilizing": 21,
+      "pruning": 14
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 5–6 jam, teduh di siang hari panas",
+      "water": "Siram teratur, jaga kelembapan media",
+      "soil": "Media ringan, drainase baik",
+      "temperature": "17–27°C",
+      "humidity": "Sedang (45–65%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Wick / Kratky",
+      "media": "Rockwool / perlite",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "30–45 hari untuk daun — Panen daun muda secara berkala",
+      "nutrisi": "AB Mix EC 1.2–1.8",
+      "kesulitan": "Sedang",
+      "tips": "Ketumbar lebih suka suhu sejuk. Di daerah panas, tanam di dalam ruangan dengan pencahayaan tambahan. Hindari memindahkan tanaman karena sensitif terhadap gangguan akar."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1593829111182-8a7d7f8a2c7e?w=400&q=80"
+  },
+  {
+    "id": "herbal-8",
+    "name": "Daun Bawang",
+    "scientificName": "Allium fistulosum",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "Bumbu dapur paling sering digunakan di masakan Indonesia. Tumbuh sangat cepat dan mudah diregenerasi — potong pangkal dan tanam kembali untuk panen berikutnya.",
+    "schedules": {
+      "watering": 2,
+      "fertilizing": 14,
+      "pruning": 0
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 5–6 jam/hari",
+      "water": "Siram teratur, media selalu lembap",
+      "soil": "Tanah subur gembur atau media pot",
+      "temperature": "15–25°C",
+      "humidity": "Sedang (50–70%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Air (regenerasi)",
+      "media": "Rockwool atau langsung di air",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "20–30 hari — Bisa panen bertahap dari tanaman yang sama",
+      "nutrisi": "AB Mix EC 1.4–2.0",
+      "kesulitan": "Mudah",
+      "tips": "Cara termudah: taruh pangkal daun bawang bekas masak dalam gelas berisi air — akan tumbuh dalam 3–5 hari! Untuk panen lebih besar, gunakan sistem NFT atau DWC sederhana."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1587049633312-d628ae50a8ae?w=400&q=80"
+  },
+  {
+    "id": "herbal-9",
+    "name": "Kayu Manis",
+    "scientificName": "Cinnamomum verum",
+    "category": "Herbal",
+    "difficulty": "sulit",
+    "description": "Pohon penghasil rempah kulit kayu manis yang wangi. Butuh waktu bertahun-tahun untuk panen kulit kayu, namun bisa dipangkas dan dinikmati sebagai tanaman hias beraroma.",
+    "schedules": {
+      "watering": 5,
+      "fertilizing": 30,
+      "pruning": 90
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 6–8 jam/hari",
+      "water": "Siram teratur, jaga media lembap tidak becek",
+      "soil": "Tanah subur berpasir, pH 4.5–6.0",
+      "temperature": "20–30°C",
+      "humidity": "Tinggi (60–80%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Kayu manis adalah pohon berkayu keras yang membutuhkan tanah subur dan sistem akar kuat. Tidak praktis untuk hidroponik."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1588315029754-2dd089d39a1a?w=400&q=80"
+  },
+  {
+    "id": "herbal-10",
+    "name": "Sereh Wangi",
+    "scientificName": "Cymbopogon nardus",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "Rumput aromatik penghasil minyak sitronela yang digunakan sebagai pengusir nyamuk alami. Berbeda dengan serai masak, aroma lebih kuat dan tidak dipakai untuk bumbu.",
+    "schedules": {
+      "watering": 3,
+      "fertilizing": 30,
+      "pruning": 30
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 6+ jam/hari",
+      "water": "Siram teratur, toleran kekeringan ringan",
+      "soil": "Tanah subur, drainase baik",
+      "temperature": "20–35°C",
+      "humidity": "Sedang (50–70%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Sereh wangi adalah rumput besar yang lebih cocok ditanam di tanah atau pot besar di luar ruangan. Sistem akar serabutnya sangat padat dan tidak efisien untuk hidroponik."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1594282486552-05b4d80fbb9f?w=400&q=80"
+  },
+  {
+    "id": "aroma-5",
+    "name": "Oregano",
+    "scientificName": "Origanum vulgare",
+    "category": "Aromaterapi",
+    "difficulty": "mudah",
+    "description": "Herbal aromatik khas masakan Italia dan Mediterania. Daun kering maupun segar memberikan aroma kuat pada pizza, pasta, dan sup. Tumbuh kompak dan produktif.",
+    "schedules": {
+      "watering": 4,
+      "fertilizing": 21,
+      "pruning": 14
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 6–8 jam/hari",
+      "water": "Siram saat media kering, toleran kekeringan",
+      "soil": "Media ringan berpasir, drainase sangat baik",
+      "temperature": "18–28°C",
+      "humidity": "Rendah–Sedang (30–50%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Kratky",
+      "media": "Perlite / rockwool",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "40–50 hari — Panen daun muda secara berkala",
+      "nutrisi": "AB Mix EC 1.5–2.0, tambahkan kalsium",
+      "kesulitan": "Mudah",
+      "tips": "Oregano sangat produktif di hidroponik indoor dengan grow light. Pastikan EC tidak terlalu tinggi — oregano lebih suka nutrisi sedang. Panen rutin mendorong pertumbuhan baru."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1584589167171-541ce45f1eea?w=400&q=80"
+  },
+  {
+    "id": "aroma-6",
+    "name": "Thyme",
+    "scientificName": "Thymus vulgaris",
+    "category": "Aromaterapi",
+    "difficulty": "sedang",
+    "description": "Herbal aromatik Mediterania dengan daun kecil dan bunga ungu mungil. Aroma hangat dan khas, cocok untuk ayam panggang, sup, dan teh herbal. Juga berfungsi sebagai ground cover.",
+    "schedules": {
+      "watering": 5,
+      "fertilizing": 21,
+      "pruning": 14
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 6–8 jam/hari",
+      "water": "Siram jarang, biarkan media mengering",
+      "soil": "Media berpasir ringan, drainase sangat baik",
+      "temperature": "15–25°C",
+      "humidity": "Rendah (30–45%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky",
+      "media": "Perlite / rockwool",
+      "ph_ideal": "5.5–7.0",
+      "waktu_panen": "45–60 hari — Panen pucuk segar secara berkala",
+      "nutrisi": "AB Mix EC 1.0–1.6, lebih ringan dari herbal lain",
+      "kesulitan": "Sedang",
+      "tips": "Thyme lebih suka kering di antara penyiraman — di hidroponik, pastikan ada aerasi yang baik. Sistem Kratky dengan celah udara yang cukup besar bekerja dengan baik untuk thyme."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1587411768638-ec71f8e33b78?w=400&q=80"
+  },
+  {
+    "id": "aroma-7",
+    "name": "Lemon Balm",
+    "scientificName": "Melissa officinalis",
+    "category": "Aromaterapi",
+    "difficulty": "mudah",
+    "description": "Herbal aromatik beraroma lemon menyegarkan, anggota keluarga mint. Digunakan untuk teh relaksasi, pewangi ruangan, dan membantu mengurangi stres dan insomnia.",
+    "schedules": {
+      "watering": 3,
+      "fertilizing": 21,
+      "pruning": 14
+    },
+    "careDetails": {
+      "sunlight": "Cahaya sedang, toleran teduh parsial",
+      "water": "Siram saat media atas kering",
+      "soil": "Media subur, drainase baik",
+      "temperature": "15–28°C",
+      "humidity": "Sedang (45–65%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / NFT",
+      "media": "Rockwool / cocopeat",
+      "ph_ideal": "6.0–7.5",
+      "waktu_panen": "30–45 hari — Panen daun muda untuk teh segar",
+      "nutrisi": "AB Mix EC 1.4–2.0",
+      "kesulitan": "Mudah",
+      "tips": "Lemon balm tumbuh sangat subur di hidroponik — bisa menjadi invasif! Pangkas rutin dan panen banyak agar tanaman tetap kompak. Aroma paling kuat sebelum berbunga."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?w=400&q=80"
+  },
+  {
+    "id": "buah-8",
+    "name": "Tomat Cherry Hidroponik",
+    "scientificName": "Solanum lycopersicum var. cerasiforme",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "Varietas tomat mini yang paling populer untuk berkebun rumah. Berbuah lebat sepanjang tahun, rasa manis-asam menyegarkan, sangat produktif di sistem hidroponik.",
+    "schedules": {
+      "watering": 2,
+      "fertilizing": 14,
+      "pruning": 7
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 8 jam/hari",
+      "water": "Siram rutin, jaga kelembapan konsisten",
+      "soil": "Media subur kaya organik atau hidroponik",
+      "temperature": "20–30°C",
+      "humidity": "Sedang (50–65%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Dutch Bucket / NFT",
+      "media": "Rockwool / perlit + cocopeat",
+      "ph_ideal": "5.8–6.3",
+      "waktu_panen": "60–75 hari — Panen pertama 2–2,5 bulan setelah tanam",
+      "nutrisi": "AB Mix EC 2.0–3.5, tinggi kalium saat berbuah",
+      "kesulitan": "Sedang",
+      "tips": "Tomat cherry adalah primadona hidroponik — produktif dan cepat. Pasang tali atau tiang untuk menopang. Pruning tunas air (sucker) secara rutin. Pollinate bunga dengan menggoyangkan tanaman saat berbunga."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1546094096-0df4bcabd337?w=400&q=80"
+  },
+  {
+    "id": "buah-9",
+    "name": "Melon",
+    "scientificName": "Cucumis melo",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "Buah manis premium yang populer sebagai buah meja. Dibudidayakan hidroponik dalam greenhouse menghasilkan melon berkualitas tinggi dengan rasa lebih manis dan konsisten.",
+    "schedules": {
+      "watering": 2,
+      "fertilizing": 14,
+      "pruning": 7
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 8+ jam/hari",
+      "water": "Irigasi tetes terjadwal, hindari fluktuasi",
+      "soil": "Media hidroponik atau tanah subur drainase baik",
+      "temperature": "25–32°C",
+      "humidity": "Rendah–Sedang saat buah masak (45–55%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Dutch Bucket / Rockwool Slab",
+      "media": "Rockwool slab / perlit + arang sekam",
+      "ph_ideal": "5.8–6.2",
+      "waktu_panen": "70–90 hari — Buah masak ditandai retakan pada tangkai",
+      "nutrisi": "AB Mix EC 2.0 (vegetatif) naik ke 3.0–4.0 (pembentukan buah)",
+      "kesulitan": "Sulit",
+      "tips": "Melon hidroponik butuh manajemen ketat. Batasi 1–2 buah per tanaman untuk ukuran premium. Ikat buah dengan jaring di greenhouse. Kurangi air dan tingkatkan EC seminggu sebelum panen untuk meningkatkan kadar gula (Brix)."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1571575173700-afb9492e6a50?w=400&q=80"
+  },
+  {
+    "id": "buah-10",
+    "name": "Blueberry",
+    "scientificName": "Vaccinium corymbosum",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "Buah beri biru kaya antioksidan yang dikenal sebagai 'superfood'. Menantang ditanam di Indonesia karena butuh suhu dingin, namun bisa berhasil di dataran tinggi.",
+    "schedules": {
+      "watering": 3,
+      "fertilizing": 21,
+      "pruning": 365
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 6–8 jam/hari",
+      "water": "Siram teratur, jaga media lembap",
+      "soil": "Tanah asam pH 4.5–5.5, kaya gambut/cocopeat",
+      "temperature": "15–22°C (butuh suhu dingin)",
+      "humidity": "Sedang (50–65%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC khusus pH rendah",
+      "media": "Cocopeat + perlit + sphagnum moss",
+      "ph_ideal": "4.5–5.5 (sangat asam)",
+      "waktu_panen": "12–24 bulan pertama kali berbuah setelah tanam",
+      "nutrisi": "AB Mix khusus blueberry pH sangat rendah, EC 1.5–2.0",
+      "kesulitan": "Sulit",
+      "tips": "Blueberry butuh pH sangat rendah (4.5–5.5) yang berbeda dari tanaman hidroponik lain. Gunakan media asam dan monitor pH ketat. Di Indonesia, lebih cocok di Malang, Dieng, atau daerah dingin >800 mdpl."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1498557850523-fd3d118b962e?w=400&q=80"
+  },
+  {
+    "id": "buah-11",
+    "name": "Belimbing",
+    "scientificName": "Averrhoa carambola",
+    "category": "Buah-buahan",
+    "difficulty": "mudah",
+    "description": "Buah tropis berbentuk bintang yang unik dengan rasa manis-asam menyegarkan. Produktif sepanjang tahun dan cocok ditanam di pot besar. Populer sebagai buah segar dan asinan.",
+    "schedules": {
+      "watering": 4,
+      "fertilizing": 30,
+      "pruning": 90
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 6–8 jam/hari",
+      "water": "Siram teratur, hindari kekeringan saat berbuah",
+      "soil": "Tanah subur, drainase baik, pH 5.5–6.5",
+      "temperature": "20–35°C",
+      "humidity": "Sedang–Tinggi (55–75%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Belimbing adalah pohon buah tropis yang membutuhkan tanah dalam dan sistem akar kuat. Tidak praktis untuk hidroponik."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1583474141781-ef22b0c2bcda?w=400&q=80"
+  },
+  {
+    "id": "buah-12",
+    "name": "Jambu Air",
+    "scientificName": "Syzygium aqueum",
+    "category": "Buah-buahan",
+    "difficulty": "mudah",
+    "description": "Buah lokal Indonesia yang renyah, berair, dan menyegarkan. Pohonnya teduh dan produktif, cocok sebagai pohon pelindung sekaligus penghasil buah di pekarangan.",
+    "schedules": {
+      "watering": 5,
+      "fertilizing": 30,
+      "pruning": 180
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 6+ jam/hari",
+      "water": "Siram teratur, toleran tanah basah",
+      "soil": "Tanah subur, tahan kelembapan tinggi",
+      "temperature": "22–35°C",
+      "humidity": "Tinggi (60–80%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Jambu air adalah pohon besar tropis yang membutuhkan penanaman di tanah atau pot bervolume besar (>100L). Tidak praktis untuk sistem hidroponik rumahan."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1547514701-42782101795e?w=400&q=80"
+  },
+  {
+    "id": "buah-13",
+    "name": "Markisa",
+    "scientificName": "Passiflora edulis",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "Buah tropis merambat dengan rasa asam manis eksotis dan aroma khas. Bunganya sangat indah, menjadikannya tanaman ganda sebagai hias sekaligus penghasil buah.",
+    "schedules": {
+      "watering": 3,
+      "fertilizing": 21,
+      "pruning": 30
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 6–8 jam/hari",
+      "water": "Siram teratur, hindari genangan",
+      "soil": "Tanah subur, drainase baik, pH 6.0–7.0",
+      "temperature": "18–28°C",
+      "humidity": "Sedang (50–65%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Dutch Bucket / NFT besar",
+      "media": "Perlit + cocopeat atau rockwool",
+      "ph_ideal": "6.0–6.5",
+      "waktu_panen": "180–270 hari — Berbuah pertama kali 6–9 bulan setelah tanam",
+      "nutrisi": "AB Mix EC 1.8–2.5, tingkatkan kalium saat berbuah",
+      "kesulitan": "Sedang",
+      "tips": "Markisa hidroponik butuh trellis atau para-para untuk merambat. Mulai dengan EC rendah (1.5) lalu naikkan bertahap. Pollinate secara manual dengan kuas kecil untuk meningkatkan set buah."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1604145559206-e3bdb22e5a89?w=400&q=80"
+  },
+  {
+    "id": "buah-14",
+    "name": "Tin / Ara",
+    "scientificName": "Ficus carica",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "Buah tin yang disebutkan dalam Al-Quran dengan nilai historis dan kesehatan tinggi. Semakin populer ditanam di pot di Indonesia karena adaptif dan buahnya unik.",
+    "schedules": {
+      "watering": 4,
+      "fertilizing": 21,
+      "pruning": 365
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 8 jam/hari",
+      "water": "Siram teratur, biarkan media agak kering di antara siram",
+      "soil": "Media pot drainase baik, tambahkan pasir",
+      "temperature": "18–35°C",
+      "humidity": "Rendah–Sedang (35–55%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Tanaman tin adalah pohon berkayu yang butuh pot besar atau tanah langsung untuk hasil optimal. Sistem akarnya tidak cocok untuk hidroponik."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=400&q=80"
+  },
+  {
+    "id": "buah-15",
+    "name": "Alpukat",
+    "scientificName": "Persea americana",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "Buah superfood kaya lemak sehat, vitamin, dan mineral. Semakin populer sebagai tanaman pot di Indonesia. Butuh waktu 3–5 tahun untuk berbuah dari biji, lebih cepat dari cangkok.",
+    "schedules": {
+      "watering": 5,
+      "fertilizing": 30,
+      "pruning": 180
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh 6+ jam/hari",
+      "water": "Siram teratur, hindari overwatering",
+      "soil": "Tanah subur, drainase baik, pH 6.0–7.0",
+      "temperature": "18–28°C",
+      "humidity": "Sedang (50–70%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Alpukat adalah pohon besar yang membutuhkan sistem akar dalam dan kuat. Tidak cocok untuk hidroponik rumahan. Tanam di pot volume besar (>50L) atau langsung di tanah."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1589010588553-46e8e7c21788?w=400&q=80"
+  },
+  {
+    "id": "buah-16",
+    "name": "Kurma Mini",
+    "scientificName": "Phoenix dactylifera",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "Pohon palem penghasil buah kurma yang kaya nutrisi. Di Indonesia bisa ditanam sebagai tanaman hias palem yang eksotis, meski berbuah butuh kondisi iklim kering.",
+    "schedules": {
+      "watering": 7,
+      "fertilizing": 30,
+      "pruning": 365
+    },
+    "careDetails": {
+      "sunlight": "Cahaya penuh maksimal 10+ jam/hari",
+      "water": "Siram jarang, sangat toleran kekeringan",
+      "soil": "Media berpasir, drainase sempurna",
+      "temperature": "20–40°C",
+      "humidity": "Rendah (20–40%)"
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Kurma adalah pohon palem yang butuh kondisi gurun untuk berbuah optimal. Di Indonesia bisa tumbuh namun sangat jarang berbuah karena kelembapan udara terlalu tinggi."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?w=400&q=80"
   }
 ]

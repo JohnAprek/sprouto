@@ -40,13 +40,20 @@ const AppContext = React.createContext();
 const EMOJI_MAP = {
   'hias-1': '🌿', 'hias-2': '🌺', 'hias-3': '🌵', 'hias-4': '🌸', 'hias-5': '🌳',
   'hias-6': '🍃', 'hias-7': '💚', 'hias-8': '🪴', 'hias-9': '🌵', 'hias-10': '🌺',
+  'hias-11': '🌸', 'hias-12': '🌺', 'hias-13': '🍃', 'hias-14': '🌿', 'hias-15': '🦜',
   'sayur-1': '🥬', 'sayur-2': '🌱', 'sayur-3': '🍅', 'sayur-4': '🌶️', 'sayur-5': '🥗', 'sayur-6': '🥦',
   'sayur-7': '🍆', 'sayur-8': '🥒', 'sayur-9': '🥕', 'sayur-10': '🌿',
+  'sayur-11': '🥬', 'sayur-12': '🫑',
   'obat-1': '🌼', 'obat-2': '🌿', 'obat-3': '🍃', 'obat-4': '🌱', 'obat-5': '🫐',
+  'obat-6': '🌰', 'obat-7': '🌿', 'obat-8': '🌵', 'obat-9': '🌿', 'obat-10': '🖤',
   'herbal-1': '🪴', 'herbal-2': '🌱', 'herbal-3': '💛', 'herbal-4': '🌿', 'herbal-5': '🌰',
+  'herbal-6': '🌿', 'herbal-7': '🌿', 'herbal-8': '🧅', 'herbal-9': '🪵', 'herbal-10': '🌾',
   'aroma-1': '🌿', 'aroma-2': '💜', 'aroma-3': '🍃', 'aroma-4': '💚',
+  'aroma-5': '🌿', 'aroma-6': '🌸', 'aroma-7': '🍋',
   'buah-1': '🍓', 'buah-2': '🍌', 'buah-3': '🍊', 'buah-4': '🍌',
-  'buah-5': '🍋', 'buah-6': '🍉', 'buah-7': '🍇'
+  'buah-5': '🍋', 'buah-6': '🍉', 'buah-7': '🍇',
+  'buah-8': '🍅', 'buah-9': '🍈', 'buah-10': '🫐', 'buah-11': '⭐', 'buah-12': '🍎',
+  'buah-13': '🌸', 'buah-14': '🌴', 'buah-15': '🥑', 'buah-16': '🌴',
 };
 
 const ENG_MAP = {
@@ -135,6 +142,7 @@ function AppShell({ toast, setToast }) {
           <Route path="/tanaman/:id" element={<PlantDetail />} />
           <Route path="/favorit" element={<Favorites />} />
           <Route path="/panduan" element={<SoilGuide />} />
+          <Route path="/kalkulator" element={<HydroCalc />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/kalender" element={<CareCalendar />} />
         </Routes>
@@ -150,7 +158,7 @@ function Header() {
   const { isDarkMode, setIsDarkMode } = React.useContext(AppContext);
   const navigate = useNavigate();
   const location = useLocation();
-  const showBack = !['/', '/ensiklopedia', '/favorit', '/panduan'].includes(location.pathname);
+  const showBack = !['/', '/ensiklopedia', '/favorit', '/panduan', '/kalkulator'].includes(location.pathname);
 
   return (
     <header className="app-header">
@@ -192,7 +200,8 @@ function BottomNav() {
     { path: '/', icon: <HomeIcon size={22} />, label: 'Beranda' },
     { path: '/ensiklopedia', icon: <BookOpen size={22} />, label: 'Katalog' },
     { path: '/favorit', icon: <Heart size={22} />, label: 'Favorit' },
-    { path: '/panduan', icon: <span style={{fontSize:'1.2rem'}}>📚</span>, label: 'Panduan' }
+    { path: '/panduan', icon: <span style={{fontSize:'1.2rem'}}>📚</span>, label: 'Panduan' },
+    { path: '/kalkulator', icon: <span style={{fontSize:'1.2rem'}}>🧪</span>, label: 'Kalkulator' }
   ];
 
   return (
@@ -289,6 +298,7 @@ function Encyclopedia() {
   const [activeCategory, setActiveCategory] = useState('Semua');
   const [activeDiff, setActiveDiff] = useState('Semua');
   const [sortBy, setSortBy] = useState('default');
+  const [hidroOnly, setHidroOnly] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isPulling, setIsPulling] = useState(false);
   const touchStartY = useRef(0);
@@ -350,12 +360,18 @@ function Encyclopedia() {
     const matchSearch = p.name.toLowerCase().includes(searchTerm.toLowerCase()) || p.scientificName.toLowerCase().includes(searchTerm.toLowerCase());
     const matchCat = activeCategory === 'Semua' || p.category === activeCategory;
     const matchDiff = activeDiff === 'Semua' || p.difficulty === activeDiff;
-    return matchSearch && matchCat && matchDiff;
+    const matchHidro = !hidroOnly || (p.hidroponik && p.hidroponik.bisa_hidroponik === true);
+    return matchSearch && matchCat && matchDiff && matchHidro;
   });
 
   if (sortBy === 'az') filtered = [...filtered].sort((a, b) => a.name.localeCompare(b.name));
   else if (sortBy === 'mudah') filtered = [...filtered].sort((a, b) => diffOrder[a.difficulty] - diffOrder[b.difficulty]);
   else if (sortBy === 'sulit') filtered = [...filtered].sort((a, b) => diffOrder[b.difficulty] - diffOrder[a.difficulty]);
+  else if (sortBy === 'hidro') filtered = [...filtered].sort((a, b) => {
+    const aH = a.hidroponik && a.hidroponik.bisa_hidroponik ? 1 : 0;
+    const bH = b.hidroponik && b.hidroponik.bisa_hidroponik ? 1 : 0;
+    return bH - aH;
+  });
 
   return (
     <main className="main-content animate-fade-up" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
@@ -391,7 +407,7 @@ function Encyclopedia() {
           ))}
         </div>
       </div>
-      <div style={{ display: 'flex', gap: '8px', marginBottom: '12px', alignItems: 'center' }}>
+      <div style={{ display: 'flex', gap: '8px', marginBottom: '8px', alignItems: 'center' }}>
         <div className="filter-scroll" style={{ flex: 1, marginBottom: 0 }}>
           {difficulties.map(d => (
             <button key={d} className={`filter-chip ${activeDiff === d ? 'active' : ''}`} onClick={() => setActiveDiff(d)} style={{ padding: '6px 12px', fontSize: '0.75rem', borderRadius: '8px' }}>
@@ -404,7 +420,29 @@ function Encyclopedia() {
           <option value="az">A → Z</option>
           <option value="mudah">Termudah</option>
           <option value="sulit">Tersulit</option>
+          <option value="hidro">Hidroponik ↑</option>
         </select>
+      </div>
+      <div style={{ marginBottom: '12px' }}>
+        <button
+          onClick={() => setHidroOnly(h => !h)}
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: '6px',
+            padding: '6px 14px', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 600,
+            border: '1.5px solid', cursor: 'pointer', transition: 'all 0.2s',
+            borderColor: hidroOnly ? '#0891b2' : 'var(--border-color)',
+            background: hidroOnly ? '#e0f2fe' : 'var(--surface)',
+            color: hidroOnly ? '#0891b2' : 'var(--text-muted)',
+          }}
+        >
+          💧 {hidroOnly ? 'Hidroponik: ON' : 'Bisa Hidroponik'}
+          {hidroOnly && <span style={{ fontSize: '0.7rem', background: '#0891b2', color: 'white', borderRadius: '50%', width: '16px', height: '16px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>✓</span>}
+        </button>
+        {hidroOnly && (
+          <span style={{ marginLeft: '8px', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+            {filtered.length} tanaman cocok
+          </span>
+        )}
       </div>
 
       {isLoading ? (
@@ -436,12 +474,22 @@ function PlantCard({ plant, onClick }) {
   const isFav = favorites.includes(plant.id);
   const gradient = CATEGORY_GRADIENT[plant.category] || CATEGORY_GRADIENT['Tanaman Hias'];
   const emoji = EMOJI_MAP[plant.id] || '🌿';
+  const [imgErr, setImgErr] = useState(false);
 
   return (
     <div className="plant-card-v2" onClick={onClick}>
-      {/* Unified background: gradient + big emoji */}
-      <div className="plant-emoji-bg" style={{ background: gradient }}>
-        <span style={{ fontSize: '3.5rem', userSelect: 'none', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }}>{emoji}</span>
+      {/* Background: foto asli atau fallback emoji */}
+      <div className="plant-emoji-bg" style={{ background: gradient, overflow: 'hidden', position: 'relative' }}>
+        {plant.imageUrl && !imgErr ? (
+          <img
+            src={plant.imageUrl}
+            alt={plant.name}
+            onError={() => setImgErr(true)}
+            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0 }}
+          />
+        ) : (
+          <span style={{ fontSize: '3.5rem', userSelect: 'none', filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }}>{emoji}</span>
+        )}
       </div>
 
       {/* Gradient overlay with text */}
@@ -457,8 +505,11 @@ function PlantCard({ plant, onClick }) {
       </div>
 
       {/* Badge top-left */}
-      <div className="card-badge-top-left">
+      <div className="card-badge-top-left" style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
         <span className={`badge ${plant.difficulty}`}>{plant.difficulty}</span>
+        {plant.hidroponik && plant.hidroponik.bisa_hidroponik && (
+          <span style={{ background: 'rgba(8,145,178,0.85)', color: 'white', fontSize: '0.6rem', fontWeight: 700, padding: '2px 6px', borderRadius: '6px', backdropFilter: 'blur(4px)' }}>💧 Hidro</span>
+        )}
       </div>
 
       {/* Heart top-right */}
@@ -514,15 +565,17 @@ function PlantDetail() {
   return (
     <div className="animate-fade-up" style={{ paddingBottom: '40px' }}>
       <div className="detail-hero">
-        <img 
-          src={`https://source.unsplash.com/800x600/?${engName},nature`} 
-          alt={plant.name}
-          onError={(e) => {
-            e.target.style.display = 'none';
-            e.target.nextSibling.style.display = 'flex';
-          }}
-        />
-        <div style={{ display: 'none', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center', fontSize: '80px', background: 'var(--primary-dark)' }}>
+        {plant.imageUrl ? (
+          <img
+            src={plant.imageUrl}
+            alt={plant.name}
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextSibling.style.display = 'flex';
+            }}
+          />
+        ) : null}
+        <div style={{ display: plant.imageUrl ? 'none' : 'flex', width: '100%', height: '100%', alignItems: 'center', justifyContent: 'center', fontSize: '80px', background: CATEGORY_GRADIENT[plant.category] || 'var(--primary-dark)' }}>
           {EMOJI_MAP[plant.id] || '🌿'}
         </div>
         
@@ -961,7 +1014,163 @@ function Favorites() {
   );
 }
 
-// --- 6. Panduan Tanah & Media Tanam ---
+// --- 6. Kalkulator Nutrisi Hidroponik ---
+function HydroCalc() {
+  const [volume, setVolume] = useState(10);
+  const [ecTarget, setEcTarget] = useState(2.0);
+  const [phCurrent, setPhCurrent] = useState(7.0);
+  const [plantType, setPlantType] = useState('sayuran-daun');
+
+  const plantPresets = [
+    { id: 'sayuran-daun', label: '🥬 Sayuran Daun', ecMin: 1.5, ecMax: 2.5, phMin: 6.0, phMax: 7.0 },
+    { id: 'tomat-cabai',  label: '🍅 Tomat / Cabai', ecMin: 2.0, ecMax: 3.5, phMin: 5.8, phMax: 6.3 },
+    { id: 'buah',        label: '🍓 Buah (Stroberi/Melon)', ecMin: 1.8, ecMax: 3.0, phMin: 5.5, phMax: 6.5 },
+    { id: 'herbal',      label: '🌿 Herbal & Rempah', ecMin: 1.0, ecMax: 2.0, phMin: 5.5, phMax: 6.5 },
+  ];
+
+  const preset = plantPresets.find(p => p.id === plantType);
+
+  // Hitungan AB Mix (per liter: 5ml stok A + 5ml stok B ≈ EC 2.0)
+  const abMixA = (volume * 5 * (ecTarget / 2.0)).toFixed(0);
+  const abMixB = (volume * 5 * (ecTarget / 2.0)).toFixed(0);
+
+  // pH adjuster: tiap 0.1 unit pH turun butuh ~1ml pH Down per 10L
+  const phDiff = phCurrent - 6.0;
+  const phDownNeeded = phDiff > 0 ? ((phDiff / 0.1) * (volume / 10)).toFixed(1) : 0;
+  const phUpNeeded = phDiff < 0 ? ((Math.abs(phDiff) / 0.1) * (volume / 10)).toFixed(1) : 0;
+
+  const ecStatus = ecTarget >= preset.ecMin && ecTarget <= preset.ecMax ? 'optimal' : ecTarget < preset.ecMin ? 'rendah' : 'tinggi';
+  const ecColor = ecStatus === 'optimal' ? '#16a34a' : ecStatus === 'rendah' ? '#ca8a04' : '#dc2626';
+
+  return (
+    <main className="main-content animate-fade-up">
+      <div style={{ marginBottom: '20px' }}>
+        <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '6px' }}>🧪 Kalkulator Nutrisi</h2>
+        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>
+          Hitung kebutuhan AB Mix, EC, dan pH untuk larutan hidroponikmu.
+        </p>
+      </div>
+
+      {/* Pilih Jenis Tanaman */}
+      <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '16px', marginBottom: '14px', boxShadow: 'var(--shadow-sm)' }}>
+        <p style={{ fontWeight: 700, fontSize: '0.85rem', marginBottom: '10px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Jenis Tanaman</p>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+          {plantPresets.map(p => (
+            <button key={p.id} onClick={() => { setPlantType(p.id); setEcTarget(((p.ecMin + p.ecMax) / 2).toFixed(1) * 1); }}
+              style={{ padding: '8px 12px', borderRadius: '10px', fontSize: '0.8rem', fontWeight: 600, border: '1.5px solid', cursor: 'pointer', transition: 'all 0.2s',
+                borderColor: plantType === p.id ? 'var(--primary)' : 'var(--border-color)',
+                background: plantType === p.id ? 'var(--primary)' : 'var(--surface)',
+                color: plantType === p.id ? 'white' : 'var(--text-main)' }}>
+              {p.label}
+            </button>
+          ))}
+        </div>
+        <p style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginTop: '8px' }}>
+          Target EC: <b>{preset.ecMin}–{preset.ecMax} mS/cm</b> · pH: <b>{preset.phMin}–{preset.phMax}</b>
+        </p>
+      </div>
+
+      {/* Input */}
+      <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '16px', marginBottom: '14px', boxShadow: 'var(--shadow-sm)' }}>
+        <p style={{ fontWeight: 700, fontSize: '0.85rem', marginBottom: '12px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>Parameter Larutan</p>
+        <div style={{ display: 'grid', gap: '16px' }}>
+          {/* Volume */}
+          <div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
+              <label style={{ fontSize: '0.9rem', fontWeight: 600 }}>💧 Volume Air</label>
+              <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--primary)' }}>{volume} Liter</span>
+            </div>
+            <input type="range" min="1" max="200" value={volume} onChange={e => setVolume(Number(e.target.value))}
+              style={{ width: '100%', accentColor: 'var(--primary)' }} />
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '2px' }}>
+              <span>1L (Kratky kecil)</span><span>50L (DWC)</span><span>200L (NFT besar)</span>
+            </div>
+          </div>
+          {/* EC Target */}
+          <div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
+              <label style={{ fontSize: '0.9rem', fontWeight: 600 }}>⚡ Target EC</label>
+              <span style={{ fontSize: '0.9rem', fontWeight: 700, color: ecColor }}>{ecTarget.toFixed(1)} mS/cm — {ecStatus}</span>
+            </div>
+            <input type="range" min="0.5" max="5.0" step="0.1" value={ecTarget} onChange={e => setEcTarget(Number(e.target.value))}
+              style={{ width: '100%', accentColor: ecColor }} />
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '2px' }}>
+              <span>0.5 (semai)</span><span>2.0 (normal)</span><span>5.0 (intensif)</span>
+            </div>
+          </div>
+          {/* pH */}
+          <div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
+              <label style={{ fontSize: '0.9rem', fontWeight: 600 }}>🧫 pH Air Saat Ini</label>
+              <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--primary)' }}>{phCurrent.toFixed(1)}</span>
+            </div>
+            <input type="range" min="4.0" max="9.0" step="0.1" value={phCurrent} onChange={e => setPhCurrent(Number(e.target.value))}
+              style={{ width: '100%', accentColor: 'var(--primary)' }} />
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.7rem', color: 'var(--text-muted)', marginTop: '2px' }}>
+              <span>4.0 (asam)</span><span>7.0 (netral)</span><span>9.0 (basa)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Hasil */}
+      <div style={{ background: 'linear-gradient(135deg, #0c4a6e, #0891b2)', borderRadius: '16px', padding: '16px', marginBottom: '14px', color: 'white', boxShadow: 'var(--shadow-md)' }}>
+        <p style={{ fontWeight: 700, fontSize: '0.85rem', marginBottom: '12px', opacity: 0.85, textTransform: 'uppercase', letterSpacing: '0.5px' }}>📊 Hasil Kalkulasi</p>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+          <div style={{ background: 'rgba(255,255,255,0.15)', borderRadius: '12px', padding: '12px', textAlign: 'center' }}>
+            <p style={{ fontSize: '1.8rem', fontWeight: 800 }}>{abMixA} ml</p>
+            <p style={{ fontSize: '0.75rem', opacity: 0.85 }}>AB Mix Stok A</p>
+          </div>
+          <div style={{ background: 'rgba(255,255,255,0.15)', borderRadius: '12px', padding: '12px', textAlign: 'center' }}>
+            <p style={{ fontSize: '1.8rem', fontWeight: 800 }}>{abMixB} ml</p>
+            <p style={{ fontSize: '0.75rem', opacity: 0.85 }}>AB Mix Stok B</p>
+          </div>
+          {phDownNeeded > 0 && (
+            <div style={{ background: 'rgba(220,38,38,0.3)', borderRadius: '12px', padding: '12px', textAlign: 'center', gridColumn: '1/-1' }}>
+              <p style={{ fontSize: '1.5rem', fontWeight: 800 }}>{phDownNeeded} ml</p>
+              <p style={{ fontSize: '0.75rem', opacity: 0.85 }}>pH Down diperlukan (turunkan ke pH 6.0)</p>
+            </div>
+          )}
+          {phUpNeeded > 0 && (
+            <div style={{ background: 'rgba(22,163,74,0.3)', borderRadius: '12px', padding: '12px', textAlign: 'center', gridColumn: '1/-1' }}>
+              <p style={{ fontSize: '1.5rem', fontWeight: 800 }}>{phUpNeeded} ml</p>
+              <p style={{ fontSize: '0.75rem', opacity: 0.85 }}>pH Up diperlukan (naikkan ke pH 6.0)</p>
+            </div>
+          )}
+          {phDownNeeded == 0 && phUpNeeded == 0 && (
+            <div style={{ background: 'rgba(22,163,74,0.3)', borderRadius: '12px', padding: '12px', textAlign: 'center', gridColumn: '1/-1' }}>
+              <p style={{ fontSize: '1.2rem', fontWeight: 800 }}>✅ pH Sudah Ideal</p>
+              <p style={{ fontSize: '0.75rem', opacity: 0.85 }}>Tidak perlu adjuster pH</p>
+            </div>
+          )}
+        </div>
+        <p style={{ fontSize: '0.75rem', opacity: 0.7, marginTop: '10px', textAlign: 'center' }}>
+          * Estimasi berdasarkan AB Mix standar 500ml stok. Selalu verifikasi dengan EC meter & pH meter.
+        </p>
+      </div>
+
+      {/* Tips */}
+      <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '16px', boxShadow: 'var(--shadow-sm)' }}>
+        <p style={{ fontWeight: 700, fontSize: '0.85rem', marginBottom: '10px', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>💡 Panduan Urutan Pencampuran</p>
+        {[
+          ['1', 'Isi wadah dengan air bersih sesuai volume target'],
+          ['2', 'Masukkan AB Mix Stok A, aduk rata'],
+          ['3', 'Masukkan AB Mix Stok B, aduk rata'],
+          ['4', 'Ukur EC — sesuaikan dengan menambah AB Mix atau encerkan dengan air'],
+          ['5', 'Ukur pH — tambahkan pH Down/Up sesuai kalkulasi di atas'],
+          ['6', 'Cek ulang EC dan pH setelah penyesuaian. Siap digunakan!'],
+        ].map(([n, text]) => (
+          <div key={n} style={{ display: 'flex', gap: '10px', marginBottom: '8px', alignItems: 'flex-start' }}>
+            <span style={{ background: 'var(--primary)', color: 'white', borderRadius: '50%', width: '20px', height: '20px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.7rem', fontWeight: 700, flexShrink: 0, marginTop: '1px' }}>{n}</span>
+            <p style={{ fontSize: '0.85rem', color: 'var(--text-main)', lineHeight: 1.5 }}>{text}</p>
+          </div>
+        ))}
+      </div>
+    </main>
+  );
+}
+
+// --- 7. Panduan Tanah & Media Tanam ---
 const soilGuideData = [
   {
     title: 'Mengenal Jenis Tanah', icon: '🌍', color: '#92400e',
