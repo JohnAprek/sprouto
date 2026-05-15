@@ -86,6 +86,8 @@ export default function TanamanKu() {
   const [isDarkMode, setIsDarkMode] = useLocalStorage('tanamanku_theme', false);
   const [favorites, setFavorites] = useLocalStorage('tanamanku_favorites', []);
   const [profile, setProfile] = useLocalStorage('tanamanku_profile', { name: 'Pecinta Tanaman', photo: null });
+  const [myGarden, setMyGarden] = useLocalStorage('tanamanku_garden', []); // [{id, startDate}]
+  const [notifEnabled, setNotifEnabled] = useLocalStorage('tanamanku_notif', false);
   const [toast, setToast] = useState(null);
   const [onboarded, setOnboarded] = useLocalStorage('tanamanku_onboarded', false);
 
@@ -102,13 +104,52 @@ export default function TanamanKu() {
       showToast('💔 Dihapus dari favorit');
     } else {
       setFavorites([...favorites, id]);
-      showToast('d️ Ditambahkan ke favorit!');
+      showToast('❤️ Ditambahkan ke favorit!');
     }
   };
+
+  const addToGarden = (plantId) => {
+    if (myGarden.find(g => g.id === plantId)) {
+      setMyGarden(myGarden.filter(g => g.id !== plantId));
+      showToast('🌿 Dihapus dari Kebunku');
+    } else {
+      setMyGarden([...myGarden, { id: plantId, startDate: new Date().toISOString().split('T')[0] }]);
+      showToast('🪴 Ditambahkan ke Kebunku!');
+    }
+  };
+
+  // Cek notifikasi saat app dibuka
+  useEffect(() => {
+    if (!notifEnabled || !('Notification' in window) || Notification.permission !== 'granted') return;
+    const today = new Date().toISOString().split('T')[0];
+    const lastCheck = localStorage.getItem('tanamanku_notif_lastcheck');
+    if (lastCheck === today) return; // sudah cek hari ini
+    localStorage.setItem('tanamanku_notif_lastcheck', today);
+    const todayTasks = [];
+    myGarden.forEach(({ id, startDate }) => {
+      const plant = plantData.find(p => p.id === id);
+      if (!plant) return;
+      const start = new Date(startDate);
+      const now = new Date();
+      const diffDays = Math.floor((now - start) / 86400000);
+      if (plant.schedules.watering > 0 && diffDays % plant.schedules.watering === 0)
+        todayTasks.push(`💧 Siram ${plant.name}`);
+      if (plant.schedules.fertilizing > 0 && diffDays % plant.schedules.fertilizing === 0)
+        todayTasks.push(`🌿 Pupuk ${plant.name}`);
+    });
+    if (todayTasks.length > 0) {
+      new Notification('🌱 TanamanKu — Jadwal Hari Ini', {
+        body: todayTasks.slice(0, 3).join('\n') + (todayTasks.length > 3 ? `\n+${todayTasks.length - 3} lagi` : ''),
+        icon: '/pwa-192x192.png', badge: '/pwa-64x64.png'
+      });
+    }
+  }, []);
 
   const contextValue = {
     isDarkMode, setIsDarkMode,
     favorites, toggleFavorite,
+    myGarden, addToGarden,
+    notifEnabled, setNotifEnabled,
     profile, setProfile, showToast
   };
 
@@ -158,7 +199,7 @@ function Header() {
   const { isDarkMode, setIsDarkMode } = React.useContext(AppContext);
   const navigate = useNavigate();
   const location = useLocation();
-  const showBack = !['/', '/ensiklopedia', '/favorit', '/panduan', '/kalkulator'].includes(location.pathname);
+  const showBack = !['/', '/ensiklopedia', '/favorit', '/panduan', '/kalkulator', '/kalender'].includes(location.pathname);
 
   return (
     <header className="app-header">
@@ -201,7 +242,7 @@ function BottomNav() {
     { path: '/ensiklopedia', icon: <BookOpen size={22} />, label: 'Katalog' },
     { path: '/favorit', icon: <Heart size={22} />, label: 'Favorit' },
     { path: '/panduan', icon: <span style={{fontSize:'1.2rem'}}>📚</span>, label: 'Panduan' },
-    { path: '/kalkulator', icon: <span style={{fontSize:'1.2rem'}}>🧪</span>, label: 'Kalkulator' }
+    { path: '/kalender', icon: <span style={{fontSize:'1.2rem'}}>🪴</span>, label: 'Kebunku' }
   ];
 
   return (
@@ -223,7 +264,7 @@ function BottomNav() {
 // --- 1. Beranda ---
 function Home() {
   const navigate = useNavigate();
-  const { profile, favorites } = React.useContext(AppContext);
+  const { profile, favorites, myGarden } = React.useContext(AppContext);
   const hour = new Date().getHours();
   const greeting = hour < 12 ? 'Pagi' : hour < 15 ? 'Siang' : hour < 18 ? 'Sore' : 'Malam';
   
@@ -254,8 +295,8 @@ function Home() {
           <div className="stat-lbl">Favorit</div>
         </div>
         <div className="stat-card" onClick={() => navigate('/kalender')} style={{ cursor: 'pointer' }}>
-          <div className="stat-val">📅</div>
-          <div className="stat-lbl">Jadwal</div>
+          <div className="stat-val">{myGarden.length}</div>
+          <div className="stat-lbl">Kebunku</div>
         </div>
         <div className="stat-card" onClick={() => navigate('/ensiklopedia')} style={{ cursor: 'pointer' }}>
           <div className="stat-val">{plantData.length}</div>
@@ -526,7 +567,7 @@ function PlantCard({ plant, onClick }) {
 // --- 3. Plant Detail ---
 function PlantDetail() {
   const { id } = useParams();
-  const { favorites, toggleFavorite, showToast } = React.useContext(AppContext);
+  const { favorites, toggleFavorite, myGarden, addToGarden, showToast } = React.useContext(AppContext);
   const navigate = useNavigate();
   const plant = plantData.find(p => p.id === id);
 
@@ -629,8 +670,10 @@ function PlantDetail() {
         </div>
 
         <div style={{ display: 'flex', gap: '12px', marginBottom: '32px' }}>
-          <button className="btn-primary" onClick={handleReminder} style={{ flex: 1 }}>
-            <Bell size={20} /> Pengingat
+          <button className="btn-primary" onClick={() => addToGarden(id)}
+            style={{ flex: 1, background: myGarden.find(g=>g.id===id) ? '#16a34a' : 'var(--primary)' }}>
+            <span>{myGarden.find(g=>g.id===id) ? '✅' : '🪴'}</span>
+            {myGarden.find(g=>g.id===id) ? 'Di Kebunku' : 'Tambah ke Kebunku'}
           </button>
           <button className="btn-primary" onClick={handleShare} style={{ flex: 1, background: 'var(--surface)', color: 'var(--primary)', border: '2px solid var(--primary)', boxShadow: 'none' }}>
             <Star size={20} /> Bagikan
@@ -1014,7 +1057,177 @@ function Favorites() {
   );
 }
 
-// --- 6. Kalkulator Nutrisi Hidroponik ---
+// --- 6. CareCalendar & Kebunku ---
+function CareCalendar() {
+  const { myGarden, addToGarden, notifEnabled, setNotifEnabled, showToast } = React.useContext(AppContext);
+  const navigate = useNavigate();
+  const [activeTab, setActiveTab] = useState('jadwal'); // 'jadwal' | 'kebunku'
+
+  const today = new Date();
+  today.setHours(0,0,0,0);
+
+  // Buat jadwal 7 hari ke depan
+  const schedule = [];
+  for (let d = 0; d < 7; d++) {
+    const date = new Date(today);
+    date.setDate(today.getDate() + d);
+    const tasks = [];
+    myGarden.forEach(({ id, startDate }) => {
+      const plant = plantData.find(p => p.id === id);
+      if (!plant) return;
+      const start = new Date(startDate);
+      start.setHours(0,0,0,0);
+      const diff = Math.floor((date - start) / 86400000);
+      if (diff < 0) return;
+      if (plant.schedules.watering > 0 && diff % plant.schedules.watering === 0)
+        tasks.push({ plant, type: 'siram', icon: '💧', color: '#2563eb' });
+      if (plant.schedules.fertilizing > 0 && diff % plant.schedules.fertilizing === 0)
+        tasks.push({ plant, type: 'pupuk', icon: '🌿', color: '#16a34a' });
+      if (plant.schedules.pruning > 0 && diff % plant.schedules.pruning === 0)
+        tasks.push({ plant, type: 'pangkas', icon: '✂️', color: '#7c3aed' });
+    });
+    schedule.push({ date, tasks });
+  }
+
+  const totalToday = schedule[0]?.tasks.length || 0;
+
+  const dayLabel = (date, i) => {
+    if (i === 0) return 'Hari Ini';
+    if (i === 1) return 'Besok';
+    return date.toLocaleDateString('id-ID', { weekday: 'short', day: 'numeric', month: 'short' });
+  };
+
+  const enableNotif = async () => {
+    if (!('Notification' in window)) { showToast('❌ Browser tidak mendukung notifikasi'); return; }
+    const perm = await Notification.requestPermission();
+    if (perm === 'granted') {
+      setNotifEnabled(true);
+      showToast('🔔 Notifikasi diaktifkan!');
+      new Notification('🌱 TanamanKu', { body: 'Kamu akan mendapat pengingat perawatan tanaman setiap hari.', icon: '/pwa-192x192.png' });
+    } else {
+      showToast('❌ Izin notifikasi ditolak');
+    }
+  };
+
+  return (
+    <main className="main-content animate-fade-up">
+      <div style={{ marginBottom: '16px' }}>
+        <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '4px' }}>🌿 Kebunku</h2>
+        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
+          {myGarden.length} tanaman · {totalToday} tugas hari ini
+        </p>
+      </div>
+
+      {/* Tab */}
+      <div style={{ display: 'flex', gap: '8px', marginBottom: '16px' }}>
+        {[['jadwal','📅 Jadwal'],['kebunku','🪴 Koleksiku']].map(([key,label]) => (
+          <button key={key} onClick={() => setActiveTab(key)} style={{
+            flex: 1, padding: '10px', borderRadius: '12px', border: '1.5px solid',
+            fontWeight: 700, fontSize: '0.85rem', cursor: 'pointer', transition: 'all 0.2s',
+            borderColor: activeTab === key ? 'var(--primary)' : 'var(--border-color)',
+            background: activeTab === key ? 'var(--primary)' : 'var(--surface)',
+            color: activeTab === key ? 'white' : 'var(--text-main)',
+          }}>{label}</button>
+        ))}
+      </div>
+
+      {activeTab === 'jadwal' && (
+        <>
+          {/* Notif banner */}
+          {!notifEnabled && (
+            <div style={{ background: 'linear-gradient(135deg,#fef9c3,#fef08a)', borderRadius: '14px', padding: '12px 14px', marginBottom: '14px', display: 'flex', alignItems: 'center', gap: '10px' }}>
+              <span style={{ fontSize: '1.4rem' }}>🔔</span>
+              <div style={{ flex: 1 }}>
+                <p style={{ fontWeight: 700, fontSize: '0.85rem', color: '#713f12' }}>Aktifkan Notifikasi</p>
+                <p style={{ fontSize: '0.75rem', color: '#92400e' }}>Dapat pengingat otomatis setiap pagi</p>
+              </div>
+              <button onClick={enableNotif} style={{ background: '#ca8a04', color: 'white', border: 'none', borderRadius: '8px', padding: '6px 12px', fontWeight: 700, fontSize: '0.75rem', cursor: 'pointer' }}>Aktifkan</button>
+            </div>
+          )}
+
+          {myGarden.length === 0 ? (
+            <div style={{ textAlign: 'center', marginTop: '60px', color: 'var(--text-muted)' }}>
+              <p style={{ fontSize: '3rem', marginBottom: '12px' }}>🪴</p>
+              <p style={{ fontWeight: 600, marginBottom: '8px' }}>Kebunmu masih kosong</p>
+              <p style={{ fontSize: '0.85rem', marginBottom: '20px' }}>Tambahkan tanaman dari halaman detail</p>
+              <button className="btn-primary" style={{ width: 'auto', padding: '10px 24px' }} onClick={() => navigate('/ensiklopedia')}>
+                Jelajahi Tanaman
+              </button>
+            </div>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              {schedule.map(({ date, tasks }, i) => (
+                <div key={i} style={{ background: 'var(--surface)', borderRadius: '14px', overflow: 'hidden', boxShadow: 'var(--shadow-sm)', opacity: tasks.length === 0 ? 0.5 : 1 }}>
+                  <div style={{ padding: '10px 14px', background: i === 0 ? 'var(--primary)' : 'transparent', borderBottom: tasks.length > 0 ? '1px solid var(--border-color)' : 'none' }}>
+                    <span style={{ fontWeight: 700, fontSize: '0.85rem', color: i === 0 ? 'white' : 'var(--text-muted)' }}>
+                      {dayLabel(date, i)}
+                      {tasks.length > 0 && <span style={{ marginLeft: '8px', background: i===0?'rgba(255,255,255,0.25)':'var(--primary)', color: i===0?'white':'white', borderRadius: '50px', padding: '1px 8px', fontSize: '0.7rem' }}>{tasks.length} tugas</span>}
+                      {tasks.length === 0 && <span style={{ marginLeft: '8px', fontSize: '0.75rem', opacity: 0.6 }}>— tidak ada tugas</span>}
+                    </span>
+                  </div>
+                  {tasks.length > 0 && (
+                    <div style={{ padding: '10px 14px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                      {tasks.map((t, ti) => (
+                        <div key={ti} onClick={() => navigate(`/tanaman/${t.plant.id}`)} style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', padding: '8px 10px', borderRadius: '10px', background: 'var(--bg)', borderLeft: `3px solid ${t.color}` }}>
+                          <span style={{ fontSize: '1.2rem' }}>{t.icon}</span>
+                          <div style={{ flex: 1 }}>
+                            <p style={{ fontWeight: 700, fontSize: '0.85rem' }}>{t.plant.name}</p>
+                            <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)', textTransform: 'capitalize' }}>{t.type}</p>
+                          </div>
+                          <span style={{ fontSize: '0.65rem', background: t.color+'20', color: t.color, padding: '3px 8px', borderRadius: '50px', fontWeight: 700 }}>{t.type}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          )}
+        </>
+      )}
+
+      {activeTab === 'kebunku' && (
+        <div>
+          {myGarden.length === 0 ? (
+            <div style={{ textAlign: 'center', marginTop: '60px', color: 'var(--text-muted)' }}>
+              <p style={{ fontSize: '3rem', marginBottom: '12px' }}>🌱</p>
+              <p style={{ fontWeight: 600 }}>Belum ada tanaman di kebunmu</p>
+            </div>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              {myGarden.map(({ id, startDate }) => {
+                const plant = plantData.find(p => p.id === id);
+                if (!plant) return null;
+                const days = Math.floor((new Date() - new Date(startDate)) / 86400000);
+                return (
+                  <div key={id} style={{ background: 'var(--surface)', borderRadius: '14px', padding: '14px', boxShadow: 'var(--shadow-sm)', display: 'flex', alignItems: 'center', gap: '12px' }}>
+                    <div style={{ width: '48px', height: '48px', borderRadius: '12px', overflow: 'hidden', background: CATEGORY_GRADIENT[plant.category], flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem' }}>
+                      {plant.imageUrl ? <img src={plant.imageUrl} alt={plant.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} onError={e => { e.target.style.display='none'; }} /> : EMOJI_MAP[plant.id] || '🌿'}
+                    </div>
+                    <div style={{ flex: 1 }} onClick={() => navigate(`/tanaman/${id}`)}>
+                      <p style={{ fontWeight: 700, fontSize: '0.9rem' }}>{plant.name}</p>
+                      <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)' }}>
+                        Mulai: {new Date(startDate).toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' })} · {days} hari
+                      </p>
+                    </div>
+                    <button onClick={() => addToGarden(id)} style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--text-muted)', padding: '4px', fontSize: '1.1rem' }} title="Hapus dari kebun">🗑️</button>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+          {myGarden.length > 0 && (
+            <button className="btn-primary" style={{ marginTop: '16px', background: 'var(--surface)', color: 'var(--primary)', border: '2px solid var(--primary)', boxShadow: 'none' }} onClick={() => navigate('/ensiklopedia')}>
+              + Tambah Tanaman
+            </button>
+          )}
+        </div>
+      )}
+    </main>
+  );
+}
+
+// --- 6b. Kalkulator Nutrisi Hidroponik ---
 function HydroCalc() {
   const [volume, setVolume] = useState(10);
   const [ecTarget, setEcTarget] = useState(2.0);
