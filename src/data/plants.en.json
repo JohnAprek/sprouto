@@ -2605,5 +2605,431 @@
       "pets": "non-toxic",
       "note": "Date palm (Phoenix) non-toxic; fruit safe pitted"
     }
+  },
+  {
+    "id": "hias-16",
+    "name": "Fiddle Leaf Fig",
+    "scientificName": "Ficus lyrata",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A statement houseplant with large, glossy, violin-shaped leaves that brings a bold tropical look indoors.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water when the top 3-4 cm of soil is dry, roughly once a week; never let it sit in water.",
+      "sunlight": "Bright indirect light near a window; avoid harsh direct sun that scorches the leaves.",
+      "fertilizer": "Balanced liquid fertilizer once a month during the growing season.",
+      "pruning": "Prune the top to control height and remove damaged leaves to encourage branching.",
+      "commonProblems": "Brown spots and leaf drop from overwatering, drafts, or sudden location changes."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA) after careful soil-to-water transition",
+      "media": "Hydroton (expanded clay / LECA)",
+      "nutrisi": "AB Mix 800–1200 ppm (EC 1.6–2.4)",
+      "waktu_panen": "Not harvested — new leaves appear every 4–6 weeks once established",
+      "tips": "This fig hates root disturbance, so transition slowly and keep conditions stable; it sulks and drops leaves with any shock.",
+      "ph_ideal": "5.5–6.5",
+      "kesulitan": "Sulit"
+    },
+    "imageUrl": "",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Ficus sap irritates mouth and skin; causes vomiting in pets"
+    }
+  },
+  {
+    "id": "hias-17",
+    "name": "Spider Plant",
+    "scientificName": "Chlorophytum comosum",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "An easygoing, air-purifying plant with arching striped leaves and dangling baby plantlets.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Keep lightly moist; water every 4-5 days and let the top of the soil dry slightly between waterings.",
+      "sunlight": "Bright indirect light; tolerates moderate shade but variegation fades in low light.",
+      "fertilizer": "Light liquid fertilizer once a month; over-feeding causes brown leaf tips.",
+      "pruning": "Trim brown tips and snip off plantlets to propagate or tidy the plant.",
+      "commonProblems": "Brown leaf tips from fluoride in tap water or over-fertilizing."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / DWC — also roots readily in plain water",
+      "media": "Hydroton or net pot with no medium",
+      "nutrisi": "Diluted AB Mix 600–900 ppm (EC 1.2–1.8)",
+      "waktu_panen": "Not harvested — plantlets form within 1–2 months",
+      "tips": "One of the easiest plants for water culture; simply place a plantlet in water and it roots within a week or two.",
+      "ph_ideal": "6.0–6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Safe for cats and dogs; mild stomach upset only if eaten in excess"
+    }
+  },
+  {
+    "id": "hias-18",
+    "name": "Jade Plant",
+    "scientificName": "Crassula ovata",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A hardy succulent with thick, glossy oval leaves, regarded as a symbol of good luck and prosperity.",
+    "schedules": {
+      "watering": 14,
+      "fertilizer": 60,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water sparingly, every 1-2 weeks, only once the soil is fully dry; it stores water in its leaves.",
+      "sunlight": "Bright light with several hours of direct sun keeps it compact and healthy.",
+      "fertilizer": "Diluted succulent fertilizer every 2 months during active growth.",
+      "pruning": "Pinch back leggy stems to encourage a bushy, tree-like shape.",
+      "commonProblems": "Mushy stems and dropped leaves from overwatering; leaf shrivel if too dry."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "As a drought-loving succulent, the jade plant rots quickly in constant moisture and is not suited to hydroponic systems."
+    },
+    "imageUrl": "",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Toxic to cats and dogs; causes vomiting, lethargy, incoordination"
+    }
+  },
+  {
+    "id": "hias-19",
+    "name": "Boston Fern",
+    "scientificName": "Nephrolepis exaltata",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A lush, feathery fern with gracefully arching fronds that thrives in humid, shaded spots.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Keep the soil consistently moist; water every 2-3 days and never let it dry out completely.",
+      "sunlight": "Bright indirect light or light shade; direct sun browns the fronds.",
+      "fertilizer": "Diluted liquid fertilizer once a month during the growing season.",
+      "pruning": "Trim brown or dead fronds at the base to keep the plant full.",
+      "commonProblems": "Crispy, browning fronds from low humidity or dry soil."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA) — loves constant moisture",
+      "media": "Hydroton (expanded clay / LECA)",
+      "nutrisi": "Diluted AB Mix 600–900 ppm (EC 1.2–1.8)",
+      "waktu_panen": "Not harvested — new fronds unfurl within 1–2 months",
+      "tips": "Its love of constant moisture makes it suit semi-hydroponics well, but keep humidity high and refresh the solution every 2 weeks.",
+      "ph_ideal": "5.5–6.0",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Safe and non-toxic for both cats and dogs"
+    }
+  },
+  {
+    "id": "hias-20",
+    "name": "Chinese Money Plant",
+    "scientificName": "Pilea peperomioides",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A charming plant with round, coin-shaped leaves on slender stems, prized for its tidy, modern look.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water about once a week when the top of the soil feels dry; avoid soggy roots.",
+      "sunlight": "Bright indirect light; rotate it regularly so it grows evenly.",
+      "fertilizer": "Balanced liquid fertilizer once a month in spring and summer.",
+      "pruning": "Remove yellowing lower leaves and pot up the baby offshoots it produces.",
+      "commonProblems": "Curling or yellow leaves from overwatering, drafts, or too little light."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA) or water propagation",
+      "media": "Hydroton (expanded clay / LECA)",
+      "nutrisi": "Diluted AB Mix 600–900 ppm (EC 1.2–1.8)",
+      "waktu_panen": "Not harvested — offshoots appear within 1–2 months",
+      "tips": "Pilea transitions to LECA easily and its baby plantlets root quickly in plain water, making propagation simple.",
+      "ph_ideal": "5.5–6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Non-toxic and safe for cats and dogs"
+    }
+  },
+  {
+    "id": "hias-21",
+    "name": "String of Pearls",
+    "scientificName": "Curio rowleyanus",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A trailing succulent with strands of round, pea-like beads that cascade beautifully from hanging pots.",
+    "schedules": {
+      "watering": 14,
+      "fertilizer": 60,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water every 1-2 weeks, letting the soil dry fully; the beads store water like a succulent.",
+      "sunlight": "Bright indirect light with a little morning sun; too little light makes strands sparse.",
+      "fertilizer": "Diluted succulent fertilizer every 2 months during growth.",
+      "pruning": "Trim leggy or bare strands and tuck cuttings back to fill out the pot.",
+      "commonProblems": "Shriveled or mushy beads from underwatering or overwatering respectively."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "As a drought-adapted succulent, its delicate beads rot quickly in standing water, so it is not suited to hydroponics."
+    },
+    "imageUrl": "",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Toxic to cats and dogs; causes vomiting, diarrhea, drooling, lethargy"
+    }
+  },
+  {
+    "id": "hias-22",
+    "name": "Hoya / Wax Plant",
+    "scientificName": "Hoya carnosa",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A trailing succulent vine with thick, waxy leaves and clusters of fragrant, star-shaped flowers.",
+    "schedules": {
+      "watering": 10,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Let the medium dry out between waterings, roughly every 7-10 days; reduce in winter.",
+      "sunlight": "Bright indirect light; some morning sun encourages blooming.",
+      "fertilizer": "Apply diluted liquid fertilizer once a month during the growing season.",
+      "pruning": "Trim leggy vines, but never cut the old flower spurs as they rebloom.",
+      "commonProblems": "Mealybugs hide under leaves; yellowing leaves signal overwatering."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA) / Kratky",
+      "media": "Hydroton (expanded clay) or rockwool for cuttings",
+      "nutrisi": "Diluted AB Mix 600-900 ppm (EC 1.2-1.8)",
+      "waktu_panen": "Not harvested — rooted cuttings establish in 4-6 weeks",
+      "tips": "Allow the medium to nearly dry between top-ups; Hoya roots rot easily if kept constantly wet.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Non-toxic to cats and dogs per ASPCA"
+    }
+  },
+  {
+    "id": "hias-23",
+    "name": "English Ivy",
+    "scientificName": "Hedera helix",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A vigorous trailing or climbing vine with lobed evergreen leaves, ideal for hanging baskets.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 30,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Keep the medium lightly moist; water when the top 2 cm feels dry, about every 5 days.",
+      "sunlight": "Bright indirect light; variegated forms need brighter light to keep their pattern.",
+      "fertilizer": "Balanced liquid fertilizer once a month during spring and summer.",
+      "pruning": "Pinch back regularly to keep it bushy and control its spread.",
+      "commonProblems": "Spider mites thrive in dry air; brown crispy leaves mean too little humidity."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Water propagation / Kratky",
+      "media": "Hydroton (expanded clay) or plain water for cuttings",
+      "nutrisi": "Diluted AB Mix 700-1000 ppm (EC 1.4-2.0)",
+      "waktu_panen": "Not harvested — cuttings root within 2-3 weeks",
+      "tips": "Ivy roots readily in water; refresh the solution weekly to prevent algae and rot.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Triterpenoid saponins cause vomiting, drooling, diarrhea"
+    }
+  },
+  {
+    "id": "hias-24",
+    "name": "Areca Palm",
+    "scientificName": "Dypsis lutescens",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A graceful clumping palm with arching feathery fronds that brings a tropical feel indoors.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Keep the medium evenly moist but never soggy; water about every 3-4 days.",
+      "sunlight": "Bright indirect light; avoid harsh direct sun that scorches the fronds.",
+      "fertilizer": "Balanced liquid fertilizer monthly during the growing season.",
+      "pruning": "Cut away only fully brown fronds at the base; avoid trimming green tips.",
+      "commonProblems": "Brown leaf tips from low humidity or fluoride in tap water; spider mites in dry air."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA) / Expanded clay system",
+      "media": "Hydroton (expanded clay)",
+      "nutrisi": "Standard AB Mix 900-1300 ppm (EC 1.8-2.6)",
+      "waktu_panen": "Not harvested — new fronds emerge over 2-4 months",
+      "tips": "Transition young plants by rinsing soil from roots; keep humidity high to ease the switch.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Non-toxic to cats and dogs per ASPCA"
+    }
+  },
+  {
+    "id": "hias-25",
+    "name": "African Violet",
+    "scientificName": "Saintpaulia ionantha",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A compact flowering houseplant with velvety leaves and clusters of purple, pink, or white blooms.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water from below with room-temperature water when the surface is dry; keep leaves dry.",
+      "sunlight": "Bright indirect light; an east-facing window is ideal for steady blooming.",
+      "fertilizer": "Diluted bloom-boosting fertilizer every two weeks while flowering.",
+      "pruning": "Remove spent flowers and damaged outer leaves to encourage new blooms.",
+      "commonProblems": "Cold water leaves spots on leaves; crown rot from water pooling in the center."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Wicking system / Semi-hydroponic",
+      "media": "Perlite-vermiculite mix or fine LECA",
+      "nutrisi": "Diluted AB Mix 500-800 ppm (EC 1.0-1.6)",
+      "waktu_panen": "Not harvested — blooms appear within 2-3 months",
+      "tips": "A wicking setup suits their need for steady moisture without wetting the crown or leaves.",
+      "ph_ideal": "6.0-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Non-toxic to cats and dogs per ASPCA"
+    }
+  },
+  {
+    "id": "hias-26",
+    "name": "Inch Plant / Wandering Jew",
+    "scientificName": "Tradescantia zebrina",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A fast-growing trailing plant with striking purple-and-silver striped leaves, perfect for hanging pots.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water when the top 2 cm is dry, about every 3-4 days; it wilts quickly if too dry.",
+      "sunlight": "Bright indirect light keeps the purple coloring vivid; fades in low light.",
+      "fertilizer": "Balanced liquid fertilizer once a month during the growing season.",
+      "pruning": "Pinch the tips often to keep it full and prevent bare, leggy stems.",
+      "commonProblems": "Leggy growth in low light; lower leaves drop if overwatered or too shaded."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Water propagation / Kratky",
+      "media": "Plain water or hydroton (expanded clay) for cuttings",
+      "nutrisi": "Diluted AB Mix 600-900 ppm (EC 1.2-1.8)",
+      "waktu_panen": "Not harvested — cuttings root in just 1-2 weeks",
+      "tips": "One of the easiest plants to root in water; refresh the solution weekly for vigorous roots.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Sap may cause skin irritation and mild stomach upset"
+    }
+  },
+  {
+    "id": "hias-27",
+    "name": "Echeveria",
+    "scientificName": "Echeveria elegans",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A charming rosette succulent with plump, powdery blue-green leaves that thrives on neglect.",
+    "schedules": {
+      "watering": 14,
+      "fertilizer": 60,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Soak thoroughly only when the soil is completely dry, roughly every 1-2 weeks.",
+      "sunlight": "Bright direct light or full morning sun keeps the rosette compact and colorful.",
+      "fertilizer": "Diluted succulent fertilizer every two months during the growing season.",
+      "pruning": "Remove dried bottom leaves; behead and replant the rosette if it stretches.",
+      "commonProblems": "Etiolation (stretching) in low light; root rot and mushy leaves from overwatering."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Echeveria is a dry-loving succulent whose roots rot in constant water, so it is not suited to hydroponic systems."
+    },
+    "imageUrl": "",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Non-toxic to cats and dogs per ASPCA"
+    }
   }
 ]
