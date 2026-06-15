@@ -10,9 +10,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'TanamanKu',
-        short_name: 'TanamanKu',
-        description: 'Aplikasi panduan hobi tanaman untuk pecinta tanaman di Indonesia.',
+        name: 'Sprouto',
+        short_name: 'Sprouto',
+        description: 'Plant care companion: watering & fertilizing schedules, growing guides, hydroponics, and a care calendar for 70+ plants.',
         theme_color: '#166534',
         background_color: '#f0fdf4',
         display: 'standalone',

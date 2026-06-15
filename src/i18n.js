@@ -1,4 +1,4 @@
-// Centralized i18n for TanamanKu — English (default) + Indonesian.
+// Centralized i18n for Sprouto — English (default) + Indonesian.
 import plantsId from './data/plants.json';
 import plantsEn from './data/plants.en.json';
 
@@ -59,7 +59,7 @@ const STR = {
     add_to_garden: 'Add to My Garden', in_garden: 'In My Garden', share: 'Share',
     care_tips: 'Care Tips',
     tip_watering: 'Watering', tip_light: 'Light', tip_fertilizing: 'Fertilizing', tip_pruning: 'Pruning',
-    share_text: (p) => `🌿 ${p.name} (${p.scientificName})\n${p.description}\n\nSee it on TanamanKu!`,
+    share_text: (p) => `🌿 ${p.name} (${p.scientificName})\n${p.description}\n\nSee it on Sprouto!`,
     hydro_how: 'How to Grow Hydroponically',
     hydro_not_recommended: 'Not Recommended for Hydroponics',
     hydro_method_recommended: 'Recommended Method', hydro_media: 'Medium', hydro_ph: 'Ideal pH', hydro_harvest: 'Harvest Time',
@@ -122,7 +122,7 @@ const STR = {
     t_notif_unsupported: '❌ Your browser does not support notifications',
     t_notif_enabled: '🔔 Notifications enabled!', t_notif_denied: '❌ Notification permission denied',
     notif_welcome_body: 'You will get a plant-care reminder every day.',
-    notif_daily_title: '🌱 TanamanKu — Today’s Schedule',
+    notif_daily_title: '🌱 Sprouto — Today’s Schedule',
     notif_water: (n) => `💧 Water ${n}`, notif_fertilize: (n) => `🌿 Fertilize ${n}`, notif_more: (n) => `+${n} more`,
   },
   id: {
@@ -152,7 +152,7 @@ const STR = {
     add_to_garden: 'Tambah ke Kebunku', in_garden: 'Di Kebunku', share: 'Bagikan',
     care_tips: 'Tips Perawatan',
     tip_watering: 'Penyiraman', tip_light: 'Cahaya', tip_fertilizing: 'Pemupukan', tip_pruning: 'Pemangkasan',
-    share_text: (p) => `🌿 ${p.name} (${p.scientificName})\n${p.description}\n\nLihat di TanamanKu!`,
+    share_text: (p) => `🌿 ${p.name} (${p.scientificName})\n${p.description}\n\nLihat di Sprouto!`,
     hydro_how: 'Cara Menanam Hidroponik',
     hydro_not_recommended: 'Tidak Direkomendasikan untuk Hidroponik',
     hydro_method_recommended: 'Metode Direkomendasikan', hydro_media: 'Media', hydro_ph: 'pH Ideal', hydro_harvest: 'Waktu Panen',
@@ -214,7 +214,7 @@ const STR = {
     t_notif_unsupported: '❌ Browser tidak mendukung notifikasi',
     t_notif_enabled: '🔔 Notifikasi diaktifkan!', t_notif_denied: '❌ Izin notifikasi ditolak',
     notif_welcome_body: 'Kamu akan mendapat pengingat perawatan tanaman setiap hari.',
-    notif_daily_title: '🌱 TanamanKu — Jadwal Hari Ini',
+    notif_daily_title: '🌱 Sprouto — Jadwal Hari Ini',
     notif_water: (n) => `💧 Siram ${n}`, notif_fertilize: (n) => `🌿 Pupuk ${n}`, notif_more: (n) => `+${n} lagi`,
   },
 };
@@ -397,7 +397,7 @@ export function buildStaticGuide(plant, lang) {
 export const ONBOARDING = {
   en: {
     steps: [
-      { emoji: '🌿', title: 'Welcome to TanamanKu!', desc: 'A complete guide to caring for your beloved plants, right in your hand.' },
+      { emoji: '🌿', title: 'Welcome to Sprouto!', desc: 'A complete guide to caring for your beloved plants, right in your hand.' },
       { emoji: '❤️', title: 'Save Favorite Plants', desc: 'Tap the heart icon on a plant card to save it to your favorites collection.' },
       { emoji: '📚', title: 'Complete Encyclopedia', desc: '70+ plants with detailed care guides, watering schedules, and expert tips.' },
       { emoji: '🪴', title: 'My Garden & Reminders', desc: 'Add plants to My Garden and get a daily care schedule with notifications.' },
@@ -411,7 +411,7 @@ export const ONBOARDING = {
   },
   id: {
     steps: [
-      { emoji: '🌿', title: 'Selamat datang di TanamanKu!', desc: 'Panduan lengkap merawat tanaman kesayangan Anda dalam genggaman.' },
+      { emoji: '🌿', title: 'Selamat datang di Sprouto!', desc: 'Panduan lengkap merawat tanaman kesayangan Anda dalam genggaman.' },
       { emoji: '❤️', title: 'Simpan Tanaman Favorit', desc: 'Tekan ikon hati di kartu tanaman untuk menyimpannya ke koleksi favorit Anda.' },
       { emoji: '📚', title: 'Ensiklopedia Lengkap', desc: '70+ tanaman dengan panduan perawatan detail, jadwal siram, dan tips ahli.' },
       { emoji: '🪴', title: 'Kebunku & Pengingat', desc: 'Tambahkan tanaman ke Kebunku dan dapatkan jadwal perawatan harian beserta notifikasi.' },

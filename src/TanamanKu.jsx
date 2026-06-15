@@ -214,7 +214,7 @@ function Header() {
               <Sprout size={24} />
             </div>
             <div>
-              <h1>TanamanKu</h1>
+              <h1>Sprouto</h1>
               <span className="header-subtitle">{L.headerSubtitle}</span>
             </div>
           </div>
@@ -921,7 +921,7 @@ function CareCalendar() {
     if (perm === 'granted') {
       setNotifEnabled(true);
       showToast(L.t_notif_enabled);
-      new Notification('🌱 TanamanKu', { body: L.notif_welcome_body, icon: '/pwa-192x192.png' });
+      new Notification('🌱 Sprouto', { body: L.notif_welcome_body, icon: '/pwa-192x192.png' });
     } else { showToast(L.t_notif_denied); }
   };
 
