@@ -1,2 +1,8 @@
-# File ini sudah tidak digunakan. Silakan hapus manual.
-# Cloudflare Worker untuk AI Proxy telah dihapus dari proyek.
+name = "sprouto-ai"
+main = "ai-proxy.js"
+compatibility_date = "2025-01-01"
+
+# IMPORTANT: the DeepSeek API key is NOT stored here.
+# It is a Cloudflare secret, set once with:
+#   wrangler secret put DEEPSEEK_API_KEY
+# (You paste the key into Cloudflare's prompt — it never goes into this repo.)

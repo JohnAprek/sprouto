@@ -625,6 +625,11 @@ function PlantCard({ plant, onClick }) {
   );
 }
 
+// --- AI Care Assistant proxy ---
+// Paste your deployed Cloudflare Worker URL here to enable DeepSeek-powered
+// answers (see workers/README.md). Empty = deterministic instant answers only.
+const AI_PROXY_URL = '';
+
 // --- Affiliate / marketplace supply links ---
 // Set amazonTag to your Amazon Associates tag to monetize EN links.
 const AFFILIATE = { amazonTag: '' };
@@ -1244,8 +1249,41 @@ function CareAssistant() {
   const navigate = useNavigate();
   const [q, setQ] = useState('');
   const [result, setResult] = useState(null);
+  const [aiAnswer, setAiAnswer] = useState(null);
+  const [aiLoading, setAiLoading] = useState(false);
+
+  const plantContext = (p) => [
+    `Plant: ${p.name} (${p.scientificName})`,
+    `Category: ${p.category}; Difficulty: ${p.difficulty}`,
+    `Watering: every ${p.schedules.watering} days — ${p.careDetails.watering}`,
+    `Light: ${p.careDetails.sunlight}`,
+    `Fertilizer: every ${p.schedules.fertilizer} days — ${p.careDetails.fertilizer}`,
+    `Pruning: ${p.careDetails.pruning}`,
+    `Common problems: ${p.careDetails.commonProblems}`,
+    `Pet safety: ${p.toxicity.pets} — ${p.toxicity.note}`,
+    `Hydroponics: ${p.hidroponik.bisa_hidroponik ? `${p.hidroponik.metode}; ${p.hidroponik.tips}` : `not suitable; ${p.hidroponik.tips}`}`,
+  ].join('\n');
+
+  const askAI = async () => {
+    if (!AI_PROXY_URL || !result?.plant) return;
+    setAiLoading(true); setAiAnswer(null);
+    try {
+      const res = await fetch(AI_PROXY_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ question: q, context: plantContext(result.plant), lang }),
+      });
+      const data = await res.json();
+      setAiAnswer(data.answer ? { text: data.answer } : { error: true });
+    } catch {
+      setAiAnswer({ error: true });
+    } finally {
+      setAiLoading(false);
+    }
+  };
 
   const run = () => {
+    setAiAnswer(null);
     const query = ' ' + q.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ') + ' ';
     // Match a plant: longest common-name match wins, then genus, then a significant word.
     let plant = null, best = 0;
@@ -1330,7 +1368,22 @@ function CareAssistant() {
                 </div>
               ))}
             </div>
-            <button onClick={() => navigate(`/tanaman/${result.plant.id}`)} style={{ marginTop: '14px', background: 'none', border: 'none', color: 'var(--primary)', fontWeight: 700, fontSize: '0.82rem', cursor: 'pointer', padding: 0 }}>{L.assistant_open}</button>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginTop: '14px', flexWrap: 'wrap' }}>
+              <button onClick={() => navigate(`/tanaman/${result.plant.id}`)} style={{ background: 'none', border: 'none', color: 'var(--primary)', fontWeight: 700, fontSize: '0.82rem', cursor: 'pointer', padding: 0 }}>{L.assistant_open}</button>
+              {AI_PROXY_URL && (
+                <button onClick={askAI} disabled={aiLoading} style={{ background: 'linear-gradient(135deg, var(--primary-dark), var(--primary))', color: 'white', border: 'none', borderRadius: '10px', padding: '8px 14px', fontWeight: 700, fontSize: '0.8rem', cursor: aiLoading ? 'default' : 'pointer', opacity: aiLoading ? 0.7 : 1 }}>
+                  {aiLoading ? L.assistant_ai_thinking : L.assistant_ask_ai}
+                </button>
+              )}
+            </div>
+            {aiAnswer && (
+              <div style={{ marginTop: '14px', borderTop: '1px solid var(--border-color)', paddingTop: '12px' }}>
+                <p style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px', color: 'var(--primary)', marginBottom: '4px' }}>✨ Sprouto AI</p>
+                {aiAnswer.error
+                  ? <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{L.assistant_ai_error}</p>
+                  : <p style={{ fontSize: '0.88rem', color: 'var(--text-main)', lineHeight: 1.55, whiteSpace: 'pre-wrap' }}>{aiAnswer.text}</p>}
+              </div>
+            )}
           </div>
         ) : (
           <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', lineHeight: 1.6, padding: '8px 4px' }}>{L.assistant_no_plant}</p>

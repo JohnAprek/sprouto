@@ -127,6 +127,7 @@ const STR = {
     assistant_summary: 'Here are the basics',
     assistant_open: 'Open full care guide →',
     assistant_note: 'Instant answers from structured data — not an AI chatbot (yet). Always double-check with a local expert.',
+    assistant_ask_ai: '✨ Ask Sprouto AI', assistant_ai_thinking: '✨ Thinking…', assistant_ai_error: 'AI is unavailable right now — try again later.',
 
     profile_save: 'Save', profile_edit: 'Edit', profile_role: 'Beginner Plant Lover', profile_collection: 'Collection', profile_level: 'Level 1',
     profile_ask_name: 'What is your name?',
@@ -236,6 +237,7 @@ const STR = {
     assistant_summary: 'Berikut dasar-dasarnya',
     assistant_open: 'Buka panduan lengkap →',
     assistant_note: 'Jawaban instan dari data terstruktur — bukan chatbot AI (untuk saat ini). Selalu cek ulang dengan ahli setempat.',
+    assistant_ask_ai: '✨ Tanya Sprouto AI', assistant_ai_thinking: '✨ Sedang berpikir…', assistant_ai_error: 'AI sedang tidak tersedia — coba lagi nanti.',
 
     profile_save: 'Simpan', profile_edit: 'Edit', profile_role: 'Pecinta Tanaman Pemula', profile_collection: 'Koleksi', profile_level: 'Level 1',
     profile_ask_name: 'Siapa nama Anda?',
