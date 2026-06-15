@@ -2636,7 +2636,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Starr_031108-0130_Ficus_lyrata.jpg/330px-Starr_031108-0130_Ficus_lyrata.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Getah Ficus iritasi mulut dan kulit; menyebabkan muntah pada hewan"
@@ -2706,7 +2706,7 @@
       "waktu_panen": "-",
       "tips": "Sebagai sukulen pencinta kering, tanaman giok cepat busuk dalam kelembapan terus-menerus dan tidak cocok untuk sistem hidroponik."
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Crassula_ovata_700.jpg/330px-Crassula_ovata_700.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Beracun bagi kucing dan anjing; menyebabkan muntah, lesu, gerakan tak terkoordinasi"
@@ -2742,7 +2742,7 @@
       "ph_ideal": "5.5–6.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Boston_Fern_%282873392811%29.png/330px-Boston_Fern_%282873392811%29.png",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Aman dan tidak beracun untuk kucing maupun anjing"
@@ -2778,7 +2778,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Pilea_peperomioides_Chinese_money_plant.jpg/330px-Pilea_peperomioides_Chinese_money_plant.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun dan aman untuk kucing dan anjing"
@@ -2812,7 +2812,7 @@
       "waktu_panen": "-",
       "tips": "Sebagai sukulen yang teradaptasi kering, butirannya yang rapuh cepat busuk dalam air menggenang, sehingga tidak cocok untuk hidroponik."
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Senecio_rowleyanus_leaves.jpg/330px-Senecio_rowleyanus_leaves.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Beracun bagi kucing dan anjing; menyebabkan muntah, diare, ngiler, lesu"
@@ -2848,7 +2848,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/NKN-2007-06-13_114250_Hoya_Carnosa_%28Yvan_Leduc_author_for_Wikipedia%29.jpg/330px-NKN-2007-06-13_114250_Hoya_Carnosa_%28Yvan_Leduc_author_for_Wikipedia%29.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing menurut ASPCA"
@@ -2884,7 +2884,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hedera_helix_Dover.jpg/330px-Hedera_helix_Dover.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Saponin triterpenoid menyebabkan muntah, ngiler, diare"
@@ -2920,7 +2920,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/%E6%95%A3%E5%B0%BE%E8%91%B5Dypsis_lutescens_20210511145013_05.jpg/330px-%E6%95%A3%E5%B0%BE%E8%91%B5Dypsis_lutescens_20210511145013_05.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing menurut ASPCA"
@@ -2956,7 +2956,7 @@
       "ph_ideal": "6.0-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Streptocarpus_ionanthus_%28as_Saintpaulia_ionantha%29_-_Curtis%27_121_%28Ser._3_no._51%29_pl._7408_%281895%29.jpg/330px-Streptocarpus_ionanthus_%28as_Saintpaulia_ionantha%29_-_Curtis%27_121_%28Ser._3_no._51%29_pl._7408_%281895%29.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing menurut ASPCA"
@@ -2992,7 +2992,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zebrina_pendula_20060521_2_closer.jpg/330px-Zebrina_pendula_20060521_2_closer.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Getahnya dapat menyebabkan iritasi kulit dan gangguan perut ringan"
@@ -3026,10 +3026,644 @@
       "waktu_panen": "-",
       "tips": "Echeveria adalah sukulen penyuka kondisi kering yang akarnya membusuk di air terus-menerus, sehingga tidak cocok untuk sistem hidroponik."
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Echeveria_elegans_-_1.png/330px-Echeveria_elegans_-_1.png",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing menurut ASPCA"
+    }
+  },
+  {
+    "id": "hias-28",
+    "name": "Puring",
+    "scientificName": "Codiaeum variegatum",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "Perdu tropis mencolok dengan daun tebal bercorak merah, oranye, kuning, dan hijau yang makin cerah bila terkena banyak cahaya.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Jaga media tetap lembap merata; siram saat 2 cm bagian atas kering, sekitar 3-4 hari sekali.",
+      "sunlight": "Cahaya terang, termasuk sedikit sinar matahari pagi langsung, agar warna tetap tajam.",
+      "fertilizer": "Beri pupuk cair seimbang sebulan sekali selama musim tumbuh.",
+      "pruning": "Pangkas pucuk untuk merangsang rimbun dan buang batang yang memanjang atau gundul.",
+      "commonProblems": "Daun rontok mendadak akibat angin dingin atau udara kering; tungau laba-laba saat kelembapan rendah."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hidroponik (LECA) / Wick",
+      "media": "Hidroton (expanded clay) atau campuran perlite",
+      "nutrisi": "AB Mix 800-1100 ppm (EC 1.6-2.2)",
+      "waktu_panen": "Tidak dipanen — daun baru berwarna terlihat dalam 2-3 bulan",
+      "tips": "Puring tidak suka perubahan mendadak, jadi pindahkan bertahap dan jaga kelembapan tinggi agar daun tidak rontok setelah beralih ke kultur air.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Colpfl05.jpg/330px-Colpfl05.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Getah beracun — muntah, diare, iritasi kulit/mulut"
+    }
+  },
+  {
+    "id": "hias-29",
+    "name": "Pohon Naga (Dracaena Marginata)",
+    "scientificName": "Dracaena marginata",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Tanaman tegak yang mudah dirawat, berbatang ramping dengan daun panjang seperti pedang bertepi merah.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 60,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Biarkan separuh media bagian atas kering; siram sekitar seminggu sekali dan hindari akar tergenang.",
+      "sunlight": "Cahaya terang tidak langsung; tahan teduh sedang namun tumbuh lebih lambat.",
+      "fertilizer": "Beri pupuk cair encer setiap 2 bulan saat musim tumbuh.",
+      "pruning": "Potong batang sesuai tinggi yang diinginkan untuk merangsang percabangan; buang ujung daun yang cokelat.",
+      "commonProblems": "Ujung daun cokelat akibat fluorida pada air keran atau kelembapan rendah."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hidroponik (LECA) / Kratky",
+      "media": "Hidroton (expanded clay)",
+      "nutrisi": "AB Mix 600-900 ppm (EC 1.2-1.8)",
+      "waktu_panen": "Tidak dipanen — pertumbuhan baru stabil terlihat dalam 2-4 bulan",
+      "tips": "Dracaena mudah beradaptasi di kultur air; gunakan air saring atau air hujan karena peka terhadap fluorida dan garam yang menyebabkan ujung cokelat.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Dracaena_reflexa.JPG/330px-Dracaena_reflexa.JPG",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Saponin — muntah, ngiler, lemas, pupil melebar pada kucing"
+    }
+  },
+  {
+    "id": "hias-30",
+    "name": "Palem Parlor",
+    "scientificName": "Chamaedorea elegans",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Palem indoor mungil yang tumbuh lambat dengan daun halus menyirip, tahan di tempat minim cahaya.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 60,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Jaga sedikit lembap; siram saat 2-3 cm bagian atas kering, sekitar 5 hari sekali.",
+      "sunlight": "Cahaya tidak langsung redup hingga sedang; hindari sinar langsung yang membakar daun.",
+      "fertilizer": "Beri pupuk cair encer secukupnya setiap 2 bulan.",
+      "pruning": "Hanya potong daun cokelat atau mati di pangkal; jangan potong pucuk tumbuh.",
+      "commonProblems": "Ujung daun cokelat akibat udara kering; tungau laba-laba saat kelembapan rendah."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hidroponik (LECA)",
+      "media": "Hidroton (expanded clay)",
+      "nutrisi": "AB Mix 600-900 ppm (EC 1.2-1.8)",
+      "waktu_panen": "Tidak dipanen — pertumbuhan lambat dan stabil selama 4-6 bulan",
+      "tips": "Pindahkan tanaman muda dengan hati-hati dan rendam akar hanya sebagian; akar palem yang halus mudah busuk bila tergenang penuh.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Chamaedorea_elegans_Mart.JPG/330px-Chamaedorea_elegans_Mart.JPG",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Aman bagi kucing dan anjing menurut ASPCA"
+    }
+  },
+  {
+    "id": "hias-31",
+    "name": "Paku Sarang Burung",
+    "scientificName": "Asplenium nidus",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "Paku epifit dengan daun mengkilap bergelombang yang tumbuh dari roset tengah menyerupai sarang burung.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Jaga media tetap lembap; siram di tepi pot, bukan ke roset tengah.",
+      "sunlight": "Cahaya tidak langsung sedang atau teduh tersaring; sinar langsung membakar daun.",
+      "fertilizer": "Beri pupuk cair encer sebulan sekali saat tumbuh aktif.",
+      "pruning": "Buang hanya daun luar yang tua dan cokelat di pangkalnya.",
+      "commonProblems": "Tepi daun cokelat kering akibat kelembapan rendah; busuk mahkota bila air menggenang di tengah."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hidroponik (LECA)",
+      "media": "Hidroton (expanded clay) atau campuran sphagnum-LECA",
+      "nutrisi": "AB Mix encer 500-800 ppm (EC 1.0-1.6)",
+      "waktu_panen": "Tidak dipanen — daun baru terbuka dalam 2-3 bulan",
+      "tips": "Menyukai kelembapan tinggi sehingga cocok dengan semi-hidro; jaga mahkota tengah di atas permukaan air agar tidak busuk.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Asplenium_nidus_%28Bukidnon%2C_Philippines%29_02.jpg/330px-Asplenium_nidus_%28Bukidnon%2C_Philippines%29_02.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Aman bagi kucing dan anjing menurut ASPCA"
+    }
+  },
+  {
+    "id": "hias-32",
+    "name": "Miana (Coleus)",
+    "scientificName": "Plectranthus scutellarioides",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Tanaman daun cepat tumbuh yang ditanam untuk daunnya bercorak mencolok merah muda, merah, marun, dan hijau limau.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 21,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Jaga media lembap merata; siram setiap 1-2 hari karena cepat layu saat kering.",
+      "sunlight": "Cahaya terang tidak langsung hingga sebagian matahari; warna lebih pekat di cahaya cukup, hindari terik siang.",
+      "fertilizer": "Beri pupuk cair seimbang setiap 3 minggu saat tumbuh.",
+      "pruning": "Sering pangkas pucuk dan buang tangkai bunga agar tetap rimbun dan berdaun lebat.",
+      "commonProblems": "Tumbuh memanjang saat kurang cahaya; cepat layu bila media kering."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / DWC",
+      "media": "Rockwool atau hidroton (expanded clay)",
+      "nutrisi": "AB Mix 700-1000 ppm (EC 1.4-2.0)",
+      "waktu_panen": "Tidak dipanen — daun berwarna penuh dalam 1-2 bulan",
+      "tips": "Miana mudah berakar di air biasa, cukup rendam stek batang 1-2 minggu sebelum dipindah ke larutan nutrisi.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Plectranthus_scutellarioides_-_El_Yunque_nat_park_PR_IMG_2120.JPG/330px-Plectranthus_scutellarioides_-_El_Yunque_nat_park_PR_IMG_2120.JPG",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Minyak atsiri — muntah, diare, jarang iritasi kulit"
+    }
+  },
+  {
+    "id": "hias-33",
+    "name": "Tanaman Polka Dot",
+    "scientificName": "Hypoestes phyllostachya",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "Tanaman kecil rimbun dengan daun berbintik merah muda, putih, atau merah seperti cipratan cat.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 21,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Jaga media selalu sedikit lembap; cepat layu dan pulih setelah disiram.",
+      "sunlight": "Cahaya terang tidak langsung agar corak bintik tetap cerah; pudar saat kurang cahaya.",
+      "fertilizer": "Beri pupuk cair encer sebulan sekali saat tumbuh.",
+      "pruning": "Pangkas pucuk secara rutin dan buang tangkai bunga agar tetap rimbun.",
+      "commonProblems": "Tumbuh memanjang saat kurang cahaya; embun tepung pada udara lembap tanpa sirkulasi."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / DWC",
+      "media": "Rockwool atau hidroton (expanded clay)",
+      "nutrisi": "AB Mix 600-900 ppm (EC 1.2-1.8)",
+      "waktu_panen": "Tidak dipanen — pertumbuhan rimbun penuh dalam 1-2 bulan",
+      "tips": "Mudah berakar dari stek yang direndam di air; sering pangkas pucuk karena tumbuh cepat dan bisa memanjang di kultur air.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Starr_080117-1693_Hypoestes_phyllostachya.jpg/330px-Starr_080117-1693_Hypoestes_phyllostachya.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Aman bagi kucing dan anjing menurut ASPCA"
+    }
+  },
+  {
+    "id": "hias-34",
+    "name": "Tanaman Doa (Maranta)",
+    "scientificName": "Maranta leuconeura",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "Tanaman hias mencolok yang daun bercoraknya melipat ke atas pada malam hari seperti tangan berdoa.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Jaga media tetap lembap merata; siram saat 1-2 cm bagian atas mulai kering, sekitar 3 hari sekali.",
+      "sunlight": "Cahaya terang tidak langsung; matahari langsung memudarkan corak daun.",
+      "fertilizer": "Pupuk cair seimbang dosis encer sebulan sekali saat musim tumbuh.",
+      "pruning": "Pangkas ujung daun yang mencokelat dan daun tua untuk merangsang tunas baru yang rimbun.",
+      "commonProblems": "Tepi daun mencokelat dan kering akibat kelembapan rendah atau air keran berkapur."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hidroponik (LECA) / Kratky",
+      "media": "Hidroton (expanded clay) — menahan kelembapan tanpa menggenang",
+      "nutrisi": "AB Mix encer 600-900 ppm (EC 1.2-1.8)",
+      "waktu_panen": "Tidak dipanen — daun baru rimbun terlihat dalam 2-3 bulan",
+      "tips": "Maranta menyukai kelembapan, sehingga semi-hidro sangat cocok. Gunakan air suling atau air hujan untuk mencegah ujung daun terbakar dan biarkan hanya akar bawah yang basah.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Maranta_leuconeura3.jpg/330px-Maranta_leuconeura3.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Aman bagi kucing dan anjing (tidak beracun menurut ASPCA)"
+    }
+  },
+  {
+    "id": "hias-35",
+    "name": "Tanaman Saraf (Fittonia)",
+    "scientificName": "Fittonia albivenis",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "Tanaman tropis mungil yang dikagumi karena daunnya berurat putih, merah muda, atau merah yang mencolok.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Jaga tanah tetap lembap; tanaman cepat layu tetapi pulih segera setelah disiram, sekitar 2 hari sekali.",
+      "sunlight": "Cahaya terang tidak langsung atau teduh tersaring; hindari matahari langsung.",
+      "fertilizer": "Pupuk cair encer sebulan sekali saat tumbuh aktif.",
+      "pruning": "Pangkas ujung batang secara rutin agar tanaman tetap padat dan tidak memanjang kurus.",
+      "commonProblems": "Layu mendadak dan daun rontok akibat tanah kering atau kelembapan rendah."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hidroponik (LECA) / Wick",
+      "media": "Hidroton halus atau perlite untuk kelembapan kapiler yang stabil",
+      "nutrisi": "AB Mix encer 500-800 ppm (EC 1.0-1.6)",
+      "waktu_panen": "Tidak dipanen — pertumbuhan rimbun penuh dalam 2-3 bulan",
+      "tips": "Karena Fittonia tidak suka kekeringan, sistem semi-hidro dengan sumbu menjaga kelembapan tetap konstan. Tutup permukaan untuk meningkatkan kelembapan di sekitar daun.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Colpfl25.jpg/330px-Colpfl25.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Aman bagi kucing dan anjing (tidak beracun menurut ASPCA)"
+    }
+  },
+  {
+    "id": "hias-36",
+    "name": "Dieffenbachia (Daun Bahagia)",
+    "scientificName": "Dieffenbachia seguine",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Tanaman daun yang mencolok dengan daun besar hijau berbercak putih krem dan kuning.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram saat 2-3 cm tanah bagian atas kering, sekitar 4 hari sekali; hindari akar tergenang.",
+      "sunlight": "Cahaya terang tidak langsung; tahan naungan sedang tetapi memanjang kurus di tempat terlalu gelap.",
+      "fertilizer": "Pupuk cair seimbang sebulan sekali saat musim tumbuh.",
+      "pruning": "Potong pucuk yang memanjang agar tumbuh lebih rimbun; pakai sarung tangan dan cuci tangan setelahnya.",
+      "commonProblems": "Daun bawah menguning akibat penyiraman berlebih atau terpapar udara dingin."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hidroponik (LECA) / Kratky",
+      "media": "Hidroton (expanded clay) dalam wadah gelap",
+      "nutrisi": "AB Mix 700-1000 ppm (EC 1.4-2.0)",
+      "waktu_panen": "Tidak dipanen — daun baru terbuka dalam 2-3 bulan",
+      "tips": "Akarkan stek batang di air biasa selama 2-3 minggu sebelum dipindah ke nutrisi. Getahnya mengiritasi, jadi tangani stek dengan sarung tangan.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Starr_061212-2331_Dieffenbachia_seguine.jpg/330px-Starr_061212-2331_Dieffenbachia_seguine.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Kalsium oksalat — nyeri mulut, ngiler, bengkak, muntah bila tergigit"
+    }
+  },
+  {
+    "id": "hias-37",
+    "name": "Walisongo (Schefflera)",
+    "scientificName": "Schefflera arboricola",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Perdu yang cepat tumbuh dengan anak daun mengilap tersusun seperti jari-jari payung.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram saat 2-3 cm tanah bagian atas kering, sekitar 5 hari sekali; biarkan air berlebih mengalir keluar.",
+      "sunlight": "Cahaya terang tidak langsung membuatnya rimbun; cahaya minim membuat batang jarang dan memanjang.",
+      "fertilizer": "Pupuk cair seimbang sebulan sekali saat musim tumbuh.",
+      "pruning": "Pangkas batang yang tinggi untuk merangsang percabangan dan bentuk yang padat rimbun.",
+      "commonProblems": "Daun rontok akibat penyiraman berlebih, angin, atau perubahan cahaya mendadak; rawan tungau laba-laba."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hidroponik (LECA) / Kratky",
+      "media": "Hidroton (expanded clay) untuk aerasi yang stabil",
+      "nutrisi": "AB Mix 700-1000 ppm (EC 1.4-2.0)",
+      "waktu_panen": "Tidak dipanen — tunas baru kuat terlihat dalam 1-2 bulan",
+      "tips": "Schefflera mudah beradaptasi di kultur air. Bilas tanah dari akar dengan lembut sebelum dipindah dan ganti larutan setiap 2 minggu.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Schefflera_arboricola%2C_vrugte%2C_a%2C_Pretoria.jpg/330px-Schefflera_arboricola%2C_vrugte%2C_a%2C_Pretoria.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Kalsium oksalat — iritasi mulut, ngiler, muntah, sulit menelan"
+    }
+  },
+  {
+    "id": "hias-38",
+    "name": "Palem Ekor Kuda",
+    "scientificName": "Beaucarnea recurvata",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Tanaman tahan kering dengan pangkal batang menggembung penyimpan air dan daun melengkung seperti air mancur.",
+    "schedules": {
+      "watering": 14,
+      "fertilizer": 60,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Siram sangat jarang; biarkan tanah kering total, sekitar 2 minggu sekali. Pangkal menggembung menyimpan air.",
+      "sunlight": "Cahaya terang hingga matahari penuh; tumbuh subur di jendela yang cerah.",
+      "fertilizer": "Pupuk kaktus ringan atau seimbang setiap 2 bulan hanya di musim tumbuh.",
+      "pruning": "Cukup pangkas ujung daun yang cokelat atau patah; nyaris tidak perlu pemangkasan.",
+      "commonProblems": "Pangkal lunak dan busuk akibat penyiraman berlebih — penyebab kematian paling umum."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Sebagai tanaman mirip sukulen yang beradaptasi kering, palem ekor kuda butuh pangkalnya mengering di antara penyiraman dan akan busuk dalam kelembapan terus-menerus, sehingga tidak cocok untuk hidroponik."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Beaucarnea_recurvata%2C_Ocampo%2C_Tamaulipas%2C_Mexico_1.jpg/330px-Beaucarnea_recurvata%2C_Ocampo%2C_Tamaulipas%2C_Mexico_1.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Aman bagi kucing dan anjing (tidak beracun menurut ASPCA)"
+    }
+  },
+  {
+    "id": "hias-39",
+    "name": "Kalanchoe (Cocor Bebek Bunga)",
+    "scientificName": "Kalanchoe blossfeldiana",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Sukulen dengan daun tebal bergerigi dan bunga cerah bergerombol yang tahan lama.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Biarkan tanah kering di antara penyiraman, sekitar seminggu sekali; kurangi saat musim hujan agar tidak busuk.",
+      "sunlight": "Cahaya terang hingga beberapa jam matahari langsung mendorong pembungaan melimpah.",
+      "fertilizer": "Pupuk cair seimbang atau perangsang bunga sebulan sekali saat berbunga.",
+      "pruning": "Buang gerombolan bunga yang sudah layu agar tanaman rapi dan terdorong berbunga lagi.",
+      "commonProblems": "Busuk batang dan akar akibat penyiraman berlebih; daun lunak berair menandakan terlalu banyak air."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Sebagai sukulen yang menyimpan air di daun dan mudah busuk dalam air menggenang, Kalanchoe butuh media kering yang berdrainase baik dan tidak cocok untuk sistem hidroponik."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Kalanchoe_blossfeldiana_3.jpg/330px-Kalanchoe_blossfeldiana_3.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Bufadienolida — muntah, diare, dan jarang gangguan irama jantung"
+    }
+  },
+  {
+    "id": "hias-40",
+    "name": "Kaktus Natal",
+    "scientificName": "Schlumbergera bridgesii",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Kaktus hutan dengan batang pipih beruas yang mekar dengan bunga merah muda atau merah cerah menjelang musim liburan.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 120,
+      "repotting": 1095
+    },
+    "careDetails": {
+      "watering": "Siram saat 2-3 cm media bagian atas terasa kering, sekitar seminggu sekali; kurangi sedikit setelah berbunga.",
+      "sunlight": "Cahaya terang tidak langsung; hindari sinar matahari tengah hari yang dapat membakar ruas batang.",
+      "fertilizer": "Beri pupuk tanaman hias encer sebulan sekali selama masa pertumbuhan.",
+      "pruning": "Pangkas beberapa ruas setelah berbunga untuk merangsang percabangan lebih rimbun.",
+      "commonProblems": "Kuncup rontok akibat perubahan suhu mendadak; batang busuk karena terlalu banyak air."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Sebagai kaktus hutan sukulen, batangnya mudah busuk dalam air terus-menerus sehingga tidak cocok untuk sistem hidroponik dan lebih suka media tanah yang cepat kering."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Cactus_de_no%C3%ABl_rev.jpg/330px-Cactus_de_no%C3%ABl_rev.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Tidak beracun bagi kucing dan anjing menurut ASPCA"
+    }
+  },
+  {
+    "id": "hias-41",
+    "name": "Yuka",
+    "scientificName": "Yucca gigantea",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Tanaman berstruktur tegas dan tahan kekeringan dengan batang berkayu yang dimahkotai roset daun kaku berbentuk pedang.",
+    "schedules": {
+      "watering": 10,
+      "fertilizer": 60,
+      "pruning": 180,
+      "repotting": 1095
+    },
+    "careDetails": {
+      "watering": "Siram menyeluruh hanya saat media hampir kering, sekitar 10-14 hari sekali; jauh lebih jarang di musim hujan.",
+      "sunlight": "Cahaya terang termasuk beberapa jam sinar matahari langsung; cocok di dekat jendela yang terkena matahari.",
+      "fertilizer": "Beri pupuk seimbang dosis ringan setiap 2 bulan saat musim tumbuh.",
+      "pruning": "Buang daun bawah yang mengering; potong batang untuk mengatur tinggi bila terlalu menjulang.",
+      "commonProblems": "Busuk akar akibat kelebihan air; ujung daun mencokelat pada udara yang sangat kering."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Yuka memiliki batang berkayu tebal dan akar yang beradaptasi kekeringan sehingga membusuk dalam air tergenang; tidak cocok untuk hidroponik dan butuh tanah berpasir yang cepat kering."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Yucca_gigantea_-_Jard%C3%ADn_Bot%C3%A1nico_Canario_Viera_y_Clavijo_-_Gran_Canaria.jpg/330px-Yucca_gigantea_-_Jard%C3%ADn_Bot%C3%A1nico_Canario_Viera_y_Clavijo_-_Gran_Canaria.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Saponin beracun bagi hewan, menyebabkan muntah dan ngiler"
+    }
+  },
+  {
+    "id": "hias-42",
+    "name": "Tanaman Udara",
+    "scientificName": "Tillandsia ionantha",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Epifit mungil tanpa akar yang menyerap kelembapan melalui daun keperakannya dan memerah saat hendak berbunga.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 180,
+      "repotting": 1095
+    },
+    "careDetails": {
+      "watering": "Rendam dalam air 20-30 menit sekitar dua kali seminggu, lalu kibaskan dan keringkan sepenuhnya.",
+      "sunlight": "Cahaya terang tidak langsung; lindungi dari matahari tengah hari langsung yang membuatnya kering.",
+      "fertilizer": "Semprot dengan pupuk bromelia yang sangat encer sekitar sebulan sekali.",
+      "pruning": "Gunting ujung daun yang mencokelat; buang bunga yang sudah layu.",
+      "commonProblems": "Busuk di pangkal bila dibiarkan basah; dehidrasi dan menggulung bila kurang direndam."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Tanaman udara tidak memiliki akar fungsional dan menyerap air lewat daun; terendam dalam larutan nutrisi akan membusukkan pangkalnya sehingga tidak bisa dibudidayakan secara hidroponik."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Purple_sky_plant_-_Andrey_Zharkikh.jpg/330px-Purple_sky_plant_-_Andrey_Zharkikh.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Tanaman udara Tillandsia tidak beracun bagi kucing dan anjing"
+    }
+  },
+  {
+    "id": "hias-43",
+    "name": "Peperomia",
+    "scientificName": "Peperomia obtusifolia",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Tanaman hias kompak dengan daun tebal mengilap berbentuk sendok yang menyimpan air dan tahan terhadap perawatan minim.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Siram saat separuh atas media kering, sekitar seminggu sekali; daunnya yang berdaging menyimpan cadangan air.",
+      "sunlight": "Cahaya sedang hingga terang tidak langsung; tahan cahaya rendah tetapi tumbuh memanjang.",
+      "fertilizer": "Beri pupuk seimbang encer sebulan sekali selama musim tumbuh.",
+      "pruning": "Pangkas ujung tunas agar tanaman tetap rimbun dan kompak.",
+      "commonProblems": "Busuk akar dan daun lemas akibat kelebihan air; daun rontok karena tiupan udara dingin."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hidroponik (LECA) / Kratky",
+      "media": "Hidroton (LECA) atau perlit kasar",
+      "nutrisi": "AB Mix encer 500-800 ppm (EC 1.0-1.6)",
+      "waktu_panen": "Tidak dipanen — pertumbuhan daun stabil terlihat dalam 2-3 bulan",
+      "tips": "Peperomia mudah berakar di air; mulai dengan stek batang dalam air bersih selama 1-2 minggu sebelum dipindah ke larutan nutrisi encer dan rendam hanya sepertiga bawah akar.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Peperomia_obtusifolia_3-OB9.jpg/330px-Peperomia_obtusifolia_3-OB9.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Peperomia obtusifolia tidak beracun bagi kucing dan anjing"
+    }
+  },
+  {
+    "id": "hias-44",
+    "name": "Pinus Pulau Norfolk",
+    "scientificName": "Araucaria heterophylla",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "Konifer indoor anggun dengan susunan dahan berjarum yang lembut dan simetris, sering ditanam sebagai pohon meja hidup.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 365,
+      "repotting": 1095
+    },
+    "careDetails": {
+      "watering": "Jaga media tetap sedikit lembap; siram saat 2-3 cm bagian atas kering, sekitar seminggu sekali.",
+      "sunlight": "Cahaya terang tidak langsung dengan sedikit matahari pagi langsung; putar pot agar tumbuh merata.",
+      "fertilizer": "Beri pupuk seimbang encer sebulan sekali selama masa pertumbuhan.",
+      "pruning": "Hindari pemangkasan berat; cukup buang dahan bawah yang mati saat mengering.",
+      "commonProblems": "Jarum mencokelat dan rontok akibat udara kering atau media dibiarkan kering total."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Sebagai konifer yang tumbuh lambat dengan sistem akar berkayu dalam, ia membutuhkan media tanah yang stabil dan berudara serta tidak beradaptasi dengan budidaya hidroponik."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Norfolk-Island-Pines.jpg/330px-Norfolk-Island-Pines.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Sedikit beracun; getah dan jarum dapat menyebabkan muntah dan iritasi"
+    }
+  },
+  {
+    "id": "hias-45",
+    "name": "String of Hearts",
+    "scientificName": "Ceropegia woodii",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Sukulen merambat dengan daun mungil berbentuk hati bercorak marmer yang menjuntai di batang ungu tipis.",
+    "schedules": {
+      "watering": 10,
+      "fertilizer": 60,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Biarkan media hampir kering sepenuhnya, lalu siram menyeluruh, sekitar 10-14 hari sekali.",
+      "sunlight": "Cahaya terang tidak langsung; sedikit matahari langsung yang lembut mempertegas corak daun.",
+      "fertilizer": "Beri pupuk sukulen encer dosis ringan setiap 2 bulan selama musim tumbuh.",
+      "pruning": "Pangkas untaian yang memanjang untuk merangsang pertumbuhan lebih rimbun; steknya mudah berakar.",
+      "commonProblems": "Batang lembek dan busuk akibat kelebihan air; pertumbuhan jarang pada cahaya terlalu sedikit."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Sukulen yang beradaptasi kekeringan ini menyimpan air di umbi dan daunnya dan cepat busuk dalam air tergenang, sehingga tidak cocok untuk hidroponik dan lebih suka media kaktus berpasir."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ceropegia_linearis_subsp_woodii.jpg/330px-Ceropegia_linearis_subsp_woodii.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "String of Hearts tidak beracun bagi kucing dan anjing"
     }
   }
 ]

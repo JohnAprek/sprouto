@@ -2636,7 +2636,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Starr_031108-0130_Ficus_lyrata.jpg/330px-Starr_031108-0130_Ficus_lyrata.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Ficus sap irritates mouth and skin; causes vomiting in pets"
@@ -2706,7 +2706,7 @@
       "waktu_panen": "-",
       "tips": "As a drought-loving succulent, the jade plant rots quickly in constant moisture and is not suited to hydroponic systems."
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Crassula_ovata_700.jpg/330px-Crassula_ovata_700.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Toxic to cats and dogs; causes vomiting, lethargy, incoordination"
@@ -2742,7 +2742,7 @@
       "ph_ideal": "5.5–6.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Boston_Fern_%282873392811%29.png/330px-Boston_Fern_%282873392811%29.png",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Safe and non-toxic for both cats and dogs"
@@ -2778,7 +2778,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Pilea_peperomioides_Chinese_money_plant.jpg/330px-Pilea_peperomioides_Chinese_money_plant.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic and safe for cats and dogs"
@@ -2812,7 +2812,7 @@
       "waktu_panen": "-",
       "tips": "As a drought-adapted succulent, its delicate beads rot quickly in standing water, so it is not suited to hydroponics."
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Senecio_rowleyanus_leaves.jpg/330px-Senecio_rowleyanus_leaves.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Toxic to cats and dogs; causes vomiting, diarrhea, drooling, lethargy"
@@ -2848,7 +2848,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/NKN-2007-06-13_114250_Hoya_Carnosa_%28Yvan_Leduc_author_for_Wikipedia%29.jpg/330px-NKN-2007-06-13_114250_Hoya_Carnosa_%28Yvan_Leduc_author_for_Wikipedia%29.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs per ASPCA"
@@ -2884,7 +2884,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hedera_helix_Dover.jpg/330px-Hedera_helix_Dover.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Triterpenoid saponins cause vomiting, drooling, diarrhea"
@@ -2920,7 +2920,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/%E6%95%A3%E5%B0%BE%E8%91%B5Dypsis_lutescens_20210511145013_05.jpg/330px-%E6%95%A3%E5%B0%BE%E8%91%B5Dypsis_lutescens_20210511145013_05.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs per ASPCA"
@@ -2956,7 +2956,7 @@
       "ph_ideal": "6.0-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Streptocarpus_ionanthus_%28as_Saintpaulia_ionantha%29_-_Curtis%27_121_%28Ser._3_no._51%29_pl._7408_%281895%29.jpg/330px-Streptocarpus_ionanthus_%28as_Saintpaulia_ionantha%29_-_Curtis%27_121_%28Ser._3_no._51%29_pl._7408_%281895%29.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs per ASPCA"
@@ -2992,7 +2992,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zebrina_pendula_20060521_2_closer.jpg/330px-Zebrina_pendula_20060521_2_closer.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Sap may cause skin irritation and mild stomach upset"
@@ -3026,10 +3026,644 @@
       "waktu_panen": "-",
       "tips": "Echeveria is a dry-loving succulent whose roots rot in constant water, so it is not suited to hydroponic systems."
     },
-    "imageUrl": "",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Echeveria_elegans_-_1.png/330px-Echeveria_elegans_-_1.png",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs per ASPCA"
+    }
+  },
+  {
+    "id": "hias-28",
+    "name": "Croton",
+    "scientificName": "Codiaeum variegatum",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A bold tropical shrub prized for leathery leaves splashed in red, orange, yellow and green that intensify in bright light.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Keep the medium evenly moist; water when the top 2 cm feels dry, about every 3-4 days.",
+      "sunlight": "Bright light, including some direct morning sun, to keep colors vivid.",
+      "fertilizer": "Apply a balanced liquid fertilizer once a month during the growing season.",
+      "pruning": "Pinch growing tips to keep it bushy and remove leggy or bare stems.",
+      "commonProblems": "Sudden leaf drop from cold drafts or dry air; spider mites under low humidity."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA) / Wick",
+      "media": "Hydroton (expanded clay) or a perlite mix",
+      "nutrisi": "AB Mix 800-1100 ppm (EC 1.6-2.2)",
+      "waktu_panen": "Not harvested — colorful new growth visible within 2-3 months",
+      "tips": "Croton dislikes sudden changes, so transition gradually and keep humidity high to prevent leaf drop after switching to water culture.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Colpfl05.jpg/330px-Colpfl05.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Sap toxic — vomiting, diarrhea, skin/mouth irritation"
+    }
+  },
+  {
+    "id": "hias-29",
+    "name": "Dragon Tree",
+    "scientificName": "Dracaena marginata",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "An easy, architectural plant with slender canes topped by arching, sword-like leaves edged in red.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 60,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Let the top half of the soil dry out; water about once a week and avoid soggy roots.",
+      "sunlight": "Bright indirect light; tolerates moderate shade but grows slower.",
+      "fertilizer": "Feed with diluted liquid fertilizer every 2 months in spring and summer.",
+      "pruning": "Cut canes to the desired height to encourage branching; remove brown leaf tips.",
+      "commonProblems": "Brown leaf tips from fluoride in tap water or low humidity."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA) / Kratky",
+      "media": "Hydroton (expanded clay)",
+      "nutrisi": "AB Mix 600-900 ppm (EC 1.2-1.8)",
+      "waktu_panen": "Not harvested — stable new growth visible within 2-4 months",
+      "tips": "Dracaena adapts well to water culture; use filtered or rainwater since it is sensitive to fluoride and salts that cause brown tips.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Dracaena_reflexa.JPG/330px-Dracaena_reflexa.JPG",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Saponins — vomiting, drooling, weakness, dilated pupils in cats"
+    }
+  },
+  {
+    "id": "hias-30",
+    "name": "Parlor Palm",
+    "scientificName": "Chamaedorea elegans",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A compact, slow-growing indoor palm with delicate feathery fronds that thrives in low light.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 60,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Keep lightly moist; water when the top 2-3 cm is dry, about every 5 days.",
+      "sunlight": "Low to moderate indirect light; avoid direct sun which scorches fronds.",
+      "fertilizer": "Feed lightly with diluted liquid fertilizer every 2 months.",
+      "pruning": "Only trim browned or dead fronds at the base; do not cut growing tips.",
+      "commonProblems": "Brown frond tips from dry air; spider mites in low humidity."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA)",
+      "media": "Hydroton (expanded clay)",
+      "nutrisi": "AB Mix 600-900 ppm (EC 1.2-1.8)",
+      "waktu_panen": "Not harvested — slow steady growth over 4-6 months",
+      "tips": "Transition young plants gently and keep roots only partially submerged; the fine palm roots rot easily if kept fully waterlogged.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Chamaedorea_elegans_Mart.JPG/330px-Chamaedorea_elegans_Mart.JPG",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Safe for cats and dogs per ASPCA"
+    }
+  },
+  {
+    "id": "hias-31",
+    "name": "Bird's Nest Fern",
+    "scientificName": "Asplenium nidus",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "An epiphytic fern with glossy, ripple-edged fronds that unfurl from a central rosette like a nest.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Keep the medium consistently moist; water around the rim, not into the central rosette.",
+      "sunlight": "Moderate indirect light or filtered shade; direct sun burns the fronds.",
+      "fertilizer": "Apply diluted liquid fertilizer once a month during active growth.",
+      "pruning": "Remove only old, browned outer fronds at the base.",
+      "commonProblems": "Crisp brown leaf edges from low humidity; crown rot if water pools in the center."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA)",
+      "media": "Hydroton (expanded clay) or sphagnum-LECA mix",
+      "nutrisi": "Diluted AB Mix 500-800 ppm (EC 1.0-1.6)",
+      "waktu_panen": "Not harvested — new fronds unfurl within 2-3 months",
+      "tips": "Loves high humidity, so semi-hydro suits it well; keep the central crown above the water line to prevent rot.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Asplenium_nidus_%28Bukidnon%2C_Philippines%29_02.jpg/330px-Asplenium_nidus_%28Bukidnon%2C_Philippines%29_02.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Safe for cats and dogs per ASPCA"
+    }
+  },
+  {
+    "id": "hias-32",
+    "name": "Coleus",
+    "scientificName": "Plectranthus scutellarioides",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A fast-growing foliage plant grown for vividly patterned leaves in pink, red, maroon, and lime.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 21,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Keep soil evenly moist; water every 1-2 days as it wilts quickly when dry.",
+      "sunlight": "Bright indirect to partial sun; richer color in good light but avoid harsh midday sun.",
+      "fertilizer": "Feed with balanced liquid fertilizer every 3 weeks during growth.",
+      "pruning": "Pinch tips often and remove flower spikes to keep it compact and leafy.",
+      "commonProblems": "Leggy growth in low light; rapid wilting if soil dries out."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / DWC",
+      "media": "Rockwool or hydroton (expanded clay)",
+      "nutrisi": "AB Mix 700-1000 ppm (EC 1.4-2.0)",
+      "waktu_panen": "Not harvested — full colorful growth within 1-2 months",
+      "tips": "Coleus roots readily in plain water, so just place a stem cutting in water for 1-2 weeks before moving it to nutrient solution.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Plectranthus_scutellarioides_-_El_Yunque_nat_park_PR_IMG_2120.JPG/330px-Plectranthus_scutellarioides_-_El_Yunque_nat_park_PR_IMG_2120.JPG",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Essential oils — vomiting, diarrhea, rarely skin irritation"
+    }
+  },
+  {
+    "id": "hias-33",
+    "name": "Polka Dot Plant",
+    "scientificName": "Hypoestes phyllostachya",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A small, bushy plant with leaves freckled in pink, white, or red spots like splashes of paint.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 21,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Keep soil lightly moist at all times; it wilts fast and recovers when watered.",
+      "sunlight": "Bright indirect light to keep the spotted pattern vivid; fades in low light.",
+      "fertilizer": "Apply diluted liquid fertilizer once a month during growth.",
+      "pruning": "Pinch tips regularly and remove flower spikes to keep it bushy.",
+      "commonProblems": "Leggy growth in low light; powdery mildew in stagnant, humid air."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / DWC",
+      "media": "Rockwool or hydroton (expanded clay)",
+      "nutrisi": "AB Mix 600-900 ppm (EC 1.2-1.8)",
+      "waktu_panen": "Not harvested — full bushy growth within 1-2 months",
+      "tips": "Roots easily from cuttings placed in water; pinch tips often since it grows fast and can get leggy in water culture too.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Starr_080117-1693_Hypoestes_phyllostachya.jpg/330px-Starr_080117-1693_Hypoestes_phyllostachya.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Safe for cats and dogs per ASPCA"
+    }
+  },
+  {
+    "id": "hias-34",
+    "name": "Prayer Plant",
+    "scientificName": "Maranta leuconeura",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A striking houseplant whose patterned leaves fold upward at night like praying hands.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Keep the medium evenly moist; water when the top 1-2 cm feels slightly dry, about every 3 days.",
+      "sunlight": "Bright indirect light; direct sun fades the leaf patterns.",
+      "fertilizer": "Diluted balanced liquid fertilizer once a month during the growing season.",
+      "pruning": "Trim browning leaf tips and old leaves to encourage bushy new growth.",
+      "commonProblems": "Crispy brown leaf edges from low humidity or hard tap water."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA) / Kratky",
+      "media": "Hydroton (expanded clay) — holds moisture without waterlogging",
+      "nutrisi": "Diluted AB Mix 600-900 ppm (EC 1.2-1.8)",
+      "waktu_panen": "Not harvested — lush new leaves visible within 2-3 months",
+      "tips": "Maranta loves humidity, so semi-hydro suits it well. Use distilled or rainwater to avoid leaf-tip burn and keep only the lower roots wet.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Maranta_leuconeura3.jpg/330px-Maranta_leuconeura3.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Safe for cats and dogs (ASPCA-listed non-toxic)"
+    }
+  },
+  {
+    "id": "hias-35",
+    "name": "Nerve Plant",
+    "scientificName": "Fittonia albivenis",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A compact tropical plant prized for leaves laced with vivid white, pink, or red veins.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Keep the soil consistently moist; it wilts dramatically but recovers fast after watering, roughly every 2 days.",
+      "sunlight": "Bright indirect light or filtered shade; avoid direct sun.",
+      "fertilizer": "Diluted liquid fertilizer once a month while actively growing.",
+      "pruning": "Pinch back stem tips regularly to keep the plant dense and prevent legginess.",
+      "commonProblems": "Sudden wilting and leaf drop from dry soil or low humidity."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA) / Wick",
+      "media": "Fine hydroton or perlite for steady capillary moisture",
+      "nutrisi": "Diluted AB Mix 500-800 ppm (EC 1.0-1.6)",
+      "waktu_panen": "Not harvested — full bushy growth within 2-3 months",
+      "tips": "Because Fittonia hates drying out, a wicking semi-hydro setup keeps moisture constant. Cover the surface to raise humidity around the leaves.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Colpfl25.jpg/330px-Colpfl25.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Safe for cats and dogs (ASPCA-listed non-toxic)"
+    }
+  },
+  {
+    "id": "hias-36",
+    "name": "Dieffenbachia",
+    "scientificName": "Dieffenbachia seguine",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A bold foliage plant with large green leaves splashed in creamy white and yellow.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water when the top 2-3 cm of soil is dry, about every 4 days; avoid soggy roots.",
+      "sunlight": "Bright indirect light; tolerates medium shade but grows leggy in deep shade.",
+      "fertilizer": "Balanced liquid fertilizer once a month during spring and summer.",
+      "pruning": "Cut back the leggy top to force bushier growth; wear gloves and wash hands after.",
+      "commonProblems": "Yellowing lower leaves from overwatering or cold drafts."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA) / Kratky",
+      "media": "Hydroton (expanded clay) in a dark container",
+      "nutrisi": "AB Mix 700-1000 ppm (EC 1.4-2.0)",
+      "waktu_panen": "Not harvested — new leaves unfurl within 2-3 months",
+      "tips": "Root a stem cutting in plain water for 2-3 weeks before moving to nutrients. The sap is irritating, so handle cuttings with gloves.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Starr_061212-2331_Dieffenbachia_seguine.jpg/330px-Starr_061212-2331_Dieffenbachia_seguine.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Calcium oxalate — oral pain, drooling, swelling, vomiting if chewed"
+    }
+  },
+  {
+    "id": "hias-37",
+    "name": "Umbrella Plant (Schefflera)",
+    "scientificName": "Schefflera arboricola",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A fast-growing shrub with glossy leaflets arranged like the spokes of an umbrella.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water when the top 2-3 cm of soil is dry, roughly every 5 days; let excess drain away.",
+      "sunlight": "Bright indirect light keeps it full; low light causes sparse, leggy stems.",
+      "fertilizer": "Balanced liquid fertilizer once a month during the growing season.",
+      "pruning": "Trim tall stems to encourage branching and a compact, bushy shape.",
+      "commonProblems": "Leaf drop from overwatering, drafts, or sudden light changes; prone to spider mites."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA) / Kratky",
+      "media": "Hydroton (expanded clay) for stable aeration",
+      "nutrisi": "AB Mix 700-1000 ppm (EC 1.4-2.0)",
+      "waktu_panen": "Not harvested — vigorous new shoots within 1-2 months",
+      "tips": "Schefflera adapts easily to water culture. Rinse soil off the roots gently before transferring and refresh the solution every 2 weeks.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Schefflera_arboricola%2C_vrugte%2C_a%2C_Pretoria.jpg/330px-Schefflera_arboricola%2C_vrugte%2C_a%2C_Pretoria.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Calcium oxalate — oral irritation, drooling, vomiting, difficulty swallowing"
+    }
+  },
+  {
+    "id": "hias-38",
+    "name": "Ponytail Palm",
+    "scientificName": "Beaucarnea recurvata",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A drought-tough plant with a swollen water-storing trunk and a fountain of curling leaves.",
+    "schedules": {
+      "watering": 14,
+      "fertilizer": 60,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water sparingly; let the soil dry out fully, about every 2 weeks. The bulbous base stores water.",
+      "sunlight": "Bright light to full sun; it thrives on a sunny windowsill.",
+      "fertilizer": "Light cactus or balanced fertilizer every 2 months in spring and summer only.",
+      "pruning": "Only trim brown or broken leaf tips; it needs little pruning.",
+      "commonProblems": "Soft, rotting base from overwatering — the most common way to kill it."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "As a drought-adapted succulent-like plant, the ponytail palm needs its caudex to dry between waterings and rots in constant moisture, so it is unsuitable for hydroponics."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Beaucarnea_recurvata%2C_Ocampo%2C_Tamaulipas%2C_Mexico_1.jpg/330px-Beaucarnea_recurvata%2C_Ocampo%2C_Tamaulipas%2C_Mexico_1.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Safe for cats and dogs (ASPCA-listed non-toxic)"
+    }
+  },
+  {
+    "id": "hias-39",
+    "name": "Kalanchoe",
+    "scientificName": "Kalanchoe blossfeldiana",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A succulent with thick scalloped leaves and long-lasting clusters of bright flowers.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Let the soil dry between waterings, about weekly; reduce in winter to prevent rot.",
+      "sunlight": "Bright light to several hours of direct sun encourages abundant blooming.",
+      "fertilizer": "Balanced or bloom-boosting liquid fertilizer once a month during flowering.",
+      "pruning": "Deadhead spent flower clusters to tidy the plant and encourage reblooming.",
+      "commonProblems": "Stem and root rot from overwatering; soft, mushy leaves signal too much water."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "As a succulent that stores water in its leaves and rots easily in standing water, Kalanchoe needs a dry, well-draining medium and is not suited to hydroponic systems."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Kalanchoe_blossfeldiana_3.jpg/330px-Kalanchoe_blossfeldiana_3.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Bufadienolides — vomiting, diarrhea, and rarely abnormal heart rhythm"
+    }
+  },
+  {
+    "id": "hias-40",
+    "name": "Christmas Cactus",
+    "scientificName": "Schlumbergera bridgesii",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A forest cactus with flattened, segmented stems that bursts into bright pink or red blooms around the holiday season.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 120,
+      "repotting": 1095
+    },
+    "careDetails": {
+      "watering": "Water when the top 2-3 cm of soil feels dry, roughly weekly; reduce slightly after flowering.",
+      "sunlight": "Bright indirect light; avoid harsh midday sun which scorches the segments.",
+      "fertilizer": "Apply diluted houseplant fertilizer monthly during the growing season.",
+      "pruning": "Pinch off a few segments after blooming to encourage bushier branching.",
+      "commonProblems": "Bud drop from sudden temperature changes; stem rot from overwatering."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "As a succulent forest cactus, its stems rot easily in constant water, so it is not suited to hydroponic systems and prefers a fast-draining soil mix."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Cactus_de_no%C3%ABl_rev.jpg/330px-Cactus_de_no%C3%ABl_rev.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Non-toxic to cats and dogs per ASPCA"
+    }
+  },
+  {
+    "id": "hias-41",
+    "name": "Yucca",
+    "scientificName": "Yucca gigantea",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "An architectural, drought-tolerant plant with woody canes topped by rosettes of stiff, sword-shaped leaves.",
+    "schedules": {
+      "watering": 10,
+      "fertilizer": 60,
+      "pruning": 180,
+      "repotting": 1095
+    },
+    "careDetails": {
+      "watering": "Water deeply only when the soil is largely dry, about every 10-14 days; far less in winter.",
+      "sunlight": "Bright light, including several hours of direct sun; tolerates a sunny window.",
+      "fertilizer": "Feed lightly with balanced fertilizer every 2 months in spring and summer.",
+      "pruning": "Remove dried lower leaves; cut the cane to control height if it grows too tall.",
+      "commonProblems": "Root rot from overwatering; leaf-tip browning in very dry air."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Yucca has a thick woody trunk and drought-adapted roots that rot in standing water, so it is unsuitable for hydroponics and needs a gritty, fast-draining soil."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Yucca_gigantea_-_Jard%C3%ADn_Bot%C3%A1nico_Canario_Viera_y_Clavijo_-_Gran_Canaria.jpg/330px-Yucca_gigantea_-_Jard%C3%ADn_Bot%C3%A1nico_Canario_Viera_y_Clavijo_-_Gran_Canaria.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Saponins are toxic to pets, causing vomiting and drooling"
+    }
+  },
+  {
+    "id": "hias-42",
+    "name": "Air Plant",
+    "scientificName": "Tillandsia ionantha",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A tiny rootless epiphyte that absorbs moisture through its silvery leaves and blushes red when about to bloom.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 180,
+      "repotting": 1095
+    },
+    "careDetails": {
+      "watering": "Soak in water for 20-30 minutes about twice a week, then shake out and dry fully.",
+      "sunlight": "Bright indirect light; protect from direct midday sun that dries it out.",
+      "fertilizer": "Mist with a very dilute bromeliad fertilizer about once a month.",
+      "pruning": "Trim off any brown leaf tips with scissors; remove spent flowers.",
+      "commonProblems": "Rot at the base if left wet; dehydration and curling if under-soaked."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Air plants have no functional roots and absorb water through their leaves; sitting in a nutrient solution would rot the base, so they cannot be grown hydroponically."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Purple_sky_plant_-_Andrey_Zharkikh.jpg/330px-Purple_sky_plant_-_Andrey_Zharkikh.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Tillandsia air plants are non-toxic to cats and dogs"
+    }
+  },
+  {
+    "id": "hias-43",
+    "name": "Peperomia",
+    "scientificName": "Peperomia obtusifolia",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A compact houseplant with thick, glossy, spoon-shaped leaves that stores water and tolerates neglect well.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water when the top half of the soil is dry, roughly weekly; its fleshy leaves hold reserves.",
+      "sunlight": "Medium to bright indirect light; tolerates lower light but grows leggy.",
+      "fertilizer": "Apply diluted balanced fertilizer monthly during spring and summer.",
+      "pruning": "Pinch growing tips to keep the plant bushy and compact.",
+      "commonProblems": "Root rot and limp leaves from overwatering; leaf drop from cold drafts."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA) / Kratky",
+      "media": "Hydroton (LECA) or coarse perlite",
+      "nutrisi": "Diluted AB Mix 500-800 ppm (EC 1.0-1.6)",
+      "waktu_panen": "Not harvested — steady leaf growth visible within 2-3 months",
+      "tips": "Peperomia roots easily in water; start with a stem cutting in clean water for 1-2 weeks before moving it into a dilute nutrient solution and keep only the lower third of the roots submerged.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Peperomia_obtusifolia_3-OB9.jpg/330px-Peperomia_obtusifolia_3-OB9.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Peperomia obtusifolia is non-toxic to cats and dogs"
+    }
+  },
+  {
+    "id": "hias-44",
+    "name": "Norfolk Island Pine",
+    "scientificName": "Araucaria heterophylla",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A graceful indoor conifer with soft, symmetrical tiers of needled branches, often grown as a living tabletop tree.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 365,
+      "repotting": 1095
+    },
+    "careDetails": {
+      "watering": "Keep the soil lightly moist; water when the top 2-3 cm is dry, about weekly.",
+      "sunlight": "Bright indirect light with some direct morning sun; rotate for even growth.",
+      "fertilizer": "Apply diluted balanced fertilizer monthly during the growing season.",
+      "pruning": "Avoid heavy pruning; only remove dead lower branches as they brown.",
+      "commonProblems": "Browning, dropping needles from dry air or letting the soil fully dry out."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "As a slow-growing conifer with a deep woody root system, it needs a stable airy soil mix and does not adapt to hydroponic culture."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Norfolk-Island-Pines.jpg/330px-Norfolk-Island-Pines.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Mildly toxic; sap and needles may cause vomiting and irritation"
+    }
+  },
+  {
+    "id": "hias-45",
+    "name": "String of Hearts",
+    "scientificName": "Ceropegia woodii",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A trailing succulent vine with delicate heart-shaped, marbled leaves cascading on thin purple stems.",
+    "schedules": {
+      "watering": 10,
+      "fertilizer": 60,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Let the soil dry out almost completely, then water thoroughly, roughly every 10-14 days.",
+      "sunlight": "Bright indirect light; some gentle direct sun deepens the leaf marbling.",
+      "fertilizer": "Feed lightly with diluted succulent fertilizer every 2 months in the growing season.",
+      "pruning": "Trim leggy strands to encourage fuller growth; cuttings root easily.",
+      "commonProblems": "Mushy stems and rot from overwatering; sparse growth in too little light."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "This drought-adapted succulent stores water in its tubers and leaves and rots quickly in standing water, so it is not suited to hydroponics and prefers a gritty cactus mix."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ceropegia_linearis_subsp_woodii.jpg/330px-Ceropegia_linearis_subsp_woodii.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "String of Hearts is non-toxic to cats and dogs"
     }
   }
 ]
