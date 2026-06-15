@@ -1,9 +1,9 @@
 import React from 'react'
-import TanamanKu from './TanamanKu'
+import Sprouto from './Sprouto'
 
 function App() {
   return (
-    <TanamanKu />
+    <Sprouto />
   )
 }
 

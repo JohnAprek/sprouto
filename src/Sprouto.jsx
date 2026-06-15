@@ -73,15 +73,15 @@ function Toast({ message, onClose }) {
 }
 
 // --- Main App Wrapper ---
-export default function TanamanKu() {
-  const [isDarkMode, setIsDarkMode] = useLocalStorage('tanamanku_theme', false);
-  const [favorites, setFavorites] = useLocalStorage('tanamanku_favorites', []);
-  const [profile, setProfile] = useLocalStorage('tanamanku_profile', { name: 'Plant Friend', photo: null });
-  const [myGarden, setMyGarden] = useLocalStorage('tanamanku_garden', []); // [{id, startDate}]
-  const [notifEnabled, setNotifEnabled] = useLocalStorage('tanamanku_notif', false);
-  const [lang, setLang] = useLocalStorage('tanamanku_lang', 'en');
+export default function Sprouto() {
+  const [isDarkMode, setIsDarkMode] = useLocalStorage('sprouto_theme', false);
+  const [favorites, setFavorites] = useLocalStorage('sprouto_favorites', []);
+  const [profile, setProfile] = useLocalStorage('sprouto_profile', { name: 'Plant Friend', photo: null });
+  const [myGarden, setMyGarden] = useLocalStorage('sprouto_garden', []); // [{id, startDate}]
+  const [notifEnabled, setNotifEnabled] = useLocalStorage('sprouto_notif', false);
+  const [lang, setLang] = useLocalStorage('sprouto_lang', 'en');
   const [toast, setToast] = useState(null);
-  const [onboarded, setOnboarded] = useLocalStorage('tanamanku_onboarded', false);
+  const [onboarded, setOnboarded] = useLocalStorage('sprouto_onboarded', false);
 
   const L = getStrings(lang);
   const plants = PLANTS[lang];
@@ -121,9 +121,9 @@ export default function TanamanKu() {
   useEffect(() => {
     if (!notifEnabled || !('Notification' in window) || Notification.permission !== 'granted') return;
     const today = new Date().toISOString().split('T')[0];
-    const lastCheck = localStorage.getItem('tanamanku_notif_lastcheck');
+    const lastCheck = localStorage.getItem('sprouto_notif_lastcheck');
     if (lastCheck === today) return; // sudah cek hari ini
-    localStorage.setItem('tanamanku_notif_lastcheck', today);
+    localStorage.setItem('sprouto_notif_lastcheck', today);
     const todayTasks = [];
     myGarden.forEach(({ id, startDate }) => {
       const plant = plants.find(p => p.id === id);
@@ -273,7 +273,7 @@ function Home() {
   const greeting = hour < 12 ? L.greeting_morning : hour < 15 ? L.greeting_noon : hour < 18 ? L.greeting_evening : L.greeting_night;
   
   // Streak tracking
-  const [streakData, setStreakData] = useLocalStorage('tanamanku_streak', { count: 0, lastDate: null });
+  const [streakData, setStreakData] = useLocalStorage('sprouto_streak', { count: 0, lastDate: null });
   useEffect(() => {
     const today = new Date().toDateString();
     if (streakData.lastDate === today) return;
