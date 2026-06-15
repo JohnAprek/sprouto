@@ -65,6 +65,12 @@ const EMOJI_MAP = {
   'buah-5': '🍋', 'buah-6': '🍉', 'buah-7': '🍇',
   'buah-8': '🍅', 'buah-9': '🍈', 'buah-10': '🫐', 'buah-11': '⭐', 'buah-12': '🍎',
   'buah-13': '🌸', 'buah-14': '🌴', 'buah-15': '🥑', 'buah-16': '🌴',
+  'herbal-11': '🌿', 'herbal-12': '🌿', 'herbal-13': '🌿', 'herbal-14': '🌿', 'herbal-15': '🌿', 'herbal-16': '🌿',
+  'sayur-13': '🥬', 'sayur-14': '🥦', 'sayur-15': '🌶️', 'sayur-16': '🥗', 'sayur-17': '🥒', 'sayur-18': '🥬',
+  'buah-17': '🍋', 'buah-18': '🌰', 'buah-19': '🐉', 'buah-20': '🍍', 'buah-21': '🍇', 'buah-22': '🥭',
+  'aroma-8': '🌼', 'aroma-9': '🌸', 'aroma-10': '🌹', 'aroma-11': '🌿',
+  'obat-11': '🌸', 'obat-12': '🌿',
+  'hias-46': '🌿', 'hias-47': '🌸', 'hias-48': '🎋', 'hias-49': '🍃', 'hias-50': '🌿', 'hias-51': '🌿',
 };
 
 // --- Toast Component ---

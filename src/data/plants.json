@@ -3665,5 +3665,1063 @@
       "pets": "non-toxic",
       "note": "String of Hearts tidak beracun bagi kucing dan anjing"
     }
+  },
+  {
+    "id": "herbal-11",
+    "name": "Peterseli",
+    "scientificName": "Petroselinum crispum",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "Herba kuliner dwitahunan dengan daun hijau cerah, keriting atau rata, dipakai segar sebagai hiasan dan bumbu.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 21,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Jaga tanah tetap lembap; siram setiap 1-2 hari, jangan biarkan kering total.",
+      "sunlight": "Matahari penuh hingga teduh parsial, sekitar 6 jam cahaya per hari.",
+      "fertilizer": "Beri pupuk cair seimbang setiap 3 minggu agar daun lebat.",
+      "pruning": "Panen tangkai luar di pangkal secara rutin untuk merangsang tunas baru.",
+      "commonProblems": "Daun menguning karena kelebihan air; kutu daun dan bercak daun saat lembap."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky / DWC",
+      "media": "Rockwool atau hidroton (expanded clay)",
+      "nutrisi": "AB Mix encer 800-1200 ppm (EC 1.6-2.4)",
+      "waktu_panen": "Panen pertama 70-90 hari; petik daun luar terus-menerus",
+      "tips": "Perkecambahan lambat (2-3 minggu); rendam benih semalaman dulu. Jaga larutan tetap sejuk agar tidak cepat berbunga.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Petroselinum.jpg/330px-Petroselinum.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Peterseli musim semi fototoksik; jumlah besar ganggu pencernaan hewan"
+    }
+  },
+  {
+    "id": "herbal-12",
+    "name": "Dill (Adas Sowa)",
+    "scientificName": "Anethum graveolens",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "Herba tahunan beraroma dengan daun halus seperti bulu, dihargai untuk acar dan hidangan ikan.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 21,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram setiap 2 hari agar tanah lembap merata namun tidak becek.",
+      "sunlight": "Matahari penuh, minimal 6-8 jam sehari untuk rasa terbaik.",
+      "fertilizer": "Pemupukan ringan dengan pupuk seimbang setiap 3 minggu; hindari nitrogen berlebih.",
+      "pruning": "Pangkas pucuk untuk menunda pembungaan dan menjaga daun tetap rimbun.",
+      "commonProblems": "Cepat berbunga saat panas; rentan kutu daun dan embun tepung."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky / DWC",
+      "media": "Rockwool atau hidroton (expanded clay)",
+      "nutrisi": "AB Mix 1000-1400 ppm (EC 2.0-2.8)",
+      "waktu_panen": "Daun siap 40-60 hari; panen sebelum berbunga",
+      "tips": "Beri penyangga karena batangnya tinggi. Panen sering dan jaga larutan sejuk agar tidak cepat berbunga.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Illustration_Anethum_graveolens_clean.jpg/330px-Illustration_Anethum_graveolens_clean.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Dianggap tidak beracun bagi anjing, kucing, dan kuda"
+    }
+  },
+  {
+    "id": "herbal-13",
+    "name": "Sage (Daun Sage)",
+    "scientificName": "Salvia officinalis",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "Tanaman tahunan berkayu yang tangguh dengan daun aromatik abu-abu kehijauan, dipakai untuk masakan gurih.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Biarkan permukaan tanah kering antar penyiraman; siram 3-4 hari sekali karena tidak suka akar basah.",
+      "sunlight": "Matahari penuh, 6-8 jam sehari, agar pertumbuhan padat dan aromatik.",
+      "fertilizer": "Pemupukan ringan sebulan sekali; sage tumbuh baik di tanah miskin dan sedikit pupuk.",
+      "pruning": "Pangkas ringan setelah berbunga dan rapikan batang berkayu di awal musim agar tetap rimbun.",
+      "commonProblems": "Busuk akar karena kelebihan air; embun tepung saat lembap dan terlalu rapat."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky / DWC",
+      "media": "Rockwool atau hidroton (expanded clay)",
+      "nutrisi": "AB Mix encer 900-1200 ppm (EC 1.8-2.4)",
+      "waktu_panen": "Daun pertama 60-80 hari; panen bertahap setelah mapan",
+      "tips": "Jaga kelembapan sedang dan aliran udara baik untuk cegah embun tepung. Hindari larutan nutrisi terlalu pekat.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Salvia_officinalis0.jpg/330px-Salvia_officinalis0.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Sage biasa tidak beracun bagi kucing, anjing, dan kuda"
+    }
+  },
+  {
+    "id": "herbal-14",
+    "name": "Kucai (Chives)",
+    "scientificName": "Allium schoenoprasum",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "Herba tahunan berumpun dengan daun ramping berongga dan rasa bawang lembut, mudah ditanam.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 21,
+      "pruning": 21,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Jaga tanah tetap lembap; siram setiap 1-2 hari saat pertumbuhan aktif.",
+      "sunlight": "Matahari penuh hingga teduh ringan, sekitar 6 jam cahaya per hari.",
+      "fertilizer": "Beri pupuk cair seimbang setiap 3 minggu agar daun terus tumbuh.",
+      "pruning": "Potong daun sekitar 5 cm di atas tanah; pemotongan rutin memacu tunas baru.",
+      "commonProblems": "Ujung menguning karena penyiraman tidak teratur; sesekali trips dan karat."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky / DWC",
+      "media": "Rockwool atau hidroton (expanded clay)",
+      "nutrisi": "AB Mix 1000-1400 ppm (EC 2.0-2.8)",
+      "waktu_panen": "Pemotongan pertama 50-70 hari; panen berulang tiap beberapa minggu",
+      "tips": "Tabur beberapa benih per kubus untuk rumpun padat. Potong rutin agar daun tetap empuk dan produktif.",
+      "ph_ideal": "6.0-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Allium_schoenoprasum_-_Bombus_lapidarius_-_Tootsi.jpg/330px-Allium_schoenoprasum_-_Bombus_lapidarius_-_Tootsi.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Racun allium merusak sel darah merah; berbahaya bagi kucing dan anjing"
+    }
+  },
+  {
+    "id": "herbal-15",
+    "name": "Marjoram",
+    "scientificName": "Origanum majorana",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "Tanaman tahunan beraroma yang lembut, kerabat oregano, dengan daun kecil halus dan rasa manis ringan.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram setiap 2-3 hari; biarkan permukaan tanah agak kering antar penyiraman.",
+      "sunlight": "Matahari penuh, 6-8 jam sehari, untuk aroma paling kuat.",
+      "fertilizer": "Pemupukan ringan sebulan sekali; marjoram suka tanah miskin yang berdrainase baik.",
+      "pruning": "Pangkas pucuk secara rutin untuk merangsang pertumbuhan rimbun dan mencegah berbunga.",
+      "commonProblems": "Busuk akar karena kelebihan air; tungau laba-laba saat udara dalam ruang kering."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky / DWC",
+      "media": "Rockwool atau hidroton (expanded clay)",
+      "nutrisi": "AB Mix encer 800-1100 ppm (EC 1.6-2.2)",
+      "waktu_panen": "Panen pertama 50-70 hari; petik tangkai sesuai kebutuhan setelahnya",
+      "tips": "Pastikan aliran udara baik dan hindari larutan terlalu pekat. Pangkas sering agar tetap padat dan aromatik.",
+      "ph_ideal": "6.0-7.0",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Origanum_majorana_002.JPG/330px-Origanum_majorana_002.JPG",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Marjoram dianggap tidak beracun bagi anjing dan kucing"
+    }
+  },
+  {
+    "id": "herbal-16",
+    "name": "Adas",
+    "scientificName": "Foeniculum vulgare",
+    "category": "Herbal",
+    "difficulty": "sedang",
+    "description": "Herba tahunan tinggi berdaun halus dengan rasa mirip adas manis, ditanam untuk daun, biji, dan umbinya.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 21,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Jaga tanah lembap merata; siram setiap 1-2 hari, terutama saat umbi terbentuk.",
+      "sunlight": "Matahari penuh, minimal 6-8 jam sehari, untuk pertumbuhan kuat.",
+      "fertilizer": "Beri pupuk seimbang setiap 3 minggu saat pertumbuhan aktif.",
+      "pruning": "Buang tangkai bunga untuk memperpanjang produksi daun dan umbi.",
+      "commonProblems": "Cepat berbunga saat panas; kutu daun berkumpul di tunas muda."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky / DWC",
+      "media": "Rockwool atau hidroton (expanded clay)",
+      "nutrisi": "AB Mix 1000-1400 ppm (EC 2.0-2.8)",
+      "waktu_panen": "Daun 60-80 hari; umbi butuh ruang lebih dan 80-100 hari",
+      "tips": "Beri ruang vertikal luas dan penyangga untuk batang tinggi. Tanam jauh dari dill agar tidak menyerbuk silang.",
+      "ph_ideal": "6.0-6.8",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Foeniculum_July_2011-1a.jpg/330px-Foeniculum_July_2011-1a.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Adas umumnya tidak beracun bagi anjing dan kucing"
+    }
+  },
+  {
+    "id": "sayur-13",
+    "name": "Kale",
+    "scientificName": "Brassica oleracea var. sabellica",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "Sayuran daun hijau yang tangguh dan padat nutrisi dengan daun keriting biru-kehijauan, kaya vitamin K, A, dan C.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Jaga media tetap lembap konsisten; siram sekali sehari, terutama saat cuaca kering.",
+      "sunlight": "Matahari penuh hingga semi-teduh, minimal 6 jam cahaya sehari.",
+      "fertilizer": "Beri pupuk cair kaya nitrogen setiap 2 minggu agar daun rimbun.",
+      "pruning": "Panen daun bagian luar dulu agar mahkota tengah terus berproduksi.",
+      "commonProblems": "Ulat kubis, kutu daun, dan daun menguning akibat kekurangan nitrogen."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Kratky",
+      "media": "Rockwool atau spons busa",
+      "nutrisi": "AB Mix sayuran daun 1000–1400 ppm (EC 2.0–2.8)",
+      "waktu_panen": "50–65 hari setelah pindah tanam; petik daun luar secara terus-menerus.",
+      "tips": "Semai di rockwool 7–10 hari dulu, baru pindah tanam. Kale tumbuh subur di kondisi sejuk, jadi jaga larutan jangan sampai panas.",
+      "ph_ideal": "6.0-7.0",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Boerenkool.jpg/330px-Boerenkool.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Brassica aman sedikit; berlebih sebabkan gas, gangguan tiroid"
+    }
+  },
+  {
+    "id": "sayur-14",
+    "name": "Brokoli",
+    "scientificName": "Brassica oleracea var. italica",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "Sayuran musim sejuk yang ditanam untuk kepala bunga hijau padatnya, kaya serat dan antioksidan.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram setiap hari agar tanah lembap merata; penyiraman tidak rata membuat kepala pecah.",
+      "sunlight": "Matahari penuh minimal 6 jam, namun lebih suka suhu sejuk.",
+      "fertilizer": "Beri pupuk NPK seimbang setiap 2 minggu, tingkatkan nitrogen di awal.",
+      "pruning": "Potong kepala utama sebelum bunga mekar; tunas samping terus berproduksi setelahnya.",
+      "commonProblems": "Ulat kubis, kutu daun, dan pembungaan dini (bolting) saat panas."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Ebb & Flow",
+      "media": "Rockwool + hidroton",
+      "nutrisi": "AB Mix sayuran 1400–1800 ppm (EC 2.8–3.5) — rakus nutrisi",
+      "waktu_panen": "70–90 hari dari pindah tanam; potong kepala utama, lalu panen tunas samping.",
+      "tips": "Brokoli rakus nutrisi dan butuh aerasi kuat serta akar sejuk. Jaga larutan di bawah 22°C agar tidak bolting di iklim hangat.",
+      "ph_ideal": "6.0-7.0",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Broccoli_and_cross_section_edit.jpg/330px-Broccoli_and_cross_section_edit.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Brassica aman sedikit; berlebih sebabkan gas, gangguan tiroid"
+    }
+  },
+  {
+    "id": "sayur-15",
+    "name": "Lobak",
+    "scientificName": "Raphanus sativus",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "Tanaman umbi yang cepat tumbuh dengan umbi renyah dan pedas, siap panen hanya dalam beberapa minggu.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram setiap hari secara merata; kekeringan membuat umbi berkayu dan terlalu pedas.",
+      "sunlight": "Matahari penuh minimal 6 jam sehari agar umbi terbentuk baik.",
+      "fertilizer": "Gunakan pupuk rendah nitrogen, tinggi kalium agar energi ke umbi.",
+      "pruning": "Jarangkan bibit hingga jarak 3–5 cm agar tiap umbi punya ruang membesar.",
+      "commonProblems": "Kumbang loncat, umbi retak, dan tumbuh daun saja akibat nitrogen berlebih."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Lobak adalah tanaman umbi yang butuh media gembur dan dalam agar umbinya membesar. Sistem hidroponik air standar tidak mendukung perkembangan umbi yang baik."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Radish_3371103037_4ab07db0bf_o.jpg/330px-Radish_3371103037_4ab07db0bf_o.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Umumnya aman; berlebih bisa sebabkan gas dan gangguan lambung"
+    }
+  },
+  {
+    "id": "sayur-16",
+    "name": "Bit",
+    "scientificName": "Beta vulgaris",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "Sayuran umbi merah pekat yang manis dan daunnya juga bisa dimakan, kaya folat dan zat besi.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Jaga tanah lembap konsisten; siram setiap hari agar umbi tidak keras berserat.",
+      "sunlight": "Matahari penuh hingga teduh ringan, minimal 6 jam sehari.",
+      "fertilizer": "Beri pupuk seimbang dengan tambahan kalium dan boron agar umbi manis.",
+      "pruning": "Jarangkan bibit hingga jarak 8–10 cm; daun muda bisa dipetik untuk salad.",
+      "commonProblems": "Lalat pengorok daun, bercak hitam akibat kurang boron, dan umbi kerdil karena terlalu rapat."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Bit adalah tanaman umbi yang butuh media gembur dan dalam agar umbinya berkembang. Sistem hidroponik air standar tidak cocok untuk umbi yang membesar."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Detroitdarkredbeets.png/330px-Detroitdarkredbeets.png",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Bit tidak beracun dan aman untuk kucing dan anjing"
+    }
+  },
+  {
+    "id": "sayur-17",
+    "name": "Zucchini",
+    "scientificName": "Cucurbita pepo",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "Labu musim panas yang produktif, menghasilkan buah hijau lembut dengan cepat sepanjang musim.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram dalam setiap hari di pangkal; hindari membasahi daun agar tidak jamuran.",
+      "sunlight": "Matahari penuh, minimal 6–8 jam sehari.",
+      "fertilizer": "Beri pupuk kaya fosfor dan kalium saat mulai berbuah.",
+      "pruning": "Buang daun bawah yang tua untuk sirkulasi udara; panen buah saat muda dan sering.",
+      "commonProblems": "Embun tepung, penggerek batang, dan buah gagal jadi tanpa penyerbuk."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Dutch Bucket",
+      "media": "Hidroton atau perlite + cocopeat",
+      "nutrisi": "AB Mix buah 1800–2400 ppm (EC 3.5–4.8) — tingkatkan saat berbuah",
+      "waktu_panen": "45–60 hari dari pindah tanam; panen buah saat 15–20 cm secara terus-menerus.",
+      "tips": "Zucchini tumbuh besar, jadi gunakan sistem Dutch Bucket yang kokoh dengan aerasi kuat. Serbuki bunga secara manual di dalam ruangan karena tidak ada penyerbuk alami.",
+      "ph_ideal": "6.0-7.0",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/CSA-Striped-Zucchini.jpg/330px-CSA-Striped-Zucchini.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Zucchini tidak beracun dan aman untuk kucing dan anjing"
+    }
+  },
+  {
+    "id": "sayur-18",
+    "name": "Arugula",
+    "scientificName": "Eruca vesicaria",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "Sayuran salad cepat tumbuh dengan rasa pedas dan gurih, bisa dipanen dalam hitungan minggu.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Jaga media lembap merata; siram setiap hari agar daun tetap lembut dan ringan.",
+      "sunlight": "Matahari penuh hingga semi-teduh; sedikit naungan mencegah daun jadi pahit.",
+      "fertilizer": "Pupuk cair ringan kaya nitrogen setiap 2 minggu untuk pertumbuhan daun cepat.",
+      "pruning": "Petik daun luar dulu sebagai panen potong-tumbuh-lagi untuk panen berulang.",
+      "commonProblems": "Kumbang loncat, kutu daun, dan cepat bolting (berbunga) saat cuaca panas."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky / Rakit Apung",
+      "media": "Rockwool atau spons busa",
+      "nutrisi": "AB Mix sayuran daun 800–1200 ppm (EC 1.6–2.4)",
+      "waktu_panen": "20–30 hari setelah pindah tanam; panen muda untuk rasa paling ringan.",
+      "tips": "Arugula salah satu sayuran hidroponik tercepat dan cocok untuk pemula. Jaga larutan tetap sejuk dan panen muda, karena panas memicu bolting dan rasa pahit.",
+      "ph_ideal": "6.0-7.0",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Eruca_sativa_sl11.jpg/330px-Eruca_sativa_sl11.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Arugula tidak beracun dan aman untuk kucing dan anjing"
+    }
+  },
+  {
+    "id": "buah-17",
+    "name": "Lemon",
+    "scientificName": "Citrus limon",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "Pohon jeruk sitrun yang harum dan hijau sepanjang tahun, menghasilkan buah kuning yang asam dan berair; cocok ditanam di pot besar pada teras yang cerah.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Siram dalam-dalam setiap 2-3 hari, biarkan 3 cm bagian atas mengering di antara penyiraman; hindari genangan air.",
+      "sunlight": "Matahari penuh, minimal 6-8 jam cahaya langsung per hari.",
+      "fertilizer": "Beri pupuk khusus jeruk yang tinggi nitrogen dan unsur mikro sebulan sekali selama musim tumbuh.",
+      "pruning": "Pangkas cabang mati atau bersilangan dan rapikan tajuk setiap awal musim untuk memperbaiki sirkulasi udara dan cahaya.",
+      "commonProblems": "Daun menguning akibat kekurangan nutrisi, serta kutu daun, kutu perisai, dan penggorok daun jeruk."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Lemon adalah pohon berkayu dengan akar dalam dan tajuk buah yang berat, sehingga butuh tancapan tanah dan tidak praktis untuk hidroponik rumahan."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/P1030323.JPG/330px-P1030323.JPG",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Minyak sitrus dan psoralen sebabkan muntah, diare pada hewan"
+    }
+  },
+  {
+    "id": "buah-18",
+    "name": "Delima",
+    "scientificName": "Punica granatum",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "Perdu tangguh yang tahan kekeringan, menghasilkan buah merah berkulit liat yang penuh biji berair (aril) bagai permata.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Siram setiap 3-5 hari setelah tanaman mapan; toleran kekeringan tetapi berbuah terbaik dengan kelembapan stabil saat berbuah.",
+      "sunlight": "Matahari penuh sepanjang hari untuk pembungaan dan pembuahan terbaik.",
+      "fertilizer": "Beri pupuk NPK seimbang sebulan sekali, kurangi nitrogen saat buah berkembang.",
+      "pruning": "Buang tunas air dan rapikan cabang dalam di akhir musim dingin untuk membentuk perdu dan meningkatkan pembuahan.",
+      "commonProblems": "Buah pecah akibat penyiraman tidak teratur, serta kutu daun dan penggerek buah."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Delima adalah perdu berkayu yang berumur panjang dengan sistem akar luas, sehingga ditanam di tanah atau pot besar, bukan hidroponik rumahan."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pomegranate_Juice_%282019%29.jpg/330px-Pomegranate_Juice_%282019%29.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Kulit kayu, akar, kulit buah bisa sebabkan muntah; daging ringan"
+    }
+  },
+  {
+    "id": "buah-19",
+    "name": "Buah Naga",
+    "scientificName": "Hylocereus undatus",
+    "category": "Buah-buahan",
+    "difficulty": "mudah",
+    "description": "Kaktus merambat yang menghasilkan buah berkulit merah muda mencolok dengan daging manis berbintik; tumbuh subur di pot dengan penyangga kokoh.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Siram secukupnya, sekitar seminggu sekali, biarkan media mengering; sebagai kaktus mudah busuk jika terlalu basah.",
+      "sunlight": "Matahari penuh hingga sebagian; sinar tengah hari yang sangat kuat dapat membakar batang.",
+      "fertilizer": "Beri pupuk rendah nitrogen tinggi kalium sebulan sekali untuk merangsang bunga dan buah.",
+      "pruning": "Pangkas batang yang terlalu rapat dan tua setelah panen agar tanaman tetap rapi dan produktif.",
+      "commonProblems": "Busuk batang akibat kelebihan air dan drainase buruk; batang terbakar matahari."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Sebagai kaktus merambat berat yang butuh zona akar kering dan rambatan kuat, buah naga jauh lebih cocok di tanah atau pot besar daripada hidroponik."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Pitaya_cross_section_ed2.jpg/330px-Pitaya_cross_section_ed2.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Daging buah naga tidak beracun dan aman untuk hewan"
+    }
+  },
+  {
+    "id": "buah-20",
+    "name": "Nanas",
+    "scientificName": "Ananas comosus",
+    "category": "Buah-buahan",
+    "difficulty": "mudah",
+    "description": "Bromelia tropis dengan roset daun berduri yang menghasilkan satu buah manis berwarna emas per tanaman; mudah ditanam dari mahkota buah.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 30,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Siram setiap 4-5 hari; menyimpan air di daun dan tidak suka tanah becek.",
+      "sunlight": "Matahari penuh, 6 jam atau lebih per hari untuk buah yang manis.",
+      "fertilizer": "Beri pupuk seimbang sebulan sekali; dapat juga menyerap nutrisi melalui daun.",
+      "pruning": "Buang daun bawah yang mati dan anakan (tunas), yang bisa ditanam ulang.",
+      "commonProblems": "Busuk pucuk akibat air menggenang di mahkota; kutu putih."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Nanas butuh 18-24 bulan untuk berbuah dan menyukai zona akar kering berdrainase baik, sehingga tanah atau pot besar lebih praktis daripada hidroponik rumahan."
+    },
+    "imageUrl": "",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Daging aman; bromelain mentah bisa iritasi mulut, lambung"
+    }
+  },
+  {
+    "id": "buah-21",
+    "name": "Rasberi",
+    "scientificName": "Rubus idaeus",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "Perdu bertongkat berduri yang menghasilkan buah merah lembut manis asam; tumbuh terbaik di iklim sejuk atau kebun dataran tinggi.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 21,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Jaga tanah tetap lembap, siram setiap 1-2 hari saat cuaca hangat, tetapi hindari genangan.",
+      "sunlight": "Matahari penuh hingga teduh ringan; menyukai perlindungan dari panas tengah hari yang terik.",
+      "fertilizer": "Beri pupuk seimbang atau pupuk buah setiap 2-3 minggu selama musim tumbuh.",
+      "pruning": "Potong tongkat yang sudah berbuah hingga ke tanah setelah panen dan rapikan tongkat baru menyisakan beberapa yang kuat.",
+      "commonProblems": "Penggerek tongkat, jamur kelabu (botrytis), dan busuk akar di tanah berat dan basah."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Rasberi menyebar lewat tongkat menahun dan akar bertunas yang butuh ruang di tanah, sehingga kurang praktis untuk sistem hidroponik rumahan yang rapi."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Fert%C5%91di_k%C3%A1rmin_m%C3%A1lna.JPG/330px-Fert%C5%91di_k%C3%A1rmin_m%C3%A1lna.JPG",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Rasberi tidak beracun; jumlah banyak bisa sebabkan gangguan ringan"
+    }
+  },
+  {
+    "id": "buah-22",
+    "name": "Mangga",
+    "scientificName": "Mangifera indica",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "Pohon tropis besar yang dihargai karena buah emasnya yang harum dan manis; varietas kerdil bisa ditanam di pot besar.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 45,
+      "pruning": 180,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Siram setiap 3-5 hari; kurangi penyiraman sebelum berbunga untuk merangsang bunga, lalu lanjutkan saat berbuah.",
+      "sunlight": "Matahari penuh sepanjang hari untuk pertumbuhan kuat dan pembuahan baik.",
+      "fertilizer": "Beri pupuk kandang plus NPK setiap 6 minggu, perbanyak kalium saat buah terbentuk.",
+      "pruning": "Pangkas setelah panen untuk membentuk tajuk, buang kayu mati, dan jaga ketinggian pohon tetap terkendali.",
+      "commonProblems": "Antraknosa pada bunga dan buah, lalat buah, dan embun tepung."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Mangga adalah pohon besar berakar dalam yang butuh tancapan tanah untuk tajuk dan buahnya yang berat, sehingga hidroponik rumahan tidak memungkinkan."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Mangoes_%28Magnifera_indica%29_from_India.jpg/330px-Mangoes_%28Magnifera_indica%29_from_India.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Daging aman; kulit, biji sebabkan tersedak, iritasi urushiol"
+    }
+  },
+  {
+    "id": "aroma-8",
+    "name": "Kamomil",
+    "scientificName": "Matricaria chamomilla",
+    "category": "Aromaterapi",
+    "difficulty": "sedang",
+    "description": "Tanaman herbal mirip bunga aster dengan bunga beraroma apel, populer untuk teh herbal penenang dan aromaterapi yang menenangkan.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram saat 2 cm media bagian atas kering, kira-kira 2-3 hari sekali; hindari genangan air.",
+      "sunlight": "Matahari penuh minimal 6 jam; toleran terhadap sedikit naungan sore.",
+      "fertilizer": "Beri pupuk cair seimbang dosis ringan sebulan sekali; pemupukan berlebih mengurangi aroma bunga.",
+      "pruning": "Pangkas batang yang memanjang dan buang bunga yang layu secara rutin agar terus berbunga.",
+      "commonProblems": "Embun tepung dan kutu daun pada kondisi lembap dengan sirkulasi udara buruk."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky",
+      "media": "Rockwool atau cocopeat",
+      "nutrisi": "AB Mix herbal 700–1000 ppm (EC 1.4–2.0) — jaga tetap sedang agar aroma bunga terjaga",
+      "waktu_panen": "60–75 hari dari semai — panen kepala bunga yang mekar di pagi hari",
+      "tips": "Semai benih di rockwool dan jangan terlalu dalam karena benih kamomil butuh cahaya untuk berkecambah. Sebagai herba tahunan lunak ia cocok untuk NFT; panen bunga rutin agar produksi terus berlanjut.",
+      "ph_ideal": "5.5–6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Matricaria_February_2008-1.jpg/330px-Matricaria_February_2008-1.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Mengandung asam antemat dan minyak atsiri — dapat menyebabkan muntah, diare, dan dermatitis kontak pada kucing dan anjing"
+    }
+  },
+  {
+    "id": "aroma-9",
+    "name": "Melati Gambir",
+    "scientificName": "Jasminum officinale",
+    "category": "Aromaterapi",
+    "difficulty": "sedang",
+    "description": "Tanaman merambat berkayu dengan bunga putih beraroma sangat harum, sumber klasik minyak aromaterapi manis yang romantis.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram 2-3 hari sekali, jaga media tetap lembap namun tidak becek.",
+      "sunlight": "Matahari penuh hingga naungan sebagian yang terang; makin banyak matahari makin banyak bunga.",
+      "fertilizer": "Beri pupuk berbunga tinggi fosfor setiap bulan selama musim tumbuh.",
+      "pruning": "Pangkas setelah berbunga untuk mengendalikan sulur dan merangsang tumbuh lebih rimbun.",
+      "commonProblems": "Tungau laba-laba, kutu putih, dan kuncup rontok jika kekeringan saat berkuncup."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Melati adalah tanaman merambat berkayu tahunan dengan sistem akar luas dan butuh media kokoh untuk menopang pertumbuhan merambatnya, sehingga tidak cocok untuk sistem hidroponik rumahan."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Jasminum_officinale_-_Bot._Mag._31%2C_1787.jpg/330px-Jasminum_officinale_-_Bot._Mag._31%2C_1787.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Melati sejati (Jasminum officinale) tidak beracun dan aman untuk kucing dan anjing"
+    }
+  },
+  {
+    "id": "aroma-10",
+    "name": "Geranium Aroma Mawar",
+    "scientificName": "Pelargonium graveolens",
+    "category": "Aromaterapi",
+    "difficulty": "sedang",
+    "description": "Tanaman semak dengan daun bercangap beraroma mawar yang dipakai untuk menghasilkan minyak esensial geranium untuk aromaterapi dan parfum.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram 3-4 hari sekali; biarkan permukaan media mengering karena tidak suka basah terus-menerus.",
+      "sunlight": "Matahari penuh hingga cahaya terang memunculkan aroma daun terkuat.",
+      "fertilizer": "Beri pupuk cair seimbang setiap bulan, dosis lebih ringan untuk aroma lebih kuat.",
+      "pruning": "Pangkas ujung tunas secara rutin agar tanaman tetap rimbun dan untuk memanen daun beraroma.",
+      "commonProblems": "Busuk batang dan akar akibat overwatering; lalat putih di bawah permukaan daun."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Kratky",
+      "media": "Rockwool + perlite kasar untuk drainase tajam",
+      "nutrisi": "AB Mix herbal 700–1000 ppm (EC 1.4–2.0) — jaga tetap rendah untuk memaksimalkan minyak daun",
+      "waktu_panen": "60–90 hari — panen daun beraroma dan ujung batang secara berkelanjutan",
+      "tips": "Geranium aroma dapat ditanam secara hidroponik namun dengan hati-hati: ia tidak suka akar basah terus, jadi beri aerasi kuat dan biarkan sebagian zona akar di atas larutan untuk mencegah busuk. Akarkan stek batang di air dulu sebelum dipindahkan.",
+      "ph_ideal": "5.8–6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/%28MHNT%29_Pelargonium_graveolens_flower_and_leaves.jpg/330px-%28MHNT%29_Pelargonium_graveolens_flower_and_leaves.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Geraniol dan linalool pada Pelargonium — dapat menyebabkan muntah, anoreksia, dan dermatitis pada kucing dan anjing"
+    }
+  },
+  {
+    "id": "aroma-11",
+    "name": "Eukaliptus",
+    "scientificName": "Eucalyptus globulus",
+    "category": "Aromaterapi",
+    "difficulty": "sedang",
+    "description": "Pohon aromatik yang tumbuh cepat dengan daun bermenthol segar penghasil minyak kaya sineol yang digunakan untuk melegakan pernapasan dalam aromaterapi.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 60,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram 3-4 hari sekali saat muda; tanaman dewasa toleran kekeringan singkat.",
+      "sunlight": "Matahari penuh sepanjang hari untuk pertumbuhan kuat dan beraroma.",
+      "fertilizer": "Beri pupuk NPK lepas-lambat setiap 2 bulan; hindari fosfor berlebih.",
+      "pruning": "Pangkas atau pangkas-pendek secara rutin agar tetap seukuran semak dan untuk memanen daun muda beraroma.",
+      "commonProblems": "Busuk akar pada tanah berat dan tergenang serta bercak daun pada kondisi terlalu lembap."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Eukaliptus adalah pohon berkayu yang tumbuh cepat dengan sistem akar dalam dan agresif serta ukuran akhir yang besar, sehingga tidak cocok untuk sistem hidroponik rumahan."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Eucalyptus_globulus_subsp._maidenii.jpg/330px-Eucalyptus_globulus_subsp._maidenii.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Eukaliptol (sineol) dan minyak atsiri — dapat menyebabkan ngiler, muntah, diare, lemas, dan depresi pada kucing dan anjing"
+    }
+  },
+  {
+    "id": "obat-11",
+    "name": "Ekinasea",
+    "scientificName": "Echinacea purpurea",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "Bunga koneflower ungu, tanaman obat tangguh yang banyak digunakan untuk mendukung sistem kekebalan dan mempersingkat flu.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram 2-3 hari sekali saat masih beradaptasi; tanaman dewasa cukup tahan kekeringan.",
+      "sunlight": "Matahari penuh untuk pembungaan dan perkembangan akar terbaik.",
+      "fertilizer": "Beri pupuk seimbang dosis ringan sebulan sekali; tumbuh subur pada kondisi miskin hara.",
+      "pruning": "Buang bunga yang layu untuk memperpanjang masa berbunga, atau biarkan untuk memanen biji.",
+      "commonProblems": "Embun tepung, penyakit aster yellows, dan busuk mahkota pada tanah berdrainase buruk."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / NFT",
+      "media": "Rockwool atau cocopeat",
+      "nutrisi": "AB Mix herbal 800–1200 ppm (EC 1.6–2.4)",
+      "waktu_panen": "Panen daun dan bunga dalam 60–90 hari; akar butuh satu musim penuh",
+      "tips": "Ekinasea berkecambah lambat, jadi stratifikasi dingin benih sebelum disemai di rockwool. Ia tumbuh baik di DWC untuk panen daun dan bunga, meski akar obatnya berkembang paling baik dengan siklus panjang yang tidak terganggu.",
+      "ph_ideal": "5.8–6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Echinacea_purpurea_Grandview_Prairie.jpg/330px-Echinacea_purpurea_Grandview_Prairie.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Ekinasea umumnya tidak beracun untuk kucing dan anjing, meski jumlah besar dapat menyebabkan gangguan perut ringan"
+    }
+  },
+  {
+    "id": "obat-12",
+    "name": "Asywaganda",
+    "scientificName": "Withania somnifera",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "Tanaman semak adaptogen Ayurveda yang akarnya bernilai untuk mengurangi stres dan meningkatkan stamina.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 60,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram 4-5 hari sekali; biarkan media mengering di antara penyiraman karena tidak suka akar basah.",
+      "sunlight": "Matahari penuh di tempat hangat dan kering sangat ideal.",
+      "fertilizer": "Beri kompos ringan atau pupuk seimbang setiap 2 bulan; ia lebih suka tanah miskin hara.",
+      "pruning": "Pangkas ujung untuk merangsang kerimbunan; secara umum hanya butuh sedikit pemangkasan.",
+      "commonProblems": "Busuk akar akibat overwatering dan bercak daun saat musim hujan yang lembap."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Kratky",
+      "media": "Rockwool + perlite kasar untuk drainase kuat",
+      "nutrisi": "AB Mix herbal 700–1000 ppm (EC 1.4–2.0) — jaga tetap rendah karena tanaman ini suka kondisi kering dan miskin hara",
+      "waktu_panen": "Daun dalam 60–90 hari; akar obat butuh 150–180 hari untuk matang",
+      "tips": "Asywaganda dapat ditanam secara hidroponik namun secara alami adalah semak lahan kering, jadi beri aerasi kuat, nutrisi rendah, dan hindari kejenuhan terus-menerus. Akar berharganya berkembang paling baik dalam ember DWC dalam dengan siklus panjang.",
+      "ph_ideal": "6.0–7.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/WithaniaFruit.jpg/330px-WithaniaFruit.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Data keamanan untuk hewan terbatas; sebagai adaptogen kuat dengan lakton steroid sebaiknya diberikan pada kucing dan anjing hanya dengan hati-hati"
+    }
+  },
+  {
+    "id": "hias-46",
+    "name": "Pohon Uang",
+    "scientificName": "Pachira aquatica",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Pohon hias indoor populer dengan batang dikepang dan daun majemuk mengkilap, dipercaya membawa keberuntungan dan sangat mudah dirawat.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Siram menyeluruh seminggu sekali, biarkan 3-5 cm media bagian atas kering di antara penyiraman; toleran bila sesekali terlewat disiram.",
+      "sunlight": "Cahaya terang tidak langsung; bisa beradaptasi pada cahaya sedang namun hindari matahari langsung terik yang membakar daun.",
+      "fertilizer": "Beri pupuk cair seimbang sebulan sekali saat musim tumbuh, hentikan saat istirahat.",
+      "pruning": "Pangkas batang yang memanjang dan buang daun menguning setiap beberapa bulan agar bentuk tetap rapat.",
+      "commonProblems": "Daun menguning atau rontok akibat kelebihan air dan busuk akar adalah masalah paling umum."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hidroponik (LECA) / Kratky",
+      "media": "Hidroton (expanded clay) atau perlite kasar",
+      "nutrisi": "AB Mix 700-1000 ppm (EC 1.4-2.0)",
+      "waktu_panen": "Tidak dipanen — pertumbuhan stabil terlihat dalam 2-3 bulan",
+      "tips": "Pohon Uang beralih dengan baik ke semi-hidroponik; bilas seluruh tanah dari akar dahulu dan rendam hanya sepertiga bagian bawah agar batang tidak busuk.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Flickr_-_archer10_%28Dennis%29_-_Guatemala-1376.jpg/330px-Flickr_-_archer10_%28Dennis%29_-_Guatemala-1376.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Pachira aquatica tidak beracun bagi kucing dan anjing (ASPCA)"
+    }
+  },
+  {
+    "id": "hias-47",
+    "name": "Bromelia",
+    "scientificName": "Guzmania lingulata",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "Bromelia tropis yang dihargai karena seludang bunga merah atau jingga mencolok dan tahan lama, muncul dari roset daun hijau memanjang.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 60,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Jaga cawan tengah tetap terisi air bersih dan siram media tipis saat permukaannya kering, sekitar 5 hari sekali.",
+      "sunlight": "Cahaya terang tidak langsung; cahaya kurang membuat warna seludang pudar, terlalu banyak membakar daun.",
+      "fertilizer": "Gunakan pupuk cair encer setiap dua bulan, diaplikasikan ke media bukan ke cawan tengah.",
+      "pruning": "Potong seludang bunga yang sudah pudar dan biarkan anakan (pup) tumbuh menggantikan induk yang akan mati.",
+      "commonProblems": "Busuk pada cawan tengah akibat air kotor menggenang, dan ujung daun cokelat karena udara kering."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hidroponik (LECA)",
+      "media": "Hidroton (LECA) — meniru zona akar epifit yang berongga",
+      "nutrisi": "AB Mix sangat encer 400-600 ppm (EC 0.8-1.2) — kebutuhan nutrisi rendah",
+      "waktu_panen": "Tidak dipanen — berbunga setelah 1-3 tahun, lalu anakan melanjutkan siklus",
+      "tips": "Sebagai epifit, Guzmania cocok di LECA; jaga cawan tengah terisi air bersih dan jangan rendam pangkal roset sepenuhnya.",
+      "ph_ideal": "5.0-6.0",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Bromeliaceae03.jpg/330px-Bromeliaceae03.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Bromelia Guzmania tidak beracun bagi kucing dan anjing (ASPCA)"
+    }
+  },
+  {
+    "id": "hias-48",
+    "name": "Bambu Hoki",
+    "scientificName": "Dracaena sanderiana",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Bukan bambu sejati melainkan Dracaena, terkenal karena bisa hidup di vas berisi air dengan batang hijau yang sering dibentuk spiral.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 60,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Jika di tanah, jaga media tetap lembap; jika di air, ganti air seminggu sekali dan jaga akar tetap terendam.",
+      "sunlight": "Cahaya terang tidak langsung; matahari langsung menguningkan batang sedangkan terlalu teduh melemahkan pertumbuhan.",
+      "fertilizer": "Beri pupuk cair encer sangat ringan setiap dua bulan; tanaman di air hanya butuh dosis sangat kecil.",
+      "pruning": "Pangkas daun kuning dan potong batang yang memanjang di atas ruas untuk merangsang tunas baru.",
+      "commonProblems": "Menguning akibat air keran berklorin atau pupuk berlebih; lumut dan busuk pada air vas yang kotor."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kultur air murni / DWC",
+      "media": "Air bersih dengan kerikil hias untuk menahan batang",
+      "nutrisi": "AB Mix sangat encer 300-500 ppm (EC 0.6-1.0), atau air bebas klorin saja",
+      "waktu_panen": "Tidak dipanen — tunas baru muncul dalam 1-2 bulan",
+      "tips": "Bambu Hoki secara alami tumbuh di air dan paling mudah untuk hidroponik; gunakan air bebas klorin atau air hujan, ganti seminggu sekali, jaga akar terendam dan batang tetap di atas permukaan air.",
+      "ph_ideal": "6.0-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Dracaena_sanderiana_2.jpg/330px-Dracaena_sanderiana_2.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Dracaena sanderiana beracun bagi kucing dan anjing — saponin menyebabkan muntah, ngiler, lemas (ASPCA)"
+    }
+  },
+  {
+    "id": "hias-49",
+    "name": "Begonia Rex",
+    "scientificName": "Begonia rex",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "Begonia daun yang ditanam karena daun spiralnya yang dramatis dengan corak perak, ungu, hijau, dan merah muda.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram saat 2 cm media bagian atas kering, 2-3 hari sekali; jaga lembap merata tetapi jangan becek.",
+      "sunlight": "Cahaya terang tidak langsung memunculkan warna daun; matahari langsung memudarkan dan membakar daun.",
+      "fertilizer": "Beri pupuk cair seimbang yang diencerkan sebulan sekali sepanjang musim tumbuh.",
+      "pruning": "Buang daun tua atau rusak di pangkalnya dan pangkas ringan agar tanaman tetap rimbun.",
+      "commonProblems": "Embun tepung pada udara lembap yang tidak bersirkulasi dan busuk akar jika media terlalu basah."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Begonia Rex memiliki rimpang halus dan batang berair yang mudah busuk bila terendam, sehingga tidak cocok untuk sistem hidroponik dan tumbuh terbaik di media tanah yang ringan dan berpori."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Painted_Leaved_Begonia._Begonia_rex_Putz._Flore_des_serres_et_des_jardins_de_l%27Europe_v.12_%281857%29.jpg/330px-Painted_Leaved_Begonia._Begonia_rex_Putz._Flore_des_serres_et_des_jardins_de_l%27Europe_v.12_%281857%29.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Begonia beracun bagi kucing dan anjing — kalsium oksalat larut, paling pekat pada umbinya (ASPCA)"
+    }
+  },
+  {
+    "id": "hias-50",
+    "name": "Kalatea Orbifolia",
+    "scientificName": "Goeppertia orbifolia",
+    "category": "Tanaman Hias",
+    "difficulty": "sulit",
+    "description": "Tanaman doa yang mencolok dengan daun bulat besar bergaris hijau keperakan yang melipat di malam hari.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Jaga media tetap lembap merata, siram 2-3 hari sekali; peka terhadap kekeringan dan air yang banyak mineral.",
+      "sunlight": "Cahaya sedang hingga terang tidak langsung; matahari langsung memucatkan dan menggulung daun.",
+      "fertilizer": "Beri pupuk cair encer sebulan sekali selama musim tumbuh.",
+      "pruning": "Potong daun yang mencokelat atau kering di pangkalnya; selebihnya jarang perlu dipangkas.",
+      "commonProblems": "Tepi daun cokelat dan kering akibat kelembapan rendah atau mineral air keran, serta menggulung karena kurang air."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hidroponik (LECA)",
+      "media": "Hidroton (LECA) untuk kelembapan stabil dan merata",
+      "nutrisi": "AB Mix encer 500-800 ppm (EC 1.0-1.6)",
+      "waktu_panen": "Tidak dipanen — daun baru terbuka dalam 1-2 bulan setelah beradaptasi",
+      "tips": "Kalatea bisa pindah ke LECA tetapi tidak suka perubahan; lakukan bertahap, gunakan hanya air saring atau air hujan agar ujung daun tidak cokelat, dan jaga kelembapan tinggi saat adaptasi.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sulit"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Calathea_orbifolia_2.jpg/330px-Calathea_orbifolia_2.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Kalatea / Goeppertia tidak beracun bagi kucing dan anjing (ASPCA)"
+    }
+  },
+  {
+    "id": "hias-51",
+    "name": "Philodendron Brasil",
+    "scientificName": "Philodendron hederaceum",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Philodendron daun hati yang menjuntai dan tumbuh cepat, dengan daun hijau bergaris variegata kuning kehijauan.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Siram saat 2-3 cm media bagian atas kering, sekitar 3-4 hari sekali; toleran bila sesekali terlupa.",
+      "sunlight": "Cahaya terang tidak langsung menjaga variegata tetap jelas; cahaya kurang membuat daun kembali hijau polos.",
+      "fertilizer": "Beri pupuk NPK cair sebulan sekali selama musim tumbuh.",
+      "pruning": "Pangkas ujung sulur untuk merangsang pertumbuhan rimbun dan potong batang yang hijau polos atau memanjang.",
+      "commonProblems": "Daun menguning akibat kelebihan air dan hilangnya variegata pada cahaya kurang."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / DWC",
+      "media": "Rockwool atau hidroton (LECA)",
+      "nutrisi": "AB Mix 700-1000 ppm (EC 1.4-2.0)",
+      "waktu_panen": "Tidak dipanen — pertumbuhan sulur aktif terlihat dalam 1-2 bulan",
+      "tips": "Philodendron Brasil mudah berakar di air; rendam stek batang dalam air bersih sekitar 2 minggu hingga akar tumbuh, lalu pindahkan ke larutan nutrisi.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Philodendron_scandens_subsp_oxycardium2.jpg/330px-Philodendron_scandens_subsp_oxycardium2.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Philodendron beracun bagi kucing dan anjing — kalsium oksalat tak larut menyebabkan iritasi mulut, ngiler, muntah (ASPCA)"
+    }
   }
 ]
