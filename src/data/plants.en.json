@@ -29,7 +29,11 @@
       "tips": "Replace the nutrient solution every 2 weeks. Make sure about ⅓ of the roots are submerged and leave an air gap above the solution so the roots can breathe.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Monstera_deliciosa2.jpg/330px-Monstera_deliciosa2.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Monstera_deliciosa2.jpg/330px-Monstera_deliciosa2.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Calcium oxalate — mouth/throat irritation, drooling if chewed"
+    }
   },
   {
     "id": "hias-2",
@@ -61,7 +65,11 @@
       "tips": "Use a dark container to prevent algae from growing in the nutrient solution. Aglaonema is very well suited to the semi-hydroponic method using hydroton.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=400&q=80"
+    "imageUrl": "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=400&q=80",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Calcium oxalate — oral irritation, vomiting, drooling"
+    }
   },
   {
     "id": "hias-3",
@@ -93,7 +101,11 @@
       "tips": "Don't submerge the entire root system — let the top ⅓ stay dry to prevent rot. Change the water every 3–4 weeks since this plant grows slowly.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg/330px-Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg/330px-Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Saponins — nausea, vomiting, diarrhea in pets"
+    }
   },
   {
     "id": "hias-4",
@@ -125,7 +137,11 @@
       "tips": "Let the LECA wick water up by capillary action; don't fully submerge the roots. Use a transparent pot so you can monitor the condition of the healthy green roots.",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Phalaenopsis_amabilis_Orchi_198.jpg/330px-Phalaenopsis_amabilis_Orchi_198.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Phalaenopsis_amabilis_Orchi_198.jpg/330px-Phalaenopsis_amabilis_Orchi_198.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Phalaenopsis orchids are non-toxic to cats and dogs"
+    }
   },
   {
     "id": "hias-5",
@@ -157,7 +173,11 @@
       "tips": "Weeping fig bonsai needs a special soil medium to develop nebari (surface roots) and is not suited to hydroponic systems.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ficus_microcarpa_kz3.jpg/400px-Ficus_microcarpa_kz3.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ficus_microcarpa_kz3.jpg/400px-Ficus_microcarpa_kz3.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Ficus sap irritates mouth, skin; causes vomiting"
+    }
   },
   {
     "id": "hias-6",
@@ -189,7 +209,11 @@
       "tips": "Philodendron adapts very easily to water. Just place stem cuttings in clean water for 2 weeks to root them before moving to the nutrient solution.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Philodendron_scandens_subsp_oxycardium2.jpg/330px-Philodendron_scandens_subsp_oxycardium2.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Philodendron_scandens_subsp_oxycardium2.jpg/330px-Philodendron_scandens_subsp_oxycardium2.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Calcium oxalate — oral irritation, drooling, vomiting"
+    }
   },
   {
     "id": "hias-7",
@@ -221,7 +245,11 @@
       "tips": "Golden pothos is the best plant for hydroponic beginners — just put a cutting in a clear water bottle and place it somewhere bright. Change the water every 1–2 weeks.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Money_Plant_%28Epipremnum_aureum%29_4.jpg/330px-Money_Plant_%28Epipremnum_aureum%29_4.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Money_Plant_%28Epipremnum_aureum%29_4.jpg/330px-Money_Plant_%28Epipremnum_aureum%29_4.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Calcium oxalate — mouth irritation, drooling, vomiting"
+    }
   },
   {
     "id": "hias-8",
@@ -253,7 +281,11 @@
       "tips": "The ZZ Plant has water-storing rhizomes that are very prone to rot if submerged in solution — not recommended for hydroponics.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Zamioculcas_zamiifolia_1.jpg/330px-Zamioculcas_zamiifolia_1.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Zamioculcas_zamiifolia_1.jpg/330px-Zamioculcas_zamiifolia_1.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Calcium oxalate — oral irritation, vomiting if chewed"
+    }
   },
   {
     "id": "hias-9",
@@ -285,7 +317,11 @@
       "tips": "Cacti are adapted to extremely dry conditions — a constantly wet hydroponic system completely contradicts their basic needs.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Kaktus_5_fcm.jpg/400px-Kaktus_5_fcm.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Kaktus_5_fcm.jpg/400px-Kaktus_5_fcm.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Not chemically toxic, but spines cause physical injury"
+    }
   },
   {
     "id": "hias-10",
@@ -317,7 +353,11 @@
       "tips": "Calathea is very sensitive to minerals in water — use rainwater or water that has settled for 24 hours. Avoid placing it near direct AC airflow.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Calathea_ornata.jpg/330px-Calathea_ornata.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Calathea_ornata.jpg/330px-Calathea_ornata.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Calathea is non-toxic and safe for cats, dogs"
+    }
   },
   {
     "id": "sayur-1",
@@ -349,7 +389,11 @@
       "tips": "Sow the seeds in rockwool first for 5–7 days, then move them to the NFT system. It's a great fit for a simple household-scale floating raft (DWC) system.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Amaranthus_tricolor_in_a_flower_bed_near_Notre-Dame_cathedral_in_Paris3.jpg/330px-Amaranthus_tricolor_in_a_flower_bed_near_Notre-Dame_cathedral_in_Paris3.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Amaranthus_tricolor_in_a_flower_bed_near_Notre-Dame_cathedral_in_Paris3.jpg/330px-Amaranthus_tricolor_in_a_flower_bed_near_Notre-Dame_cathedral_in_Paris3.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Amaranthus may cause kidney issues in large amounts"
+    }
   },
   {
     "id": "sayur-2",
@@ -381,7 +425,11 @@
       "tips": "Water spinach grows very aggressively in hydroponics — it can grow twice as fast as in soil. First harvest at 21 days, then cut and let it grow again.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://images.unsplash.com/photo-1637694841812-34de87c60b53?w=400&q=80"
+    "imageUrl": "https://images.unsplash.com/photo-1637694841812-34de87c60b53?w=400&q=80",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Water spinach generally safe for cats and dogs"
+    }
   },
   {
     "id": "sayur-3",
@@ -413,7 +461,11 @@
       "tips": "Tie the tomato stem to a vertical stake since it grows very fast in hydroponics. When it flowers, gently shake the stem daily to aid pollination.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/330px-Tomato_je.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/330px-Tomato_je.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Ripe fruit safe; leaves, stems, unripe fruit toxic"
+    }
   },
   {
     "id": "sayur-4",
@@ -445,7 +497,11 @@
       "tips": "Bird's eye chili is the best candidate for long-term hydroponics — a single plant can keep producing for 1–2 years. Make sure the solution is well aerated with an air pump.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Tabasco_peppers.JPG/330px-Tabasco_peppers.JPG"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Tabasco_peppers.JPG/330px-Tabasco_peppers.JPG",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Capsaicin irritates mouth, stomach; causes vomiting"
+    }
   },
   {
     "id": "sayur-5",
@@ -477,7 +533,11 @@
       "tips": "Lettuce is the best plant for learning hydroponics. With the Kratky method (a used bottle), you don't need a pump at all — just fill it with nutrients and wait to harvest.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Iceberg_lettuce_in_SB.jpg/330px-Iceberg_lettuce_in_SB.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Iceberg_lettuce_in_SB.jpg/330px-Iceberg_lettuce_in_SB.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Lettuce is non-toxic and safe for pets"
+    }
   },
   {
     "id": "sayur-6",
@@ -509,7 +569,11 @@
       "tips": "A floating raft system is ideal for mustard greens — use a piece of scrap styrofoam as the raft with 5 cm holes. Great for household-scale production.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Brassica_rapa_plant.jpg/330px-Brassica_rapa_plant.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Brassica_rapa_plant.jpg/330px-Brassica_rapa_plant.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Brassica safe in small amounts; excess causes gas, bloating"
+    }
   },
   {
     "id": "obat-1",
@@ -541,7 +605,11 @@
       "tips": "The active compound orthosiphonin is higher in plants under mild stress — don't give too much nutrition. Harvest before heavy flowering for the highest levels.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Orthosiphon_aristatus_in_Kadavoor.jpg/330px-Orthosiphon_aristatus_in_Kadavoor.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Orthosiphon_aristatus_in_Kadavoor.jpg/330px-Orthosiphon_aristatus_in_Kadavoor.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Limited pet data; diuretic herb — give with caution"
+    }
   },
   {
     "id": "obat-2",
@@ -573,7 +641,11 @@
       "tips": "Green chiretta grows well in hydroponics, though it's rarely done. The bitter content (andrographolide) is actually higher in plants that are slightly 'deprived' — don't over-fertilize.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Andrographis_paniculata_%28Kalpa%29_in_Narshapur_forest%2C_AP_W2_IMG_0867.jpg/330px-Andrographis_paniculata_%28Kalpa%29_in_Narshapur_forest%2C_AP_W2_IMG_0867.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Andrographis_paniculata_%28Kalpa%29_in_Narshapur_forest%2C_AP_W2_IMG_0867.jpg/330px-Andrographis_paniculata_%28Kalpa%29_in_Narshapur_forest%2C_AP_W2_IMG_0867.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Bitter medicinal herb; limited safety data for pets"
+    }
   },
   {
     "id": "obat-3",
@@ -605,7 +677,11 @@
       "tips": "Betel is very easy to propagate from cuttings and grow in water — a good fit as a hanging hydroponic plant indoors. Make sure there's a pole or netting for the vines to climb.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Piper_betle_plant.jpg/330px-Piper_betle_plant.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Piper_betle_plant.jpg/330px-Piper_betle_plant.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Essential oils/phenols may irritate; limited pet data"
+    }
   },
   {
     "id": "obat-4",
@@ -637,7 +713,11 @@
       "tips": "Gotu kola spreads quickly in an NFT system. The asiaticoside (main active compound) content is higher in plants harvested young — harvest every 2 weeks.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Centella_asiatica_%28%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%81%E0%A6%A8%E0%A6%BF%29_%283%29.jpg/330px-Centella_asiatica_%28%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%81%E0%A6%A8%E0%A6%BF%29_%283%29.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Centella_asiatica_%28%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%81%E0%A6%A8%E0%A6%BF%29_%283%29.jpg/330px-Centella_asiatica_%28%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%81%E0%A6%A8%E0%A6%BF%29_%283%29.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Gotu kola generally non-toxic to cats and dogs"
+    }
   },
   {
     "id": "obat-5",
@@ -669,7 +749,11 @@
       "tips": "Noni is a shrub that grows large (2–6 meters). Its root system and size make it unsuitable for home hydroponic systems.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Noni_fruit_%28Morinda_citrifolia%29.jpg/330px-Noni_fruit_%28Morinda_citrifolia%29.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Noni_fruit_%28Morinda_citrifolia%29.jpg/330px-Noni_fruit_%28Morinda_citrifolia%29.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Noni fruit edible; limited pet toxicity data"
+    }
   },
   {
     "id": "herbal-1",
@@ -701,7 +785,11 @@
       "tips": "Red ginger is a rhizome plant that needs soil space to develop its rhizomes. A hydroponic system is not suitable for optimal ginger rhizome growth.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Koeh-146-no_text.jpg/330px-Koeh-146-no_text.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Koeh-146-no_text.jpg/330px-Koeh-146-no_text.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Ginger is non-toxic; large amounts may upset stomach"
+    }
   },
   {
     "id": "herbal-2",
@@ -733,7 +821,11 @@
       "tips": "Aloe vera is a succulent that stores water in its leaves — too much water will actually make the plant rot. A hydroponic system is not recommended.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/330px-Aloe_vera_flower_inset.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/330px-Aloe_vera_flower_inset.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Aloe latex/saponins — vomiting, diarrhea, lethargy"
+    }
   },
   {
     "id": "herbal-3",
@@ -765,7 +857,11 @@
       "tips": "Turmeric is a rhizome plant that needs deep, loose soil to develop large yellow rhizomes. Not suitable for hydroponic systems.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Turmeric_inflorescence.jpg/330px-Turmeric_inflorescence.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Turmeric_inflorescence.jpg/330px-Turmeric_inflorescence.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Turmeric is non-toxic; safe in small amounts"
+    }
   },
   {
     "id": "herbal-4",
@@ -797,7 +893,11 @@
       "tips": "Place fresh lemongrass stalks (leftovers from cooking) in plain water for 2–3 weeks until they root, then move them into the nutrient solution. This is the easiest way to start lemongrass hydroponically.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gardenology.org-IMG_2892_rbgs11jan.jpg/330px-Gardenology.org-IMG_2892_rbgs11jan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gardenology.org-IMG_2892_rbgs11jan.jpg/330px-Gardenology.org-IMG_2892_rbgs11jan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Essential oils may cause mild stomach upset in pets"
+    }
   },
   {
     "id": "herbal-5",
@@ -829,7 +929,11 @@
       "tips": "Aromatic ginger is a shallow-rhizome plant that needs a loose growing medium. Its rhizomes cannot develop properly in a water-based hydroponic system.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Galangal.web.jpg/330px-Galangal.web.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Galangal.web.jpg/330px-Galangal.web.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Edible rhizome; limited pet toxicity data — use caution"
+    }
   },
   {
     "id": "aroma-1",
@@ -861,7 +965,11 @@
       "tips": "Rosemary in hydroponics must have very good solution aeration — use a powerful air pump. Essential oil content is higher when the plant is slightly 'stressed' — reduce nutrients by 20% from the standard dose.",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Rosemary_in_bloom.JPG/330px-Rosemary_in_bloom.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Rosemary_in_bloom.JPG/330px-Rosemary_in_bloom.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Rosemary is non-toxic and safe for pets"
+    }
   },
   {
     "id": "aroma-2",
@@ -893,7 +1001,11 @@
       "tips": "Lavender is very prone to root rot in humid tropical climates — a hydroponic system makes this worse. It is better grown in a perlite + sand medium with extreme drainage.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-087.jpg/330px-Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-087.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-087.jpg/330px-Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-087.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Linalool/linalyl acetate — vomiting, lethargy if ingested"
+    }
   },
   {
     "id": "aroma-3",
@@ -925,7 +1037,11 @@
       "tips": "Mint grows VERY fast in hydroponics — it can be harvested within a month. Take a fresh mint stem cutting from the market, put it in water, wait 1–2 weeks for it to root, then move it into the nutrient solution.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Minze.jpg/330px-Minze.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Minze.jpg/330px-Minze.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Essential oils — vomiting, diarrhea in cats, dogs"
+    }
   },
   {
     "id": "aroma-4",
@@ -957,7 +1073,11 @@
       "tips": "Pandan is very easy to grow hydroponically — take an offshoot that already has roots and place it in a nutrient-filled bucket. Pandan's aroma is actually stronger in plants under slight water stress.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Chottola.jpg/330px-Chottola.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Chottola.jpg/330px-Chottola.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Pandan is non-toxic and safe for cats, dogs"
+    }
   },
   {
     "id": "sayur-7",
@@ -989,7 +1109,11 @@
       "tips": "Eggplant needs a stable system with good aeration. Use net pots at least 10 cm in size and make sure the air pump runs 24 hours so the roots don't run short of oxygen.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/330px-Solanum_melongena_24_08_2012_%281%29.JPG"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/330px-Solanum_melongena_24_08_2012_%281%29.JPG",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Ripe fruit ok; leaves, stems contain toxic solanine"
+    }
   },
   {
     "id": "sayur-8",
@@ -1021,7 +1145,11 @@
       "tips": "Cucumber climbs very fast in hydroponics — prepare a stake or a vertical climbing net. Harvest as often as possible (every 2 days) to keep the plant producing.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/ARS_cucumber.jpg/330px-ARS_cucumber.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/ARS_cucumber.jpg/330px-ARS_cucumber.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Cucumber is non-toxic and safe for pets"
+    }
   },
   {
     "id": "sayur-9",
@@ -1053,7 +1181,11 @@
       "tips": "Carrot is a root crop that needs deep, loose soil space to grow. A standard hydroponic system does not support optimal root development.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Daucus_carota_May_2008-1_edit.jpg/330px-Daucus_carota_May_2008-1_edit.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Daucus_carota_May_2008-1_edit.jpg/330px-Daucus_carota_May_2008-1_edit.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Carrot is non-toxic and safe for cats, dogs"
+    }
   },
   {
     "id": "sayur-10",
@@ -1085,7 +1217,11 @@
       "tips": "Choose an upright (bush bean) variety for hydroponics so it's easier to manage. Green beans fix their own nitrogen, so the N level in the solution can be slightly lower.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Snijboon_peulen_Phaseolus_vulgaris.jpg/330px-Snijboon_peulen_Phaseolus_vulgaris.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Snijboon_peulen_Phaseolus_vulgaris.jpg/330px-Snijboon_peulen_Phaseolus_vulgaris.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Raw beans contain lectins; cook before feeding pets"
+    }
   },
   {
     "id": "buah-1",
@@ -1117,7 +1253,11 @@
       "tips": "Strawberry is the most popular fruit for home hydroponics. An NFT system tilted 30–45° works very well because the fruit hangs down and is easy to harvest without getting dirty.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/330px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/330px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Strawberry is non-toxic and safe for pets"
+    }
   },
   {
     "id": "buah-2",
@@ -1149,7 +1289,11 @@
       "tips": "Papaya is a large tree that needs strong roots anchored deep in the soil. Its size and structural needs make a home hydroponic system unfeasible.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Carica_papaya_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-029.jpg/330px-Carica_papaya_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-029.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Carica_papaya_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-029.jpg/330px-Carica_papaya_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-029.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Papaya flesh safe; remove seeds before feeding"
+    }
   },
   {
     "id": "buah-3",
@@ -1181,7 +1325,11 @@
       "tips": "Guava is a tree with a large root system that needs deep soil. It is not suitable for a standard home hydroponic system.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Psidium_guajava_fruit.jpg/330px-Psidium_guajava_fruit.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Psidium_guajava_fruit.jpg/330px-Psidium_guajava_fruit.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Guava is non-toxic; feed in moderation"
+    }
   },
   {
     "id": "buah-4",
@@ -1213,7 +1361,11 @@
       "tips": "Banana needs a very deep, strong root system in the soil. The plant's size and structural needs make a conventional hydroponic system unfeasible.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Musa_acuminata_in_india01.jpg/330px-Musa_acuminata_in_india01.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Musa_acuminata_in_india01.jpg/330px-Musa_acuminata_in_india01.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Banana is non-toxic and safe for pets"
+    }
   },
   {
     "id": "buah-5",
@@ -1245,7 +1397,11 @@
       "tips": "Key lime is a woody tree that grows 2–5 meters — its root system and size far exceed the capacity of a home hydroponic system.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Citrus_%C3%97_aurantiifolia_%28Christm.%29_Swingle_%2851906868474%29.jpg/330px-Citrus_%C3%97_aurantiifolia_%28Christm.%29_Swingle_%2851906868474%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Citrus_%C3%97_aurantiifolia_%28Christm.%29_Swingle_%2851906868474%29.jpg/330px-Citrus_%C3%97_aurantiifolia_%28Christm.%29_Swingle_%2851906868474%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Citrus oils, psoralens — vomiting, diarrhea, irritation"
+    }
   },
   {
     "id": "buah-6",
@@ -1277,7 +1433,11 @@
       "tips": "Support the watermelon fruit with a knitted net so it doesn't fall under its own weight. Reduce nitrogen and increase potassium once the fruit reaches about fist size.",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg/330px-Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg/330px-Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Watermelon flesh safe; avoid seeds and rind"
+    }
   },
   {
     "id": "buah-7",
@@ -1309,7 +1469,11 @@
       "tips": "Hydroponic grapes need a sturdy installation because the vine is heavy as it climbs. Nutrient management must be precise — excess nitrogen produces lots of leaves but little fruit.",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Cabernet_Sauvignon_Gaillac.jpg/330px-Cabernet_Sauvignon_Gaillac.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Cabernet_Sauvignon_Gaillac.jpg/330px-Cabernet_Sauvignon_Gaillac.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Grapes cause kidney failure in dogs — never feed"
+    }
   },
   {
     "id": "hias-11",
@@ -1344,7 +1508,11 @@
       "kesulitan": "Mudah",
       "tips": "Peace lily is very easy in hydroponics — just place it in a pot of water with the roots partially submerged. Change the water every 1–2 weeks."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Peace_lily_-_1_-_cropped.jpg/330px-Peace_lily_-_1_-_cropped.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Peace_lily_-_1_-_cropped.jpg/330px-Peace_lily_-_1_-_cropped.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Calcium oxalate — oral irritation, drooling, vomiting"
+    }
   },
   {
     "id": "hias-12",
@@ -1379,7 +1547,11 @@
       "kesulitan": "Sedang",
       "tips": "Anthurium in LECA is very popular — wash the LECA clean and submerge the roots partially in a diluted nutrient solution. Make sure there is air space for the roots to breathe."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/AnthuriumAndraenum.jpg/330px-AnthuriumAndraenum.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/AnthuriumAndraenum.jpg/330px-AnthuriumAndraenum.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Calcium oxalate — mouth pain, drooling, vomiting"
+    }
   },
   {
     "id": "hias-13",
@@ -1414,7 +1586,11 @@
       "kesulitan": "Mudah",
       "tips": "Pothos is the easiest hydroponic plant — just put a cutting in a glass vase of water. Add a few pieces of activated charcoal to prevent odor and algae."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Money_Plant_%28Epipremnum_aureum%29_4.jpg/330px-Money_Plant_%28Epipremnum_aureum%29_4.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Money_Plant_%28Epipremnum_aureum%29_4.jpg/330px-Money_Plant_%28Epipremnum_aureum%29_4.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Calcium oxalate — mouth irritation, drooling, vomiting"
+    }
   },
   {
     "id": "hias-14",
@@ -1449,7 +1625,11 @@
       "kesulitan": "-",
       "tips": "The rubber plant is less than ideal for hydroponics because its root system prefers a medium that gets fairly dry between waterings. It is better grown in a pot with a well-draining medium."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ficus_elastica_leaves_02.JPG/330px-Ficus_elastica_leaves_02.JPG"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ficus_elastica_leaves_02.JPG/330px-Ficus_elastica_leaves_02.JPG",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Ficus sap — mouth, skin irritation, vomiting"
+    }
   },
   {
     "id": "hias-15",
@@ -1484,7 +1664,11 @@
       "kesulitan": "-",
       "tips": "Bird of Paradise is not recommended for hydroponics because its root system is large and prefers a fertile soil medium. It needs a large pot to grow well."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Ave-do-para%C3%ADso%2C_Strelitzia_reginae%2C_em_Bag%C3%A9%2C_Rio_Grande_do_Sul%2C_Brasil_-_55211233712.jpg/330px-Ave-do-para%C3%ADso%2C_Strelitzia_reginae%2C_em_Bag%C3%A9%2C_Rio_Grande_do_Sul%2C_Brasil_-_55211233712.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Ave-do-para%C3%ADso%2C_Strelitzia_reginae%2C_em_Bag%C3%A9%2C_Rio_Grande_do_Sul%2C_Brasil_-_55211233712.jpg/330px-Ave-do-para%C3%ADso%2C_Strelitzia_reginae%2C_em_Bag%C3%A9%2C_Rio_Grande_do_Sul%2C_Brasil_-_55211233712.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Strelitzia — vomiting, drowsiness; seeds most toxic"
+    }
   },
   {
     "id": "sayur-11",
@@ -1519,7 +1703,11 @@
       "kesulitan": "Mudah",
       "tips": "Pak choi is the best hydroponic plant for beginners! It grows fast, harvests in 25–30 days, and tolerates nutrient variation. Start with the Kratky method in a used bottle."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Brassica_rapa_plant.jpg/330px-Brassica_rapa_plant.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Brassica_rapa_plant.jpg/330px-Brassica_rapa_plant.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Brassica safe in small amounts; excess causes gas"
+    }
   },
   {
     "id": "sayur-12",
@@ -1554,7 +1742,11 @@
       "kesulitan": "Sedang",
       "tips": "Hydroponic bell peppers need stake support since the plant gets quite heavy when fruiting. Raise the nutrient EC from 2.0 to 2.5–3.0 once it enters the flowering and fruiting phase."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Capsicum_annuum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-027.jpg/330px-Capsicum_annuum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-027.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Capsicum_annuum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-027.jpg/330px-Capsicum_annuum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-027.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Ripe fruit ok; foliage toxic, capsaicin irritates"
+    }
   },
   {
     "id": "obat-6",
@@ -1589,7 +1781,11 @@
       "kesulitan": "-",
       "tips": "Temulawak isn't suited to hydroponics because the harvest is an underground rhizome that needs a solid medium to develop. It grows more effectively in a deep pot or in the garden."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Rhizoma_Curcumae_xanthorrhizae_by_Danny_S._-_001.jpg/400px-Rhizoma_Curcumae_xanthorrhizae_by_Danny_S._-_001.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Rhizoma_Curcumae_xanthorrhizae_by_Danny_S._-_001.jpg/400px-Rhizoma_Curcumae_xanthorrhizae_by_Danny_S._-_001.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Curcuma rhizome non-toxic; safe in small amounts"
+    }
   },
   {
     "id": "obat-7",
@@ -1624,7 +1820,11 @@
       "kesulitan": "Mudah",
       "tips": "Longevity spinach grows very fast in hydroponics. Harvest young leaves from the top regularly to encourage new growth. Well suited to NFT systems or indoor racks."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gynura_procumbens_%28Diabetes_plant%29_%281%29.jpg/330px-Gynura_procumbens_%28Diabetes_plant%29_%281%29.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gynura_procumbens_%28Diabetes_plant%29_%281%29.jpg/330px-Gynura_procumbens_%28Diabetes_plant%29_%281%29.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Edible leaf; limited pet toxicity data — use caution"
+    }
   },
   {
     "id": "obat-8",
@@ -1659,7 +1859,11 @@
       "kesulitan": "-",
       "tips": "Aloe vera isn't suited to hydroponics because, as a succulent, it needs dry periods between waterings. A constantly wet medium will cause root rot quickly."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/330px-Aloe_vera_flower_inset.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/330px-Aloe_vera_flower_inset.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Aloe latex/saponins — vomiting, diarrhea, lethargy"
+    }
   },
   {
     "id": "obat-9",
@@ -1694,7 +1898,11 @@
       "kesulitan": "-",
       "tips": "Brotowali is a woody climbing plant better grown in the ground or a large pot. It isn't efficient for a hydroponic system."
     },
-    "imageUrl": "https://images.unsplash.com/photo-1444459094717-a39ececb2069?w=400&q=80"
+    "imageUrl": "https://images.unsplash.com/photo-1444459094717-a39ececb2069?w=400&q=80",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Very bitter medicinal vine; limited pet safety data"
+    }
   },
   {
     "id": "obat-10",
@@ -1729,7 +1937,11 @@
       "kesulitan": "Sedang",
       "tips": "Black cumin can be grown hydroponically through the vegetative phase, but for optimal seed harvest it's better to move it to a soil medium. Keep the temperature from getting too hot (>30°C)."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Nsativa001Wien.jpg/330px-Nsativa001Wien.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Nsativa001Wien.jpg/330px-Nsativa001Wien.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Seeds edible in small amounts; excess may harm pets"
+    }
   },
   {
     "id": "herbal-6",
@@ -1764,7 +1976,11 @@
       "kesulitan": "Mudah",
       "tips": "Basil is the most productive hydroponic herb! Pinch off flower buds as soon as they appear so the plant focuses on leaf production. Harvest from the top regularly."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Ocimum_basilicum_8zz.jpg/330px-Ocimum_basilicum_8zz.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Ocimum_basilicum_8zz.jpg/330px-Ocimum_basilicum_8zz.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Basil is non-toxic and safe for cats, dogs"
+    }
   },
   {
     "id": "herbal-7",
@@ -1799,7 +2015,11 @@
       "kesulitan": "Sedang",
       "tips": "Coriander prefers cool temperatures. In hot areas, grow it indoors with supplemental lighting. Avoid transplanting the plant since it's sensitive to root disturbance."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg/330px-Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg/330px-Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Coriander/cilantro is non-toxic and safe for pets"
+    }
   },
   {
     "id": "herbal-8",
@@ -1834,7 +2054,11 @@
       "kesulitan": "Mudah",
       "tips": "The easiest method: place leftover green onion bases from cooking in a glass of water — they'll grow back in 3–5 days! For a larger harvest, use a simple NFT or DWC system."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Welsh_onion.jpg/330px-Welsh_onion.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Welsh_onion.jpg/330px-Welsh_onion.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Allium — damages red blood cells; toxic to pets"
+    }
   },
   {
     "id": "herbal-9",
@@ -1869,7 +2093,11 @@
       "kesulitan": "-",
       "tips": "Cinnamon is a hardwood tree that needs fertile soil and a strong root system. It isn't practical for hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cinnamomum_verum1.jpg/330px-Cinnamomum_verum1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cinnamomum_verum1.jpg/330px-Cinnamomum_verum1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Cinnamon mildly irritating; oils risky in quantity"
+    }
   },
   {
     "id": "herbal-10",
@@ -1904,7 +2132,11 @@
       "kesulitan": "-",
       "tips": "Citronella grass is a large grass better grown in the ground or a big pot outdoors. Its dense fibrous root system makes it inefficient for hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Cymbopogon_nardus_%28DITSL%29.JPG/330px-Cymbopogon_nardus_%28DITSL%29.JPG"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Cymbopogon_nardus_%28DITSL%29.JPG/330px-Cymbopogon_nardus_%28DITSL%29.JPG",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Cymbopogon essential oils may cause stomach upset"
+    }
   },
   {
     "id": "aroma-5",
@@ -1939,7 +2171,11 @@
       "kesulitan": "Mudah",
       "tips": "Oregano is very productive in indoor hydroponics with a grow light. Make sure the EC isn't too high — oregano prefers moderate nutrients. Regular harvesting encourages new growth."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Origanum_vulgare_-_harilik_pune.jpg/330px-Origanum_vulgare_-_harilik_pune.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Origanum_vulgare_-_harilik_pune.jpg/330px-Origanum_vulgare_-_harilik_pune.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Oregano essential oils — vomiting, diarrhea in pets"
+    }
   },
   {
     "id": "aroma-6",
@@ -1974,7 +2210,11 @@
       "kesulitan": "Sedang",
       "tips": "Thyme prefers to dry out between waterings — in hydroponics, make sure there's good aeration. A Kratky system with a sufficiently large air gap works well for thyme."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Thymus_vulgaris1.JPG/330px-Thymus_vulgaris1.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Thymus_vulgaris1.JPG/330px-Thymus_vulgaris1.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Thyme mild; concentrated oils may upset stomach"
+    }
   },
   {
     "id": "aroma-7",
@@ -2009,7 +2249,11 @@
       "kesulitan": "Mudah",
       "tips": "Lemon balm grows very vigorously in hydroponics — it can become invasive! Prune regularly and harvest plenty to keep the plant compact. The aroma is strongest before flowering."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Lemon_balm_plant.jpg/330px-Lemon_balm_plant.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Lemon_balm_plant.jpg/330px-Lemon_balm_plant.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Lemon balm is non-toxic and safe for pets"
+    }
   },
   {
     "id": "buah-8",
@@ -2044,7 +2288,11 @@
       "kesulitan": "Sedang",
       "tips": "Cherry tomatoes are a hydroponic favorite — productive and fast. Set up string or stakes for support. Prune the suckers regularly. Pollinate the flowers by shaking the plant while it's in bloom."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/330px-Tomato_je.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/330px-Tomato_je.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Ripe fruit safe; foliage and unripe fruit toxic"
+    }
   },
   {
     "id": "buah-9",
@@ -2079,7 +2327,11 @@
       "kesulitan": "Sulit",
       "tips": "Hydroponic melons need tight management. Limit to 1–2 fruits per plant for premium size. Support the fruit with netting in the greenhouse. Reduce water and raise the EC a week before harvest to increase sugar content (Brix)."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Muskmelon.jpg/330px-Muskmelon.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Muskmelon.jpg/330px-Muskmelon.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Melon flesh is non-toxic and safe for pets"
+    }
   },
   {
     "id": "buah-10",
@@ -2114,7 +2366,11 @@
       "kesulitan": "Sulit",
       "tips": "Blueberries need a very low pH (4.5–5.5) that differs from other hydroponic plants. Use an acidic medium and monitor pH closely. In Indonesia, they're better suited to Malang, Dieng, or cool areas above 800 m elevation."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Vaccinium_corymbosum%2801%29.jpg/330px-Vaccinium_corymbosum%2801%29.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Vaccinium_corymbosum%2801%29.jpg/330px-Vaccinium_corymbosum%2801%29.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Blueberry is non-toxic and safe for cats, dogs"
+    }
   },
   {
     "id": "buah-11",
@@ -2149,7 +2405,11 @@
       "kesulitan": "-",
       "tips": "Starfruit is a tropical fruit tree that needs deep soil and a strong root system. It isn't practical for hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Averrhoa_carambola_ARS_k5735-7.jpg/330px-Averrhoa_carambola_ARS_k5735-7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Averrhoa_carambola_ARS_k5735-7.jpg/330px-Averrhoa_carambola_ARS_k5735-7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Oxalates and caramboxin — risky, especially for dogs"
+    }
   },
   {
     "id": "buah-12",
@@ -2184,7 +2444,11 @@
       "kesulitan": "-",
       "tips": "Water apple is a large tropical tree that needs to be planted in the ground or a large-volume pot (>100L). It isn't practical for a home hydroponic system."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Eugenia_sp_Blanco1.145-cropped.jpg/330px-Eugenia_sp_Blanco1.145-cropped.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Eugenia_sp_Blanco1.145-cropped.jpg/330px-Eugenia_sp_Blanco1.145-cropped.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Water apple fruit generally safe for pets"
+    }
   },
   {
     "id": "buah-13",
@@ -2219,7 +2483,11 @@
       "kesulitan": "Sedang",
       "tips": "Hydroponic passion fruit needs a trellis or arbor to climb. Start with a low EC (1.5), then raise it gradually. Hand-pollinate with a small brush to improve fruit set."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Passiflora_edulis_forma_flavicarpa.jpg/330px-Passiflora_edulis_forma_flavicarpa.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Passiflora_edulis_forma_flavicarpa.jpg/330px-Passiflora_edulis_forma_flavicarpa.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Ripe pulp ok; unripe fruit, leaves release cyanide"
+    }
   },
   {
     "id": "buah-14",
@@ -2254,7 +2522,11 @@
       "kesulitan": "-",
       "tips": "The fig is a woody tree that needs a large pot or direct soil for optimal results. Its root system isn't suited to hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ficus_carica_L%2C_1771.jpg/330px-Ficus_carica_L%2C_1771.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ficus_carica_L%2C_1771.jpg/330px-Ficus_carica_L%2C_1771.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Ficus sap, ficin, psoralens — irritation, vomiting"
+    }
   },
   {
     "id": "buah-15",
@@ -2289,7 +2561,11 @@
       "kesulitan": "-",
       "tips": "The avocado is a large tree that needs a deep, strong root system. It isn't suited to home hydroponics. Plant it in a large-volume pot (>50L) or directly in the ground."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Persea_americana_fruit_2.JPG/330px-Persea_americana_fruit_2.JPG"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Persea_americana_fruit_2.JPG/330px-Persea_americana_fruit_2.JPG",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Persin in leaves, bark, pit — vomiting, diarrhea"
+    }
   },
   {
     "id": "buah-16",
@@ -2324,6 +2600,10 @@
       "kesulitan": "-",
       "tips": "The date palm needs desert conditions to fruit optimally. In Indonesia it can grow but rarely fruits because the air humidity is too high."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Dates005.jpg/330px-Dates005.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Dates005.jpg/330px-Dates005.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Date palm (Phoenix) non-toxic; fruit safe pitted"
+    }
   }
 ]

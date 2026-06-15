@@ -662,6 +662,25 @@ function PlantDetail() {
           </div>
         </div>
 
+        {plant.toxicity && (() => {
+          const cfg = {
+            'toxic':     { bg: '#fee2e2', fg: '#991b1b', border: '#ef4444', icon: '⚠️', label: L.tox_toxic },
+            'caution':   { bg: '#fef3c7', fg: '#92400e', border: '#f59e0b', icon: '⚠️', label: L.tox_caution },
+            'non-toxic': { bg: '#dcfce7', fg: '#166534', border: '#16a34a', icon: '✅', label: L.tox_nontoxic },
+          }[plant.toxicity.pets];
+          if (!cfg) return null;
+          return (
+            <div style={{ display: 'flex', gap: '12px', alignItems: 'center', background: cfg.bg, borderLeft: `4px solid ${cfg.border}`, borderRadius: '14px', padding: '12px 14px', marginBottom: '24px' }}>
+              <span style={{ fontSize: '1.6rem', flexShrink: 0 }}>🐾</span>
+              <div>
+                <p style={{ fontSize: '0.72rem', fontWeight: 700, color: cfg.fg, textTransform: 'uppercase', letterSpacing: '0.5px' }}>{cfg.icon} {L.tox_title}: {cfg.label}</p>
+                <p style={{ fontSize: '0.82rem', color: '#374151', lineHeight: 1.45, marginTop: '2px' }}>{plant.toxicity.note}</p>
+                <p style={{ fontSize: '0.68rem', color: '#6b7280', marginTop: '4px', fontStyle: 'italic' }}>{L.tox_disclaimer}</p>
+              </div>
+            </div>
+          );
+        })()}
+
         <div style={{ display: 'flex', gap: '12px', marginBottom: '32px' }}>
           <button className="btn-primary" onClick={() => addToGarden(id)}
             style={{ flex: 1, background: myGarden.find(g=>g.id===id) ? '#16a34a' : 'var(--primary)' }}>
