@@ -47,6 +47,7 @@ const STR = {
     all_levels: 'All Levels',
     sort_default: 'Default', sort_az: 'A → Z', sort_easiest: 'Easiest', sort_hardest: 'Hardest', sort_hydro: 'Hydroponic ↑',
     hydro_on: 'Hydroponic: ON', hydro_can: 'Hydroponic-friendly',
+    pet_safe_on: 'Pet-safe: ON', pet_safe: 'Pet-safe',
     plants_match: 'plants match',
     no_plants: 'No plants found.',
     reloading: '🔄 Reloading...',
@@ -68,6 +69,7 @@ const STR = {
     similar_plants: 'Similar Plants',
 
     guide_title: '📅 Growing Guide From Scratch', guide_done: 'done',
+    journal_title: 'Journal', journal_add_note: 'How is your plant doing today?', journal_add_photo: 'Add photo', journal_save: 'Add entry', journal_empty: 'No entries yet — log your plant’s progress.', journal_delete: 'Delete',
     plant_not_found: 'Plant not found',
 
     fav_title: 'Favorite Collection',
@@ -141,6 +143,7 @@ const STR = {
     all_levels: 'Semua Level',
     sort_default: 'Default', sort_az: 'A → Z', sort_easiest: 'Termudah', sort_hardest: 'Tersulit', sort_hydro: 'Hidroponik ↑',
     hydro_on: 'Hidroponik: ON', hydro_can: 'Bisa Hidroponik',
+    pet_safe_on: 'Aman hewan: ON', pet_safe: 'Aman hewan',
     plants_match: 'tanaman cocok',
     no_plants: 'Tidak ada tanaman ditemukan.',
     reloading: '🔄 Memuat ulang...',
@@ -162,6 +165,7 @@ const STR = {
     similar_plants: 'Tanaman Serupa',
 
     guide_title: '📅 Panduan Menanam dari Nol', guide_done: 'selesai',
+    journal_title: 'Jurnal', journal_add_note: 'Bagaimana kabar tanamanmu hari ini?', journal_add_photo: 'Tambah foto', journal_save: 'Tambah catatan', journal_empty: 'Belum ada catatan — catat perkembangan tanamanmu.', journal_delete: 'Hapus',
     plant_not_found: 'Tanaman tidak ditemukan',
 
     fav_title: 'Koleksi Favorit',

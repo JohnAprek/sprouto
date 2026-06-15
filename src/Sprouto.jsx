@@ -345,6 +345,7 @@ function Encyclopedia() {
   const [activeDiff, setActiveDiff] = useState('Semua');
   const [sortBy, setSortBy] = useState('default');
   const [hidroOnly, setHidroOnly] = useState(false);
+  const [petSafeOnly, setPetSafeOnly] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isPulling, setIsPulling] = useState(false);
   const touchStartY = useRef(0);
@@ -408,7 +409,8 @@ function Encyclopedia() {
     const matchCat = activeCategory === 'Semua' || p.category === activeCategory;
     const matchDiff = activeDiff === 'Semua' || p.difficulty === activeDiff;
     const matchHidro = !hidroOnly || (p.hidroponik && p.hidroponik.bisa_hidroponik === true);
-    return matchSearch && matchCat && matchDiff && matchHidro;
+    const matchPetSafe = !petSafeOnly || (p.toxicity && p.toxicity.pets === 'non-toxic');
+    return matchSearch && matchCat && matchDiff && matchHidro && matchPetSafe;
   });
 
   if (sortBy === 'az') filtered = [...filtered].sort((a, b) => a.name.localeCompare(b.name));
@@ -470,7 +472,7 @@ function Encyclopedia() {
           <option value="hidro">{L.sort_hydro}</option>
         </select>
       </div>
-      <div style={{ marginBottom: '12px' }}>
+      <div style={{ marginBottom: '12px', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px' }}>
         <button
           onClick={() => setHidroOnly(h => !h)}
           style={{
@@ -485,8 +487,22 @@ function Encyclopedia() {
           💧 {hidroOnly ? L.hydro_on : L.hydro_can}
           {hidroOnly && <span style={{ fontSize: '0.7rem', background: '#0891b2', color: 'white', borderRadius: '50%', width: '16px', height: '16px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>✓</span>}
         </button>
-        {hidroOnly && (
-          <span style={{ marginLeft: '8px', fontSize: '0.75rem', color: 'var(--text-muted)' }}>
+        <button
+          onClick={() => setPetSafeOnly(v => !v)}
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: '6px',
+            padding: '6px 14px', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 600,
+            border: '1.5px solid', cursor: 'pointer', transition: 'all 0.2s',
+            borderColor: petSafeOnly ? '#16a34a' : 'var(--border-color)',
+            background: petSafeOnly ? '#dcfce7' : 'var(--surface)',
+            color: petSafeOnly ? '#166534' : 'var(--text-muted)',
+          }}
+        >
+          🐾 {petSafeOnly ? L.pet_safe_on : L.pet_safe}
+          {petSafeOnly && <span style={{ fontSize: '0.7rem', background: '#16a34a', color: 'white', borderRadius: '50%', width: '16px', height: '16px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>✓</span>}
+        </button>
+        {(hidroOnly || petSafeOnly) && (
+          <span style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
             {filtered.length} {L.plants_match}
           </span>
         )}
@@ -703,6 +719,9 @@ function PlantDetail() {
         {/* --- PANDUAN MENANAM STATIS --- */}
         <PlantGuideSection plant={plant} />
 
+        {/* --- JURNAL TANAMAN --- */}
+        <PlantJournal plantId={id} />
+
         {/* --- CARA PENANAMAN (3 METODE) --- */}
         {plant.hidroponik && (
           <div style={{ marginTop: '32px' }}>
@@ -802,6 +821,103 @@ function PlantDetail() {
 
 
 // --- Static PlantGuideSection ---
+// --- Plant Journal (notes + photos + timeline, per plant) ---
+function PlantJournal({ plantId }) {
+  const { L, lang } = React.useContext(AppContext);
+  const [entries, setEntries] = useLocalStorage('sprouto_journal_' + plantId, []);
+  const [note, setNote] = useState('');
+  const [photo, setPhoto] = useState(null);
+  const fileRef = useRef(null);
+
+  const onPhoto = (e) => {
+    const file = e.target.files && e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      const img = new Image();
+      img.onload = () => {
+        const MAX = 800;
+        let { width, height } = img;
+        if (width > MAX || height > MAX) {
+          const r = Math.min(MAX / width, MAX / height);
+          width = Math.round(width * r); height = Math.round(height * r);
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = width; canvas.height = height;
+        canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+        setPhoto(canvas.toDataURL('image/jpeg', 0.7));
+      };
+      img.src = ev.target.result;
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const addEntry = () => {
+    if (!note.trim() && !photo) return;
+    const entry = { id: Date.now(), date: new Date().toISOString(), note: note.trim(), photo };
+    setEntries([entry, ...entries]);
+    setNote(''); setPhoto(null);
+    if (fileRef.current) fileRef.current.value = '';
+  };
+
+  const removeEntry = (id) => setEntries(entries.filter(e => e.id !== id));
+  const fmt = (iso) => new Date(iso).toLocaleDateString(LOCALE[lang], { day: 'numeric', month: 'short', year: 'numeric' });
+
+  return (
+    <div style={{ marginTop: '32px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+        <h3 style={{ fontSize: '1.2rem' }}>📔 {L.journal_title}</h3>
+        {entries.length > 0 && <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--primary)' }}>{entries.length}</span>}
+      </div>
+
+      <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '14px', boxShadow: 'var(--shadow-sm)', marginBottom: '16px' }}>
+        <textarea
+          value={note}
+          onChange={e => setNote(e.target.value)}
+          placeholder={L.journal_add_note}
+          rows={2}
+          style={{ width: '100%', resize: 'vertical', border: '1px solid var(--border-color)', borderRadius: '10px', padding: '10px', fontSize: '0.85rem', fontFamily: 'inherit', background: 'var(--bg)', color: 'var(--text-main)', boxSizing: 'border-box' }}
+        />
+        {photo && (
+          <div style={{ position: 'relative', marginTop: '10px', display: 'inline-block' }}>
+            <img src={photo} alt="" style={{ height: '72px', borderRadius: '10px', display: 'block' }} />
+            <button onClick={() => { setPhoto(null); if (fileRef.current) fileRef.current.value = ''; }}
+              style={{ position: 'absolute', top: '-8px', right: '-8px', width: '22px', height: '22px', borderRadius: '50%', border: 'none', background: '#ef4444', color: 'white', cursor: 'pointer', fontSize: '0.8rem', lineHeight: 1 }}>×</button>
+          </div>
+        )}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '10px', gap: '8px' }}>
+          <button onClick={() => fileRef.current && fileRef.current.click()}
+            style={{ background: 'none', border: '1px solid var(--border-color)', borderRadius: '10px', padding: '8px 12px', fontSize: '0.8rem', fontWeight: 600, color: 'var(--text-muted)', cursor: 'pointer' }}>
+            📷 {L.journal_add_photo}
+          </button>
+          <input ref={fileRef} type="file" accept="image/*" onChange={onPhoto} style={{ display: 'none' }} />
+          <button onClick={addEntry} disabled={!note.trim() && !photo}
+            style={{ background: (!note.trim() && !photo) ? 'var(--border-color)' : 'var(--primary)', color: 'white', border: 'none', borderRadius: '10px', padding: '8px 18px', fontSize: '0.82rem', fontWeight: 700, cursor: (!note.trim() && !photo) ? 'default' : 'pointer' }}>
+            {L.journal_save}
+          </button>
+        </div>
+      </div>
+
+      {entries.length === 0 ? (
+        <p style={{ textAlign: 'center', color: 'var(--text-muted)', fontSize: '0.85rem', padding: '8px 0 4px' }}>{L.journal_empty}</p>
+      ) : (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          {entries.map(en => (
+            <div key={en.id} style={{ background: 'var(--surface)', borderRadius: '14px', padding: '12px 14px', boxShadow: 'var(--shadow-sm)', borderLeft: '3px solid var(--primary)' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: en.note || en.photo ? '6px' : 0 }}>
+                <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--text-muted)' }}>{fmt(en.date)}</span>
+                <button onClick={() => removeEntry(en.id)} style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '0.9rem', opacity: 0.6 }} aria-label={L.journal_delete}>🗑️</button>
+              </div>
+              {en.note && <p style={{ fontSize: '0.85rem', color: 'var(--text-main)', lineHeight: 1.5, whiteSpace: 'pre-wrap' }}>{en.note}</p>}
+              {en.photo && <img src={en.photo} alt="" style={{ marginTop: en.note ? '8px' : 0, width: '100%', borderRadius: '10px', display: 'block' }} />}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function PlantGuideSection({ plant }) {
   const { L, lang } = React.useContext(AppContext);
   const [tasks, setTasks] = useLocalStorage('guide_' + plant.id + '_tasks', []);
