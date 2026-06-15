@@ -39,5 +39,21 @@ async function clean(src) {
     .composite([{ input: lockup, gravity: 'center' }]).flatten({ background: WHITE }).png()
     .toFile('public/og-image.png');
 
-  console.log('Icons regenerated into public/.');
+  // Play Store feature graphic (1024x500): brand gradient + icon + text.
+  const FW = 1024, FH = 500;
+  const fg = `<svg xmlns="http://www.w3.org/2000/svg" width="${FW}" height="${FH}">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#166534"/><stop offset="1" stop-color="#0f3d24"/>
+  </linearGradient></defs>
+  <rect width="${FW}" height="${FH}" fill="url(#g)"/>
+  <text x="470" y="205" font-family="Verdana, DejaVu Sans, Arial, sans-serif" font-size="96" font-weight="bold" fill="#ffffff">Sprouto</text>
+  <text x="474" y="262" font-family="Verdana, DejaVu Sans, Arial, sans-serif" font-size="30" fill="#bbf7d0">Grow, Care &amp; Manage Your Plants</text>
+  <text x="474" y="332" font-family="Verdana, DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="bold" fill="#86efac">200+ plants · reminders · pet-safe · guides</text>
+  <text x="474" y="372" font-family="Verdana, DejaVu Sans, Arial, sans-serif" font-size="27" font-weight="bold" fill="#86efac">hydroponics · journal · EN &amp; ID</text>
+</svg>`;
+  const fgBase = await sharp(Buffer.from(fg)).png().toBuffer();
+  const fgIcon = await sharp('public/pwa-512x512.png').resize(360, 360).png().toBuffer();
+  await sharp(fgBase).composite([{ input: fgIcon, top: 70, left: 70 }]).png().toFile('public/feature-graphic.png');
+
+  console.log('Icons + feature graphic regenerated into public/.');
 })().catch((e) => { console.error(e); process.exit(1); });
