@@ -39,16 +39,36 @@ Keep the current **TWA setup (`ANDROID.md`) as the fallback** if you later add a
 prefer Web Push, or want the absolute thinnest wrapper. But for a reminder-first launch,
 Capacitor is the lower-risk path to a loop that actually works.
 
-## Concrete next steps (when you greenlight the pivot)
+## Status: Capacitor is now SET UP in this repo ✅
 
-1. `npm i @capacitor/core @capacitor/cli @capacitor/local-notifications @capacitor/android`
-2. `npx cap init Sprouto io.github.johnaprek.sprouto --web-dir=dist`
-3. Add a small bridge: when a plant is added/edited in **My Garden**, compute the next N care
-   dates and call `LocalNotifications.schedule(...)`; cancel on removal. Keep the web
-   `Notification` path as a no-op fallback when the native plugin is absent.
-4. `npm run build && npx cap sync android && npx cap open android` → build the signed AAB.
-5. Notification permission is requested via the plugin on first "enable reminders" tap
-   (the UI already has that toggle in **Kebunku / My Garden**).
+Done (steps 1-3 below are already in the repo):
+- Deps installed: `@capacitor/core`, `@capacitor/cli`, `@capacitor/android`, `@capacitor/local-notifications`.
+- `capacitor.config.json` (appId `io.github.johnaprek.sprouto`, `webDir: dist`).
+- `src/notifications.js` — `syncPlantReminders(garden, plants, L)` computes the next watering &
+  fertilizing date per owned plant and schedules local notifications. **It is a no-op on web**
+  (`Capacitor.isNativePlatform()` guard) so the PWA is unaffected.
+- Wired into the app: a `useEffect` on the garden reschedules reminders whenever it changes.
+- Scripts: `npm run build:cap` (Vite build with `--base=./` for the native shell) and
+  `npm run cap:sync`.
+
+### Remaining (needs Android Studio + SDK on your machine)
+
+```bash
+npm run build:cap         # web build with relative base for the webview
+npx cap add android       # creates the native project under android/
+npx cap sync android
+npx cap open android      # build / run / generate the signed AAB in Android Studio
+```
+
+⚠️ **Base-path caveat:** the GitHub Pages build uses base `/sprouto/`; the native build uses
+`--base=./` (handled by `build:cap`). If client-side routing misbehaves inside the webview,
+switch the router to `HashRouter` for the native build (or set `basename=""`). Verify on-device.
+
+The reminder permission is requested by the plugin the first time `syncPlantReminders` runs with a
+non-empty garden; the existing "enable reminders" toggle in **My Garden** can also trigger it.
+
+> The previous bare-TWA config now lives at [docs/twa-manifest.json](docs/twa-manifest.json) as a
+> fallback if you later add a Web Push backend instead of going native.
 
 ## Interim (no pivot yet)
 

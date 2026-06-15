@@ -1,0 +1,12 @@
+{
+  "appId": "io.github.johnaprek.sprouto",
+  "appName": "Sprouto",
+  "webDir": "dist",
+  "backgroundColor": "#ffffff",
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_icon",
+      "iconColor": "#166534"
+    }
+  }
+}

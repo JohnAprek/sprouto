@@ -6,10 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:cap": "vite build --base=./",
+    "cap:sync": "npm run build:cap && cap sync android",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "icons": "node scripts/gen-icons.cjs"
   },
   "dependencies": {
+    "@capacitor/android": "^8.4.0",
+    "@capacitor/cli": "^8.4.0",
+    "@capacitor/core": "^8.4.0",
+    "@capacitor/local-notifications": "^8.2.0",
     "date-fns": "^4.1.0",
     "lucide-react": "^0.300.0",
     "react": "^18.2.0",

@@ -6,7 +6,11 @@ a thin native wrapper that opens the deployed PWA full‑screen (no browser bar)
 - **PWA URL:** https://johnaprek.github.io/sprouto/
 - **Web manifest:** https://johnaprek.github.io/sprouto/manifest.webmanifest ✅ TWA‑ready
   (name, `start_url`, `standalone`, 192/512 + maskable icons)
-- **Suggested package id:** `io.github.johnaprek.sprouto` (change in [android/twa-manifest.json](android/twa-manifest.json) if you prefer your own)
+- **Suggested package id:** `io.github.johnaprek.sprouto` (change in [docs/twa-manifest.json](docs/twa-manifest.json) if you prefer your own)
+
+> **Recommended path:** for reliable care reminders, use **Capacitor** (already set up — see
+> [docs/NOTIFICATIONS.md](docs/NOTIFICATIONS.md)). The TWA path below remains valid but a bare TWA
+> cannot schedule local notifications.
 
 There are two ways to produce the **.aab** (Android App Bundle) you upload to Google Play.
 Pick ONE.
@@ -45,7 +49,7 @@ npm i -g @bubblewrap/cli
 bubblewrap doctor
 
 # 4. Initialise the project from the live manifest
-#    (android/twa-manifest.json in this repo is a ready reference for the answers)
+#    (docs/twa-manifest.json in this repo is a ready reference for the answers)
 bubblewrap init --manifest https://johnaprek.github.io/sprouto/manifest.webmanifest
 
 # 5. Build — this creates the upload keystore (you choose the passwords) and the bundle

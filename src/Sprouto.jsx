@@ -14,6 +14,7 @@ import {
   PLANTS, getStrings, CATEGORY_LABEL, CATEGORY_CHIP, DIFFICULTY_LABEL,
   KESULITAN_LABEL, LOCALE, SOIL_GUIDE, buildStaticGuide,
 } from './i18n';
+import { syncPlantReminders } from './notifications';
 
 // --- Custom Hook LocalStorage ---
 function useLocalStorage(key, initialValue) {
@@ -96,6 +97,11 @@ export default function Sprouto() {
   useEffect(() => {
     document.documentElement.setAttribute('lang', lang);
   }, [lang]);
+
+  // Native (Capacitor) only: reschedule local care reminders. No-op on web.
+  useEffect(() => {
+    syncPlantReminders(myGarden, plants, L);
+  }, [myGarden, lang]);
 
   const showToast = (msg) => setToast(msg);
 
