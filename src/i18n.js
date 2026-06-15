@@ -118,6 +118,16 @@ const STR = {
     soil_title: '📚 Gardening Guide',
     soil_sub: 'Learn the basics of soil, growing media, fertilizer, and how to care for plants properly.',
 
+    assistant_cta: '🤖 Ask the Care Assistant',
+    assistant_title: '🤖 Care Assistant',
+    assistant_sub: 'Ask about any plant — instant answers from our care database.',
+    assistant_placeholder: 'e.g. How often do I water Monstera?',
+    assistant_ask: 'Ask',
+    assistant_no_plant: 'I couldn’t find that plant. Try naming one from the catalog, e.g. “Is Pothos pet-safe?”',
+    assistant_summary: 'Here are the basics',
+    assistant_open: 'Open full care guide →',
+    assistant_note: 'Instant answers from structured data — not an AI chatbot (yet). Always double-check with a local expert.',
+
     profile_save: 'Save', profile_edit: 'Edit', profile_role: 'Beginner Plant Lover', profile_collection: 'Collection', profile_level: 'Level 1',
     profile_ask_name: 'What is your name?',
 
@@ -216,6 +226,16 @@ const STR = {
 
     soil_title: '📚 Panduan Berkebun',
     soil_sub: 'Pelajari dasar-dasar tanah, media tanam, pupuk, dan cara merawat tanaman dengan benar.',
+
+    assistant_cta: '🤖 Tanya Asisten Perawatan',
+    assistant_title: '🤖 Asisten Perawatan',
+    assistant_sub: 'Tanya apa saja tentang tanaman — jawaban instan dari basis data perawatan kami.',
+    assistant_placeholder: 'mis. Berapa sering menyiram Monstera?',
+    assistant_ask: 'Tanya',
+    assistant_no_plant: 'Tanaman tidak ditemukan. Sebutkan nama dari katalog, mis. “Apakah Pothos aman untuk hewan?”',
+    assistant_summary: 'Berikut dasar-dasarnya',
+    assistant_open: 'Buka panduan lengkap →',
+    assistant_note: 'Jawaban instan dari data terstruktur — bukan chatbot AI (untuk saat ini). Selalu cek ulang dengan ahli setempat.',
 
     profile_save: 'Simpan', profile_edit: 'Edit', profile_role: 'Pecinta Tanaman Pemula', profile_collection: 'Koleksi', profile_level: 'Level 1',
     profile_ask_name: 'Siapa nama Anda?',

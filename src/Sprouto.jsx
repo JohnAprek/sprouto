@@ -197,6 +197,7 @@ function AppShell({ toast, setToast }) {
           <Route path="/kalkulator" element={<HydroCalc />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/kalender" element={<CareCalendar />} />
+          <Route path="/asisten" element={<CareAssistant />} />
         </Routes>
       </div>
       <BottomNav />
@@ -320,6 +321,13 @@ function Home() {
           <div className="stat-lbl">{L.stat_streak}</div>
         </div>
       </div>
+
+      <button onClick={() => navigate('/asisten')}
+        style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', textAlign: 'left', cursor: 'pointer', marginBottom: '24px', background: 'linear-gradient(135deg, var(--primary-dark), var(--primary))', color: 'white', border: 'none', borderRadius: '16px', padding: '14px 16px', boxShadow: 'var(--shadow-sm)' }}>
+        <span style={{ fontSize: '1.6rem' }}>🤖</span>
+        <span style={{ flex: 1, fontWeight: 700, fontSize: '0.95rem' }}>{L.assistant_cta}</span>
+        <span style={{ opacity: 0.8 }}>›</span>
+      </button>
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
         <h3 style={{ fontSize: '1.1rem' }}>{L.popular_plants}</h3>
@@ -1204,6 +1212,110 @@ function CareCalendar() {
           )}
         </div>
       )}
+    </main>
+  );
+}
+
+// --- Care Assistant (grounded, deterministic; LLM upgrade documented in NOTIFICATIONS/PRD) ---
+function CareAssistant() {
+  const { L, lang, plants } = React.useContext(AppContext);
+  const navigate = useNavigate();
+  const [q, setQ] = useState('');
+  const [result, setResult] = useState(null);
+
+  const run = () => {
+    const query = ' ' + q.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ') + ' ';
+    // Match a plant: longest common-name match wins, then genus, then a significant word.
+    let plant = null, best = 0;
+    for (const p of plants) {
+      const n = p.name.toLowerCase();
+      if (query.includes(' ' + n + ' ') || query.includes(n)) { if (n.length > best) { plant = p; best = n.length; } }
+    }
+    if (!plant) {
+      for (const p of plants) {
+        const genus = p.scientificName.toLowerCase().split(' ')[0];
+        if (genus.length > 3 && query.includes(genus)) { plant = p; break; }
+      }
+    }
+    if (!plant) {
+      for (const p of plants) {
+        const words = p.name.toLowerCase().split(/[^a-z]+/).filter(w => w.length > 3);
+        if (words.some(w => query.includes(' ' + w + ' '))) { plant = p; break; }
+      }
+    }
+    const has = (...ws) => ws.some(w => query.includes(w));
+    let intent = null;
+    if (has('water', 'siram', 'penyiram', 'thirst')) intent = 'watering';
+    else if (has('light', 'cahaya', 'matahari', ' sun', 'shade', 'teduh')) intent = 'sunlight';
+    else if (has('fertil', 'pupuk', 'feed', 'nutrien', 'nutrisi')) intent = 'fertilizer';
+    else if (has('toxic', 'poison', 'safe', ' pet', ' cat', ' dog', 'kucing', 'anjing', 'racun', 'beracun', 'aman')) intent = 'toxicity';
+    else if (has('prune', 'pangkas', 'trim', 'potong')) intent = 'pruning';
+    else if (has('problem', 'masalah', 'yellow', 'kuning', 'wilt', 'layu', 'pest', 'hama', 'sick', 'dying', 'wrong')) intent = 'commonProblems';
+    setResult({ plant, intent });
+  };
+
+  const answerFor = (plant, intent) => {
+    const tox = { toxic: L.tox_toxic, 'non-toxic': L.tox_nontoxic, caution: L.tox_caution };
+    switch (intent) {
+      case 'watering': return [{ label: L.tip_watering, text: `${L.every_n_days_once(plant.schedules.watering)} — ${plant.careDetails.watering}` }];
+      case 'sunlight': return [{ label: L.tip_light, text: plant.careDetails.sunlight }];
+      case 'fertilizer': return [{ label: L.tip_fertilizing, text: `${L.every_n_days_once(plant.schedules.fertilizer)} — ${plant.careDetails.fertilizer}` }];
+      case 'pruning': return [{ label: L.tip_pruning, text: plant.careDetails.pruning }];
+      case 'commonProblems': return [{ label: L.care_tips, text: plant.careDetails.commonProblems }];
+      case 'toxicity': return [{ label: L.tox_title, text: `${tox[plant.toxicity.pets]} — ${plant.toxicity.note}` }];
+      default: return [
+        { label: L.tip_watering, text: L.every_n_days_once(plant.schedules.watering) },
+        { label: L.tip_light, text: plant.careDetails.sunlight },
+        { label: L.tox_title, text: `${tox[plant.toxicity.pets]} — ${plant.toxicity.note}` },
+      ];
+    }
+  };
+
+  return (
+    <main className="main-content animate-fade-up">
+      <div style={{ marginBottom: '16px' }}>
+        <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '6px' }}>{L.assistant_title}</h2>
+        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>{L.assistant_sub}</p>
+      </div>
+
+      <div style={{ display: 'flex', gap: '8px', marginBottom: '16px' }}>
+        <input
+          value={q}
+          onChange={e => setQ(e.target.value)}
+          onKeyDown={e => { if (e.key === 'Enter') run(); }}
+          placeholder={L.assistant_placeholder}
+          style={{ flex: 1, border: '1px solid var(--border-color)', borderRadius: '12px', padding: '12px 14px', fontSize: '0.9rem', background: 'var(--surface)', color: 'var(--text-main)', fontFamily: 'inherit' }}
+        />
+        <button onClick={run} style={{ background: 'var(--primary)', color: 'white', border: 'none', borderRadius: '12px', padding: '0 20px', fontWeight: 700, fontSize: '0.9rem', cursor: 'pointer' }}>{L.assistant_ask}</button>
+      </div>
+
+      {result && (
+        result.plant ? (
+          <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '16px', boxShadow: 'var(--shadow-sm)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
+              <span style={{ fontSize: '1.6rem' }}>{EMOJI_MAP[result.plant.id] || '🌿'}</span>
+              <div>
+                <p style={{ fontWeight: 700, fontSize: '1rem' }}>{result.plant.name}</p>
+                <p style={{ fontSize: '0.75rem', fontStyle: 'italic', color: 'var(--text-muted)' }}>{result.plant.scientificName}</p>
+              </div>
+            </div>
+            {!result.intent && <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)', marginBottom: '8px' }}>{L.assistant_summary}:</p>}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              {answerFor(result.plant, result.intent).map((a, i) => (
+                <div key={i} style={{ borderLeft: '3px solid var(--primary)', paddingLeft: '12px' }}>
+                  <p style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px', color: 'var(--primary)' }}>{a.label}</p>
+                  <p style={{ fontSize: '0.88rem', color: 'var(--text-main)', lineHeight: 1.5 }}>{a.text}</p>
+                </div>
+              ))}
+            </div>
+            <button onClick={() => navigate(`/tanaman/${result.plant.id}`)} style={{ marginTop: '14px', background: 'none', border: 'none', color: 'var(--primary)', fontWeight: 700, fontSize: '0.82rem', cursor: 'pointer', padding: 0 }}>{L.assistant_open}</button>
+          </div>
+        ) : (
+          <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', lineHeight: 1.6, padding: '8px 4px' }}>{L.assistant_no_plant}</p>
+        )
+      )}
+
+      <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontStyle: 'italic', marginTop: '20px', lineHeight: 1.5 }}>{L.assistant_note}</p>
     </main>
   );
 }
