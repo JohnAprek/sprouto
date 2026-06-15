@@ -210,9 +210,7 @@ function Header() {
           <button className="icon-btn pill" onClick={() => navigate(-1)}><ArrowLeft size={20} /></button>
         ) : (
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <div style={{ backgroundColor: 'white', color: 'var(--primary)', padding: '6px', borderRadius: '12px' }}>
-              <Sprout size={24} />
-            </div>
+            <img src={`${import.meta.env.BASE_URL}pwa-192x192.png`} alt="Sprouto" width={40} height={40} style={{ borderRadius: '11px', display: 'block', boxShadow: 'var(--shadow-sm)' }} />
             <div>
               <h1>Sprouto</h1>
               <span className="header-subtitle">{L.headerSubtitle}</span>

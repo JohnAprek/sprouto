@@ -33,9 +33,19 @@ export default function Onboarding({ lang, setLang, onFinish, onSetName }) {
       )}
       {!isLast ? (
         <>
-          <div style={{ fontSize: '80px', marginBottom: '24px', animation: 'fadeInUp 0.4s ease' }}>
-            {STEPS[step].emoji}
-          </div>
+          {step === 0 ? (
+            <img
+              src={`${import.meta.env.BASE_URL}pwa-512x512.png`}
+              alt="Sprouto"
+              width={128}
+              height={128}
+              style={{ borderRadius: '28px', marginBottom: '24px', boxShadow: '0 8px 24px rgba(0,0,0,0.25)', animation: 'fadeInUp 0.4s ease' }}
+            />
+          ) : (
+            <div style={{ fontSize: '80px', marginBottom: '24px', animation: 'fadeInUp 0.4s ease' }}>
+              {STEPS[step].emoji}
+            </div>
+          )}
           <h2 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '12px' }}>
             {STEPS[step].title}
           </h2>
