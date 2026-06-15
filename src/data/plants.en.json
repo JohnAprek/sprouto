@@ -1,0 +1,2329 @@
+[
+  {
+    "id": "hias-1",
+    "name": "Monstera Deliciosa",
+    "scientificName": "Monstera deliciosa",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A trendy houseplant with exotic, holey leaves, perfect for indoor decoration.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water when the top of the medium (2 cm) is dry, roughly every 2-3 days.",
+      "sunlight": "Bright but indirect light.",
+      "pruning": "Cut off yellowing or damaged leaves at the base of the stem.",
+      "fertilizer": "Apply liquid foliar fertilizer once a month.",
+      "commonProblems": "Leaves turn yellow if overwatered."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / DWC",
+      "media": "Rockwool, hydroton (expanded clay)",
+      "nutrisi": "Standard AB Mix 800–1200 ppm (EC 1.6–2.4)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "Not harvested — optimal leaf growth visible within 2–3 months",
+      "tips": "Replace the nutrient solution every 2 weeks. Make sure about ⅓ of the roots are submerged and leave an air gap above the solution so the roots can breathe.",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Monstera_deliciosa2.jpg/330px-Monstera_deliciosa2.jpg"
+  },
+  {
+    "id": "hias-2",
+    "name": "Aglaonema",
+    "scientificName": "Aglaonema spp.",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Chinese Evergreen, a houseplant with beautiful reddish leaf patterns that is easy to care for.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 90,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days, making sure the pot has good drainage.",
+      "sunlight": "Shade or moderate light; avoid direct sun.",
+      "pruning": "Remove any flowers that appear so nutrients stay focused on the leaves.",
+      "fertilizer": "Slow-release Dekastar fertilizer every 3 months.",
+      "commonProblems": "Root rot caused by dense, waterlogged growing medium."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / Semi-hydroponic",
+      "media": "Hydroton (expanded clay) or coarse sand",
+      "nutrisi": "Diluted AB Mix 600–900 ppm (EC 1.2–1.8)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "Not harvested — full growth visible within 3–4 months",
+      "tips": "Use a dark container to prevent algae from growing in the nutrient solution. Aglaonema is very well suited to the semi-hydroponic method using hydroton.",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=400&q=80"
+  },
+  {
+    "id": "hias-3",
+    "name": "Snake Plant",
+    "scientificName": "Sansevieria trifasciata",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A tough, pollutant-absorbing plant with stiff, upright, sword-like leaves.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 180,
+      "pruning": 60,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Very infrequently; once a week or every 2 weeks is enough.",
+      "sunlight": "Adaptable, from low light to full sun.",
+      "pruning": "Only cut off broken or wilted leaves.",
+      "fertilizer": "Rarely needs fertilizer; add compost twice a year.",
+      "commonProblems": "Almost none, except dying from being watered too often."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / Wick",
+      "media": "Hydroton or coarse perlite",
+      "nutrisi": "Very diluted AB Mix 400–600 ppm (EC 0.8–1.2) — this plant doesn't need much nutrition",
+      "ph_ideal": "5.5–7.0",
+      "waktu_panen": "Not harvested — steady growth visible within 2–4 months",
+      "tips": "Don't submerge the entire root system — let the top ⅓ stay dry to prevent rot. Change the water every 3–4 weeks since this plant grows slowly.",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg/330px-Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg"
+  },
+  {
+    "id": "hias-4",
+    "name": "Moon Orchid",
+    "scientificName": "Phalaenopsis amabilis",
+    "category": "Tanaman Hias",
+    "difficulty": "sulit",
+    "description": "Indonesia's charm flower, with large, elegant, long-lasting white blooms.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 7,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Mist the roots and coconut-husk medium every morning.",
+      "sunlight": "Shaded light (under 60-70% shade netting).",
+      "pruning": "Cut off all flower stalks once they have wilted.",
+      "fertilizer": "Spray on a flowering fertilizer once a week.",
+      "commonProblems": "Leaf rot caused by water trapped between the leaves."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA)",
+      "media": "Hydroton (LECA) — the most recommended medium for orchids",
+      "nutrisi": "Special liquid orchid fertilizer 300–500 ppm (EC 0.6–1.0) — a very low dose",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "Not harvested — blooms optimally after 6–12 months of acclimation",
+      "tips": "Let the LECA wick water up by capillary action; don't fully submerge the roots. Use a transparent pot so you can monitor the condition of the healthy green roots.",
+      "kesulitan": "Sulit"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Phalaenopsis_amabilis_Orchi_198.jpg/330px-Phalaenopsis_amabilis_Orchi_198.jpg"
+  },
+  {
+    "id": "hias-5",
+    "name": "Weeping Fig Bonsai",
+    "scientificName": "Ficus benjamina",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A classic bonsai with beautiful aerial roots, very popular in Indonesia.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 60,
+      "pruning": 60,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water every day during the dry season.",
+      "sunlight": "Needs full sun.",
+      "pruning": "Prune regularly to shape the canopy.",
+      "fertilizer": "Slow-release NPK fertilizer every 2 months.",
+      "commonProblems": "Mealybugs on the leaves and root rot if the pot has no drainage holes."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Weeping fig bonsai needs a special soil medium to develop nebari (surface roots) and is not suited to hydroponic systems.",
+      "kesulitan": "-"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ficus_microcarpa_kz3.jpg/400px-Ficus_microcarpa_kz3.jpg"
+  },
+  {
+    "id": "hias-6",
+    "name": "Philodendron",
+    "scientificName": "Philodendron hederaceum",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A tropical climbing plant with glossy green leaves, easy to care for and beautifully trailing.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water when the top 2 cm of medium is dry; it must never be waterlogged.",
+      "sunlight": "Moderate to bright indirect light.",
+      "pruning": "Trim the tips of the vines to encourage branching.",
+      "fertilizer": "Liquid NPK fertilizer once a month.",
+      "commonProblems": "Leaves turn yellow from overwatering or insufficient light."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / DWC",
+      "media": "Rockwool or hydroton",
+      "nutrisi": "AB Mix 700–1000 ppm (EC 1.4–2.0)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "Not harvested — active vine growth visible within 1–2 months",
+      "tips": "Philodendron adapts very easily to water. Just place stem cuttings in clean water for 2 weeks to root them before moving to the nutrient solution.",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Philodendron_scandens_subsp_oxycardium2.jpg/330px-Philodendron_scandens_subsp_oxycardium2.jpg"
+  },
+  {
+    "id": "hias-7",
+    "name": "Golden Pothos",
+    "scientificName": "Epipremnum aureum",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "Pothos, a super hardy climbing plant great for beginners that can live in water or soil.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 60,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water 1-2 times a week; let the medium dry out a bit first.",
+      "sunlight": "Very tolerant of low light, but grows best in indirect light.",
+      "pruning": "Cut back overly long vines to maintain its shape.",
+      "fertilizer": "Diluted liquid fertilizer every 2 months.",
+      "commonProblems": "Yellow leaves from being watered too often."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky (water only)",
+      "media": "No medium — roots directly in water",
+      "nutrisi": "Very diluted AB Mix 400–700 ppm (EC 0.8–1.4) or even plain water",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "Not harvested — thrives within 2–4 weeks",
+      "tips": "Golden pothos is the best plant for hydroponic beginners — just put a cutting in a clear water bottle and place it somewhere bright. Change the water every 1–2 weeks.",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Money_Plant_%28Epipremnum_aureum%29_4.jpg/330px-Money_Plant_%28Epipremnum_aureum%29_4.jpg"
+  },
+  {
+    "id": "hias-8",
+    "name": "ZZ Plant",
+    "scientificName": "Zamioculcas zamiifolia",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A glossy plant that is extremely drought-tolerant, perfect for an office or bedroom.",
+    "schedules": {
+      "watering": 10,
+      "fertilizer": 90,
+      "pruning": 60,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water very infrequently, once every 1-2 weeks; let it dry out completely.",
+      "sunlight": "Low-light tolerant; avoid direct sun.",
+      "pruning": "Cut yellowing leaves off at the base of the stalk.",
+      "fertilizer": "Slow-release fertilizer every 3 months.",
+      "commonProblems": "Rhizome rot if watered too often."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "The ZZ Plant has water-storing rhizomes that are very prone to rot if submerged in solution — not recommended for hydroponics.",
+      "kesulitan": "-"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Zamioculcas_zamiifolia_1.jpg/330px-Zamioculcas_zamiifolia_1.jpg"
+  },
+  {
+    "id": "hias-9",
+    "name": "Cactus",
+    "scientificName": "Echinopsis spp.",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A spiny cactus with bright seasonal flowers; it needs little water and minimal care.",
+    "schedules": {
+      "watering": 14,
+      "fertilizer": 180,
+      "pruning": 60,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water every 2 weeks, less often during the rainy season.",
+      "sunlight": "Full sun all day long.",
+      "pruning": "No pruning needed; just clean off the dried parts.",
+      "fertilizer": "Special cactus fertilizer twice a year.",
+      "commonProblems": "Base rot if water pools in the medium."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Cacti are adapted to extremely dry conditions — a constantly wet hydroponic system completely contradicts their basic needs.",
+      "kesulitan": "-"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Kaktus_5_fcm.jpg/400px-Kaktus_5_fcm.jpg"
+  },
+  {
+    "id": "hias-10",
+    "name": "Calathea",
+    "scientificName": "Calathea ornata",
+    "category": "Tanaman Hias",
+    "difficulty": "sulit",
+    "description": "An exotic plant with white-striped leaves that are purple underneath; its leaves move uniquely to follow the light.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days with settled, chlorine-free water.",
+      "sunlight": "Shaded indirect light, away from direct AC airflow.",
+      "pruning": "Cut dried leaves off at the base.",
+      "fertilizer": "Diluted liquid NPK fertilizer once a month.",
+      "commonProblems": "Brown leaf tips from chlorine in the water or air that is too dry."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / Semi-hydroponic",
+      "media": "Hydroton or a perlite + cocopeat mix",
+      "nutrisi": "Diluted AB Mix 600–800 ppm (EC 1.2–1.6) — use chlorine/fluoride-free water",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "Not harvested — the leaf pattern grows more beautiful after 2–3 months of acclimation",
+      "tips": "Calathea is very sensitive to minerals in water — use rainwater or water that has settled for 24 hours. Avoid placing it near direct AC airflow.",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Calathea_ornata.jpg/330px-Calathea_ornata.jpg"
+  },
+  {
+    "id": "sayur-1",
+    "name": "Spinach",
+    "scientificName": "Amaranthus tricolor",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "A leafy green that is very easy to grow in the home garden, rich in iron.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water twice a day, morning and evening.",
+      "sunlight": "Full sun.",
+      "pruning": "No pruning needed; harvested by pulling the whole plant.",
+      "fertilizer": "Urea or manure fertilizer 2 weeks after planting.",
+      "commonProblems": "Eaten by leaf caterpillars and grasshoppers."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Kratky",
+      "media": "Rockwool or foam sponge",
+      "nutrisi": "Leafy-vegetable AB Mix 800–1200 ppm (EC 1.6–2.4)",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "14–20 days after transplanting (very fast!)",
+      "tips": "Sow the seeds in rockwool first for 5–7 days, then move them to the NFT system. It's a great fit for a simple household-scale floating raft (DWC) system.",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Amaranthus_tricolor_in_a_flower_bed_near_Notre-Dame_cathedral_in_Paris3.jpg/330px-Amaranthus_tricolor_in_a_flower_bed_near_Notre-Dame_cathedral_in_Paris3.jpg"
+  },
+  {
+    "id": "sayur-2",
+    "name": "Water Spinach",
+    "scientificName": "Ipomoea reptans",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "A favorite vegetable of Indonesians, fast-growing with a short harvest time (3-4 weeks).",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 10,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Needs a lot of water; keep the medium consistently moist.",
+      "sunlight": "Full sun.",
+      "pruning": "You can cut off the top when harvesting so new shoots grow.",
+      "fertilizer": "Liquid NPK fertilizer every 10 days.",
+      "commonProblems": "Leaf spots from fungus if planted too densely."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool or cocopeat",
+      "nutrisi": "Vegetable AB Mix 1000–1500 ppm (EC 2.0–3.0) — water spinach needs high nutrition",
+      "ph_ideal": "5.5–7.0",
+      "waktu_panen": "21–30 days from sowing — can be multi-harvested by cutting the top",
+      "tips": "Water spinach grows very aggressively in hydroponics — it can grow twice as fast as in soil. First harvest at 21 days, then cut and let it grow again.",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1637694841812-34de87c60b53?w=400&q=80"
+  },
+  {
+    "id": "sayur-3",
+    "name": "Cherry Tomato",
+    "scientificName": "Solanum lycopersicum",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "Small, sweet tomatoes, perfect for growing in hanging pots or polybags on the patio.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water regularly every morning.",
+      "sunlight": "Morning sun is very good.",
+      "pruning": "Remove the old lower leaves that touch the soil.",
+      "fertilizer": "High-phosphorus and high-potassium fertilizer once it starts flowering.",
+      "commonProblems": "Blossom-end rot from a lack of calcium."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Ebb & Flow",
+      "media": "Rockwool or perlite + cocopeat",
+      "nutrisi": "Fruiting AB Mix 1200–2500 ppm (EC 2.5–5.0) — increase during fruiting",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "55–75 days from sowing — 2 weeks faster than soil-grown",
+      "tips": "Tie the tomato stem to a vertical stake since it grows very fast in hydroponics. When it flowers, gently shake the stem daily to aid pollination.",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/330px-Tomato_je.jpg"
+  },
+  {
+    "id": "sayur-4",
+    "name": "Bird's Eye Chili",
+    "scientificName": "Capsicum frutescens",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "Indonesia's favorite hot chili, very productive in pots and can be harvested many times.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every day; don't let it wilt.",
+      "sunlight": "Full sun, at least 6 hours a day.",
+      "pruning": "Remove the first flower so the plant grows stronger.",
+      "fertilizer": "KCl and TSP fertilizer once a month.",
+      "commonProblems": "Fusarium wilt and red spider mite pests."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Ebb & Flow",
+      "media": "Rockwool + hydroton",
+      "nutrisi": "Fruiting AB Mix 1000–2000 ppm (EC 2.0–4.0) — increase potassium during fruiting",
+      "ph_ideal": "5.5–6.8",
+      "waktu_panen": "75–90 days from sowing — productivity can be 3 times higher in hydroponics",
+      "tips": "Bird's eye chili is the best candidate for long-term hydroponics — a single plant can keep producing for 1–2 years. Make sure the solution is well aerated with an air pump.",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Tabasco_peppers.JPG/330px-Tabasco_peppers.JPG"
+  },
+  {
+    "id": "sayur-5",
+    "name": "Lettuce",
+    "scientificName": "Lactuca sativa",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "Fresh salad greens that can be harvested in just 30-40 days, ideal for a balcony.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water regularly every day; keep the medium moist.",
+      "sunlight": "Morning sun; avoid the harsh midday heat as it wilts quickly.",
+      "pruning": "Pick only the outer leaves so it keeps growing.",
+      "fertilizer": "Liquid nitrogen fertilizer every 2 weeks.",
+      "commonProblems": "Bolts quickly (premature flowering) in temperatures that are too hot."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky",
+      "media": "Rockwool or foam sponge",
+      "nutrisi": "Leafy-vegetable AB Mix 700–1100 ppm (EC 1.4–2.2)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "25–35 days after transplanting — this is the most popular plant for hydroponic beginners!",
+      "tips": "Lettuce is the best plant for learning hydroponics. With the Kratky method (a used bottle), you don't need a pump at all — just fill it with nutrients and wait to harvest.",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Iceberg_lettuce_in_SB.jpg/330px-Iceberg_lettuce_in_SB.jpg"
+  },
+  {
+    "id": "sayur-6",
+    "name": "Mustard Greens",
+    "scientificName": "Brassica rapa",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "A broad-leafed vegetable for stir-fries, with a quick harvest in 30-40 days from planting.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 10,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every morning; the medium must stay consistently moist.",
+      "sunlight": "Full sun; grows better in the dry season.",
+      "pruning": "Not needed; harvest all at once by pulling the plant.",
+      "fertilizer": "Urea fertilizer two weeks after planting.",
+      "commonProblems": "Cabbage worms and aphids."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky / Floating Raft",
+      "media": "Rockwool or foam sponge",
+      "nutrisi": "Leafy-vegetable AB Mix 800–1200 ppm (EC 1.6–2.4)",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "25–35 days after transplanting",
+      "tips": "A floating raft system is ideal for mustard greens — use a piece of scrap styrofoam as the raft with 5 cm holes. Great for household-scale production.",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Brassica_rapa_plant.jpg/330px-Brassica_rapa_plant.jpg"
+  },
+  {
+    "id": "obat-1",
+    "name": "Cat's Whiskers",
+    "scientificName": "Orthosiphon aristatus",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "A medicinal plant with flowers resembling a cat's whiskers, known to help with urinary tract health.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 180
+    },
+    "careDetails": {
+      "watering": "Water once a day; it loves moist soil.",
+      "sunlight": "Full sun or partial shade.",
+      "pruning": "Prune after heavy flowering to stimulate new shoots.",
+      "fertilizer": "Organic fertilizer every month.",
+      "commonProblems": "Aphid pests on the tips of young shoots."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Kratky",
+      "media": "Rockwool or cocopeat",
+      "nutrisi": "Herbal AB Mix 800–1200 ppm (EC 1.6–2.4)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "45–60 days from sowing — harvest the leaves and young flowers",
+      "tips": "The active compound orthosiphonin is higher in plants under mild stress — don't give too much nutrition. Harvest before heavy flowering for the highest levels.",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Orthosiphon_aristatus_in_Kadavoor.jpg/330px-Orthosiphon_aristatus_in_Kadavoor.jpg"
+  },
+  {
+    "id": "obat-2",
+    "name": "Green Chiretta",
+    "scientificName": "Andrographis paniculata",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "The 'king of bitters,' with remarkable benefits for reducing fever and boosting immunity.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 60,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Drought-tolerant; water when the soil is dry.",
+      "sunlight": "Full sun is better for its active-compound content.",
+      "pruning": "Cut off the top before flowering to harvest the leaves.",
+      "fertilizer": "Compost fertilizer at the start of planting.",
+      "commonProblems": "Rarely affected by pests because of its very bitter taste."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / NFT",
+      "media": "Rockwool or cocopeat",
+      "nutrisi": "Herbal AB Mix 700–1000 ppm (EC 1.4–2.0) — low so the andrographolide content is optimal",
+      "ph_ideal": "5.5–7.0",
+      "waktu_panen": "60–75 days — harvest the leaves before the plant flowers",
+      "tips": "Green chiretta grows well in hydroponics, though it's rarely done. The bitter content (andrographolide) is actually higher in plants that are slightly 'deprived' — don't over-fertilize.",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Andrographis_paniculata_%28Kalpa%29_in_Narshapur_forest%2C_AP_W2_IMG_0867.jpg/330px-Andrographis_paniculata_%28Kalpa%29_in_Narshapur_forest%2C_AP_W2_IMG_0867.jpg"
+  },
+  {
+    "id": "obat-3",
+    "name": "Betel",
+    "scientificName": "Piper betle",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "A traditional Indonesian climbing plant with naturally antiseptic leaves for oral and skin health.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days; it likes a moist but not waterlogged medium.",
+      "sunlight": "Shade; it doesn't like direct sun for too long.",
+      "pruning": "Trim overly long vines and old leaves.",
+      "fertilizer": "Manure fertilizer once a month.",
+      "commonProblems": "Fungus on the leaves if it's too humid with no air circulation."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / DWC",
+      "media": "Hydroton or roots directly in water",
+      "nutrisi": "Diluted AB Mix 600–900 ppm (EC 1.2–1.8)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "Harvest the leaves after 3–4 weeks of acclimation, then continuously",
+      "tips": "Betel is very easy to propagate from cuttings and grow in water — a good fit as a hanging hydroponic plant indoors. Make sure there's a pole or netting for the vines to climb.",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Piper_betle_plant.jpg/330px-Piper_betle_plant.jpg"
+  },
+  {
+    "id": "obat-4",
+    "name": "Gotu Kola",
+    "scientificName": "Centella asiatica",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "A popular herb for improving brain function and skin-cell regeneration, growing as a creeper.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 180
+    },
+    "careDetails": {
+      "watering": "Likes moisture; water every 2 days or when the medium starts to dry out.",
+      "sunlight": "Shade; grows well under trees or shade netting.",
+      "pruning": "Trim the runners that creep out of the pot.",
+      "fertilizer": "Liquid organic fertilizer once a month.",
+      "commonProblems": "Dies if deprived of water for a long time."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky",
+      "media": "Rockwool or foam sponge",
+      "nutrisi": "Herbal AB Mix 700–1100 ppm (EC 1.4–2.2)",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "30–45 days — harvest the young leaves regularly",
+      "tips": "Gotu kola spreads quickly in an NFT system. The asiaticoside (main active compound) content is higher in plants harvested young — harvest every 2 weeks.",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Centella_asiatica_%28%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%81%E0%A6%A8%E0%A6%BF%29_%283%29.jpg/330px-Centella_asiatica_%28%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%81%E0%A6%A8%E0%A6%BF%29_%283%29.jpg"
+  },
+  {
+    "id": "obat-5",
+    "name": "Noni",
+    "scientificName": "Morinda citrifolia",
+    "category": "Obat",
+    "difficulty": "sedang",
+    "description": "A shrub with unusual fruit, valued as an immune stimulant and a powerful antioxidant.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 60,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days; drought-tolerant once mature.",
+      "sunlight": "Full sun is preferred.",
+      "pruning": "Prune the branches to control size and encourage fruiting.",
+      "fertilizer": "Manure and compost every 2 months.",
+      "commonProblems": "Fruit rots if overwatered during the rainy season."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Noni is a shrub that grows large (2–6 meters). Its root system and size make it unsuitable for home hydroponic systems.",
+      "kesulitan": "-"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Noni_fruit_%28Morinda_citrifolia%29.jpg/330px-Noni_fruit_%28Morinda_citrifolia%29.jpg"
+  },
+  {
+    "id": "herbal-1",
+    "name": "Red Ginger",
+    "scientificName": "Zingiber officinale var. rubrum",
+    "category": "Herbal",
+    "difficulty": "sedang",
+    "description": "A spicy rhizome that warms the body, popular for hot herbal drinks and jamu.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2 days; avoid standing water so the rhizome doesn't rot.",
+      "sunlight": "A somewhat shaded spot; avoid harsh direct sunlight.",
+      "pruning": "Remove yellowing leaves.",
+      "fertilizer": "Manure and kitchen ash every month.",
+      "commonProblems": "Bacterial wilt disease and rhizome rot."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Red ginger is a rhizome plant that needs soil space to develop its rhizomes. A hydroponic system is not suitable for optimal ginger rhizome growth.",
+      "kesulitan": "-"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Koeh-146-no_text.jpg/330px-Koeh-146-no_text.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "herbal-2",
+    "name": "Aloe Vera",
+    "scientificName": "Aloe vera",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "A versatile medicinal plant for skin, hair, and digestive health.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 90,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 5-7 days; make sure the soil is completely dry before watering again.",
+      "sunlight": "Abundant bright light; morning sun is very good.",
+      "pruning": "Cut the lowest leaves with a sharp knife when harvesting.",
+      "fertilizer": "Slow-release NPK fertilizer every 3 months.",
+      "commonProblems": "Leaf-base rot from overwatering."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Aloe vera is a succulent that stores water in its leaves — too much water will actually make the plant rot. A hydroponic system is not recommended.",
+      "kesulitan": "-"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/330px-Aloe_vera_flower_inset.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "herbal-3",
+    "name": "Turmeric",
+    "scientificName": "Curcuma longa",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "A golden-yellow rhizome rich in curcumin for anti-inflammatory benefits, a kitchen-spice staple in every home.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days; the medium must be moist but not waterlogged.",
+      "sunlight": "Shade to partial shade; avoid harsh direct sun.",
+      "pruning": "Let it grow naturally; cut off the parts that dry out.",
+      "fertilizer": "Manure and compost every month.",
+      "commonProblems": "Rhizome rot from poor drainage."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Turmeric is a rhizome plant that needs deep, loose soil to develop large yellow rhizomes. Not suitable for hydroponic systems.",
+      "kesulitan": "-"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Turmeric_inflorescence.jpg/330px-Turmeric_inflorescence.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "herbal-4",
+    "name": "Lemongrass",
+    "scientificName": "Cymbopogon citratus",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "A versatile, lemon-scented clumping plant that repels mosquitoes while serving as a cooking herb.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days; tolerates short dry spells.",
+      "sunlight": "Full sun.",
+      "pruning": "Trim away the dry, browned outer leaves.",
+      "fertilizer": "Apply manure fertilizer once a month.",
+      "commonProblems": "Rarely bothered by pests thanks to its strong scent."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Kratky",
+      "media": "Hydroton or roots directly in water",
+      "nutrisi": "AB Mix 700–1000 ppm (EC 1.4–2.0)",
+      "ph_ideal": "5.5–7.0",
+      "waktu_panen": "60–90 days — harvest the thickened lower stalks",
+      "tips": "Place fresh lemongrass stalks (leftovers from cooking) in plain water for 2–3 weeks until they root, then move them into the nutrient solution. This is the easiest way to start lemongrass hydroponically.",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gardenology.org-IMG_2892_rbgs11jan.jpg/330px-Gardenology.org-IMG_2892_rbgs11jan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "herbal-5",
+    "name": "Aromatic Ginger (Kencur)",
+    "scientificName": "Kaempferia galanga",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "A small rhizome with big potential for throat health and relieving coughs.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 60,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days; reduce during the rainy season.",
+      "sunlight": "Shade; it dislikes full sun.",
+      "pruning": "Let it wilt naturally in the dry season—the rhizome stays alive in the soil.",
+      "fertilizer": "Apply organic fertilizer every 2 months.",
+      "commonProblems": "The rhizome fails to develop if the medium is too compact."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Aromatic ginger is a shallow-rhizome plant that needs a loose growing medium. Its rhizomes cannot develop properly in a water-based hydroponic system.",
+      "kesulitan": "-"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Galangal.web.jpg/330px-Galangal.web.jpg"
+  },
+  {
+    "id": "aroma-1",
+    "name": "Rosemary",
+    "scientificName": "Salvia rosmarinus",
+    "category": "Aromaterapi",
+    "difficulty": "sulit",
+    "description": "A distinctively fragrant plant for Western cooking and a calming essential oil.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 60,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Very prone to overwatering. Water only when the growing medium is dry all the way to the bottom.",
+      "sunlight": "Full sun, 6-8 hours a day.",
+      "pruning": "Trim the tips of the branches to maintain shape and for harvesting.",
+      "fertilizer": "Avoid over-fertilizing; apply a thin layer of compost every 2 months.",
+      "commonProblems": "Often dies suddenly from root rot caused by an insufficiently porous medium."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool + coarse perlite",
+      "nutrisi": "Herbal AB Mix 700–1000 ppm (EC 1.4–2.0) — keep it from being too high so the aroma stays strong",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "60–90 days — routinely harvest 5–10 cm branch tips",
+      "tips": "Rosemary in hydroponics must have very good solution aeration — use a powerful air pump. Essential oil content is higher when the plant is slightly 'stressed' — reduce nutrients by 20% from the standard dose.",
+      "kesulitan": "Sulit"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Rosemary_in_bloom.JPG/330px-Rosemary_in_bloom.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "aroma-2",
+    "name": "Lavender",
+    "scientificName": "Lavandula angustifolia",
+    "category": "Aromaterapi",
+    "difficulty": "sulit",
+    "description": "A purple flower with a calming aroma that effectively repels mosquitoes and aids sleep.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 60,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water sparingly; let it dry out between waterings.",
+      "sunlight": "Full sun all day long.",
+      "pruning": "Trim flowers as they begin to fade to keep it blooming.",
+      "fertilizer": "A little dolomite lime and compost.",
+      "commonProblems": "Fungus in tropical climates that are too humid and lack airflow."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Lavender is very prone to root rot in humid tropical climates — a hydroponic system makes this worse. It is better grown in a perlite + sand medium with extreme drainage.",
+      "kesulitan": "-"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-087.jpg/330px-Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-087.jpg"
+  },
+  {
+    "id": "aroma-3",
+    "name": "Mint",
+    "scientificName": "Mentha spicata",
+    "category": "Aromaterapi",
+    "difficulty": "mudah",
+    "description": "A fresh, fast-growing mint plant, perfect for refreshing drinks, salads, and aromatherapy.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 180
+    },
+    "careDetails": {
+      "watering": "Water every 2 days; it likes moist soil.",
+      "sunlight": "Moderate indirect light; it can grow well indoors.",
+      "pruning": "Prune aggressively to prevent flowering and preserve the aroma.",
+      "fertilizer": "Apply a liquid nitrogen fertilizer every month.",
+      "commonProblems": "Spreads quickly (invasive); it is best planted in a separate pot."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky",
+      "media": "Rockwool or cocopeat",
+      "nutrisi": "Herbal AB Mix 800–1200 ppm (EC 1.6–2.4)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "25–40 days from cuttings — one of the best herbs for hydroponics!",
+      "tips": "Mint grows VERY fast in hydroponics — it can be harvested within a month. Take a fresh mint stem cutting from the market, put it in water, wait 1–2 weeks for it to root, then move it into the nutrient solution.",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Minze.jpg/330px-Minze.jpg"
+  },
+  {
+    "id": "aroma-4",
+    "name": "Pandan",
+    "scientificName": "Pandanus amaryllifolius",
+    "category": "Aromaterapi",
+    "difficulty": "mudah",
+    "description": "An aromatic plant characteristic of Southeast Asia, used as a natural food fragrance and for aromatherapy.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 2 days; it likes a fairly moist medium.",
+      "sunlight": "Shade to partial shade; avoid direct, overly harsh sun.",
+      "pruning": "Trim old or torn leaves to keep it looking neat.",
+      "fertilizer": "Apply manure fertilizer once a month.",
+      "commonProblems": "Leaf tips dry out if it gets too dry or lacks nutrients."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Kratky",
+      "media": "Hydroton or roots directly in water",
+      "nutrisi": "AB Mix 700–1100 ppm (EC 1.4–2.2)",
+      "ph_ideal": "5.5–7.0",
+      "waktu_panen": "Harvest leaves after 2–3 months of acclimation — choose the older leaves",
+      "tips": "Pandan is very easy to grow hydroponically — take an offshoot that already has roots and place it in a nutrient-filled bucket. Pandan's aroma is actually stronger in plants under slight water stress.",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Chottola.jpg/330px-Chottola.jpg"
+  },
+  {
+    "id": "sayur-7",
+    "name": "Eggplant",
+    "scientificName": "Solanum melongena",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "A glossy purple fruiting vegetable rich in antioxidants, well suited to growing in large polybags.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every morning; never let the medium dry out.",
+      "sunlight": "Full sun, at least 6-8 hours a day.",
+      "pruning": "Remove excess side shoots so the fruit grows larger.",
+      "fertilizer": "Apply a high-K NPK fertilizer during the flowering and fruiting stage.",
+      "commonProblems": "Stem borers and whiteflies."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Ebb & Flow",
+      "media": "Rockwool + perlite or hydroton",
+      "nutrisi": "Fruiting AB Mix 1500–2500 ppm (EC 3.0–5.0)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "60–80 days from sowing — more uniform fruit and a larger size",
+      "tips": "Eggplant needs a stable system with good aeration. Use net pots at least 10 cm in size and make sure the air pump runs 24 hours so the roots don't run short of oxygen.",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/330px-Solanum_melongena_24_08_2012_%281%29.JPG"
+  },
+  {
+    "id": "sayur-8",
+    "name": "Cucumber",
+    "scientificName": "Cucumis sativus",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "A fresh, healthy fruiting vegetable that can climb a fence or a balcony trellis.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 10,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every day; this plant needs a lot of water.",
+      "sunlight": "Full sun.",
+      "pruning": "Remove old leaves and unproductive branches.",
+      "fertilizer": "Alternate manure and NPK fertilizer every 10 days.",
+      "commonProblems": "Powdery mildew on the leaves in humid conditions without airflow."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool + hydroton",
+      "nutrisi": "Fruiting AB Mix 1200–2000 ppm (EC 2.4–4.0)",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "35–50 days from sowing — far faster and more productive than growing in soil",
+      "tips": "Cucumber climbs very fast in hydroponics — prepare a stake or a vertical climbing net. Harvest as often as possible (every 2 days) to keep the plant producing.",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/ARS_cucumber.jpg/330px-ARS_cucumber.jpg"
+  },
+  {
+    "id": "sayur-9",
+    "name": "Carrot",
+    "scientificName": "Daucus carota",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "An orange root vegetable rich in beta-carotene; it needs a loose, deep soil medium to grow well.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 21,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2 days; keep moisture even.",
+      "sunlight": "Full sun.",
+      "pruning": "Thin the foliage so light can reach all the plants.",
+      "fertilizer": "Apply potassium and phosphate fertilizer to encourage root development.",
+      "commonProblems": "The roots fork if the soil is too compact or contains stones."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Carrot is a root crop that needs deep, loose soil space to grow. A standard hydroponic system does not support optimal root development.",
+      "kesulitan": "-"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Daucus_carota_May_2008-1_edit.jpg/330px-Daucus_carota_May_2008-1_edit.jpg"
+  },
+  {
+    "id": "sayur-10",
+    "name": "Green Beans",
+    "scientificName": "Phaseolus vulgaris",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "Nutritious green pods that fruit quickly (45-55 days); they can climb or grow upright depending on the variety.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every day, especially during the dry season.",
+      "sunlight": "Full sun.",
+      "pruning": "Harvest regularly to stimulate new pods.",
+      "fertilizer": "Apply a low-nitrogen NPK fertilizer once they begin to flower.",
+      "commonProblems": "Leaf rust and pod borers."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool + perlite",
+      "nutrisi": "AB Mix 1000–1500 ppm (EC 2.0–3.0)",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "45–55 days from sowing — slightly slower than leafy vegetables",
+      "tips": "Choose an upright (bush bean) variety for hydroponics so it's easier to manage. Green beans fix their own nitrogen, so the N level in the solution can be slightly lower.",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Snijboon_peulen_Phaseolus_vulgaris.jpg/330px-Snijboon_peulen_Phaseolus_vulgaris.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "buah-1",
+    "name": "Strawberry",
+    "scientificName": "Fragaria × ananassa",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "A tiny red fruit with a sweet-tart flavor that grows beautifully in a hanging pot or on a patio.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 2 days; keep water off the fruit and leaves to prevent rot.",
+      "sunlight": "Full sun 6-8 hours; ideal temperature below 28°C.",
+      "pruning": "Remove excess runners so energy goes to the fruit.",
+      "fertilizer": "Apply a high-potassium (K) fertilizer for sweet, abundant fruit.",
+      "commonProblems": "Fruit rot from high humidity and poor air circulation."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool + cocopeat",
+      "nutrisi": "Fruiting AB Mix 1000–1500 ppm vegetative, 1500–2000 ppm (EC 3.0–4.0) when fruiting",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "60–90 days — fruit is redder, sweeter, and more uniform than soil-grown",
+      "tips": "Strawberry is the most popular fruit for home hydroponics. An NFT system tilted 30–45° works very well because the fruit hangs down and is easy to harvest without getting dirty.",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/330px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "buah-2",
+    "name": "Papaya",
+    "scientificName": "Carica papaya",
+    "category": "Buah-buahan",
+    "difficulty": "mudah",
+    "description": "A super-productive tropical fruit that can be harvested in 6-9 months and is very popular in Indonesian home gardens.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days; it tolerates short dry spells but must not become waterlogged.",
+      "sunlight": "Full sun all day long.",
+      "pruning": "It needs little pruning—just remove the old lower leaves.",
+      "fertilizer": "Apply manure + NPK fertilizer once a month.",
+      "commonProblems": "Papaya butterflies and stem base rot in wet soil."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Papaya is a large tree that needs strong roots anchored deep in the soil. Its size and structural needs make a home hydroponic system unfeasible.",
+      "kesulitan": "-"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Carica_papaya_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-029.jpg/330px-Carica_papaya_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-029.jpg"
+  },
+  {
+    "id": "buah-3",
+    "name": "Red Guava",
+    "scientificName": "Psidium guajava",
+    "category": "Buah-buahan",
+    "difficulty": "mudah",
+    "description": "A tropical fruit rich in vitamin C with sweet pink flesh; it can be grown in a large pot.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days; reduce during the rainy season.",
+      "sunlight": "Full sun.",
+      "pruning": "Prune after harvest to stimulate new flowers.",
+      "fertilizer": "Apply NPK fertilizer and compost once a month.",
+      "commonProblems": "Fruit rot caused by fruit flies; bag the young fruit with plastic covers."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Guava is a tree with a large root system that needs deep soil. It is not suitable for a standard home hydroponic system.",
+      "kesulitan": "-"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Psidium_guajava_fruit.jpg/330px-Psidium_guajava_fruit.jpg"
+  },
+  {
+    "id": "buah-4",
+    "name": "Cavendish Banana",
+    "scientificName": "Musa acuminata",
+    "category": "Buah-buahan",
+    "difficulty": "mudah",
+    "description": "A popular banana variety with sweet, nutritious fruit that grows fast and produces well in tropical climates.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days; it needs a lot of water in hot weather.",
+      "sunlight": "Full sun.",
+      "pruning": "Keep the single best sucker and remove the others so nutrients stay focused.",
+      "fertilizer": "Apply a high-potassium fertilizer for optimal fruit.",
+      "commonProblems": "Panama wilt disease (Fusarium) and root nematodes."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Banana needs a very deep, strong root system in the soil. The plant's size and structural needs make a conventional hydroponic system unfeasible.",
+      "kesulitan": "-"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Musa_acuminata_in_india01.jpg/330px-Musa_acuminata_in_india01.jpg"
+  },
+  {
+    "id": "buah-5",
+    "name": "Key Lime",
+    "scientificName": "Citrus aurantiifolia",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "A versatile small lime for cooking, drinks, and health, well suited to growing in a medium-sized pot.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days; let the top layer of soil dry out first.",
+      "sunlight": "Full sun, at least 8 hours a day.",
+      "pruning": "Prune crossing branches and dead branches.",
+      "fertilizer": "Apply a citrus-specific fertilizer or NPK every 3 months.",
+      "commonProblems": "Aphids, scale insects, and greening disease."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "tips": "Key lime is a woody tree that grows 2–5 meters — its root system and size far exceed the capacity of a home hydroponic system.",
+      "kesulitan": "-"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Citrus_%C3%97_aurantiifolia_%28Christm.%29_Swingle_%2851906868474%29.jpg/330px-Citrus_%C3%97_aurantiifolia_%28Christm.%29_Swingle_%2851906868474%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "buah-6",
+    "name": "Mini Watermelon",
+    "scientificName": "Citrullus lanatus",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "A small-sized watermelon that can be grown in a large polybag; the fruit is sweet with a thin rind.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every day; it needs a lot of water, especially during fruit formation.",
+      "sunlight": "Full sun all day long.",
+      "pruning": "Keep 1-2 fruits per plant and remove excess female flowers.",
+      "fertilizer": "Apply a high-phosphorus fertilizer when flowering and potassium when fruiting.",
+      "commonProblems": "Blossom-end rot and thrips infestations."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Ebb & Flow",
+      "media": "Rockwool + coarse hydroton",
+      "nutrisi": "Fruiting AB Mix 1200–1800 ppm vegetative, up to 2500–3500 ppm (EC 5.0–7.0) when fruiting",
+      "ph_ideal": "5.8–6.5",
+      "waktu_panen": "65–80 days — more consistent fruit size and higher sugar content",
+      "tips": "Support the watermelon fruit with a knitted net so it doesn't fall under its own weight. Reduce nitrogen and increase potassium once the fruit reaches about fist size.",
+      "kesulitan": "Sulit"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg/330px-Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "buah-7",
+    "name": "Grape",
+    "scientificName": "Vitis vinifera",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "An exotic fruit that climbs beautifully on a trellis; with a little patience it can fruit abundantly in Indonesia.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 21,
+      "pruning": 60,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days; reduce drastically after major pruning.",
+      "sunlight": "Full sun, at least 8 hours.",
+      "pruning": "Do major pruning once a year to stimulate new fruiting shoots.",
+      "fertilizer": "Apply potassium and boron fertilizer for abundant, sweet fruit.",
+      "commonProblems": "Powdery mildew and grape mites."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool + perlite",
+      "nutrisi": "Fruiting AB Mix 1000–1500 ppm vegetative, 1500–2500 ppm (EC 3.0–5.0) when fruiting",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "First year: vegetative. First harvest in year 2 — 90–120 days after flowering",
+      "tips": "Hydroponic grapes need a sturdy installation because the vine is heavy as it climbs. Nutrient management must be precise — excess nitrogen produces lots of leaves but little fruit.",
+      "kesulitan": "Sulit"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Cabernet_Sauvignon_Gaillac.jpg/330px-Cabernet_Sauvignon_Gaillac.jpg"
+  },
+  {
+    "id": "hias-11",
+    "name": "Peace Lily",
+    "scientificName": "Spathiphyllum wallisii",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A popular indoor ornamental plant with elegant white flowers and air-filtering ability. Tolerant of low-light conditions, it suits a corner of a room.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Low to moderate indirect light",
+      "soil": "Well-draining potting medium, rich in organic matter",
+      "temperature": "18–30°C",
+      "humidity": "High (>50%)",
+      "watering": "Water when the medium starts to dry out",
+      "fertilizer": "Apply a balanced liquid fertilizer (NPK) every 4 weeks during the active growing season; reduce in cold weather or the rainy season.",
+      "pruning": "Periodically trim old, dry, or damaged leaves or stems to stimulate new shoots and keep the plant looking neat.",
+      "commonProblems": "Mealybugs, spider mites, and root rot from an overly wet medium."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Pot of water",
+      "media": "Rockwool or a pot with roots in water",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "Ornamental plant, enjoyed year-round",
+      "nutrisi": "Diluted AB Mix (EC 0.8–1.2)",
+      "kesulitan": "Mudah",
+      "tips": "Peace lily is very easy in hydroponics — just place it in a pot of water with the roots partially submerged. Change the water every 1–2 weeks."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Peace_lily_-_1_-_cropped.jpg/330px-Peace_lily_-_1_-_cropped.jpg"
+  },
+  {
+    "id": "hias-12",
+    "name": "Anthurium",
+    "scientificName": "Anthurium andraeanum",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A tropical ornamental plant with striking red flowers and glossy leaves. It works as a premium indoor plant that lends a luxurious feel.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 21,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Bright indirect light",
+      "soil": "Orchid mix + perlite + cocopeat",
+      "temperature": "20–30°C",
+      "humidity": "High (>60%)",
+      "watering": "Water regularly; keep the medium moist",
+      "fertilizer": "Apply a balanced liquid fertilizer (NPK) every 4 weeks during the active growing season; reduce in cold weather or the rainy season.",
+      "pruning": "Periodically trim old, dry, or damaged leaves or stems to stimulate new shoots and keep the plant looking neat.",
+      "commonProblems": "Mealybugs, spider mites, and root rot from an overly wet medium."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Semi-Hydro",
+      "media": "LECA / clay balls",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "Ornamental plant; flowers appear regularly every 3–4 months",
+      "nutrisi": "AB Mix EC 1.0–1.5",
+      "kesulitan": "Sedang",
+      "tips": "Anthurium in LECA is very popular — wash the LECA clean and submerge the roots partially in a diluted nutrient solution. Make sure there is air space for the roots to breathe."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/AnthuriumAndraenum.jpg/330px-AnthuriumAndraenum.jpg"
+  },
+  {
+    "id": "hias-13",
+    "name": "Marble Queen Pothos",
+    "scientificName": "Epipremnum aureum 'Marble Queen'",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A pothos variety with beautiful white-and-green marbled leaves. Very hardy, tolerant of various conditions, and grows into a lovely trailing vine.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Medium to bright indirect light",
+      "soil": "General potting medium with good drainage",
+      "temperature": "16–30°C",
+      "humidity": "Moderate (40–70%)",
+      "watering": "Water when the top of the medium is dry",
+      "fertilizer": "Apply a balanced liquid fertilizer (NPK) every 4 weeks during the active growing season; reduce in cold weather or the rainy season.",
+      "pruning": "Periodically trim old, dry, or damaged leaves or stems to stimulate new shoots and keep the plant looking neat.",
+      "commonProblems": "Mealybugs, spider mites, and root rot from an overly wet medium."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Water / Propagation vase",
+      "media": "Just clean water + activated charcoal",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "Trailing ornamental plant, enjoy it year-round",
+      "nutrisi": "Liquid fertilizer at 1/4 dose, change water every 2 weeks",
+      "kesulitan": "Mudah",
+      "tips": "Pothos is the easiest hydroponic plant — just put a cutting in a glass vase of water. Add a few pieces of activated charcoal to prevent odor and algae."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Money_Plant_%28Epipremnum_aureum%29_4.jpg/330px-Money_Plant_%28Epipremnum_aureum%29_4.jpg"
+  },
+  {
+    "id": "hias-14",
+    "name": "Rubber Plant",
+    "scientificName": "Ficus elastica",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "An upright-stemmed ornamental plant with large glossy leaves in dark green or reddish-brown. Bold and modern-looking for a corner of a room.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Bright indirect light",
+      "soil": "Potting medium with very good drainage",
+      "temperature": "15–30°C",
+      "humidity": "Moderate (40–60%)",
+      "watering": "Water when the top 2–3 cm of the medium is dry",
+      "fertilizer": "Apply a balanced liquid fertilizer (NPK) every 4 weeks during the active growing season; reduce in cold weather or the rainy season.",
+      "pruning": "Periodically trim old, dry, or damaged leaves or stems to stimulate new shoots and keep the plant looking neat.",
+      "commonProblems": "Mealybugs, spider mites, and root rot from an overly wet medium."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "The rubber plant is less than ideal for hydroponics because its root system prefers a medium that gets fairly dry between waterings. It is better grown in a pot with a well-draining medium."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ficus_elastica_leaves_02.JPG/330px-Ficus_elastica_leaves_02.JPG"
+  },
+  {
+    "id": "hias-15",
+    "name": "Bird of Paradise",
+    "scientificName": "Strelitzia reginae",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A dramatic ornamental plant with large paddle-shaped leaves and orange-blue flowers resembling a bird. It brings a premium tropical feel to a room.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 21,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full light 6+ hours/day",
+      "soil": "Fertile potting medium with good drainage",
+      "temperature": "18–30°C",
+      "humidity": "Moderate (40–60%)",
+      "watering": "Water when the top of the medium dries out",
+      "fertilizer": "Apply a balanced liquid fertilizer (NPK) every 4 weeks during the active growing season; reduce in cold weather or the rainy season.",
+      "pruning": "Periodically trim old, dry, or damaged leaves or stems to stimulate new shoots and keep the plant looking neat.",
+      "commonProblems": "Mealybugs, spider mites, and root rot from an overly wet medium."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Bird of Paradise is not recommended for hydroponics because its root system is large and prefers a fertile soil medium. It needs a large pot to grow well."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Ave-do-para%C3%ADso%2C_Strelitzia_reginae%2C_em_Bag%C3%A9%2C_Rio_Grande_do_Sul%2C_Brasil_-_55211233712.jpg/330px-Ave-do-para%C3%ADso%2C_Strelitzia_reginae%2C_em_Bag%C3%A9%2C_Rio_Grande_do_Sul%2C_Brasil_-_55211233712.jpg"
+  },
+  {
+    "id": "sayur-11",
+    "name": "Pak Choi",
+    "scientificName": "Brassica rapa subsp. chinensis",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "A fast-harvesting leafy green popular in Indonesia. Crisp texture and mild flavor, well suited to stir-fries and soups. A favorite for hydroponic beginners because it is so easy.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 0,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full light 5–6 hours/day",
+      "soil": "Fertile, well-draining medium, or hydroponics",
+      "temperature": "18–28°C",
+      "humidity": "Moderate (50–70%)",
+      "watering": "Water regularly, 1–2x a day",
+      "fertilizer": "Apply a balanced NPK fertilizer or liquid compost every 2 weeks to support leaf and fruit growth.",
+      "pruning": "Periodically trim old, dry, or damaged leaves or stems to stimulate new shoots and keep the plant looking neat.",
+      "commonProblems": "Caterpillars, aphids, and leaf fungus when humidity is high."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Kratky",
+      "media": "Rockwool / sponge / cocopeat",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "25–35 days — the first harvest can be done within 1 month",
+      "nutrisi": "AB Mix EC 1.5–2.0",
+      "kesulitan": "Mudah",
+      "tips": "Pak choi is the best hydroponic plant for beginners! It grows fast, harvests in 25–30 days, and tolerates nutrient variation. Start with the Kratky method in a used bottle."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Brassica_rapa_plant.jpg/330px-Brassica_rapa_plant.jpg"
+  },
+  {
+    "id": "sayur-12",
+    "name": "Bell Pepper",
+    "scientificName": "Capsicum annuum var. grossum",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "A bell-shaped pepper in red, yellow, or green that's rich in vitamin C. Sweeter than regular chili peppers, popular in Western dishes and salads.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 14,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 8 hours/day",
+      "soil": "Fertile, compost-rich medium, pH 6.0–6.8",
+      "temperature": "20–30°C",
+      "humidity": "Moderate (50–65%)",
+      "watering": "Water regularly, avoid waterlogging",
+      "fertilizer": "Apply balanced NPK fertilizer or liquid compost every 2 weeks to support leaf and fruit growth.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Caterpillars, aphids, and leaf fungus in high humidity."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Dutch Bucket",
+      "media": "Rockwool / perlite + cocopeat",
+      "ph_ideal": "5.8–6.3",
+      "waktu_panen": "70–90 days — Harvest starts 2.5–3 months after planting",
+      "nutrisi": "AB Mix EC 2.0–3.0, high potassium during fruiting",
+      "kesulitan": "Sedang",
+      "tips": "Hydroponic bell peppers need stake support since the plant gets quite heavy when fruiting. Raise the nutrient EC from 2.0 to 2.5–3.0 once it enters the flowering and fruiting phase."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Capsicum_annuum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-027.jpg/330px-Capsicum_annuum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-027.jpg"
+  },
+  {
+    "id": "obat-6",
+    "name": "Temulawak (Javanese Ginger)",
+    "scientificName": "Curcuma zanthorrhiza",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "A medicinal plant native to Indonesia with a large orange rhizome. It helps boost appetite, supports liver health, and strengthens immunity.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Moderate light, tolerates partial shade",
+      "soil": "Loose, fertile soil rich in organic matter",
+      "temperature": "25–35°C",
+      "humidity": "High (60–80%)",
+      "watering": "Water regularly, keep the soil moist",
+      "fertilizer": "Organic fertilizer or compost once a month is enough; avoid excess chemical fertilizer so the plant stays safe to consume.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Aphids, mites, and rhizome/root rot if drainage is poor."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Temulawak isn't suited to hydroponics because the harvest is an underground rhizome that needs a solid medium to develop. It grows more effectively in a deep pot or in the garden."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Rhizoma_Curcumae_xanthorrhizae_by_Danny_S._-_001.jpg/400px-Rhizoma_Curcumae_xanthorrhizae_by_Danny_S._-_001.jpg"
+  },
+  {
+    "id": "obat-7",
+    "name": "Sambung Nyawa (Longevity Spinach)",
+    "scientificName": "Gynura procumbens",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "A medicinal plant believed to help lower blood sugar, blood pressure, and cholesterol. The leaves can be eaten raw or juiced.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 21,
+      "pruning": 14,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Moderate light, tolerates shade",
+      "soil": "Loose, fertile soil",
+      "temperature": "22–32°C",
+      "humidity": "Moderate (50–70%)",
+      "watering": "Water 2–3 times a week",
+      "fertilizer": "Organic fertilizer or compost once a month is enough; avoid excess chemical fertilizer so the plant stays safe to consume.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Aphids, mites, and rhizome/root rot if drainage is poor."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool / cocopeat",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "30–45 days — Harvest young leaves gradually",
+      "nutrisi": "AB Mix EC 1.2–1.8",
+      "kesulitan": "Mudah",
+      "tips": "Longevity spinach grows very fast in hydroponics. Harvest young leaves from the top regularly to encourage new growth. Well suited to NFT systems or indoor racks."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gynura_procumbens_%28Diabetes_plant%29_%281%29.jpg/330px-Gynura_procumbens_%28Diabetes_plant%29_%281%29.jpg"
+  },
+  {
+    "id": "obat-8",
+    "name": "Aloe Vera",
+    "scientificName": "Aloe vera",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "A versatile succulent whose leaf gel is beneficial for burns, skin irritation, and digestive health. Very easy to care for.",
+    "schedules": {
+      "watering": 10,
+      "fertilizer": 60,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun or bright indirect light",
+      "soil": "Cactus/succulent mix with excellent drainage",
+      "temperature": "15–35°C",
+      "humidity": "Low (30–50%)",
+      "watering": "Water infrequently, let the medium dry out completely",
+      "fertilizer": "Organic fertilizer or compost once a month is enough; avoid excess chemical fertilizer so the plant stays safe to consume.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Aphids, mites, and rhizome/root rot if drainage is poor."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Aloe vera isn't suited to hydroponics because, as a succulent, it needs dry periods between waterings. A constantly wet medium will cause root rot quickly."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/330px-Aloe_vera_flower_inset.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "obat-9",
+    "name": "Brotowali",
+    "scientificName": "Tinospora crispa",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "A climbing medicinal plant with green, uniquely textured stems. It tastes bitter but is highly beneficial for diabetes, fever, and boosting immunity.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 21,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun to partial shade",
+      "soil": "Fertile soil with good drainage",
+      "temperature": "25–35°C",
+      "humidity": "Moderate–High (50–80%)",
+      "watering": "Water 2–3 times a week",
+      "fertilizer": "Organic fertilizer or compost once a month is enough; avoid excess chemical fertilizer so the plant stays safe to consume.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Aphids, mites, and rhizome/root rot if drainage is poor."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Brotowali is a woody climbing plant better grown in the ground or a large pot. It isn't efficient for a hydroponic system."
+    },
+    "imageUrl": "https://images.unsplash.com/photo-1444459094717-a39ececb2069?w=400&q=80"
+  },
+  {
+    "id": "obat-10",
+    "name": "Black Cumin",
+    "scientificName": "Nigella sativa",
+    "category": "Obat",
+    "difficulty": "sedang",
+    "description": "A herb with beautiful purple flowers and highly beneficial black seeds. Called 'habbatussauda' in Islamic tradition, it's known as an all-purpose remedy for various conditions.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 21,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 6–8 hours/day",
+      "soil": "Loose soil with good drainage, pH 6.0–7.0",
+      "temperature": "15–25°C",
+      "humidity": "Low–Moderate (30–55%)",
+      "watering": "Water moderately, avoid overwatering",
+      "fertilizer": "Organic fertilizer or compost once a month is enough; avoid excess chemical fertilizer so the plant stays safe to consume.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Aphids, mites, and rhizome/root rot if drainage is poor."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / NFT",
+      "media": "Rockwool",
+      "ph_ideal": "6.0–6.8",
+      "waktu_panen": "90–120 days — Harvest the seeds once the pods have dried on the plant",
+      "nutrisi": "AB Mix EC 1.8–2.2",
+      "kesulitan": "Sedang",
+      "tips": "Black cumin can be grown hydroponically through the vegetative phase, but for optimal seed harvest it's better to move it to a soil medium. Keep the temperature from getting too hot (>30°C)."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Nsativa001Wien.jpg/330px-Nsativa001Wien.jpg"
+  },
+  {
+    "id": "herbal-6",
+    "name": "Basil",
+    "scientificName": "Ocimum basilicum",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "A fresh aromatic herb that's a kitchen essential. Basil leaves lend a distinctive aroma to fresh vegetable platters, pasta, and Italian dishes. Fast-growing and productive.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 14,
+      "pruning": 7,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 6–8 hours/day",
+      "soil": "Fertile medium, rich in organic matter, well-draining",
+      "temperature": "20–30°C",
+      "humidity": "Moderate (50–65%)",
+      "watering": "Water regularly, keep the medium moist",
+      "fertilizer": "Organic fertilizer or compost once a month is enough; avoid excess chemical fertilizer so the plant stays safe to consume.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Aphids, mites, and rhizome/root rot if drainage is poor."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Kratky",
+      "media": "Rockwool / sponge",
+      "ph_ideal": "5.5–6.5",
+      "waktu_panen": "25–35 days — Harvest leaves periodically to encourage growth",
+      "nutrisi": "AB Mix EC 1.6–2.2",
+      "kesulitan": "Mudah",
+      "tips": "Basil is the most productive hydroponic herb! Pinch off flower buds as soon as they appear so the plant focuses on leaf production. Harvest from the top regularly."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Ocimum_basilicum_8zz.jpg/330px-Ocimum_basilicum_8zz.jpg"
+  },
+  {
+    "id": "herbal-7",
+    "name": "Coriander / Cilantro",
+    "scientificName": "Coriandrum sativum",
+    "category": "Herbal",
+    "difficulty": "sedang",
+    "description": "An important kitchen spice with a strong, distinctive aroma. Both the fresh leaves (cilantro) and the dried seeds are used in Indonesian, Indian, and Mexican cooking.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 21,
+      "pruning": 14,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun 5–6 hours, shade during the hot midday",
+      "soil": "Light medium with good drainage",
+      "temperature": "17–27°C",
+      "humidity": "Moderate (45–65%)",
+      "watering": "Water regularly, keep the medium moist",
+      "fertilizer": "Organic fertilizer or compost once a month is enough; avoid excess chemical fertilizer so the plant stays safe to consume.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Aphids, mites, and rhizome/root rot if drainage is poor."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Wick / Kratky",
+      "media": "Rockwool / perlite",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "30–45 days for leaves — Harvest young leaves periodically",
+      "nutrisi": "AB Mix EC 1.2–1.8",
+      "kesulitan": "Sedang",
+      "tips": "Coriander prefers cool temperatures. In hot areas, grow it indoors with supplemental lighting. Avoid transplanting the plant since it's sensitive to root disturbance."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg/330px-Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "herbal-8",
+    "name": "Green Onion",
+    "scientificName": "Allium fistulosum",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "The most frequently used kitchen seasoning in Indonesian cooking. It grows very fast and is easy to regrow — cut the base and replant for the next harvest.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 14,
+      "pruning": 0,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 5–6 hours/day",
+      "soil": "Loose, fertile soil or potting medium",
+      "temperature": "15–25°C",
+      "humidity": "Moderate (50–70%)",
+      "watering": "Water regularly, keep the medium consistently moist",
+      "fertilizer": "Organic fertilizer or compost once a month is enough; avoid excess chemical fertilizer so the plant stays safe to consume.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Aphids, mites, and rhizome/root rot if drainage is poor."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Water (regrowth)",
+      "media": "Rockwool or directly in water",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "20–30 days — Can be harvested in stages from the same plant",
+      "nutrisi": "AB Mix EC 1.4–2.0",
+      "kesulitan": "Mudah",
+      "tips": "The easiest method: place leftover green onion bases from cooking in a glass of water — they'll grow back in 3–5 days! For a larger harvest, use a simple NFT or DWC system."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Welsh_onion.jpg/330px-Welsh_onion.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "herbal-9",
+    "name": "Cinnamon",
+    "scientificName": "Cinnamomum verum",
+    "category": "Herbal",
+    "difficulty": "sulit",
+    "description": "A tree that produces the fragrant cinnamon bark spice. It takes years before the bark can be harvested, but it can be pruned and enjoyed as an aromatic ornamental plant.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 6–8 hours/day",
+      "soil": "Fertile sandy soil, pH 4.5–6.0",
+      "temperature": "20–30°C",
+      "humidity": "High (60–80%)",
+      "watering": "Water regularly, keep the medium moist but not soggy",
+      "fertilizer": "Organic fertilizer or compost once a month is enough; avoid excess chemical fertilizer so the plant stays safe to consume.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Aphids, mites, and rhizome/root rot if drainage is poor."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Cinnamon is a hardwood tree that needs fertile soil and a strong root system. It isn't practical for hydroponics."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cinnamomum_verum1.jpg/330px-Cinnamomum_verum1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "herbal-10",
+    "name": "Citronella Grass",
+    "scientificName": "Cymbopogon nardus",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "An aromatic grass that produces citronella oil, used as a natural mosquito repellent. Unlike culinary lemongrass, its aroma is stronger and it isn't used as a seasoning.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 6+ hours/day",
+      "soil": "Fertile soil with good drainage",
+      "temperature": "20–35°C",
+      "humidity": "Moderate (50–70%)",
+      "watering": "Water regularly, tolerates mild drought",
+      "fertilizer": "Organic fertilizer or compost once a month is enough; avoid excess chemical fertilizer so the plant stays safe to consume.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Aphids, mites, and rhizome/root rot if drainage is poor."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Citronella grass is a large grass better grown in the ground or a big pot outdoors. Its dense fibrous root system makes it inefficient for hydroponics."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Cymbopogon_nardus_%28DITSL%29.JPG/330px-Cymbopogon_nardus_%28DITSL%29.JPG"
+  },
+  {
+    "id": "aroma-5",
+    "name": "Oregano",
+    "scientificName": "Origanum vulgare",
+    "category": "Aromaterapi",
+    "difficulty": "mudah",
+    "description": "An aromatic herb characteristic of Italian and Mediterranean cooking. Both dried and fresh leaves add a strong aroma to pizza, pasta, and soups. It grows compact and productive.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 21,
+      "pruning": 14,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 6–8 hours/day",
+      "soil": "Light sandy medium with excellent drainage",
+      "temperature": "18–28°C",
+      "humidity": "Low–Moderate (30–50%)",
+      "watering": "Water when the medium is dry, tolerates drought",
+      "fertilizer": "Apply light fertilizer once a month; over-fertilizing actually reduces aroma and essential oil content.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Aphids, mites, and fungus due to poor air circulation."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Kratky",
+      "media": "Perlite / rockwool",
+      "ph_ideal": "6.0–7.0",
+      "waktu_panen": "40–50 days — Harvest young leaves periodically",
+      "nutrisi": "AB Mix EC 1.5–2.0, add calcium",
+      "kesulitan": "Mudah",
+      "tips": "Oregano is very productive in indoor hydroponics with a grow light. Make sure the EC isn't too high — oregano prefers moderate nutrients. Regular harvesting encourages new growth."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Origanum_vulgare_-_harilik_pune.jpg/330px-Origanum_vulgare_-_harilik_pune.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "aroma-6",
+    "name": "Thyme",
+    "scientificName": "Thymus vulgaris",
+    "category": "Aromaterapi",
+    "difficulty": "sedang",
+    "description": "A Mediterranean aromatic herb with small leaves and tiny purple flowers. Warm and distinctive in aroma, it pairs well with roast chicken, soups, and herbal tea. It also works as a ground cover.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 21,
+      "pruning": 14,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 6–8 hours/day",
+      "soil": "Light sandy medium with excellent drainage",
+      "temperature": "15–25°C",
+      "humidity": "Low (30–45%)",
+      "watering": "Water infrequently, let the medium dry out",
+      "fertilizer": "Apply light fertilizer once a month; over-fertilizing actually reduces aroma and essential oil content.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Aphids, mites, and fungus due to poor air circulation."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky",
+      "media": "Perlite / rockwool",
+      "ph_ideal": "5.5–7.0",
+      "waktu_panen": "45–60 days — Harvest fresh tips periodically",
+      "nutrisi": "AB Mix EC 1.0–1.6, lighter than other herbs",
+      "kesulitan": "Sedang",
+      "tips": "Thyme prefers to dry out between waterings — in hydroponics, make sure there's good aeration. A Kratky system with a sufficiently large air gap works well for thyme."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Thymus_vulgaris1.JPG/330px-Thymus_vulgaris1.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "aroma-7",
+    "name": "Lemon Balm",
+    "scientificName": "Melissa officinalis",
+    "category": "Aromaterapi",
+    "difficulty": "mudah",
+    "description": "A refreshing lemon-scented aromatic herb, a member of the mint family. Used for relaxing teas, room fragrance, and to help reduce stress and insomnia.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 21,
+      "pruning": 14,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Moderate light, tolerates partial shade",
+      "soil": "Fertile medium with good drainage",
+      "temperature": "15–28°C",
+      "humidity": "Moderate (45–65%)",
+      "watering": "Water when the top of the medium is dry",
+      "fertilizer": "Apply light fertilizer once a month; over-fertilizing actually reduces aroma and essential oil content.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Aphids, mites, and fungus due to poor air circulation."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / NFT",
+      "media": "Rockwool / cocopeat",
+      "ph_ideal": "6.0–7.5",
+      "waktu_panen": "30–45 days — Harvest young leaves for fresh tea",
+      "nutrisi": "AB Mix EC 1.4–2.0",
+      "kesulitan": "Mudah",
+      "tips": "Lemon balm grows very vigorously in hydroponics — it can become invasive! Prune regularly and harvest plenty to keep the plant compact. The aroma is strongest before flowering."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Lemon_balm_plant.jpg/330px-Lemon_balm_plant.jpg"
+  },
+  {
+    "id": "buah-8",
+    "name": "Hydroponic Cherry Tomato",
+    "scientificName": "Solanum lycopersicum var. cerasiforme",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "The most popular mini tomato variety for home gardening. It fruits abundantly year-round, has a refreshing sweet-tart flavor, and is highly productive in hydroponic systems.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 14,
+      "pruning": 7,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 8 hours/day",
+      "soil": "Fertile, organic-rich medium or hydroponics",
+      "temperature": "20–30°C",
+      "humidity": "Moderate (50–65%)",
+      "watering": "Water regularly, keep moisture consistent",
+      "fertilizer": "Balanced NPK fertilizer monthly; add a high-phosphorus and high-potassium fertilizer as flowering and fruiting approach.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Fruit flies, aphids, and fungal diseases on leaves or fruit."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Dutch Bucket / NFT",
+      "media": "Rockwool / perlite + cocopeat",
+      "ph_ideal": "5.8–6.3",
+      "waktu_panen": "60–75 days — First harvest 2–2.5 months after planting",
+      "nutrisi": "AB Mix EC 2.0–3.5, high potassium during fruiting",
+      "kesulitan": "Sedang",
+      "tips": "Cherry tomatoes are a hydroponic favorite — productive and fast. Set up string or stakes for support. Prune the suckers regularly. Pollinate the flowers by shaking the plant while it's in bloom."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/330px-Tomato_je.jpg"
+  },
+  {
+    "id": "buah-9",
+    "name": "Melon",
+    "scientificName": "Cucumis melo",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "A premium sweet fruit popular as a table fruit. Grown hydroponically in a greenhouse, it produces high-quality melons with a sweeter, more consistent flavor.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 14,
+      "pruning": 7,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 8+ hours/day",
+      "soil": "Hydroponic medium or fertile, well-draining soil",
+      "temperature": "25–32°C",
+      "humidity": "Low–Moderate as the fruit ripens (45–55%)",
+      "watering": "Scheduled drip irrigation, avoid fluctuations",
+      "fertilizer": "Balanced NPK fertilizer monthly; add a high-phosphorus and high-potassium fertilizer as flowering and fruiting approach.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Fruit flies, aphids, and fungal diseases on leaves or fruit."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Dutch Bucket / Rockwool Slab",
+      "media": "Rockwool slab / perlite + rice husk charcoal",
+      "ph_ideal": "5.8–6.2",
+      "waktu_panen": "70–90 days — Ripe fruit is marked by cracking at the stem",
+      "nutrisi": "AB Mix EC 2.0 (vegetative) rising to 3.0–4.0 (fruit set)",
+      "kesulitan": "Sulit",
+      "tips": "Hydroponic melons need tight management. Limit to 1–2 fruits per plant for premium size. Support the fruit with netting in the greenhouse. Reduce water and raise the EC a week before harvest to increase sugar content (Brix)."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Muskmelon.jpg/330px-Muskmelon.jpg"
+  },
+  {
+    "id": "buah-10",
+    "name": "Blueberry",
+    "scientificName": "Vaccinium corymbosum",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "An antioxidant-rich blue berry known as a 'superfood'. It's challenging to grow in Indonesia because it needs cool temperatures, but it can succeed in the highlands.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 21,
+      "pruning": 365,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 6–8 hours/day",
+      "soil": "Acidic soil pH 4.5–5.5, rich in peat/cocopeat",
+      "temperature": "15–22°C (butuh suhu dingin)",
+      "humidity": "Moderate (50–65%)",
+      "watering": "Water regularly, keep the medium moist",
+      "fertilizer": "Balanced NPK fertilizer monthly; add a high-phosphorus and high-potassium fertilizer as flowering and fruiting approach.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Fruit flies, aphids, and fungal diseases on leaves or fruit."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC adapted for low pH",
+      "media": "Cocopeat + perlite + sphagnum moss",
+      "ph_ideal": "4.5–5.5 (sangat asam)",
+      "waktu_panen": "12–24 months to fruit for the first time after planting",
+      "nutrisi": "Special low-pH blueberry AB Mix, EC 1.5–2.0",
+      "kesulitan": "Sulit",
+      "tips": "Blueberries need a very low pH (4.5–5.5) that differs from other hydroponic plants. Use an acidic medium and monitor pH closely. In Indonesia, they're better suited to Malang, Dieng, or cool areas above 800 m elevation."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Vaccinium_corymbosum%2801%29.jpg/330px-Vaccinium_corymbosum%2801%29.jpg"
+  },
+  {
+    "id": "buah-11",
+    "name": "Starfruit",
+    "scientificName": "Averrhoa carambola",
+    "category": "Buah-buahan",
+    "difficulty": "mudah",
+    "description": "A unique star-shaped tropical fruit with a refreshing sweet-tart flavor. Productive year-round and suitable for growing in a large pot. Popular as fresh fruit and in pickled preserves.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 6–8 hours/day",
+      "soil": "Fertile soil with good drainage, pH 5.5–6.5",
+      "temperature": "20–35°C",
+      "humidity": "Moderate–High (55–75%)",
+      "watering": "Water regularly, avoid drought during fruiting",
+      "fertilizer": "Balanced NPK fertilizer monthly; add a high-phosphorus and high-potassium fertilizer as flowering and fruiting approach.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Fruit flies, aphids, and fungal diseases on leaves or fruit."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Starfruit is a tropical fruit tree that needs deep soil and a strong root system. It isn't practical for hydroponics."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Averrhoa_carambola_ARS_k5735-7.jpg/330px-Averrhoa_carambola_ARS_k5735-7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
+  },
+  {
+    "id": "buah-12",
+    "name": "Water Apple",
+    "scientificName": "Syzygium aqueum",
+    "category": "Buah-buahan",
+    "difficulty": "mudah",
+    "description": "A local Indonesian fruit that's crisp, juicy, and refreshing. The tree is shady and productive, making it suitable as both a shade tree and a fruit producer in the yard.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 30,
+      "pruning": 180,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 6+ hours/day",
+      "soil": "Fertile soil, tolerates high moisture",
+      "temperature": "22–35°C",
+      "humidity": "High (60–80%)",
+      "watering": "Water regularly, tolerates wet soil",
+      "fertilizer": "Balanced NPK fertilizer monthly; add a high-phosphorus and high-potassium fertilizer as flowering and fruiting approach.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Fruit flies, aphids, and fungal diseases on leaves or fruit."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "Water apple is a large tropical tree that needs to be planted in the ground or a large-volume pot (>100L). It isn't practical for a home hydroponic system."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Eugenia_sp_Blanco1.145-cropped.jpg/330px-Eugenia_sp_Blanco1.145-cropped.jpg"
+  },
+  {
+    "id": "buah-13",
+    "name": "Passion Fruit",
+    "scientificName": "Passiflora edulis",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "A climbing tropical fruit with an exotic sweet-tart flavor and a distinctive aroma. Its flowers are very beautiful, making it a dual-purpose plant that's both ornamental and fruit-bearing.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 21,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 6–8 hours/day",
+      "soil": "Fertile soil with good drainage, pH 6.0–7.0",
+      "temperature": "18–28°C",
+      "humidity": "Moderate (50–65%)",
+      "watering": "Water regularly, avoid waterlogging",
+      "fertilizer": "Balanced NPK fertilizer monthly; add a high-phosphorus and high-potassium fertilizer as flowering and fruiting approach.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Fruit flies, aphids, and fungal diseases on leaves or fruit."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Dutch Bucket / large NFT",
+      "media": "Perlite + cocopeat or rockwool",
+      "ph_ideal": "6.0–6.5",
+      "waktu_panen": "180–270 days — First fruiting 6–9 months after planting",
+      "nutrisi": "AB Mix EC 1.8–2.5, increase potassium during fruiting",
+      "kesulitan": "Sedang",
+      "tips": "Hydroponic passion fruit needs a trellis or arbor to climb. Start with a low EC (1.5), then raise it gradually. Hand-pollinate with a small brush to improve fruit set."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Passiflora_edulis_forma_flavicarpa.jpg/330px-Passiflora_edulis_forma_flavicarpa.jpg"
+  },
+  {
+    "id": "buah-14",
+    "name": "Fig",
+    "scientificName": "Ficus carica",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "The fig fruit mentioned in the Quran, with high historical and health value. It's becoming increasingly popular to grow in pots in Indonesia because it's adaptable and its fruit is unique.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 21,
+      "pruning": 365,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 8 hours/day",
+      "soil": "Well-draining potting medium, add sand",
+      "temperature": "18–35°C",
+      "humidity": "Low–Moderate (35–55%)",
+      "watering": "Water regularly, let the medium dry out a bit between waterings",
+      "fertilizer": "Balanced NPK fertilizer monthly; add a high-phosphorus and high-potassium fertilizer as flowering and fruiting approach.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Fruit flies, aphids, and fungal diseases on leaves or fruit."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "The fig is a woody tree that needs a large pot or direct soil for optimal results. Its root system isn't suited to hydroponics."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ficus_carica_L%2C_1771.jpg/330px-Ficus_carica_L%2C_1771.jpg"
+  },
+  {
+    "id": "buah-15",
+    "name": "Avocado",
+    "scientificName": "Persea americana",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "A superfood fruit rich in healthy fats, vitamins, and minerals. It's becoming increasingly popular as a potted plant in Indonesia. It takes 3–5 years to fruit from seed, sooner from grafting.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 30,
+      "pruning": 180,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, 6+ hours/day",
+      "soil": "Fertile soil with good drainage, pH 6.0–7.0",
+      "temperature": "18–28°C",
+      "humidity": "Moderate (50–70%)",
+      "watering": "Water regularly, avoid overwatering",
+      "fertilizer": "Balanced NPK fertilizer monthly; add a high-phosphorus and high-potassium fertilizer as flowering and fruiting approach.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Fruit flies, aphids, and fungal diseases on leaves or fruit."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "The avocado is a large tree that needs a deep, strong root system. It isn't suited to home hydroponics. Plant it in a large-volume pot (>50L) or directly in the ground."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Persea_americana_fruit_2.JPG/330px-Persea_americana_fruit_2.JPG"
+  },
+  {
+    "id": "buah-16",
+    "name": "Mini Date Palm",
+    "scientificName": "Phoenix dactylifera",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "A palm tree that produces nutrient-rich dates. In Indonesia it can be grown as an exotic ornamental palm, though fruiting requires a dry climate.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 30,
+      "pruning": 365,
+      "repotting": 365
+    },
+    "careDetails": {
+      "sunlight": "Full sun, a maximum of 10+ hours/day",
+      "soil": "Sandy medium with perfect drainage",
+      "temperature": "20–40°C",
+      "humidity": "Low (20–40%)",
+      "watering": "Water infrequently, very drought-tolerant",
+      "fertilizer": "Balanced NPK fertilizer monthly; add a high-phosphorus and high-potassium fertilizer as flowering and fruiting approach.",
+      "pruning": "Periodically prune old, dry, or damaged leaves and stems to encourage new shoots and keep the plant tidy.",
+      "commonProblems": "Fruit flies, aphids, and fungal diseases on leaves or fruit."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "ph_ideal": "-",
+      "waktu_panen": "-",
+      "nutrisi": "-",
+      "kesulitan": "-",
+      "tips": "The date palm needs desert conditions to fruit optimally. In Indonesia it can grow but rarely fruits because the air humidity is too high."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Dates005.jpg/330px-Dates005.jpg"
+  }
+]

@@ -9,6 +9,7 @@
     "schedules": {
       "watering": 3,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 365
     },
     "careDetails": {
@@ -40,6 +41,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 90,
+      "pruning": 60,
       "repotting": 365
     },
     "careDetails": {
@@ -71,6 +73,7 @@
     "schedules": {
       "watering": 7,
       "fertilizer": 180,
+      "pruning": 60,
       "repotting": 730
     },
     "careDetails": {
@@ -102,6 +105,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 7,
+      "pruning": 60,
       "repotting": 365
     },
     "careDetails": {
@@ -133,6 +137,7 @@
     "schedules": {
       "watering": 1,
       "fertilizer": 60,
+      "pruning": 60,
       "repotting": 730
     },
     "careDetails": {
@@ -164,6 +169,7 @@
     "schedules": {
       "watering": 3,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 365
     },
     "careDetails": {
@@ -195,6 +201,7 @@
     "schedules": {
       "watering": 5,
       "fertilizer": 60,
+      "pruning": 60,
       "repotting": 365
     },
     "careDetails": {
@@ -226,6 +233,7 @@
     "schedules": {
       "watering": 10,
       "fertilizer": 90,
+      "pruning": 60,
       "repotting": 730
     },
     "careDetails": {
@@ -257,6 +265,7 @@
     "schedules": {
       "watering": 14,
       "fertilizer": 180,
+      "pruning": 60,
       "repotting": 730
     },
     "careDetails": {
@@ -288,6 +297,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 365
     },
     "careDetails": {
@@ -319,6 +329,7 @@
     "schedules": {
       "watering": 1,
       "fertilizer": 14,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -350,6 +361,7 @@
     "schedules": {
       "watering": 1,
       "fertilizer": 10,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -381,6 +393,7 @@
     "schedules": {
       "watering": 1,
       "fertilizer": 14,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -412,6 +425,7 @@
     "schedules": {
       "watering": 1,
       "fertilizer": 14,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -443,6 +457,7 @@
     "schedules": {
       "watering": 1,
       "fertilizer": 14,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -474,6 +489,7 @@
     "schedules": {
       "watering": 1,
       "fertilizer": 10,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -505,6 +521,7 @@
     "schedules": {
       "watering": 1,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 180
     },
     "careDetails": {
@@ -536,6 +553,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 60,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -567,6 +585,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 365
     },
     "careDetails": {
@@ -598,6 +617,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 180
     },
     "careDetails": {
@@ -629,6 +649,7 @@
     "schedules": {
       "watering": 3,
       "fertilizer": 60,
+      "pruning": 60,
       "repotting": 365
     },
     "careDetails": {
@@ -660,6 +681,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -691,6 +713,7 @@
     "schedules": {
       "watering": 5,
       "fertilizer": 90,
+      "pruning": 60,
       "repotting": 365
     },
     "careDetails": {
@@ -722,6 +745,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -753,6 +777,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 365
     },
     "careDetails": {
@@ -784,6 +809,7 @@
     "schedules": {
       "watering": 3,
       "fertilizer": 60,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -815,6 +841,7 @@
     "schedules": {
       "watering": 4,
       "fertilizer": 60,
+      "pruning": 60,
       "repotting": 365
     },
     "careDetails": {
@@ -846,6 +873,7 @@
     "schedules": {
       "watering": 4,
       "fertilizer": 60,
+      "pruning": 60,
       "repotting": 365
     },
     "careDetails": {
@@ -877,6 +905,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 180
     },
     "careDetails": {
@@ -908,6 +937,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 365
     },
     "careDetails": {
@@ -939,6 +969,7 @@
     "schedules": {
       "watering": 1,
       "fertilizer": 14,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -970,6 +1001,7 @@
     "schedules": {
       "watering": 1,
       "fertilizer": 10,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -1001,6 +1033,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 21,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -1032,6 +1065,7 @@
     "schedules": {
       "watering": 1,
       "fertilizer": 14,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -1063,6 +1097,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 14,
+      "pruning": 60,
       "repotting": 365
     },
     "careDetails": {
@@ -1094,6 +1129,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -1125,6 +1161,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 730
     },
     "careDetails": {
@@ -1156,6 +1193,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -1187,6 +1225,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 30,
+      "pruning": 60,
       "repotting": 730
     },
     "careDetails": {
@@ -1218,6 +1257,7 @@
     "schedules": {
       "watering": 1,
       "fertilizer": 14,
+      "pruning": 60,
       "repotting": 0
     },
     "careDetails": {
@@ -1249,6 +1289,7 @@
     "schedules": {
       "watering": 2,
       "fertilizer": 21,
+      "pruning": 60,
       "repotting": 730
     },
     "careDetails": {
@@ -1279,15 +1320,19 @@
     "description": "Tanaman hias indoor populer dengan bunga putih elegan dan kemampuan memfilter udara. Toleran terhadap kondisi cahaya rendah, cocok untuk sudut ruangan.",
     "schedules": {
       "watering": 5,
-      "fertilizing": 30,
-      "pruning": 60
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya tidak langsung rendah–sedang",
-      "water": "Siram saat media mulai kering",
       "soil": "Media pot drainase baik, kaya organik",
       "temperature": "18–30°C",
-      "humidity": "Tinggi (>50%)"
+      "humidity": "Tinggi (>50%)",
+      "watering": "Siram saat media mulai kering",
+      "fertilizer": "Beri pupuk cair seimbang (NPK) setiap 4 minggu selama masa tumbuh aktif; kurangi saat cuaca dingin atau musim hujan.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu putih, tungau laba-laba, dan busuk akar akibat media terlalu basah."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1310,15 +1355,19 @@
     "description": "Tanaman hias tropis dengan bunga merah mencolok dan daun mengkilap. Cocok sebagai tanaman indoor premium yang memberikan kesan mewah.",
     "schedules": {
       "watering": 4,
-      "fertilizing": 21,
-      "pruning": 45
+      "fertilizer": 21,
+      "pruning": 45,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya terang tidak langsung",
-      "water": "Siram teratur, jaga kelembapan media",
       "soil": "Campuran anggrek + perlit + cocopeat",
       "temperature": "20–30°C",
-      "humidity": "Tinggi (>60%)"
+      "humidity": "Tinggi (>60%)",
+      "watering": "Siram teratur, jaga kelembapan media",
+      "fertilizer": "Beri pupuk cair seimbang (NPK) setiap 4 minggu selama masa tumbuh aktif; kurangi saat cuaca dingin atau musim hujan.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu putih, tungau laba-laba, dan busuk akar akibat media terlalu basah."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1341,15 +1390,19 @@
     "description": "Varietas pothos dengan daun bercorak putih-hijau marmer yang cantik. Sangat tangguh, toleran berbagai kondisi, dan tumbuh merambat indah.",
     "schedules": {
       "watering": 7,
-      "fertilizing": 30,
-      "pruning": 30
+      "fertilizer": 30,
+      "pruning": 30,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya sedang hingga terang tidak langsung",
-      "water": "Siram saat media atas kering",
       "soil": "Media pot umum, drainase baik",
       "temperature": "16–30°C",
-      "humidity": "Sedang (40–70%)"
+      "humidity": "Sedang (40–70%)",
+      "watering": "Siram saat media atas kering",
+      "fertilizer": "Beri pupuk cair seimbang (NPK) setiap 4 minggu selama masa tumbuh aktif; kurangi saat cuaca dingin atau musim hujan.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu putih, tungau laba-laba, dan busuk akar akibat media terlalu basah."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1372,15 +1425,19 @@
     "description": "Tanaman hias berbatang tegak dengan daun besar mengkilap berwarna hijau tua atau merah kecoklatan. Berpenampilan bold dan modern untuk sudut ruangan.",
     "schedules": {
       "watering": 7,
-      "fertilizing": 30,
-      "pruning": 90
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya terang tidak langsung",
-      "water": "Siram saat atas media kering 2–3 cm",
       "soil": "Media pot, drainase sangat baik",
       "temperature": "15–30°C",
-      "humidity": "Sedang (40–60%)"
+      "humidity": "Sedang (40–60%)",
+      "watering": "Siram saat atas media kering 2–3 cm",
+      "fertilizer": "Beri pupuk cair seimbang (NPK) setiap 4 minggu selama masa tumbuh aktif; kurangi saat cuaca dingin atau musim hujan.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu putih, tungau laba-laba, dan busuk akar akibat media terlalu basah."
     },
     "hidroponik": {
       "bisa_hidroponik": false,
@@ -1403,15 +1460,19 @@
     "description": "Tanaman hias dramatis dengan daun besar berbentuk dayung dan bunga oranye-biru menyerupai burung. Memberikan nuansa tropis premium pada ruangan.",
     "schedules": {
       "watering": 7,
-      "fertilizing": 21,
-      "pruning": 60
+      "fertilizer": 21,
+      "pruning": 60,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 6+ jam/hari",
-      "water": "Siram saat media atas mengering",
       "soil": "Media pot subur, drainase baik",
       "temperature": "18–30°C",
-      "humidity": "Sedang (40–60%)"
+      "humidity": "Sedang (40–60%)",
+      "watering": "Siram saat media atas mengering",
+      "fertilizer": "Beri pupuk cair seimbang (NPK) setiap 4 minggu selama masa tumbuh aktif; kurangi saat cuaca dingin atau musim hujan.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu putih, tungau laba-laba, dan busuk akar akibat media terlalu basah."
     },
     "hidroponik": {
       "bisa_hidroponik": false,
@@ -1434,15 +1495,19 @@
     "description": "Sayuran hijau cepat panen populer di Indonesia. Tekstur renyah, rasa ringan, cocok untuk tumis dan sup. Favorit hidroponik pemula karena sangat mudah.",
     "schedules": {
       "watering": 1,
-      "fertilizing": 14,
-      "pruning": 0
+      "fertilizer": 14,
+      "pruning": 0,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 5–6 jam/hari",
-      "water": "Siram rutin 1–2x sehari",
       "soil": "Media subur, drainase baik atau hidroponik",
       "temperature": "18–28°C",
-      "humidity": "Sedang (50–70%)"
+      "humidity": "Sedang (50–70%)",
+      "watering": "Siram rutin 1–2x sehari",
+      "fertilizer": "Beri pupuk NPK seimbang atau kompos cair setiap 2 minggu untuk mendukung pertumbuhan daun dan buah.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Ulat, kutu daun (aphid), dan jamur pada daun saat kelembapan tinggi."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1465,15 +1530,19 @@
     "description": "Buah paprika berwarna merah, kuning, atau hijau yang kaya vitamin C. Lebih manis dari cabai biasa, populer untuk masakan Western dan salad.",
     "schedules": {
       "watering": 2,
-      "fertilizing": 14,
-      "pruning": 30
+      "fertilizer": 14,
+      "pruning": 30,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 8 jam/hari",
-      "water": "Siram teratur, hindari genangan",
       "soil": "Media subur, kaya kompos, pH 6.0–6.8",
       "temperature": "20–30°C",
-      "humidity": "Sedang (50–65%)"
+      "humidity": "Sedang (50–65%)",
+      "watering": "Siram teratur, hindari genangan",
+      "fertilizer": "Beri pupuk NPK seimbang atau kompos cair setiap 2 minggu untuk mendukung pertumbuhan daun dan buah.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Ulat, kutu daun (aphid), dan jamur pada daun saat kelembapan tinggi."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1496,15 +1565,19 @@
     "description": "Tanaman obat asli Indonesia dengan rimpang besar berwarna oranye. Berkhasiat meningkatkan nafsu makan, menjaga kesehatan hati, dan meningkatkan imunitas.",
     "schedules": {
       "watering": 3,
-      "fertilizing": 30,
-      "pruning": 60
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya sedang, toleran teduh parsial",
-      "water": "Siram teratur, jaga kelembapan tanah",
       "soil": "Tanah gembur subur, kaya organik",
       "temperature": "25–35°C",
-      "humidity": "Tinggi (60–80%)"
+      "humidity": "Tinggi (60–80%)",
+      "watering": "Siram teratur, jaga kelembapan tanah",
+      "fertilizer": "Cukup pupuk organik atau kompos sebulan sekali; hindari pupuk kimia berlebih agar bagian tanaman tetap aman dikonsumsi.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu daun, tungau, dan busuk rimpang/akar bila drainase buruk."
     },
     "hidroponik": {
       "bisa_hidroponik": false,
@@ -1527,15 +1600,19 @@
     "description": "Tanaman obat yang dipercaya membantu menurunkan kadar gula darah, tekanan darah, dan kolesterol. Daun bisa dimakan langsung atau dijus.",
     "schedules": {
       "watering": 2,
-      "fertilizing": 21,
-      "pruning": 14
+      "fertilizer": 21,
+      "pruning": 14,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya sedang, toleran teduh",
-      "water": "Siram 2–3x seminggu",
       "soil": "Tanah gembur subur",
       "temperature": "22–32°C",
-      "humidity": "Sedang (50–70%)"
+      "humidity": "Sedang (50–70%)",
+      "watering": "Siram 2–3x seminggu",
+      "fertilizer": "Cukup pupuk organik atau kompos sebulan sekali; hindari pupuk kimia berlebih agar bagian tanaman tetap aman dikonsumsi.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu daun, tungau, dan busuk rimpang/akar bila drainase buruk."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1558,15 +1635,19 @@
     "description": "Tanaman sukulen serbaguna dengan gel dalam daun yang berkhasiat untuk luka bakar, iritasi kulit, dan kesehatan pencernaan. Sangat mudah perawatannya.",
     "schedules": {
       "watering": 10,
-      "fertilizing": 60,
-      "pruning": 30
+      "fertilizer": 60,
+      "pruning": 30,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh atau terang tidak langsung",
-      "water": "Siram jarang, biarkan media kering sempurna",
       "soil": "Media kaktus/sukulen, drainase sangat baik",
       "temperature": "15–35°C",
-      "humidity": "Rendah (30–50%)"
+      "humidity": "Rendah (30–50%)",
+      "watering": "Siram jarang, biarkan media kering sempurna",
+      "fertilizer": "Cukup pupuk organik atau kompos sebulan sekali; hindari pupuk kimia berlebih agar bagian tanaman tetap aman dikonsumsi.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu daun, tungau, dan busuk rimpang/akar bila drainase buruk."
     },
     "hidroponik": {
       "bisa_hidroponik": false,
@@ -1589,15 +1670,19 @@
     "description": "Tanaman obat merambat dengan batang berwarna hijau bertekstur unik. Pahit rasanya namun berkhasiat tinggi untuk diabetes, demam, dan meningkatkan imunitas.",
     "schedules": {
       "watering": 3,
-      "fertilizing": 30,
-      "pruning": 21
+      "fertilizer": 30,
+      "pruning": 21,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh hingga teduh parsial",
-      "water": "Siram 2–3x seminggu",
       "soil": "Tanah subur, drainase baik",
       "temperature": "25–35°C",
-      "humidity": "Sedang–Tinggi (50–80%)"
+      "humidity": "Sedang–Tinggi (50–80%)",
+      "watering": "Siram 2–3x seminggu",
+      "fertilizer": "Cukup pupuk organik atau kompos sebulan sekali; hindari pupuk kimia berlebih agar bagian tanaman tetap aman dikonsumsi.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu daun, tungau, dan busuk rimpang/akar bila drainase buruk."
     },
     "hidroponik": {
       "bisa_hidroponik": false,
@@ -1620,15 +1705,19 @@
     "description": "Herbal berbunga ungu indah dengan biji hitam berkhasiat tinggi. Disebut 'habbatussauda' dalam tradisi Islam, dikenal sebagai obat serba guna untuk berbagai kondisi.",
     "schedules": {
       "watering": 3,
-      "fertilizing": 21,
-      "pruning": 30
+      "fertilizer": 21,
+      "pruning": 30,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 6–8 jam/hari",
-      "water": "Siram sedang, hindari overwatering",
       "soil": "Tanah gembur, drainase baik, pH 6.0–7.0",
       "temperature": "15–25°C",
-      "humidity": "Rendah–Sedang (30–55%)"
+      "humidity": "Rendah–Sedang (30–55%)",
+      "watering": "Siram sedang, hindari overwatering",
+      "fertilizer": "Cukup pupuk organik atau kompos sebulan sekali; hindari pupuk kimia berlebih agar bagian tanaman tetap aman dikonsumsi.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu daun, tungau, dan busuk rimpang/akar bila drainase buruk."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1651,15 +1740,19 @@
     "description": "Herbal aromatik segar yang wajib ada di dapur. Daun kemangi memberi aroma khas pada lalapan, pasta, dan masakan Italia. Tumbuh cepat dan produktif.",
     "schedules": {
       "watering": 2,
-      "fertilizing": 14,
-      "pruning": 7
+      "fertilizer": 14,
+      "pruning": 7,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 6–8 jam/hari",
-      "water": "Siram teratur, jaga media lembap",
       "soil": "Media subur, kaya organik, drainase baik",
       "temperature": "20–30°C",
-      "humidity": "Sedang (50–65%)"
+      "humidity": "Sedang (50–65%)",
+      "watering": "Siram teratur, jaga media lembap",
+      "fertilizer": "Cukup pupuk organik atau kompos sebulan sekali; hindari pupuk kimia berlebih agar bagian tanaman tetap aman dikonsumsi.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu daun, tungau, dan busuk rimpang/akar bila drainase buruk."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1682,15 +1775,19 @@
     "description": "Bumbu dapur penting dengan aroma khas kuat. Daun segar (cilantro) dan biji keringnya sama-sama digunakan dalam masakan Indonesia, India, dan Meksiko.",
     "schedules": {
       "watering": 2,
-      "fertilizing": 21,
-      "pruning": 14
+      "fertilizer": 21,
+      "pruning": 14,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 5–6 jam, teduh di siang hari panas",
-      "water": "Siram teratur, jaga kelembapan media",
       "soil": "Media ringan, drainase baik",
       "temperature": "17–27°C",
-      "humidity": "Sedang (45–65%)"
+      "humidity": "Sedang (45–65%)",
+      "watering": "Siram teratur, jaga kelembapan media",
+      "fertilizer": "Cukup pupuk organik atau kompos sebulan sekali; hindari pupuk kimia berlebih agar bagian tanaman tetap aman dikonsumsi.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu daun, tungau, dan busuk rimpang/akar bila drainase buruk."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1713,15 +1810,19 @@
     "description": "Bumbu dapur paling sering digunakan di masakan Indonesia. Tumbuh sangat cepat dan mudah diregenerasi — potong pangkal dan tanam kembali untuk panen berikutnya.",
     "schedules": {
       "watering": 2,
-      "fertilizing": 14,
-      "pruning": 0
+      "fertilizer": 14,
+      "pruning": 0,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 5–6 jam/hari",
-      "water": "Siram teratur, media selalu lembap",
       "soil": "Tanah subur gembur atau media pot",
       "temperature": "15–25°C",
-      "humidity": "Sedang (50–70%)"
+      "humidity": "Sedang (50–70%)",
+      "watering": "Siram teratur, media selalu lembap",
+      "fertilizer": "Cukup pupuk organik atau kompos sebulan sekali; hindari pupuk kimia berlebih agar bagian tanaman tetap aman dikonsumsi.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu daun, tungau, dan busuk rimpang/akar bila drainase buruk."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1744,15 +1845,19 @@
     "description": "Pohon penghasil rempah kulit kayu manis yang wangi. Butuh waktu bertahun-tahun untuk panen kulit kayu, namun bisa dipangkas dan dinikmati sebagai tanaman hias beraroma.",
     "schedules": {
       "watering": 5,
-      "fertilizing": 30,
-      "pruning": 90
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 6–8 jam/hari",
-      "water": "Siram teratur, jaga media lembap tidak becek",
       "soil": "Tanah subur berpasir, pH 4.5–6.0",
       "temperature": "20–30°C",
-      "humidity": "Tinggi (60–80%)"
+      "humidity": "Tinggi (60–80%)",
+      "watering": "Siram teratur, jaga media lembap tidak becek",
+      "fertilizer": "Cukup pupuk organik atau kompos sebulan sekali; hindari pupuk kimia berlebih agar bagian tanaman tetap aman dikonsumsi.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu daun, tungau, dan busuk rimpang/akar bila drainase buruk."
     },
     "hidroponik": {
       "bisa_hidroponik": false,
@@ -1775,15 +1880,19 @@
     "description": "Rumput aromatik penghasil minyak sitronela yang digunakan sebagai pengusir nyamuk alami. Berbeda dengan serai masak, aroma lebih kuat dan tidak dipakai untuk bumbu.",
     "schedules": {
       "watering": 3,
-      "fertilizing": 30,
-      "pruning": 30
+      "fertilizer": 30,
+      "pruning": 30,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 6+ jam/hari",
-      "water": "Siram teratur, toleran kekeringan ringan",
       "soil": "Tanah subur, drainase baik",
       "temperature": "20–35°C",
-      "humidity": "Sedang (50–70%)"
+      "humidity": "Sedang (50–70%)",
+      "watering": "Siram teratur, toleran kekeringan ringan",
+      "fertilizer": "Cukup pupuk organik atau kompos sebulan sekali; hindari pupuk kimia berlebih agar bagian tanaman tetap aman dikonsumsi.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu daun, tungau, dan busuk rimpang/akar bila drainase buruk."
     },
     "hidroponik": {
       "bisa_hidroponik": false,
@@ -1806,15 +1915,19 @@
     "description": "Herbal aromatik khas masakan Italia dan Mediterania. Daun kering maupun segar memberikan aroma kuat pada pizza, pasta, dan sup. Tumbuh kompak dan produktif.",
     "schedules": {
       "watering": 4,
-      "fertilizing": 21,
-      "pruning": 14
+      "fertilizer": 21,
+      "pruning": 14,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 6–8 jam/hari",
-      "water": "Siram saat media kering, toleran kekeringan",
       "soil": "Media ringan berpasir, drainase sangat baik",
       "temperature": "18–28°C",
-      "humidity": "Rendah–Sedang (30–50%)"
+      "humidity": "Rendah–Sedang (30–50%)",
+      "watering": "Siram saat media kering, toleran kekeringan",
+      "fertilizer": "Beri pupuk ringan sebulan sekali; pemupukan berlebih justru menurunkan kandungan aroma dan minyak atsiri.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu daun, tungau, dan jamur akibat sirkulasi udara yang buruk."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1837,15 +1950,19 @@
     "description": "Herbal aromatik Mediterania dengan daun kecil dan bunga ungu mungil. Aroma hangat dan khas, cocok untuk ayam panggang, sup, dan teh herbal. Juga berfungsi sebagai ground cover.",
     "schedules": {
       "watering": 5,
-      "fertilizing": 21,
-      "pruning": 14
+      "fertilizer": 21,
+      "pruning": 14,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 6–8 jam/hari",
-      "water": "Siram jarang, biarkan media mengering",
       "soil": "Media berpasir ringan, drainase sangat baik",
       "temperature": "15–25°C",
-      "humidity": "Rendah (30–45%)"
+      "humidity": "Rendah (30–45%)",
+      "watering": "Siram jarang, biarkan media mengering",
+      "fertilizer": "Beri pupuk ringan sebulan sekali; pemupukan berlebih justru menurunkan kandungan aroma dan minyak atsiri.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu daun, tungau, dan jamur akibat sirkulasi udara yang buruk."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1868,15 +1985,19 @@
     "description": "Herbal aromatik beraroma lemon menyegarkan, anggota keluarga mint. Digunakan untuk teh relaksasi, pewangi ruangan, dan membantu mengurangi stres dan insomnia.",
     "schedules": {
       "watering": 3,
-      "fertilizing": 21,
-      "pruning": 14
+      "fertilizer": 21,
+      "pruning": 14,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya sedang, toleran teduh parsial",
-      "water": "Siram saat media atas kering",
       "soil": "Media subur, drainase baik",
       "temperature": "15–28°C",
-      "humidity": "Sedang (45–65%)"
+      "humidity": "Sedang (45–65%)",
+      "watering": "Siram saat media atas kering",
+      "fertilizer": "Beri pupuk ringan sebulan sekali; pemupukan berlebih justru menurunkan kandungan aroma dan minyak atsiri.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Kutu daun, tungau, dan jamur akibat sirkulasi udara yang buruk."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1899,15 +2020,19 @@
     "description": "Varietas tomat mini yang paling populer untuk berkebun rumah. Berbuah lebat sepanjang tahun, rasa manis-asam menyegarkan, sangat produktif di sistem hidroponik.",
     "schedules": {
       "watering": 2,
-      "fertilizing": 14,
-      "pruning": 7
+      "fertilizer": 14,
+      "pruning": 7,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 8 jam/hari",
-      "water": "Siram rutin, jaga kelembapan konsisten",
       "soil": "Media subur kaya organik atau hidroponik",
       "temperature": "20–30°C",
-      "humidity": "Sedang (50–65%)"
+      "humidity": "Sedang (50–65%)",
+      "watering": "Siram rutin, jaga kelembapan konsisten",
+      "fertilizer": "Pupuk NPK seimbang tiap bulan; tambahkan pupuk tinggi fosfor & kalium menjelang masa berbunga dan berbuah.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Lalat buah, kutu daun, dan penyakit jamur pada daun atau buah."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1930,15 +2055,19 @@
     "description": "Buah manis premium yang populer sebagai buah meja. Dibudidayakan hidroponik dalam greenhouse menghasilkan melon berkualitas tinggi dengan rasa lebih manis dan konsisten.",
     "schedules": {
       "watering": 2,
-      "fertilizing": 14,
-      "pruning": 7
+      "fertilizer": 14,
+      "pruning": 7,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 8+ jam/hari",
-      "water": "Irigasi tetes terjadwal, hindari fluktuasi",
       "soil": "Media hidroponik atau tanah subur drainase baik",
       "temperature": "25–32°C",
-      "humidity": "Rendah–Sedang saat buah masak (45–55%)"
+      "humidity": "Rendah–Sedang saat buah masak (45–55%)",
+      "watering": "Irigasi tetes terjadwal, hindari fluktuasi",
+      "fertilizer": "Pupuk NPK seimbang tiap bulan; tambahkan pupuk tinggi fosfor & kalium menjelang masa berbunga dan berbuah.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Lalat buah, kutu daun, dan penyakit jamur pada daun atau buah."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1961,15 +2090,19 @@
     "description": "Buah beri biru kaya antioksidan yang dikenal sebagai 'superfood'. Menantang ditanam di Indonesia karena butuh suhu dingin, namun bisa berhasil di dataran tinggi.",
     "schedules": {
       "watering": 3,
-      "fertilizing": 21,
-      "pruning": 365
+      "fertilizer": 21,
+      "pruning": 365,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 6–8 jam/hari",
-      "water": "Siram teratur, jaga media lembap",
       "soil": "Tanah asam pH 4.5–5.5, kaya gambut/cocopeat",
       "temperature": "15–22°C (butuh suhu dingin)",
-      "humidity": "Sedang (50–65%)"
+      "humidity": "Sedang (50–65%)",
+      "watering": "Siram teratur, jaga media lembap",
+      "fertilizer": "Pupuk NPK seimbang tiap bulan; tambahkan pupuk tinggi fosfor & kalium menjelang masa berbunga dan berbuah.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Lalat buah, kutu daun, dan penyakit jamur pada daun atau buah."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -1992,15 +2125,19 @@
     "description": "Buah tropis berbentuk bintang yang unik dengan rasa manis-asam menyegarkan. Produktif sepanjang tahun dan cocok ditanam di pot besar. Populer sebagai buah segar dan asinan.",
     "schedules": {
       "watering": 4,
-      "fertilizing": 30,
-      "pruning": 90
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 6–8 jam/hari",
-      "water": "Siram teratur, hindari kekeringan saat berbuah",
       "soil": "Tanah subur, drainase baik, pH 5.5–6.5",
       "temperature": "20–35°C",
-      "humidity": "Sedang–Tinggi (55–75%)"
+      "humidity": "Sedang–Tinggi (55–75%)",
+      "watering": "Siram teratur, hindari kekeringan saat berbuah",
+      "fertilizer": "Pupuk NPK seimbang tiap bulan; tambahkan pupuk tinggi fosfor & kalium menjelang masa berbunga dan berbuah.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Lalat buah, kutu daun, dan penyakit jamur pada daun atau buah."
     },
     "hidroponik": {
       "bisa_hidroponik": false,
@@ -2023,15 +2160,19 @@
     "description": "Buah lokal Indonesia yang renyah, berair, dan menyegarkan. Pohonnya teduh dan produktif, cocok sebagai pohon pelindung sekaligus penghasil buah di pekarangan.",
     "schedules": {
       "watering": 5,
-      "fertilizing": 30,
-      "pruning": 180
+      "fertilizer": 30,
+      "pruning": 180,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 6+ jam/hari",
-      "water": "Siram teratur, toleran tanah basah",
       "soil": "Tanah subur, tahan kelembapan tinggi",
       "temperature": "22–35°C",
-      "humidity": "Tinggi (60–80%)"
+      "humidity": "Tinggi (60–80%)",
+      "watering": "Siram teratur, toleran tanah basah",
+      "fertilizer": "Pupuk NPK seimbang tiap bulan; tambahkan pupuk tinggi fosfor & kalium menjelang masa berbunga dan berbuah.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Lalat buah, kutu daun, dan penyakit jamur pada daun atau buah."
     },
     "hidroponik": {
       "bisa_hidroponik": false,
@@ -2054,15 +2195,19 @@
     "description": "Buah tropis merambat dengan rasa asam manis eksotis dan aroma khas. Bunganya sangat indah, menjadikannya tanaman ganda sebagai hias sekaligus penghasil buah.",
     "schedules": {
       "watering": 3,
-      "fertilizing": 21,
-      "pruning": 30
+      "fertilizer": 21,
+      "pruning": 30,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 6–8 jam/hari",
-      "water": "Siram teratur, hindari genangan",
       "soil": "Tanah subur, drainase baik, pH 6.0–7.0",
       "temperature": "18–28°C",
-      "humidity": "Sedang (50–65%)"
+      "humidity": "Sedang (50–65%)",
+      "watering": "Siram teratur, hindari genangan",
+      "fertilizer": "Pupuk NPK seimbang tiap bulan; tambahkan pupuk tinggi fosfor & kalium menjelang masa berbunga dan berbuah.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Lalat buah, kutu daun, dan penyakit jamur pada daun atau buah."
     },
     "hidroponik": {
       "bisa_hidroponik": true,
@@ -2085,15 +2230,19 @@
     "description": "Buah tin yang disebutkan dalam Al-Quran dengan nilai historis dan kesehatan tinggi. Semakin populer ditanam di pot di Indonesia karena adaptif dan buahnya unik.",
     "schedules": {
       "watering": 4,
-      "fertilizing": 21,
-      "pruning": 365
+      "fertilizer": 21,
+      "pruning": 365,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 8 jam/hari",
-      "water": "Siram teratur, biarkan media agak kering di antara siram",
       "soil": "Media pot drainase baik, tambahkan pasir",
       "temperature": "18–35°C",
-      "humidity": "Rendah–Sedang (35–55%)"
+      "humidity": "Rendah–Sedang (35–55%)",
+      "watering": "Siram teratur, biarkan media agak kering di antara siram",
+      "fertilizer": "Pupuk NPK seimbang tiap bulan; tambahkan pupuk tinggi fosfor & kalium menjelang masa berbunga dan berbuah.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Lalat buah, kutu daun, dan penyakit jamur pada daun atau buah."
     },
     "hidroponik": {
       "bisa_hidroponik": false,
@@ -2116,15 +2265,19 @@
     "description": "Buah superfood kaya lemak sehat, vitamin, dan mineral. Semakin populer sebagai tanaman pot di Indonesia. Butuh waktu 3–5 tahun untuk berbuah dari biji, lebih cepat dari cangkok.",
     "schedules": {
       "watering": 5,
-      "fertilizing": 30,
-      "pruning": 180
+      "fertilizer": 30,
+      "pruning": 180,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh 6+ jam/hari",
-      "water": "Siram teratur, hindari overwatering",
       "soil": "Tanah subur, drainase baik, pH 6.0–7.0",
       "temperature": "18–28°C",
-      "humidity": "Sedang (50–70%)"
+      "humidity": "Sedang (50–70%)",
+      "watering": "Siram teratur, hindari overwatering",
+      "fertilizer": "Pupuk NPK seimbang tiap bulan; tambahkan pupuk tinggi fosfor & kalium menjelang masa berbunga dan berbuah.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Lalat buah, kutu daun, dan penyakit jamur pada daun atau buah."
     },
     "hidroponik": {
       "bisa_hidroponik": false,
@@ -2147,15 +2300,19 @@
     "description": "Pohon palem penghasil buah kurma yang kaya nutrisi. Di Indonesia bisa ditanam sebagai tanaman hias palem yang eksotis, meski berbuah butuh kondisi iklim kering.",
     "schedules": {
       "watering": 7,
-      "fertilizing": 30,
-      "pruning": 365
+      "fertilizer": 30,
+      "pruning": 365,
+      "repotting": 365
     },
     "careDetails": {
       "sunlight": "Cahaya penuh maksimal 10+ jam/hari",
-      "water": "Siram jarang, sangat toleran kekeringan",
       "soil": "Media berpasir, drainase sempurna",
       "temperature": "20–40°C",
-      "humidity": "Rendah (20–40%)"
+      "humidity": "Rendah (20–40%)",
+      "watering": "Siram jarang, sangat toleran kekeringan",
+      "fertilizer": "Pupuk NPK seimbang tiap bulan; tambahkan pupuk tinggi fosfor & kalium menjelang masa berbunga dan berbuah.",
+      "pruning": "Pangkas daun atau batang yang tua, kering, atau rusak secara berkala untuk merangsang tunas baru dan menjaga bentuk tanaman tetap rapi.",
+      "commonProblems": "Lalat buah, kutu daun, dan penyakit jamur pada daun atau buah."
     },
     "hidroponik": {
       "bisa_hidroponik": false,
