@@ -4723,5 +4723,2463 @@
       "pets": "toxic",
       "note": "Philodendron is toxic to cats and dogs — insoluble calcium oxalates cause oral irritation, drooling, vomiting (ASPCA)"
     }
+  },
+  {
+    "id": "hias-52",
+    "name": "Arrowhead Plant",
+    "scientificName": "Syngonium podophyllum",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A fast-growing trailing houseplant prized for its arrow-shaped leaves that shift color and form as the plant matures.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water when the top 2-3 cm of the medium is dry, roughly every 3-4 days.",
+      "sunlight": "Bright indirect light; tolerates moderate shade but variegation fades in deep shade.",
+      "fertilizer": "Apply balanced liquid fertilizer once a month during the growing season.",
+      "pruning": "Pinch back leggy vines to keep the plant bushy and remove yellowing leaves.",
+      "commonProblems": "Yellow leaves from overwatering and spider mites in dry air."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / Semi-hydroponic",
+      "media": "Hydroton (expanded clay) or perlite",
+      "nutrisi": "Diluted AB Mix 600-900 ppm (EC 1.2-1.8)",
+      "waktu_panen": "Not harvested — vigorous vining growth visible within 1-2 months",
+      "tips": "Roots easily in plain water, making it one of the easiest plants for semi-hydroponics. Change the solution every 2 weeks and keep an air gap above it.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Zingiber_malaysianum.jpg/330px-Zingiber_malaysianum.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Calcium oxalate — oral irritation, drooling, vomiting if chewed"
+    }
+  },
+  {
+    "id": "hias-53",
+    "name": "Swiss Cheese Vine",
+    "scientificName": "Monstera adansonii",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A trailing tropical vine famous for its delicate leaves dotted with natural holes, perfect for hanging baskets.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water when the top 2-3 cm of the medium dries out, about every 3-4 days.",
+      "sunlight": "Bright indirect light; direct sun scorches the thin leaves.",
+      "fertilizer": "Liquid foliage fertilizer once a month while actively growing.",
+      "pruning": "Trim long vines to encourage branching and propagate cuttings easily.",
+      "commonProblems": "Leaves without holes indicate too little light; root rot from soggy medium."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / Semi-hydroponic",
+      "media": "Hydroton (expanded clay) or rockwool",
+      "nutrisi": "Standard AB Mix 700-1000 ppm (EC 1.4-2.0)",
+      "waktu_panen": "Not harvested — lush new vines visible within 1-2 months",
+      "tips": "Cuttings with a node root readily in water. Give the vines a moss pole or trellis for larger, more fenestrated leaves.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Monstera_adansonii_79319231.jpg/330px-Monstera_adansonii_79319231.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Calcium oxalate — mouth/throat irritation, drooling if chewed"
+    }
+  },
+  {
+    "id": "hias-54",
+    "name": "Cast Iron Plant",
+    "scientificName": "Aspidistra elatior",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "An almost indestructible foliage plant with broad dark-green leaves that thrives in deep shade and neglect.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 60,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water sparingly, letting the medium dry between waterings, about once a week.",
+      "sunlight": "Low to moderate indirect light; one of the few plants that tolerates deep shade.",
+      "fertilizer": "Light liquid fertilizer every 2 months during spring and summer.",
+      "pruning": "Simply remove old or damaged leaves at the base.",
+      "commonProblems": "Brown leaf tips from direct sun or over-fertilizing; very pest-resistant."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic / Wick",
+      "media": "Hydroton (expanded clay)",
+      "nutrisi": "Very dilute AB Mix 400-700 ppm (EC 0.8-1.4) — a light feeder",
+      "waktu_panen": "Not harvested — slow steady growth, new leaves over 3-5 months",
+      "tips": "Adapts to semi-hydroponics but grows slowly, so rinse the system and refresh nutrients only every 3-4 weeks to avoid salt buildup.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Aspidistra_elatior1.jpg/330px-Aspidistra_elatior1.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Non-toxic to cats and dogs per ASPCA; safe houseplant"
+    }
+  },
+  {
+    "id": "hias-55",
+    "name": "Coffee Plant",
+    "scientificName": "Coffea arabica",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "The arabica coffee shrub grown indoors for its glossy dark leaves, fragrant white flowers, and red cherries.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Keep the medium consistently moist but never waterlogged, about every 3 days.",
+      "sunlight": "Bright indirect light; protect from harsh direct midday sun.",
+      "fertilizer": "Acidic-formula liquid fertilizer once a month during the growing season.",
+      "pruning": "Prune in early spring to maintain a compact, bushy shape.",
+      "commonProblems": "Leaf browning from dry air or fluoride in tap water; mealybugs and scale."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Dutch Bucket / Drip",
+      "media": "Coco coir mixed with perlite, or hydroton",
+      "nutrisi": "Standard AB Mix 1000-1400 ppm (EC 2.0-2.8) with extra micronutrients",
+      "waktu_panen": "Cherries appear after 3-4 years; grown mainly as foliage indoors",
+      "tips": "A long-term woody plant that needs a large root volume and stable warmth (20-28°C). Keep the root zone slightly acidic and well oxygenated.",
+      "ph_ideal": "6.0-6.5",
+      "kesulitan": "Sulit"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Coffee_Flowers.JPG/330px-Coffee_Flowers.JPG",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Caffeine in leaves and cherries — vomiting, tremors, rapid heartbeat"
+    }
+  },
+  {
+    "id": "hias-56",
+    "name": "Purple Heart",
+    "scientificName": "Tradescantia pallida",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A striking trailing plant with deep purple, lance-shaped leaves and small pink flowers, loved for its bold color.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water when the top of the medium dries, about every 4 days; tolerates short drought.",
+      "sunlight": "Bright light, including some direct sun, intensifies the purple color.",
+      "fertilizer": "Balanced liquid fertilizer once a month in spring and summer.",
+      "pruning": "Pinch tips frequently to keep it dense; cuttings root almost instantly.",
+      "commonProblems": "Green, leggy growth in low light; sap can irritate skin."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / Semi-hydroponic",
+      "media": "Hydroton (expanded clay) or perlite",
+      "nutrisi": "Diluted AB Mix 600-900 ppm (EC 1.2-1.8)",
+      "waktu_panen": "Not harvested — fast trailing growth visible within 3-6 weeks",
+      "tips": "One of the easiest plants to root in water; just drop a cutting in. Give it bright light or the leaves revert to green instead of purple.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tradescantia_pallida_kz03.jpg/330px-Tradescantia_pallida_kz03.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Sap may cause skin and mild GI irritation in pets"
+    }
+  },
+  {
+    "id": "hias-57",
+    "name": "Watermelon Peperomia",
+    "scientificName": "Peperomia argyreia",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A compact tabletop plant with rounded leaves striped silver and green like a watermelon rind.",
+    "schedules": {
+      "watering": 6,
+      "fertilizer": 45,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Let the medium dry out partway before watering, roughly every 5-7 days.",
+      "sunlight": "Medium to bright indirect light keeps the leaf pattern crisp.",
+      "fertilizer": "Diluted liquid fertilizer every 6 weeks during the growing season.",
+      "pruning": "Remove faded leaves; it stays naturally compact with little pruning.",
+      "commonProblems": "Root rot from overwatering its succulent stems; leggy in low light."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic / Wick",
+      "media": "Hydroton (expanded clay)",
+      "nutrisi": "Dilute AB Mix 500-800 ppm (EC 1.0-1.6) — sensitive to over-feeding",
+      "waktu_panen": "Not harvested — compact growth, new leaves over 2-3 months",
+      "tips": "Its fleshy stems rot easily, so keep only the bottom of the roots in solution and use a well-aerated wick or semi-hydro setup.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Peperomia_argyreia.jpg/330px-Peperomia_argyreia.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Non-toxic to cats and dogs per ASPCA; pet-safe"
+    }
+  },
+  {
+    "id": "hias-58",
+    "name": "Zebra Haworthia",
+    "scientificName": "Haworthiopsis attenuata",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A small, slow-growing succulent with dark green leaves striped by white tubercles, perfect for sunny windowsills.",
+    "schedules": {
+      "watering": 10,
+      "fertilizer": 60,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water every 10-14 days, only after the medium is completely dry.",
+      "sunlight": "Bright indirect light; tolerates a few hours of gentle morning sun.",
+      "fertilizer": "Diluted cactus fertilizer once every 2 months during the growing season.",
+      "pruning": "Minimal; remove dried outer leaves and separate offsets when crowded.",
+      "commonProblems": "Root rot from overwatering and leaf shriveling under harsh midday sun."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "As a drought-adapted succulent, Zebra Haworthia stores water in its leaves and rots quickly when roots stay wet, so hydroponics is not recommended."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Winterbourne_-_Haworthia_attenuata_%286120983526%29.jpg/330px-Winterbourne_-_Haworthia_attenuata_%286120983526%29.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Haworthia is non-toxic and safe for cats and dogs."
+    }
+  },
+  {
+    "id": "hias-59",
+    "name": "Burro's Tail",
+    "scientificName": "Sedum morganianum",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A trailing succulent with plump, blue-green leaves forming long braided tails, ideal for hanging baskets.",
+    "schedules": {
+      "watering": 10,
+      "fertilizer": 60,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water every 10-14 days, letting the medium dry out fully between waterings.",
+      "sunlight": "Bright light with some direct morning sun for the fullest leaves.",
+      "fertilizer": "Light succulent fertilizer once every 2 months in spring and summer.",
+      "pruning": "Trim overly long stems; the detached beads root easily as new plants.",
+      "commonProblems": "Beads drop off when handled, and stems rot if the soil stays soggy."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Burro's Tail is a succulent that hoards water in its fleshy leaves and is highly prone to rot, making constantly wet hydroponic roots unsuitable."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Donkey%27s_tail_in_bloom_March_06.jpg/330px-Donkey%27s_tail_in_bloom_March_06.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Burro's Tail is non-toxic and safe for cats and dogs."
+    }
+  },
+  {
+    "id": "hias-60",
+    "name": "Ti Plant",
+    "scientificName": "Cordyline fruticosa",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A tropical shrub prized for its bold, strappy leaves in vivid shades of pink, red, and green.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Keep the medium evenly moist; water every 2-3 days, never letting it dry out.",
+      "sunlight": "Bright indirect light; more light deepens the leaf colors.",
+      "fertilizer": "Balanced liquid fertilizer once a month during the growing season.",
+      "pruning": "Cut back leggy canes to encourage bushier new shoots from the base.",
+      "commonProblems": "Brown leaf tips from fluoride in tap water or dry air."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA) / Kratky",
+      "media": "Hydroton (LECA) or coarse perlite",
+      "nutrisi": "Diluted AB Mix 700–1000 ppm (EC 1.4–2.0)",
+      "waktu_panen": "Not harvested — vivid new growth visible within 2–3 months",
+      "tips": "Root a healthy stem cutting in plain water for 2–3 weeks before moving to nutrient solution. Use non-fluoridated water to avoid leaf-tip burn.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Cordyline_fruticosa_%2820262433874%29.jpg/330px-Cordyline_fruticosa_%2820262433874%29.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Saponins — vomiting, drooling, and dilated pupils in cats."
+    }
+  },
+  {
+    "id": "hias-61",
+    "name": "Maidenhair Fern",
+    "scientificName": "Adiantum raddianum",
+    "category": "Tanaman Hias",
+    "difficulty": "sulit",
+    "description": "A delicate fern with airy, fan-shaped fronds on fine black stems that loves humid, shaded spots.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Keep the medium constantly moist; water every 1-2 days and never let it dry.",
+      "sunlight": "Low to moderate indirect light; avoid all direct sun.",
+      "fertilizer": "Very diluted liquid fertilizer once a month during active growth.",
+      "pruning": "Snip off browned or crispy fronds at the base to encourage fresh growth.",
+      "commonProblems": "Fronds crisp and brown quickly if humidity drops or the soil dries out."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA) / Wick",
+      "media": "Hydroton (LECA) with a constant shallow water reservoir",
+      "nutrisi": "Very diluted AB Mix 500–800 ppm (EC 1.0–1.6)",
+      "waktu_panen": "Not harvested — lush new fronds appear within 1–2 months",
+      "tips": "This fern thrives in the constant moisture of semi-hydro as long as humidity stays high. Use dechlorinated water and keep roots wicking, not fully drowned.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Starr_030807-0143_Adiantum_raddianum.jpg/330px-Starr_030807-0143_Adiantum_raddianum.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Maidenhair Fern is non-toxic and safe for cats and dogs."
+    }
+  },
+  {
+    "id": "hias-62",
+    "name": "Staghorn Fern",
+    "scientificName": "Platycerium bifurcatum",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "An epiphytic fern with dramatic antler-shaped fronds, usually mounted on a board or wood.",
+    "schedules": {
+      "watering": 7,
+      "fertilizer": 60,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Soak the root ball weekly, then let it drain; mist between soakings.",
+      "sunlight": "Bright indirect light; avoid harsh direct midday sun.",
+      "fertilizer": "Diluted balanced fertilizer once every 2 months in the growing season.",
+      "pruning": "Leave the brown shield fronds intact; only remove fully dead antler fronds.",
+      "commonProblems": "Black, mushy fronds from overwatering or poor air circulation."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Staghorn Fern is an epiphyte that absorbs water and air through mounted root balls and needs to dry between soakings, so submerged hydroponic roots cause rot."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Platycerium_bifurcatum_kz01.jpg/330px-Platycerium_bifurcatum_kz01.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Staghorn Fern is non-toxic and safe for cats and dogs."
+    }
+  },
+  {
+    "id": "hias-63",
+    "name": "Aluminum Plant",
+    "scientificName": "Pilea cadierei",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A compact foliage plant with green leaves splashed by shimmering silver, aluminum-like patches.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water when the top of the medium feels dry, roughly every 3-4 days.",
+      "sunlight": "Bright indirect light keeps the silver markings vivid.",
+      "fertilizer": "Balanced liquid fertilizer once a month during spring and summer.",
+      "pruning": "Pinch back the growing tips regularly to keep the plant bushy and compact.",
+      "commonProblems": "Legginess in low light and leaf curl if the soil dries out too long."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Kratky / Semi-hydroponic (LECA)",
+      "media": "Hydroton (LECA) or roots directly in water",
+      "nutrisi": "Diluted AB Mix 600–900 ppm (EC 1.2–1.8)",
+      "waktu_panen": "Not harvested — bushy new growth visible within 1–2 months",
+      "tips": "Stem cuttings root readily in plain water within 1–2 weeks, making this an easy beginner hydroponic plant. Pinch tips often to keep it full.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/PileaCadierei.jpg/330px-PileaCadierei.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Aluminum Plant is non-toxic and safe for cats and dogs."
+    }
+  },
+  {
+    "id": "hias-64",
+    "name": "Asparagus Fern",
+    "scientificName": "Asparagus setaceus",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A feathery, fern-like foliage plant with soft, lacy green fronds that bring an airy, delicate texture indoors.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Keep the soil lightly moist; water when the top 2 cm feels dry, about every 3 days.",
+      "sunlight": "Bright, indirect light; avoid harsh direct sun that scorches the fronds.",
+      "fertilizer": "Apply a balanced liquid fertilizer once a month during the growing season.",
+      "pruning": "Trim yellowed or browned fronds at the base to keep the plant tidy and full.",
+      "commonProblems": "Fronds turn yellow and drop in dry air or under inconsistent watering; spider mites can appear."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic / Kratky",
+      "media": "Hydroton (expanded clay) or perlite",
+      "nutrisi": "Diluted AB Mix 600–900 ppm (EC 1.2–1.8)",
+      "waktu_panen": "Not harvested — lush frond growth visible within 2–3 months",
+      "tips": "Keep humidity high and let the upper roots breathe; rinse media occasionally to prevent salt buildup.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Asparagus_setaceus_Leaves_2760px.jpg/330px-Asparagus_setaceus_Leaves_2760px.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Berries toxic; sap irritates skin and stomach"
+    }
+  },
+  {
+    "id": "hias-65",
+    "name": "Stromanthe Triostar",
+    "scientificName": "Stromanthe sanguinea",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A striking prayer plant with variegated leaves splashed in cream, green, and pink, with deep maroon undersides.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Keep the soil consistently moist but not soggy; water when the top layer begins to dry, about every 3 days.",
+      "sunlight": "Bright, indirect light; direct sun fades the variegation.",
+      "fertilizer": "Feed with a diluted balanced fertilizer once a month while growing.",
+      "pruning": "Remove dead or curled leaves at the base to encourage fresh growth.",
+      "commonProblems": "Leaf edges brown from low humidity or hard tap water; leaves curl when too dry."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic / Kratky",
+      "media": "Hydroton (expanded clay)",
+      "nutrisi": "Diluted AB Mix 700–1000 ppm (EC 1.4–2.0)",
+      "waktu_panen": "Not harvested — full colorful foliage visible within 3–4 months",
+      "tips": "Use rainwater or filtered water to avoid leaf burn, and keep humidity high for vivid variegation.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Stromanthe_sanguinea_in_garden_in_Manaus%2C_Brazil.jpg/330px-Stromanthe_sanguinea_in_garden_in_Manaus%2C_Brazil.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Safe for cats and dogs"
+    }
+  },
+  {
+    "id": "hias-66",
+    "name": "Lipstick Plant",
+    "scientificName": "Aeschynanthus radicans",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A trailing houseplant with glossy leaves and tubular red flowers that emerge from dark buds like a lipstick tube.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water when the top 2–3 cm of soil is dry, about every 4 days; reduce in winter.",
+      "sunlight": "Bright, indirect light encourages abundant blooming.",
+      "fertilizer": "Apply a bloom-boosting liquid fertilizer once a month during the growing season.",
+      "pruning": "Pinch back leggy stems after flowering to keep the plant bushy.",
+      "commonProblems": "Failure to bloom from too little light; leaf drop in cold drafts or overwatering."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic / Kratky",
+      "media": "Hydroton (expanded clay) or perlite",
+      "nutrisi": "Diluted AB Mix 800–1100 ppm (EC 1.6–2.2)",
+      "waktu_panen": "Not harvested — first blooms can appear within 3–4 months",
+      "tips": "Provide bright light and high humidity to trigger flowering; let the upper roots stay aerated.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Aeschynanthus_radicans.jpg/330px-Aeschynanthus_radicans.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Safe for cats and dogs"
+    }
+  },
+  {
+    "id": "hias-67",
+    "name": "Kentia Palm",
+    "scientificName": "Howea forsteriana",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "An elegant, slow-growing indoor palm with gracefully arching dark-green fronds, prized for its tolerance of low light.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 60,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water when the top few centimeters of soil dry out, about every 5 days; avoid waterlogging.",
+      "sunlight": "Tolerates low to bright indirect light; keep away from harsh direct sun.",
+      "fertilizer": "Feed with a balanced palm fertilizer every 2 months during the growing season.",
+      "pruning": "Only remove fully browned or dead fronds at the base.",
+      "commonProblems": "Brown leaf tips from dry air or fluoride in tap water; spider mites in dry conditions."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic",
+      "media": "Hydroton (expanded clay)",
+      "nutrisi": "Diluted AB Mix 700–1000 ppm (EC 1.4–2.0)",
+      "waktu_panen": "Not harvested — slow, steady growth over 4–6 months",
+      "tips": "Transition young plants gently and keep the solution well-aerated; this palm grows slowly, so change water every 3–4 weeks.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Howea_forsteriana_Lord_Howe_Island.jpg/330px-Howea_forsteriana_Lord_Howe_Island.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Safe for cats and dogs"
+    }
+  },
+  {
+    "id": "hias-68",
+    "name": "Philodendron Birkin",
+    "scientificName": "Philodendron 'Birkin'",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A compact philodendron with dark green leaves striped in fine creamy-white pinstripes, easy and rewarding to grow.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water when the top 2–3 cm of soil is dry, about every 4 days; let excess drain freely.",
+      "sunlight": "Bright, indirect light keeps the variegated pinstripes crisp.",
+      "fertilizer": "Apply a balanced liquid fertilizer once a month during the growing season.",
+      "pruning": "Trim damaged leaves at the base; wipe foliage to keep it clean.",
+      "commonProblems": "Yellow leaves from overwatering; loss of variegation in low light."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic / Kratky",
+      "media": "Hydroton (expanded clay)",
+      "nutrisi": "Diluted AB Mix 800–1200 ppm (EC 1.6–2.4)",
+      "waktu_panen": "Not harvested — steady leaf growth visible within 2–3 months",
+      "tips": "Philodendrons root readily in water; leave an air gap above the solution and change it every 2 weeks.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Philodendron_giganteum_-_Laeken_Royal_Greenhouses_-_Royal_Castle_of_Laeken_-_Brussels%2C_Belgium_-_DSC07236.jpg/330px-Philodendron_giganteum_-_Laeken_Royal_Greenhouses_-_Royal_Castle_of_Laeken_-_Brussels%2C_Belgium_-_DSC07236.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Calcium oxalate — oral irritation, drooling, vomiting"
+    }
+  },
+  {
+    "id": "hias-69",
+    "name": "Anthurium Clarinervium",
+    "scientificName": "Anthurium clarinervium",
+    "category": "Tanaman Hias",
+    "difficulty": "sulit",
+    "description": "A collector's foliage plant with large, heart-shaped velvety dark-green leaves dramatically veined in silvery white.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water when the top of the chunky mix dries, about every 4 days; never let it stay soggy.",
+      "sunlight": "Bright, indirect light; direct sun scorches the velvety leaves.",
+      "fertilizer": "Feed with a diluted balanced fertilizer once a month during the growing season.",
+      "pruning": "Remove old or damaged leaves at the base; this plant needs little pruning.",
+      "commonProblems": "Root rot in dense soil; brown leaf edges and stalled growth in low humidity."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic",
+      "media": "Hydroton (expanded clay)",
+      "nutrisi": "Diluted AB Mix 600–900 ppm (EC 1.2–1.8)",
+      "waktu_panen": "Not harvested — new velvety leaves emerge every 1–2 months",
+      "tips": "Demands very high humidity and warm, aerated roots; keep the solution weak and well-oxygenated to avoid rot.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sulit"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Anthurium_clarinervium.jpg/330px-Anthurium_clarinervium.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Calcium oxalate — oral irritation, drooling, vomiting"
+    }
+  },
+  {
+    "id": "hias-70",
+    "name": "String of Bananas",
+    "scientificName": "Curio radicans",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A trailing succulent with plump, banana-shaped leaves that cascade beautifully from hanging pots.",
+    "schedules": {
+      "watering": 10,
+      "fertilizer": 60,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water only when the soil is fully dry, roughly every 10 days; it stores water in its leaves.",
+      "sunlight": "Bright indirect light to a little morning sun.",
+      "fertilizer": "Diluted succulent fertilizer once every 2 months during the growing season.",
+      "pruning": "Trim long or leggy strands to keep the plant full and bushy.",
+      "commonProblems": "Shriveled leaves from underwatering; mushy stems from overwatering."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "As a drought-tolerant succulent, String of Bananas rots quickly with constantly wet roots and is not suited to hydroponic systems; use a fast-draining cactus mix instead."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/String_of_Bananas.JPG/330px-String_of_Bananas.JPG",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Toxic to cats and dogs; causes vomiting, drooling, and lethargy."
+    }
+  },
+  {
+    "id": "hias-71",
+    "name": "Lace Aloe",
+    "scientificName": "Aristaloe aristata",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A compact rosette succulent with dark green leaves edged in soft white teeth and lacy bristles.",
+    "schedules": {
+      "watering": 10,
+      "fertilizer": 60,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water deeply when the soil is dry, about every 10 days; reduce in winter.",
+      "sunlight": "Bright light with a few hours of direct sun.",
+      "fertilizer": "Light succulent fertilizer once every 2 months in spring and summer.",
+      "pruning": "Remove dried outer leaves and separate offsets to propagate.",
+      "commonProblems": "Root rot from soggy soil; etiolation if light is too low."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Lace Aloe is a desert succulent whose roots rot in permanently wet conditions, so it is not suited to hydroponics; grow it in a gritty, fast-draining mix."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/AloeAristata.jpg/330px-AloeAristata.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Non-toxic to cats and dogs; safe around pets."
+    }
+  },
+  {
+    "id": "hias-72",
+    "name": "Ctenanthe",
+    "scientificName": "Ctenanthe burle-marxii",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A prayer-plant relative prized for its silvery leaves boldly striped in dark green, called the fishbone plant.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Keep the medium lightly moist, watering about every 4 days; avoid letting it dry out fully.",
+      "sunlight": "Medium to bright indirect light; no direct sun.",
+      "fertilizer": "Balanced liquid fertilizer once a month while actively growing.",
+      "pruning": "Trim browned or damaged leaves at the base to keep the clump tidy.",
+      "commonProblems": "Crispy leaf edges from dry air or low humidity; fading color in deep shade."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA)",
+      "media": "Hydroton (LECA) in a self-watering pot keeps humidity steady at the roots",
+      "nutrisi": "Diluted AB Mix 600–900 ppm (EC 1.2–1.8)",
+      "waktu_panen": "Not harvested — lush new foliage appears within 2–3 months",
+      "tips": "Ctenanthe loves humidity, making semi-hydro with LECA a great fit. Keep the reservoir below the root crown and flush the LECA monthly to prevent salt buildup.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ctenanthe_burle-marxii.jpg/330px-Ctenanthe_burle-marxii.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Non-toxic to cats and dogs; safe around pets."
+    }
+  },
+  {
+    "id": "hias-73",
+    "name": "Goldfish Plant",
+    "scientificName": "Nematanthus gregarius",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A trailing houseplant with glossy leaves and puffy orange flowers shaped like leaping goldfish.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water when the top 2 cm of medium is dry, about every 5 days; it likes slight moisture.",
+      "sunlight": "Bright indirect light to encourage flowering.",
+      "fertilizer": "Liquid bloom fertilizer every 2 weeks during the growing season.",
+      "pruning": "Pinch back trailing stems regularly to stay bushy and bloom more.",
+      "commonProblems": "Leaf drop from cold drafts; few flowers if light is too low."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA)",
+      "media": "Hydroton (LECA) provides airy, evenly moist roots",
+      "nutrisi": "Diluted AB Mix 700–1000 ppm (EC 1.4–2.0) with extra bloom support",
+      "waktu_panen": "Not harvested — flowering returns within 3–4 months once settled",
+      "tips": "Goldfish Plant adapts well to LECA semi-hydro. Keep humidity up and the reservoir shallow so the roots stay airy, which keeps blooms coming.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Nematanthus_gregarius_-_Kew_Gardens.JPG/330px-Nematanthus_gregarius_-_Kew_Gardens.JPG",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Non-toxic to cats and dogs; safe around pets."
+    }
+  },
+  {
+    "id": "hias-74",
+    "name": "Majesty Palm",
+    "scientificName": "Ravenea rivularis",
+    "category": "Tanaman Hias",
+    "difficulty": "sedang",
+    "description": "A graceful indoor palm with arching, feathery fronds that brings a lush tropical feel to any room.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 30,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Keep the medium consistently moist, watering about every 4 days; it dislikes drying out.",
+      "sunlight": "Bright indirect light with some filtered sun.",
+      "fertilizer": "Balanced palm fertilizer once a month during the growing season.",
+      "pruning": "Cut off fully browned fronds at the base; leave green ones intact.",
+      "commonProblems": "Brown leaf tips from dry air or fluoride in water; spider mites in low humidity."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "Semi-hydroponic (LECA)",
+      "media": "Hydroton (LECA) suits this moisture-loving palm well",
+      "nutrisi": "Diluted AB Mix 800–1200 ppm (EC 1.6–2.4)",
+      "waktu_panen": "Not harvested — new fronds emerge within 2–3 months",
+      "tips": "Majesty Palm thrives in LECA semi-hydro because it loves steady moisture. Use a generous reservoir and flush monthly to avoid salt buildup that browns the tips.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ravenearivularis.jpg/330px-Ravenearivularis.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Non-toxic to cats and dogs; safe around pets."
+    }
+  },
+  {
+    "id": "hias-75",
+    "name": "Sweetheart Hoya",
+    "scientificName": "Hoya kerrii",
+    "category": "Tanaman Hias",
+    "difficulty": "mudah",
+    "description": "A succulent vine famous for its thick, heart-shaped leaves, often sold as a single rooted heart.",
+    "schedules": {
+      "watering": 12,
+      "fertilizer": 60,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water sparingly once the soil is dry, about every 12 days; the leaves store water.",
+      "sunlight": "Bright indirect light encourages growth and eventual blooms.",
+      "fertilizer": "Diluted fertilizer once every 2 months during the growing season.",
+      "pruning": "Minimal; never cut the flowering spurs as blooms form on them again.",
+      "commonProblems": "Rot from overwatering; a single leaf may never vine without a node."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "As a succulent vine, Sweetheart Hoya stores water in its leaves and rots with constantly wet roots, so it is not suited to hydroponics; use a chunky, fast-draining mix."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hoya-kerrii_flowers_op.jpg/330px-Hoya-kerrii_flowers_op.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Non-toxic to cats and dogs; safe around pets."
+    }
+  },
+  {
+    "id": "buah-23",
+    "name": "Orange",
+    "scientificName": "Citrus sinensis",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "A popular citrus tree producing sweet, juicy fruit rich in vitamin C, with fragrant white blossoms.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water deeply every 2-3 days; let the topsoil dry slightly between waterings to avoid root rot.",
+      "sunlight": "Full sun for at least 6-8 hours a day for the best fruiting.",
+      "fertilizer": "Apply a nitrogen-rich citrus fertilizer monthly during the growing season.",
+      "pruning": "Prune dead or crossing branches after harvest to keep the canopy open and airy.",
+      "commonProblems": "Citrus leaf miner, scale insects, and yellowing leaves from poor drainage or zinc deficiency."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Orange is a woody fruit tree with a deep taproot and a large canopy, so it is not suitable for home hydroponic systems."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/OrangeBloss_wb.jpg/330px-OrangeBloss_wb.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Citrus oils and psoralens cause vomiting, drooling, and skin irritation in pets"
+    }
+  },
+  {
+    "id": "buah-24",
+    "name": "Lychee",
+    "scientificName": "Litchi chinensis",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "A subtropical tree bearing sweet, fragrant fruit with rough red skin and translucent juicy flesh.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Keep the soil consistently moist but never waterlogged; water every 2-3 days in dry weather.",
+      "sunlight": "Full sun, sheltered from strong wind that can damage flowers and young fruit.",
+      "fertilizer": "Feed with a balanced fertilizer monthly, switching to high potassium before flowering.",
+      "pruning": "Prune lightly after harvest to shape the canopy and remove weak inner branches.",
+      "commonProblems": "Fruit cracking, irregular flowering, and fruit borer attacks during humid seasons."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Lychee is a large, long-lived woody tree that needs deep soil to anchor its roots, making hydroponics impractical."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Litchi_chinensis_fruits.JPG/330px-Litchi_chinensis_fruits.JPG",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Flesh is safe, but seeds are toxic and unripe fruit can cause hypoglycemia"
+    }
+  },
+  {
+    "id": "buah-25",
+    "name": "Longan",
+    "scientificName": "Dimocarpus longan",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "A tropical evergreen tree producing clusters of small round fruit with sweet, translucent flesh and a dark seed.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water regularly every 2-3 days, increasing during flowering and fruit set.",
+      "sunlight": "Full sun in a warm, frost-free location for reliable fruiting.",
+      "fertilizer": "Apply organic compost and balanced NPK every month during active growth.",
+      "pruning": "Prune after harvest to control height and encourage new fruiting wood.",
+      "commonProblems": "Erratic flowering, fruit drop, and witches' broom disease spread by mites."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Longan grows into a tall woody tree with extensive roots, so it cannot be grown in a home hydroponic setup."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Longan_tree_at_Pine_Island_Nursery.jpg/330px-Longan_tree_at_Pine_Island_Nursery.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Flesh is safe but the large seed poses a toxicity and choking risk to pets"
+    }
+  },
+  {
+    "id": "buah-26",
+    "name": "Rambutan",
+    "scientificName": "Nephelium lappaceum",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "A tropical tree famous for its hairy red fruit with sweet, juicy white flesh wrapped around a single seed.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days to keep soil moist; rambutan dislikes prolonged drought.",
+      "sunlight": "Full sun with high humidity gives the sweetest, most abundant fruit.",
+      "fertilizer": "Feed with organic manure and balanced NPK monthly during the growing season.",
+      "pruning": "Remove dead and overcrowded branches after harvest to improve airflow and light.",
+      "commonProblems": "Fruit borers, mealybugs, and fruit splitting caused by uneven watering."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Rambutan is a large evergreen fruit tree that needs deep soil for its root system, so hydroponics is not feasible."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Rambutan_white_background_alt.jpg/330px-Rambutan_white_background_alt.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Flesh is non-toxic and safe; remove the seed before feeding pets"
+    }
+  },
+  {
+    "id": "buah-27",
+    "name": "Soursop",
+    "scientificName": "Annona muricata",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "A small tropical tree bearing large green spiny fruit with creamy, tangy-sweet white pulp.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Keep soil evenly moist; water every 2-3 days and avoid letting it dry out fully.",
+      "sunlight": "Full to partial sun in a warm, sheltered, frost-free spot.",
+      "fertilizer": "Apply balanced fertilizer with compost every month for steady growth.",
+      "pruning": "Prune to keep the tree compact and remove weak or dead branches yearly.",
+      "commonProblems": "Mealybugs, anthracnose, and poor fruit set without hand pollination."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Soursop is a woody fruit tree that develops a deep root system, so it is not suited to home hydroponic systems."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Annona_muricata_1.jpg/330px-Annona_muricata_1.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Seeds and bark contain annonacin, a neurotoxin; keep seeds away from pets"
+    }
+  },
+  {
+    "id": "buah-28",
+    "name": "Sugar Apple",
+    "scientificName": "Annona squamosa",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "A small tree producing knobby green fruit with sweet, custard-like white flesh and many black seeds.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days; it tolerates short dry spells but fruits best with steady moisture.",
+      "sunlight": "Full sun all day for sweet, well-formed fruit.",
+      "fertilizer": "Feed monthly with balanced NPK and compost during the growing season.",
+      "pruning": "Prune annually to keep the tree low and open for easier harvesting.",
+      "commonProblems": "Mealybugs, fruit borers, and poor fruit set that often needs hand pollination."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Sugar apple is a woody fruit tree that requires deep soil for its roots, making it unsuitable for hydroponics."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Sugar_apple_on_tree.jpg/330px-Sugar_apple_on_tree.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Seeds and bark are toxic, containing annonacin; flesh is safe in moderation"
+    }
+  },
+  {
+    "id": "buah-29",
+    "name": "Jackfruit",
+    "scientificName": "Artocarpus heterophyllus",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "The world's largest tree-borne fruit, with sweet golden flesh and a strong aroma; a popular shade tree in Indonesian yards.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days while young; mature trees are fairly drought tolerant but fruit better with steady moisture.",
+      "sunlight": "Full sun all day long.",
+      "fertilizer": "Apply manure plus balanced NPK once a month, switching to high-potassium fertilizer before fruiting.",
+      "pruning": "Prune to keep the canopy open and remove dead or crossing branches after harvest.",
+      "commonProblems": "Fruit borer and stem rot in poorly drained soil."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Jackfruit is a massive tree that needs deep soil to anchor its strong roots and support heavy fruit, so it is not suitable for home hydroponics."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/The_jackfruit_is_holding_on_to_the_tree.jpg/330px-The_jackfruit_is_holding_on_to_the_tree.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Jackfruit flesh is non-toxic to dogs and cats; remove the large seeds and feed in moderation."
+    }
+  },
+  {
+    "id": "buah-30",
+    "name": "Durian",
+    "scientificName": "Durio zibethinus",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "The \"king of fruits\" — a spiky tropical fruit with rich, custard-like flesh and a famously pungent aroma.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 120,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days and keep soil consistently moist; durian dislikes drought but also rots in waterlogged ground.",
+      "sunlight": "Full sun, in a warm, humid, sheltered location.",
+      "fertilizer": "Apply organic matter plus NPK once a month, increasing potassium and phosphorus as flowering approaches.",
+      "pruning": "Shape the canopy and remove dead or weak branches; thin excess fruit so the tree is not overburdened.",
+      "commonProblems": "Phytophthora root and stem rot, plus fruit borer attacking developing fruit."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Durian is a tall tree with deep roots and very heavy fruit; it requires deep soil and cannot be grown in a home hydroponic system."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Durio_Zibethinus_Van_Nooten.jpg/330px-Durio_Zibethinus_Van_Nooten.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Durian flesh is non-toxic but very high in fat and sugar; offer only a tiny amount and never the seeds."
+    }
+  },
+  {
+    "id": "buah-31",
+    "name": "Mangosteen",
+    "scientificName": "Garcinia mangostana",
+    "category": "Buah-buahan",
+    "difficulty": "sulit",
+    "description": "The \"queen of fruits\" — a deep-purple tropical fruit with snow-white, sweet-tangy segments inside a thick rind.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 120,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days and never let the soil dry out; mangosteen needs high, steady humidity.",
+      "sunlight": "Partial shade when young, gradually moving to full sun as it matures.",
+      "fertilizer": "Apply compost plus balanced NPK once a month; growth is slow so feed steadily.",
+      "pruning": "Minimal pruning — only remove dead or damaged branches to keep the form tidy.",
+      "commonProblems": "Very slow growth and leaf scorch if exposed to harsh sun or dry air too early."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Mangosteen is a slow-growing tree with a deep taproot that demands deep, rich soil, so it is unsuitable for home hydroponics."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Berthe_Hoola_van_Nooten48.jpg/330px-Berthe_Hoola_van_Nooten48.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Mangosteen flesh is non-toxic to dogs and cats; remove the rind and seeds and feed only the soft segments in moderation."
+    }
+  },
+  {
+    "id": "buah-32",
+    "name": "Salak (Snake Fruit)",
+    "scientificName": "Salacca zalacca",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "A short, thorny palm bearing clusters of fruit with reddish-brown scaly skin and crisp, sweet-astringent flesh.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days; salak likes moist soil and high humidity but not standing water.",
+      "sunlight": "Partial shade to filtered light; it naturally grows under a taller canopy.",
+      "fertilizer": "Apply manure plus NPK once a month for steady leaf and fruit production.",
+      "pruning": "Carefully remove old, dried, thorny fronds at the base; wear thick gloves.",
+      "commonProblems": "Mealybugs hiding among the fruit clusters and rot in waterlogged soil."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Salak is a clumping palm with a dense, spreading root system that needs deep soil, so it cannot be grown hydroponically at home."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Salak_%28Salacca_zalacca%29%2C_2015-05-17.jpg/330px-Salak_%28Salacca_zalacca%29%2C_2015-05-17.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Salak flesh is non-toxic to dogs and cats; peel the scaly skin and remove the seed before feeding small amounts."
+    }
+  },
+  {
+    "id": "buah-33",
+    "name": "Sapodilla (Sawo)",
+    "scientificName": "Manilkara zapota",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "A hardy tropical tree with brown grainy-skinned fruit whose soft flesh tastes of malty brown sugar.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days; once established it tolerates drought well, so reduce watering in the rainy season.",
+      "sunlight": "Full sun.",
+      "fertilizer": "Apply compost plus NPK once a month for healthy growth and fruiting.",
+      "pruning": "Lightly prune to shape the canopy and remove dead wood after harvest.",
+      "commonProblems": "Fruit flies attacking ripening fruit and scale insects on the leaves."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Sapodilla is a long-lived tree with a deep, extensive root system that requires deep soil, making it unsuitable for home hydroponics."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/%E0%B4%B8%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%8B%E0%B4%9F%E0%B5%8D%E0%B4%9F.jpg/330px-%E0%B4%B8%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%8B%E0%B4%9F%E0%B5%8D%E0%B4%9F.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Ripe sapodilla flesh is generally safe, but unripe fruit and the bark contain a milky latex (saponin/tannins) and the seeds have a small hook that can cause GI upset or obstruction; feed only ripe, seedless flesh in moderation."
+    }
+  },
+  {
+    "id": "buah-34",
+    "name": "Persimmon",
+    "scientificName": "Diospyros kaki",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "A deciduous tree bearing glossy orange fruit with sweet, honeyed flesh, best grown in cooler highland areas.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days, keeping the soil evenly moist especially while fruit is developing.",
+      "sunlight": "Full sun; it benefits from a cool winter or highland climate.",
+      "fertilizer": "Apply balanced NPK plus compost once a month during the growing season.",
+      "pruning": "Prune in the dormant season to open the canopy and remove crossing branches.",
+      "commonProblems": "Fruit drop from inconsistent watering and astringency if fruit is picked too early."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Persimmon is a deciduous tree with a deep taproot that needs deep soil and a seasonal climate, so it is not suited to home hydroponics."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kaki_20041002.jpg/330px-Kaki_20041002.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Persimmon flesh is non-toxic, but the seeds and pits can cause intestinal obstruction and inflammation (enteritis) in dogs; always remove all seeds and feed only small pieces of flesh."
+    }
+  },
+  {
+    "id": "buah-35",
+    "name": "Kiwi",
+    "scientificName": "Actinidia deliciosa",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "A vigorous woody climbing vine producing fuzzy brown fruit with tangy, bright-green flesh dotted with tiny black seeds.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2 days; the vine needs plenty of moisture but well-drained soil to avoid root rot.",
+      "sunlight": "Full sun on a sturdy trellis or pergola for support.",
+      "fertilizer": "Apply balanced NPK plus compost once a month during the growing season.",
+      "pruning": "Prune annually in the dormant season to control the vine and encourage fruiting wood.",
+      "commonProblems": "Needs both male and female vines to fruit; sensitive to strong wind and waterlogged roots."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Kiwi is a large, heavy woody vine with extensive roots that needs deep soil and a strong trellis, so it is not practical for home hydroponics."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Kiwis_006eue.jpg/330px-Kiwis_006eue.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Kiwi flesh is non-toxic to dogs and cats; peel the skin and feed small pieces in moderation as it is high in sugar."
+    }
+  },
+  {
+    "id": "buah-36",
+    "name": "Apple",
+    "scientificName": "Malus domestica",
+    "category": "Buah-buahan",
+    "difficulty": "sedang",
+    "description": "A classic deciduous orchard tree bearing crisp, sweet-tart fruit; grows best in cool highland regions like Malang.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days, keeping the soil evenly moist, especially while fruit is forming.",
+      "sunlight": "Full sun; it needs a cool climate with a distinct cool period to fruit well.",
+      "fertilizer": "Apply balanced NPK plus compost once a month during the growing season.",
+      "pruning": "Prune annually in the dormant season to shape the tree and encourage fruiting spurs.",
+      "commonProblems": "Apple scab, codling moth, and poor fruiting in climates that are too warm."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Apple is a woody orchard tree with a deep root system that needs deep soil and a cool, seasonal climate, so it is unsuitable for home hydroponics."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pink_lady_and_cross_section.jpg/330px-Pink_lady_and_cross_section.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Apple flesh is non-toxic and safe for pets, but the seeds, leaves, and stems contain cyanogenic compounds (cyanide); always remove the core and seeds and feed only sliced flesh."
+    }
+  },
+  {
+    "id": "sayur-19",
+    "name": "Cauliflower",
+    "scientificName": "Brassica oleracea var. botrytis",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "A cool-season brassica grown for its dense white curd (head), rich in vitamin C and fiber.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water consistently every day; the curd cracks if the soil dries out and gets soaked again.",
+      "sunlight": "Full sun, but prefers cooler temperatures (15-20°C) for good head formation.",
+      "fertilizer": "High-nitrogen fertilizer early, then balanced NPK once the head begins to form.",
+      "pruning": "Tie or fold the outer leaves over the curd (blanching) to keep it white and tender.",
+      "commonProblems": "Loose or 'ricey' curds in heat; cabbage worms and clubroot."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool + hydroton",
+      "nutrisi": "Vegetable AB Mix 1050–1400 ppm (EC 2.1–2.8)",
+      "waktu_panen": "70–90 days from transplanting — harvest while the curd is still tight",
+      "tips": "Cauliflower needs cool, stable solution temperatures (under 24°C) to form a solid head. Keep the reservoir shaded and provide steady nutrition so growth never stalls.",
+      "ph_ideal": "6.0–7.0",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Chou-fleur_02.jpg/330px-Chou-fleur_02.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Brassica vegetable — safe in tiny amounts but causes gas, bloating and may affect the thyroid in excess."
+    }
+  },
+  {
+    "id": "sayur-20",
+    "name": "Cabbage",
+    "scientificName": "Brassica oleracea var. capitata",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "A hardy leafy brassica that forms a tight round head, popular for stir-fries, salads and pickles.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every day to keep the soil evenly moist; uneven watering splits the head.",
+      "sunlight": "Full sun; tolerates light shade and prefers cool weather.",
+      "fertilizer": "Apply nitrogen-rich fertilizer every 2 weeks during leaf growth.",
+      "pruning": "Remove the lower yellowing leaves; harvest the whole head at the base when firm.",
+      "commonProblems": "Cabbage worms, aphids and head splitting after heavy rain."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Floating Raft",
+      "media": "Rockwool + hydroton",
+      "nutrisi": "Vegetable AB Mix 1750–2100 ppm (EC 2.5–3.0)",
+      "waktu_panen": "60–90 days from transplanting depending on variety",
+      "tips": "Cabbage heads up well in hydroponics if given wide spacing and steady high nutrition. Keep solution temperatures cool to prevent loose, leafy heads in tropical climates.",
+      "ph_ideal": "6.0–7.0",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Cabbage_and_cross_section_on_white.jpg/330px-Cabbage_and_cross_section_on_white.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Brassica vegetable — small amounts are fine but excess causes gas, bloating and can affect the thyroid."
+    }
+  },
+  {
+    "id": "sayur-21",
+    "name": "Celery",
+    "scientificName": "Apium graveolens",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "A crisp, aromatic stalk vegetable used in soups and salads; both the stalks and leaves are edible.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Keep the soil constantly moist; celery is thirsty and turns stringy if it dries out.",
+      "sunlight": "Full sun to partial shade; prefers cool, mild conditions.",
+      "fertilizer": "Feed with a nitrogen-rich liquid fertilizer every 2 weeks.",
+      "pruning": "Harvest the outer stalks first so the inner ones keep growing.",
+      "commonProblems": "Stringy, bitter stalks from drought; leaf blight and aphids."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Kratky",
+      "media": "Rockwool or foam sponge",
+      "nutrisi": "Leafy-vegetable AB Mix 900–1200 ppm (EC 1.8–2.4)",
+      "waktu_panen": "80–120 days from sowing — leaves can be picked earlier and continuously",
+      "tips": "Celery thrives in constantly wet hydroponic roots, which actually suits its water-loving nature. It is slow from seed, so start in rockwool and be patient before transplanting into the NFT channel.",
+      "ph_ideal": "5.8–6.8",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Celery_1.jpg/330px-Celery_1.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Celery is non-toxic and safe for cats and dogs in moderation."
+    }
+  },
+  {
+    "id": "sayur-22",
+    "name": "Swiss Chard",
+    "scientificName": "Beta vulgaris subsp. cicla",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "A colorful leafy green with bright stalks, very productive and harvested leaf-by-leaf for months.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water daily to keep the soil evenly moist for tender leaves.",
+      "sunlight": "Full sun to partial shade; tolerates heat better than spinach.",
+      "fertilizer": "Apply a nitrogen-rich fertilizer every 2 weeks for continuous leaf production.",
+      "pruning": "Pick the outer leaves regularly and leave the center to keep regrowing.",
+      "commonProblems": "Leaf miners and downy mildew in humid, crowded plantings."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC / Kratky",
+      "media": "Rockwool or foam sponge",
+      "nutrisi": "Leafy-vegetable AB Mix 900–1300 ppm (EC 1.8–2.6)",
+      "waktu_panen": "30–45 days for first leaves, then continuous cut-and-come-again",
+      "tips": "Swiss chard is one of the most rewarding leafy greens in hydroponics — harvest outer leaves and it keeps producing for months. It tolerates warm solution better than spinach, making it great for tropical setups.",
+      "ph_ideal": "6.0–7.0",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Chard_%28Beta_vulgaris_var_cicla%29.jpg/330px-Chard_%28Beta_vulgaris_var_cicla%29.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Contains oxalates — small amounts are fine but excess may cause stomach upset and affect calcium absorption."
+    }
+  },
+  {
+    "id": "sayur-23",
+    "name": "Okra",
+    "scientificName": "Abelmoschus esculentus",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "A warm-season plant grown for its tender, ridged green pods, thriving in tropical heat.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every day during pod production; it is fairly drought-tolerant once established.",
+      "sunlight": "Full sun and warm temperatures; loves heat.",
+      "fertilizer": "Use a balanced NPK fertilizer; avoid too much nitrogen which delays pods.",
+      "pruning": "Harvest pods young (5-8 cm) every 1-2 days; older pods turn woody and stop new ones.",
+      "commonProblems": "Tough, fibrous pods if harvested late; aphids and root-knot nematodes."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Ebb & Flow",
+      "media": "Rockwool + hydroton",
+      "nutrisi": "Fruiting AB Mix 1400–2100 ppm (EC 2.0–3.0)",
+      "waktu_panen": "50–65 days from sowing — harvest pods continuously every 1–2 days",
+      "tips": "Okra loves warmth and grows tall, so give it strong support and a deep, well-aerated reservoir. Keep harvesting young pods daily to keep the plant productive for months.",
+      "ph_ideal": "6.0–6.8",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hong_Kong_Okra_Aug_25_2012.JPG/330px-Hong_Kong_Okra_Aug_25_2012.JPG",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Okra is non-toxic and safe for cats and dogs."
+    }
+  },
+  {
+    "id": "sayur-24",
+    "name": "Garden Pea",
+    "scientificName": "Pisum sativum",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "A cool-season climbing legume grown for its sweet green pods and peas, fixing its own nitrogen.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water daily to keep the soil moist, especially during flowering and pod set.",
+      "sunlight": "Full sun; grows best in cool weather and bolts in heat.",
+      "fertilizer": "Low-nitrogen, higher-potassium fertilizer; peas fix their own nitrogen.",
+      "pruning": "Provide a trellis for the tendrils and harvest pods regularly to extend production.",
+      "commonProblems": "Powdery mildew in warm, humid weather; aphids and pea weevils."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool + hydroton",
+      "nutrisi": "AB Mix 980–1260 ppm (EC 1.4–1.8) — keep nitrogen modest",
+      "waktu_panen": "55–70 days from sowing — pick pods while sweet and tender",
+      "tips": "Peas do well in hydroponics with a trellis and a slightly lower-nitrogen solution since they prefer cool roots. Keep solution temperatures down and harvest often for a steady, sweet supply.",
+      "ph_ideal": "6.0–7.0",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Peas_in_pods_-_Studio.jpg/330px-Peas_in_pods_-_Studio.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Garden peas are non-toxic and safe for cats and dogs."
+    }
+  },
+  {
+    "id": "sayur-25",
+    "name": "Sweet Potato",
+    "scientificName": "Ipomoea batatas",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "A sprawling root crop grown from vine cuttings; its starchy tubers and edible leaves make it one of the most rewarding home garden staples.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 21,
+      "pruning": 30,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water every 2 days; keep the soil moist but never waterlogged, and reduce watering as harvest nears.",
+      "sunlight": "Full sun, at least 6 hours a day.",
+      "fertilizer": "Apply a potassium-rich fertilizer; avoid excess nitrogen which grows leaves at the expense of tubers.",
+      "pruning": "Trim runaway vines occasionally so energy goes into the tubers instead of foliage.",
+      "commonProblems": "Tubers may be tunneled by sweet potato weevils; cracked tubers occur in compacted or stony soil."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Sweet potato is a tuber crop that needs deep, loose soil for its roots to swell properly. Standard hydroponic systems cannot support healthy tuber development, so it is best grown in soil or large grow bags."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ipomoea_batatas_006.JPG/330px-Ipomoea_batatas_006.JPG",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Sweet potato is non-toxic to cats and dogs and is even used in some pet foods."
+    }
+  },
+  {
+    "id": "sayur-26",
+    "name": "Pumpkin",
+    "scientificName": "Cucurbita moschata",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "A vigorous trailing vine that produces large, sweet-fleshed fruits; it needs plenty of space but rewards growers with long-storing harvests.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 30,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water deeply once a day at the base; avoid wetting the leaves to prevent mildew.",
+      "sunlight": "Full sun all day.",
+      "fertilizer": "Feed with compost early, then switch to a phosphorus- and potassium-rich fertilizer once flowering begins.",
+      "pruning": "Pinch the growing tips after a few fruits have set so the plant feeds the existing pumpkins.",
+      "commonProblems": "Powdery mildew on leaves and poor fruit set from a lack of pollinators are the most common issues."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Pumpkin is a large sprawling vine with heavy fruits and an extensive root system. Standard hydroponic setups cannot support its size or the weight of its fruit, so it should be grown in the ground or very large containers."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cucurbita_moschata_Butternut_2012_G2.jpg/330px-Cucurbita_moschata_Butternut_2012_G2.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Pumpkin flesh is non-toxic and safe for cats and dogs; plain cooked pumpkin is often given to aid digestion."
+    }
+  },
+  {
+    "id": "sayur-27",
+    "name": "Sweet Corn",
+    "scientificName": "Zea mays",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "A tall cereal grass grown for its sweet, juicy kernels; best planted in blocks so the wind can pollinate the ears properly.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 0,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water daily, especially during tasseling and ear filling when water demand peaks.",
+      "sunlight": "Full sun, at least 8 hours a day.",
+      "fertilizer": "Corn is a heavy feeder — apply nitrogen-rich fertilizer at planting and again when knee-high.",
+      "pruning": "No pruning needed; simply remove dry lower leaves and keep the base weed-free.",
+      "commonProblems": "Corn earworm attacks the ear tips, and incomplete pollination leaves gaps of missing kernels."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Sweet corn grows very tall and relies on wind pollination across a block of plants, plus it has a deep, demanding root system. These traits make it impractical for standard hydroponic systems, so grow it in soil with several rows planted together."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/VegCorn.jpg/330px-VegCorn.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "The kernels are non-toxic, but never give the cob — corn cobs can cause dangerous intestinal blockages in dogs."
+    }
+  },
+  {
+    "id": "sayur-28",
+    "name": "Leek",
+    "scientificName": "Allium ampeloprasum",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "A mild, onion-family vegetable grown for its long white shank; tall and slender, it thrives in cool conditions and rich soil.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 60,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Keep the soil consistently moist; leeks dislike drying out.",
+      "sunlight": "Full sun to partial shade.",
+      "fertilizer": "Feed with a balanced nitrogen-rich fertilizer every two weeks for steady leafy growth.",
+      "pruning": "Trim the outer leaf tips if they yellow; mound soil around the base to blanch a longer white stem.",
+      "commonProblems": "Onion thrips and leek rust (orange leaf spots) are the most frequent troubles."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool or coco peat",
+      "nutrisi": "Leafy-vegetable AB Mix 1000–1400 ppm (EC 2.0–2.8)",
+      "waktu_panen": "70–90 days from transplant — harvest once the white shank is pencil-thick or larger",
+      "tips": "Leek adapts well to hydroponics. To get a long, tender white shank without soil, grow it in tall net pots or wrap the lower stem in dark sleeves to blanch it. Sow seeds in rockwool first, then transplant.",
+      "ph_ideal": "6.0–7.0",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Leek_on_white_background_-_0947.jpg/330px-Leek_on_white_background_-_0947.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Toxic to cats and dogs — as an allium, leek damages red blood cells and can cause anemia even in small amounts."
+    }
+  },
+  {
+    "id": "sayur-29",
+    "name": "Shallot",
+    "scientificName": "Allium cepa var. aggregatum",
+    "category": "Sayuran",
+    "difficulty": "sedang",
+    "description": "An aromatic bulbing onion that multiplies into clusters; a kitchen essential in Indonesian cooking, grown from small mother bulbs.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 0,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water once a day in the morning; cut back sharply as the bulbs mature and tops fall over.",
+      "sunlight": "Full sun, at least 6 hours a day.",
+      "fertilizer": "Use a potassium- and phosphorus-rich fertilizer to encourage firm bulb formation.",
+      "pruning": "No pruning needed; remove only dry or diseased leaves.",
+      "commonProblems": "Onion thrips and bulb rot from overly wet soil are common, especially in the rainy season."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Shallot is a bulb crop, and bulbing alliums need to swell and cure in a firm, well-drained medium. The constant moisture of standard hydroponics tends to rot the bulbs rather than firm them up, so grow shallots in soil instead."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Shallots_-_sliced_and_whole.jpg/330px-Shallots_-_sliced_and_whole.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Toxic to cats and dogs — shallots are alliums and are especially potent, damaging red blood cells and causing anemia."
+    }
+  },
+  {
+    "id": "sayur-30",
+    "name": "Yardlong Bean",
+    "scientificName": "Vigna unguiculata subsp. sesquipedalis",
+    "category": "Sayuran",
+    "difficulty": "mudah",
+    "description": "A fast-growing climbing legume famous for its extremely long, slender pods; productive in the heat and a staple of Indonesian gardens.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 45,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water once a day; keep the soil evenly moist during flowering and pod set.",
+      "sunlight": "Full sun, at least 6 hours a day.",
+      "fertilizer": "Being a legume it fixes its own nitrogen, so favor phosphorus and potassium for heavier podding.",
+      "pruning": "Pinch the main tip once it reaches the top of the trellis to push out more side-shoot pods.",
+      "commonProblems": "Aphids and pod borers attack the pods; mosaic virus can mottle and curl the leaves."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Dutch Bucket",
+      "media": "Hydroton (clay pebbles) or coco peat",
+      "nutrisi": "Fruiting AB Mix 1200–1800 ppm (EC 2.4–3.6) — raise levels once pods set",
+      "waktu_panen": "45–60 days from sowing — pick pods young and tender every 2–3 days to keep them coming",
+      "tips": "Yardlong bean does well in a Dutch bucket system but absolutely needs a sturdy trellis since the vines climb aggressively. Harvest the pods while still slim and snappy; leaving them too long makes them tough and slows new pods.",
+      "ph_ideal": "5.5–6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vigna_unguiculata_Blanco2.286-cropped.jpg/330px-Vigna_unguiculata_Blanco2.286-cropped.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Cooked pods are generally safe, but raw beans contain lectins that can upset a pet's stomach — never feed raw."
+    }
+  },
+  {
+    "id": "herbal-17",
+    "name": "Curry Leaf",
+    "scientificName": "Murraya koenigii",
+    "category": "Herbal",
+    "difficulty": "sedang",
+    "description": "An aromatic small tree whose pungent leaves are essential to South Asian curries and tempering.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days, keeping the soil lightly moist but never waterlogged.",
+      "sunlight": "Full sun, at least 5-6 hours of direct light daily.",
+      "fertilizer": "Feed with balanced fertilizer or compost monthly during the growing season.",
+      "pruning": "Pinch growing tips regularly to encourage a bushy, leafy habit.",
+      "commonProblems": "Leaf drop in cold weather and scale or aphid infestations."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Curry leaf is a woody tree with a deep taproot and long-term growth that needs soil to develop properly, so hydroponic systems are not suitable for it."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Curry_Trees.jpg/330px-Curry_Trees.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Curry leaf is non-toxic and safe for cats and dogs."
+    }
+  },
+  {
+    "id": "herbal-18",
+    "name": "Bay Laurel",
+    "scientificName": "Laurus nobilis",
+    "category": "Herbal",
+    "difficulty": "sedang",
+    "description": "An evergreen shrub whose glossy aromatic leaves flavor soups, stews, and braises.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 45,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 4-5 days; let the top of the soil dry between waterings.",
+      "sunlight": "Full sun to partial shade; tolerates a range of light levels.",
+      "fertilizer": "Feed with a slow-release fertilizer every 6 weeks during growth.",
+      "pruning": "Shape lightly and harvest mature leaves; bay tolerates pruning well.",
+      "commonProblems": "Slow growth and scale insects on the undersides of leaves."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Bay laurel is a slow-growing woody shrub that develops an extensive root system over years and needs soil to thrive, so it is not suited to hydroponic cultivation."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Starr-071024-0195-Laurus_nobilis-leaves-Enchanting_Floral_Gardens_of_Kula-Maui_%2824867859296%29.jpg/330px-Starr-071024-0195-Laurus_nobilis-leaves-Enchanting_Floral_Gardens_of_Kula-Maui_%2824867859296%29.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Toxic to pets — essential oils (eugenol) can cause vomiting and diarrhea in cats and dogs."
+    }
+  },
+  {
+    "id": "herbal-19",
+    "name": "Lemon Verbena",
+    "scientificName": "Aloysia citrodora",
+    "category": "Herbal",
+    "difficulty": "sedang",
+    "description": "A deciduous shrub with intensely lemon-scented leaves used in teas, desserts, and aromatherapy.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 2-3 days, keeping the soil evenly moist during active growth.",
+      "sunlight": "Full sun, at least 6 hours of direct light for the strongest aroma.",
+      "fertilizer": "Feed with a light liquid fertilizer every month during the growing season.",
+      "pruning": "Prune back regularly to keep it bushy and harvest fragrant leaf tips.",
+      "commonProblems": "Leaf drop after sudden cold and spider mites in dry indoor air."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / NFT",
+      "media": "Rockwool or clay pebbles (hydroton)",
+      "nutrisi": "Herbal AB Mix 700-1000 ppm (EC 1.4-2.0)",
+      "waktu_panen": "50-70 days — harvest leafy tips regularly once stems are established.",
+      "tips": "Lemon verbena grows fast and leggy, so pinch tips often to keep it compact. Strong light keeps the lemon oils concentrated.",
+      "ph_ideal": "5.8-6.3",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Aloysia_citriodora_002.jpg/330px-Aloysia_citriodora_002.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Lemon verbena is non-toxic and safe for cats and dogs."
+    }
+  },
+  {
+    "id": "herbal-20",
+    "name": "Stevia",
+    "scientificName": "Stevia rebaudiana",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "A tender herb whose leaves are intensely sweet, used as a natural zero-calorie sugar substitute.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 2 days; stevia likes consistent moisture but not soggy roots.",
+      "sunlight": "Full sun to bright light, at least 6 hours daily.",
+      "fertilizer": "Use a light, low-nitrogen fertilizer monthly to avoid bitter leaves.",
+      "pruning": "Pinch off flower buds and trim tips to keep leaves sweet and plentiful.",
+      "commonProblems": "Reduced sweetness after flowering and root rot from overwatering."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Kratky",
+      "media": "Rockwool or clay pebbles (hydroton)",
+      "nutrisi": "Light herbal AB Mix 600-900 ppm (EC 1.2-1.8) — keep nitrogen modest",
+      "waktu_panen": "40-60 days — harvest leaves before flowering for peak sweetness.",
+      "tips": "Stevia thrives in hydroponics with warm temperatures and strong light. Pinch flower buds early, since flowering lowers the sweetness of the leaves.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Stevia_rebaudiana_flowers.jpg/330px-Stevia_rebaudiana_flowers.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Stevia is non-toxic and generally safe for cats and dogs."
+    }
+  },
+  {
+    "id": "herbal-21",
+    "name": "Winter Savory",
+    "scientificName": "Satureja montana",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "A hardy semi-evergreen herb with peppery leaves prized for seasoning beans and meats.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 45,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 3-4 days; let the soil dry slightly between waterings.",
+      "sunlight": "Full sun, at least 6 hours daily for the best flavor.",
+      "fertilizer": "Feed lightly every 6 weeks; this herb prefers lean soil.",
+      "pruning": "Trim regularly to keep it compact and prevent woody, leggy stems.",
+      "commonProblems": "Root rot in heavy wet soil and stems turning woody with age."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool + coarse perlite",
+      "nutrisi": "Herbal AB Mix 700-1000 ppm (EC 1.4-2.0) — keep it moderate for strong flavor",
+      "waktu_panen": "50-70 days — snip 5-10 cm tips regularly once established.",
+      "tips": "Winter savory dislikes soggy roots, so ensure excellent aeration in the nutrient solution. Keeping nutrients moderate yields a more pungent, peppery leaf.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Satureja_montana2.jpg/330px-Satureja_montana2.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Winter savory is non-toxic and safe for cats and dogs."
+    }
+  },
+  {
+    "id": "herbal-22",
+    "name": "Lovage",
+    "scientificName": "Levisticum officinale",
+    "category": "Herbal",
+    "difficulty": "sedang",
+    "description": "A tall perennial herb with a bold celery-like flavor used in soups, stocks, and salads.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 2 days; lovage likes consistently moist, rich soil.",
+      "sunlight": "Full sun to partial shade; tolerates light shade well.",
+      "fertilizer": "Feed with a nitrogen-rich fertilizer monthly for lush leafy growth.",
+      "pruning": "Cut back stems to encourage tender new leaves and remove flower stalks.",
+      "commonProblems": "Aphids on new shoots and bitter leaves once the plant flowers."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / NFT",
+      "media": "Rockwool or clay pebbles (hydroton)",
+      "nutrisi": "Herbal AB Mix 800-1100 ppm (EC 1.6-2.2) — it is a heavier feeder",
+      "waktu_panen": "50-70 days — harvest outer leaves first and pick before flowering.",
+      "tips": "Lovage grows tall, so give it a deep system and support if needed. Harvest young leaves often, since older leaves and flowering turn the flavor harsh.",
+      "ph_ideal": "5.8-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Liebst%C3%B6ckel.JPG/330px-Liebst%C3%B6ckel.JPG",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Use with caution — contains furanocoumarins that can cause photosensitivity; large amounts may upset a pet's stomach."
+    }
+  },
+  {
+    "id": "herbal-23",
+    "name": "Tarragon",
+    "scientificName": "Artemisia dracunculus",
+    "category": "Herbal",
+    "difficulty": "sedang",
+    "description": "A slender perennial herb with an anise-like flavor central to French cuisine and sauces.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 45,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 3 days; tarragon dislikes wet feet, so let soil dry slightly.",
+      "sunlight": "Full sun, at least 6 hours daily for the best aroma.",
+      "fertilizer": "Feed lightly every 6 weeks; too much fertilizer weakens the flavor.",
+      "pruning": "Trim regularly to encourage fresh tender growth and prevent legginess.",
+      "commonProblems": "Root rot in heavy soil and weak flavor in low light."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / DWC",
+      "media": "Rockwool + coarse perlite",
+      "nutrisi": "Herbal AB Mix 700-1000 ppm (EC 1.4-2.0) — keep moderate to preserve aroma",
+      "waktu_panen": "50-70 days — snip leafy tips regularly once the plant is established.",
+      "tips": "French tarragon does not set viable seed, so start from cuttings. Provide strong aeration and moderate nutrients, since excess feeding dilutes its anise flavor.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Estragon_1511.jpg/330px-Estragon_1511.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Use with caution — contains estragole; large amounts may cause stomach upset in cats and dogs."
+    }
+  },
+  {
+    "id": "herbal-24",
+    "name": "Holy Basil (Tulsi)",
+    "scientificName": "Ocimum tenuiflorum",
+    "category": "Herbal",
+    "difficulty": "mudah",
+    "description": "A sacred aromatic basil revered in Ayurveda, used in teas and herbal remedies.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 30,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 2 days; keep soil evenly moist but well drained.",
+      "sunlight": "Full sun, at least 6 hours of direct light daily.",
+      "fertilizer": "Feed with a balanced liquid fertilizer every 2-3 weeks during growth.",
+      "pruning": "Pinch flower spikes and tips often to keep leaves abundant and aromatic.",
+      "commonProblems": "Aphids and whiteflies, plus rapid flowering that reduces leaf quality."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Kratky / NFT",
+      "media": "Rockwool or clay pebbles (hydroton)",
+      "nutrisi": "Herbal AB Mix 700-1100 ppm (EC 1.4-2.2)",
+      "waktu_panen": "40-60 days — harvest leafy tips regularly and pinch flowers early.",
+      "tips": "Holy basil is one of the easiest herbs for hydroponics and grows vigorously with warmth and strong light. Pinch flower spikes early to keep the leaves tender and aromatic.",
+      "ph_ideal": "5.5-6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Tulsi_or_Tulasi_Holy_basil.jpg/330px-Tulsi_or_Tulasi_Holy_basil.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Holy basil is non-toxic and safe for cats and dogs."
+    }
+  },
+  {
+    "id": "aroma-12",
+    "name": "Ylang-Ylang",
+    "scientificName": "Cananga odorata",
+    "category": "Aromaterapi",
+    "difficulty": "sulit",
+    "description": "A tropical tree whose intensely sweet, golden flowers yield one of the most prized essential oils in perfumery.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 120,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Keep the soil consistently moist but never waterlogged; water every 2-3 days in warm weather.",
+      "sunlight": "Full sun to partial shade; a young tree appreciates protection from harsh midday sun.",
+      "fertilizer": "Feed monthly during the growing season with a balanced fertilizer to support abundant flowering.",
+      "pruning": "Prune to control height and encourage a bushier canopy, since the tree can grow very tall.",
+      "commonProblems": "Sensitive to cold and wind; leaves may drop if temperatures fall below ideal tropical conditions."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Ylang-ylang is a large woody tree with a deep, vigorous root system, so it is not suited to hydroponics. Grow it in the ground or a very large pot with rich, well-draining soil."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Cananga_odorata_01.JPG/330px-Cananga_odorata_01.JPG",
+    "toxicity": {
+      "pets": "caution",
+      "note": "The essential oil can cause skin irritation and lethargy in pets; keep concentrated oil away from animals."
+    }
+  },
+  {
+    "id": "aroma-13",
+    "name": "Patchouli",
+    "scientificName": "Pogostemon cablin",
+    "category": "Aromaterapi",
+    "difficulty": "sedang",
+    "description": "A leafy tropical herb famous for its deep, earthy, musky scent widely used in perfumes and incense.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 45,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Likes consistently moist soil; water every 1-2 days and never let it dry out completely.",
+      "sunlight": "Partial shade to filtered light; intense direct sun can scorch the leaves.",
+      "fertilizer": "Apply a nitrogen-rich liquid fertilizer monthly to promote lush leaf growth.",
+      "pruning": "Pinch the growing tips regularly to keep the plant bushy and encourage fragrant new foliage.",
+      "commonProblems": "Wilts quickly if underwatered; prone to fungal leaf spots in stagnant, overly humid air."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Kratky",
+      "media": "Rockwool or hydroton (expanded clay)",
+      "nutrisi": "Herbal AB Mix 800–1200 ppm (EC 1.6–2.4) — patchouli is a hungry leafy herb",
+      "waktu_panen": "70–90 days — harvest the upper leaves once the plant is well established",
+      "tips": "Patchouli thrives in hydroponics thanks to its love of constant moisture. Keep the solution well-oxygenated and the nutrient temperature cool to avoid root rot in its soft stems.",
+      "ph_ideal": "5.5–6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Pogostemon_cablin_001.jpg/330px-Pogostemon_cablin_001.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Generally low risk, but the concentrated essential oil may cause stomach upset; avoid letting pets ingest the oil."
+    }
+  },
+  {
+    "id": "aroma-14",
+    "name": "Vetiver",
+    "scientificName": "Chrysopogon zizanioides",
+    "category": "Aromaterapi",
+    "difficulty": "mudah",
+    "description": "A tall perennial grass whose fragrant roots produce a smoky, woody essential oil prized for grounding aromatherapy.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 60,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Very adaptable; water every 3-4 days, though established clumps tolerate both drought and brief flooding.",
+      "sunlight": "Full sun is best for vigorous growth and the strongest root fragrance.",
+      "fertilizer": "Undemanding; a light feeding every 2 months is plenty for this hardy grass.",
+      "pruning": "Trim the foliage back periodically to keep clumps tidy and channel energy into the roots.",
+      "commonProblems": "Almost trouble-free; its main drawback is becoming a dense, hard-to-divide clump over time."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Deep water culture",
+      "media": "Hydroton (expanded clay) in a net pot",
+      "nutrisi": "AB Mix 700–1100 ppm (EC 1.4–2.2) — a grass that handles a fairly wide nutrient range",
+      "waktu_panen": "8–12 months — roots are harvested once they have developed a strong aroma",
+      "tips": "Vetiver is naturally semi-aquatic, so it adapts beautifully to deep water culture. Give the roots plenty of room and strong aeration, as the prized oil concentrates in a well-developed root mass.",
+      "ph_ideal": "5.5–6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Vetiver_grass.jpg/330px-Vetiver_grass.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Vetiver is non-toxic and safe around pets."
+    }
+  },
+  {
+    "id": "aroma-15",
+    "name": "Tuberose",
+    "scientificName": "Agave amica",
+    "category": "Aromaterapi",
+    "difficulty": "sedang",
+    "description": "A bulb-grown flower with waxy white blooms famous for an intoxicating night-time fragrance used in fine perfumery.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water regularly while growing and flowering, but reduce sharply once the bulbs go dormant.",
+      "sunlight": "Full sun for at least 6 hours daily to fuel strong stalks and abundant blooms.",
+      "fertilizer": "Feed with a phosphorus-rich fertilizer monthly during active growth to boost flowering.",
+      "pruning": "Cut spent flower spikes after blooming so the bulb can store energy for next season.",
+      "commonProblems": "Bulbs rot easily in cold, wet soil; they may also skip flowering if planted too shallow."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Tuberose grows from a storage bulb that needs a dry dormancy period and is highly prone to rot when kept constantly wet, so hydroponics is unsuitable. Plant the bulbs in free-draining soil instead."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tuberose_flower.jpg/330px-Tuberose_flower.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Best kept away from pets; ingestion of the bulbs or sap may cause mild digestive upset."
+    }
+  },
+  {
+    "id": "aroma-16",
+    "name": "Gardenia",
+    "scientificName": "Gardenia jasminoides",
+    "category": "Aromaterapi",
+    "difficulty": "sulit",
+    "description": "An evergreen shrub with glossy leaves and creamy white flowers prized for their rich, sweet jasmine-like perfume.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 90,
+      "repotting": 730
+    },
+    "careDetails": {
+      "watering": "Keep the soil evenly moist with soft, lime-free water; let the top layer dry slightly between waterings.",
+      "sunlight": "Bright light with some morning sun; protect from harsh afternoon sun that scorches buds.",
+      "fertilizer": "Feed with an acidic fertilizer for ericaceous plants every month during the growing season.",
+      "pruning": "Prune lightly right after flowering to shape the shrub and remove spent blooms.",
+      "commonProblems": "Notorious for bud drop and yellowing leaves (chlorosis) when soil pH, watering, or light is even slightly off."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Gardenia is a woody, acid-loving shrub with a fussy root system that resents the constantly wet roots of hydroponics. Grow it in acidic, well-draining potting mix where its pH can be carefully managed."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Gardenia_jasminoides_flower_Argentina.jpg/330px-Gardenia_jasminoides_flower_Argentina.jpg",
+    "toxicity": {
+      "pets": "toxic",
+      "note": "Toxic to pets — ingestion can cause vomiting, diarrhea, and hives."
+    }
+  },
+  {
+    "id": "aroma-17",
+    "name": "Curry Plant",
+    "scientificName": "Helichrysum italicum",
+    "category": "Aromaterapi",
+    "difficulty": "sedang",
+    "description": "A silvery Mediterranean herb, also called immortelle, whose foliage smells strongly of curry and yields a healing essential oil.",
+    "schedules": {
+      "watering": 5,
+      "fertilizer": 60,
+      "pruning": 60,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Drought-tolerant; water sparingly and let the soil dry out well between waterings.",
+      "sunlight": "Full sun all day brings out the strongest aroma and the best silvery foliage.",
+      "fertilizer": "Needs very little feeding; a light dose every 2 months suits this lean-soil herb.",
+      "pruning": "Trim after flowering to keep the plant compact and prevent it from becoming woody and leggy.",
+      "commonProblems": "Root rot from overwatering or heavy soil is the main risk in humid tropical climates."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Drip system",
+      "media": "Coarse perlite or rockwool with excellent drainage",
+      "nutrisi": "Diluted herbal AB Mix 600–900 ppm (EC 1.2–1.8) — keep it lean to preserve the aroma",
+      "waktu_panen": "60–90 days — harvest fragrant sprigs once the plant is well established",
+      "tips": "As a Mediterranean herb, Helichrysum hates wet feet, so use a low-volume system like NFT or drip with strong aeration. Keep nutrients lean and let roots breathe to avoid rot and concentrate the oils.",
+      "ph_ideal": "6.0–6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Helichrysum_italicum_%28immortelle%29.JPG/330px-Helichrysum_italicum_%28immortelle%29.JPG",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Generally low risk, but the concentrated essential oil may cause irritation or upset if ingested by pets."
+    }
+  },
+  {
+    "id": "obat-13",
+    "name": "Moringa",
+    "scientificName": "Moringa oleifera",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "A fast-growing 'miracle tree' whose leaves are packed with vitamins, protein, and antioxidants, widely used to support nutrition and overall wellness.",
+    "schedules": {
+      "watering": 3,
+      "fertilizer": 60,
+      "pruning": 90,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 2–3 days; tolerant of drought once established, so avoid waterlogging.",
+      "sunlight": "Full sun all day for the best leaf production.",
+      "fertilizer": "Compost or manure every 2 months; it grows well even in poor soil.",
+      "pruning": "Cut back the main stem regularly to keep the tree short and bushy for easy leaf harvesting.",
+      "commonProblems": "Root rot in waterlogged soil and occasional caterpillars on young leaves."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Moringa is a deep-rooted tree that can reach 3–10 meters with a strong taproot, so it is not suited to home hydroponic systems and is best grown in the ground."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/DrumstickFlower.jpg/330px-DrumstickFlower.jpg",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Leaves are non-toxic and nutritious; the root and bark contain alkaloids — use with caution."
+    }
+  },
+  {
+    "id": "obat-14",
+    "name": "Neem",
+    "scientificName": "Azadirachta indica",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "A hardy evergreen tree prized for its bitter leaves and oil, traditionally used as a natural antiseptic, insect repellent, and skin remedy.",
+    "schedules": {
+      "watering": 4,
+      "fertilizer": 90,
+      "pruning": 120,
+      "repotting": 365
+    },
+    "careDetails": {
+      "watering": "Water every 3–4 days when young; mature trees are very drought tolerant.",
+      "sunlight": "Full sun; neem thrives in hot, dry tropical climates.",
+      "fertilizer": "Compost every 3 months; it tolerates poor, sandy soils well.",
+      "pruning": "Prune to shape the canopy and remove dead branches once a season.",
+      "commonProblems": "Scale insects and root rot if the soil stays soggy."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": false,
+      "metode": "-",
+      "media": "-",
+      "nutrisi": "-",
+      "waktu_panen": "-",
+      "tips": "Neem is a large tree that can grow 15–20 meters tall with an extensive deep root system, making it unsuitable for hydroponics; grow it in well-drained ground instead."
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Neem_Tree_in_Rajasthan%2C_India.jpg/330px-Neem_Tree_in_Rajasthan%2C_India.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Neem oil and seeds (azadirachtin) can cause vomiting and lethargy if ingested by pets — use with caution."
+    }
+  },
+  {
+    "id": "obat-15",
+    "name": "Bitter Melon",
+    "scientificName": "Momordica charantia",
+    "category": "Obat",
+    "difficulty": "sedang",
+    "description": "A climbing vine bearing warty, intensely bitter fruit that is widely used to help manage blood sugar and support digestion.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 14,
+      "pruning": 30,
+      "repotting": 0
+    },
+    "careDetails": {
+      "watering": "Water daily and keep the soil consistently moist, especially while fruiting.",
+      "sunlight": "Full sun, at least 6 hours a day.",
+      "fertilizer": "Balanced NPK every 2 weeks, higher potassium once fruiting begins.",
+      "pruning": "Train the vine onto a trellis and pinch tips to encourage side branches and more fruit.",
+      "commonProblems": "Fruit flies and powdery mildew in humid conditions."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Dutch Bucket",
+      "media": "Rockwool + hydroton",
+      "nutrisi": "Fruiting AB Mix 1500–2500 ppm (EC 3.0–5.0) — raise potassium during fruiting",
+      "waktu_panen": "55–70 days from sowing — harvest fruit while still firm and light green",
+      "tips": "Bitter melon grows vigorously in a Dutch Bucket system but needs a sturdy trellis for its vines. Provide strong support and good aeration of the nutrient solution with an air pump.",
+      "ph_ideal": "5.5–6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Momordica_charantia_Blanco2.357.png/330px-Momordica_charantia_Blanco2.357.png",
+    "toxicity": {
+      "pets": "caution",
+      "note": "The seeds and red arils are toxic and the fruit is very bitter; can cause vomiting and diarrhea in pets — use with caution."
+    }
+  },
+  {
+    "id": "obat-16",
+    "name": "Roselle",
+    "scientificName": "Hibiscus sabdariffa",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "A shrubby hibiscus whose tart red calyces are brewed into a vitamin C-rich tea valued for supporting blood pressure and heart health.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 180
+    },
+    "careDetails": {
+      "watering": "Water every 2 days; keep moist during flowering and calyx formation.",
+      "sunlight": "Full sun for abundant flowering and deep-red calyces.",
+      "fertilizer": "Organic fertilizer monthly; reduce nitrogen as flowering nears.",
+      "pruning": "Pinch growing tips early to make the plant bushier and more productive.",
+      "commonProblems": "Aphids and leaf-eating beetles on young foliage."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Dutch Bucket",
+      "media": "Hydroton or rockwool + hydroton",
+      "nutrisi": "Flowering AB Mix 1200–2000 ppm (EC 2.4–4.0)",
+      "waktu_panen": "120–150 days from sowing — harvest the fleshy calyces about 2–3 weeks after flowering",
+      "tips": "Roselle is a tall shrub, so use a large-volume Dutch Bucket system and support the stems. Plenty of light during flowering produces the deepest-colored, most flavorful calyces.",
+      "ph_ideal": "5.5–6.5",
+      "kesulitan": "Sedang"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Roselle%2C_Hibiscus_sabdariffa%2C_2014_01.JPG/330px-Roselle%2C_Hibiscus_sabdariffa%2C_2014_01.JPG",
+    "toxicity": {
+      "pets": "non-toxic",
+      "note": "Roselle is generally non-toxic to cats and dogs and is widely consumed as a tea."
+    }
+  },
+  {
+    "id": "obat-17",
+    "name": "Insulin Plant",
+    "scientificName": "Costus igneus",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "A spiral-stemmed herb whose leaves are traditionally chewed to help lower blood sugar, giving it the popular name 'insulin plant'.",
+    "schedules": {
+      "watering": 2,
+      "fertilizer": 30,
+      "pruning": 60,
+      "repotting": 180
+    },
+    "careDetails": {
+      "watering": "Water every 2 days; it likes consistently moist but well-drained soil.",
+      "sunlight": "Partial shade to bright indirect light; protect from harsh midday sun.",
+      "fertilizer": "Organic liquid fertilizer once a month.",
+      "pruning": "Remove old or yellowing leaves and divide clumps when crowded.",
+      "commonProblems": "Leaf-tip browning from dry air and root rot if overwatered."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "DWC / Kratky",
+      "media": "Rockwool or hydroton",
+      "nutrisi": "Herbal AB Mix 800–1200 ppm (EC 1.6–2.4)",
+      "waktu_panen": "60–90 days from rooting — harvest mature leaves continuously once established",
+      "tips": "The insulin plant roots easily from stem cuttings placed in water, making it well suited to a simple Kratky setup. Keep it out of direct hot sun so the leaves stay broad and green.",
+      "ph_ideal": "5.5–6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/IMG_2256-Chamaecostus_cuspidatus.jpg/330px-IMG_2256-Chamaecostus_cuspidatus.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Pet safety data is limited; as a medicinal blood-sugar-lowering herb, give only with caution."
+    }
+  },
+  {
+    "id": "obat-18",
+    "name": "Toothache Plant",
+    "scientificName": "Acmella oleracea",
+    "category": "Obat",
+    "difficulty": "mudah",
+    "description": "A low spreading herb with yellow-and-red 'eyeball' flower heads that produce a tingling, numbing sensation, traditionally used to relieve toothache and mouth sores.",
+    "schedules": {
+      "watering": 1,
+      "fertilizer": 21,
+      "pruning": 45,
+      "repotting": 180
+    },
+    "careDetails": {
+      "watering": "Water daily; it likes steadily moist soil and wilts quickly if it dries out.",
+      "sunlight": "Full sun to partial shade; full sun gives the strongest flowering.",
+      "fertilizer": "Light liquid fertilizer every 3 weeks.",
+      "pruning": "Pinch off spent flower heads to keep new blooms coming.",
+      "commonProblems": "Aphids on young shoots and root rot in waterlogged soil."
+    },
+    "hidroponik": {
+      "bisa_hidroponik": true,
+      "metode": "NFT / Kratky",
+      "media": "Rockwool or foam sponge",
+      "nutrisi": "Leafy/herbal AB Mix 700–1100 ppm (EC 1.4–2.2)",
+      "waktu_panen": "40–60 days from sowing — harvest leaves and flower buds, which carry the strongest tingling effect",
+      "tips": "This compact herb grows fast and is easy in a Kratky or NFT system. Harvest flower buds for the strongest spilanthol (numbing compound) content and pick regularly to encourage bushy growth.",
+      "ph_ideal": "5.5–6.5",
+      "kesulitan": "Mudah"
+    },
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Spilanthes-closeup-large.jpg/330px-Spilanthes-closeup-large.jpg",
+    "toxicity": {
+      "pets": "caution",
+      "note": "Contains spilanthol, which causes a numbing, tingling sensation in the mouth; give only with caution to pets."
+    }
   }
 ]

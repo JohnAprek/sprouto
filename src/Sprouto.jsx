@@ -71,6 +71,18 @@ const EMOJI_MAP = {
   'aroma-8': '🌼', 'aroma-9': '🌸', 'aroma-10': '🌹', 'aroma-11': '🌿',
   'obat-11': '🌸', 'obat-12': '🌿',
   'hias-46': '🌿', 'hias-47': '🌸', 'hias-48': '🎋', 'hias-49': '🍃', 'hias-50': '🌿', 'hias-51': '🌿',
+  'hias-52': '🌿', 'hias-53': '🌿', 'hias-54': '🌿', 'hias-55': '☕', 'hias-56': '💜', 'hias-57': '🍉',
+  'hias-58': '🌵', 'hias-59': '🌵', 'hias-60': '🌿', 'hias-61': '🌿', 'hias-62': '🦌', 'hias-63': '🌿',
+  'hias-64': '🌿', 'hias-65': '🌿', 'hias-66': '🌺', 'hias-67': '🌴', 'hias-68': '🌿', 'hias-69': '🌿',
+  'hias-70': '🌿', 'hias-71': '🌵', 'hias-72': '🌿', 'hias-73': '🐠', 'hias-74': '🌴', 'hias-75': '💚',
+  'buah-23': '🍊', 'buah-24': '🍒', 'buah-25': '🍈', 'buah-26': '🍈', 'buah-27': '🍈', 'buah-28': '🍈',
+  'buah-29': '🍈', 'buah-30': '🍈', 'buah-31': '🍇', 'buah-32': '🍈', 'buah-33': '🍈', 'buah-34': '🍊',
+  'buah-35': '🥝', 'buah-36': '🍎',
+  'sayur-19': '🥦', 'sayur-20': '🥬', 'sayur-21': '🥬', 'sayur-22': '🥬', 'sayur-23': '🌿', 'sayur-24': '🫛',
+  'sayur-25': '🍠', 'sayur-26': '🎃', 'sayur-27': '🌽', 'sayur-28': '🧅', 'sayur-29': '🧅', 'sayur-30': '🫘',
+  'herbal-17': '🍛', 'herbal-18': '🌿', 'herbal-19': '🍋', 'herbal-20': '🌿', 'herbal-21': '🌿', 'herbal-22': '🌿', 'herbal-23': '🌿', 'herbal-24': '🌿',
+  'aroma-12': '🌸', 'aroma-13': '🌿', 'aroma-14': '🌿', 'aroma-15': '🌸', 'aroma-16': '🌼', 'aroma-17': '🌼',
+  'obat-13': '🌿', 'obat-14': '🌿', 'obat-15': '🥒', 'obat-16': '🌺', 'obat-17': '🌿', 'obat-18': '🌼',
 };
 
 // --- Toast Component ---
