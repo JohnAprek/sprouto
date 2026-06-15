@@ -589,6 +589,27 @@ function PlantCard({ plant, onClick }) {
   );
 }
 
+// --- Affiliate / marketplace supply links ---
+// Set amazonTag to your Amazon Associates tag to monetize EN links.
+const AFFILIATE = { amazonTag: '' };
+function supplyUrl(query, lang) {
+  if (lang === 'id') return 'https://www.tokopedia.com/search?st=product&q=' + encodeURIComponent(query);
+  const tag = AFFILIATE.amazonTag ? '&tag=' + encodeURIComponent(AFFILIATE.amazonTag) : '';
+  return 'https://www.amazon.com/s?k=' + encodeURIComponent(query) + tag;
+}
+function supplyItems(plant, L, lang) {
+  const items = [
+    { label: L.supply_soil, q: lang === 'id' ? 'media tanam' : 'potting mix soil' },
+    { label: L.supply_pot, q: lang === 'id' ? 'pot tanaman drainase' : 'plant pot with drainage' },
+    { label: L.supply_fertilizer, q: lang === 'id' ? 'pupuk tanaman' : 'indoor plant fertilizer' },
+  ];
+  if (plant.hidroponik && plant.hidroponik.bisa_hidroponik) {
+    items.push({ label: L.supply_rockwool, q: lang === 'id' ? 'rockwool hidroponik' : 'rockwool hydroponic' });
+    items.push({ label: L.supply_nutrient, q: lang === 'id' ? 'nutrisi ab mix hidroponik' : 'ab mix hydroponic nutrient' });
+  }
+  return items;
+}
+
 // --- 3. Plant Detail ---
 function PlantDetail() {
   const { id } = useParams();
@@ -718,6 +739,19 @@ function PlantDetail() {
           <li><strong>{L.tip_fertilizing}:</strong> {plant.careDetails.fertilizer}</li>
           <li><strong>{L.tip_pruning}:</strong> {plant.careDetails.pruning}</li>
         </ul>
+
+        {/* --- PERLENGKAPAN (AFFILIATE) --- */}
+        <div style={{ marginTop: '28px' }}>
+          <h3 style={{ fontSize: '1.05rem', marginBottom: '12px' }}>{L.supplies_title}</h3>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+            {supplyItems(plant, L, lang).map((s, i) => (
+              <a key={i} href={supplyUrl(s.q, lang)} target="_blank" rel="noopener noreferrer"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 600, textDecoration: 'none', border: '1.5px solid var(--border-color)', background: 'var(--surface)', color: 'var(--text-main)' }}>
+                {s.label} <span style={{ opacity: 0.5, fontSize: '0.75rem' }}>↗</span>
+              </a>
+            ))}
+          </div>
+        </div>
 
         {/* --- PANDUAN MENANAM STATIS --- */}
         <PlantGuideSection plant={plant} />
@@ -992,7 +1026,8 @@ function Favorites() {
 
   return (
     <main className="main-content animate-fade-up">
-      <h2 style={{ fontSize: '1.4rem', fontWeight: '700', marginBottom: '20px' }}>{L.fav_title}</h2>
+      <h2 style={{ fontSize: '1.4rem', fontWeight: '700', marginBottom: '4px' }}>{L.fav_title}</h2>
+      <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '20px' }}>{L.fav_subtitle}</p>
       {favPlants.length === 0 ? (
         <div style={{ textAlign: 'center', color: 'var(--text-muted)', marginTop: '60px' }}>
           <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: 'var(--surface)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px', boxShadow: 'var(--shadow-sm)' }}>

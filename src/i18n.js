@@ -75,6 +75,9 @@ const STR = {
     fav_title: 'Favorite Collection',
     fav_empty_title: 'No favorite plants yet',
     fav_empty_sub: 'Save the plants you like to see them here.',
+    fav_subtitle: 'Plants you want to grow — your wishlist.',
+    supplies_title: '🛒 Recommended supplies',
+    supply_soil: 'Potting mix', supply_pot: 'Plant pot', supply_fertilizer: 'Fertilizer', supply_rockwool: 'Rockwool', supply_nutrient: 'AB Mix nutrient',
 
     garden_title: '🌿 My Garden',
     garden_summary: (plants, tasks) => `${plants} plants · ${tasks} tasks today`,
@@ -171,6 +174,9 @@ const STR = {
     fav_title: 'Koleksi Favorit',
     fav_empty_title: 'Belum ada tanaman favorit',
     fav_empty_sub: 'Simpan tanaman yang Anda suka untuk melihatnya di sini.',
+    fav_subtitle: 'Tanaman yang ingin kamu tanam — wishlist-mu.',
+    supplies_title: '🛒 Perlengkapan yang disarankan',
+    supply_soil: 'Media tanam', supply_pot: 'Pot tanaman', supply_fertilizer: 'Pupuk', supply_rockwool: 'Rockwool', supply_nutrient: 'Nutrisi AB Mix',
 
     garden_title: '🌿 Kebunku',
     garden_summary: (plants, tasks) => `${plants} tanaman · ${tasks} tugas hari ini`,
