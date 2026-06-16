@@ -30,3 +30,6 @@ vite.config.ts.timestamp-*
 # local raw design assets / dropped icons (not for repo)
 /menntah/
 public/icons-3d/raw/
+
+# local agent/session config
+.claude/

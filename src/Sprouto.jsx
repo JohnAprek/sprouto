@@ -238,6 +238,8 @@ function Header() {
   const location = useLocation();
   const showBack = !['/', '/ensiklopedia', '/favorit', '/panduan', '/kalkulator', '/kalender', '/profile'].includes(location.pathname);
 
+  if (location.pathname === '/') return null;
+
   return (
     <header className="app-header">
       <div className="header-title-row">
@@ -329,6 +331,9 @@ function Home() {
   const ico3d = (n) => `${import.meta.env.BASE_URL}icons-3d/${n}.png`;
   const gardenPlants = myGarden.map(g => plants.find(p => p.id === g.id)).filter(Boolean);
   const heroPlant = plants.find(p => p.id === 'hias-1') || plants[0];
+  const aglonema = plants.find(p => p.id === 'hias-2') || plants[1] || heroPlant;
+  const snakePlant = plants.find(p => p.id === 'hias-3') || plants[2] || heroPlant;
+  const taskPlants = gardenPlants.length ? gardenPlants : [heroPlant, aglonema, snakePlant].filter(Boolean);
   const popular = plants.slice(0, 6);
   const isFav = (id) => favorites.includes(id);
   const thumb = (p, cls, fontSize) => plantImg(p)
@@ -339,18 +344,23 @@ function Home() {
     <main className="main-content animate-fade-up">
       {/* Greeting */}
       <div className="home-hero">
-        <h2>{greeting}, {profile.name.split(' ')[0]}! {greetIcon}</h2>
-        <p className="hero-sub">{L.hero_status}</p>
-        {heroPlant && plantImg(heroPlant) && <img className="home-hero-img" src={plantImg(heroPlant)} alt="" loading="lazy" />}
-      </div>
-
-      <div className="care-alert" onClick={() => navigate(gardenPlants.length ? '/kalender' : '/ensiklopedia')}>
-        <div className="care-alert-ico"><Droplets size={20} /></div>
-        <div className="care-alert-txt">
-          <h4>{gardenPlants.length ? L.hero_need_care(gardenPlants.length) : L.add_plant}</h4>
-          <p>{gardenPlants.length ? L.needs_care_sub : L.hero_subtitle}</p>
+        <div className="hero-copy">
+          <h2>{greeting}, {profile.name.split(' ')[0]}! {greetIcon}</h2>
+          <p className="hero-sub">{L.hero_status}</p>
         </div>
-        <span className="chev">›</span>
+        <div className="hero-visual">
+          {heroPlant && plantImg(heroPlant) && <img className="home-hero-img" src={plantImg(heroPlant)} alt="" loading="lazy" />}
+          <img className="home-hero-bot" src={`${import.meta.env.BASE_URL}pwa-192x192.png`} alt="" loading="lazy" />
+          <span className="hero-heart">&hearts;</span>
+        </div>
+        <div className="care-alert" onClick={() => navigate(gardenPlants.length ? '/kalender' : '/ensiklopedia')}>
+          <div className="care-alert-ico"><Droplets size={20} /></div>
+          <div className="care-alert-txt">
+            <h4>{gardenPlants.length ? L.hero_need_care(gardenPlants.length) : L.add_plant}</h4>
+            <p>{gardenPlants.length ? L.needs_care_sub : L.hero_subtitle}</p>
+          </div>
+          <span className="chev">&rsaquo;</span>
+        </div>
       </div>
 
       {/* Stats */}
@@ -379,7 +389,7 @@ function Home() {
 
       {/* AI banner */}
       <div className="ai-banner">
-        <div className="ai-bot"><img src={ico3d('robot')} alt="" /></div>
+        <div className="ai-bot"><img src={`${import.meta.env.BASE_URL}pwa-192x192.png`} alt="" /></div>
         <div className="ai-banner-txt">
           <div className="ai-kicker">✨ {L.ai_kicker}</div>
           <h3>{L.ai_title}</h3>
@@ -405,24 +415,27 @@ function Home() {
       </div>
 
       {/* Today's tasks */}
-      {gardenPlants.length > 0 && (
-        <>
-          <div className="sec-head">
-            <h3>{L.todays_tasks}</h3>
-            <button onClick={() => navigate('/kalender')}>{L.see_all}</button>
-          </div>
-          {gardenPlants.slice(0, 3).map(p => (
-            <div key={p.id} className="task-card" onClick={() => navigate(`/tanaman/${p.id}`)}>
-              {thumb(p, 'task-thumb', '1.4rem')}
-              <div className="task-info">
-                <h4>{L.task_water} {p.name}</h4>
-                <p>💧 {L.every_n_days(p.schedules.watering)}</p>
-              </div>
-              <div className="task-check">✓</div>
+      <div className="sec-head">
+        <h3>{L.todays_tasks}</h3>
+        <button onClick={() => navigate('/kalender')}>{L.see_all}</button>
+      </div>
+      <div className="tasks-panel">
+        {taskPlants.slice(0, 3).map((p, idx) => (
+          <div key={p.id} className="task-card" onClick={() => navigate(`/tanaman/${p.id}`)}>
+            {thumb(p, 'task-thumb', '1.4rem')}
+            <div className={`task-action-ico task-${idx}`}>
+              {idx === 0 ? <Droplets size={18} /> : idx === 1 ? <SunIcon size={18} /> : <Sprout size={18} />}
             </div>
-          ))}
-        </>
-      )}
+            <div className="task-info">
+              <h4>{idx === 1 ? L.label_light : idx === 2 ? L.label_fertilizer : L.task_water} {p.name}</h4>
+              <p>{idx === 0 ? L.every_n_days(p.schedules.watering) : idx === 1 ? L.hero_subtitle : L.every_n_days(p.schedules.fertilizer)}</p>
+            </div>
+            <button className={idx === 0 ? 'task-pill primary' : 'task-pill'} onClick={(e) => { e.stopPropagation(); navigate(`/tanaman/${p.id}`); }}>
+              {idx === 0 ? L.task_water : idx === 1 ? L.label_light : L.see_all}
+            </button>
+          </div>
+        ))}
+      </div>
 
       {/* Popular plants */}
       <div className="sec-head" style={{ marginTop: '6px' }}>
