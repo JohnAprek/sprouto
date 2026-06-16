@@ -39,7 +39,7 @@ const STR = {
 
     greeting_morning: 'Good morning', greeting_noon: 'Good afternoon', greeting_evening: 'Good evening', greeting_night: 'Good evening',
     hero_subtitle: 'Take care of your plants today and reach the next level.',
-    stat_favorites: 'Favorites', stat_garden: 'My Garden', stat_catalog: 'Catalog', stat_streak: 'Streak',
+    stat_favorites: 'Favorites', stat_garden: 'My Plants', stat_catalog: 'Plant Guides', stat_streak: 'Day Streak',
     popular_plants: 'Popular Plants', see_all: 'See All',
     tip_today_title: "Today's Tip",
     tip_today_body: 'Water your plants in the morning so the water does not pool for too long once the midday heat sets in.',
@@ -175,7 +175,7 @@ const STR = {
 
     greeting_morning: 'Selamat Pagi', greeting_noon: 'Selamat Siang', greeting_evening: 'Selamat Sore', greeting_night: 'Selamat Malam',
     hero_subtitle: 'Ayo rawat tanamanmu hari ini dan capai level selanjutnya.',
-    stat_favorites: 'Favorit', stat_garden: 'Kebunku', stat_catalog: 'Katalog', stat_streak: 'Streak',
+    stat_favorites: 'Favorit', stat_garden: 'Tanamanku', stat_catalog: 'Panduan', stat_streak: 'Runtutan',
     popular_plants: 'Tanaman Populer', see_all: 'Lihat Semua',
     tip_today_title: 'Tips Hari Ini',
     tip_today_body: 'Siram tanaman pagi hari agar air tidak menggenang terlalu lama saat suhu mulai panas siang nanti.',

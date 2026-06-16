@@ -103,7 +103,7 @@ function Toast({ message, onClose }) {
 export default function Sprouto() {
   const [isDarkMode, setIsDarkMode] = useLocalStorage('sprouto_theme', false);
   const [favorites, setFavorites] = useLocalStorage('sprouto_favorites', []);
-  const [profile, setProfile] = useLocalStorage('sprouto_profile', { name: 'Plant Friend', photo: null });
+  const [profile, setProfile] = useLocalStorage('sprouto_profile', { name: 'Plant Lover', photo: null });
   const [myGarden, setMyGarden] = useLocalStorage('sprouto_garden', []); // [{id, startDate}]
   const [notifEnabled, setNotifEnabled] = useLocalStorage('sprouto_notif', false);
   const [lang, setLang] = useLocalStorage('sprouto_lang', 'en');
@@ -345,7 +345,7 @@ function Home() {
       {/* Greeting */}
       <div className="home-hero">
         <div className="hero-copy">
-          <h2>{greeting}, {profile.name.split(' ')[0]}! {greetIcon}</h2>
+          <h2>{greeting}, {profile.name}! {greetIcon}</h2>
           <p className="hero-sub">{L.hero_status}</p>
         </div>
         <div className="hero-visual">

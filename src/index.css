@@ -661,8 +661,8 @@ button:active { transform: scale(0.95); }
 
 /* Greeting hero */
 .home-hero { position: relative; margin: 2px 0 18px; min-height: 134px; }
-.home-hero h2 { font-size: 1.5rem; font-weight: 800; color: var(--text-main); line-height: 1.18; max-width: 64%; }
-.home-hero .hero-sub { color: var(--text-muted); font-size: 0.9rem; margin: 8px 0 14px; max-width: 60%; }
+.home-hero h2 { font-size: 1.5rem; font-weight: 800; color: var(--text-main); line-height: 1.18; max-width: 57%; }
+.home-hero .hero-sub { color: var(--text-muted); font-size: 0.9rem; margin: 8px 0 14px; max-width: 55%; }
 .home-hero-img {
   position: absolute; right: -8px; top: -4px; width: 152px; height: 152px;
   object-fit: contain; border-radius: 20px; pointer-events: none;
