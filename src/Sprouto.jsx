@@ -103,7 +103,7 @@ function Toast({ message, onClose }) {
 export default function Sprouto() {
   const [isDarkMode, setIsDarkMode] = useLocalStorage('sprouto_theme', false);
   const [favorites, setFavorites] = useLocalStorage('sprouto_favorites', []);
-  const [profile, setProfile] = useLocalStorage('sprouto_profile', { name: 'Plant Lover', photo: null });
+  const [profile, setProfile] = useLocalStorage('sprouto_profile', { name: 'Plant Friend', photo: null });
   const [myGarden, setMyGarden] = useLocalStorage('sprouto_garden', []); // [{id, startDate}]
   const [notifEnabled, setNotifEnabled] = useLocalStorage('sprouto_notif', false);
   const [lang, setLang] = useLocalStorage('sprouto_lang', 'en');
@@ -238,8 +238,6 @@ function Header() {
   const location = useLocation();
   const showBack = !['/', '/ensiklopedia', '/favorit', '/panduan', '/kalkulator', '/kalender', '/profile'].includes(location.pathname);
 
-  if (location.pathname === '/') return null;
-
   return (
     <header className="app-header">
       <div className="header-title-row">
@@ -331,9 +329,6 @@ function Home() {
   const ico3d = (n) => `${import.meta.env.BASE_URL}icons-3d/${n}.png`;
   const gardenPlants = myGarden.map(g => plants.find(p => p.id === g.id)).filter(Boolean);
   const heroPlant = plants.find(p => p.id === 'hias-1') || plants[0];
-  const aglonema = plants.find(p => p.id === 'hias-2') || plants[1] || heroPlant;
-  const snakePlant = plants.find(p => p.id === 'hias-3') || plants[2] || heroPlant;
-  const taskPlants = gardenPlants.length ? gardenPlants : [heroPlant, aglonema, snakePlant].filter(Boolean);
   const popular = plants.slice(0, 6);
   const isFav = (id) => favorites.includes(id);
   const thumb = (p, cls, fontSize) => plantImg(p)
@@ -344,42 +339,39 @@ function Home() {
     <main className="main-content animate-fade-up">
       {/* Greeting */}
       <div className="home-hero">
-        <div className="hero-copy">
-          <h2>{greeting}, {profile.name}! {greetIcon}</h2>
-          <p className="hero-sub">{L.hero_status}</p>
+        <h2>{greeting}, {profile.name.split(' ')[0]}! {greetIcon}</h2>
+        <p className="hero-sub">{L.hero_status}</p>
+        {heroPlant && plantImg(heroPlant) && <img className="home-hero-img" src={plantImg(heroPlant)} alt="" loading="lazy" />}
+      </div>
+
+      <div className="care-alert" onClick={() => navigate(gardenPlants.length ? '/kalender' : '/ensiklopedia')}>
+        <div className="care-alert-ico"><Droplets size={20} /></div>
+        <div className="care-alert-txt">
+          <h4>{gardenPlants.length ? L.hero_need_care(gardenPlants.length) : L.add_plant}</h4>
+          <p>{gardenPlants.length ? L.needs_care_sub : L.hero_subtitle}</p>
         </div>
-        <div className="hero-visual">
-          {heroPlant && plantImg(heroPlant) && <img className="home-hero-img" src={plantImg(heroPlant)} alt="" loading="lazy" />}
-        </div>
-        <div className="care-alert" onClick={() => navigate(gardenPlants.length ? '/kalender' : '/ensiklopedia')}>
-          <div className="care-alert-ico"><Droplets size={20} /></div>
-          <div className="care-alert-txt">
-            <h4>{gardenPlants.length ? L.hero_need_care(gardenPlants.length) : L.add_plant}</h4>
-            <p>{gardenPlants.length ? L.needs_care_sub : L.hero_subtitle}</p>
-          </div>
-          <span className="chev">&rsaquo;</span>
-        </div>
+        <span className="chev">›</span>
       </div>
 
       {/* Stats */}
       <div className="stats-grid">
         <div className="stat-card" onClick={() => navigate('/favorit')} style={{ cursor: 'pointer' }}>
-          <div className="stat-ico"><img src={ico3d('heart')} alt="" /></div>
+          <div className="stat-ico" style={{ background: '#fde7ef' }}><img src={ico3d('heart')} alt="" /></div>
           <div className="stat-val">{favorites.length}</div>
           <div className="stat-lbl">{L.stat_favorites}</div>
         </div>
         <div className="stat-card" onClick={() => navigate('/kalender')} style={{ cursor: 'pointer' }}>
-          <div className="stat-ico"><img src={ico3d('garden')} alt="" /></div>
+          <div className="stat-ico" style={{ background: '#dcfce7' }}><img src={ico3d('garden')} alt="" /></div>
           <div className="stat-val">{myGarden.length}</div>
           <div className="stat-lbl">{L.stat_garden}</div>
         </div>
         <div className="stat-card" onClick={() => navigate('/ensiklopedia')} style={{ cursor: 'pointer' }}>
-          <div className="stat-ico"><img src={ico3d('book')} alt="" /></div>
+          <div className="stat-ico" style={{ background: '#dbeafe' }}><img src={ico3d('book')} alt="" /></div>
           <div className="stat-val">{plants.length}+</div>
           <div className="stat-lbl">{L.stat_catalog}</div>
         </div>
         <div className="stat-card">
-          <div className="stat-ico"><img src={ico3d('fire')} alt="" /></div>
+          <div className="stat-ico" style={{ background: '#fef3c7' }}><img src={ico3d('fire')} alt="" /></div>
           <div className="stat-val">{streakData.count}</div>
           <div className="stat-lbl">{L.stat_streak}</div>
         </div>
@@ -387,7 +379,7 @@ function Home() {
 
       {/* AI banner */}
       <div className="ai-banner">
-        <div className="ai-bot"><img src={`${import.meta.env.BASE_URL}pwa-192x192.png`} alt="" /></div>
+        <div className="ai-bot"><img src={ico3d('robot')} alt="" /></div>
         <div className="ai-banner-txt">
           <div className="ai-kicker">✨ {L.ai_kicker}</div>
           <h3>{L.ai_title}</h3>
@@ -399,41 +391,38 @@ function Home() {
       {/* Quick actions */}
       <div className="quick-row">
         <button className="quick-card" onClick={() => navigate('/identifikasi')}>
-          <div className="quick-ico"><img src={ico3d('camera')} alt="" /></div>
+          <div className="quick-ico" style={{ background: '#dcfce7' }}><img src={ico3d('camera')} alt="" /></div>
           <h4>{L.quick_identify}</h4><p>{L.quick_identify_sub}</p>
         </button>
         <button className="quick-card" onClick={() => navigate('/kalender')}>
-          <div className="quick-ico"><img src={ico3d('droplet')} alt="" /></div>
+          <div className="quick-ico" style={{ background: '#dbeafe' }}><img src={ico3d('droplet')} alt="" /></div>
           <h4>{L.quick_water}</h4><p>{L.quick_water_sub}</p>
         </button>
         <button className="quick-card" onClick={() => navigate('/kalender')}>
-          <div className="quick-ico"><img src={ico3d('calendar')} alt="" /></div>
+          <div className="quick-ico" style={{ background: '#ede9fe' }}><img src={ico3d('calendar')} alt="" /></div>
           <h4>{L.quick_calendar}</h4><p>{L.quick_calendar_sub}</p>
         </button>
       </div>
 
       {/* Today's tasks */}
-      <div className="sec-head">
-        <h3>{L.todays_tasks}</h3>
-        <button onClick={() => navigate('/kalender')}>{L.see_all}</button>
-      </div>
-      <div className="tasks-panel">
-        {taskPlants.slice(0, 3).map((p, idx) => (
-          <div key={p.id} className="task-card" onClick={() => navigate(`/tanaman/${p.id}`)}>
-            {thumb(p, 'task-thumb', '1.4rem')}
-            <div className={`task-action-ico task-${idx}`}>
-              {idx === 0 ? <Droplets size={18} /> : idx === 1 ? <SunIcon size={18} /> : <Sprout size={18} />}
-            </div>
-            <div className="task-info">
-              <h4>{idx === 1 ? L.label_light : idx === 2 ? L.label_fertilizer : L.task_water} {p.name}</h4>
-              <p>{idx === 0 ? L.every_n_days(p.schedules.watering) : idx === 1 ? L.hero_subtitle : L.every_n_days(p.schedules.fertilizer)}</p>
-            </div>
-            <button className={idx === 0 ? 'task-pill primary' : 'task-pill'} onClick={(e) => { e.stopPropagation(); navigate(`/tanaman/${p.id}`); }}>
-              {idx === 0 ? L.task_water : idx === 1 ? L.label_light : L.see_all}
-            </button>
+      {gardenPlants.length > 0 && (
+        <>
+          <div className="sec-head">
+            <h3>{L.todays_tasks}</h3>
+            <button onClick={() => navigate('/kalender')}>{L.see_all}</button>
           </div>
-        ))}
-      </div>
+          {gardenPlants.slice(0, 3).map(p => (
+            <div key={p.id} className="task-card" onClick={() => navigate(`/tanaman/${p.id}`)}>
+              {thumb(p, 'task-thumb', '1.4rem')}
+              <div className="task-info">
+                <h4>{L.task_water} {p.name}</h4>
+                <p>💧 {L.every_n_days(p.schedules.watering)}</p>
+              </div>
+              <div className="task-check">✓</div>
+            </div>
+          ))}
+        </>
+      )}
 
       {/* Popular plants */}
       <div className="sec-head" style={{ marginTop: '6px' }}>
