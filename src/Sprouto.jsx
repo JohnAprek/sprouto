@@ -327,8 +327,11 @@ function Home() {
 
   const greetIcon = hour < 18 ? '☀️' : '🌙';
   const ico3d = (n) => `${import.meta.env.BASE_URL}icons-3d/${n}.png`;
+  // streak ring: progress through the current 7-day week
+  const ringFilled = streakData.count === 0 ? 0 : ((streakData.count - 1) % 7) + 1;
+  const ringProgress = ringFilled / 7;
+  const RING_C = 263.9; // 2πr, r=42
   const gardenPlants = myGarden.map(g => plants.find(p => p.id === g.id)).filter(Boolean);
-  const heroPlant = plants.find(p => p.id === 'hias-1') || plants[0];
   const popular = plants.slice(0, 6);
   const isFav = (id) => favorites.includes(id);
   const thumb = (p, cls, fontSize) => plantImg(p)
@@ -341,7 +344,23 @@ function Home() {
       <div className="home-hero">
         <h2>{greeting}, {profile.name.split(' ')[0]}! {greetIcon}</h2>
         <p className="hero-sub">{L.hero_status}</p>
-        {heroPlant && plantImg(heroPlant) && <img className="home-hero-img" src={plantImg(heroPlant)} alt="" loading="lazy" />}
+        <div className="hero-ring" onClick={() => navigate('/kalender')} role="button" aria-label={L.stat_streak}>
+          <svg className="hero-ring-svg" viewBox="0 0 100 100">
+            <defs>
+              <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stopColor="var(--accent)" />
+                <stop offset="1" stopColor="var(--primary)" />
+              </linearGradient>
+            </defs>
+            <circle className="ring-track" cx="50" cy="50" r="42" />
+            <circle className="ring-prog" cx="50" cy="50" r="42" strokeDasharray={RING_C}
+              strokeDashoffset={RING_C * (1 - ringProgress)} transform="rotate(-90 50 50)" />
+          </svg>
+          <div className="hero-ring-center">
+            <span className="ring-num">{streakData.count}</span>
+            <span className="ring-lbl">🔥 {L.stat_streak}</span>
+          </div>
+        </div>
       </div>
 
       <div className="care-alert" onClick={() => navigate(gardenPlants.length ? '/kalender' : '/ensiklopedia')}>
