@@ -318,6 +318,7 @@ function Home() {
   }, []);
 
   const greetIcon = hour < 18 ? '☀️' : '🌙';
+  const ico3d = (n) => `${import.meta.env.BASE_URL}icons-3d/${n}.png`;
   const gardenPlants = myGarden.map(g => plants.find(p => p.id === g.id)).filter(Boolean);
   const heroPlant = plants.find(p => p.id === 'hias-1') || plants[0];
   const popular = plants.slice(0, 6);
@@ -341,22 +342,22 @@ function Home() {
       {/* Stats */}
       <div className="stats-grid">
         <div className="stat-card" onClick={() => navigate('/favorit')} style={{ cursor: 'pointer' }}>
-          <div className="stat-ico" style={{ background: '#fde7ef' }}>❤️</div>
+          <div className="stat-ico" style={{ background: '#fde7ef' }}><img src={ico3d('heart')} alt="" /></div>
           <div className="stat-val">{favorites.length}</div>
           <div className="stat-lbl">{L.stat_favorites}</div>
         </div>
         <div className="stat-card" onClick={() => navigate('/kalender')} style={{ cursor: 'pointer' }}>
-          <div className="stat-ico" style={{ background: '#dcfce7' }}>🌱</div>
+          <div className="stat-ico" style={{ background: '#dcfce7' }}><img src={ico3d('garden')} alt="" /></div>
           <div className="stat-val">{myGarden.length}</div>
           <div className="stat-lbl">{L.stat_garden}</div>
         </div>
         <div className="stat-card" onClick={() => navigate('/ensiklopedia')} style={{ cursor: 'pointer' }}>
-          <div className="stat-ico" style={{ background: '#dbeafe' }}>📖</div>
+          <div className="stat-ico" style={{ background: '#dbeafe' }}><img src={ico3d('book')} alt="" /></div>
           <div className="stat-val">{plants.length}+</div>
           <div className="stat-lbl">{L.stat_catalog}</div>
         </div>
         <div className="stat-card">
-          <div className="stat-ico" style={{ background: '#fef3c7' }}>🔥</div>
+          <div className="stat-ico" style={{ background: '#fef3c7' }}><img src={ico3d('fire')} alt="" /></div>
           <div className="stat-val">{streakData.count}</div>
           <div className="stat-lbl">{L.stat_streak}</div>
         </div>
@@ -364,7 +365,7 @@ function Home() {
 
       {/* AI banner */}
       <div className="ai-banner">
-        <div className="ai-bot">🤖</div>
+        <div className="ai-bot"><img src={ico3d('robot')} alt="" /></div>
         <div className="ai-banner-txt">
           <div className="ai-kicker">✨ {L.ai_kicker}</div>
           <h3>{L.ai_title}</h3>
@@ -376,15 +377,15 @@ function Home() {
       {/* Quick actions */}
       <div className="quick-row">
         <button className="quick-card" onClick={() => navigate('/identifikasi')}>
-          <div className="quick-ico" style={{ background: '#dcfce7' }}>📷</div>
+          <div className="quick-ico" style={{ background: '#dcfce7' }}><img src={ico3d('camera')} alt="" /></div>
           <h4>{L.quick_identify}</h4><p>{L.quick_identify_sub}</p>
         </button>
         <button className="quick-card" onClick={() => navigate('/kalender')}>
-          <div className="quick-ico" style={{ background: '#dbeafe' }}>💧</div>
+          <div className="quick-ico" style={{ background: '#dbeafe' }}><img src={ico3d('droplet')} alt="" /></div>
           <h4>{L.quick_water}</h4><p>{L.quick_water_sub}</p>
         </button>
         <button className="quick-card" onClick={() => navigate('/kalender')}>
-          <div className="quick-ico" style={{ background: '#ede9fe' }}>📅</div>
+          <div className="quick-ico" style={{ background: '#ede9fe' }}><img src={ico3d('calendar')} alt="" /></div>
           <h4>{L.quick_calendar}</h4><p>{L.quick_calendar_sub}</p>
         </button>
       </div>
@@ -432,7 +433,7 @@ function Home() {
 
       {/* Tip */}
       <div className="tip-card" style={{ marginTop: '8px' }}>
-        <div className="tip-ico"><SunIcon size={22} /></div>
+        <div className="tip-ico"><img src={ico3d('bulb')} alt="" /></div>
         <div>
           <h4>{L.tip_today_title}</h4>
           <p>{L.tip_today_body}</p>

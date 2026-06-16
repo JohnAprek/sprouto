@@ -746,3 +746,11 @@ button:active { transform: scale(0.95); }
 }
 .quick-card, .pop-card, .task-card { transition: transform 0.2s cubic-bezier(0.34,1.4,0.64,1), box-shadow 0.2s ease; }
 .quick-card:active, .pop-card:active, .task-card:active { transform: scale(0.97); }
+
+/* 3D glossy icons (Fluent Emoji) */
+.stat-ico img { width: 27px; height: 27px; object-fit: contain; display: block; }
+.quick-ico img { width: 30px; height: 30px; object-fit: contain; display: block; }
+.ai-bot { background: transparent; width: 66px; height: 66px; }
+.ai-bot img { width: 62px; height: 62px; object-fit: contain; display: block; filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.35)); }
+.tip-ico { background: transparent; width: 52px; height: 52px; }
+.tip-ico img { width: 48px; height: 48px; object-fit: contain; display: block; filter: drop-shadow(0 4px 8px rgba(146, 64, 14, 0.25)); }
