@@ -26,3 +26,7 @@ vite.config.ts.timestamp-*
 *.njsproj
 *.sln
 *.sw?
+
+# local raw design assets / dropped icons (not for repo)
+/menntah/
+public/icons-3d/raw/
