@@ -33,7 +33,7 @@ export const LOCALE = { en: 'en-US', id: 'id-ID' };
 
 const STR = {
   en: {
-    headerSubtitle: 'Indonesian Plant Guide',
+    headerSubtitle: 'Plant Care Companion',
     nav_home: 'Home', nav_catalog: 'Catalog', nav_favorites: 'Favorites', nav_guide: 'Guide', nav_garden: 'My Garden',
 
     greeting_morning: 'Good morning', greeting_noon: 'Good afternoon', greeting_evening: 'Good evening', greeting_night: 'Good evening',
@@ -143,7 +143,7 @@ const STR = {
     notif_water: (n) => `💧 Water ${n}`, notif_fertilize: (n) => `🌿 Fertilize ${n}`, notif_more: (n) => `+${n} more`,
   },
   id: {
-    headerSubtitle: 'Panduan Tanaman Indonesia',
+    headerSubtitle: 'Teman Rawat Tanaman',
     nav_home: 'Beranda', nav_catalog: 'Katalog', nav_favorites: 'Favorit', nav_guide: 'Panduan', nav_garden: 'Kebunku',
 
     greeting_morning: 'Selamat Pagi', greeting_noon: 'Selamat Siang', greeting_evening: 'Selamat Sore', greeting_night: 'Selamat Malam',

@@ -29,7 +29,7 @@
       "tips": "Ganti larutan nutrisi setiap 2 minggu sekali. Pastikan bagian akar terendam ~⅓ dan ada celah udara di atas larutan agar akar bisa bernapas.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Monstera_deliciosa2.jpg/330px-Monstera_deliciosa2.jpg",
+    "imageUrl": "plants/hias-1.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kalsium oksalat — iritasi mulut/tenggorokan, ngiler bila tergigit"
@@ -65,7 +65,7 @@
       "tips": "Gunakan wadah gelap untuk mencegah lumut tumbuh di larutan nutrisi. Aglonema sangat cocok dengan metode semi-hidroponik menggunakan hidroton.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=400&q=80",
+    "imageUrl": "plants/hias-2.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kalsium oksalat — iritasi mulut, muntah, ngiler"
@@ -101,7 +101,7 @@
       "tips": "Jangan rendam seluruh akar — biarkan ⅓ bagian atas kering agar tidak busuk. Ganti air setiap 3–4 minggu karena tanaman ini tumbuh lambat.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg/330px-Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg",
+    "imageUrl": "plants/hias-3.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Saponin — mual, muntah, diare pada hewan"
@@ -137,7 +137,7 @@
       "tips": "Biarkan LECA menyerap air secara kapiler, jangan rendam akar penuh. Gunakan pot transparan agar bisa memantau kondisi akar hijau yang sehat.",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Phalaenopsis_amabilis_Orchi_198.jpg/330px-Phalaenopsis_amabilis_Orchi_198.jpg",
+    "imageUrl": "plants/hias-4.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Anggrek Phalaenopsis tidak beracun bagi kucing dan anjing"
@@ -173,7 +173,7 @@
       "tips": "Bonsai beringin membutuhkan media tanah khusus untuk membentuk nebari (akar permukaan) dan tidak cocok untuk sistem hidroponik.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ficus_microcarpa_kz3.jpg/400px-Ficus_microcarpa_kz3.jpg",
+    "imageUrl": "plants/hias-5.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Getah Ficus iritasi mulut, kulit; menyebabkan muntah"
@@ -209,7 +209,7 @@
       "tips": "Philodendron sangat mudah beradaptasi di air. Cukup masukkan stek batang ke air bersih selama 2 minggu untuk perakaran sebelum dipindah ke larutan nutrisi.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Philodendron_scandens_subsp_oxycardium2.jpg/330px-Philodendron_scandens_subsp_oxycardium2.jpg",
+    "imageUrl": "plants/hias-6.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kalsium oksalat — iritasi mulut, ngiler, muntah"
@@ -245,7 +245,7 @@
       "tips": "Sirih gading adalah tanaman terbaik untuk pemula hidroponik — cukup masukkan stek ke botol air bening dan taruh di tempat terang. Ganti air setiap 1–2 minggu.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Money_Plant_%28Epipremnum_aureum%29_4.jpg/330px-Money_Plant_%28Epipremnum_aureum%29_4.jpg",
+    "imageUrl": "plants/hias-7.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kalsium oksalat — iritasi mulut, ngiler, muntah"
@@ -281,7 +281,7 @@
       "tips": "ZZ Plant memiliki rimpang (rhizome) penyimpan air yang sangat rentan busuk jika terendam larutan — tidak direkomendasikan untuk hidroponik.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Zamioculcas_zamiifolia_1.jpg/330px-Zamioculcas_zamiifolia_1.jpg",
+    "imageUrl": "plants/hias-8.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kalsium oksalat — iritasi mulut, muntah bila tergigit"
@@ -317,7 +317,7 @@
       "tips": "Kaktus beradaptasi untuk kondisi kering ekstrem — sistem hidroponik yang selalu basah bertentangan total dengan kebutuhan dasarnya.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Kaktus_5_fcm.jpg/400px-Kaktus_5_fcm.jpg",
+    "imageUrl": "plants/hias-9.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Tidak beracun kimiawi, tetapi duri melukai secara fisik"
@@ -353,7 +353,7 @@
       "tips": "Calathea sangat sensitif terhadap mineral air — gunakan air hujan atau air yang sudah diendapkan 24 jam. Hindari meletakkan di dekat AC langsung.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Calathea_ornata.jpg/330px-Calathea_ornata.jpg",
+    "imageUrl": "plants/hias-10.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Calathea tidak beracun dan aman untuk kucing, anjing"
@@ -389,7 +389,7 @@
       "tips": "Semai benih di rockwool dulu selama 5–7 hari, baru pindah ke sistem NFT. Cocok sekali untuk sistem rakit apung (DWC) sederhana skala rumah tangga.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Amaranthus_tricolor_in_a_flower_bed_near_Notre-Dame_cathedral_in_Paris3.jpg/330px-Amaranthus_tricolor_in_a_flower_bed_near_Notre-Dame_cathedral_in_Paris3.jpg",
+    "imageUrl": "plants/sayur-1.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Amaranthus bisa ganggu ginjal bila termakan banyak"
@@ -425,7 +425,7 @@
       "tips": "Kangkung tumbuh sangat agresif di hidroponik — pertumbuhannya bisa 2x lebih cepat dari tanam tanah. Panen pertama di 21 hari, lalu potong dan biarkan tumbuh lagi.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://images.unsplash.com/photo-1637694841812-34de87c60b53?w=400&q=80",
+    "imageUrl": "plants/sayur-2.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Kangkung umumnya aman untuk kucing dan anjing"
@@ -461,7 +461,7 @@
       "tips": "Ikat batang tomat ke ajir vertikal karena tumbuh sangat cepat di hidroponik. Saat berbunga, kocok-kocok batang ringan setiap hari untuk membantu penyerbukan.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/330px-Tomato_je.jpg",
+    "imageUrl": "plants/sayur-3.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Buah matang aman; daun, batang, buah mentah beracun"
@@ -497,7 +497,7 @@
       "tips": "Cabai rawit adalah kandidat terbaik hidroponik jangka panjang — satu tanaman bisa produksi terus selama 1–2 tahun. Pastikan aerasi larutan baik dengan air pump.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Tabasco_peppers.JPG/330px-Tabasco_peppers.JPG",
+    "imageUrl": "plants/sayur-4.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Kapsaisin iritasi mulut, lambung; menyebabkan muntah"
@@ -533,7 +533,7 @@
       "tips": "Selada adalah tanaman terbaik untuk belajar hidroponik. Dengan metode Kratky (botol bekas), tidak perlu pompa sama sekali — cukup isi nutrisi dan tunggu panen.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Iceberg_lettuce_in_SB.jpg/330px-Iceberg_lettuce_in_SB.jpg",
+    "imageUrl": "plants/sayur-5.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Selada tidak beracun dan aman untuk hewan"
@@ -569,7 +569,7 @@
       "tips": "Sistem rakit apung (floating raft) sangat ideal untuk sawi — gunakan styrofoam bekas sebagai rakit dengan lubang 5 cm. Cocok untuk produksi skala rumah tangga.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Brassica_rapa_plant.jpg/330px-Brassica_rapa_plant.jpg",
+    "imageUrl": "plants/sayur-6.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Brassica aman sedikit; berlebih sebabkan kembung, gas"
@@ -605,7 +605,7 @@
       "tips": "Kandungan zat aktif orthosiphonin lebih tinggi pada tanaman yang cukup stres ringan — jangan beri nutrisi terlalu tinggi. Panen sebelum berbunga lebat untuk kadar tertinggi.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Orthosiphon_aristatus_in_Kadavoor.jpg/330px-Orthosiphon_aristatus_in_Kadavoor.jpg",
+    "imageUrl": "plants/obat-1.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Data hewan terbatas; herba diuretik — beri dengan hati-hati"
@@ -641,7 +641,7 @@
       "tips": "Sambiloto tumbuh baik di hidroponik meski jarang dilakukan. Kadar pahit (andrografolid) justru lebih tinggi pada tanaman yang sedikit 'kekurangan' — jangan berlebihan memberi nutrisi.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Andrographis_paniculata_%28Kalpa%29_in_Narshapur_forest%2C_AP_W2_IMG_0867.jpg/330px-Andrographis_paniculata_%28Kalpa%29_in_Narshapur_forest%2C_AP_W2_IMG_0867.jpg",
+    "imageUrl": "plants/obat-2.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Herba obat pahit; data keamanan hewan terbatas"
@@ -677,7 +677,7 @@
       "tips": "Sirih sangat mudah di-stek dan ditanam di air — cocok sebagai tanaman gantung hidroponik di dalam rumah. Pastikan ada tiang atau jaring untuk sulur merambat.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Piper_betle_plant.jpg/330px-Piper_betle_plant.jpg",
+    "imageUrl": "plants/obat-3.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Minyak atsiri/fenol bisa iritasi; data hewan terbatas"
@@ -713,7 +713,7 @@
       "tips": "Pegagan tumbuh menjalar dengan cepat di sistem NFT. Kadar asiatikosida (zat aktif utama) lebih tinggi pada tanaman yang dipanen muda — panen setiap 2 minggu sekali.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Centella_asiatica_%28%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%81%E0%A6%A8%E0%A6%BF%29_%283%29.jpg/330px-Centella_asiatica_%28%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%81%E0%A6%A8%E0%A6%BF%29_%283%29.jpg",
+    "imageUrl": "plants/obat-4.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Pegagan umumnya tidak beracun bagi kucing dan anjing"
@@ -749,7 +749,7 @@
       "tips": "Mengkudu adalah pohon perdu yang tumbuh besar (2–6 meter). Sistem akar dan ukurannya tidak cocok untuk sistem hidroponik rumahan.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Noni_fruit_%28Morinda_citrifolia%29.jpg/330px-Noni_fruit_%28Morinda_citrifolia%29.jpg",
+    "imageUrl": "plants/obat-5.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Buah mengkudu dapat dimakan; data toksisitas hewan terbatas"
@@ -785,7 +785,7 @@
       "tips": "Jahe merah adalah tanaman rimpang yang membutuhkan ruang tanah untuk perkembangan rimpang. Sistem hidroponik tidak cocok untuk pertumbuhan optimal rimpang jahe.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Koeh-146-no_text.jpg/330px-Koeh-146-no_text.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/herbal-1.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Jahe tidak beracun; banyak bisa ganggu lambung"
@@ -821,7 +821,7 @@
       "tips": "Lidah buaya adalah sukulen yang menyimpan air di daunnya — terlalu banyak air justru akan membuat tanaman membusuk. Sistem hidroponik tidak direkomendasikan.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/330px-Aloe_vera_flower_inset.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/herbal-2.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Lateks/saponin lidah buaya — muntah, diare, lesu"
@@ -857,7 +857,7 @@
       "tips": "Kunyit adalah tanaman rimpang yang membutuhkan tanah gembur dalam untuk perkembangan rimpang kuning berukuran besar. Tidak cocok untuk sistem hidroponik.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Turmeric_inflorescence.jpg/330px-Turmeric_inflorescence.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/herbal-3.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Kunyit tidak beracun; aman dalam jumlah kecil"
@@ -893,7 +893,7 @@
       "tips": "Masukkan batang serai segar (sisa masakan) ke dalam air biasa selama 2–3 minggu sampai berakar, baru pindah ke larutan nutrisi. Cara paling mudah memulai serai hidroponik.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gardenology.org-IMG_2892_rbgs11jan.jpg/330px-Gardenology.org-IMG_2892_rbgs11jan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/herbal-4.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Minyak atsiri bisa sebabkan gangguan lambung ringan"
@@ -929,7 +929,7 @@
       "tips": "Kencur adalah tanaman rimpang dangkal yang membutuhkan media tanam gembur. Rimpangnya tidak bisa berkembang optimal dalam sistem hidroponik air.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Galangal.web.jpg/330px-Galangal.web.jpg",
+    "imageUrl": "plants/herbal-5.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Rimpang dapat dimakan; data hewan terbatas — hati-hati"
@@ -965,7 +965,7 @@
       "tips": "Rosemary di hidroponik harus punya aerasi larutan sangat baik — gunakan pompa udara kuat. Kadar minyak esensial lebih tinggi jika tanaman sedikit 'stres' — kurangi nutrisi 20% dari dosis standar.",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Rosemary_in_bloom.JPG/330px-Rosemary_in_bloom.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/aroma-1.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Rosemary tidak beracun dan aman untuk hewan"
@@ -1001,7 +1001,7 @@
       "tips": "Lavender sangat rentan busuk akar di iklim tropis lembap — sistem hidroponik memperparah kondisi ini. Lebih baik ditanam di media perlite + pasir dengan drainase ekstrem.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-087.jpg/330px-Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-087.jpg",
+    "imageUrl": "plants/aroma-2.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Linalool/linalil asetat — muntah, lesu bila tertelan"
@@ -1037,7 +1037,7 @@
       "tips": "Mint tumbuh SANGAT cepat di hidroponik — bisa dipanen dalam sebulan. Ambil stek batang mint segar dari pasar, masukkan ke air, tunggu berakar 1–2 minggu lalu pindah ke nutrisi.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Minze.jpg/330px-Minze.jpg",
+    "imageUrl": "plants/aroma-3.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Minyak atsiri — muntah, diare pada kucing, anjing"
@@ -1073,7 +1073,7 @@
       "tips": "Pandan sangat mudah ditanam hidroponik — ambil anakan yang sudah punya akar, masukkan ke ember bernutrisi. Aroma pandan justru lebih kuat pada tanaman yang sedikit stres air.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Chottola.jpg/330px-Chottola.jpg",
+    "imageUrl": "plants/aroma-4.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Pandan tidak beracun dan aman untuk kucing, anjing"
@@ -1109,7 +1109,7 @@
       "tips": "Terong butuh sistem yang stabil dengan aerasi baik. Gunakan net pot ukuran 10 cm minimum dan pastikan pompa udara berjalan 24 jam agar akar tidak kekurangan oksigen.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/330px-Solanum_melongena_24_08_2012_%281%29.JPG",
+    "imageUrl": "plants/sayur-7.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Buah matang boleh; daun, batang mengandung solanin beracun"
@@ -1145,7 +1145,7 @@
       "tips": "Timun merambat sangat cepat di hidroponik — siapkan ajir atau jaring rambat vertikal. Panen sesering mungkin (setiap 2 hari) agar tanaman terus berproduksi.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/ARS_cucumber.jpg/330px-ARS_cucumber.jpg",
+    "imageUrl": "plants/sayur-8.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Mentimun tidak beracun dan aman untuk hewan"
@@ -1181,7 +1181,7 @@
       "tips": "Wortel adalah tanaman akar (umbi) yang membutuhkan ruang tanah dalam dan gembur untuk tumbuh. Sistem hidroponik standar tidak mendukung perkembangan umbi yang optimal.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Daucus_carota_May_2008-1_edit.jpg/330px-Daucus_carota_May_2008-1_edit.jpg",
+    "imageUrl": "plants/sayur-9.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Wortel tidak beracun dan aman untuk kucing, anjing"
@@ -1217,7 +1217,7 @@
       "tips": "Pilih varietas buncis tegak (bush bean) untuk hidroponik agar lebih mudah diatur. Buncis memfiksasi nitrogen sendiri, sehingga kadar N dalam larutan bisa sedikit lebih rendah.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Snijboon_peulen_Phaseolus_vulgaris.jpg/330px-Snijboon_peulen_Phaseolus_vulgaris.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/sayur-10.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Buncis mentah mengandung lektin; masak sebelum diberikan"
@@ -1253,7 +1253,7 @@
       "tips": "Stroberi adalah buah paling populer untuk hidroponik rumahan. Sistem NFT miring 30–45° sangat cocok karena menghasilkan buah yang tergantung dan mudah dipanen tanpa kotor.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/330px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/buah-1.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Stroberi tidak beracun dan aman untuk hewan"
@@ -1289,7 +1289,7 @@
       "tips": "Pepaya adalah pohon besar yang membutuhkan akar kuat tertancap di tanah dalam. Ukuran dan kebutuhan strukturnya tidak memungkinkan sistem hidroponik rumahan.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Carica_papaya_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-029.jpg/330px-Carica_papaya_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-029.jpg",
+    "imageUrl": "plants/buah-2.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daging pepaya aman; buang biji sebelum diberikan"
@@ -1325,7 +1325,7 @@
       "tips": "Jambu biji adalah pohon dengan sistem akar besar yang membutuhkan tanah dalam. Tidak cocok untuk hidroponik rumahan standar.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Psidium_guajava_fruit.jpg/330px-Psidium_guajava_fruit.jpg",
+    "imageUrl": "plants/buah-3.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Jambu biji tidak beracun; berikan secukupnya"
@@ -1361,7 +1361,7 @@
       "tips": "Pisang membutuhkan sistem akar yang sangat dalam dan kuat di tanah. Ukuran tanaman dan kebutuhan strukturalnya tidak memungkinkan sistem hidroponik konvensional.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Musa_acuminata_in_india01.jpg/330px-Musa_acuminata_in_india01.jpg",
+    "imageUrl": "plants/buah-4.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Pisang tidak beracun dan aman untuk hewan"
@@ -1397,7 +1397,7 @@
       "tips": "Jeruk nipis adalah pohon berkayu yang tumbuh 2–5 meter — sistem akar dan ukurannya jauh melampaui kapasitas sistem hidroponik rumahan.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Citrus_%C3%97_aurantiifolia_%28Christm.%29_Swingle_%2851906868474%29.jpg/330px-Citrus_%C3%97_aurantiifolia_%28Christm.%29_Swingle_%2851906868474%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/buah-5.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Minyak sitrus, psoralen — muntah, diare, iritasi"
@@ -1433,7 +1433,7 @@
       "tips": "Gantung buah semangka dengan jaring rajut agar tidak jatuh karena terlalu berat. Kurangi nutrisi nitrogen dan tingkatkan kalium saat buah mulai sebesar kepalan tangan.",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg/330px-Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/buah-6.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daging semangka aman; hindari biji dan kulit"
@@ -1469,7 +1469,7 @@
       "tips": "Anggur hidroponik membutuhkan instalasi yang kuat karena merambat berat. Manajemen nutrisi harus presisi — kelebihan nitrogen menyebabkan banyak daun tapi sedikit buah.",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Cabernet_Sauvignon_Gaillac.jpg/330px-Cabernet_Sauvignon_Gaillac.jpg",
+    "imageUrl": "plants/buah-7.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Anggur sebabkan gagal ginjal pada anjing — jangan beri"
@@ -1508,7 +1508,7 @@
       "kesulitan": "Mudah",
       "tips": "Peace lily sangat mudah di hidroponik — cukup taruh di pot berisi air dengan akar terendam sebagian. Ganti air 1–2 minggu sekali."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Peace_lily_-_1_-_cropped.jpg/330px-Peace_lily_-_1_-_cropped.jpg",
+    "imageUrl": "plants/hias-11.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kalsium oksalat — iritasi mulut, ngiler, muntah"
@@ -1547,7 +1547,7 @@
       "kesulitan": "Sedang",
       "tips": "Anthurium di LECA sangat populer — cuci LECA bersih, rendam akar sebagian dalam nutrisi encer. Pastikan ada ruang udara untuk akar bernapas."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/AnthuriumAndraenum.jpg/330px-AnthuriumAndraenum.jpg",
+    "imageUrl": "plants/hias-12.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kalsium oksalat — nyeri mulut, ngiler, muntah"
@@ -1586,7 +1586,7 @@
       "kesulitan": "Mudah",
       "tips": "Pothos adalah tanaman hidroponik termudah — cukup taruh stek di vas kaca berisi air. Tambahkan beberapa butir arang aktif untuk mencegah bau dan alga."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Money_Plant_%28Epipremnum_aureum%29_4.jpg/330px-Money_Plant_%28Epipremnum_aureum%29_4.jpg",
+    "imageUrl": "plants/hias-13.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kalsium oksalat — iritasi mulut, ngiler, muntah"
@@ -1625,7 +1625,7 @@
       "kesulitan": "-",
       "tips": "Rubber plant kurang ideal untuk hidroponik karena sistem akarnya menyukai media yang cukup kering di antara penyiraman. Lebih baik ditanam di pot dengan media drainase baik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ficus_elastica_leaves_02.JPG/330px-Ficus_elastica_leaves_02.JPG",
+    "imageUrl": "plants/hias-14.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Getah Ficus — iritasi mulut, kulit, muntah"
@@ -1664,7 +1664,7 @@
       "kesulitan": "-",
       "tips": "Bird of Paradise tidak direkomendasikan untuk hidroponik karena sistem akarnya besar dan menyukai media tanah subur. Butuh pot besar untuk tumbuh optimal."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Ave-do-para%C3%ADso%2C_Strelitzia_reginae%2C_em_Bag%C3%A9%2C_Rio_Grande_do_Sul%2C_Brasil_-_55211233712.jpg/330px-Ave-do-para%C3%ADso%2C_Strelitzia_reginae%2C_em_Bag%C3%A9%2C_Rio_Grande_do_Sul%2C_Brasil_-_55211233712.jpg",
+    "imageUrl": "plants/hias-15.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Strelitzia — muntah, mengantuk; biji paling beracun"
@@ -1703,7 +1703,7 @@
       "kesulitan": "Mudah",
       "tips": "Pakcoy adalah tanaman hidroponik terbaik untuk pemula! Tumbuh cepat, panen dalam 25–30 hari, dan toleran terhadap variasi nutrisi. Mulai dengan metode Kratky di botol bekas."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Brassica_rapa_plant.jpg/330px-Brassica_rapa_plant.jpg",
+    "imageUrl": "plants/sayur-11.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Brassica aman sedikit; berlebih menyebabkan kembung"
@@ -1742,7 +1742,7 @@
       "kesulitan": "Sedang",
       "tips": "Paprika hidroponik butuh support tiang karena tanaman cukup berat saat berbuah. Tingkatkan EC nutrisi dari 2.0 ke 2.5–3.0 saat memasuki fase berbunga dan berbuah."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Capsicum_annuum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-027.jpg/330px-Capsicum_annuum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-027.jpg",
+    "imageUrl": "plants/sayur-12.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Buah matang boleh; daun beracun, kapsaisin iritasi"
@@ -1781,7 +1781,7 @@
       "kesulitan": "-",
       "tips": "Temulawak tidak cocok hidroponik karena hasilnya adalah rimpang bawah tanah yang butuh media padat untuk berkembang. Lebih efektif ditanam di pot dalam atau di kebun."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Rhizoma_Curcumae_xanthorrhizae_by_Danny_S._-_001.jpg/400px-Rhizoma_Curcumae_xanthorrhizae_by_Danny_S._-_001.jpg",
+    "imageUrl": "plants/obat-6.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Rimpang Curcuma tidak beracun; aman jumlah kecil"
@@ -1820,7 +1820,7 @@
       "kesulitan": "Mudah",
       "tips": "Sambung nyawa tumbuh sangat cepat di hidroponik. Panen daun muda dari bagian atas secara rutin untuk mendorong pertumbuhan baru. Cocok untuk sistem NFT atau rak indoor."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gynura_procumbens_%28Diabetes_plant%29_%281%29.jpg/330px-Gynura_procumbens_%28Diabetes_plant%29_%281%29.jpg",
+    "imageUrl": "plants/obat-7.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Daun dapat dimakan; data hewan terbatas — hati-hati"
@@ -1859,7 +1859,7 @@
       "kesulitan": "-",
       "tips": "Aloe vera tidak cocok untuk hidroponik karena sebagai sukulen ia butuh periode kering di antara penyiraman. Media yang terus basah akan menyebabkan busuk akar dengan cepat."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/330px-Aloe_vera_flower_inset.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/obat-8.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Lateks/saponin lidah buaya — muntah, diare, lesu"
@@ -1898,7 +1898,7 @@
       "kesulitan": "-",
       "tips": "Brotowali adalah tanaman merambat berkayu yang lebih cocok ditanam di tanah atau pot besar. Tidak efisien untuk sistem hidroponik."
     },
-    "imageUrl": "https://images.unsplash.com/photo-1444459094717-a39ececb2069?w=400&q=80",
+    "imageUrl": "plants/obat-9.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Tanaman obat sangat pahit; data keamanan hewan terbatas"
@@ -1937,7 +1937,7 @@
       "kesulitan": "Sedang",
       "tips": "Jintan hitam bisa ditanam hidroponik untuk fase vegetatif, namun untuk panen biji yang optimal sebaiknya dipindah ke media tanah. Pastikan suhu tidak terlalu panas (>30°C)."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Nsativa001Wien.jpg/330px-Nsativa001Wien.jpg",
+    "imageUrl": "plants/obat-10.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Biji aman sedikit; berlebih bisa membahayakan hewan"
@@ -1976,7 +1976,7 @@
       "kesulitan": "Mudah",
       "tips": "Kemangi adalah herbal hidroponik paling produktif! Pinch (cubit) pucuk bunga segera saat muncul agar tanaman fokus produksi daun. Panen dari atas secara rutin."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Ocimum_basilicum_8zz.jpg/330px-Ocimum_basilicum_8zz.jpg",
+    "imageUrl": "plants/herbal-6.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Kemangi/basil tidak beracun dan aman untuk kucing, anjing"
@@ -2015,7 +2015,7 @@
       "kesulitan": "Sedang",
       "tips": "Ketumbar lebih suka suhu sejuk. Di daerah panas, tanam di dalam ruangan dengan pencahayaan tambahan. Hindari memindahkan tanaman karena sensitif terhadap gangguan akar."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg/330px-Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/herbal-7.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Ketumbar tidak beracun dan aman untuk hewan"
@@ -2054,7 +2054,7 @@
       "kesulitan": "Mudah",
       "tips": "Cara termudah: taruh pangkal daun bawang bekas masak dalam gelas berisi air — akan tumbuh dalam 3–5 hari! Untuk panen lebih besar, gunakan sistem NFT atau DWC sederhana."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Welsh_onion.jpg/330px-Welsh_onion.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/herbal-8.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Allium — rusak sel darah merah; beracun bagi hewan"
@@ -2093,7 +2093,7 @@
       "kesulitan": "-",
       "tips": "Kayu manis adalah pohon berkayu keras yang membutuhkan tanah subur dan sistem akar kuat. Tidak praktis untuk hidroponik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cinnamomum_verum1.jpg/330px-Cinnamomum_verum1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/herbal-9.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Kayu manis sedikit iritatif; minyak berisiko bila banyak"
@@ -2132,7 +2132,7 @@
       "kesulitan": "-",
       "tips": "Sereh wangi adalah rumput besar yang lebih cocok ditanam di tanah atau pot besar di luar ruangan. Sistem akar serabutnya sangat padat dan tidak efisien untuk hidroponik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Cymbopogon_nardus_%28DITSL%29.JPG/330px-Cymbopogon_nardus_%28DITSL%29.JPG",
+    "imageUrl": "plants/herbal-10.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Minyak atsiri Cymbopogon bisa sebabkan gangguan lambung"
@@ -2171,7 +2171,7 @@
       "kesulitan": "Mudah",
       "tips": "Oregano sangat produktif di hidroponik indoor dengan grow light. Pastikan EC tidak terlalu tinggi — oregano lebih suka nutrisi sedang. Panen rutin mendorong pertumbuhan baru."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Origanum_vulgare_-_harilik_pune.jpg/330px-Origanum_vulgare_-_harilik_pune.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/aroma-5.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Minyak atsiri oregano — muntah, diare pada hewan"
@@ -2210,7 +2210,7 @@
       "kesulitan": "Sedang",
       "tips": "Thyme lebih suka kering di antara penyiraman — di hidroponik, pastikan ada aerasi yang baik. Sistem Kratky dengan celah udara yang cukup besar bekerja dengan baik untuk thyme."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Thymus_vulgaris1.JPG/330px-Thymus_vulgaris1.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/aroma-6.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Thyme ringan; minyak pekat bisa ganggu lambung"
@@ -2249,7 +2249,7 @@
       "kesulitan": "Mudah",
       "tips": "Lemon balm tumbuh sangat subur di hidroponik — bisa menjadi invasif! Pangkas rutin dan panen banyak agar tanaman tetap kompak. Aroma paling kuat sebelum berbunga."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Lemon_balm_plant.jpg/330px-Lemon_balm_plant.jpg",
+    "imageUrl": "plants/aroma-7.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Lemon balm tidak beracun dan aman untuk hewan"
@@ -2288,7 +2288,7 @@
       "kesulitan": "Sedang",
       "tips": "Tomat cherry adalah primadona hidroponik — produktif dan cepat. Pasang tali atau tiang untuk menopang. Pruning tunas air (sucker) secara rutin. Pollinate bunga dengan menggoyangkan tanaman saat berbunga."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/330px-Tomato_je.jpg",
+    "imageUrl": "plants/buah-8.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Buah matang aman; daun dan buah mentah beracun"
@@ -2327,7 +2327,7 @@
       "kesulitan": "Sulit",
       "tips": "Melon hidroponik butuh manajemen ketat. Batasi 1–2 buah per tanaman untuk ukuran premium. Ikat buah dengan jaring di greenhouse. Kurangi air dan tingkatkan EC seminggu sebelum panen untuk meningkatkan kadar gula (Brix)."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Muskmelon.jpg/330px-Muskmelon.jpg",
+    "imageUrl": "plants/buah-9.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daging melon tidak beracun dan aman untuk hewan"
@@ -2366,7 +2366,7 @@
       "kesulitan": "Sulit",
       "tips": "Blueberry butuh pH sangat rendah (4.5–5.5) yang berbeda dari tanaman hidroponik lain. Gunakan media asam dan monitor pH ketat. Di Indonesia, lebih cocok di Malang, Dieng, atau daerah dingin >800 mdpl."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Vaccinium_corymbosum%2801%29.jpg/330px-Vaccinium_corymbosum%2801%29.jpg",
+    "imageUrl": "plants/buah-10.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Bluberi tidak beracun dan aman untuk kucing, anjing"
@@ -2405,7 +2405,7 @@
       "kesulitan": "-",
       "tips": "Belimbing adalah pohon buah tropis yang membutuhkan tanah dalam dan sistem akar kuat. Tidak praktis untuk hidroponik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Averrhoa_carambola_ARS_k5735-7.jpg/330px-Averrhoa_carambola_ARS_k5735-7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/buah-11.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Oksalat dan karamboksin — berisiko, terutama untuk anjing"
@@ -2444,7 +2444,7 @@
       "kesulitan": "-",
       "tips": "Jambu air adalah pohon besar tropis yang membutuhkan penanaman di tanah atau pot bervolume besar (>100L). Tidak praktis untuk sistem hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Eugenia_sp_Blanco1.145-cropped.jpg/330px-Eugenia_sp_Blanco1.145-cropped.jpg",
+    "imageUrl": "plants/buah-12.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Buah jambu air umumnya aman untuk hewan"
@@ -2483,7 +2483,7 @@
       "kesulitan": "Sedang",
       "tips": "Markisa hidroponik butuh trellis atau para-para untuk merambat. Mulai dengan EC rendah (1.5) lalu naikkan bertahap. Pollinate secara manual dengan kuas kecil untuk meningkatkan set buah."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Passiflora_edulis_forma_flavicarpa.jpg/330px-Passiflora_edulis_forma_flavicarpa.jpg",
+    "imageUrl": "plants/buah-13.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Daging matang boleh; buah mentah, daun lepaskan sianida"
@@ -2522,7 +2522,7 @@
       "kesulitan": "-",
       "tips": "Tanaman tin adalah pohon berkayu yang butuh pot besar atau tanah langsung untuk hasil optimal. Sistem akarnya tidak cocok untuk hidroponik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ficus_carica_L%2C_1771.jpg/330px-Ficus_carica_L%2C_1771.jpg",
+    "imageUrl": "plants/buah-14.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Getah Ficus, ficin, psoralen — iritasi, muntah"
@@ -2561,7 +2561,7 @@
       "kesulitan": "-",
       "tips": "Alpukat adalah pohon besar yang membutuhkan sistem akar dalam dan kuat. Tidak cocok untuk hidroponik rumahan. Tanam di pot volume besar (>50L) atau langsung di tanah."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Persea_americana_fruit_2.JPG/330px-Persea_americana_fruit_2.JPG",
+    "imageUrl": "plants/buah-15.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Persin di daun, kulit, biji — muntah, diare"
@@ -2600,7 +2600,7 @@
       "kesulitan": "-",
       "tips": "Kurma adalah pohon palem yang butuh kondisi gurun untuk berbuah optimal. Di Indonesia bisa tumbuh namun sangat jarang berbuah karena kelembapan udara terlalu tinggi."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Dates005.jpg/330px-Dates005.jpg",
+    "imageUrl": "plants/buah-16.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Palem kurma (Phoenix) tidak beracun; buah aman tanpa biji"
@@ -2636,7 +2636,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Starr_031108-0130_Ficus_lyrata.jpg/330px-Starr_031108-0130_Ficus_lyrata.jpg",
+    "imageUrl": "plants/hias-16.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Getah Ficus iritasi mulut dan kulit; menyebabkan muntah pada hewan"
@@ -2672,7 +2672,7 @@
       "ph_ideal": "6.0–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Chlorophytum_comosum_01.jpg/330px-Chlorophytum_comosum_01.jpg",
+    "imageUrl": "plants/hias-17.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Aman untuk kucing dan anjing; hanya gangguan perut ringan bila dimakan berlebihan"
@@ -2706,7 +2706,7 @@
       "waktu_panen": "-",
       "tips": "Sebagai sukulen pencinta kering, tanaman giok cepat busuk dalam kelembapan terus-menerus dan tidak cocok untuk sistem hidroponik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Crassula_ovata_700.jpg/330px-Crassula_ovata_700.jpg",
+    "imageUrl": "plants/hias-18.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Beracun bagi kucing dan anjing; menyebabkan muntah, lesu, gerakan tak terkoordinasi"
@@ -2742,7 +2742,7 @@
       "ph_ideal": "5.5–6.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Boston_Fern_%282873392811%29.png/330px-Boston_Fern_%282873392811%29.png",
+    "imageUrl": "plants/hias-19.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Aman dan tidak beracun untuk kucing maupun anjing"
@@ -2778,7 +2778,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Pilea_peperomioides_Chinese_money_plant.jpg/330px-Pilea_peperomioides_Chinese_money_plant.jpg",
+    "imageUrl": "plants/hias-20.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun dan aman untuk kucing dan anjing"
@@ -2812,7 +2812,7 @@
       "waktu_panen": "-",
       "tips": "Sebagai sukulen yang teradaptasi kering, butirannya yang rapuh cepat busuk dalam air menggenang, sehingga tidak cocok untuk hidroponik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Senecio_rowleyanus_leaves.jpg/330px-Senecio_rowleyanus_leaves.jpg",
+    "imageUrl": "plants/hias-21.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Beracun bagi kucing dan anjing; menyebabkan muntah, diare, ngiler, lesu"
@@ -2848,7 +2848,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/NKN-2007-06-13_114250_Hoya_Carnosa_%28Yvan_Leduc_author_for_Wikipedia%29.jpg/330px-NKN-2007-06-13_114250_Hoya_Carnosa_%28Yvan_Leduc_author_for_Wikipedia%29.jpg",
+    "imageUrl": "plants/hias-22.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing menurut ASPCA"
@@ -2884,7 +2884,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hedera_helix_Dover.jpg/330px-Hedera_helix_Dover.jpg",
+    "imageUrl": "plants/hias-23.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Saponin triterpenoid menyebabkan muntah, ngiler, diare"
@@ -2920,7 +2920,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/%E6%95%A3%E5%B0%BE%E8%91%B5Dypsis_lutescens_20210511145013_05.jpg/330px-%E6%95%A3%E5%B0%BE%E8%91%B5Dypsis_lutescens_20210511145013_05.jpg",
+    "imageUrl": "plants/hias-24.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing menurut ASPCA"
@@ -2956,7 +2956,7 @@
       "ph_ideal": "6.0-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Streptocarpus_ionanthus_%28as_Saintpaulia_ionantha%29_-_Curtis%27_121_%28Ser._3_no._51%29_pl._7408_%281895%29.jpg/330px-Streptocarpus_ionanthus_%28as_Saintpaulia_ionantha%29_-_Curtis%27_121_%28Ser._3_no._51%29_pl._7408_%281895%29.jpg",
+    "imageUrl": "plants/hias-25.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing menurut ASPCA"
@@ -2992,7 +2992,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zebrina_pendula_20060521_2_closer.jpg/330px-Zebrina_pendula_20060521_2_closer.jpg",
+    "imageUrl": "plants/hias-26.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Getahnya dapat menyebabkan iritasi kulit dan gangguan perut ringan"
@@ -3026,7 +3026,7 @@
       "waktu_panen": "-",
       "tips": "Echeveria adalah sukulen penyuka kondisi kering yang akarnya membusuk di air terus-menerus, sehingga tidak cocok untuk sistem hidroponik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Echeveria_elegans_-_1.png/330px-Echeveria_elegans_-_1.png",
+    "imageUrl": "plants/hias-27.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing menurut ASPCA"
@@ -3062,7 +3062,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Colpfl05.jpg/330px-Colpfl05.jpg",
+    "imageUrl": "plants/hias-28.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Getah beracun — muntah, diare, iritasi kulit/mulut"
@@ -3098,7 +3098,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Dracaena_reflexa.JPG/330px-Dracaena_reflexa.JPG",
+    "imageUrl": "plants/hias-29.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Saponin — muntah, ngiler, lemas, pupil melebar pada kucing"
@@ -3134,7 +3134,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Chamaedorea_elegans_Mart.JPG/330px-Chamaedorea_elegans_Mart.JPG",
+    "imageUrl": "plants/hias-30.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Aman bagi kucing dan anjing menurut ASPCA"
@@ -3170,7 +3170,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Asplenium_nidus_%28Bukidnon%2C_Philippines%29_02.jpg/330px-Asplenium_nidus_%28Bukidnon%2C_Philippines%29_02.jpg",
+    "imageUrl": "plants/hias-31.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Aman bagi kucing dan anjing menurut ASPCA"
@@ -3206,7 +3206,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Plectranthus_scutellarioides_-_El_Yunque_nat_park_PR_IMG_2120.JPG/330px-Plectranthus_scutellarioides_-_El_Yunque_nat_park_PR_IMG_2120.JPG",
+    "imageUrl": "plants/hias-32.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Minyak atsiri — muntah, diare, jarang iritasi kulit"
@@ -3242,7 +3242,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Starr_080117-1693_Hypoestes_phyllostachya.jpg/330px-Starr_080117-1693_Hypoestes_phyllostachya.jpg",
+    "imageUrl": "plants/hias-33.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Aman bagi kucing dan anjing menurut ASPCA"
@@ -3278,7 +3278,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Maranta_leuconeura3.jpg/330px-Maranta_leuconeura3.jpg",
+    "imageUrl": "plants/hias-34.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Aman bagi kucing dan anjing (tidak beracun menurut ASPCA)"
@@ -3314,7 +3314,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Colpfl25.jpg/330px-Colpfl25.jpg",
+    "imageUrl": "plants/hias-35.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Aman bagi kucing dan anjing (tidak beracun menurut ASPCA)"
@@ -3350,7 +3350,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Starr_061212-2331_Dieffenbachia_seguine.jpg/330px-Starr_061212-2331_Dieffenbachia_seguine.jpg",
+    "imageUrl": "plants/hias-36.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kalsium oksalat — nyeri mulut, ngiler, bengkak, muntah bila tergigit"
@@ -3386,7 +3386,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Schefflera_arboricola%2C_vrugte%2C_a%2C_Pretoria.jpg/330px-Schefflera_arboricola%2C_vrugte%2C_a%2C_Pretoria.jpg",
+    "imageUrl": "plants/hias-37.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kalsium oksalat — iritasi mulut, ngiler, muntah, sulit menelan"
@@ -3420,7 +3420,7 @@
       "waktu_panen": "-",
       "tips": "Sebagai tanaman mirip sukulen yang beradaptasi kering, palem ekor kuda butuh pangkalnya mengering di antara penyiraman dan akan busuk dalam kelembapan terus-menerus, sehingga tidak cocok untuk hidroponik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Beaucarnea_recurvata%2C_Ocampo%2C_Tamaulipas%2C_Mexico_1.jpg/330px-Beaucarnea_recurvata%2C_Ocampo%2C_Tamaulipas%2C_Mexico_1.jpg",
+    "imageUrl": "plants/hias-38.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Aman bagi kucing dan anjing (tidak beracun menurut ASPCA)"
@@ -3454,7 +3454,7 @@
       "waktu_panen": "-",
       "tips": "Sebagai sukulen yang menyimpan air di daun dan mudah busuk dalam air menggenang, Kalanchoe butuh media kering yang berdrainase baik dan tidak cocok untuk sistem hidroponik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Kalanchoe_blossfeldiana_3.jpg/330px-Kalanchoe_blossfeldiana_3.jpg",
+    "imageUrl": "plants/hias-39.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Bufadienolida — muntah, diare, dan jarang gangguan irama jantung"
@@ -3488,7 +3488,7 @@
       "waktu_panen": "-",
       "tips": "Sebagai kaktus hutan sukulen, batangnya mudah busuk dalam air terus-menerus sehingga tidak cocok untuk sistem hidroponik dan lebih suka media tanah yang cepat kering."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Cactus_de_no%C3%ABl_rev.jpg/330px-Cactus_de_no%C3%ABl_rev.jpg",
+    "imageUrl": "plants/hias-40.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing menurut ASPCA"
@@ -3522,7 +3522,7 @@
       "waktu_panen": "-",
       "tips": "Yuka memiliki batang berkayu tebal dan akar yang beradaptasi kekeringan sehingga membusuk dalam air tergenang; tidak cocok untuk hidroponik dan butuh tanah berpasir yang cepat kering."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Yucca_gigantea_-_Jard%C3%ADn_Bot%C3%A1nico_Canario_Viera_y_Clavijo_-_Gran_Canaria.jpg/330px-Yucca_gigantea_-_Jard%C3%ADn_Bot%C3%A1nico_Canario_Viera_y_Clavijo_-_Gran_Canaria.jpg",
+    "imageUrl": "plants/hias-41.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Saponin beracun bagi hewan, menyebabkan muntah dan ngiler"
@@ -3556,7 +3556,7 @@
       "waktu_panen": "-",
       "tips": "Tanaman udara tidak memiliki akar fungsional dan menyerap air lewat daun; terendam dalam larutan nutrisi akan membusukkan pangkalnya sehingga tidak bisa dibudidayakan secara hidroponik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Purple_sky_plant_-_Andrey_Zharkikh.jpg/330px-Purple_sky_plant_-_Andrey_Zharkikh.jpg",
+    "imageUrl": "plants/hias-42.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tanaman udara Tillandsia tidak beracun bagi kucing dan anjing"
@@ -3592,7 +3592,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Peperomia_obtusifolia_3-OB9.jpg/330px-Peperomia_obtusifolia_3-OB9.jpg",
+    "imageUrl": "plants/hias-43.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Peperomia obtusifolia tidak beracun bagi kucing dan anjing"
@@ -3626,7 +3626,7 @@
       "waktu_panen": "-",
       "tips": "Sebagai konifer yang tumbuh lambat dengan sistem akar berkayu dalam, ia membutuhkan media tanah yang stabil dan berudara serta tidak beradaptasi dengan budidaya hidroponik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Norfolk-Island-Pines.jpg/330px-Norfolk-Island-Pines.jpg",
+    "imageUrl": "plants/hias-44.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Sedikit beracun; getah dan jarum dapat menyebabkan muntah dan iritasi"
@@ -3660,7 +3660,7 @@
       "waktu_panen": "-",
       "tips": "Sukulen yang beradaptasi kekeringan ini menyimpan air di umbi dan daunnya dan cepat busuk dalam air tergenang, sehingga tidak cocok untuk hidroponik dan lebih suka media kaktus berpasir."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ceropegia_linearis_subsp_woodii.jpg/330px-Ceropegia_linearis_subsp_woodii.jpg",
+    "imageUrl": "plants/hias-45.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "String of Hearts tidak beracun bagi kucing dan anjing"
@@ -3696,7 +3696,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Petroselinum.jpg/330px-Petroselinum.jpg",
+    "imageUrl": "plants/herbal-11.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Peterseli musim semi fototoksik; jumlah besar ganggu pencernaan hewan"
@@ -3732,7 +3732,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Illustration_Anethum_graveolens_clean.jpg/330px-Illustration_Anethum_graveolens_clean.jpg",
+    "imageUrl": "plants/herbal-12.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Dianggap tidak beracun bagi anjing, kucing, dan kuda"
@@ -3768,7 +3768,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Salvia_officinalis0.jpg/330px-Salvia_officinalis0.jpg",
+    "imageUrl": "plants/herbal-13.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Sage biasa tidak beracun bagi kucing, anjing, dan kuda"
@@ -3804,7 +3804,7 @@
       "ph_ideal": "6.0-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Allium_schoenoprasum_-_Bombus_lapidarius_-_Tootsi.jpg/330px-Allium_schoenoprasum_-_Bombus_lapidarius_-_Tootsi.jpg",
+    "imageUrl": "plants/herbal-14.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Racun allium merusak sel darah merah; berbahaya bagi kucing dan anjing"
@@ -3840,7 +3840,7 @@
       "ph_ideal": "6.0-7.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Origanum_majorana_002.JPG/330px-Origanum_majorana_002.JPG",
+    "imageUrl": "plants/herbal-15.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Marjoram dianggap tidak beracun bagi anjing dan kucing"
@@ -3876,7 +3876,7 @@
       "ph_ideal": "6.0-6.8",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Foeniculum_July_2011-1a.jpg/330px-Foeniculum_July_2011-1a.jpg",
+    "imageUrl": "plants/herbal-16.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Adas umumnya tidak beracun bagi anjing dan kucing"
@@ -3912,7 +3912,7 @@
       "ph_ideal": "6.0-7.0",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Boerenkool.jpg/330px-Boerenkool.jpg",
+    "imageUrl": "plants/sayur-13.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Brassica aman sedikit; berlebih sebabkan gas, gangguan tiroid"
@@ -3948,7 +3948,7 @@
       "ph_ideal": "6.0-7.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Broccoli_and_cross_section_edit.jpg/330px-Broccoli_and_cross_section_edit.jpg",
+    "imageUrl": "plants/sayur-14.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Brassica aman sedikit; berlebih sebabkan gas, gangguan tiroid"
@@ -3982,7 +3982,7 @@
       "waktu_panen": "-",
       "tips": "Lobak adalah tanaman umbi yang butuh media gembur dan dalam agar umbinya membesar. Sistem hidroponik air standar tidak mendukung perkembangan umbi yang baik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Radish_3371103037_4ab07db0bf_o.jpg/330px-Radish_3371103037_4ab07db0bf_o.jpg",
+    "imageUrl": "plants/sayur-15.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Umumnya aman; berlebih bisa sebabkan gas dan gangguan lambung"
@@ -4016,7 +4016,7 @@
       "waktu_panen": "-",
       "tips": "Bit adalah tanaman umbi yang butuh media gembur dan dalam agar umbinya berkembang. Sistem hidroponik air standar tidak cocok untuk umbi yang membesar."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Detroitdarkredbeets.png/330px-Detroitdarkredbeets.png",
+    "imageUrl": "plants/sayur-16.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Bit tidak beracun dan aman untuk kucing dan anjing"
@@ -4052,7 +4052,7 @@
       "ph_ideal": "6.0-7.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/CSA-Striped-Zucchini.jpg/330px-CSA-Striped-Zucchini.jpg",
+    "imageUrl": "plants/sayur-17.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Zucchini tidak beracun dan aman untuk kucing dan anjing"
@@ -4088,7 +4088,7 @@
       "ph_ideal": "6.0-7.0",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Eruca_sativa_sl11.jpg/330px-Eruca_sativa_sl11.jpg",
+    "imageUrl": "plants/sayur-18.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Arugula tidak beracun dan aman untuk kucing dan anjing"
@@ -4122,7 +4122,7 @@
       "waktu_panen": "-",
       "tips": "Lemon adalah pohon berkayu dengan akar dalam dan tajuk buah yang berat, sehingga butuh tancapan tanah dan tidak praktis untuk hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/P1030323.JPG/330px-P1030323.JPG",
+    "imageUrl": "plants/buah-17.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Minyak sitrus dan psoralen sebabkan muntah, diare pada hewan"
@@ -4156,7 +4156,7 @@
       "waktu_panen": "-",
       "tips": "Delima adalah perdu berkayu yang berumur panjang dengan sistem akar luas, sehingga ditanam di tanah atau pot besar, bukan hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pomegranate_Juice_%282019%29.jpg/330px-Pomegranate_Juice_%282019%29.jpg",
+    "imageUrl": "plants/buah-18.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Kulit kayu, akar, kulit buah bisa sebabkan muntah; daging ringan"
@@ -4190,7 +4190,7 @@
       "waktu_panen": "-",
       "tips": "Sebagai kaktus merambat berat yang butuh zona akar kering dan rambatan kuat, buah naga jauh lebih cocok di tanah atau pot besar daripada hidroponik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Pitaya_cross_section_ed2.jpg/330px-Pitaya_cross_section_ed2.jpg",
+    "imageUrl": "plants/buah-19.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daging buah naga tidak beracun dan aman untuk hewan"
@@ -4224,7 +4224,7 @@
       "waktu_panen": "-",
       "tips": "Nanas butuh 18-24 bulan untuk berbuah dan menyukai zona akar kering berdrainase baik, sehingga tanah atau pot besar lebih praktis daripada hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Pineapple_and_cross_section.jpg/330px-Pineapple_and_cross_section.jpg",
+    "imageUrl": "plants/buah-20.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daging aman; bromelain mentah bisa iritasi mulut, lambung"
@@ -4258,7 +4258,7 @@
       "waktu_panen": "-",
       "tips": "Rasberi menyebar lewat tongkat menahun dan akar bertunas yang butuh ruang di tanah, sehingga kurang praktis untuk sistem hidroponik rumahan yang rapi."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Fert%C5%91di_k%C3%A1rmin_m%C3%A1lna.JPG/330px-Fert%C5%91di_k%C3%A1rmin_m%C3%A1lna.JPG",
+    "imageUrl": "plants/buah-21.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Rasberi tidak beracun; jumlah banyak bisa sebabkan gangguan ringan"
@@ -4292,7 +4292,7 @@
       "waktu_panen": "-",
       "tips": "Mangga adalah pohon besar berakar dalam yang butuh tancapan tanah untuk tajuk dan buahnya yang berat, sehingga hidroponik rumahan tidak memungkinkan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Mangoes_%28Magnifera_indica%29_from_India.jpg/330px-Mangoes_%28Magnifera_indica%29_from_India.jpg",
+    "imageUrl": "plants/buah-22.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daging aman; kulit, biji sebabkan tersedak, iritasi urushiol"
@@ -4328,7 +4328,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Matricaria_February_2008-1.jpg/330px-Matricaria_February_2008-1.jpg",
+    "imageUrl": "plants/aroma-8.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Mengandung asam antemat dan minyak atsiri — dapat menyebabkan muntah, diare, dan dermatitis kontak pada kucing dan anjing"
@@ -4362,7 +4362,7 @@
       "waktu_panen": "-",
       "tips": "Melati adalah tanaman merambat berkayu tahunan dengan sistem akar luas dan butuh media kokoh untuk menopang pertumbuhan merambatnya, sehingga tidak cocok untuk sistem hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Jasminum_officinale_-_Bot._Mag._31%2C_1787.jpg/330px-Jasminum_officinale_-_Bot._Mag._31%2C_1787.jpg",
+    "imageUrl": "plants/aroma-9.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Melati sejati (Jasminum officinale) tidak beracun dan aman untuk kucing dan anjing"
@@ -4398,7 +4398,7 @@
       "ph_ideal": "5.8–6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/%28MHNT%29_Pelargonium_graveolens_flower_and_leaves.jpg/330px-%28MHNT%29_Pelargonium_graveolens_flower_and_leaves.jpg",
+    "imageUrl": "plants/aroma-10.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Geraniol dan linalool pada Pelargonium — dapat menyebabkan muntah, anoreksia, dan dermatitis pada kucing dan anjing"
@@ -4432,7 +4432,7 @@
       "waktu_panen": "-",
       "tips": "Eukaliptus adalah pohon berkayu yang tumbuh cepat dengan sistem akar dalam dan agresif serta ukuran akhir yang besar, sehingga tidak cocok untuk sistem hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Eucalyptus_globulus_subsp._maidenii.jpg/330px-Eucalyptus_globulus_subsp._maidenii.jpg",
+    "imageUrl": "plants/aroma-11.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Eukaliptol (sineol) dan minyak atsiri — dapat menyebabkan ngiler, muntah, diare, lemas, dan depresi pada kucing dan anjing"
@@ -4468,7 +4468,7 @@
       "ph_ideal": "5.8–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Echinacea_purpurea_Grandview_Prairie.jpg/330px-Echinacea_purpurea_Grandview_Prairie.jpg",
+    "imageUrl": "plants/obat-11.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Ekinasea umumnya tidak beracun untuk kucing dan anjing, meski jumlah besar dapat menyebabkan gangguan perut ringan"
@@ -4504,7 +4504,7 @@
       "ph_ideal": "6.0–7.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/WithaniaFruit.jpg/330px-WithaniaFruit.jpg",
+    "imageUrl": "plants/obat-12.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Data keamanan untuk hewan terbatas; sebagai adaptogen kuat dengan lakton steroid sebaiknya diberikan pada kucing dan anjing hanya dengan hati-hati"
@@ -4540,7 +4540,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Flickr_-_archer10_%28Dennis%29_-_Guatemala-1376.jpg/330px-Flickr_-_archer10_%28Dennis%29_-_Guatemala-1376.jpg",
+    "imageUrl": "plants/hias-46.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Pachira aquatica tidak beracun bagi kucing dan anjing (ASPCA)"
@@ -4576,7 +4576,7 @@
       "ph_ideal": "5.0-6.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Bromeliaceae03.jpg/330px-Bromeliaceae03.jpg",
+    "imageUrl": "plants/hias-47.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Bromelia Guzmania tidak beracun bagi kucing dan anjing (ASPCA)"
@@ -4612,7 +4612,7 @@
       "ph_ideal": "6.0-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Dracaena_sanderiana_2.jpg/330px-Dracaena_sanderiana_2.jpg",
+    "imageUrl": "plants/hias-48.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Dracaena sanderiana beracun bagi kucing dan anjing — saponin menyebabkan muntah, ngiler, lemas (ASPCA)"
@@ -4646,7 +4646,7 @@
       "waktu_panen": "-",
       "tips": "Begonia Rex memiliki rimpang halus dan batang berair yang mudah busuk bila terendam, sehingga tidak cocok untuk sistem hidroponik dan tumbuh terbaik di media tanah yang ringan dan berpori."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Painted_Leaved_Begonia._Begonia_rex_Putz._Flore_des_serres_et_des_jardins_de_l%27Europe_v.12_%281857%29.jpg/330px-Painted_Leaved_Begonia._Begonia_rex_Putz._Flore_des_serres_et_des_jardins_de_l%27Europe_v.12_%281857%29.jpg",
+    "imageUrl": "plants/hias-49.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Begonia beracun bagi kucing dan anjing — kalsium oksalat larut, paling pekat pada umbinya (ASPCA)"
@@ -4682,7 +4682,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Calathea_orbifolia_2.jpg/330px-Calathea_orbifolia_2.jpg",
+    "imageUrl": "plants/hias-50.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Kalatea / Goeppertia tidak beracun bagi kucing dan anjing (ASPCA)"
@@ -4718,7 +4718,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Philodendron_scandens_subsp_oxycardium2.jpg/330px-Philodendron_scandens_subsp_oxycardium2.jpg",
+    "imageUrl": "plants/hias-51.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Philodendron beracun bagi kucing dan anjing — kalsium oksalat tak larut menyebabkan iritasi mulut, ngiler, muntah (ASPCA)"
@@ -4754,7 +4754,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Zingiber_malaysianum.jpg/330px-Zingiber_malaysianum.jpg",
+    "imageUrl": "plants/hias-52.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kalsium oksalat — iritasi mulut, ngiler, muntah bila tergigit"
@@ -4790,7 +4790,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Monstera_adansonii_79319231.jpg/330px-Monstera_adansonii_79319231.jpg",
+    "imageUrl": "plants/hias-53.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kalsium oksalat — iritasi mulut/tenggorokan, ngiler bila tergigit"
@@ -4826,7 +4826,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Aspidistra_elatior1.jpg/330px-Aspidistra_elatior1.jpg",
+    "imageUrl": "plants/hias-54.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing menurut ASPCA; aman"
@@ -4862,7 +4862,7 @@
       "ph_ideal": "6.0-6.5",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Coffee_Flowers.JPG/330px-Coffee_Flowers.JPG",
+    "imageUrl": "plants/hias-55.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kafein pada daun dan buah — muntah, gemetar, jantung berdebar"
@@ -4898,7 +4898,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tradescantia_pallida_kz03.jpg/330px-Tradescantia_pallida_kz03.jpg",
+    "imageUrl": "plants/hias-56.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Getahnya dapat menyebabkan iritasi kulit dan saluran cerna ringan"
@@ -4934,7 +4934,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Peperomia_argyreia.jpg/330px-Peperomia_argyreia.jpg",
+    "imageUrl": "plants/hias-57.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing menurut ASPCA; aman"
@@ -4968,7 +4968,7 @@
       "waktu_panen": "-",
       "tips": "Sebagai sukulen yang beradaptasi kering, Haworthia Zebra menyimpan air di daunnya dan cepat busuk bila akar selalu basah, sehingga hidroponik tidak direkomendasikan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Winterbourne_-_Haworthia_attenuata_%286120983526%29.jpg/330px-Winterbourne_-_Haworthia_attenuata_%286120983526%29.jpg",
+    "imageUrl": "plants/hias-58.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Haworthia tidak beracun dan aman untuk kucing serta anjing."
@@ -5002,7 +5002,7 @@
       "waktu_panen": "-",
       "tips": "Ekor Keledai adalah sukulen yang menyimpan air di daun berdagingnya dan sangat rentan busuk, sehingga akar yang selalu basah pada hidroponik tidak cocok."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Donkey%27s_tail_in_bloom_March_06.jpg/330px-Donkey%27s_tail_in_bloom_March_06.jpg",
+    "imageUrl": "plants/hias-59.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Ekor Keledai tidak beracun dan aman untuk kucing serta anjing."
@@ -5038,7 +5038,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Cordyline_fruticosa_%2820262433874%29.jpg/330px-Cordyline_fruticosa_%2820262433874%29.jpg",
+    "imageUrl": "plants/hias-60.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Saponin — muntah, ngiler, dan pupil melebar pada kucing."
@@ -5074,7 +5074,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Starr_030807-0143_Adiantum_raddianum.jpg/330px-Starr_030807-0143_Adiantum_raddianum.jpg",
+    "imageUrl": "plants/hias-61.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Paku Suplir tidak beracun dan aman untuk kucing serta anjing."
@@ -5108,7 +5108,7 @@
       "waktu_panen": "-",
       "tips": "Paku Tanduk Rusa adalah epifit yang menyerap air dan udara melalui bola akar yang ditempel dan perlu mengering di antara perendaman, sehingga akar terendam pada hidroponik menyebabkan busuk."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Platycerium_bifurcatum_kz01.jpg/330px-Platycerium_bifurcatum_kz01.jpg",
+    "imageUrl": "plants/hias-62.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Paku Tanduk Rusa tidak beracun dan aman untuk kucing serta anjing."
@@ -5144,7 +5144,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/PileaCadierei.jpg/330px-PileaCadierei.jpg",
+    "imageUrl": "plants/hias-63.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daun Mutiara tidak beracun dan aman untuk kucing serta anjing."
@@ -5180,7 +5180,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Asparagus_setaceus_Leaves_2760px.jpg/330px-Asparagus_setaceus_Leaves_2760px.jpg",
+    "imageUrl": "plants/hias-64.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Buah beracun; getah mengiritasi kulit dan perut"
@@ -5216,7 +5216,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Stromanthe_sanguinea_in_garden_in_Manaus%2C_Brazil.jpg/330px-Stromanthe_sanguinea_in_garden_in_Manaus%2C_Brazil.jpg",
+    "imageUrl": "plants/hias-65.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Aman untuk kucing dan anjing"
@@ -5252,7 +5252,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Aeschynanthus_radicans.jpg/330px-Aeschynanthus_radicans.jpg",
+    "imageUrl": "plants/hias-66.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Aman untuk kucing dan anjing"
@@ -5288,7 +5288,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Howea_forsteriana_Lord_Howe_Island.jpg/330px-Howea_forsteriana_Lord_Howe_Island.jpg",
+    "imageUrl": "plants/hias-67.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Aman untuk kucing dan anjing"
@@ -5324,7 +5324,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Philodendron_giganteum_-_Laeken_Royal_Greenhouses_-_Royal_Castle_of_Laeken_-_Brussels%2C_Belgium_-_DSC07236.jpg/330px-Philodendron_giganteum_-_Laeken_Royal_Greenhouses_-_Royal_Castle_of_Laeken_-_Brussels%2C_Belgium_-_DSC07236.jpg",
+    "imageUrl": "plants/hias-68.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kalsium oksalat — iritasi mulut, ngiler, muntah"
@@ -5360,7 +5360,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Anthurium_clarinervium.jpg/330px-Anthurium_clarinervium.jpg",
+    "imageUrl": "plants/hias-69.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Kalsium oksalat — iritasi mulut, ngiler, muntah"
@@ -5394,7 +5394,7 @@
       "waktu_panen": "-",
       "tips": "Sebagai sukulen tahan kering, String of Bananas mudah busuk bila akar terus basah dan tidak cocok untuk sistem hidroponik; gunakan media kaktus yang cepat kering."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/String_of_Bananas.JPG/330px-String_of_Bananas.JPG",
+    "imageUrl": "plants/hias-70.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Beracun bagi kucing dan anjing; menyebabkan muntah, ngiler, dan lemas."
@@ -5428,7 +5428,7 @@
       "waktu_panen": "-",
       "tips": "Lace Aloe adalah sukulen gurun yang akarnya busuk dalam kondisi terus basah, sehingga tidak cocok untuk hidroponik; tanam di media berpasir yang cepat kering."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/AloeAristata.jpg/330px-AloeAristata.jpg",
+    "imageUrl": "plants/hias-71.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing; aman di sekitar hewan."
@@ -5464,7 +5464,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ctenanthe_burle-marxii.jpg/330px-Ctenanthe_burle-marxii.jpg",
+    "imageUrl": "plants/hias-72.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing; aman di sekitar hewan."
@@ -5500,7 +5500,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Nematanthus_gregarius_-_Kew_Gardens.JPG/330px-Nematanthus_gregarius_-_Kew_Gardens.JPG",
+    "imageUrl": "plants/hias-73.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing; aman di sekitar hewan."
@@ -5536,7 +5536,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ravenearivularis.jpg/330px-Ravenearivularis.jpg",
+    "imageUrl": "plants/hias-74.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing; aman di sekitar hewan."
@@ -5570,7 +5570,7 @@
       "waktu_panen": "-",
       "tips": "Sebagai merambat sukulen, Sweetheart Hoya menyimpan air di daun dan mudah busuk bila akar terus basah, sehingga tidak cocok untuk hidroponik; gunakan media kasar yang cepat kering."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hoya-kerrii_flowers_op.jpg/330px-Hoya-kerrii_flowers_op.jpg",
+    "imageUrl": "plants/hias-75.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tidak beracun bagi kucing dan anjing; aman di sekitar hewan."
@@ -5604,7 +5604,7 @@
       "waktu_panen": "-",
       "tips": "Jeruk adalah pohon buah berkayu dengan akar tunggang dalam dan tajuk besar, sehingga tidak cocok untuk sistem hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/OrangeBloss_wb.jpg/330px-OrangeBloss_wb.jpg",
+    "imageUrl": "plants/buah-23.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Minyak sitrus dan psoralen menyebabkan muntah, ngiler, dan iritasi kulit pada hewan"
@@ -5638,7 +5638,7 @@
       "waktu_panen": "-",
       "tips": "Leci adalah pohon berkayu besar dan berumur panjang yang butuh tanah dalam untuk menambatkan akarnya, sehingga hidroponik tidak praktis."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Litchi_chinensis_fruits.JPG/330px-Litchi_chinensis_fruits.JPG",
+    "imageUrl": "plants/buah-24.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Daging buah aman, namun biji beracun dan buah mentah dapat menyebabkan hipoglikemia"
@@ -5672,7 +5672,7 @@
       "waktu_panen": "-",
       "tips": "Lengkeng tumbuh menjadi pohon berkayu tinggi dengan akar luas, sehingga tidak bisa ditanam dalam sistem hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Longan_tree_at_Pine_Island_Nursery.jpg/330px-Longan_tree_at_Pine_Island_Nursery.jpg",
+    "imageUrl": "plants/buah-25.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Daging buah aman namun biji besarnya berisiko racun dan tersedak bagi hewan"
@@ -5706,7 +5706,7 @@
       "waktu_panen": "-",
       "tips": "Rambutan adalah pohon buah hijau abadi besar yang butuh tanah dalam untuk sistem akarnya, sehingga hidroponik tidak memungkinkan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Rambutan_white_background_alt.jpg/330px-Rambutan_white_background_alt.jpg",
+    "imageUrl": "plants/buah-26.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daging buah tidak beracun dan aman; buang biji sebelum diberikan ke hewan"
@@ -5740,7 +5740,7 @@
       "waktu_panen": "-",
       "tips": "Sirsak adalah pohon buah berkayu yang membentuk sistem akar dalam, sehingga tidak cocok untuk sistem hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Annona_muricata_1.jpg/330px-Annona_muricata_1.jpg",
+    "imageUrl": "plants/buah-27.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Biji dan kulit kayu mengandung annonacin, neurotoksin; jauhkan biji dari hewan"
@@ -5774,7 +5774,7 @@
       "waktu_panen": "-",
       "tips": "Srikaya adalah pohon buah berkayu yang membutuhkan tanah dalam untuk akarnya, sehingga tidak cocok untuk hidroponik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Sugar_apple_on_tree.jpg/330px-Sugar_apple_on_tree.jpg",
+    "imageUrl": "plants/buah-28.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Biji dan kulit kayu beracun, mengandung annonacin; daging buah aman secukupnya"
@@ -5808,7 +5808,7 @@
       "waktu_panen": "-",
       "tips": "Nangka adalah pohon besar yang membutuhkan tanah dalam untuk menancapkan akar kuat dan menopang buah berat, sehingga tidak cocok untuk hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/The_jackfruit_is_holding_on_to_the_tree.jpg/330px-The_jackfruit_is_holding_on_to_the_tree.jpg",
+    "imageUrl": "plants/buah-29.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daging nangka tidak beracun bagi anjing dan kucing; buang biji besarnya dan berikan secukupnya."
@@ -5842,7 +5842,7 @@
       "waktu_panen": "-",
       "tips": "Durian adalah pohon tinggi berakar dalam dengan buah sangat berat; membutuhkan tanah dalam dan tidak dapat ditanam dengan sistem hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Durio_Zibethinus_Van_Nooten.jpg/330px-Durio_Zibethinus_Van_Nooten.jpg",
+    "imageUrl": "plants/buah-30.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daging durian tidak beracun tetapi sangat tinggi lemak dan gula; berikan hanya sedikit dan jangan berikan bijinya."
@@ -5876,7 +5876,7 @@
       "waktu_panen": "-",
       "tips": "Manggis adalah pohon yang tumbuh lambat dengan akar tunggang dalam yang menuntut tanah dalam dan subur, sehingga tidak cocok untuk hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Berthe_Hoola_van_Nooten48.jpg/330px-Berthe_Hoola_van_Nooten48.jpg",
+    "imageUrl": "plants/buah-31.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daging manggis tidak beracun bagi anjing dan kucing; buang kulit dan bijinya, berikan hanya daging lembutnya secukupnya."
@@ -5910,7 +5910,7 @@
       "waktu_panen": "-",
       "tips": "Salak adalah palem berumpun dengan sistem akar rapat dan menyebar yang membutuhkan tanah dalam, sehingga tidak dapat ditanam secara hidroponik di rumah."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Salak_%28Salacca_zalacca%29%2C_2015-05-17.jpg/330px-Salak_%28Salacca_zalacca%29%2C_2015-05-17.jpg",
+    "imageUrl": "plants/buah-32.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daging salak tidak beracun bagi anjing dan kucing; kupas kulit sisiknya dan buang bijinya sebelum diberikan sedikit."
@@ -5944,7 +5944,7 @@
       "waktu_panen": "-",
       "tips": "Sawo adalah pohon berumur panjang dengan sistem akar dalam dan luas yang membutuhkan tanah dalam, sehingga tidak cocok untuk hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/%E0%B4%B8%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%8B%E0%B4%9F%E0%B5%8D%E0%B4%9F.jpg/330px-%E0%B4%B8%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%8B%E0%B4%9F%E0%B5%8D%E0%B4%9F.jpg",
+    "imageUrl": "plants/buah-33.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Daging sawo matang umumnya aman, tetapi buah mentah dan kulit kayunya mengandung getah putih (saponin/tanin) dan bijinya memiliki kait kecil yang dapat menyebabkan gangguan atau sumbatan pencernaan; berikan hanya daging matang tanpa biji secukupnya."
@@ -5978,7 +5978,7 @@
       "waktu_panen": "-",
       "tips": "Kesemek adalah pohon peluruh daun dengan akar tunggang dalam yang membutuhkan tanah dalam dan iklim bermusim, sehingga tidak cocok untuk hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kaki_20041002.jpg/330px-Kaki_20041002.jpg",
+    "imageUrl": "plants/buah-34.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Daging kesemek tidak beracun, tetapi biji dan bagian kerasnya dapat menyebabkan sumbatan usus dan peradangan (enteritis) pada anjing; selalu buang semua biji dan berikan hanya potongan kecil dagingnya."
@@ -6012,7 +6012,7 @@
       "waktu_panen": "-",
       "tips": "Kiwi adalah tanaman merambat berkayu yang besar dan berat dengan akar luas yang membutuhkan tanah dalam dan para-para kuat, sehingga tidak praktis untuk hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Kiwis_006eue.jpg/330px-Kiwis_006eue.jpg",
+    "imageUrl": "plants/buah-35.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daging kiwi tidak beracun bagi anjing dan kucing; kupas kulitnya dan berikan potongan kecil secukupnya karena tinggi gula."
@@ -6046,7 +6046,7 @@
       "waktu_panen": "-",
       "tips": "Apel adalah pohon kebun berkayu dengan sistem akar dalam yang membutuhkan tanah dalam dan iklim sejuk bermusim, sehingga tidak cocok untuk hidroponik rumahan."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pink_lady_and_cross_section.jpg/330px-Pink_lady_and_cross_section.jpg",
+    "imageUrl": "plants/buah-36.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Daging apel tidak beracun dan aman untuk hewan, tetapi biji, daun, dan batangnya mengandung senyawa sianogenik (sianida); selalu buang bagian tengah dan bijinya, berikan hanya irisan dagingnya."
@@ -6082,7 +6082,7 @@
       "ph_ideal": "6.0–7.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Chou-fleur_02.jpg/330px-Chou-fleur_02.jpg",
+    "imageUrl": "plants/sayur-19.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Sayuran brassica — aman dalam jumlah kecil tetapi menyebabkan gas, kembung dan dapat memengaruhi tiroid jika berlebihan."
@@ -6118,7 +6118,7 @@
       "ph_ideal": "6.0–7.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Cabbage_and_cross_section_on_white.jpg/330px-Cabbage_and_cross_section_on_white.jpg",
+    "imageUrl": "plants/sayur-20.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Sayuran brassica — jumlah kecil aman tetapi berlebihan menyebabkan gas, kembung dan dapat memengaruhi tiroid."
@@ -6154,7 +6154,7 @@
       "ph_ideal": "5.8–6.8",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Celery_1.jpg/330px-Celery_1.jpg",
+    "imageUrl": "plants/sayur-21.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Seledri tidak beracun dan aman untuk kucing dan anjing secukupnya."
@@ -6190,7 +6190,7 @@
       "ph_ideal": "6.0–7.0",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Chard_%28Beta_vulgaris_var_cicla%29.jpg/330px-Chard_%28Beta_vulgaris_var_cicla%29.jpg",
+    "imageUrl": "plants/sayur-22.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Mengandung oksalat — jumlah kecil aman tetapi berlebihan dapat menyebabkan gangguan perut dan memengaruhi penyerapan kalsium."
@@ -6226,7 +6226,7 @@
       "ph_ideal": "6.0–6.8",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hong_Kong_Okra_Aug_25_2012.JPG/330px-Hong_Kong_Okra_Aug_25_2012.JPG",
+    "imageUrl": "plants/sayur-23.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Okra tidak beracun dan aman untuk kucing dan anjing."
@@ -6262,7 +6262,7 @@
       "ph_ideal": "6.0–7.0",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Peas_in_pods_-_Studio.jpg/330px-Peas_in_pods_-_Studio.jpg",
+    "imageUrl": "plants/sayur-24.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Kacang polong tidak beracun dan aman untuk kucing dan anjing."
@@ -6296,7 +6296,7 @@
       "waktu_panen": "-",
       "tips": "Ubi jalar adalah tanaman umbi yang membutuhkan tanah dalam dan gembur agar umbinya bisa membesar dengan baik. Sistem hidroponik standar tidak mendukung perkembangan umbi yang sehat, sehingga lebih baik ditanam di tanah atau polybag besar."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ipomoea_batatas_006.JPG/330px-Ipomoea_batatas_006.JPG",
+    "imageUrl": "plants/sayur-25.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Ubi jalar tidak beracun untuk kucing dan anjing, bahkan digunakan dalam beberapa makanan hewan."
@@ -6330,7 +6330,7 @@
       "waktu_panen": "-",
       "tips": "Labu kuning adalah tanaman merambat besar dengan buah berat dan sistem akar yang luas. Sistem hidroponik standar tidak mampu menopang ukuran maupun berat buahnya, sehingga sebaiknya ditanam di tanah atau wadah yang sangat besar."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cucurbita_moschata_Butternut_2012_G2.jpg/330px-Cucurbita_moschata_Butternut_2012_G2.jpg",
+    "imageUrl": "plants/sayur-26.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daging labu kuning tidak beracun dan aman untuk kucing dan anjing; labu rebus tawar sering diberikan untuk membantu pencernaan."
@@ -6364,7 +6364,7 @@
       "waktu_panen": "-",
       "tips": "Jagung manis tumbuh sangat tinggi dan mengandalkan penyerbukan angin di antara banyak tanaman, serta memiliki sistem akar dalam yang rakus. Sifat ini membuatnya tidak praktis untuk hidroponik standar, jadi tanamlah di tanah dengan beberapa baris sekaligus."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/VegCorn.jpg/330px-VegCorn.jpg",
+    "imageUrl": "plants/sayur-27.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Bijinya tidak beracun, tetapi jangan pernah berikan bonggol/tongkolnya — tongkol jagung bisa menyebabkan penyumbatan usus berbahaya pada anjing."
@@ -6400,7 +6400,7 @@
       "ph_ideal": "6.0–7.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Leek_on_white_background_-_0947.jpg/330px-Leek_on_white_background_-_0947.jpg",
+    "imageUrl": "plants/sayur-28.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Beracun untuk kucing dan anjing — sebagai allium, prei merusak sel darah merah dan bisa menyebabkan anemia bahkan dalam jumlah kecil."
@@ -6434,7 +6434,7 @@
       "waktu_panen": "-",
       "tips": "Bawang merah adalah tanaman umbi, dan allium berumbi perlu membesar serta mengering di media yang padat dan berdrainase baik. Kelembapan terus-menerus pada hidroponik standar cenderung membusukkan umbi alih-alih memadatkannya, jadi tanamlah bawang merah di tanah."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Shallots_-_sliced_and_whole.jpg/330px-Shallots_-_sliced_and_whole.jpg",
+    "imageUrl": "plants/sayur-29.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Beracun untuk kucing dan anjing — bawang merah termasuk allium yang sangat kuat, merusak sel darah merah dan menyebabkan anemia."
@@ -6470,7 +6470,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vigna_unguiculata_Blanco2.286-cropped.jpg/330px-Vigna_unguiculata_Blanco2.286-cropped.jpg",
+    "imageUrl": "plants/sayur-30.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Polong matang umumnya aman, tetapi kacang mentah mengandung lektin yang bisa mengganggu pencernaan hewan — jangan beri mentah."
@@ -6504,7 +6504,7 @@
       "waktu_panen": "-",
       "tips": "Daun kari adalah pohon berkayu dengan akar tunggang dalam dan pertumbuhan jangka panjang yang membutuhkan tanah untuk berkembang baik, sehingga sistem hidroponik tidak cocok untuknya."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Curry_Trees.jpg/330px-Curry_Trees.jpg",
+    "imageUrl": "plants/herbal-17.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daun kari tidak beracun dan aman untuk kucing dan anjing."
@@ -6538,7 +6538,7 @@
       "waktu_panen": "-",
       "tips": "Salam koja adalah perdu berkayu yang tumbuh lambat, membentuk sistem akar luas selama bertahun-tahun dan membutuhkan tanah untuk tumbuh subur, sehingga tidak cocok untuk budidaya hidroponik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Starr-071024-0195-Laurus_nobilis-leaves-Enchanting_Floral_Gardens_of_Kula-Maui_%2824867859296%29.jpg/330px-Starr-071024-0195-Laurus_nobilis-leaves-Enchanting_Floral_Gardens_of_Kula-Maui_%2824867859296%29.jpg",
+    "imageUrl": "plants/herbal-18.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Beracun bagi hewan — minyak esensial (eugenol) dapat menyebabkan muntah dan diare pada kucing dan anjing."
@@ -6574,7 +6574,7 @@
       "ph_ideal": "5.8-6.3",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Aloysia_citriodora_002.jpg/330px-Aloysia_citriodora_002.jpg",
+    "imageUrl": "plants/herbal-19.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Lemon verbena tidak beracun dan aman untuk kucing dan anjing."
@@ -6610,7 +6610,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Stevia_rebaudiana_flowers.jpg/330px-Stevia_rebaudiana_flowers.jpg",
+    "imageUrl": "plants/herbal-20.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Stevia tidak beracun dan umumnya aman untuk kucing dan anjing."
@@ -6646,7 +6646,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Satureja_montana2.jpg/330px-Satureja_montana2.jpg",
+    "imageUrl": "plants/herbal-21.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Winter savory tidak beracun dan aman untuk kucing dan anjing."
@@ -6682,7 +6682,7 @@
       "ph_ideal": "5.8-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Liebst%C3%B6ckel.JPG/330px-Liebst%C3%B6ckel.JPG",
+    "imageUrl": "plants/herbal-22.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Gunakan dengan hati-hati — mengandung furanokumarin yang dapat memicu fotosensitivitas; jumlah besar bisa mengganggu lambung hewan."
@@ -6718,7 +6718,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Estragon_1511.jpg/330px-Estragon_1511.jpg",
+    "imageUrl": "plants/herbal-23.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Gunakan dengan hati-hati — mengandung estragol; jumlah besar dapat mengganggu lambung kucing dan anjing."
@@ -6754,7 +6754,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Tulsi_or_Tulasi_Holy_basil.jpg/330px-Tulsi_or_Tulasi_Holy_basil.jpg",
+    "imageUrl": "plants/herbal-24.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Kemangi suci (tulsi) tidak beracun dan aman untuk kucing dan anjing."
@@ -6788,7 +6788,7 @@
       "waktu_panen": "-",
       "tips": "Ylang-ylang adalah pohon berkayu besar dengan sistem akar dalam dan kuat, sehingga tidak cocok untuk hidroponik. Tanam di tanah atau pot sangat besar dengan media kaya dan berdrainase baik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Cananga_odorata_01.JPG/330px-Cananga_odorata_01.JPG",
+    "imageUrl": "plants/aroma-12.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Minyak esensialnya dapat menyebabkan iritasi kulit dan lesu pada hewan; jauhkan minyak pekat dari hewan peliharaan."
@@ -6824,7 +6824,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Pogostemon_cablin_001.jpg/330px-Pogostemon_cablin_001.jpg",
+    "imageUrl": "plants/aroma-13.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Umumnya berisiko rendah, tetapi minyak esensial pekatnya dapat menyebabkan gangguan pencernaan; hindari konsumsi minyak oleh hewan."
@@ -6860,7 +6860,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Vetiver_grass.jpg/330px-Vetiver_grass.jpg",
+    "imageUrl": "plants/aroma-14.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Vetiver tidak beracun dan aman di sekitar hewan peliharaan."
@@ -6894,7 +6894,7 @@
       "waktu_panen": "-",
       "tips": "Tuberose tumbuh dari umbi simpanan yang butuh masa dormansi kering dan sangat rentan busuk bila terus basah, sehingga hidroponik tidak cocok. Tanam umbinya di media yang berdrainase bebas."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tuberose_flower.jpg/330px-Tuberose_flower.jpg",
+    "imageUrl": "plants/aroma-15.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Sebaiknya dijauhkan dari hewan; menelan umbi atau getahnya dapat menyebabkan gangguan pencernaan ringan."
@@ -6928,7 +6928,7 @@
       "waktu_panen": "-",
       "tips": "Gardenia adalah semak berkayu pencinta asam dengan sistem akar yang rewel dan tidak menyukai akar yang selalu basah seperti pada hidroponik. Tanam di media asam berdrainase baik agar pH-nya dapat dikelola dengan cermat."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Gardenia_jasminoides_flower_Argentina.jpg/330px-Gardenia_jasminoides_flower_Argentina.jpg",
+    "imageUrl": "plants/aroma-16.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Beracun bagi hewan — konsumsi dapat menyebabkan muntah, diare, dan biduran."
@@ -6964,7 +6964,7 @@
       "ph_ideal": "6.0–6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Helichrysum_italicum_%28immortelle%29.JPG/330px-Helichrysum_italicum_%28immortelle%29.JPG",
+    "imageUrl": "plants/aroma-17.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Umumnya berisiko rendah, tetapi minyak esensial pekatnya dapat menyebabkan iritasi atau gangguan bila tertelan hewan."
@@ -6998,7 +6998,7 @@
       "waktu_panen": "-",
       "tips": "Kelor adalah pohon berakar dalam yang bisa mencapai 3–10 meter dengan akar tunggang kuat, sehingga tidak cocok untuk sistem hidroponik rumahan dan paling baik ditanam di tanah."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/DrumstickFlower.jpg/330px-DrumstickFlower.jpg",
+    "imageUrl": "plants/obat-13.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Daun tidak beracun dan bergizi; akar serta kulit kayunya mengandung alkaloid — gunakan dengan hati-hati."
@@ -7032,7 +7032,7 @@
       "waktu_panen": "-",
       "tips": "Mimba adalah pohon besar yang bisa tumbuh setinggi 15–20 meter dengan sistem akar dalam yang luas, sehingga tidak cocok untuk hidroponik; tanamlah di tanah berdrainase baik."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Neem_Tree_in_Rajasthan%2C_India.jpg/330px-Neem_Tree_in_Rajasthan%2C_India.jpg",
+    "imageUrl": "plants/obat-14.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Minyak dan biji mimba (azadirachtin) dapat menyebabkan muntah dan lesu bila tertelan hewan — gunakan dengan hati-hati."
@@ -7068,7 +7068,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Momordica_charantia_Blanco2.357.png/330px-Momordica_charantia_Blanco2.357.png",
+    "imageUrl": "plants/obat-15.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Biji dan selaput merahnya beracun dan buahnya sangat pahit; dapat menyebabkan muntah dan diare pada hewan — gunakan dengan hati-hati."
@@ -7104,7 +7104,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Roselle%2C_Hibiscus_sabdariffa%2C_2014_01.JPG/330px-Roselle%2C_Hibiscus_sabdariffa%2C_2014_01.JPG",
+    "imageUrl": "plants/obat-16.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Rosella umumnya tidak beracun bagi kucing dan anjing dan banyak dikonsumsi sebagai teh."
@@ -7140,7 +7140,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/IMG_2256-Chamaecostus_cuspidatus.jpg/330px-IMG_2256-Chamaecostus_cuspidatus.jpg",
+    "imageUrl": "plants/obat-17.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Data keamanan hewan terbatas; sebagai herba obat penurun gula darah, beri hanya dengan hati-hati."
@@ -7176,7 +7176,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Spilanthes-closeup-large.jpg/330px-Spilanthes-closeup-large.jpg",
+    "imageUrl": "plants/obat-18.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Mengandung spilanthol yang menimbulkan sensasi mati rasa dan kesemutan di mulut; beri hanya dengan hati-hati pada hewan."

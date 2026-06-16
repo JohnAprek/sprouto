@@ -29,7 +29,7 @@
       "tips": "Replace the nutrient solution every 2 weeks. Make sure about ⅓ of the roots are submerged and leave an air gap above the solution so the roots can breathe.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Monstera_deliciosa2.jpg/330px-Monstera_deliciosa2.jpg",
+    "imageUrl": "plants/hias-1.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Calcium oxalate — mouth/throat irritation, drooling if chewed"
@@ -65,7 +65,7 @@
       "tips": "Use a dark container to prevent algae from growing in the nutrient solution. Aglaonema is very well suited to the semi-hydroponic method using hydroton.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://images.unsplash.com/photo-1632207691143-643e2a9a9361?w=400&q=80",
+    "imageUrl": "plants/hias-2.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Calcium oxalate — oral irritation, vomiting, drooling"
@@ -101,7 +101,7 @@
       "tips": "Don't submerge the entire root system — let the top ⅓ stay dry to prevent rot. Change the water every 3–4 weeks since this plant grows slowly.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg/330px-Snake_Plant_%28Sansevieria_trifasciata_%27Laurentii%27%29.jpg",
+    "imageUrl": "plants/hias-3.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Saponins — nausea, vomiting, diarrhea in pets"
@@ -137,7 +137,7 @@
       "tips": "Let the LECA wick water up by capillary action; don't fully submerge the roots. Use a transparent pot so you can monitor the condition of the healthy green roots.",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Phalaenopsis_amabilis_Orchi_198.jpg/330px-Phalaenopsis_amabilis_Orchi_198.jpg",
+    "imageUrl": "plants/hias-4.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Phalaenopsis orchids are non-toxic to cats and dogs"
@@ -173,7 +173,7 @@
       "tips": "Weeping fig bonsai needs a special soil medium to develop nebari (surface roots) and is not suited to hydroponic systems.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ficus_microcarpa_kz3.jpg/400px-Ficus_microcarpa_kz3.jpg",
+    "imageUrl": "plants/hias-5.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Ficus sap irritates mouth, skin; causes vomiting"
@@ -209,7 +209,7 @@
       "tips": "Philodendron adapts very easily to water. Just place stem cuttings in clean water for 2 weeks to root them before moving to the nutrient solution.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Philodendron_scandens_subsp_oxycardium2.jpg/330px-Philodendron_scandens_subsp_oxycardium2.jpg",
+    "imageUrl": "plants/hias-6.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Calcium oxalate — oral irritation, drooling, vomiting"
@@ -245,7 +245,7 @@
       "tips": "Golden pothos is the best plant for hydroponic beginners — just put a cutting in a clear water bottle and place it somewhere bright. Change the water every 1–2 weeks.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Money_Plant_%28Epipremnum_aureum%29_4.jpg/330px-Money_Plant_%28Epipremnum_aureum%29_4.jpg",
+    "imageUrl": "plants/hias-7.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Calcium oxalate — mouth irritation, drooling, vomiting"
@@ -281,7 +281,7 @@
       "tips": "The ZZ Plant has water-storing rhizomes that are very prone to rot if submerged in solution — not recommended for hydroponics.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Zamioculcas_zamiifolia_1.jpg/330px-Zamioculcas_zamiifolia_1.jpg",
+    "imageUrl": "plants/hias-8.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Calcium oxalate — oral irritation, vomiting if chewed"
@@ -317,7 +317,7 @@
       "tips": "Cacti are adapted to extremely dry conditions — a constantly wet hydroponic system completely contradicts their basic needs.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Kaktus_5_fcm.jpg/400px-Kaktus_5_fcm.jpg",
+    "imageUrl": "plants/hias-9.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Not chemically toxic, but spines cause physical injury"
@@ -353,7 +353,7 @@
       "tips": "Calathea is very sensitive to minerals in water — use rainwater or water that has settled for 24 hours. Avoid placing it near direct AC airflow.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Calathea_ornata.jpg/330px-Calathea_ornata.jpg",
+    "imageUrl": "plants/hias-10.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Calathea is non-toxic and safe for cats, dogs"
@@ -389,7 +389,7 @@
       "tips": "Sow the seeds in rockwool first for 5–7 days, then move them to the NFT system. It's a great fit for a simple household-scale floating raft (DWC) system.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Amaranthus_tricolor_in_a_flower_bed_near_Notre-Dame_cathedral_in_Paris3.jpg/330px-Amaranthus_tricolor_in_a_flower_bed_near_Notre-Dame_cathedral_in_Paris3.jpg",
+    "imageUrl": "plants/sayur-1.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Amaranthus may cause kidney issues in large amounts"
@@ -425,7 +425,7 @@
       "tips": "Water spinach grows very aggressively in hydroponics — it can grow twice as fast as in soil. First harvest at 21 days, then cut and let it grow again.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://images.unsplash.com/photo-1637694841812-34de87c60b53?w=400&q=80",
+    "imageUrl": "plants/sayur-2.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Water spinach generally safe for cats and dogs"
@@ -461,7 +461,7 @@
       "tips": "Tie the tomato stem to a vertical stake since it grows very fast in hydroponics. When it flowers, gently shake the stem daily to aid pollination.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/330px-Tomato_je.jpg",
+    "imageUrl": "plants/sayur-3.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Ripe fruit safe; leaves, stems, unripe fruit toxic"
@@ -497,7 +497,7 @@
       "tips": "Bird's eye chili is the best candidate for long-term hydroponics — a single plant can keep producing for 1–2 years. Make sure the solution is well aerated with an air pump.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Tabasco_peppers.JPG/330px-Tabasco_peppers.JPG",
+    "imageUrl": "plants/sayur-4.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Capsaicin irritates mouth, stomach; causes vomiting"
@@ -533,7 +533,7 @@
       "tips": "Lettuce is the best plant for learning hydroponics. With the Kratky method (a used bottle), you don't need a pump at all — just fill it with nutrients and wait to harvest.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Iceberg_lettuce_in_SB.jpg/330px-Iceberg_lettuce_in_SB.jpg",
+    "imageUrl": "plants/sayur-5.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Lettuce is non-toxic and safe for pets"
@@ -569,7 +569,7 @@
       "tips": "A floating raft system is ideal for mustard greens — use a piece of scrap styrofoam as the raft with 5 cm holes. Great for household-scale production.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Brassica_rapa_plant.jpg/330px-Brassica_rapa_plant.jpg",
+    "imageUrl": "plants/sayur-6.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Brassica safe in small amounts; excess causes gas, bloating"
@@ -605,7 +605,7 @@
       "tips": "The active compound orthosiphonin is higher in plants under mild stress — don't give too much nutrition. Harvest before heavy flowering for the highest levels.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Orthosiphon_aristatus_in_Kadavoor.jpg/330px-Orthosiphon_aristatus_in_Kadavoor.jpg",
+    "imageUrl": "plants/obat-1.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Limited pet data; diuretic herb — give with caution"
@@ -641,7 +641,7 @@
       "tips": "Green chiretta grows well in hydroponics, though it's rarely done. The bitter content (andrographolide) is actually higher in plants that are slightly 'deprived' — don't over-fertilize.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Andrographis_paniculata_%28Kalpa%29_in_Narshapur_forest%2C_AP_W2_IMG_0867.jpg/330px-Andrographis_paniculata_%28Kalpa%29_in_Narshapur_forest%2C_AP_W2_IMG_0867.jpg",
+    "imageUrl": "plants/obat-2.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Bitter medicinal herb; limited safety data for pets"
@@ -677,7 +677,7 @@
       "tips": "Betel is very easy to propagate from cuttings and grow in water — a good fit as a hanging hydroponic plant indoors. Make sure there's a pole or netting for the vines to climb.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Piper_betle_plant.jpg/330px-Piper_betle_plant.jpg",
+    "imageUrl": "plants/obat-3.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Essential oils/phenols may irritate; limited pet data"
@@ -713,7 +713,7 @@
       "tips": "Gotu kola spreads quickly in an NFT system. The asiaticoside (main active compound) content is higher in plants harvested young — harvest every 2 weeks.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Centella_asiatica_%28%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%81%E0%A6%A8%E0%A6%BF%29_%283%29.jpg/330px-Centella_asiatica_%28%E0%A6%A5%E0%A6%BE%E0%A6%A8%E0%A6%95%E0%A7%81%E0%A6%A8%E0%A6%BF%29_%283%29.jpg",
+    "imageUrl": "plants/obat-4.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Gotu kola generally non-toxic to cats and dogs"
@@ -749,7 +749,7 @@
       "tips": "Noni is a shrub that grows large (2–6 meters). Its root system and size make it unsuitable for home hydroponic systems.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Noni_fruit_%28Morinda_citrifolia%29.jpg/330px-Noni_fruit_%28Morinda_citrifolia%29.jpg",
+    "imageUrl": "plants/obat-5.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Noni fruit edible; limited pet toxicity data"
@@ -785,7 +785,7 @@
       "tips": "Red ginger is a rhizome plant that needs soil space to develop its rhizomes. A hydroponic system is not suitable for optimal ginger rhizome growth.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Koeh-146-no_text.jpg/330px-Koeh-146-no_text.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/herbal-1.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Ginger is non-toxic; large amounts may upset stomach"
@@ -821,7 +821,7 @@
       "tips": "Aloe vera is a succulent that stores water in its leaves — too much water will actually make the plant rot. A hydroponic system is not recommended.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/330px-Aloe_vera_flower_inset.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/herbal-2.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Aloe latex/saponins — vomiting, diarrhea, lethargy"
@@ -857,7 +857,7 @@
       "tips": "Turmeric is a rhizome plant that needs deep, loose soil to develop large yellow rhizomes. Not suitable for hydroponic systems.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Turmeric_inflorescence.jpg/330px-Turmeric_inflorescence.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/herbal-3.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Turmeric is non-toxic; safe in small amounts"
@@ -893,7 +893,7 @@
       "tips": "Place fresh lemongrass stalks (leftovers from cooking) in plain water for 2–3 weeks until they root, then move them into the nutrient solution. This is the easiest way to start lemongrass hydroponically.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gardenology.org-IMG_2892_rbgs11jan.jpg/330px-Gardenology.org-IMG_2892_rbgs11jan.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/herbal-4.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Essential oils may cause mild stomach upset in pets"
@@ -929,7 +929,7 @@
       "tips": "Aromatic ginger is a shallow-rhizome plant that needs a loose growing medium. Its rhizomes cannot develop properly in a water-based hydroponic system.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Galangal.web.jpg/330px-Galangal.web.jpg",
+    "imageUrl": "plants/herbal-5.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Edible rhizome; limited pet toxicity data — use caution"
@@ -965,7 +965,7 @@
       "tips": "Rosemary in hydroponics must have very good solution aeration — use a powerful air pump. Essential oil content is higher when the plant is slightly 'stressed' — reduce nutrients by 20% from the standard dose.",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Rosemary_in_bloom.JPG/330px-Rosemary_in_bloom.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/aroma-1.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Rosemary is non-toxic and safe for pets"
@@ -1001,7 +1001,7 @@
       "tips": "Lavender is very prone to root rot in humid tropical climates — a hydroponic system makes this worse. It is better grown in a perlite + sand medium with extreme drainage.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-087.jpg/330px-Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-087.jpg",
+    "imageUrl": "plants/aroma-2.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Linalool/linalyl acetate — vomiting, lethargy if ingested"
@@ -1037,7 +1037,7 @@
       "tips": "Mint grows VERY fast in hydroponics — it can be harvested within a month. Take a fresh mint stem cutting from the market, put it in water, wait 1–2 weeks for it to root, then move it into the nutrient solution.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Minze.jpg/330px-Minze.jpg",
+    "imageUrl": "plants/aroma-3.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Essential oils — vomiting, diarrhea in cats, dogs"
@@ -1073,7 +1073,7 @@
       "tips": "Pandan is very easy to grow hydroponically — take an offshoot that already has roots and place it in a nutrient-filled bucket. Pandan's aroma is actually stronger in plants under slight water stress.",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Chottola.jpg/330px-Chottola.jpg",
+    "imageUrl": "plants/aroma-4.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Pandan is non-toxic and safe for cats, dogs"
@@ -1109,7 +1109,7 @@
       "tips": "Eggplant needs a stable system with good aeration. Use net pots at least 10 cm in size and make sure the air pump runs 24 hours so the roots don't run short of oxygen.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/330px-Solanum_melongena_24_08_2012_%281%29.JPG",
+    "imageUrl": "plants/sayur-7.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Ripe fruit ok; leaves, stems contain toxic solanine"
@@ -1145,7 +1145,7 @@
       "tips": "Cucumber climbs very fast in hydroponics — prepare a stake or a vertical climbing net. Harvest as often as possible (every 2 days) to keep the plant producing.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/ARS_cucumber.jpg/330px-ARS_cucumber.jpg",
+    "imageUrl": "plants/sayur-8.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Cucumber is non-toxic and safe for pets"
@@ -1181,7 +1181,7 @@
       "tips": "Carrot is a root crop that needs deep, loose soil space to grow. A standard hydroponic system does not support optimal root development.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Daucus_carota_May_2008-1_edit.jpg/330px-Daucus_carota_May_2008-1_edit.jpg",
+    "imageUrl": "plants/sayur-9.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Carrot is non-toxic and safe for cats, dogs"
@@ -1217,7 +1217,7 @@
       "tips": "Choose an upright (bush bean) variety for hydroponics so it's easier to manage. Green beans fix their own nitrogen, so the N level in the solution can be slightly lower.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Snijboon_peulen_Phaseolus_vulgaris.jpg/330px-Snijboon_peulen_Phaseolus_vulgaris.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/sayur-10.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Raw beans contain lectins; cook before feeding pets"
@@ -1253,7 +1253,7 @@
       "tips": "Strawberry is the most popular fruit for home hydroponics. An NFT system tilted 30–45° works very well because the fruit hangs down and is easy to harvest without getting dirty.",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg/330px-Garden_strawberry_%28Fragaria_%C3%97_ananassa%29_single2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/buah-1.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Strawberry is non-toxic and safe for pets"
@@ -1289,7 +1289,7 @@
       "tips": "Papaya is a large tree that needs strong roots anchored deep in the soil. Its size and structural needs make a home hydroponic system unfeasible.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Carica_papaya_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-029.jpg/330px-Carica_papaya_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-029.jpg",
+    "imageUrl": "plants/buah-2.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Papaya flesh safe; remove seeds before feeding"
@@ -1325,7 +1325,7 @@
       "tips": "Guava is a tree with a large root system that needs deep soil. It is not suitable for a standard home hydroponic system.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Psidium_guajava_fruit.jpg/330px-Psidium_guajava_fruit.jpg",
+    "imageUrl": "plants/buah-3.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Guava is non-toxic; feed in moderation"
@@ -1361,7 +1361,7 @@
       "tips": "Banana needs a very deep, strong root system in the soil. The plant's size and structural needs make a conventional hydroponic system unfeasible.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Musa_acuminata_in_india01.jpg/330px-Musa_acuminata_in_india01.jpg",
+    "imageUrl": "plants/buah-4.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Banana is non-toxic and safe for pets"
@@ -1397,7 +1397,7 @@
       "tips": "Key lime is a woody tree that grows 2–5 meters — its root system and size far exceed the capacity of a home hydroponic system.",
       "kesulitan": "-"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Citrus_%C3%97_aurantiifolia_%28Christm.%29_Swingle_%2851906868474%29.jpg/330px-Citrus_%C3%97_aurantiifolia_%28Christm.%29_Swingle_%2851906868474%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/buah-5.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Citrus oils, psoralens — vomiting, diarrhea, irritation"
@@ -1433,7 +1433,7 @@
       "tips": "Support the watermelon fruit with a knitted net so it doesn't fall under its own weight. Reduce nitrogen and increase potassium once the fruit reaches about fist size.",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg/330px-Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/buah-6.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Watermelon flesh safe; avoid seeds and rind"
@@ -1469,7 +1469,7 @@
       "tips": "Hydroponic grapes need a sturdy installation because the vine is heavy as it climbs. Nutrient management must be precise — excess nitrogen produces lots of leaves but little fruit.",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Cabernet_Sauvignon_Gaillac.jpg/330px-Cabernet_Sauvignon_Gaillac.jpg",
+    "imageUrl": "plants/buah-7.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Grapes cause kidney failure in dogs — never feed"
@@ -1508,7 +1508,7 @@
       "kesulitan": "Mudah",
       "tips": "Peace lily is very easy in hydroponics — just place it in a pot of water with the roots partially submerged. Change the water every 1–2 weeks."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Peace_lily_-_1_-_cropped.jpg/330px-Peace_lily_-_1_-_cropped.jpg",
+    "imageUrl": "plants/hias-11.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Calcium oxalate — oral irritation, drooling, vomiting"
@@ -1547,7 +1547,7 @@
       "kesulitan": "Sedang",
       "tips": "Anthurium in LECA is very popular — wash the LECA clean and submerge the roots partially in a diluted nutrient solution. Make sure there is air space for the roots to breathe."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/AnthuriumAndraenum.jpg/330px-AnthuriumAndraenum.jpg",
+    "imageUrl": "plants/hias-12.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Calcium oxalate — mouth pain, drooling, vomiting"
@@ -1586,7 +1586,7 @@
       "kesulitan": "Mudah",
       "tips": "Pothos is the easiest hydroponic plant — just put a cutting in a glass vase of water. Add a few pieces of activated charcoal to prevent odor and algae."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Money_Plant_%28Epipremnum_aureum%29_4.jpg/330px-Money_Plant_%28Epipremnum_aureum%29_4.jpg",
+    "imageUrl": "plants/hias-13.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Calcium oxalate — mouth irritation, drooling, vomiting"
@@ -1625,7 +1625,7 @@
       "kesulitan": "-",
       "tips": "The rubber plant is less than ideal for hydroponics because its root system prefers a medium that gets fairly dry between waterings. It is better grown in a pot with a well-draining medium."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Ficus_elastica_leaves_02.JPG/330px-Ficus_elastica_leaves_02.JPG",
+    "imageUrl": "plants/hias-14.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Ficus sap — mouth, skin irritation, vomiting"
@@ -1664,7 +1664,7 @@
       "kesulitan": "-",
       "tips": "Bird of Paradise is not recommended for hydroponics because its root system is large and prefers a fertile soil medium. It needs a large pot to grow well."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Ave-do-para%C3%ADso%2C_Strelitzia_reginae%2C_em_Bag%C3%A9%2C_Rio_Grande_do_Sul%2C_Brasil_-_55211233712.jpg/330px-Ave-do-para%C3%ADso%2C_Strelitzia_reginae%2C_em_Bag%C3%A9%2C_Rio_Grande_do_Sul%2C_Brasil_-_55211233712.jpg",
+    "imageUrl": "plants/hias-15.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Strelitzia — vomiting, drowsiness; seeds most toxic"
@@ -1703,7 +1703,7 @@
       "kesulitan": "Mudah",
       "tips": "Pak choi is the best hydroponic plant for beginners! It grows fast, harvests in 25–30 days, and tolerates nutrient variation. Start with the Kratky method in a used bottle."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Brassica_rapa_plant.jpg/330px-Brassica_rapa_plant.jpg",
+    "imageUrl": "plants/sayur-11.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Brassica safe in small amounts; excess causes gas"
@@ -1742,7 +1742,7 @@
       "kesulitan": "Sedang",
       "tips": "Hydroponic bell peppers need stake support since the plant gets quite heavy when fruiting. Raise the nutrient EC from 2.0 to 2.5–3.0 once it enters the flowering and fruiting phase."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Capsicum_annuum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-027.jpg/330px-Capsicum_annuum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-027.jpg",
+    "imageUrl": "plants/sayur-12.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Ripe fruit ok; foliage toxic, capsaicin irritates"
@@ -1781,7 +1781,7 @@
       "kesulitan": "-",
       "tips": "Temulawak isn't suited to hydroponics because the harvest is an underground rhizome that needs a solid medium to develop. It grows more effectively in a deep pot or in the garden."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Rhizoma_Curcumae_xanthorrhizae_by_Danny_S._-_001.jpg/400px-Rhizoma_Curcumae_xanthorrhizae_by_Danny_S._-_001.jpg",
+    "imageUrl": "plants/obat-6.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Curcuma rhizome non-toxic; safe in small amounts"
@@ -1820,7 +1820,7 @@
       "kesulitan": "Mudah",
       "tips": "Longevity spinach grows very fast in hydroponics. Harvest young leaves from the top regularly to encourage new growth. Well suited to NFT systems or indoor racks."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gynura_procumbens_%28Diabetes_plant%29_%281%29.jpg/330px-Gynura_procumbens_%28Diabetes_plant%29_%281%29.jpg",
+    "imageUrl": "plants/obat-7.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Edible leaf; limited pet toxicity data — use caution"
@@ -1859,7 +1859,7 @@
       "kesulitan": "-",
       "tips": "Aloe vera isn't suited to hydroponics because, as a succulent, it needs dry periods between waterings. A constantly wet medium will cause root rot quickly."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Aloe_vera_flower_inset.png/330px-Aloe_vera_flower_inset.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/obat-8.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Aloe latex/saponins — vomiting, diarrhea, lethargy"
@@ -1898,7 +1898,7 @@
       "kesulitan": "-",
       "tips": "Brotowali is a woody climbing plant better grown in the ground or a large pot. It isn't efficient for a hydroponic system."
     },
-    "imageUrl": "https://images.unsplash.com/photo-1444459094717-a39ececb2069?w=400&q=80",
+    "imageUrl": "plants/obat-9.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Very bitter medicinal vine; limited pet safety data"
@@ -1937,7 +1937,7 @@
       "kesulitan": "Sedang",
       "tips": "Black cumin can be grown hydroponically through the vegetative phase, but for optimal seed harvest it's better to move it to a soil medium. Keep the temperature from getting too hot (>30°C)."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Nsativa001Wien.jpg/330px-Nsativa001Wien.jpg",
+    "imageUrl": "plants/obat-10.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Seeds edible in small amounts; excess may harm pets"
@@ -1976,7 +1976,7 @@
       "kesulitan": "Mudah",
       "tips": "Basil is the most productive hydroponic herb! Pinch off flower buds as soon as they appear so the plant focuses on leaf production. Harvest from the top regularly."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Ocimum_basilicum_8zz.jpg/330px-Ocimum_basilicum_8zz.jpg",
+    "imageUrl": "plants/herbal-6.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Basil is non-toxic and safe for cats, dogs"
@@ -2015,7 +2015,7 @@
       "kesulitan": "Sedang",
       "tips": "Coriander prefers cool temperatures. In hot areas, grow it indoors with supplemental lighting. Avoid transplanting the plant since it's sensitive to root disturbance."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg/330px-Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/herbal-7.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Coriander/cilantro is non-toxic and safe for pets"
@@ -2054,7 +2054,7 @@
       "kesulitan": "Mudah",
       "tips": "The easiest method: place leftover green onion bases from cooking in a glass of water — they'll grow back in 3–5 days! For a larger harvest, use a simple NFT or DWC system."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Welsh_onion.jpg/330px-Welsh_onion.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/herbal-8.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Allium — damages red blood cells; toxic to pets"
@@ -2093,7 +2093,7 @@
       "kesulitan": "-",
       "tips": "Cinnamon is a hardwood tree that needs fertile soil and a strong root system. It isn't practical for hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Cinnamomum_verum1.jpg/330px-Cinnamomum_verum1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/herbal-9.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Cinnamon mildly irritating; oils risky in quantity"
@@ -2132,7 +2132,7 @@
       "kesulitan": "-",
       "tips": "Citronella grass is a large grass better grown in the ground or a big pot outdoors. Its dense fibrous root system makes it inefficient for hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Cymbopogon_nardus_%28DITSL%29.JPG/330px-Cymbopogon_nardus_%28DITSL%29.JPG",
+    "imageUrl": "plants/herbal-10.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Cymbopogon essential oils may cause stomach upset"
@@ -2171,7 +2171,7 @@
       "kesulitan": "Mudah",
       "tips": "Oregano is very productive in indoor hydroponics with a grow light. Make sure the EC isn't too high — oregano prefers moderate nutrients. Regular harvesting encourages new growth."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Origanum_vulgare_-_harilik_pune.jpg/330px-Origanum_vulgare_-_harilik_pune.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/aroma-5.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Oregano essential oils — vomiting, diarrhea in pets"
@@ -2210,7 +2210,7 @@
       "kesulitan": "Sedang",
       "tips": "Thyme prefers to dry out between waterings — in hydroponics, make sure there's good aeration. A Kratky system with a sufficiently large air gap works well for thyme."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Thymus_vulgaris1.JPG/330px-Thymus_vulgaris1.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/aroma-6.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Thyme mild; concentrated oils may upset stomach"
@@ -2249,7 +2249,7 @@
       "kesulitan": "Mudah",
       "tips": "Lemon balm grows very vigorously in hydroponics — it can become invasive! Prune regularly and harvest plenty to keep the plant compact. The aroma is strongest before flowering."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Lemon_balm_plant.jpg/330px-Lemon_balm_plant.jpg",
+    "imageUrl": "plants/aroma-7.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Lemon balm is non-toxic and safe for pets"
@@ -2288,7 +2288,7 @@
       "kesulitan": "Sedang",
       "tips": "Cherry tomatoes are a hydroponic favorite — productive and fast. Set up string or stakes for support. Prune the suckers regularly. Pollinate the flowers by shaking the plant while it's in bloom."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Tomato_je.jpg/330px-Tomato_je.jpg",
+    "imageUrl": "plants/buah-8.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Ripe fruit safe; foliage and unripe fruit toxic"
@@ -2327,7 +2327,7 @@
       "kesulitan": "Sulit",
       "tips": "Hydroponic melons need tight management. Limit to 1–2 fruits per plant for premium size. Support the fruit with netting in the greenhouse. Reduce water and raise the EC a week before harvest to increase sugar content (Brix)."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Muskmelon.jpg/330px-Muskmelon.jpg",
+    "imageUrl": "plants/buah-9.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Melon flesh is non-toxic and safe for pets"
@@ -2366,7 +2366,7 @@
       "kesulitan": "Sulit",
       "tips": "Blueberries need a very low pH (4.5–5.5) that differs from other hydroponic plants. Use an acidic medium and monitor pH closely. In Indonesia, they're better suited to Malang, Dieng, or cool areas above 800 m elevation."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Vaccinium_corymbosum%2801%29.jpg/330px-Vaccinium_corymbosum%2801%29.jpg",
+    "imageUrl": "plants/buah-10.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Blueberry is non-toxic and safe for cats, dogs"
@@ -2405,7 +2405,7 @@
       "kesulitan": "-",
       "tips": "Starfruit is a tropical fruit tree that needs deep soil and a strong root system. It isn't practical for hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Averrhoa_carambola_ARS_k5735-7.jpg/330px-Averrhoa_carambola_ARS_k5735-7.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "imageUrl": "plants/buah-11.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Oxalates and caramboxin — risky, especially for dogs"
@@ -2444,7 +2444,7 @@
       "kesulitan": "-",
       "tips": "Water apple is a large tropical tree that needs to be planted in the ground or a large-volume pot (>100L). It isn't practical for a home hydroponic system."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Eugenia_sp_Blanco1.145-cropped.jpg/330px-Eugenia_sp_Blanco1.145-cropped.jpg",
+    "imageUrl": "plants/buah-12.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Water apple fruit generally safe for pets"
@@ -2483,7 +2483,7 @@
       "kesulitan": "Sedang",
       "tips": "Hydroponic passion fruit needs a trellis or arbor to climb. Start with a low EC (1.5), then raise it gradually. Hand-pollinate with a small brush to improve fruit set."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Passiflora_edulis_forma_flavicarpa.jpg/330px-Passiflora_edulis_forma_flavicarpa.jpg",
+    "imageUrl": "plants/buah-13.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Ripe pulp ok; unripe fruit, leaves release cyanide"
@@ -2522,7 +2522,7 @@
       "kesulitan": "-",
       "tips": "The fig is a woody tree that needs a large pot or direct soil for optimal results. Its root system isn't suited to hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ficus_carica_L%2C_1771.jpg/330px-Ficus_carica_L%2C_1771.jpg",
+    "imageUrl": "plants/buah-14.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Ficus sap, ficin, psoralens — irritation, vomiting"
@@ -2561,7 +2561,7 @@
       "kesulitan": "-",
       "tips": "The avocado is a large tree that needs a deep, strong root system. It isn't suited to home hydroponics. Plant it in a large-volume pot (>50L) or directly in the ground."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Persea_americana_fruit_2.JPG/330px-Persea_americana_fruit_2.JPG",
+    "imageUrl": "plants/buah-15.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Persin in leaves, bark, pit — vomiting, diarrhea"
@@ -2600,7 +2600,7 @@
       "kesulitan": "-",
       "tips": "The date palm needs desert conditions to fruit optimally. In Indonesia it can grow but rarely fruits because the air humidity is too high."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Dates005.jpg/330px-Dates005.jpg",
+    "imageUrl": "plants/buah-16.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Date palm (Phoenix) non-toxic; fruit safe pitted"
@@ -2636,7 +2636,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Starr_031108-0130_Ficus_lyrata.jpg/330px-Starr_031108-0130_Ficus_lyrata.jpg",
+    "imageUrl": "plants/hias-16.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Ficus sap irritates mouth and skin; causes vomiting in pets"
@@ -2672,7 +2672,7 @@
       "ph_ideal": "6.0–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Chlorophytum_comosum_01.jpg/330px-Chlorophytum_comosum_01.jpg",
+    "imageUrl": "plants/hias-17.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Safe for cats and dogs; mild stomach upset only if eaten in excess"
@@ -2706,7 +2706,7 @@
       "waktu_panen": "-",
       "tips": "As a drought-loving succulent, the jade plant rots quickly in constant moisture and is not suited to hydroponic systems."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Crassula_ovata_700.jpg/330px-Crassula_ovata_700.jpg",
+    "imageUrl": "plants/hias-18.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Toxic to cats and dogs; causes vomiting, lethargy, incoordination"
@@ -2742,7 +2742,7 @@
       "ph_ideal": "5.5–6.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Boston_Fern_%282873392811%29.png/330px-Boston_Fern_%282873392811%29.png",
+    "imageUrl": "plants/hias-19.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Safe and non-toxic for both cats and dogs"
@@ -2778,7 +2778,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Pilea_peperomioides_Chinese_money_plant.jpg/330px-Pilea_peperomioides_Chinese_money_plant.jpg",
+    "imageUrl": "plants/hias-20.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic and safe for cats and dogs"
@@ -2812,7 +2812,7 @@
       "waktu_panen": "-",
       "tips": "As a drought-adapted succulent, its delicate beads rot quickly in standing water, so it is not suited to hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Senecio_rowleyanus_leaves.jpg/330px-Senecio_rowleyanus_leaves.jpg",
+    "imageUrl": "plants/hias-21.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Toxic to cats and dogs; causes vomiting, diarrhea, drooling, lethargy"
@@ -2848,7 +2848,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/NKN-2007-06-13_114250_Hoya_Carnosa_%28Yvan_Leduc_author_for_Wikipedia%29.jpg/330px-NKN-2007-06-13_114250_Hoya_Carnosa_%28Yvan_Leduc_author_for_Wikipedia%29.jpg",
+    "imageUrl": "plants/hias-22.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs per ASPCA"
@@ -2884,7 +2884,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Hedera_helix_Dover.jpg/330px-Hedera_helix_Dover.jpg",
+    "imageUrl": "plants/hias-23.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Triterpenoid saponins cause vomiting, drooling, diarrhea"
@@ -2920,7 +2920,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/%E6%95%A3%E5%B0%BE%E8%91%B5Dypsis_lutescens_20210511145013_05.jpg/330px-%E6%95%A3%E5%B0%BE%E8%91%B5Dypsis_lutescens_20210511145013_05.jpg",
+    "imageUrl": "plants/hias-24.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs per ASPCA"
@@ -2956,7 +2956,7 @@
       "ph_ideal": "6.0-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Streptocarpus_ionanthus_%28as_Saintpaulia_ionantha%29_-_Curtis%27_121_%28Ser._3_no._51%29_pl._7408_%281895%29.jpg/330px-Streptocarpus_ionanthus_%28as_Saintpaulia_ionantha%29_-_Curtis%27_121_%28Ser._3_no._51%29_pl._7408_%281895%29.jpg",
+    "imageUrl": "plants/hias-25.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs per ASPCA"
@@ -2992,7 +2992,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Zebrina_pendula_20060521_2_closer.jpg/330px-Zebrina_pendula_20060521_2_closer.jpg",
+    "imageUrl": "plants/hias-26.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Sap may cause skin irritation and mild stomach upset"
@@ -3026,7 +3026,7 @@
       "waktu_panen": "-",
       "tips": "Echeveria is a dry-loving succulent whose roots rot in constant water, so it is not suited to hydroponic systems."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Echeveria_elegans_-_1.png/330px-Echeveria_elegans_-_1.png",
+    "imageUrl": "plants/hias-27.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs per ASPCA"
@@ -3062,7 +3062,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Colpfl05.jpg/330px-Colpfl05.jpg",
+    "imageUrl": "plants/hias-28.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Sap toxic — vomiting, diarrhea, skin/mouth irritation"
@@ -3098,7 +3098,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Dracaena_reflexa.JPG/330px-Dracaena_reflexa.JPG",
+    "imageUrl": "plants/hias-29.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Saponins — vomiting, drooling, weakness, dilated pupils in cats"
@@ -3134,7 +3134,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Chamaedorea_elegans_Mart.JPG/330px-Chamaedorea_elegans_Mart.JPG",
+    "imageUrl": "plants/hias-30.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Safe for cats and dogs per ASPCA"
@@ -3170,7 +3170,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Asplenium_nidus_%28Bukidnon%2C_Philippines%29_02.jpg/330px-Asplenium_nidus_%28Bukidnon%2C_Philippines%29_02.jpg",
+    "imageUrl": "plants/hias-31.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Safe for cats and dogs per ASPCA"
@@ -3206,7 +3206,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Plectranthus_scutellarioides_-_El_Yunque_nat_park_PR_IMG_2120.JPG/330px-Plectranthus_scutellarioides_-_El_Yunque_nat_park_PR_IMG_2120.JPG",
+    "imageUrl": "plants/hias-32.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Essential oils — vomiting, diarrhea, rarely skin irritation"
@@ -3242,7 +3242,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Starr_080117-1693_Hypoestes_phyllostachya.jpg/330px-Starr_080117-1693_Hypoestes_phyllostachya.jpg",
+    "imageUrl": "plants/hias-33.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Safe for cats and dogs per ASPCA"
@@ -3278,7 +3278,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Maranta_leuconeura3.jpg/330px-Maranta_leuconeura3.jpg",
+    "imageUrl": "plants/hias-34.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Safe for cats and dogs (ASPCA-listed non-toxic)"
@@ -3314,7 +3314,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Colpfl25.jpg/330px-Colpfl25.jpg",
+    "imageUrl": "plants/hias-35.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Safe for cats and dogs (ASPCA-listed non-toxic)"
@@ -3350,7 +3350,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Starr_061212-2331_Dieffenbachia_seguine.jpg/330px-Starr_061212-2331_Dieffenbachia_seguine.jpg",
+    "imageUrl": "plants/hias-36.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Calcium oxalate — oral pain, drooling, swelling, vomiting if chewed"
@@ -3386,7 +3386,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Schefflera_arboricola%2C_vrugte%2C_a%2C_Pretoria.jpg/330px-Schefflera_arboricola%2C_vrugte%2C_a%2C_Pretoria.jpg",
+    "imageUrl": "plants/hias-37.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Calcium oxalate — oral irritation, drooling, vomiting, difficulty swallowing"
@@ -3420,7 +3420,7 @@
       "waktu_panen": "-",
       "tips": "As a drought-adapted succulent-like plant, the ponytail palm needs its caudex to dry between waterings and rots in constant moisture, so it is unsuitable for hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Beaucarnea_recurvata%2C_Ocampo%2C_Tamaulipas%2C_Mexico_1.jpg/330px-Beaucarnea_recurvata%2C_Ocampo%2C_Tamaulipas%2C_Mexico_1.jpg",
+    "imageUrl": "plants/hias-38.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Safe for cats and dogs (ASPCA-listed non-toxic)"
@@ -3454,7 +3454,7 @@
       "waktu_panen": "-",
       "tips": "As a succulent that stores water in its leaves and rots easily in standing water, Kalanchoe needs a dry, well-draining medium and is not suited to hydroponic systems."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Kalanchoe_blossfeldiana_3.jpg/330px-Kalanchoe_blossfeldiana_3.jpg",
+    "imageUrl": "plants/hias-39.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Bufadienolides — vomiting, diarrhea, and rarely abnormal heart rhythm"
@@ -3488,7 +3488,7 @@
       "waktu_panen": "-",
       "tips": "As a succulent forest cactus, its stems rot easily in constant water, so it is not suited to hydroponic systems and prefers a fast-draining soil mix."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Cactus_de_no%C3%ABl_rev.jpg/330px-Cactus_de_no%C3%ABl_rev.jpg",
+    "imageUrl": "plants/hias-40.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs per ASPCA"
@@ -3522,7 +3522,7 @@
       "waktu_panen": "-",
       "tips": "Yucca has a thick woody trunk and drought-adapted roots that rot in standing water, so it is unsuitable for hydroponics and needs a gritty, fast-draining soil."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Yucca_gigantea_-_Jard%C3%ADn_Bot%C3%A1nico_Canario_Viera_y_Clavijo_-_Gran_Canaria.jpg/330px-Yucca_gigantea_-_Jard%C3%ADn_Bot%C3%A1nico_Canario_Viera_y_Clavijo_-_Gran_Canaria.jpg",
+    "imageUrl": "plants/hias-41.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Saponins are toxic to pets, causing vomiting and drooling"
@@ -3556,7 +3556,7 @@
       "waktu_panen": "-",
       "tips": "Air plants have no functional roots and absorb water through their leaves; sitting in a nutrient solution would rot the base, so they cannot be grown hydroponically."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Purple_sky_plant_-_Andrey_Zharkikh.jpg/330px-Purple_sky_plant_-_Andrey_Zharkikh.jpg",
+    "imageUrl": "plants/hias-42.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Tillandsia air plants are non-toxic to cats and dogs"
@@ -3592,7 +3592,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Peperomia_obtusifolia_3-OB9.jpg/330px-Peperomia_obtusifolia_3-OB9.jpg",
+    "imageUrl": "plants/hias-43.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Peperomia obtusifolia is non-toxic to cats and dogs"
@@ -3626,7 +3626,7 @@
       "waktu_panen": "-",
       "tips": "As a slow-growing conifer with a deep woody root system, it needs a stable airy soil mix and does not adapt to hydroponic culture."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Norfolk-Island-Pines.jpg/330px-Norfolk-Island-Pines.jpg",
+    "imageUrl": "plants/hias-44.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Mildly toxic; sap and needles may cause vomiting and irritation"
@@ -3660,7 +3660,7 @@
       "waktu_panen": "-",
       "tips": "This drought-adapted succulent stores water in its tubers and leaves and rots quickly in standing water, so it is not suited to hydroponics and prefers a gritty cactus mix."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ceropegia_linearis_subsp_woodii.jpg/330px-Ceropegia_linearis_subsp_woodii.jpg",
+    "imageUrl": "plants/hias-45.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "String of Hearts is non-toxic to cats and dogs"
@@ -3696,7 +3696,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Petroselinum.jpg/330px-Petroselinum.jpg",
+    "imageUrl": "plants/herbal-11.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Spring parsley phototoxic; large amounts cause GI upset in pets"
@@ -3732,7 +3732,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Illustration_Anethum_graveolens_clean.jpg/330px-Illustration_Anethum_graveolens_clean.jpg",
+    "imageUrl": "plants/herbal-12.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Considered non-toxic to dogs, cats, and horses"
@@ -3768,7 +3768,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Salvia_officinalis0.jpg/330px-Salvia_officinalis0.jpg",
+    "imageUrl": "plants/herbal-13.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Common sage is non-toxic to cats, dogs, and horses"
@@ -3804,7 +3804,7 @@
       "ph_ideal": "6.0-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Allium_schoenoprasum_-_Bombus_lapidarius_-_Tootsi.jpg/330px-Allium_schoenoprasum_-_Bombus_lapidarius_-_Tootsi.jpg",
+    "imageUrl": "plants/herbal-14.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Allium toxin damages red blood cells; harmful to cats and dogs"
@@ -3840,7 +3840,7 @@
       "ph_ideal": "6.0-7.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Origanum_majorana_002.JPG/330px-Origanum_majorana_002.JPG",
+    "imageUrl": "plants/herbal-15.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Marjoram is considered non-toxic to dogs and cats"
@@ -3876,7 +3876,7 @@
       "ph_ideal": "6.0-6.8",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Foeniculum_July_2011-1a.jpg/330px-Foeniculum_July_2011-1a.jpg",
+    "imageUrl": "plants/herbal-16.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Fennel is generally non-toxic to dogs and cats"
@@ -3912,7 +3912,7 @@
       "ph_ideal": "6.0-7.0",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Boerenkool.jpg/330px-Boerenkool.jpg",
+    "imageUrl": "plants/sayur-13.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Brassica safe in tiny amounts; excess causes gas, thyroid issues"
@@ -3948,7 +3948,7 @@
       "ph_ideal": "6.0-7.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Broccoli_and_cross_section_edit.jpg/330px-Broccoli_and_cross_section_edit.jpg",
+    "imageUrl": "plants/sayur-14.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Brassica safe in tiny amounts; excess causes gas, thyroid issues"
@@ -3982,7 +3982,7 @@
       "waktu_panen": "-",
       "tips": "Radish is a root crop that needs a deep, loose medium for its bulb to swell. Standard water-based hydroponic systems do not support proper root development."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Radish_3371103037_4ab07db0bf_o.jpg/330px-Radish_3371103037_4ab07db0bf_o.jpg",
+    "imageUrl": "plants/sayur-15.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Generally safe; excess may cause gas and stomach upset"
@@ -4016,7 +4016,7 @@
       "waktu_panen": "-",
       "tips": "Beetroot is a root crop that needs a deep, loose medium for its bulb to develop. Standard water-based hydroponic systems are not suited to swelling root tubers."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Detroitdarkredbeets.png/330px-Detroitdarkredbeets.png",
+    "imageUrl": "plants/sayur-16.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Beetroot is non-toxic and safe for cats and dogs"
@@ -4052,7 +4052,7 @@
       "ph_ideal": "6.0-7.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/CSA-Striped-Zucchini.jpg/330px-CSA-Striped-Zucchini.jpg",
+    "imageUrl": "plants/sayur-17.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Zucchini is non-toxic and safe for cats and dogs"
@@ -4088,7 +4088,7 @@
       "ph_ideal": "6.0-7.0",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Eruca_sativa_sl11.jpg/330px-Eruca_sativa_sl11.jpg",
+    "imageUrl": "plants/sayur-18.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Arugula is non-toxic and safe for cats and dogs"
@@ -4122,7 +4122,7 @@
       "waktu_panen": "-",
       "tips": "Lemon is a woody tree with deep roots and a heavy fruiting canopy, so it needs soil anchorage and is not practical for home hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/P1030323.JPG/330px-P1030323.JPG",
+    "imageUrl": "plants/buah-17.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Citrus oils and psoralens cause vomiting, diarrhea in pets"
@@ -4156,7 +4156,7 @@
       "waktu_panen": "-",
       "tips": "Pomegranate is a long-lived woody shrub with an extensive root system, so it is grown in soil or large pots rather than home hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pomegranate_Juice_%282019%29.jpg/330px-Pomegranate_Juice_%282019%29.jpg",
+    "imageUrl": "plants/buah-18.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Bark, root, peel may cause vomiting; flesh mild"
@@ -4190,7 +4190,7 @@
       "waktu_panen": "-",
       "tips": "As a heavy climbing cactus that needs a dry root zone and a strong trellis, dragon fruit is far better suited to soil or large pots than to hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Pitaya_cross_section_ed2.jpg/330px-Pitaya_cross_section_ed2.jpg",
+    "imageUrl": "plants/buah-19.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Dragon fruit flesh is non-toxic and safe for pets"
@@ -4224,7 +4224,7 @@
       "waktu_panen": "-",
       "tips": "Pineapple takes 18-24 months to fruit and prefers a dry, free-draining root zone, so soil or a large pot is more practical than a home hydroponic setup."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Pineapple_and_cross_section.jpg/330px-Pineapple_and_cross_section.jpg",
+    "imageUrl": "plants/buah-20.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Flesh safe; raw bromelain may irritate mouth, stomach"
@@ -4258,7 +4258,7 @@
       "waktu_panen": "-",
       "tips": "Raspberry spreads by perennial canes and suckering roots that need room in soil, making it impractical for a tidy home hydroponic system."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Fert%C5%91di_k%C3%A1rmin_m%C3%A1lna.JPG/330px-Fert%C5%91di_k%C3%A1rmin_m%C3%A1lna.JPG",
+    "imageUrl": "plants/buah-21.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Raspberry is non-toxic; large amounts may cause mild upset"
@@ -4292,7 +4292,7 @@
       "waktu_panen": "-",
       "tips": "Mango is a large, deep-rooted tree that needs soil anchorage for its heavy canopy and fruit, making home hydroponics unfeasible."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Mangoes_%28Magnifera_indica%29_from_India.jpg/330px-Mangoes_%28Magnifera_indica%29_from_India.jpg",
+    "imageUrl": "plants/buah-22.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Flesh safe; skin, pit cause choking, urushiol irritation"
@@ -4328,7 +4328,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Matricaria_February_2008-1.jpg/330px-Matricaria_February_2008-1.jpg",
+    "imageUrl": "plants/aroma-8.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Contains anthemic acid and volatile oils — can cause vomiting, diarrhea, and contact dermatitis in cats and dogs"
@@ -4362,7 +4362,7 @@
       "waktu_panen": "-",
       "tips": "Jasmine is a woody perennial vine with an extensive root system and needs a stable anchored medium to support its climbing growth, so it is not suited to home hydroponic systems."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Jasminum_officinale_-_Bot._Mag._31%2C_1787.jpg/330px-Jasminum_officinale_-_Bot._Mag._31%2C_1787.jpg",
+    "imageUrl": "plants/aroma-9.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "True jasmine (Jasminum officinale) is non-toxic and safe for cats and dogs"
@@ -4398,7 +4398,7 @@
       "ph_ideal": "5.8–6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/%28MHNT%29_Pelargonium_graveolens_flower_and_leaves.jpg/330px-%28MHNT%29_Pelargonium_graveolens_flower_and_leaves.jpg",
+    "imageUrl": "plants/aroma-10.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Geraniol and linalool in Pelargonium — can cause vomiting, anorexia, and dermatitis in cats and dogs"
@@ -4432,7 +4432,7 @@
       "waktu_panen": "-",
       "tips": "Eucalyptus is a woody, fast-growing tree with a deep, aggressive root system and large eventual size, making it unsuitable for home hydroponic setups."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Eucalyptus_globulus_subsp._maidenii.jpg/330px-Eucalyptus_globulus_subsp._maidenii.jpg",
+    "imageUrl": "plants/aroma-11.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Eucalyptol (cineole) and essential oils — can cause drooling, vomiting, diarrhea, weakness, and depression in cats and dogs"
@@ -4468,7 +4468,7 @@
       "ph_ideal": "5.8–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Echinacea_purpurea_Grandview_Prairie.jpg/330px-Echinacea_purpurea_Grandview_Prairie.jpg",
+    "imageUrl": "plants/obat-11.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Echinacea is generally non-toxic to cats and dogs, though large amounts may cause mild stomach upset"
@@ -4504,7 +4504,7 @@
       "ph_ideal": "6.0–7.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/WithaniaFruit.jpg/330px-WithaniaFruit.jpg",
+    "imageUrl": "plants/obat-12.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Limited pet safety data; as a potent adaptogen with steroidal lactones it should be given to cats and dogs only with caution"
@@ -4540,7 +4540,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Flickr_-_archer10_%28Dennis%29_-_Guatemala-1376.jpg/330px-Flickr_-_archer10_%28Dennis%29_-_Guatemala-1376.jpg",
+    "imageUrl": "plants/hias-46.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Pachira aquatica is non-toxic to cats and dogs (ASPCA)"
@@ -4576,7 +4576,7 @@
       "ph_ideal": "5.0-6.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Bromeliaceae03.jpg/330px-Bromeliaceae03.jpg",
+    "imageUrl": "plants/hias-47.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Guzmania bromeliads are non-toxic to cats and dogs (ASPCA)"
@@ -4612,7 +4612,7 @@
       "ph_ideal": "6.0-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Dracaena_sanderiana_2.jpg/330px-Dracaena_sanderiana_2.jpg",
+    "imageUrl": "plants/hias-48.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Dracaena sanderiana is toxic to cats and dogs — saponins cause vomiting, drooling, weakness (ASPCA)"
@@ -4646,7 +4646,7 @@
       "waktu_panen": "-",
       "tips": "Rex Begonia has delicate rhizomes and fleshy stems that rot easily when submerged, so it is not suited to hydroponic systems and grows best in a light, airy soil mix."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Painted_Leaved_Begonia._Begonia_rex_Putz._Flore_des_serres_et_des_jardins_de_l%27Europe_v.12_%281857%29.jpg/330px-Painted_Leaved_Begonia._Begonia_rex_Putz._Flore_des_serres_et_des_jardins_de_l%27Europe_v.12_%281857%29.jpg",
+    "imageUrl": "plants/hias-49.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Begonia is toxic to cats and dogs — soluble calcium oxalates, most concentrated in the tubers (ASPCA)"
@@ -4682,7 +4682,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Calathea_orbifolia_2.jpg/330px-Calathea_orbifolia_2.jpg",
+    "imageUrl": "plants/hias-50.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Calathea / Goeppertia is non-toxic to cats and dogs (ASPCA)"
@@ -4718,7 +4718,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Philodendron_scandens_subsp_oxycardium2.jpg/330px-Philodendron_scandens_subsp_oxycardium2.jpg",
+    "imageUrl": "plants/hias-51.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Philodendron is toxic to cats and dogs — insoluble calcium oxalates cause oral irritation, drooling, vomiting (ASPCA)"
@@ -4754,7 +4754,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Zingiber_malaysianum.jpg/330px-Zingiber_malaysianum.jpg",
+    "imageUrl": "plants/hias-52.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Calcium oxalate — oral irritation, drooling, vomiting if chewed"
@@ -4790,7 +4790,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Monstera_adansonii_79319231.jpg/330px-Monstera_adansonii_79319231.jpg",
+    "imageUrl": "plants/hias-53.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Calcium oxalate — mouth/throat irritation, drooling if chewed"
@@ -4826,7 +4826,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Aspidistra_elatior1.jpg/330px-Aspidistra_elatior1.jpg",
+    "imageUrl": "plants/hias-54.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs per ASPCA; safe houseplant"
@@ -4862,7 +4862,7 @@
       "ph_ideal": "6.0-6.5",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Coffee_Flowers.JPG/330px-Coffee_Flowers.JPG",
+    "imageUrl": "plants/hias-55.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Caffeine in leaves and cherries — vomiting, tremors, rapid heartbeat"
@@ -4898,7 +4898,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Tradescantia_pallida_kz03.jpg/330px-Tradescantia_pallida_kz03.jpg",
+    "imageUrl": "plants/hias-56.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Sap may cause skin and mild GI irritation in pets"
@@ -4934,7 +4934,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Peperomia_argyreia.jpg/330px-Peperomia_argyreia.jpg",
+    "imageUrl": "plants/hias-57.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs per ASPCA; pet-safe"
@@ -4968,7 +4968,7 @@
       "waktu_panen": "-",
       "tips": "As a drought-adapted succulent, Zebra Haworthia stores water in its leaves and rots quickly when roots stay wet, so hydroponics is not recommended."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Winterbourne_-_Haworthia_attenuata_%286120983526%29.jpg/330px-Winterbourne_-_Haworthia_attenuata_%286120983526%29.jpg",
+    "imageUrl": "plants/hias-58.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Haworthia is non-toxic and safe for cats and dogs."
@@ -5002,7 +5002,7 @@
       "waktu_panen": "-",
       "tips": "Burro's Tail is a succulent that hoards water in its fleshy leaves and is highly prone to rot, making constantly wet hydroponic roots unsuitable."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Donkey%27s_tail_in_bloom_March_06.jpg/330px-Donkey%27s_tail_in_bloom_March_06.jpg",
+    "imageUrl": "plants/hias-59.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Burro's Tail is non-toxic and safe for cats and dogs."
@@ -5038,7 +5038,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Cordyline_fruticosa_%2820262433874%29.jpg/330px-Cordyline_fruticosa_%2820262433874%29.jpg",
+    "imageUrl": "plants/hias-60.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Saponins — vomiting, drooling, and dilated pupils in cats."
@@ -5074,7 +5074,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Starr_030807-0143_Adiantum_raddianum.jpg/330px-Starr_030807-0143_Adiantum_raddianum.jpg",
+    "imageUrl": "plants/hias-61.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Maidenhair Fern is non-toxic and safe for cats and dogs."
@@ -5108,7 +5108,7 @@
       "waktu_panen": "-",
       "tips": "Staghorn Fern is an epiphyte that absorbs water and air through mounted root balls and needs to dry between soakings, so submerged hydroponic roots cause rot."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Platycerium_bifurcatum_kz01.jpg/330px-Platycerium_bifurcatum_kz01.jpg",
+    "imageUrl": "plants/hias-62.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Staghorn Fern is non-toxic and safe for cats and dogs."
@@ -5144,7 +5144,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/PileaCadierei.jpg/330px-PileaCadierei.jpg",
+    "imageUrl": "plants/hias-63.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Aluminum Plant is non-toxic and safe for cats and dogs."
@@ -5180,7 +5180,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Asparagus_setaceus_Leaves_2760px.jpg/330px-Asparagus_setaceus_Leaves_2760px.jpg",
+    "imageUrl": "plants/hias-64.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Berries toxic; sap irritates skin and stomach"
@@ -5216,7 +5216,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Stromanthe_sanguinea_in_garden_in_Manaus%2C_Brazil.jpg/330px-Stromanthe_sanguinea_in_garden_in_Manaus%2C_Brazil.jpg",
+    "imageUrl": "plants/hias-65.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Safe for cats and dogs"
@@ -5252,7 +5252,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Aeschynanthus_radicans.jpg/330px-Aeschynanthus_radicans.jpg",
+    "imageUrl": "plants/hias-66.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Safe for cats and dogs"
@@ -5288,7 +5288,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Howea_forsteriana_Lord_Howe_Island.jpg/330px-Howea_forsteriana_Lord_Howe_Island.jpg",
+    "imageUrl": "plants/hias-67.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Safe for cats and dogs"
@@ -5324,7 +5324,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Philodendron_giganteum_-_Laeken_Royal_Greenhouses_-_Royal_Castle_of_Laeken_-_Brussels%2C_Belgium_-_DSC07236.jpg/330px-Philodendron_giganteum_-_Laeken_Royal_Greenhouses_-_Royal_Castle_of_Laeken_-_Brussels%2C_Belgium_-_DSC07236.jpg",
+    "imageUrl": "plants/hias-68.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Calcium oxalate — oral irritation, drooling, vomiting"
@@ -5360,7 +5360,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sulit"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Anthurium_clarinervium.jpg/330px-Anthurium_clarinervium.jpg",
+    "imageUrl": "plants/hias-69.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Calcium oxalate — oral irritation, drooling, vomiting"
@@ -5394,7 +5394,7 @@
       "waktu_panen": "-",
       "tips": "As a drought-tolerant succulent, String of Bananas rots quickly with constantly wet roots and is not suited to hydroponic systems; use a fast-draining cactus mix instead."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/String_of_Bananas.JPG/330px-String_of_Bananas.JPG",
+    "imageUrl": "plants/hias-70.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Toxic to cats and dogs; causes vomiting, drooling, and lethargy."
@@ -5428,7 +5428,7 @@
       "waktu_panen": "-",
       "tips": "Lace Aloe is a desert succulent whose roots rot in permanently wet conditions, so it is not suited to hydroponics; grow it in a gritty, fast-draining mix."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/AloeAristata.jpg/330px-AloeAristata.jpg",
+    "imageUrl": "plants/hias-71.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs; safe around pets."
@@ -5464,7 +5464,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ctenanthe_burle-marxii.jpg/330px-Ctenanthe_burle-marxii.jpg",
+    "imageUrl": "plants/hias-72.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs; safe around pets."
@@ -5500,7 +5500,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Nematanthus_gregarius_-_Kew_Gardens.JPG/330px-Nematanthus_gregarius_-_Kew_Gardens.JPG",
+    "imageUrl": "plants/hias-73.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs; safe around pets."
@@ -5536,7 +5536,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ravenearivularis.jpg/330px-Ravenearivularis.jpg",
+    "imageUrl": "plants/hias-74.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs; safe around pets."
@@ -5570,7 +5570,7 @@
       "waktu_panen": "-",
       "tips": "As a succulent vine, Sweetheart Hoya stores water in its leaves and rots with constantly wet roots, so it is not suited to hydroponics; use a chunky, fast-draining mix."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hoya-kerrii_flowers_op.jpg/330px-Hoya-kerrii_flowers_op.jpg",
+    "imageUrl": "plants/hias-75.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Non-toxic to cats and dogs; safe around pets."
@@ -5604,7 +5604,7 @@
       "waktu_panen": "-",
       "tips": "Orange is a woody fruit tree with a deep taproot and a large canopy, so it is not suitable for home hydroponic systems."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/OrangeBloss_wb.jpg/330px-OrangeBloss_wb.jpg",
+    "imageUrl": "plants/buah-23.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Citrus oils and psoralens cause vomiting, drooling, and skin irritation in pets"
@@ -5638,7 +5638,7 @@
       "waktu_panen": "-",
       "tips": "Lychee is a large, long-lived woody tree that needs deep soil to anchor its roots, making hydroponics impractical."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Litchi_chinensis_fruits.JPG/330px-Litchi_chinensis_fruits.JPG",
+    "imageUrl": "plants/buah-24.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Flesh is safe, but seeds are toxic and unripe fruit can cause hypoglycemia"
@@ -5672,7 +5672,7 @@
       "waktu_panen": "-",
       "tips": "Longan grows into a tall woody tree with extensive roots, so it cannot be grown in a home hydroponic setup."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Longan_tree_at_Pine_Island_Nursery.jpg/330px-Longan_tree_at_Pine_Island_Nursery.jpg",
+    "imageUrl": "plants/buah-25.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Flesh is safe but the large seed poses a toxicity and choking risk to pets"
@@ -5706,7 +5706,7 @@
       "waktu_panen": "-",
       "tips": "Rambutan is a large evergreen fruit tree that needs deep soil for its root system, so hydroponics is not feasible."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Rambutan_white_background_alt.jpg/330px-Rambutan_white_background_alt.jpg",
+    "imageUrl": "plants/buah-26.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Flesh is non-toxic and safe; remove the seed before feeding pets"
@@ -5740,7 +5740,7 @@
       "waktu_panen": "-",
       "tips": "Soursop is a woody fruit tree that develops a deep root system, so it is not suited to home hydroponic systems."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Annona_muricata_1.jpg/330px-Annona_muricata_1.jpg",
+    "imageUrl": "plants/buah-27.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Seeds and bark contain annonacin, a neurotoxin; keep seeds away from pets"
@@ -5774,7 +5774,7 @@
       "waktu_panen": "-",
       "tips": "Sugar apple is a woody fruit tree that requires deep soil for its roots, making it unsuitable for hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Sugar_apple_on_tree.jpg/330px-Sugar_apple_on_tree.jpg",
+    "imageUrl": "plants/buah-28.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Seeds and bark are toxic, containing annonacin; flesh is safe in moderation"
@@ -5808,7 +5808,7 @@
       "waktu_panen": "-",
       "tips": "Jackfruit is a massive tree that needs deep soil to anchor its strong roots and support heavy fruit, so it is not suitable for home hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/The_jackfruit_is_holding_on_to_the_tree.jpg/330px-The_jackfruit_is_holding_on_to_the_tree.jpg",
+    "imageUrl": "plants/buah-29.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Jackfruit flesh is non-toxic to dogs and cats; remove the large seeds and feed in moderation."
@@ -5842,7 +5842,7 @@
       "waktu_panen": "-",
       "tips": "Durian is a tall tree with deep roots and very heavy fruit; it requires deep soil and cannot be grown in a home hydroponic system."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Durio_Zibethinus_Van_Nooten.jpg/330px-Durio_Zibethinus_Van_Nooten.jpg",
+    "imageUrl": "plants/buah-30.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Durian flesh is non-toxic but very high in fat and sugar; offer only a tiny amount and never the seeds."
@@ -5876,7 +5876,7 @@
       "waktu_panen": "-",
       "tips": "Mangosteen is a slow-growing tree with a deep taproot that demands deep, rich soil, so it is unsuitable for home hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Berthe_Hoola_van_Nooten48.jpg/330px-Berthe_Hoola_van_Nooten48.jpg",
+    "imageUrl": "plants/buah-31.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Mangosteen flesh is non-toxic to dogs and cats; remove the rind and seeds and feed only the soft segments in moderation."
@@ -5910,7 +5910,7 @@
       "waktu_panen": "-",
       "tips": "Salak is a clumping palm with a dense, spreading root system that needs deep soil, so it cannot be grown hydroponically at home."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Salak_%28Salacca_zalacca%29%2C_2015-05-17.jpg/330px-Salak_%28Salacca_zalacca%29%2C_2015-05-17.jpg",
+    "imageUrl": "plants/buah-32.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Salak flesh is non-toxic to dogs and cats; peel the scaly skin and remove the seed before feeding small amounts."
@@ -5944,7 +5944,7 @@
       "waktu_panen": "-",
       "tips": "Sapodilla is a long-lived tree with a deep, extensive root system that requires deep soil, making it unsuitable for home hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/%E0%B4%B8%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%8B%E0%B4%9F%E0%B5%8D%E0%B4%9F.jpg/330px-%E0%B4%B8%E0%B4%AA%E0%B5%8D%E0%B4%AA%E0%B5%8B%E0%B4%9F%E0%B5%8D%E0%B4%9F.jpg",
+    "imageUrl": "plants/buah-33.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Ripe sapodilla flesh is generally safe, but unripe fruit and the bark contain a milky latex (saponin/tannins) and the seeds have a small hook that can cause GI upset or obstruction; feed only ripe, seedless flesh in moderation."
@@ -5978,7 +5978,7 @@
       "waktu_panen": "-",
       "tips": "Persimmon is a deciduous tree with a deep taproot that needs deep soil and a seasonal climate, so it is not suited to home hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Kaki_20041002.jpg/330px-Kaki_20041002.jpg",
+    "imageUrl": "plants/buah-34.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Persimmon flesh is non-toxic, but the seeds and pits can cause intestinal obstruction and inflammation (enteritis) in dogs; always remove all seeds and feed only small pieces of flesh."
@@ -6012,7 +6012,7 @@
       "waktu_panen": "-",
       "tips": "Kiwi is a large, heavy woody vine with extensive roots that needs deep soil and a strong trellis, so it is not practical for home hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Kiwis_006eue.jpg/330px-Kiwis_006eue.jpg",
+    "imageUrl": "plants/buah-35.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Kiwi flesh is non-toxic to dogs and cats; peel the skin and feed small pieces in moderation as it is high in sugar."
@@ -6046,7 +6046,7 @@
       "waktu_panen": "-",
       "tips": "Apple is a woody orchard tree with a deep root system that needs deep soil and a cool, seasonal climate, so it is unsuitable for home hydroponics."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pink_lady_and_cross_section.jpg/330px-Pink_lady_and_cross_section.jpg",
+    "imageUrl": "plants/buah-36.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Apple flesh is non-toxic and safe for pets, but the seeds, leaves, and stems contain cyanogenic compounds (cyanide); always remove the core and seeds and feed only sliced flesh."
@@ -6082,7 +6082,7 @@
       "ph_ideal": "6.0–7.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Chou-fleur_02.jpg/330px-Chou-fleur_02.jpg",
+    "imageUrl": "plants/sayur-19.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Brassica vegetable — safe in tiny amounts but causes gas, bloating and may affect the thyroid in excess."
@@ -6118,7 +6118,7 @@
       "ph_ideal": "6.0–7.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Cabbage_and_cross_section_on_white.jpg/330px-Cabbage_and_cross_section_on_white.jpg",
+    "imageUrl": "plants/sayur-20.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Brassica vegetable — small amounts are fine but excess causes gas, bloating and can affect the thyroid."
@@ -6154,7 +6154,7 @@
       "ph_ideal": "5.8–6.8",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Celery_1.jpg/330px-Celery_1.jpg",
+    "imageUrl": "plants/sayur-21.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Celery is non-toxic and safe for cats and dogs in moderation."
@@ -6190,7 +6190,7 @@
       "ph_ideal": "6.0–7.0",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Chard_%28Beta_vulgaris_var_cicla%29.jpg/330px-Chard_%28Beta_vulgaris_var_cicla%29.jpg",
+    "imageUrl": "plants/sayur-22.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Contains oxalates — small amounts are fine but excess may cause stomach upset and affect calcium absorption."
@@ -6226,7 +6226,7 @@
       "ph_ideal": "6.0–6.8",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hong_Kong_Okra_Aug_25_2012.JPG/330px-Hong_Kong_Okra_Aug_25_2012.JPG",
+    "imageUrl": "plants/sayur-23.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Okra is non-toxic and safe for cats and dogs."
@@ -6262,7 +6262,7 @@
       "ph_ideal": "6.0–7.0",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Peas_in_pods_-_Studio.jpg/330px-Peas_in_pods_-_Studio.jpg",
+    "imageUrl": "plants/sayur-24.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Garden peas are non-toxic and safe for cats and dogs."
@@ -6296,7 +6296,7 @@
       "waktu_panen": "-",
       "tips": "Sweet potato is a tuber crop that needs deep, loose soil for its roots to swell properly. Standard hydroponic systems cannot support healthy tuber development, so it is best grown in soil or large grow bags."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ipomoea_batatas_006.JPG/330px-Ipomoea_batatas_006.JPG",
+    "imageUrl": "plants/sayur-25.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Sweet potato is non-toxic to cats and dogs and is even used in some pet foods."
@@ -6330,7 +6330,7 @@
       "waktu_panen": "-",
       "tips": "Pumpkin is a large sprawling vine with heavy fruits and an extensive root system. Standard hydroponic setups cannot support its size or the weight of its fruit, so it should be grown in the ground or very large containers."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cucurbita_moschata_Butternut_2012_G2.jpg/330px-Cucurbita_moschata_Butternut_2012_G2.jpg",
+    "imageUrl": "plants/sayur-26.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Pumpkin flesh is non-toxic and safe for cats and dogs; plain cooked pumpkin is often given to aid digestion."
@@ -6364,7 +6364,7 @@
       "waktu_panen": "-",
       "tips": "Sweet corn grows very tall and relies on wind pollination across a block of plants, plus it has a deep, demanding root system. These traits make it impractical for standard hydroponic systems, so grow it in soil with several rows planted together."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/VegCorn.jpg/330px-VegCorn.jpg",
+    "imageUrl": "plants/sayur-27.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "The kernels are non-toxic, but never give the cob — corn cobs can cause dangerous intestinal blockages in dogs."
@@ -6400,7 +6400,7 @@
       "ph_ideal": "6.0–7.0",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Leek_on_white_background_-_0947.jpg/330px-Leek_on_white_background_-_0947.jpg",
+    "imageUrl": "plants/sayur-28.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Toxic to cats and dogs — as an allium, leek damages red blood cells and can cause anemia even in small amounts."
@@ -6434,7 +6434,7 @@
       "waktu_panen": "-",
       "tips": "Shallot is a bulb crop, and bulbing alliums need to swell and cure in a firm, well-drained medium. The constant moisture of standard hydroponics tends to rot the bulbs rather than firm them up, so grow shallots in soil instead."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Shallots_-_sliced_and_whole.jpg/330px-Shallots_-_sliced_and_whole.jpg",
+    "imageUrl": "plants/sayur-29.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Toxic to cats and dogs — shallots are alliums and are especially potent, damaging red blood cells and causing anemia."
@@ -6470,7 +6470,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vigna_unguiculata_Blanco2.286-cropped.jpg/330px-Vigna_unguiculata_Blanco2.286-cropped.jpg",
+    "imageUrl": "plants/sayur-30.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Cooked pods are generally safe, but raw beans contain lectins that can upset a pet's stomach — never feed raw."
@@ -6504,7 +6504,7 @@
       "waktu_panen": "-",
       "tips": "Curry leaf is a woody tree with a deep taproot and long-term growth that needs soil to develop properly, so hydroponic systems are not suitable for it."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Curry_Trees.jpg/330px-Curry_Trees.jpg",
+    "imageUrl": "plants/herbal-17.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Curry leaf is non-toxic and safe for cats and dogs."
@@ -6538,7 +6538,7 @@
       "waktu_panen": "-",
       "tips": "Bay laurel is a slow-growing woody shrub that develops an extensive root system over years and needs soil to thrive, so it is not suited to hydroponic cultivation."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Starr-071024-0195-Laurus_nobilis-leaves-Enchanting_Floral_Gardens_of_Kula-Maui_%2824867859296%29.jpg/330px-Starr-071024-0195-Laurus_nobilis-leaves-Enchanting_Floral_Gardens_of_Kula-Maui_%2824867859296%29.jpg",
+    "imageUrl": "plants/herbal-18.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Toxic to pets — essential oils (eugenol) can cause vomiting and diarrhea in cats and dogs."
@@ -6574,7 +6574,7 @@
       "ph_ideal": "5.8-6.3",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Aloysia_citriodora_002.jpg/330px-Aloysia_citriodora_002.jpg",
+    "imageUrl": "plants/herbal-19.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Lemon verbena is non-toxic and safe for cats and dogs."
@@ -6610,7 +6610,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Stevia_rebaudiana_flowers.jpg/330px-Stevia_rebaudiana_flowers.jpg",
+    "imageUrl": "plants/herbal-20.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Stevia is non-toxic and generally safe for cats and dogs."
@@ -6646,7 +6646,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Satureja_montana2.jpg/330px-Satureja_montana2.jpg",
+    "imageUrl": "plants/herbal-21.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Winter savory is non-toxic and safe for cats and dogs."
@@ -6682,7 +6682,7 @@
       "ph_ideal": "5.8-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Liebst%C3%B6ckel.JPG/330px-Liebst%C3%B6ckel.JPG",
+    "imageUrl": "plants/herbal-22.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Use with caution — contains furanocoumarins that can cause photosensitivity; large amounts may upset a pet's stomach."
@@ -6718,7 +6718,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Estragon_1511.jpg/330px-Estragon_1511.jpg",
+    "imageUrl": "plants/herbal-23.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Use with caution — contains estragole; large amounts may cause stomach upset in cats and dogs."
@@ -6754,7 +6754,7 @@
       "ph_ideal": "5.5-6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Tulsi_or_Tulasi_Holy_basil.jpg/330px-Tulsi_or_Tulasi_Holy_basil.jpg",
+    "imageUrl": "plants/herbal-24.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Holy basil is non-toxic and safe for cats and dogs."
@@ -6788,7 +6788,7 @@
       "waktu_panen": "-",
       "tips": "Ylang-ylang is a large woody tree with a deep, vigorous root system, so it is not suited to hydroponics. Grow it in the ground or a very large pot with rich, well-draining soil."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Cananga_odorata_01.JPG/330px-Cananga_odorata_01.JPG",
+    "imageUrl": "plants/aroma-12.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "The essential oil can cause skin irritation and lethargy in pets; keep concentrated oil away from animals."
@@ -6824,7 +6824,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Pogostemon_cablin_001.jpg/330px-Pogostemon_cablin_001.jpg",
+    "imageUrl": "plants/aroma-13.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Generally low risk, but the concentrated essential oil may cause stomach upset; avoid letting pets ingest the oil."
@@ -6860,7 +6860,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Vetiver_grass.jpg/330px-Vetiver_grass.jpg",
+    "imageUrl": "plants/aroma-14.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Vetiver is non-toxic and safe around pets."
@@ -6894,7 +6894,7 @@
       "waktu_panen": "-",
       "tips": "Tuberose grows from a storage bulb that needs a dry dormancy period and is highly prone to rot when kept constantly wet, so hydroponics is unsuitable. Plant the bulbs in free-draining soil instead."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tuberose_flower.jpg/330px-Tuberose_flower.jpg",
+    "imageUrl": "plants/aroma-15.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Best kept away from pets; ingestion of the bulbs or sap may cause mild digestive upset."
@@ -6928,7 +6928,7 @@
       "waktu_panen": "-",
       "tips": "Gardenia is a woody, acid-loving shrub with a fussy root system that resents the constantly wet roots of hydroponics. Grow it in acidic, well-draining potting mix where its pH can be carefully managed."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Gardenia_jasminoides_flower_Argentina.jpg/330px-Gardenia_jasminoides_flower_Argentina.jpg",
+    "imageUrl": "plants/aroma-16.jpg",
     "toxicity": {
       "pets": "toxic",
       "note": "Toxic to pets — ingestion can cause vomiting, diarrhea, and hives."
@@ -6964,7 +6964,7 @@
       "ph_ideal": "6.0–6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Helichrysum_italicum_%28immortelle%29.JPG/330px-Helichrysum_italicum_%28immortelle%29.JPG",
+    "imageUrl": "plants/aroma-17.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Generally low risk, but the concentrated essential oil may cause irritation or upset if ingested by pets."
@@ -6998,7 +6998,7 @@
       "waktu_panen": "-",
       "tips": "Moringa is a deep-rooted tree that can reach 3–10 meters with a strong taproot, so it is not suited to home hydroponic systems and is best grown in the ground."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/DrumstickFlower.jpg/330px-DrumstickFlower.jpg",
+    "imageUrl": "plants/obat-13.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Leaves are non-toxic and nutritious; the root and bark contain alkaloids — use with caution."
@@ -7032,7 +7032,7 @@
       "waktu_panen": "-",
       "tips": "Neem is a large tree that can grow 15–20 meters tall with an extensive deep root system, making it unsuitable for hydroponics; grow it in well-drained ground instead."
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Neem_Tree_in_Rajasthan%2C_India.jpg/330px-Neem_Tree_in_Rajasthan%2C_India.jpg",
+    "imageUrl": "plants/obat-14.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Neem oil and seeds (azadirachtin) can cause vomiting and lethargy if ingested by pets — use with caution."
@@ -7068,7 +7068,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Momordica_charantia_Blanco2.357.png/330px-Momordica_charantia_Blanco2.357.png",
+    "imageUrl": "plants/obat-15.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "The seeds and red arils are toxic and the fruit is very bitter; can cause vomiting and diarrhea in pets — use with caution."
@@ -7104,7 +7104,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Sedang"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Roselle%2C_Hibiscus_sabdariffa%2C_2014_01.JPG/330px-Roselle%2C_Hibiscus_sabdariffa%2C_2014_01.JPG",
+    "imageUrl": "plants/obat-16.jpg",
     "toxicity": {
       "pets": "non-toxic",
       "note": "Roselle is generally non-toxic to cats and dogs and is widely consumed as a tea."
@@ -7140,7 +7140,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/IMG_2256-Chamaecostus_cuspidatus.jpg/330px-IMG_2256-Chamaecostus_cuspidatus.jpg",
+    "imageUrl": "plants/obat-17.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Pet safety data is limited; as a medicinal blood-sugar-lowering herb, give only with caution."
@@ -7176,7 +7176,7 @@
       "ph_ideal": "5.5–6.5",
       "kesulitan": "Mudah"
     },
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Spilanthes-closeup-large.jpg/330px-Spilanthes-closeup-large.jpg",
+    "imageUrl": "plants/obat-18.jpg",
     "toxicity": {
       "pets": "caution",
       "note": "Contains spilanthol, which causes a numbing, tingling sensation in the mouth; give only with caution to pets."

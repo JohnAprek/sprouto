@@ -562,6 +562,9 @@ function Encyclopedia() {
   );
 }
 
+// Resolve a plant image: absolute (http) URLs as-is, local paths against BASE_URL.
+const plantImg = (p) => p.imageUrl ? (p.imageUrl.startsWith('http') ? p.imageUrl : import.meta.env.BASE_URL + p.imageUrl) : '';
+
 const CATEGORY_GRADIENT = {
   'Tanaman Hias': 'linear-gradient(160deg, #1a472a, #2d6a4f)',
   'Sayuran':      'linear-gradient(160deg, #1a3a1a, #2d5a1a)',
@@ -584,7 +587,7 @@ function PlantCard({ plant, onClick }) {
       <div className="plant-emoji-bg" style={{ background: gradient, overflow: 'hidden', position: 'relative' }}>
         {plant.imageUrl && !imgErr ? (
           <img
-            src={plant.imageUrl}
+            src={plantImg(plant)}
             alt={plant.name}
             onError={() => setImgErr(true)}
             style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', inset: 0 }}
@@ -628,7 +631,7 @@ function PlantCard({ plant, onClick }) {
 // --- AI Care Assistant proxy ---
 // Paste your deployed Cloudflare Worker URL here to enable DeepSeek-powered
 // answers (see workers/README.md). Empty = deterministic instant answers only.
-const AI_PROXY_URL = '';
+const AI_PROXY_URL = '***REMOVED***';
 
 // --- Affiliate / marketplace supply links ---
 // Set amazonTag to your Amazon Associates tag to monetize EN links.
@@ -682,7 +685,7 @@ function PlantDetail() {
       <div className="detail-hero">
         {plant.imageUrl ? (
           <img
-            src={plant.imageUrl}
+            src={plantImg(plant)}
             alt={plant.name}
             onError={(e) => {
               e.target.style.display = 'none';
@@ -1220,7 +1223,7 @@ function CareCalendar() {
                 return (
                   <div key={id} style={{ background: 'var(--surface)', borderRadius: '14px', padding: '14px', boxShadow: 'var(--shadow-sm)', display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <div style={{ width: '48px', height: '48px', borderRadius: '12px', overflow: 'hidden', background: CATEGORY_GRADIENT[plant.category], flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.6rem' }}>
-                      {plant.imageUrl ? <img src={plant.imageUrl} alt={plant.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} onError={e => { e.target.style.display='none'; }} /> : EMOJI_MAP[plant.id] || '🌿'}
+                      {plant.imageUrl ? <img src={plantImg(plant)} alt={plant.name} style={{ width: '100%', height: '100%', objectFit: 'cover' }} onError={e => { e.target.style.display='none'; }} /> : EMOJI_MAP[plant.id] || '🌿'}
                     </div>
                     <div style={{ flex: 1, cursor: 'pointer' }} onClick={() => navigate(`/tanaman/${id}`)}>
                       <p style={{ fontWeight: 700, fontSize: '0.9rem' }}>{plant.name}</p>
