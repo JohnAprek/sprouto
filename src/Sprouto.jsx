@@ -629,9 +629,14 @@ function PlantCard({ plant, onClick }) {
 }
 
 // --- AI Care Assistant proxy ---
-// Paste your deployed Cloudflare Worker URL here to enable DeepSeek-powered
-// answers (see workers/README.md). Empty = deterministic instant answers only.
-const AI_PROXY_URL = '***REMOVED***';
+// This is the deployed Cloudflare WORKER URL (e.g. https://sprouto-ai.<sub>.workers.dev).
+// NOT an API key — the API key only ever lives in Cloudflare (see workers/README.md).
+// Empty = deterministic instant answers only.
+const AI_PROXY_URL = '';
+
+// --- Plant identification (camera) ---
+// Your worker's /identify endpoint (Pl@ntNet). Empty = camera ID hidden.
+const IDENTIFY_URL = '';
 
 // --- Affiliate / marketplace supply links ---
 // Set amazonTag to your Amazon Associates tag to monetize EN links.
