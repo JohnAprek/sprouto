@@ -50,8 +50,11 @@ Every plant is labeled toxic, pet-safe, or use-caution for cats and dogs — and
 💧 TOOLS & GUIDES
 A hydroponic nutrient calculator (AB Mix / EC / pH), plus in-depth guides on soil, potting media, fertilizer, drainage, hydroponics, and home greenhouses.
 
-🤖 CARE ASSISTANT
-Ask about any plant and get instant answers from Sprouto's structured care data.
+🤖 AI CARE ASSISTANT
+Ask anything about plant care — watering, light, pests, pet-safety — and get instant, friendly answers powered by AI, grounded in Sprouto's plant data.
+
+📷 IDENTIFY PLANTS WITH YOUR CAMERA
+Not sure what a plant is? Snap or upload a photo and Sprouto identifies it for you.
 
 ✨ MADE FOR YOU
 • English & Indonesian
@@ -83,8 +86,11 @@ Setiap tanaman diberi label beracun, aman, atau perlu kehati-hatian bagi kucing 
 💧 ALAT & PANDUAN
 Kalkulator nutrisi hidroponik (AB Mix / EC / pH), plus panduan mendalam soal tanah, media tanam, pupuk, drainase, hidroponik, dan greenhouse rumahan.
 
-🤖 ASISTEN PERAWATAN
-Tanya apa saja tentang tanaman dan dapatkan jawaban instan dari data perawatan Sprouto.
+🤖 ASISTEN PERAWATAN AI
+Tanya apa saja soal perawatan tanaman — penyiraman, cahaya, hama, keamanan hewan — dan dapatkan jawaban instan yang ramah, didukung AI dan berdasarkan data tanaman Sprouto.
+
+📷 IDENTIFIKASI TANAMAN DENGAN KAMERA
+Tidak yakin tanaman apa? Foto atau unggah gambar, Sprouto akan mengenalinya untukmu.
 
 ✨ DIBUAT UNTUKMU
 • Bahasa Inggris & Indonesia
@@ -105,21 +111,28 @@ Berkebun dengan percaya diri. Unduh Sprouto dan beri tanamanmu perawatan terbaik
 
 ## Data safety form (answers)
 
-Sprouto is local-first. Your answers depend on whether the **AI assistant** is enabled in the shipped build (`AI_PROXY_URL` set).
+This build ships with **both the AI assistant and camera identification enabled** (the Cloudflare
+worker is live). Sprouto is otherwise local-first: favorites, garden, journal notes/photos, name,
+settings and streak all stay on the device. **Two features send data off-device only when the user
+chooses to use them:**
 
-**If shipped with AI OFF (default `AI_PROXY_URL = ''`):**
-- Does your app collect or share any of the required user data types? → **No.**
-  (Favorites, garden, journal notes/photos, name, settings all stay on-device; Play counts only data sent off the device.)
-- Is all data encrypted in transit? → Yes (the app only makes HTTPS requests).
-- Do you provide a way to delete data? → Yes — uninstalling or clearing app data removes everything (all local).
+**Declare these data types as Shared (not Collected/stored):**
+- **App activity → Other user-generated content** — the text typed into the AI Care Assistant is
+  **shared** with our AI provider (DeepSeek) to generate an answer.
+  Collected: No · Shared: Yes · Purpose: **App functionality** · Optional (user-initiated).
+- **Photos and videos → Photos** — when the user taps "Identify a plant", the chosen/taken photo is
+  **shared** with our identification provider (Pl@ntNet) to recognize the plant.
+  Collected: No · Shared: Yes · Purpose: **App functionality** · Optional (user-initiated).
 
-**If you ENABLE the AI assistant:**
-- Data collected/shared: **App info & performance → "Other user-generated content"** — the text question the user types is **shared** with a third-party AI provider (DeepSeek) to generate a response.
-  - Collected: optional · Shared: yes · Purpose: **App functionality** (not ads/analytics).
-- Photos: still **not** collected/shared (journal photos never leave the device).
-- Encrypted in transit: Yes. Deletion: as above.
+**Everything else:** not collected, not shared. Journal photos the user saves never leave the device.
 
-> Tip: launching with AI off keeps the data-safety form a clean "no data collected", which is the simplest review path. Turn AI on in a later update once you've deployed the worker.
+- Is all data encrypted in transit? → **Yes** (HTTPS only).
+- Do you provide a way to request data deletion? → **Yes** — nothing is stored on our servers;
+  clearing app data or uninstalling removes all local data.
+- Any data used for ads or analytics? → **No** (no ads SDK, no analytics, no trackers).
+
+> These answers match the Privacy Policy (privacy.html), which discloses the DeepSeek and Pl@ntNet
+> sharing. Keep the two consistent — Play cross-checks them.
 
 ## Content rating questionnaire
 Answer "No" to violence, sexual content, profanity, drugs, gambling, user-to-user communication. Result: **Everyone**. The app has no ads SDK and no in-app social features.
