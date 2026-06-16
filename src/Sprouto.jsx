@@ -220,6 +220,7 @@ function AppShell({ toast, setToast }) {
           <Route path="/profile" element={<Profile />} />
           <Route path="/kalender" element={<CareCalendar />} />
           <Route path="/asisten" element={<CareAssistant />} />
+          <Route path="/identifikasi" element={<PlantIdentify />} />
         </Routes>
       </div>
       <BottomNav />
@@ -345,11 +346,20 @@ function Home() {
       </div>
 
       <button onClick={() => navigate('/asisten')}
-        style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', textAlign: 'left', cursor: 'pointer', marginBottom: '24px', background: 'linear-gradient(135deg, var(--primary-dark), var(--primary))', color: 'white', border: 'none', borderRadius: '16px', padding: '14px 16px', boxShadow: 'var(--shadow-sm)' }}>
+        style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', textAlign: 'left', cursor: 'pointer', marginBottom: IDENTIFY_URL ? '12px' : '24px', background: 'linear-gradient(135deg, var(--primary-dark), var(--primary))', color: 'white', border: 'none', borderRadius: '16px', padding: '14px 16px', boxShadow: 'var(--shadow-sm)' }}>
         <span style={{ fontSize: '1.6rem' }}>🤖</span>
         <span style={{ flex: 1, fontWeight: 700, fontSize: '0.95rem' }}>{L.assistant_cta}</span>
         <span style={{ opacity: 0.8 }}>›</span>
       </button>
+
+      {IDENTIFY_URL && (
+        <button onClick={() => navigate('/identifikasi')}
+          style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', textAlign: 'left', cursor: 'pointer', marginBottom: '24px', background: 'var(--surface)', color: 'var(--text-main)', border: '1.5px solid var(--border-color)', borderRadius: '16px', padding: '14px 16px', boxShadow: 'var(--shadow-sm)' }}>
+          <span style={{ fontSize: '1.6rem' }}>📷</span>
+          <span style={{ flex: 1, fontWeight: 700, fontSize: '0.95rem' }}>{L.identify_cta}</span>
+          <span style={{ opacity: 0.6 }}>›</span>
+        </button>
+      )}
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
         <h3 style={{ fontSize: '1.1rem' }}>{L.popular_plants}</h3>
@@ -1399,6 +1409,108 @@ function CareAssistant() {
       )}
 
       <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontStyle: 'italic', marginTop: '20px', lineHeight: 1.5 }}>{L.assistant_note}</p>
+    </main>
+  );
+}
+
+// --- Plant identification from a photo (Pl@ntNet via worker) ---
+function PlantIdentify() {
+  const { L, plants } = React.useContext(AppContext);
+  const navigate = useNavigate();
+  const fileRef = useRef(null);
+  const [preview, setPreview] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [results, setResults] = useState(null); // array | 'error' | null
+
+  const matchPlant = (sci) => {
+    const s = (sci || '').toLowerCase().trim();
+    if (!s) return null;
+    return plants.find(p => p.scientificName.toLowerCase() === s)
+      || plants.find(p => p.scientificName.toLowerCase().split(' ')[0] === s.split(' ')[0]);
+  };
+
+  const identify = async (dataUrl) => {
+    if (!IDENTIFY_URL) return;
+    setLoading(true); setResults(null);
+    try {
+      const res = await fetch(IDENTIFY_URL, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ image: dataUrl, organ: 'auto' }),
+      });
+      const data = await res.json();
+      setResults(Array.isArray(data.results) ? data.results : 'error');
+    } catch { setResults('error'); }
+    finally { setLoading(false); }
+  };
+
+  const onPhoto = (e) => {
+    const file = e.target.files && e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      const img = new Image();
+      img.onload = () => {
+        const MAX = 1024;
+        let { width, height } = img;
+        if (width > MAX || height > MAX) { const r = Math.min(MAX / width, MAX / height); width = Math.round(width * r); height = Math.round(height * r); }
+        const canvas = document.createElement('canvas');
+        canvas.width = width; canvas.height = height;
+        canvas.getContext('2d').drawImage(img, 0, 0, width, height);
+        const dataUrl = canvas.toDataURL('image/jpeg', 0.8);
+        setPreview(dataUrl);
+        identify(dataUrl);
+      };
+      img.src = ev.target.result;
+    };
+    reader.readAsDataURL(file);
+  };
+
+  return (
+    <main className="main-content animate-fade-up">
+      <div style={{ marginBottom: '16px' }}>
+        <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '6px' }}>{L.identify_title}</h2>
+        <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>{L.identify_sub}</p>
+      </div>
+
+      <input ref={fileRef} type="file" accept="image/*" capture="environment" onChange={onPhoto} style={{ display: 'none' }} />
+      <button onClick={() => fileRef.current && fileRef.current.click()} className="btn-primary" style={{ width: '100%', marginBottom: '16px' }}>
+        {L.identify_take}
+      </button>
+
+      {preview && (
+        <div style={{ marginBottom: '16px', textAlign: 'center' }}>
+          <img src={preview} alt="" style={{ maxWidth: '100%', maxHeight: '240px', borderRadius: '14px' }} />
+        </div>
+      )}
+
+      {loading && <p style={{ textAlign: 'center', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem' }}>{L.identify_analyzing}</p>}
+
+      {results === 'error' && <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', padding: '4px' }}>{L.identify_error}</p>}
+
+      {Array.isArray(results) && (results.length === 0
+        ? <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', lineHeight: 1.6, padding: '4px' }}>{L.identify_none}</p>
+        : (
+          <div>
+            <p style={{ fontSize: '0.78rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px', color: 'var(--text-muted)', marginBottom: '10px' }}>{L.identify_results}</p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              {results.map((r, i) => {
+                const m = matchPlant(r.scientificName);
+                return (
+                  <div key={i} style={{ background: 'var(--surface)', borderRadius: '14px', padding: '12px 14px', boxShadow: 'var(--shadow-sm)', display: 'flex', alignItems: 'center', gap: '12px' }}>
+                    <div style={{ flexShrink: 0, width: '46px', height: '46px', borderRadius: '12px', background: 'var(--primary)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.85rem' }}>{r.score}%</div>
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      <p style={{ fontWeight: 700, fontSize: '0.9rem', fontStyle: 'italic' }}>{r.scientificName}</p>
+                      {r.commonNames?.length > 0 && <p style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>{r.commonNames.join(', ')}</p>}
+                      {m && <button onClick={() => navigate(`/tanaman/${m.id}`)} style={{ marginTop: '4px', background: 'none', border: 'none', color: 'var(--primary)', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', padding: 0 }}>{L.identify_open}</button>}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+
+      <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)', fontStyle: 'italic', marginTop: '20px', lineHeight: 1.5 }}>{L.identify_note}</p>
     </main>
   );
 }
