@@ -79,6 +79,11 @@ const STR = {
     supplies_title: '🛒 Recommended supplies',
     supply_soil: 'Potting mix', supply_pot: 'Plant pot', supply_fertilizer: 'Fertilizer', supply_rockwool: 'Rockwool', supply_nutrient: 'AB Mix nutrient',
     supplies_disclosure: 'As an Amazon Associate, Sprouto earns from qualifying purchases.',
+    back: 'Back',
+    credits_title: 'Photo credits',
+    credits_intro: 'Plant photos come from Wikimedia Commons and other sources, used under their respective licenses. Thank you to all the photographers and contributors.',
+    credits_by: 'Photo by', credits_source: 'source',
+    privacy_title: 'Privacy policy',
 
     garden_title: '🌿 My Garden',
     garden_summary: (plants, tasks) => `${plants} plants · ${tasks} tasks today`,
@@ -197,6 +202,11 @@ const STR = {
     supplies_title: '🛒 Perlengkapan yang disarankan',
     supply_soil: 'Media tanam', supply_pot: 'Pot tanaman', supply_fertilizer: 'Pupuk', supply_rockwool: 'Rockwool', supply_nutrient: 'Nutrisi AB Mix',
     supplies_disclosure: 'Sebagai Amazon Associate, Sprouto memperoleh komisi dari pembelian yang memenuhi syarat.',
+    back: 'Kembali',
+    credits_title: 'Kredit foto',
+    credits_intro: 'Foto tanaman berasal dari Wikimedia Commons dan sumber lain, digunakan sesuai lisensi masing-masing. Terima kasih kepada para fotografer dan kontributor.',
+    credits_by: 'Foto oleh', credits_source: 'sumber',
+    privacy_title: 'Kebijakan privasi',
 
     garden_title: '🌿 Kebunku',
     garden_summary: (plants, tasks) => `${plants} tanaman · ${tasks} tugas hari ini`,

@@ -15,6 +15,7 @@ import {
   KESULITAN_LABEL, LOCALE, SOIL_GUIDE, buildStaticGuide,
 } from './i18n';
 import { syncPlantReminders } from './notifications';
+import photoCredits from './data/photo-credits.json';
 
 // --- Custom Hook LocalStorage ---
 function useLocalStorage(key, initialValue) {
@@ -221,6 +222,7 @@ function AppShell({ toast, setToast }) {
           <Route path="/kalender" element={<CareCalendar />} />
           <Route path="/asisten" element={<CareAssistant />} />
           <Route path="/identifikasi" element={<PlantIdentify />} />
+          <Route path="/kredit" element={<PhotoCredits />} />
         </Routes>
       </div>
       <BottomNav />
@@ -1732,6 +1734,7 @@ function SoilGuide() {
 // --- 7. User Profile ---
 function Profile() {
   const { profile, setProfile, favorites, L } = React.useContext(AppContext);
+  const navigate = useNavigate();
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState(profile.name);
 
@@ -1773,6 +1776,45 @@ function Profile() {
             <p style={{ fontSize: '0.8rem', color: 'var(--text-muted)', fontWeight: '600' }}>{L.profile_level}</p>
           </div>
         </div>
+      </div>
+
+      <div style={{ marginTop: '20px', background: 'var(--surface)', borderRadius: '16px', boxShadow: 'var(--shadow-sm)', overflow: 'hidden' }}>
+        <button onClick={() => navigate('/kredit')} style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'none', border: 'none', borderBottom: '1px solid var(--border-color)', padding: '14px 16px', cursor: 'pointer', color: 'var(--text-main)', fontSize: '0.9rem', fontWeight: 600 }}>
+          <span>📷 {L.credits_title}</span><span style={{ opacity: 0.4 }}>›</span>
+        </button>
+        <a href={import.meta.env.BASE_URL + 'privacy.html'} target="_blank" rel="noopener noreferrer" style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 16px', textDecoration: 'none', color: 'var(--text-main)', fontSize: '0.9rem', fontWeight: 600 }}>
+          <span>🔒 {L.privacy_title}</span><span style={{ opacity: 0.4 }}>↗</span>
+        </a>
+      </div>
+    </main>
+  );
+}
+
+// --- Photo Credits / Attribution (Wikimedia Commons license compliance) ---
+function PhotoCredits() {
+  const { L } = React.useContext(AppContext);
+  const navigate = useNavigate();
+  const entries = Object.values(photoCredits).sort((a, b) => (a.plant || '').localeCompare(b.plant || ''));
+  return (
+    <main className="main-content animate-fade-up">
+      <button onClick={() => navigate('/profile')} style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'none', border: 'none', color: 'var(--primary)', fontWeight: 700, fontSize: '0.85rem', cursor: 'pointer', padding: 0, marginBottom: '14px' }}>
+        <ArrowLeft size={16} /> {L.back || 'Back'}
+      </button>
+      <h2 style={{ fontSize: '1.4rem', fontWeight: 700, marginBottom: '6px' }}>{L.credits_title}</h2>
+      <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.5, marginBottom: '18px' }}>{L.credits_intro}</p>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        {entries.map((c, i) => (
+          <div key={i} style={{ background: 'var(--surface)', borderRadius: '12px', padding: '10px 14px', boxShadow: 'var(--shadow-sm)', fontSize: '0.8rem', lineHeight: 1.45 }}>
+            <p style={{ fontWeight: 700, color: 'var(--text-main)' }}>{c.plant}</p>
+            <p style={{ color: 'var(--text-muted)' }}>
+              {L.credits_by} {c.author}
+              {c.license ? <> · {c.licenseUrl
+                ? <a href={c.licenseUrl} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>{c.license}</a>
+                : <span>{c.license}</span>}</> : null}
+              {c.source ? <> · <a href={c.source} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)' }}>{L.credits_source}</a></> : null}
+            </p>
+          </div>
+        ))}
       </div>
     </main>
   );

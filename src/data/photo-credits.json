@@ -1,0 +1,1402 @@
+{
+  "hias-1": {
+    "plant": "Monstera Deliciosa",
+    "author": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=7094"
+  },
+  "hias-3": {
+    "plant": "Snake Plant",
+    "author": "Mokkie",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=32807562"
+  },
+  "hias-4": {
+    "plant": "Moon Orchid",
+    "author": "Orchi",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=31148955"
+  },
+  "hias-5": {
+    "plant": "Weeping Fig Bonsai",
+    "author": "Krzysztof Ziarnek, Kenraiz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=52842349"
+  },
+  "hias-6": {
+    "plant": "Philodendron",
+    "author": "KENPEI",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=1025329"
+  },
+  "hias-7": {
+    "plant": "Golden Pothos",
+    "author": "Mokkie",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=33046648"
+  },
+  "hias-8": {
+    "plant": "ZZ Plant",
+    "author": "User:WeFt",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=75624"
+  },
+  "hias-9": {
+    "plant": "Cactus",
+    "author": "Unknown",
+    "license": "see source",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/wiki/File:Kaktus%205%20fcm.jpg"
+  },
+  "hias-10": {
+    "plant": "Calathea",
+    "author": "Fuzzform at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=34548184"
+  },
+  "sayur-1": {
+    "plant": "Spinach",
+    "author": "Tangopaso",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=44879174"
+  },
+  "sayur-3": {
+    "plant": "Cherry Tomato",
+    "author": "Softeis",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=143779"
+  },
+  "sayur-4": {
+    "plant": "Bird's Eye Chili",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=229886"
+  },
+  "sayur-5": {
+    "plant": "Lettuce",
+    "author": "en:User:Geographer",
+    "license": "CC BY 1.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/1.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=2344199"
+  },
+  "sayur-6": {
+    "plant": "Mustard Greens",
+    "author": "TeunSpaans",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=96733"
+  },
+  "obat-1": {
+    "plant": "Cat's Whiskers",
+    "author": "Jeevan Jose, Kerala, India",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=30427887"
+  },
+  "obat-2": {
+    "plant": "Green Chiretta",
+    "author": "J.M.Garg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=5637126"
+  },
+  "obat-3": {
+    "plant": "Betel",
+    "author": "No machine-readable author provided. Pamri assumed (based on copyright claims).",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=425971"
+  },
+  "obat-4": {
+    "plant": "Gotu Kola",
+    "author": "Shahidul Hasan Roman",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=74535874"
+  },
+  "obat-5": {
+    "plant": "Noni",
+    "author": "Wilfredor",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=4998504"
+  },
+  "herbal-1": {
+    "plant": "Red Ginger",
+    "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=5111564"
+  },
+  "herbal-2": {
+    "plant": "Aloe Vera",
+    "author": "Collage by en:User:MidgleyDJ, original images from Wikimedia commons (Image:Aloe_vera_offsets.jpg and Image:Aloe_vera_C.jpg)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=5084561"
+  },
+  "herbal-3": {
+    "plant": "Turmeric",
+    "author": "SKsiddhartthan",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=57815967"
+  },
+  "herbal-4": {
+    "plant": "Lemongrass",
+    "author": "Raffi Kojian",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=12735540"
+  },
+  "herbal-5": {
+    "plant": "Aromatic Ginger (Kencur)",
+    "author": "Unknown",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=219080"
+  },
+  "aroma-1": {
+    "plant": "Rosemary",
+    "author": "Margalob",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=47807064"
+  },
+  "aroma-2": {
+    "plant": "Lavender",
+    "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=255365"
+  },
+  "aroma-3": {
+    "plant": "Mint",
+    "author": "Simon Eugster --Simon 13:07, 2 July 2006 (UTC)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=913901"
+  },
+  "aroma-4": {
+    "plant": "Pandan",
+    "author": "Zuhairali",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=15885636"
+  },
+  "sayur-7": {
+    "plant": "Eggplant",
+    "author": "Joydeep",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=20825279"
+  },
+  "sayur-8": {
+    "plant": "Cucumber",
+    "author": "Stephen Ausmus, USDA ARS",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=2140104"
+  },
+  "sayur-9": {
+    "plant": "Carrot",
+    "author": "Alvesgaspar",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=4077304"
+  },
+  "sayur-10": {
+    "plant": "Green Beans",
+    "author": "Rasbak",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=265128"
+  },
+  "buah-1": {
+    "plant": "Strawberry",
+    "author": "Ivar Leidus",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=114685374"
+  },
+  "buah-2": {
+    "plant": "Papaya",
+    "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=255295"
+  },
+  "buah-3": {
+    "plant": "Red Guava",
+    "author": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=181764532"
+  },
+  "buah-4": {
+    "plant": "Cavendish Banana",
+    "author": "Miya.m",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=4908396"
+  },
+  "buah-5": {
+    "plant": "Key Lime",
+    "author": "Dinesh Valke from Thane, India",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=118007629"
+  },
+  "buah-6": {
+    "plant": "Mini Watermelon",
+    "author": "Fred Hsu (Wikipedia:User:Fred Hsu on en.wikipedia)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=9534738"
+  },
+  "buah-7": {
+    "plant": "Grape",
+    "author": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=1022691"
+  },
+  "hias-11": {
+    "plant": "Peace Lily",
+    "author": "W.carter",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=56832990"
+  },
+  "hias-12": {
+    "plant": "Anthurium",
+    "author": "Taken by Fanghong",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=849756"
+  },
+  "hias-13": {
+    "plant": "Marble Queen Pothos",
+    "author": "Mokkie",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=33046648"
+  },
+  "hias-14": {
+    "plant": "Rubber Plant",
+    "author": "B.navez",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=2754867"
+  },
+  "hias-15": {
+    "plant": "Bird of Paradise",
+    "author": "Gabriel Collares",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=189470465"
+  },
+  "sayur-11": {
+    "plant": "Pak Choi",
+    "author": "TeunSpaans",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=96733"
+  },
+  "sayur-12": {
+    "plant": "Bell Pepper",
+    "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=255292"
+  },
+  "obat-6": {
+    "plant": "Temulawak (Javanese Ginger)",
+    "author": "Danny Steven S.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=19915679"
+  },
+  "obat-7": {
+    "plant": "Sambung Nyawa (Longevity Spinach)",
+    "author": "Shahidul Hasan Roman",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=74533879"
+  },
+  "obat-8": {
+    "plant": "Aloe Vera",
+    "author": "Collage by en:User:MidgleyDJ, original images from Wikimedia commons (Image:Aloe_vera_offsets.jpg and Image:Aloe_vera_C.jpg)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=5084561"
+  },
+  "obat-10": {
+    "plant": "Black Cumin",
+    "author": "AndreHolz at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=20086310"
+  },
+  "herbal-6": {
+    "plant": "Basil",
+    "author": "Photo by David J. Stang",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=61034900"
+  },
+  "herbal-7": {
+    "plant": "Coriander / Cilantro",
+    "author": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=255535"
+  },
+  "herbal-8": {
+    "plant": "Green Onion",
+    "author": "Farm",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=758792"
+  },
+  "herbal-9": {
+    "plant": "Cinnamon",
+    "author": "Unknown",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=560025"
+  },
+  "herbal-10": {
+    "plant": "Citronella Grass",
+    "author": "James Steakley",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=26580842"
+  },
+  "aroma-5": {
+    "plant": "Oregano",
+    "author": "Ivar Leidus",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=27022585"
+  },
+  "aroma-6": {
+    "plant": "Thyme",
+    "author": "Henry Brisse (upload by user:Abalg)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=2864867"
+  },
+  "aroma-7": {
+    "plant": "Lemon Balm",
+    "author": "Amitchell125",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=106078428"
+  },
+  "buah-8": {
+    "plant": "Hydroponic Cherry Tomato",
+    "author": "Softeis",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=143779"
+  },
+  "buah-9": {
+    "plant": "Melon",
+    "author": "Seth Vidal",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=4832830"
+  },
+  "buah-10": {
+    "plant": "Blueberry",
+    "author": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=146498"
+  },
+  "buah-11": {
+    "plant": "Starfruit",
+    "author": "Unknown",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=298735"
+  },
+  "buah-12": {
+    "plant": "Water Apple",
+    "author": "Francisco Manuel Blanco (O.S.A.)",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=5833626"
+  },
+  "buah-13": {
+    "plant": "Passion Fruit",
+    "author": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=1049255"
+  },
+  "buah-14": {
+    "plant": "Fig",
+    "author": "Trew, C.J",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=22318968"
+  },
+  "buah-15": {
+    "plant": "Avocado",
+    "author": "B.navez",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=4877156"
+  },
+  "buah-16": {
+    "plant": "Mini Date Palm",
+    "author": "Nepenthes",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=7386448"
+  },
+  "hias-16": {
+    "plant": "Fiddle Leaf Fig",
+    "author": "Forest &amp; Kim Starr",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=6115788"
+  },
+  "hias-17": {
+    "plant": "Spider Plant",
+    "author": "Digigalos",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=4746014"
+  },
+  "hias-18": {
+    "plant": "Jade Plant",
+    "author": "author is sannse.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=56447"
+  },
+  "hias-19": {
+    "plant": "Boston Fern",
+    "author": "Homer Edward Price",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=34931143"
+  },
+  "hias-20": {
+    "plant": "Chinese Money Plant",
+    "author": "Husky",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=39402683"
+  },
+  "hias-21": {
+    "plant": "String of Pearls",
+    "author": "Flickr user Forest and Kim Starr",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=29575798"
+  },
+  "hias-22": {
+    "plant": "Hoya / Wax Plant",
+    "author": "Yvan leduc",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=2633999"
+  },
+  "hias-23": {
+    "plant": "English Ivy",
+    "author": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=128844239"
+  },
+  "hias-24": {
+    "plant": "Areca Palm",
+    "author": "Ping an Chang",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=105166296"
+  },
+  "hias-25": {
+    "plant": "African Violet",
+    "author": "M. S. del. ( = Matilda Smith, 1854-1926), J. N. Fitch lith. ( = John Nugent Fitch, 1840–1927) Description by Joseph Dalton Hooker (1817—1911) Colour and contrast altered to remove paper yellowing by Peter coxhead",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=87970908"
+  },
+  "hias-26": {
+    "plant": "Inch Plant / Wandering Jew",
+    "author": "Ruestz (upload 13:54, 11 January 2008)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=3371721"
+  },
+  "hias-27": {
+    "plant": "Echeveria",
+    "author": "EriaWei",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=63730044"
+  },
+  "hias-28": {
+    "plant": "Croton",
+    "author": "Louise Wolff --darina 23:22, 6 May 2005 (UTC)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=132383"
+  },
+  "hias-29": {
+    "plant": "Dragon Tree",
+    "author": "No machine-readable author provided. B.navez assumed (based on copyright claims).",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=608618"
+  },
+  "hias-30": {
+    "plant": "Parlor Palm",
+    "author": "Bachelot Pierre J-P",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=28859185"
+  },
+  "hias-31": {
+    "plant": "Bird's Nest Fern",
+    "author": "Obsidian Soul",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=120350028"
+  },
+  "hias-32": {
+    "plant": "Coleus",
+    "author": "Bjoertvedt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=48784530"
+  },
+  "hias-33": {
+    "plant": "Polka Dot Plant",
+    "author": "Forest &amp; Kim Starr",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=6169225"
+  },
+  "hias-34": {
+    "plant": "Prayer Plant",
+    "author": "Kurt Stüber [1]",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=3609"
+  },
+  "hias-35": {
+    "plant": "Nerve Plant",
+    "author": "Louise Wolff --darina 00:12, 7 May 2005 (UTC)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=132446"
+  },
+  "hias-36": {
+    "plant": "Dieffenbachia",
+    "author": "Forest &amp; Kim Starr",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=6178632"
+  },
+  "hias-37": {
+    "plant": "Umbrella Plant (Schefflera)",
+    "author": "JMK",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=23108786"
+  },
+  "hias-38": {
+    "plant": "Ponytail Palm",
+    "author": "juancruzado",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=115071317"
+  },
+  "hias-39": {
+    "plant": "Kalanchoe",
+    "author": "বাক্যবাগীশ",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=88284685"
+  },
+  "hias-40": {
+    "plant": "Christmas Cactus",
+    "author": "Cactus_de_noël.jpg: Empereur Day derivative work: Peter coxhead (talk)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=17168162"
+  },
+  "hias-41": {
+    "plant": "Yucca",
+    "author": "H. Zell",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=55485165"
+  },
+  "hias-42": {
+    "plant": "Air Plant",
+    "author": "Andrey Zharkikh from Salt Lake City, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=60758091"
+  },
+  "hias-43": {
+    "plant": "Peperomia",
+    "author": "Jerzy Opioła",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=9019993"
+  },
+  "hias-44": {
+    "plant": "Norfolk Island Pine",
+    "author": "thinboyfatter",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=4175460"
+  },
+  "hias-45": {
+    "plant": "String of Hearts",
+    "author": "Photo: Dr. David Midgley",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=4509072"
+  },
+  "herbal-11": {
+    "plant": "Parsley",
+    "author": "Jonathunder",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=29637295"
+  },
+  "herbal-12": {
+    "plant": "Dill",
+    "author": "Illustration_Anethum_graveolens0.jpg: Prof. Dr. Otto Wilhelm Thomé derivative work: Aroche (talk)",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=6851092"
+  },
+  "herbal-13": {
+    "plant": "Sage",
+    "author": "Kurt Stüber [1]",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=8109"
+  },
+  "herbal-14": {
+    "plant": "Chives",
+    "author": "Ivar Leidus",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=74601245"
+  },
+  "herbal-15": {
+    "plant": "Marjoram",
+    "author": "H. Zell",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=10763816"
+  },
+  "herbal-16": {
+    "plant": "Fennel",
+    "author": "Alvesgaspar",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=15855012"
+  },
+  "sayur-13": {
+    "plant": "Kale",
+    "author": "Rasbak",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=119948"
+  },
+  "sayur-14": {
+    "plant": "Broccoli",
+    "author": "Fir0002",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=5772317"
+  },
+  "sayur-15": {
+    "plant": "Radish",
+    "author": "Self, en:User:Jengod",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=6292330"
+  },
+  "sayur-16": {
+    "plant": "Beetroot",
+    "author": "BriannaWalther",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=7155494"
+  },
+  "sayur-17": {
+    "plant": "Zucchini",
+    "author": "Evan-Amos",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=33736235"
+  },
+  "sayur-18": {
+    "plant": "Arugula",
+    "author": "Stefan.lefnaer",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=85145814"
+  },
+  "buah-17": {
+    "plant": "Lemon",
+    "author": "Elena Chochkova",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=3145063"
+  },
+  "buah-18": {
+    "plant": "Pomegranate",
+    "author": "Augustus Binu : flickr",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=75662186"
+  },
+  "buah-19": {
+    "plant": "Dragon Fruit",
+    "author": "SMasters",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=11849341"
+  },
+  "buah-20": {
+    "plant": "Pineapple",
+    "author": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Sigma 150mm f/2.8",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=5765391"
+  },
+  "buah-21": {
+    "plant": "Raspberry",
+    "author": "Kollányi Gábor",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=58820031"
+  },
+  "buah-22": {
+    "plant": "Mango",
+    "author": "Billjones94",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=119142930"
+  },
+  "aroma-8": {
+    "plant": "Chamomile",
+    "author": "Alvesgaspar",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=3636530"
+  },
+  "aroma-9": {
+    "plant": "Jasmine",
+    "author": "Botanical Magazine",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=7837196"
+  },
+  "aroma-10": {
+    "plant": "Scented Geranium",
+    "author": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=166259726"
+  },
+  "aroma-11": {
+    "plant": "Eucalyptus",
+    "author": "Ian Brooker and David Kleinig",
+    "license": "CC BY 3.0 au",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/au/deed.en",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=80482632"
+  },
+  "obat-11": {
+    "plant": "Echinacea",
+    "author": "Eric Hunt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=74955301"
+  },
+  "obat-12": {
+    "plant": "Ashwagandha",
+    "author": "Wowbobwow12",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=60520795"
+  },
+  "hias-46": {
+    "plant": "Money Tree",
+    "author": "Dennis G. Jarvis",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=22623160"
+  },
+  "hias-47": {
+    "plant": "Bromeliad",
+    "author": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=114735"
+  },
+  "hias-48": {
+    "plant": "Lucky Bamboo",
+    "author": "Cataleirxs",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=142921614"
+  },
+  "hias-49": {
+    "plant": "Rex Begonia",
+    "author": "Swallowtail Garden Seeds",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=155354885"
+  },
+  "hias-50": {
+    "plant": "Calathea Orbifolia",
+    "author": "Fregisseur",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=68313913"
+  },
+  "hias-51": {
+    "plant": "Philodendron Brasil",
+    "author": "KENPEI",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=1025329"
+  },
+  "hias-52": {
+    "plant": "Arrowhead Plant",
+    "author": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=134864"
+  },
+  "hias-53": {
+    "plant": "Swiss Cheese Vine",
+    "author": "Aitor",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=115927834"
+  },
+  "hias-54": {
+    "plant": "Cast Iron Plant",
+    "author": "KENPEI",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=180498"
+  },
+  "hias-55": {
+    "plant": "Coffee Plant",
+    "author": "Marcelo Corrêa",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=85360"
+  },
+  "hias-56": {
+    "plant": "Purple Heart",
+    "author": "Krzysztof Ziarnek, Kenraiz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=76409655"
+  },
+  "hias-57": {
+    "plant": "Watermelon Peperomia",
+    "author": "James Steakley",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=14770059"
+  },
+  "hias-58": {
+    "plant": "Zebra Haworthia",
+    "author": "stephen boisvert from Chicago, United States",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=25038398"
+  },
+  "hias-59": {
+    "plant": "Burro's Tail",
+    "author": "Morningdew51 at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=2518633"
+  },
+  "hias-60": {
+    "plant": "Ti Plant",
+    "author": "Dick Culbert from Gibsons, B.C., Canada",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=50113672"
+  },
+  "hias-61": {
+    "plant": "Maidenhair Fern",
+    "author": "Forest &amp; Kim Starr",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=6196665"
+  },
+  "hias-62": {
+    "plant": "Staghorn Fern",
+    "author": "Krzysztof Ziarnek, Kenraiz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=97985503"
+  },
+  "hias-63": {
+    "plant": "Aluminum Plant",
+    "author": "Taken by Fanghong",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=216991"
+  },
+  "hias-64": {
+    "plant": "Asparagus Fern",
+    "author": "Photo by and (c)2006 Derek Ramsey (Ram-Man). Location credit to the Chanticleer Garden.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=1191941"
+  },
+  "hias-65": {
+    "plant": "Stromanthe Triostar",
+    "author": "Aleph500Dadamz",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=84132996"
+  },
+  "hias-66": {
+    "plant": "Lipstick Plant",
+    "author": "Michael Wolf",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=2971113"
+  },
+  "hias-67": {
+    "plant": "Kentia Palm",
+    "author": "Black Diamond Images",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=4469606"
+  },
+  "hias-68": {
+    "plant": "Philodendron Birkin",
+    "author": "Daderot",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=55323959"
+  },
+  "hias-69": {
+    "plant": "Anthurium Clarinervium",
+    "author": "Nadiatalent",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=36886643"
+  },
+  "hias-70": {
+    "plant": "String of Bananas",
+    "author": "KaitM42",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=18485943"
+  },
+  "hias-71": {
+    "plant": "Lace Aloe",
+    "author": "Chhe (talk)",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=18211422"
+  },
+  "hias-72": {
+    "plant": "Ctenanthe",
+    "author": "Benutzer:Callipides",
+    "license": "CC BY-SA 2.0 de",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=18095761"
+  },
+  "hias-73": {
+    "plant": "Goldfish Plant",
+    "author": "Dinkum",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=26760899"
+  },
+  "hias-74": {
+    "plant": "Majesty Palm",
+    "author": "Stickpen",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=4486486"
+  },
+  "hias-75": {
+    "plant": "Sweetheart Hoya",
+    "author": "Hobbykafe",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=10119785"
+  },
+  "buah-23": {
+    "plant": "Orange",
+    "author": "Ellen Levy Finch (Elf)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=39146"
+  },
+  "buah-24": {
+    "plant": "Lychee",
+    "author": "B.navez",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=1463941"
+  },
+  "buah-25": {
+    "plant": "Longan",
+    "author": "Pouletic",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=16107040"
+  },
+  "buah-26": {
+    "plant": "Rambutan",
+    "author": "Muhammad Mahdi Karim",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=7782271"
+  },
+  "buah-27": {
+    "plant": "Soursop",
+    "author": "Damien Boilley from suburbs of Paris, France",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=529233"
+  },
+  "buah-28": {
+    "plant": "Sugar Apple",
+    "author": "Muhammad Mahdi Karim",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=9421674"
+  },
+  "buah-29": {
+    "plant": "Jackfruit",
+    "author": "This work was made by Tushar Hossain and released under the license(s) stated below. Please feel free to use it for any purpose as long as you credit Tushar Hossain as author and follow the terms of the chosen license. If you use this work outside of the Wikimedia projects, I would very much like to get a note from you. Thanks!",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=189716391"
+  },
+  "buah-30": {
+    "plant": "Durian",
+    "author": "Creator:Hoola Van Nooten (fl 1863-1885),",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=599340"
+  },
+  "buah-31": {
+    "plant": "Mangosteen",
+    "author": "Berthe Hoola van Nooten (1817-1892), Pieter De Pannemaeker (lithographer)",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=6669786"
+  },
+  "buah-32": {
+    "plant": "Salak (Snake Fruit)",
+    "author": "Crisco 1492",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=40256640"
+  },
+  "buah-33": {
+    "plant": "Sapodilla (Sawo)",
+    "author": "Sugeesh at Malayalam Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=12744924"
+  },
+  "buah-34": {
+    "plant": "Persimmon",
+    "author": "Sphl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=1208311"
+  },
+  "buah-35": {
+    "plant": "Kiwi",
+    "author": "Luis Miguel Bugallo Sánchez (Lmbuga) Copyright: GFDL (GNU Free Documentation License) Publicada por/Publish by: Luis Miguel Bugallo Sánchez",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=682676"
+  },
+  "buah-36": {
+    "plant": "Apple",
+    "author": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Sigma 150mm f/2.8",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=5765394"
+  },
+  "sayur-19": {
+    "plant": "Cauliflower",
+    "author": "Coyau",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=31366442"
+  },
+  "sayur-20": {
+    "plant": "Cabbage",
+    "author": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Sigma 150mm f/2.8",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=7631921"
+  },
+  "sayur-21": {
+    "plant": "Celery",
+    "author": "Lombroso",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=3347071"
+  },
+  "sayur-22": {
+    "plant": "Swiss Chard",
+    "author": "Neelix at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=6832849"
+  },
+  "sayur-23": {
+    "plant": "Okra",
+    "author": "Earth100",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=20903977"
+  },
+  "sayur-24": {
+    "plant": "Garden Pea",
+    "author": "Bill Ebbesen",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=15727721"
+  },
+  "sayur-25": {
+    "plant": "Sweet Potato",
+    "author": "Llez",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=10483011"
+  },
+  "sayur-26": {
+    "plant": "Pumpkin",
+    "author": "George Chernilevsky",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=21476676"
+  },
+  "sayur-27": {
+    "plant": "Sweet Corn",
+    "author": "Unknown",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=644179"
+  },
+  "sayur-28": {
+    "plant": "Leek",
+    "author": "Amada44",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=141806646"
+  },
+  "sayur-29": {
+    "plant": "Shallot",
+    "author": "No machine-readable author provided. Charles P. assumed (based on copyright claims).",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=111536"
+  },
+  "sayur-30": {
+    "plant": "Yardlong Bean",
+    "author": "Francisco Manuel Blanco (O.S.A.)",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=6013103"
+  },
+  "herbal-17": {
+    "plant": "Curry Leaf",
+    "author": "Rantingsteve at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=3518477"
+  },
+  "herbal-18": {
+    "plant": "Bay Laurel",
+    "author": "Forest and Kim Starr",
+    "license": "CC BY 3.0 us",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/deed.en",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=70630996"
+  },
+  "herbal-19": {
+    "plant": "Lemon Verbena",
+    "author": "H. Zell",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=9008346"
+  },
+  "herbal-20": {
+    "plant": "Stevia",
+    "author": "Ethel Aardvark",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=4459502"
+  },
+  "herbal-21": {
+    "plant": "Winter Savory",
+    "author": "Kurt Stüber [1]",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=3407"
+  },
+  "herbal-22": {
+    "plant": "Lovage",
+    "author": "4028mdk09",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=10216137"
+  },
+  "herbal-23": {
+    "plant": "Tarragon",
+    "author": "No machine-readable author provided. Ies assumed (based on copyright claims).",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=2132540"
+  },
+  "herbal-24": {
+    "plant": "Holy Basil (Tulsi)",
+    "author": "Shashidhara halady",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=42947318"
+  },
+  "aroma-12": {
+    "plant": "Ylang-Ylang",
+    "author": "Vinayaraj",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=27556527"
+  },
+  "aroma-13": {
+    "plant": "Patchouli",
+    "author": "No machine-readable author provided. Valérie75 assumed (based on copyright claims).",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=875908"
+  },
+  "aroma-14": {
+    "plant": "Vetiver",
+    "author": "Ratel",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=64825315"
+  },
+  "aroma-15": {
+    "plant": "Tuberose",
+    "author": "SKsiddhartthan",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=57785267"
+  },
+  "aroma-16": {
+    "plant": "Gardenia",
+    "author": "Adriel anv00",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=58527029"
+  },
+  "aroma-17": {
+    "plant": "Curry Plant",
+    "author": "(c) 2005 Zubro",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=434206"
+  },
+  "obat-13": {
+    "plant": "Moringa",
+    "author": "Venkatx5",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=20134455"
+  },
+  "obat-14": {
+    "plant": "Neem",
+    "author": "TheSlumPanda",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=158134568"
+  },
+  "obat-15": {
+    "plant": "Bitter Melon",
+    "author": "Francisco Manuel Blanco (O.S.A.)",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=1274001"
+  },
+  "obat-16": {
+    "plant": "Roselle",
+    "author": "Invertzoo",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=35518920"
+  },
+  "obat-17": {
+    "plant": "Insulin Plant",
+    "author": "C T Johansson",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=11339325"
+  },
+  "obat-18": {
+    "plant": "Toothache Plant",
+    "author": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "https://commons.wikimedia.org/w/index.php?curid=78016"
+  },
+  "hias-2": {
+    "plant": "Aglaonema",
+    "author": "Unsplash",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "source": "https://images.unsplash.com/photo-1632207691143-643e2a9a9361"
+  },
+  "sayur-2": {
+    "plant": "Water Spinach",
+    "author": "Unsplash",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "source": "https://images.unsplash.com/photo-1637694841812-34de87c60b53"
+  },
+  "obat-9": {
+    "plant": "Brotowali",
+    "author": "Unsplash",
+    "license": "Unsplash License",
+    "licenseUrl": "https://unsplash.com/license",
+    "source": "https://images.unsplash.com/photo-1444459094717-a39ececb2069"
+  }
+}
