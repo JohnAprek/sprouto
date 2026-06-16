@@ -350,8 +350,6 @@ function Home() {
         </div>
         <div className="hero-visual">
           {heroPlant && plantImg(heroPlant) && <img className="home-hero-img" src={plantImg(heroPlant)} alt="" loading="lazy" />}
-          <img className="home-hero-bot" src={`${import.meta.env.BASE_URL}pwa-192x192.png`} alt="" loading="lazy" />
-          <span className="hero-heart">&hearts;</span>
         </div>
         <div className="care-alert" onClick={() => navigate(gardenPlants.length ? '/kalender' : '/ensiklopedia')}>
           <div className="care-alert-ico"><Droplets size={20} /></div>
