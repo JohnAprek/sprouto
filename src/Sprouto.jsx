@@ -1283,13 +1283,13 @@ function CareAssistant() {
   ].join('\n');
 
   const askAI = async () => {
-    if (!AI_PROXY_URL || !result?.plant) return;
+    if (!AI_PROXY_URL || !q.trim()) return;
     setAiLoading(true); setAiAnswer(null);
     try {
       const res = await fetch(AI_PROXY_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question: q, context: plantContext(result.plant), lang }),
+        body: JSON.stringify({ question: q, context: result?.plant ? plantContext(result.plant) : '', lang }),
       });
       const data = await res.json();
       setAiAnswer(data.answer ? { text: data.answer } : { error: true });
@@ -1349,6 +1349,21 @@ function CareAssistant() {
     }
   };
 
+  const aiButton = AI_PROXY_URL ? (
+    <button onClick={askAI} disabled={aiLoading} style={{ background: 'linear-gradient(135deg, var(--primary-dark), var(--primary))', color: 'white', border: 'none', borderRadius: '10px', padding: '8px 14px', fontWeight: 700, fontSize: '0.8rem', cursor: aiLoading ? 'default' : 'pointer', opacity: aiLoading ? 0.7 : 1 }}>
+      {aiLoading ? L.assistant_ai_thinking : L.assistant_ask_ai}
+    </button>
+  ) : null;
+
+  const aiBlock = aiAnswer ? (
+    <div style={{ marginTop: '14px', borderTop: '1px solid var(--border-color)', paddingTop: '12px' }}>
+      <p style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px', color: 'var(--primary)', marginBottom: '4px' }}>✨ Sprouto AI</p>
+      {aiAnswer.error
+        ? <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{L.assistant_ai_error}</p>
+        : <p style={{ fontSize: '0.88rem', color: 'var(--text-main)', lineHeight: 1.55, whiteSpace: 'pre-wrap' }}>{aiAnswer.text}</p>}
+    </div>
+  ) : null;
+
   return (
     <main className="main-content animate-fade-up">
       <div style={{ marginBottom: '16px' }}>
@@ -1388,23 +1403,16 @@ function CareAssistant() {
             </div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginTop: '14px', flexWrap: 'wrap' }}>
               <button onClick={() => navigate(`/tanaman/${result.plant.id}`)} style={{ background: 'none', border: 'none', color: 'var(--primary)', fontWeight: 700, fontSize: '0.82rem', cursor: 'pointer', padding: 0 }}>{L.assistant_open}</button>
-              {AI_PROXY_URL && (
-                <button onClick={askAI} disabled={aiLoading} style={{ background: 'linear-gradient(135deg, var(--primary-dark), var(--primary))', color: 'white', border: 'none', borderRadius: '10px', padding: '8px 14px', fontWeight: 700, fontSize: '0.8rem', cursor: aiLoading ? 'default' : 'pointer', opacity: aiLoading ? 0.7 : 1 }}>
-                  {aiLoading ? L.assistant_ai_thinking : L.assistant_ask_ai}
-                </button>
-              )}
+              {aiButton}
             </div>
-            {aiAnswer && (
-              <div style={{ marginTop: '14px', borderTop: '1px solid var(--border-color)', paddingTop: '12px' }}>
-                <p style={{ fontSize: '0.72rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px', color: 'var(--primary)', marginBottom: '4px' }}>✨ Sprouto AI</p>
-                {aiAnswer.error
-                  ? <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{L.assistant_ai_error}</p>
-                  : <p style={{ fontSize: '0.88rem', color: 'var(--text-main)', lineHeight: 1.55, whiteSpace: 'pre-wrap' }}>{aiAnswer.text}</p>}
-              </div>
-            )}
+            {aiBlock}
           </div>
         ) : (
-          <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', lineHeight: 1.6, padding: '8px 4px' }}>{L.assistant_no_plant}</p>
+          <div style={{ background: 'var(--surface)', borderRadius: '16px', padding: '16px', boxShadow: 'var(--shadow-sm)' }}>
+            <p style={{ color: 'var(--text-muted)', fontSize: '0.88rem', lineHeight: 1.6, marginBottom: aiButton ? '12px' : 0 }}>{L.assistant_no_plant}</p>
+            {aiButton}
+            {aiBlock}
+          </div>
         )
       )}
 
