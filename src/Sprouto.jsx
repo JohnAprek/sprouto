@@ -642,11 +642,11 @@ function PlantCard({ plant, onClick }) {
 // This is the deployed Cloudflare WORKER URL (e.g. https://sprouto-ai.<sub>.workers.dev).
 // NOT an API key — the API key only ever lives in Cloudflare (see workers/README.md).
 // Empty = deterministic instant answers only.
-const AI_PROXY_URL = '';
+const AI_PROXY_URL = 'https://sprouto-ai.johnaprek.workers.dev';
 
 // --- Plant identification (camera) ---
 // Your worker's /identify endpoint (Pl@ntNet). Empty = camera ID hidden.
-const IDENTIFY_URL = '';
+const IDENTIFY_URL = 'https://sprouto-ai.johnaprek.workers.dev/identify';
 
 // --- Affiliate / marketplace supply links ---
 // Set amazonTag to your Amazon Associates tag to monetize EN links.
