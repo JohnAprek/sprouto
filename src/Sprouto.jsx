@@ -650,7 +650,7 @@ const IDENTIFY_URL = 'https://sprouto-ai.johnaprek.workers.dev/identify';
 
 // --- Affiliate / marketplace supply links ---
 // Set amazonTag to your Amazon Associates tag to monetize EN links.
-const AFFILIATE = { amazonTag: '' };
+const AFFILIATE = { amazonTag: 'sproutoapp-20' };
 function supplyUrl(query, lang) {
   if (lang === 'id') return 'https://www.tokopedia.com/search?st=product&q=' + encodeURIComponent(query);
   const tag = AFFILIATE.amazonTag ? '&tag=' + encodeURIComponent(AFFILIATE.amazonTag) : '';
@@ -810,6 +810,9 @@ function PlantDetail() {
               </a>
             ))}
           </div>
+          {lang === 'en' && AFFILIATE.amazonTag && (
+            <p style={{ fontSize: '0.72rem', color: 'var(--text-muted)', marginTop: '10px', lineHeight: 1.5 }}>{L.supplies_disclosure}</p>
+          )}
         </div>
 
         {/* --- PANDUAN MENANAM STATIS --- */}

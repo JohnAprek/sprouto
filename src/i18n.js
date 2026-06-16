@@ -78,6 +78,7 @@ const STR = {
     fav_subtitle: 'Plants you want to grow — your wishlist.',
     supplies_title: '🛒 Recommended supplies',
     supply_soil: 'Potting mix', supply_pot: 'Plant pot', supply_fertilizer: 'Fertilizer', supply_rockwool: 'Rockwool', supply_nutrient: 'AB Mix nutrient',
+    supplies_disclosure: 'As an Amazon Associate, Sprouto earns from qualifying purchases.',
 
     garden_title: '🌿 My Garden',
     garden_summary: (plants, tasks) => `${plants} plants · ${tasks} tasks today`,
@@ -195,6 +196,7 @@ const STR = {
     fav_subtitle: 'Tanaman yang ingin kamu tanam — wishlist-mu.',
     supplies_title: '🛒 Perlengkapan yang disarankan',
     supply_soil: 'Media tanam', supply_pot: 'Pot tanaman', supply_fertilizer: 'Pupuk', supply_rockwool: 'Rockwool', supply_nutrient: 'Nutrisi AB Mix',
+    supplies_disclosure: 'Sebagai Amazon Associate, Sprouto memperoleh komisi dari pembelian yang memenuhi syarat.',
 
     garden_title: '🌿 Kebunku',
     garden_summary: (plants, tasks) => `${plants} tanaman · ${tasks} tugas hari ini`,
