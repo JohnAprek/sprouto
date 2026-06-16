@@ -236,7 +236,7 @@ function Header() {
   const { isDarkMode, setIsDarkMode, lang, setLang, L } = React.useContext(AppContext);
   const navigate = useNavigate();
   const location = useLocation();
-  const showBack = !['/', '/ensiklopedia', '/favorit', '/panduan', '/kalkulator', '/kalender'].includes(location.pathname);
+  const showBack = !['/', '/ensiklopedia', '/favorit', '/panduan', '/kalkulator', '/kalender', '/profile'].includes(location.pathname);
 
   return (
     <header className="app-header">
@@ -276,26 +276,34 @@ function BottomNav() {
   const location = useLocation();
   const { L } = React.useContext(AppContext);
 
-  const navItems = [
+  const left = [
     { path: '/', icon: <HomeIcon size={22} />, label: L.nav_home },
-    { path: '/ensiklopedia', icon: <BookOpen size={22} />, label: L.nav_catalog },
-    { path: '/favorit', icon: <Heart size={22} />, label: L.nav_favorites },
-    { path: '/panduan', icon: <span style={{fontSize:'1.2rem'}}>📚</span>, label: L.nav_guide },
-    { path: '/kalender', icon: <span style={{fontSize:'1.2rem'}}>🪴</span>, label: L.nav_garden }
+    { path: '/kalender', icon: <Sprout size={22} />, label: L.nav_myplants },
   ];
+  const right = [
+    { path: '/ensiklopedia', icon: <BookOpen size={22} />, label: L.nav_discover },
+    { path: '/profile', icon: <User size={22} />, label: L.nav_profile },
+  ];
+  const NavBtn = (item) => (
+    <button
+      key={item.path}
+      className={`nav-item ${location.pathname === item.path ? 'active' : ''}`}
+      onClick={() => navigate(item.path)}
+    >
+      {item.icon}
+      <span>{item.label}</span>
+    </button>
+  );
 
   return (
     <nav className="bottom-nav">
-      {navItems.map(item => (
-        <button 
-          key={item.path}
-          className={`nav-item ${location.pathname === item.path ? 'active' : ''}`}
-          onClick={() => navigate(item.path)}
-        >
-          {item.icon}
-          <span>{item.label}</span>
+      {left.map(NavBtn)}
+      <div className="nav-fab-slot">
+        <button className="nav-fab" onClick={() => navigate('/identifikasi')} aria-label={L.identify_title}>
+          <Sprout size={26} />
         </button>
-      ))}
+      </div>
+      {right.map(NavBtn)}
     </nav>
   );
 }
@@ -1841,6 +1849,15 @@ function Profile() {
       </div>
 
       <div style={{ marginTop: '20px', background: 'var(--surface)', borderRadius: '16px', boxShadow: 'var(--shadow-sm)', overflow: 'hidden' }}>
+        <button onClick={() => navigate('/favorit')} style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'none', border: 'none', borderBottom: '1px solid var(--border-color)', padding: '14px 16px', cursor: 'pointer', color: 'var(--text-main)', fontSize: '0.9rem', fontWeight: 600 }}>
+          <span>❤️ {L.nav_favorites}</span><span style={{ opacity: 0.4 }}>›</span>
+        </button>
+        <button onClick={() => navigate('/panduan')} style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'none', border: 'none', borderBottom: '1px solid var(--border-color)', padding: '14px 16px', cursor: 'pointer', color: 'var(--text-main)', fontSize: '0.9rem', fontWeight: 600 }}>
+          <span>📚 {L.nav_guide}</span><span style={{ opacity: 0.4 }}>›</span>
+        </button>
+        <button onClick={() => navigate('/kalkulator')} style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'none', border: 'none', borderBottom: '1px solid var(--border-color)', padding: '14px 16px', cursor: 'pointer', color: 'var(--text-main)', fontSize: '0.9rem', fontWeight: 600 }}>
+          <span>{L.calc_title}</span><span style={{ opacity: 0.4 }}>›</span>
+        </button>
         <button onClick={() => navigate('/kredit')} style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'none', border: 'none', borderBottom: '1px solid var(--border-color)', padding: '14px 16px', cursor: 'pointer', color: 'var(--text-main)', fontSize: '0.9rem', fontWeight: 600 }}>
           <span>📷 {L.credits_title}</span><span style={{ opacity: 0.4 }}>›</span>
         </button>

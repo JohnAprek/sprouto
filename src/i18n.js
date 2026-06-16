@@ -35,6 +35,7 @@ const STR = {
   en: {
     headerSubtitle: 'Plant Care Companion',
     nav_home: 'Home', nav_catalog: 'Catalog', nav_favorites: 'Favorites', nav_guide: 'Guide', nav_garden: 'My Garden',
+    nav_myplants: 'My Plants', nav_discover: 'Discover', nav_profile: 'Profile',
 
     greeting_morning: 'Good morning', greeting_noon: 'Good afternoon', greeting_evening: 'Good evening', greeting_night: 'Good evening',
     hero_subtitle: 'Take care of your plants today and reach the next level.',
@@ -170,6 +171,7 @@ const STR = {
   id: {
     headerSubtitle: 'Teman Rawat Tanaman',
     nav_home: 'Beranda', nav_catalog: 'Katalog', nav_favorites: 'Favorit', nav_guide: 'Panduan', nav_garden: 'Kebunku',
+    nav_myplants: 'Tanamanku', nav_discover: 'Jelajah', nav_profile: 'Profil',
 
     greeting_morning: 'Selamat Pagi', greeting_noon: 'Selamat Siang', greeting_evening: 'Selamat Sore', greeting_night: 'Selamat Malam',
     hero_subtitle: 'Ayo rawat tanamanmu hari ini dan capai level selanjutnya.',
