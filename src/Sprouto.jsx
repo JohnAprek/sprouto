@@ -332,11 +332,17 @@ function Home() {
       {/* Greeting */}
       <div className="home-hero">
         <h2>{greeting}, {profile.name.split(' ')[0]}! {greetIcon}</h2>
-        <p className="hero-sub">{gardenPlants.length > 0 ? L.hero_need_care(gardenPlants.length) : L.hero_subtitle}</p>
-        <button className="hero-cta" onClick={() => navigate(gardenPlants.length ? '/kalender' : '/ensiklopedia')}>
-          {gardenPlants.length ? L.hero_view_tasks : L.add_plant} <span>›</span>
-        </button>
+        <p className="hero-sub">{L.hero_status}</p>
         {heroPlant && plantImg(heroPlant) && <img className="home-hero-img" src={plantImg(heroPlant)} alt="" loading="lazy" />}
+      </div>
+
+      <div className="care-alert" onClick={() => navigate(gardenPlants.length ? '/kalender' : '/ensiklopedia')}>
+        <div className="care-alert-ico"><Droplets size={20} /></div>
+        <div className="care-alert-txt">
+          <h4>{gardenPlants.length ? L.hero_need_care(gardenPlants.length) : L.add_plant}</h4>
+          <p>{gardenPlants.length ? L.needs_care_sub : L.hero_subtitle}</p>
+        </div>
+        <span className="chev">›</span>
       </div>
 
       {/* Stats */}

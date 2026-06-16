@@ -754,3 +754,14 @@ button:active { transform: scale(0.95); }
 .ai-bot img { width: 62px; height: 62px; object-fit: contain; display: block; filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.35)); }
 .tip-ico { background: transparent; width: 52px; height: 52px; }
 .tip-ico img { width: 48px; height: 48px; object-fit: contain; display: block; filter: drop-shadow(0 4px 8px rgba(146, 64, 14, 0.25)); }
+
+/* "Needs care today" alert card */
+.care-alert { display: flex; align-items: center; gap: 12px; background: var(--surface); border: 1.5px solid var(--border-color); border-radius: 16px; padding: 12px 14px; box-shadow: var(--shadow-sm); cursor: pointer; margin: 14px 0 20px; }
+.care-alert-ico { width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(135deg, var(--primary), var(--accent)); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #fff; }
+.care-alert-txt { flex: 1; min-width: 0; }
+.care-alert-txt h4 { font-size: 0.9rem; font-weight: 700; color: var(--text-main); }
+.care-alert-txt p { font-size: 0.73rem; color: var(--text-muted); margin-top: 1px; }
+.care-alert .chev { color: var(--text-muted); opacity: 0.55; font-size: 1.2rem; }
+.care-alert { transition: transform 0.18s cubic-bezier(0.34,1.4,0.64,1), box-shadow 0.2s ease; }
+.care-alert:active { transform: scale(0.98); }
+@media (hover: hover) { .care-alert:hover { box-shadow: var(--shadow-md); border-color: var(--primary); } }
