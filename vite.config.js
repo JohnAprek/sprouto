@@ -12,7 +12,7 @@ export default defineConfig({
       manifest: {
         name: 'Sprouto',
         short_name: 'Sprouto',
-        description: 'Plant care companion: watering & fertilizing schedules, growing guides, hydroponics, and a care calendar for 70+ plants.',
+        description: 'Plant care companion: 200+ plants, watering & fertilizing schedules, growing guides, hydroponics, plant identification, and an AI care assistant.',
         theme_color: '#166534',
         background_color: '#ffffff',
         display: 'standalone',
