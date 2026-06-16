@@ -303,7 +303,7 @@ function BottomNav() {
 // --- 1. Beranda ---
 function Home() {
   const navigate = useNavigate();
-  const { profile, favorites, myGarden, L, plants } = React.useContext(AppContext);
+  const { profile, favorites, toggleFavorite, myGarden, L, lang, plants } = React.useContext(AppContext);
   const hour = new Date().getHours();
   const greeting = hour < 12 ? L.greeting_morning : hour < 15 ? L.greeting_noon : hour < 18 ? L.greeting_evening : L.greeting_night;
   
@@ -317,70 +317,125 @@ function Home() {
     setStreakData({ count: newCount, lastDate: today });
   }, []);
 
+  const greetIcon = hour < 18 ? '☀️' : '🌙';
+  const gardenPlants = myGarden.map(g => plants.find(p => p.id === g.id)).filter(Boolean);
+  const heroPlant = plants.find(p => p.id === 'hias-1') || plants[0];
+  const popular = plants.slice(0, 6);
+  const isFav = (id) => favorites.includes(id);
+  const thumb = (p, cls, fontSize) => plantImg(p)
+    ? <img className={cls} src={plantImg(p)} alt={p.name} loading="lazy" />
+    : <div className={cls} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize }}>{EMOJI_MAP[p.id] || '🌿'}</div>;
+
   return (
     <main className="main-content animate-fade-up">
-      <div className="hero-card">
-        <h2 style={{ fontSize: '1.4rem', fontWeight: '700' }}>{greeting},</h2>
-        <h2 style={{ fontSize: '1.4rem', fontWeight: '300', marginBottom: '8px' }}>{profile.name.split(' ')[0]}!</h2>
-        <p style={{ opacity: 0.9, fontSize: '0.85rem', maxWidth: '80%' }}>
-          {L.hero_subtitle}
-        </p>
-        <span className="hero-emoji">🌿</span>
+      {/* Greeting */}
+      <div className="home-hero">
+        <h2>{greeting}, {profile.name.split(' ')[0]}! {greetIcon}</h2>
+        <p className="hero-sub">{gardenPlants.length > 0 ? L.hero_need_care(gardenPlants.length) : L.hero_subtitle}</p>
+        <button className="hero-cta" onClick={() => navigate(gardenPlants.length ? '/kalender' : '/ensiklopedia')}>
+          {gardenPlants.length ? L.hero_view_tasks : L.add_plant} <span>›</span>
+        </button>
+        {heroPlant && plantImg(heroPlant) && <img className="home-hero-img" src={plantImg(heroPlant)} alt="" loading="lazy" />}
       </div>
 
+      {/* Stats */}
       <div className="stats-grid">
-        <div className="stat-card">
+        <div className="stat-card" onClick={() => navigate('/favorit')} style={{ cursor: 'pointer' }}>
+          <div className="stat-ico" style={{ background: '#fde7ef' }}>❤️</div>
           <div className="stat-val">{favorites.length}</div>
           <div className="stat-lbl">{L.stat_favorites}</div>
         </div>
         <div className="stat-card" onClick={() => navigate('/kalender')} style={{ cursor: 'pointer' }}>
+          <div className="stat-ico" style={{ background: '#dcfce7' }}>🌱</div>
           <div className="stat-val">{myGarden.length}</div>
           <div className="stat-lbl">{L.stat_garden}</div>
         </div>
         <div className="stat-card" onClick={() => navigate('/ensiklopedia')} style={{ cursor: 'pointer' }}>
-          <div className="stat-val">{plants.length}</div>
+          <div className="stat-ico" style={{ background: '#dbeafe' }}>📖</div>
+          <div className="stat-val">{plants.length}+</div>
           <div className="stat-lbl">{L.stat_catalog}</div>
         </div>
         <div className="stat-card">
-          <div className="stat-val">🔥 {streakData.count}</div>
+          <div className="stat-ico" style={{ background: '#fef3c7' }}>🔥</div>
+          <div className="stat-val">{streakData.count}</div>
           <div className="stat-lbl">{L.stat_streak}</div>
         </div>
       </div>
 
-      <button onClick={() => navigate('/asisten')}
-        style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', textAlign: 'left', cursor: 'pointer', marginBottom: IDENTIFY_URL ? '12px' : '24px', background: 'linear-gradient(135deg, var(--primary-dark), var(--primary))', color: 'white', border: 'none', borderRadius: '16px', padding: '14px 16px', boxShadow: 'var(--shadow-sm)' }}>
-        <span style={{ fontSize: '1.6rem' }}>🤖</span>
-        <span style={{ flex: 1, fontWeight: 700, fontSize: '0.95rem' }}>{L.assistant_cta}</span>
-        <span style={{ opacity: 0.8 }}>›</span>
-      </button>
-
-      {IDENTIFY_URL && (
-        <button onClick={() => navigate('/identifikasi')}
-          style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '12px', textAlign: 'left', cursor: 'pointer', marginBottom: '24px', background: 'var(--surface)', color: 'var(--text-main)', border: '1.5px solid var(--border-color)', borderRadius: '16px', padding: '14px 16px', boxShadow: 'var(--shadow-sm)' }}>
-          <span style={{ fontSize: '1.6rem' }}>📷</span>
-          <span style={{ flex: 1, fontWeight: 700, fontSize: '0.95rem' }}>{L.identify_cta}</span>
-          <span style={{ opacity: 0.6 }}>›</span>
-        </button>
-      )}
-
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-        <h3 style={{ fontSize: '1.1rem' }}>{L.popular_plants}</h3>
-        <button style={{ background: 'none', border: 'none', color: 'var(--primary)', fontWeight: '600', fontSize: '0.8rem', cursor: 'pointer' }} onClick={() => navigate('/ensiklopedia')}>{L.see_all}</button>
+      {/* AI banner */}
+      <div className="ai-banner">
+        <div className="ai-bot">🤖</div>
+        <div className="ai-banner-txt">
+          <div className="ai-kicker">✨ {L.ai_kicker}</div>
+          <h3>{L.ai_title}</h3>
+          <p>{L.ai_banner_sub}</p>
+          <button className="ai-ask" onClick={() => navigate('/asisten')}>{L.ai_ask_now} ›</button>
+        </div>
       </div>
 
-      <div className="plant-grid" style={{ marginBottom: '24px' }}>
-        {plants.slice(0, 2).map(plant => (
-          <PlantCard key={plant.id} plant={plant} onClick={() => navigate(`/tanaman/${plant.id}`)} />
+      {/* Quick actions */}
+      <div className="quick-row">
+        <button className="quick-card" onClick={() => navigate('/identifikasi')}>
+          <div className="quick-ico" style={{ background: '#dcfce7' }}>📷</div>
+          <h4>{L.quick_identify}</h4><p>{L.quick_identify_sub}</p>
+        </button>
+        <button className="quick-card" onClick={() => navigate('/kalender')}>
+          <div className="quick-ico" style={{ background: '#dbeafe' }}>💧</div>
+          <h4>{L.quick_water}</h4><p>{L.quick_water_sub}</p>
+        </button>
+        <button className="quick-card" onClick={() => navigate('/kalender')}>
+          <div className="quick-ico" style={{ background: '#ede9fe' }}>📅</div>
+          <h4>{L.quick_calendar}</h4><p>{L.quick_calendar_sub}</p>
+        </button>
+      </div>
+
+      {/* Today's tasks */}
+      {gardenPlants.length > 0 && (
+        <>
+          <div className="sec-head">
+            <h3>{L.todays_tasks}</h3>
+            <button onClick={() => navigate('/kalender')}>{L.see_all}</button>
+          </div>
+          {gardenPlants.slice(0, 3).map(p => (
+            <div key={p.id} className="task-card" onClick={() => navigate(`/tanaman/${p.id}`)}>
+              {thumb(p, 'task-thumb', '1.4rem')}
+              <div className="task-info">
+                <h4>{L.task_water} {p.name}</h4>
+                <p>💧 {L.every_n_days(p.schedules.watering)}</p>
+              </div>
+              <div className="task-check">✓</div>
+            </div>
+          ))}
+        </>
+      )}
+
+      {/* Popular plants */}
+      <div className="sec-head" style={{ marginTop: '6px' }}>
+        <h3>{L.popular_plants}</h3>
+        <button onClick={() => navigate('/ensiklopedia')}>{L.see_all}</button>
+      </div>
+      <div className="pop-scroll">
+        {popular.map(p => (
+          <div key={p.id} className="pop-card" onClick={() => navigate(`/tanaman/${p.id}`)}>
+            {thumb(p, 'pop-img', '2.6rem')}
+            <span className="pop-badge">{DIFFICULTY_LABEL[lang][p.difficulty]}</span>
+            <button className="pop-heart" onClick={(e) => { e.stopPropagation(); toggleFavorite(p.id); }} aria-label="favorite">
+              <Heart size={15} className={`heart-icon ${isFav(p.id) ? 'active' : ''}`} color={isFav(p.id) ? '#ef4444' : '#9ca3af'} fill={isFav(p.id) ? '#ef4444' : 'none'} />
+            </button>
+            <div className="pop-body">
+              <h4>{p.name}</h4>
+              <p><Droplets size={12} /> {L.every_n_days(p.schedules.watering)}</p>
+            </div>
+          </div>
         ))}
       </div>
 
-      <div style={{ backgroundColor: '#fef3c7', borderRadius: '16px', padding: '16px', display: 'flex', gap: '16px', alignItems: 'center', boxShadow: 'var(--shadow-sm)' }}>
-        <div style={{ backgroundColor: '#f59e0b', color: 'white', padding: '12px', borderRadius: '50%' }}>
-          <SunIcon size={24} />
-        </div>
+      {/* Tip */}
+      <div className="tip-card" style={{ marginTop: '8px' }}>
+        <div className="tip-ico"><SunIcon size={22} /></div>
         <div>
-          <h4 style={{ color: '#92400e', fontSize: '0.95rem', fontWeight: '700', marginBottom: '4px' }}>{L.tip_today_title}</h4>
-          <p style={{ color: '#b45309', fontSize: '0.8rem', lineHeight: 1.4 }}>{L.tip_today_body}</p>
+          <h4>{L.tip_today_title}</h4>
+          <p>{L.tip_today_body}</p>
         </div>
       </div>
     </main>
