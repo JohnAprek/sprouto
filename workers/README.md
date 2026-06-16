@@ -20,11 +20,11 @@ wrangler login             # opens browser, log in to your Cloudflare account
 
 # Care Assistant (text Q&A) — DeepSeek:
 wrangler secret put DEEPSEEK_API_KEY
-#   → paste your DeepSeek key (platform.deepseek.com). Stored encrypted in Cloudflare.
+#   → it prompts "Enter a secret value:" — paste your DeepSeek key THERE (not in any file).
 
 # Plant identification (camera) — Pl@ntNet (free):
 wrangler secret put PLANTNET_API_KEY
-#   → paste your Pl@ntNet key (my.plantnet.org → Settings → API key).
+#   → paste your Pl@ntNet key at the prompt (my.plantnet.org → Settings → API key).
 
 wrangler deploy
 ```
