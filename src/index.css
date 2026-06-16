@@ -750,7 +750,7 @@ button:active { transform: scale(0.95); }
 
 /* 3D glossy icons (Fluent Emoji) */
 .stat-ico img { width: 27px; height: 27px; object-fit: contain; display: block; }
-.quick-ico img { width: 30px; height: 30px; object-fit: contain; display: block; }
+.quick-ico img { width: 48px; height: 48px; object-fit: contain; display: block; filter: drop-shadow(0 5px 8px rgba(20, 83, 45, 0.16)); }
 .ai-bot { background: transparent; width: 66px; height: 66px; }
 .ai-bot img { width: 62px; height: 62px; object-fit: contain; display: block; filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.35)); }
 .tip-ico { background: transparent; width: 52px; height: 52px; }
@@ -924,14 +924,16 @@ button:active { transform: scale(0.95); }
 }
 
 .stat-ico {
-  width: 42px;
-  height: 42px;
-  border-radius: 16px;
+  width: 46px;
+  height: 46px;
+  border-radius: 0;
+  background: transparent;
 }
 
 .stat-ico img {
-  width: 30px;
-  height: 30px;
+  width: 44px;
+  height: 44px;
+  filter: drop-shadow(0 5px 8px rgba(20, 83, 45, 0.16));
 }
 
 .stat-val {
@@ -1028,9 +1030,10 @@ button:active { transform: scale(0.95); }
 }
 
 .quick-ico {
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 0;
+  background: transparent;
 }
 
 .quick-card h4 {

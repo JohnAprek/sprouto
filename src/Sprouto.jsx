@@ -364,22 +364,22 @@ function Home() {
       {/* Stats */}
       <div className="stats-grid">
         <div className="stat-card" onClick={() => navigate('/favorit')} style={{ cursor: 'pointer' }}>
-          <div className="stat-ico" style={{ background: '#fde7ef' }}><img src={ico3d('heart')} alt="" /></div>
+          <div className="stat-ico"><img src={ico3d('heart')} alt="" /></div>
           <div className="stat-val">{favorites.length}</div>
           <div className="stat-lbl">{L.stat_favorites}</div>
         </div>
         <div className="stat-card" onClick={() => navigate('/kalender')} style={{ cursor: 'pointer' }}>
-          <div className="stat-ico" style={{ background: '#dcfce7' }}><img src={ico3d('garden')} alt="" /></div>
+          <div className="stat-ico"><img src={ico3d('garden')} alt="" /></div>
           <div className="stat-val">{myGarden.length}</div>
           <div className="stat-lbl">{L.stat_garden}</div>
         </div>
         <div className="stat-card" onClick={() => navigate('/ensiklopedia')} style={{ cursor: 'pointer' }}>
-          <div className="stat-ico" style={{ background: '#dbeafe' }}><img src={ico3d('book')} alt="" /></div>
+          <div className="stat-ico"><img src={ico3d('book')} alt="" /></div>
           <div className="stat-val">{plants.length}+</div>
           <div className="stat-lbl">{L.stat_catalog}</div>
         </div>
         <div className="stat-card">
-          <div className="stat-ico" style={{ background: '#fef3c7' }}><img src={ico3d('fire')} alt="" /></div>
+          <div className="stat-ico"><img src={ico3d('fire')} alt="" /></div>
           <div className="stat-val">{streakData.count}</div>
           <div className="stat-lbl">{L.stat_streak}</div>
         </div>
@@ -399,15 +399,15 @@ function Home() {
       {/* Quick actions */}
       <div className="quick-row">
         <button className="quick-card" onClick={() => navigate('/identifikasi')}>
-          <div className="quick-ico" style={{ background: '#dcfce7' }}><img src={ico3d('camera')} alt="" /></div>
+          <div className="quick-ico"><img src={ico3d('camera')} alt="" /></div>
           <h4>{L.quick_identify}</h4><p>{L.quick_identify_sub}</p>
         </button>
         <button className="quick-card" onClick={() => navigate('/kalender')}>
-          <div className="quick-ico" style={{ background: '#dbeafe' }}><img src={ico3d('droplet')} alt="" /></div>
+          <div className="quick-ico"><img src={ico3d('droplet')} alt="" /></div>
           <h4>{L.quick_water}</h4><p>{L.quick_water_sub}</p>
         </button>
         <button className="quick-card" onClick={() => navigate('/kalender')}>
-          <div className="quick-ico" style={{ background: '#ede9fe' }}><img src={ico3d('calendar')} alt="" /></div>
+          <div className="quick-ico"><img src={ico3d('calendar')} alt="" /></div>
           <h4>{L.quick_calendar}</h4><p>{L.quick_calendar_sub}</p>
         </button>
       </div>
