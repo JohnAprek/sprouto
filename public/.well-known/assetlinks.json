@@ -3,8 +3,10 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "io.github.johnaprek.sprouto",
-      "sha256_cert_fingerprints": []
+      "package_name": "io.github.johnaprek.twa",
+      "sha256_cert_fingerprints": [
+        "D8:C7:38:E3:8B:56:FE:07:EA:8E:6E:7B:F6:18:F3:45:81:69:E0:40:42:40:A6:8F:8B:AD:EE:5D:13:64:E6:46"
+      ]
     }
   }
 ]
